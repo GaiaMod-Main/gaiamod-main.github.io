@@ -86,7 +86,7 @@
         "redux": "3.7.2",
         "redux-throttle": "0.1.1",
         "scratch-audio": "github:GaiaMod-Main/GaiaMod-Audio#develop",
-        "scratch-blocks": "github:GaiaMod-Main/GaiaMod-Blocks#develop-builds",
+        "scratch-blocks": "github:PenguinMod/PenguinMod-Blocks#develop-builds",
         "scratch-paint": "github:GaiaMod-Main/GaiaMod-Paint#develop",
         "scratch-render": "github:GaiaMod-Main/GaiaMod-Render#develop",
         "scratch-render-fonts": "github:GaiaMod-Main/gaiamod-render-fonts#master",
