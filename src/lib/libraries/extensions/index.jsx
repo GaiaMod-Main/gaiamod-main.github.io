@@ -310,15 +310,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Meme Extension',
-        extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
-        iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
-        credits: 'Banana-mod',
-        tags: ['othermods'],
-        description: 'Get fresh baked memes.',
-        featured: true
-    },
-    {
         name: 'Italian Brainrot Extension',
         extensionId: 'https://banana-mod.github.io/Italian-Brainrot-Extension/italianbrainrot.js',
         iconURL: 'https://banana-mod.github.io/Italian-Brainrot-Extension/itbr.svg',
