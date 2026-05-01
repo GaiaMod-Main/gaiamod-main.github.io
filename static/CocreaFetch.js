@@ -1,0 +1,45 @@
+const icon = "data:image/webp;base64,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"
+
+class CocreaFetch {
+  constructor(runtime) {
+    this.runtime = runtime
+  }
+
+  getInfo() {
+    return {
+      id: 'cocreaFetch',
+      name: 'Cocrea Fetch',
+      color1: '#1c1c1c',
+      color2: "#fbf304",
+      color3: "#fbf304",
+      blockIconURI: icon,
+	  
+      blocks: [
+        {
+          opcode: 'fetch',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'Fetch api.cocrea.world/[PATH]',
+          arguments: {
+            PATH: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'search/user?keyword=GaiaHeroine90',
+            },
+          }
+        },
+      ],
+    };
+  }
+
+  async fetch(args) {
+    const response = await fetch("https://api.cocrea.world/" + args.PATH);
+    if (response.ok) {
+      const data = await response.json();
+      return JSON.stringify(data);
+    } else {
+      console.error('Error:', response.status);
+      return null;
+    }
+  }
+}
+
+Scratch.extensions.register(new CocreaFetch());

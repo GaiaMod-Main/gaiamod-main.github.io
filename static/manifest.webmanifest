@@ -1,7 +1,7 @@
 {
-  "short_name": "PenguinMod",
-  "name": "PenguinMod",
-  "description": "Mod of TurboWarp that was made to allow for really cool projects.",
+  "short_name": "GaiaMod",
+  "name": "GaiaMod",
+  "description": "Mod of PenguinMod that was made to allow for really cool projects.",
   "icons": [
     {
       "src": "images/192.png",
