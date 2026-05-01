@@ -1730,26 +1730,6 @@ const menuItems = [
         credits: 'Started by JeremyGamer13, continued by jwklong, modified by Aness6040',
         tags: ['electramod', 'builders', 'extcreate'],
         featured: true
-    },
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: (
-            <FormattedMessage
-                defaultMessage="Custom Extension"
-                description="Name of library item to load a custom extension from a remote source"
-                id="tw.customExtension.name"
-            />
-        ),
-        extensionId: '',
-        iconURL: customExtensionIcon,
-        description: (
-            <FormattedMessage
-                defaultMessage="Load custom extensions from URLs, files, or JavaScript source code."
-                description="Description of library item to load a custom extension from a custom source"
-                id="tw.customExtension.description"
-            />
-        ),
-        featured: true
     }
     /*DEPRECATED
     {
