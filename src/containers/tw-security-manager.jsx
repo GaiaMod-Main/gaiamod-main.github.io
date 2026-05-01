@@ -58,9 +58,14 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://sayamindu.github.io/scratch-extensions/') ||
     url.startsWith('https://extensions.mistium.com/') ||
     url.startsWith('https://ldsjvg.webwave.dev/') ||
+    url.startsWith('https://logiseextensions.netlify.app/') ||
     url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
     url.startsWith('https://dinosaurmod.github.io/extensions/') ||
+    url.startsWith('https://banana-mod.github.io/extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/Logise1123/myextensions/') ||
     url.startsWith('https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/banana-mod/extensions/refs/heads/main/src/extensions/') ||
+    url.startsWith('https://banana-mod.github.io/') ||
 
     /* For development */
     url.startsWith('http://localhost:8000') ||
