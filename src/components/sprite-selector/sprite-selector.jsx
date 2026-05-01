@@ -120,7 +120,7 @@ const SpriteSelectorComponent = function (props) {
                         title: intl.formatMessage(messages.addSpriteFromFile),
                         img: fileUploadIcon,
                         onClick: onFileUploadClick,
-                        fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .sprite2, .sprite3, .gif, .pms',
+                        fileAccept: '.svg, .png, .bmp, .webp, .avif, .jpg, .jpeg, .jfif, .webp, .sprite2, .sprite3, .gif, .pms',
                         fileChange: onSpriteUpload,
                         fileInput: spriteFileInput,
                         fileMultiple: true

@@ -23,14 +23,44 @@ const manuallyTrustExtension = url => {
  */
 const isTrustedExtensionOrigin = url => (
     /* Always trust the official extension repostiories */
-    url.startsWith('https://extensions.turbowarp.org/') ||
+  url.startsWith('https://extensions.turbowarp.org/') ||
     url.startsWith('https://extensions.penguinmod.com/') ||
     url.startsWith('https://penguinmod-extensions-gallery.vercel.app/') ||
-
-    /* Trust other people's galleries. These can be removed in the future, they will just show a pop-up on load if they are */
+    url.startsWith('https://gaiamod-main.github.io/') ||
+    url.startsWith('https://gaiamod-main.github.io/GaiaMod-Extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/GaiaMod-Main/GaiaMod-Extensions/refs/heads/main/src/extensions/') ||
+    url.startsWith('https://gaiawindwave90.github.io/scratch/projects/gaiamod/') ||
+    url.startsWith('https://raw.githubusercontent.com/gaiawindwave90/gaiawindwave90.github.io/refs/heads/main/scratch/gaiamod/') ||
+    url.startsWith('https://raw.githubusercontent.com/champierre/') ||
+    url.startsWith('https://snail-ide.js.org/') ||
+    url.startsWith('https://snail-ide.vercel.app/') ||
+    url.startsWith('https://snail-ide.com/') ||
+    url.startsWith('https://editor.snail-ide.com/') ||
     url.startsWith('https://sharkpools-extensions.vercel.app/') || // SharkPool
     url.startsWith('https://sharkpool-sp.github.io/SharkPools-Extensions/') || // SharkPool (github link)
     url.startsWith('https://pen-group.github.io/') || // Pen-Group / ObviousAlexC
+    url.startsWith('https://rubyteam.tech/cdn/extensions/') ||
+    url.startsWith('https://ruby-devs.vercel.app/gallery') ||
+    url.startsWith('https://ruby-devs.vercel.app/cdn/extensions/') ||
+    url.startsWith('https://nmsderp.is-a.dev/') ||
+    url.startsWith('https://opensnail.snail-ide.com/api/download') ||
+    url.startsWith('https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/') ||
+    url.startsWith('https://dumo.is-a.dev/') ||
+    url.startsWith('https://ba4x.pro/') ||
+    url.startsWith('https://adacraft.notion.site/') ||
+    url.startsWith('https://adacraft.org/') ||
+    url.startsWith('https://electramod-extensions-gallery.vercel.app/') ||
+    url.startsWith('https://electramod.vercel.app/') ||
+    url.startsWith('https://streamilator.github.io/') ||
+    url.startsWith('https://dinosaurmod.github.io/') ||
+    url.startsWith('https://mikedev101.github.io/') ||
+    url.startsWith('https://turbololder.vercel.app/') ||
+    url.startsWith('https://sayamindu.github.io/scratch-extensions/') ||
+    url.startsWith('https://extensions.mistium.com/') ||
+    url.startsWith('https://ldsjvg.webwave.dev/') ||
+    url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
+    url.startsWith('https://dinosaurmod.github.io/extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/') ||
 
     /* For development */
     url.startsWith('http://localhost:8000') ||
@@ -95,11 +125,32 @@ const isAlwaysTrustedForFetching = parsed => (
     // GameJolt
     parsed.origin === 'https://api.gamejolt.com' ||
 
+    // Weasyl
+    parsed.origin === 'https://www.weasyl.com/api/' ||
+	
+    // Tumblr
+    parsed.origin === 'https://api.tumblr.com' ||
+	
+    // Tumblr 2
+    parsed.origin.endsWith('.tumblr.com') ||
+	
+    // FurAffinity
+    parsed.origin === 'https://furaffinity-api.herokuapp.com/' ||
+
     // httpbin
     parsed.origin === 'https://httpbin.org' ||
 
     // ScratchDB
-    parsed.origin === 'https://scratchdb.lefty.one'
+    parsed.origin === 'https://scratchdb.lefty.one' ||
+
+    // Youtube
+    parsed.origin === 'https://youtube.com' ||
+
+    // Beepbox
+    parsed.origin === 'https://beepbox.co' ||
+
+    // Dinobox
+    parsed.origin === 'https://dinobox.vercel.app'
 );
 
 const FETCHABLE_PROTOCOLS = [
@@ -155,7 +206,7 @@ let rememberDownloadDecision = false;
 let rememberDownloadAllAllowed = false;
 let rememberLoadingExtensions = false;
 let rememberLoadingExtensionsInfo = {
-    unsandboxed: false,
+    unsandboxed: true,
     loaded: false
 };
 
@@ -210,7 +261,7 @@ class TWSecurityManagerComponent extends React.Component {
         rememberDownloadAllAllowed = false;
         rememberLoadingExtensions = false;
         rememberLoadingExtensionsInfo = {
-            unsandboxed: false,
+            unsandboxed: true,
             loaded: false
         };
     }
@@ -346,11 +397,10 @@ class TWSecurityManagerComponent extends React.Component {
         const allowed = await showModal(SecurityModals.LoadExtension, {
             url,
             unsandboxed: true,
-            remember: false,
+            remember: true,
             onChangeUnsandboxed: this.handleChangeUnsandboxed.bind(this),
             onChangeRemember: this.handleChangeRemember.bind(this),
         });
-        if (!allowed) return allowed;
         if (this.state.data.unsandboxed) {
             manuallyTrustExtension(url);
         }

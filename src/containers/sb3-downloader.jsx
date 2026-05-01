@@ -16,7 +16,7 @@ const getProjectTitleFromFilename = fileInputFilename => {
     if (!fileInputFilename) return '';
     // only parse title with valid scratch project extensions
     // (.sb, .sb2, .sb3, and .pm)
-    const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp)$/);
+    const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp|\.gaia|\.torch|\.omega|\.dino|\.electra|\.snail)$/);
     if (!matches) return '';
     return matches[1].substring(0, 100); // truncate project title to max 100 chars
 };
@@ -69,8 +69,7 @@ class SB3Downloader extends React.Component {
             'downloadProject',
             'saveAsNew',
             'saveToLastFile',
-            'saveToLastFileOrNew',
-            'saveAsFolder'
+            'saveToLastFileOrNew'
         ]);
     }
     startedSaving () {
@@ -102,26 +101,6 @@ class SB3Downloader extends React.Component {
             await this.saveToHandle(handle);
             this.props.onSetFileHandle(handle);
             const title = getProjectTitleFromFilename(handle.name);
-            if (title) {
-                this.props.onSetProjectTitle(title);
-            }
-        } catch (e) {
-            this.handleSaveError(e);
-        }
-    }
-    async saveAsFolder() {
-        if (!this.props.canSaveProject) {
-            return;
-        }
-        try {
-            const handle = await FileSystemAPI.showDirectoryPicker("pm-project-folder", "documents");
-
-            this.startedSaving();
-            const jsZip = this.props.saveProjectZip(true);
-            this.extractJSZipToHandle(jsZip, handle);
-            this.finishedSaving();
-
-            const title = handle.name;
             if (title) {
                 this.props.onSetProjectTitle(title);
             }
@@ -292,8 +271,7 @@ class SB3Downloader extends React.Component {
                 saveAsNew: this.saveAsNew,
                 saveToLastFile: this.saveToLastFile,
                 saveToLastFileOrNew: this.saveToLastFileOrNew,
-                smartSave: this.saveToLastFileOrNew,
-                saveAsFolder: this.saveAsFolder
+                smartSave: this.saveToLastFileOrNew
             } : {
                 available: false,
                 smartSave: this.downloadProject
@@ -307,7 +285,7 @@ const getProjectFilename = (curTitle, defaultTitle) => {
     if (!filenameTitle || filenameTitle.length === 0) {
         filenameTitle = defaultTitle;
     }
-    return `${filenameTitle.substring(0, 100)}.pmp`;
+    return `${filenameTitle.substring(0, 100)}.gaia`;
 };
 
 SB3Downloader.propTypes = {

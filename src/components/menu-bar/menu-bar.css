@@ -44,7 +44,7 @@
 }
 
 .scratch-logo {
-    height:  1.6rem;
+    height:  3.6rem;
     vertical-align: middle;
 }
 
@@ -235,4 +235,21 @@
 .menu-item-link {
     color: $ui-white !important;
     text-decoration: none;
+}
+
+.moon-icon {
+    display: block; /* Afficher l'icône de la lune par défaut */
+}
+
+.sun-icon {
+    display: none; /* Masquer l'icône du soleil par défaut */
+}
+
+/* Lorsque le thème est sombre */
+[theme="dark"] .moon-icon {
+    display: none; /* Masquer l'icône de la lune */
+}
+
+[theme="dark"] .sun-icon {
+    display: block; /* Afficher l'icône du soleil */
 }

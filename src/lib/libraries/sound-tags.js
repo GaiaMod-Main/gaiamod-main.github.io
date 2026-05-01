@@ -1,6 +1,10 @@
 import messages from './tag-messages.js';
 export default [
     {tag: 'penguinmod', intlLabel: messages.penguinmod},
+    {tag: 'gaiamod', intlLabel: messages.gaiamod},
+    {tag: 'electramod', intlLabel: messages.electramod},
+    {tag: 'dinosaurmod', intlLabel: messages.dinosaurmod},
+    {tag: 'snailide', intlLabel: messages.snailide},
     {type: 'divider'},
     {type: 'subtitle', intlLabel: "Types"},
     {tag: 'themes', intlLabel: messages.themes},

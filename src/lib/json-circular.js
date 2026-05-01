@@ -5,20 +5,11 @@
  * @param {string} path The JSON path for that this call is at
  * @returns {string} The stringified results
  */
-export const stringify = (obj, processed, path = '', isError) => {
+export const stringify = (obj, processed, path = '') => {
     try {
         if (typeof obj !== 'object') return JSON.stringify(obj);
         // error doesnt stringify correctly, manually include key fields like being an error
-        if (obj instanceof Error) {
-            const set = {
-                name: obj.name ?? null,
-                message: obj.message ?? null,
-                stack: obj.stack ?? null,
-                cause: obj.cause ?? null,
-                ...obj
-            }
-            return stringify(set, processed, path, true);
-        }
+        if (obj instanceof Error) return `{"t":"e","v":{"name":${JSON.stringify(obj.name)},"message":${JSON.stringify(obj.message)},"stack":${JSON.stringify(obj.stack)},"cause":${JSON.stringify(obj.cause)}}}`;
         if (obj === null) return 'null';
         processed ??= [];
         processed.push([path, obj]);
@@ -34,7 +25,7 @@ export const stringify = (obj, processed, path = '', isError) => {
             }
             str += stringify(obj[name], processed, `${path}/${name}`);
         }
-        return (isArray ? '{"t":"a","v":[' : isError ? '{"t":"e","v":{' : '{"t":"o","v":{') + str.slice(1) + (isArray ? ']}' : '}}');
+        return (isArray ? '{"t":"a","v":[' : '{"t":"o","v":{') + str.slice(1) + (isArray ? ']}' : '}}');
     } catch (err) {
         console.warn('Failed to process with error', err);
         return JSON.stringify(obj);
@@ -53,16 +44,13 @@ const _parseRecursive = (obj, processed, path) => {
     if (obj.t === 'c') return processed[obj.v];
     // build up an error object
     if (obj.t === 'e') {
-        obj.t = 'o';
-        const meta = _parseRecursive(obj, processed, path)
         const err = new Error('__TEMPLATE__');
-        if (meta.cause) err.cause = meta.cause;
-        if (meta.message) err.message = meta.message;
+        if (obj.v.cause) err.cause = obj.v.cause;
+        if (obj.v.message) err.message = obj.v.message;
         // @todo different browsers use different trace shapes, and so
         // we need to use something like the log capture serialization here instead
-        if (meta.stack) err.stack = meta.stack;
-        if (meta.name) err.name = meta.name;
-        Object.assign(err, meta);
+        if (obj.v.stack) err.stack = obj.v.stack;
+        if (obj.v.name) err.name = obj.v.name;
         return err;
     }
     const result = obj.t === 'a' ? [] : {};

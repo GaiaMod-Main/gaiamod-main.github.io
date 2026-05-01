@@ -26,12 +26,16 @@ import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 
+//import TWAccentThemeMenu from './tw-theme-accent.jsx';
+//import TWGuiThemeMenu from './tw-theme-gui.jsx';
+import LanguageMenu from './language-menu.jsx';
+
 import FramerateChanger from '../../containers/tw-framerate-changer.jsx';
 import ChangeUsername from '../../containers/tw-change-username.jsx';
 import CloudVariablesToggler from '../../containers/tw-cloud-toggler.jsx';
 import TWSaveStatus from './tw-save-status.jsx';
 
-import { openTipsLibrary, openSettingsModal, openRestorePointModal } from '../../reducers/modals';
+import { openTipsLibrary, openSettingsModal, openRestorePointModal, openExtManagerModal, openCustomExtensionModal } from '../../reducers/modals';
 import { setPlayer } from '../../reducers/mode';
 import {
     autoUpdateProject,
@@ -49,6 +53,9 @@ import {
     openAccountMenu,
     closeAccountMenu,
     accountMenuOpen,
+    openThemeMenu,
+    closeThemeMenu,
+    themeMenuOpen,
     openFileMenu,
     closeFileMenu,
     fileMenuOpen,
@@ -76,9 +83,19 @@ import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
 import errorIcon from './tw-error.svg';
-import themeIcon from './tw-moon.svg';
+import moonIcon from './tw-moon.svg';
+import sunIcon from './tw-sun.svg';
+
+import fileIcon from './gm-file.svg';
+import editIcon from './gm-pencil.svg';
+import addonsIcon from './gm-puzzle.svg';
+import advancedIcon from './gm-star-advanced.svg';
+import videoIcon from './gm-video.svg';
+import toolsIcon from './gm-wrench.svg';
 
 import scratchLogo from './scratch-logo.svg';
+
+import ChevronDown from './ChevronDown.jsx';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -253,7 +270,7 @@ class MenuBar extends React.Component {
         this.props.onClickSaveAsCopy();
         this.props.onRequestCloseFile();
     }
-    handleClickPackager() {
+    handleClickPackager () {
         this.props.onClickPackager();
         this.props.onRequestCloseFile();
     }
@@ -477,19 +494,18 @@ class MenuBar extends React.Component {
             >
                 <div className={styles.mainMenu}>
                     <div className={styles.fileGroup}>
-                        {this.props.onClickLogo ? (
-                            <div className={classNames(styles.menuBarItem)}>
-                                <img
-                                    alt="Scratch"
-                                    className={classNames(styles.scratchLogo, {
-                                        [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
-                                    })}
-                                    draggable={false}
-                                    src={this.props.logo}
-                                    onClick={this.props.onClickLogo}
-                                />
-                            </div>
-                        ) : null}
+                    <div className={classNames(styles.menuBarItem)}>
+                            <img
+                                alt="GaiaMod"
+                                className={classNames(styles.scratchLogo, styles.clickable)}
+                                id={(window.location.pathname).includes("editor.html") ? "gui-editor-logo" : "gui-main-logo"}
+                                draggable={false}
+                                src={this.props.logo}
+                                onClick={() => {
+                                    window.location.href = "https://gaiamod-main.github.io/Gaia-Home/"
+                                }}
+                            />
+                        </div>
                         {(this.props.canChangeLanguage) && (<div
                             className={classNames(styles.menuBarItem, styles.hoverable, styles.languageMenu)}
                         >
@@ -509,17 +525,27 @@ class MenuBar extends React.Component {
                             </div>
                             <LanguageSelector label={this.props.intl.formatMessage(ariaMessages.language)} />
                         </div>)}
-                        {/* tw: theme toggler */}
+                       {/* tw: theme toggler */}
                         {this.props.onClickTheme && (
                             <div
                                 className={classNames(styles.menuBarItem, styles.hoverable)}
                                 onMouseUp={this.props.onClickTheme}
                             >
                                 <img
-                                    src={themeIcon}
-                                    width="24"
-                                    height="24"
+                                    src={moonIcon}
+                                    width="20"
+                                    height="20"
                                     draggable={false}
+                                    alt="Icon"
+                                    className={styles.moonIcon}
+                                />
+                                <img
+                                    src={sunIcon}
+                                    width="20"
+                                    height="20"
+                                    draggable={false}
+                                    alt="Icon"
+                                    className={styles.sunIcon}
                                 />
                             </div>
                         )}
@@ -548,14 +574,14 @@ class MenuBar extends React.Component {
                                     onRequestClose={this.props.onRequestCloseErrors}
                                 >
                                     <MenuSection>
-                                        <MenuItemLink href="https://discord.gg/NZ9MBMYTZh">
+                                        <MenuItemLink href="https://discord.gg/k7RYUQDQmh">
                                             <FormattedMessage
                                                 defaultMessage="Some scripts could not be compiled."
                                                 description="Link in error menu"
                                                 id="tw.menuBar.reportError1"
                                             />
                                         </MenuItemLink>
-                                        <MenuItemLink href="https://discord.gg/NZ9MBMYTZh">
+                                        <MenuItemLink href="https://discord.gg/k7RYUQDQmh">
                                             <FormattedMessage
                                                 defaultMessage="This is a bug. Please report it."
                                                 description="Link in error menu"
@@ -583,6 +609,12 @@ class MenuBar extends React.Component {
                                 })}
                                 onMouseUp={this.props.onClickFile}
                             >
+							<img
+                                    src={fileIcon}
+                                    draggable={false}
+                                    width={20}
+                                    height={20}
+                                />
                                 <FormattedMessage
                                     defaultMessage="File"
                                     description="Text for file dropdown menu"
@@ -690,7 +722,7 @@ class MenuBar extends React.Component {
                                             </React.Fragment>
                                         )}</SB3Downloader>
                                     </MenuSection>
-                                    {this.props.isDirectoryPickerSupported && (
+                                    {/*this.props.isDirectoryPickerSupported && (
                                         <MenuSection>
                                             <MenuItem
                                                 onClick={this.props.onStartFolderUpload}
@@ -715,7 +747,7 @@ class MenuBar extends React.Component {
                                                 </React.Fragment>
                                             )}</SB3Downloader>
                                         </MenuSection>
-                                    )}
+                                    )*/}
                                     {this.props.onClickPackager && (
                                         <MenuSection>
                                             <MenuItem
@@ -748,6 +780,12 @@ class MenuBar extends React.Component {
                             })}
                             onMouseUp={this.props.onClickEdit}
                         >
+						<img
+                                    src={editIcon}
+                                    draggable={false}
+                                    width={20}
+                                    height={20}
+                                />
                             <div className={classNames(styles.editMenu)}>
                                 <FormattedMessage
                                     defaultMessage="Edit"
@@ -848,12 +886,11 @@ class MenuBar extends React.Component {
                                     )}</CloudVariablesToggler>
                                 </MenuSection>
                                 <MenuSection>
-                                    <MenuItem onClick={this.props.onClickSettings}>
-                                        <FormattedMessage
-                                            defaultMessage="Gameplay Settings"
-                                            description="Menu bar item for gameplay settings"
-                                            id="pm.menuBar.moreSettings"
-                                        />
+								 <MenuItem onClick={this.props.onClickExtManager}>
+                                        Extension Manager
+                                    </MenuItem>
+								 <MenuItem onClick={this.props.onClickCustManager}>
+                                        Add Custom Extension
                                     </MenuItem>
                                     <MenuItem onClick={this.handleClickDownloadLogs}>
                                         <FormattedMessage
@@ -870,6 +907,12 @@ class MenuBar extends React.Component {
                                 className={classNames(styles.menuBarItem, styles.hoverable)}
                                 onMouseUp={this.props.onClickAddonSettings}
                             >
+                               <img
+                                    src={addonsIcon}
+                                    draggable={false}
+                                    width={20}
+                                    height={20}
+                                />
                                 <div>
                                     <FormattedMessage
                                         // Note: this string is used by scratch-vm for the addons blocks category
@@ -884,10 +927,16 @@ class MenuBar extends React.Component {
                             className={classNames(styles.menuBarItem, styles.hoverable)}
                             onMouseUp={this.props.onClickSettings}
                         >
+                               <img
+                                    src={advancedIcon}
+                                    draggable={false}
+                                    width={20}
+                                    height={20}
+                                />
                             <div>
                                 <FormattedMessage
-                                    defaultMessage="Settings"
-                                    description="Text for gameplay settings menu item"
+                                    defaultMessage="Advanced"
+                                    description="Text for the settings menu item"
                                     id="pm.menuBar.gameplaySettings"
                                 />
                             </div>
@@ -959,7 +1008,7 @@ class MenuBar extends React.Component {
                     <div className={styles.menuBarItem}>
                         <a
                             className={styles.feedbackLink}
-                            href="https://penguinmod.com"
+                            href="https://gaiamod-main.github.io/Gaia-Home/"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
@@ -972,14 +1021,34 @@ class MenuBar extends React.Component {
                             </Button>
                         </a>
                     </div>
+                       <div className={styles.menuBarItem}>
+                        <a
+                            className={styles.feedbackLink}
+                            href="https://gaiamod-main.github.io/GaiaGPT.html"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <Button className={styles.feedbackButton}>
+                                <FormattedMessage
+                                    defaultMessage="GaiaGPT"
+                                    description="Button to go back to open the AI"
+                                    id="pm.aiButton"
+                                />
+                            </Button>
+                        </a>
+                    </div>
                 </div>
-
                 <div className={styles.accountInfoGroup}>
                     <div className={styles.menuBarItem}>
                         <TWSaveStatus />
                     </div>
-                </div>
 
+                    <a href={this.props.username ? `https://penguinmod.com/profile?user=${this.props.username}` : `https://penguinmod.com/signin?redirect=%2Fsignin&embed=false`}>
+                        <div className={classNames(styles.menuBarItem, styles.hoverable)}>
+                            {this.props.username ? this.props.username : 'Sign into PenguinMod'}
+                        </div>
+                    </a>
+                </div>
                 {aboutButton}
             </Box>
         );
@@ -991,6 +1060,7 @@ MenuBar.propTypes = {
     onClickSeeInside: PropTypes.func,
     aboutMenuOpen: PropTypes.bool,
     accountMenuOpen: PropTypes.bool,
+    themeMenuOpen: PropTypes.bool,
     authorId: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     authorThumbnailUrl: PropTypes.string,
     authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -1050,6 +1120,8 @@ MenuBar.propTypes = {
     onClickSave: PropTypes.func,
     onClickSaveAsCopy: PropTypes.func,
     onClickSettings: PropTypes.func,
+    onClickExtManager: PropTypes.func,
+    onClickCustManager: PropTypes.func,
     onClickErrors: PropTypes.func,
     onRequestCloseErrors: PropTypes.func,
     onLogOut: PropTypes.func,
@@ -1093,6 +1165,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
         aboutMenuOpen: aboutMenuOpen(state),
         accountMenuOpen: accountMenuOpen(state),
+        themeMenuOpen: accountMenuOpen(state),
         authorThumbnailUrl: state.scratchGui.tw.author.thumbnail,
         authorUsername: state.scratchGui.tw.author.username,
         compileErrors: state.scratchGui.tw.compileErrors,
@@ -1145,6 +1218,14 @@ const mapDispatchToProps = dispatch => ({
     onClickRestorePoints: () => dispatch(openRestorePointModal()),
     onClickSettings: () => {
         dispatch(openSettingsModal());
+        dispatch(closeEditMenu());
+    },
+   onClickExtManager: () => {
+        dispatch(openExtManagerModal());
+        dispatch(closeEditMenu());
+    },
+   onClickCustManager: () => {
+        dispatch(openCustomExtensionModal());
         dispatch(closeEditMenu());
     },
     onSeeCommunity: () => dispatch(setPlayer(true))

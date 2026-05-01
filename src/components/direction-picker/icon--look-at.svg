@@ -29,13 +29,13 @@
                 stroke-linecap="butt" />
             <path
                 d="M231.33327,180c0,-2.9638 2.40263,-5.36643 5.36643,-5.36643c2.9638,0 5.36643,2.40263 5.36643,5.36643c0,2.9638 -2.40263,5.36643 -5.36643,5.36643c-2.9638,0 -5.36643,-2.40263 -5.36643,-5.36643z"
-                fill="#00c3ff" stroke="none" stroke-width="0" stroke-linecap="butt" />
-            <path d="M244.20173,179.91848h3.90687" fill="none" stroke="#00c3ff" stroke-width="1"
+                fill="#2D2DD2" stroke="none" stroke-width="0" stroke-linecap="butt" />
+            <path d="M244.20173,179.91848h3.90687" fill="none" stroke="#2D2DD2" stroke-width="1"
                 stroke-linecap="round" />
-            <path d="M246.03048,177.79879l2.11969,2.11969" fill="none" stroke="#00c3ff" stroke-width="1"
+            <path d="M246.03048,177.79879l2.11969,2.11969" fill="none" stroke="#2D2DD2" stroke-width="1"
                 stroke-linecap="round" />
             <path d="M246.03048,182.07973l2.11969,-2.11969" data-paper-data="{&quot;index&quot;:null}" fill="none"
-                stroke="#00c3ff" stroke-width="1" stroke-linecap="round" />
+                stroke="#2D2DD2" stroke-width="1" stroke-linecap="round" />
             <path d="M240.36886,178.05929v1.8831" fill="none" stroke="#ffffff" stroke-width="1"
                 stroke-linecap="round" />
             <path d="M238.60725,178.30227v1.8831" fill="none" stroke="#ffffff" stroke-width="1"

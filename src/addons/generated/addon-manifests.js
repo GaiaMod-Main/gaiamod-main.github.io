@@ -52,6 +52,7 @@ import _transparent_orphans from "../addons/transparent-orphans/_manifest_entry.
 import _paint_by_default from "../addons/paint-by-default/_manifest_entry.js";
 import _block_cherry_picking from "../addons/block-cherry-picking/_manifest_entry.js";
 import _hide_new_variables from "../addons/hide-new-variables/_manifest_entry.js";
+import _editor_create_music from "../addons/editor-create-music/_manifest_entry.js";
 import _editor_extra_keys from "../addons/editor-extra-keys/_manifest_entry.js";
 import _hide_delete_button from "../addons/hide-delete-button/_manifest_entry.js";
 import _no_script_bumping from "../addons/no-script-bumping/_manifest_entry.js";
@@ -69,9 +70,20 @@ import _script_snap from "../addons/script-snap/_manifest_entry.js";
 import _fullscreen from "../addons/fullscreen/_manifest_entry.js";
 import _hide_stage from "../addons/hide-stage/_manifest_entry.js";
 import _tw_straighten_comments from "../addons/tw-straighten-comments/_manifest_entry.js";
-import _tw_remove_feedback from "../addons/tw-remove-feedback/_manifest_entry.js";
+//import _tw_remove_feedback from "../addons/tw-remove-feedback/_manifest_entry.js";
+//import _autosave from "../addons/autosave/_manifest_entry.js";
 import _tw_remove_backpack from "../addons/tw-remove-backpack/_manifest_entry.js";
 import _tw_disable_cloud_variables from "../addons/tw-disable-cloud-variables/_manifest_entry.js";
+import _editor_stepping from "../addons/editor-stepping/_manifest_entry.js";
+import _expanded_backpack from "../addons/expanded-backpack/_manifest_entry.js";
+import _canvas_screenshot from "../addons/canvas-screenshot/_manifest_entry.js";
+//import _custom_web_font from "../addons/custom-web-font/_manifest_entry.js";
+//import _custom_block_font from "../addons/custom-block-font/_manifest_entry.js";
+//import _multi_sprite_selecting from "../addons/multi-sprite-selecting/_manifest_entry.js";
+//import _remove_logo from "../addons/remove-logo/_manifest_entry.js";
+import _undo_redo_buttons from "../addons/undo-redo-buttons/_manifest_entry.js";
+import _frame_stepper from "../addons/frame-stepper/_manifest_entry.js";
+import _green_flag_order from "../addons/green-flag-order/_manifest_entry.js";
 import _multi_tab_code from "../addons/multi-tab-code/_manifest_entry.js";
 import _editor_animations from "../addons/editor-animations/_manifest_entry.js";
 import _reorder_custom_inputs from "../addons/reorder-custom-inputs/_manifest_entry.js";
@@ -151,10 +163,21 @@ export default {
   "fullscreen": _fullscreen,
   "hide-stage": _hide_stage,
   "tw-straighten-comments": _tw_straighten_comments,
-  "tw-remove-feedback": _tw_remove_feedback,
+//  ""autosave": _autosave,
+//  "tw-remove-feedback": _tw_remove_feedback,
   "tw-remove-backpack": _tw_remove_backpack,
   "tw-disable-cloud-variables": _tw_disable_cloud_variables,
   "vol-slider": _vol_slider,
+  "editor-stepping": _editor_stepping,
+  "canvas-screenshot": _canvas_screenshot,
+  "expanded-backpack": _expanded_backpack,
+  //"custom-web-font": _custom_web_font,
+  //"custom-block-font": _custom_block_font,
+  //"multi-sprite-selecting": _multi_sprite_selecting,
+  //"remove-logo": _remove_logo,
+  "green-flag-order": _green_flag_order,
+  "frame-stepper": _frame_stepper,
+  "undo-redo-buttons": _undo_redo_buttons,
   "waveform-chunk-size": _waveform_chunk_size,
   "multi-tab-code": _multi_tab_code,
   "editor-animations": _editor_animations,

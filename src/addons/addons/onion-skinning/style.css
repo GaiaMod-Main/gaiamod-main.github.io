@@ -11,7 +11,7 @@
   filter: brightness(0) invert(1);
 }
 .sa-onion-button[data-enabled="true"] {
-  background-color: #00c3ff;
+  background-color: #2D2DD2;
 }
 
 .sa-onion-group {

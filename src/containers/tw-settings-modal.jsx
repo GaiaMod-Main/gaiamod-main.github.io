@@ -103,15 +103,24 @@ class UsernameModal extends React.Component {
     }
     handleStagePresetUsed (widescreen) {
         switch (widescreen) {
-        case 1:
-            this.props.vm.setStageSize(640, 360);
-            break;
-        case 2:
-            this.props.vm.setStageSize(360, 360);
-            break;
-        default:
-            this.props.vm.setStageSize(480, 360);
-            break;
+            case 1:
+                this.props.vm.setStageSize(640, 360);
+                break;
+            case 2:
+                this.props.vm.setStageSize(360, 360);
+                break;
+            case 3:
+                this.props.vm.setStageSize(360, 640);
+                break;
+            case 4:
+                this.props.vm.setStageSize(360, 720);
+                break;
+            case 5:
+                this.props.vm.setStageSize(360, 450);
+                break;
+            default:
+                this.props.vm.setStageSize(480, 360);
+                break;
         }
     }
     handleStoreProjectOptions () {

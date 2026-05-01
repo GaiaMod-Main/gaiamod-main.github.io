@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import log from './log';
 import { getIsShowingProject } from '../reducers/project-state';
 
-const PACKAGER_URL = 'https://studio.penguinmod.com/PenguinMod-Packager';
-const PACKAGER_ORIGIN = "https://studio.penguinmod.com";
+const PACKAGER_URL = 'https://gaiamod-main.github.io/GaiaMod-Packager';
+const PACKAGER_ORIGIN = "https://gaiamod-main.github.io/";
 
 const PackagerIntegrationHOC = function (WrappedComponent) {
     class PackagerIntegrationComponent extends React.Component {
@@ -52,7 +52,7 @@ const PackagerIntegrationHOC = function (WrappedComponent) {
 
             this.props.vm.saveProjectSb3('arraybuffer')
                 .then(buffer => {
-                    const name = `${this.props.reduxProjectTitle}.pmp`;
+                    const name = `${this.props.reduxProjectTitle}.gaia`;
                     e.source.postMessage({
                         p4: {
                             type: 'finish-import',

@@ -22,6 +22,8 @@ import {
     closeBackdropLibrary,
     closeTelemetryModal,
     openExtensionLibrary,
+//    openShortcutManagerModal,
+//    openSimpleDialog
 } from "../reducers/modals";
 
 import FontLoaderHOC from "../lib/font-loader-hoc.jsx";
@@ -184,6 +186,8 @@ const mapStateToProps = (state) => {
         settingsModalVisible: state.scratchGui.modals.settingsModal,
         customExtensionModalVisible:
             state.scratchGui.modals.customExtensionModal,
+		extensionsManagerModalVisible:
+			state.scratchGui.modals.extensionManagerModal,
         fontsModalVisible: state.scratchGui.modals.fontsModal,
         vm: state.scratchGui.vm,
     };

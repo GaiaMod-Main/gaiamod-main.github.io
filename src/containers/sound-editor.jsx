@@ -530,7 +530,7 @@ class SoundEditor extends React.Component {
             menu.append(pitchDiv, volumeDiv);
 
             const previewButton = document.createElement("button");
-            previewButton.style = "border-radius: 1000px;padding: 5px;width: 45px;height: 45px;border-style: none;background: #00c3ff;";
+            previewButton.style = "border-radius: 1000px;padding: 5px;width: 45px;height: 45px;border-style: none;background: #2D2DD2;";
             previewButton.innerHTML = `<img draggable="false" style="max-width: 100%;max-height: 100%" src="${playURI}">`;
             menu.append(previewButton);
 

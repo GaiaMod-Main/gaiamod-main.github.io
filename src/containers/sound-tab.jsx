@@ -41,6 +41,8 @@ import {
 import { setRestore } from '../reducers/restore-deletion';
 import { showStandardAlert, closeAlertWithId } from '../reducers/alerts';
 
+import savedTempStorage, { getTempStorage } from '../addons/addons/editor-create-music/temp-storage.js'; //Dinosaurmod LOL
+
 class SoundTab extends React.Component {
     constructor(props) {
         super(props);

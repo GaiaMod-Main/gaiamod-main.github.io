@@ -66,23 +66,36 @@ const addons = [
     'hide-stage',
     'tw-straighten-comments',
     'tw-remove-backpack',
-    'tw-remove-feedback',
+    //'tw-remove-feedback',
     'tw-disable-cloud-variables',
     'vol-slider',
     'number-pad',
     'rename-broadcasts',
     'sprite-properties',
     'paint-snap',
-    "editor-block-chomping"
+    'editor-block-chomping',
+    'paint-gradient-maker',
+    'toolbox-full-blocks-on-hover',
+    'waveform-chunk-size',
+    'paint-rounded-rect-seperate',
+    'paint-default-smoothing',
+    //'autosave',
+    'paint-tool-panel'
 ];
 
 const newAddons = [
-    "paint-gradient-maker",
-    "toolbox-full-blocks-on-hover",
-    "waveform-chunk-size",
-    "paint-rounded-rect-seperate",
-    "paint-default-smoothing",
-    "paint-tool-panel"
+    "reorder-custom-inputs",
+    //"autosave",
+    //"multi-sprite-selecting",
+    //"custom-web-font",
+    //"custom-block-font",
+    //"expanded-backpack",
+	"canvas-screenshot",
+	"green-flag-order",
+    //"rename-broadcasts",
+    //"remove-logo",
+    //"merge-costumes",
+    "undo-redo-buttons"
 ];
 
 // eslint-disable-next-line import/no-commonjs

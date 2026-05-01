@@ -62,6 +62,27 @@ if (process.env.ANNOUNCEMENT) {
     announcement.innerHTML = process.env.ANNOUNCEMENT;
 }
 
+
+/*
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'bottom-start',
+    iconColor: 'white',
+    customClass: {
+      popup: 'colored-toast',
+    },
+    showConfirmButton: false,
+    timer: 3500,
+    timerProgressBar: true,
+});
+
+
+Toast.fire({
+    icon: 'success',
+    title: 'Welcome to the GaiaMod Beta!'
+})
+*/
+
 const handleClickAddonSettings = () => {
     const path = process.env.ROUTING_STYLE === 'wildcard' ? 'addons' : 'addons.html';
     window.open(`${process.env.ROOT}${path}`);
@@ -142,8 +163,8 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that PenguinMod and TurboWarp are not connected to Scratch"
+                    defaultMessage="GaiaMod, PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
+                    description="Disclaimer that GaiaMod, PenguinMod and TurboWarp are not connected to Scratch"
                     id="tw.footer.disclaimer"
                 />
             </div>
@@ -156,19 +177,8 @@ const Footer = () => (
                             id="tw.footer.credits"
                         />
                     </a>
-                    <a href="https://penguinmod.com/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate"
-                            description="Donation link in footer"
-                            id="tw.footer.donate"
-                        />
-                    </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://studio.penguinmod.com/PenguinMod-Packager">
-                        {/* Do not translate */}
-                        {'PenguinMod Packager'}
-                    </a>
                     <a href="https://desktop.turbowarp.org/">
                         {/* Do not translate */}
                         {'TurboWarp Desktop'}
@@ -196,32 +206,46 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://penguinmod.com/terms">
+                    <a href="#">
                         <FormattedMessage
                             defaultMessage="Terms of Service"
                             description="Link to Terms of Service"
                             id="pm.terms"
                         />
                     </a>
-                    <a href="https://penguinmod.com/privacy">
+                    <a href="#">
                         <FormattedMessage
                             defaultMessage="Privacy Policy"
                             description="Link to privacy policy"
                             id="tw.privacy"
                         />
                     </a>
-                    <a href="https://github.com/PenguinMod/PenguinMod-Home/issues">
+                    <a href="https://github.com/GaiaMod-Main/gaiamod-main.github.io/issues">
                         <FormattedMessage
                             defaultMessage="Feedback & Bugs"
                             description="Link to feedback/bugs page"
                             id="tw.feedback"
                         />
                     </a>
-                    <a href="https://github.com/PenguinMod">
+                    <a href="https://gaiamod-main.github.io/GaiaMod-Packager">
+                        <FormattedMessage
+                            defaultMessage="Packager"
+                            description="Link to packager page"
+                            id="tw.packager"
+                        />
+                    </a>
+                    <a href="https://github.com/GaiaMod-Main/gaiamod-main.github.io">
                         <FormattedMessage
                             defaultMessage="Source Code"
                             description="Link to source code"
                             id="tw.code"
+                        />
+                    </a>
+                    <a href="https://gaiawindwave90.github.io">
+                        <FormattedMessage
+                            defaultMessage="Gaia Zone"
+                            description="The main website."
+                            id="tw.gaiasite"
                         />
                     </a>
                 </div>
@@ -274,9 +298,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle (title, isDefault) {
         if (isDefault || !title) {
-            document.title = `PenguinMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `GaiaMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - PenguinMod`;
+            document.title = `${title} - GaiaMod`;
         }
     }
     copyProjectLink (id) {
@@ -372,6 +396,9 @@ class Interface extends React.Component {
                     />
                     {isHomepage ? (
                         <React.Fragment>
+                            <div className={styles.section}>
+                                <ProjectInput />
+                            </div>
                             {/* project not approved message */}
                             {(!extraProjectInfo.accepted) && (
                                 <div className={styles.remixWarningBox}>
@@ -445,29 +472,15 @@ class Interface extends React.Component {
                             {projectId !== '0' && extraProjectInfo.author && (
                                 <div>
                                     {isUpdated ?
-                                        <div>
-                                            <FormattedMessage
-                                                defaultMessage="Updated {date}"
-                                                description="The date at which the project was updated"
-                                                id="pm.projectFooter.updatedAt"
-                                                values={{
-                                                    date: extraProjectInfo.releaseDate.toLocaleString(),
-                                                }}
-                                            />
-                                            <br></br>
-                                            <div style={{ fontSize: "15px", color: "#7a7a7a" }}>
-                                                <FormattedMessage
-                                                    defaultMessage="Originally Uploaded {date}"
-                                                    description="The date at which the project was uploaded"
-                                                    id="pm.projectFooter.originallyUploadedAt"
-                                                    
-                                                    values={{
-                                                        date: extraProjectInfo.uploadDate.toLocaleString(),
-                                                    }}
-                                                />
-                                            </div>
-                                        </div>
-                                        : <FormattedMessage
+                                        <FormattedMessage
+                                            defaultMessage="Updated {date}"
+                                            description="The date at which the project was updated"
+                                            id="pm.projectFooter.updatedAt"
+                                            values={{
+                                                date: extraProjectInfo.releaseDate.toLocaleString()
+                                            }}
+                                        /> :
+                                        <FormattedMessage
                                             defaultMessage="Uploaded {date}"
                                             description="The date at which the project was uploaded"
                                             id="pm.projectFooter.uploadedAt"
@@ -509,6 +522,78 @@ class Interface extends React.Component {
                                     </div>
                                 </div>
                             )}
+                            <div className={styles.section}>
+                                <p>
+                                    {/*<FormattedMessage
+                                        // eslint-disable-next-line max-len
+                                        defaultMessage="<a style='color: #80F41A; cursor: pointer;'>GaiaMod</a> is a mod of <a style='color: #00C3FF; cursor: pointer;' href='https://penguinmod.com'>Penguinmod</a> that adds new blocks and features in extensions or the main toolbox. <a style='color: #00C3FF; cursor: pointer;' href='https://penguinmod.com'>Penguinmod</a> is a cool mod of <a style='color: #FF4C4C; cursor: pointer;' href='https://turbowarp.org'>turbowarp</a> to share projects with other people. <a style='color: #FF4C4C; cursor: pointer;' href='https://turbowarp.org'>TurboWarp</a> is a <a style='color: #FCA919; cursor: pointer;' href='https://scratch.mit.edu'>Scratch</a> mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
+                                        description="Description of Dinosaurmod, PenguinMod and TurboWarp"
+                                        id="tw.home.description"
+                                    />*/}
+                                    <span>
+                                        <a 
+                                            style={{
+                                                color: '#4A4AFF',
+                                                cursor: 'pointer'
+                                            }}
+                                            href={'https://gaiawindwave90.github.io/'}
+                                        >
+                                            GaiaMod
+                                        </a>
+                                         is a mod of 
+                                        <a 
+                                            style={{
+                                                color: '#00C3FF',
+                                                cursor: 'pointer'
+                                            }}
+                                            href={'https://penguinmod.com'}
+                                        >
+                                            Penguinmod
+                                        </a>
+                                         that adds new blocks and features in extensions or the main toolbox. 
+                                        <a 
+                                            style={{
+                                                color: '#00C3FF',
+                                                cursor: 'pointer'
+                                            }}
+                                            href={'https://penguinmod.com'}
+                                        >
+                                            Penguinmod
+                                        </a>
+                                         is a cool mod of 
+                                        <a 
+                                            style={{
+                                                color: '#FF4C4C',
+                                                cursor: 'pointer'
+                                            }}
+                                            href={'https://turbowarp.org'}
+                                        >
+                                            TurboWarp
+                                        </a>
+                                         to share projects with other people. 
+                                        <a 
+                                            style={{
+                                                color: '#FF4C4C',
+                                                cursor: 'pointer'
+                                            }}
+                                            href={'https://turbowarp.org'}
+                                        >
+                                            TurboWarp
+                                        </a>
+                                         is a 
+                                        <a 
+                                            style={{
+                                                color: '#FCA919',
+                                                cursor: 'pointer'
+                                            }}
+                                            href={'https://scratch.mit.edu'}
+                                        >
+                                            Scratch
+                                        </a>
+                                         mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor.
+                                    </span>
+                                </p>
+                            </div>
                             <div className={styles.section}>
                                 <FeaturedProjects />
                             </div>

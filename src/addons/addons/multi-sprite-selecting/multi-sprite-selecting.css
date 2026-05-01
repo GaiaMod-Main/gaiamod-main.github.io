@@ -1,0 +1,45 @@
+.sa-sprite-selecting-container {
+    display: "flex";
+    gap: 4px;
+}
+
+.sa-sprite-selecting-button {
+    width: 36px;
+    line-height: 28px;
+    height: 28px;
+    background-color: #80f41a;
+    border-radius: 4px;
+    text-align: center;
+    border: solid 2px var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));
+    cursor: pointer;
+}
+
+[coloraccent="Lime Green"] .sa-sprite-selecting-button {
+    background-color: #80f41a;
+}
+[coloraccent="Red"] .sa-sprite-selecting-button,
+[coloraccent="Rainbow"] .sa-sprite-selecting-button {
+    background-color: #ff4c4c;
+}
+[coloraccent="Light Blue"] .sa-sprite-selecting-button {
+    background-color: #00c3ff;
+}
+[coloraccent="Blue"] .sa-sprite-selecting-button {
+    background-color: #4c97ff;
+}
+[coloraccent="Scratch"] .sa-sprite-selecting-button {
+    background-color: #855cd6;
+}
+[coloraccent="Magenta"] .sa-sprite-selecting-button {
+    background-color: #d414ff;
+}
+
+.sa-sprite-selected-count {
+    color: black;
+    margin-left: "10px";
+    display: "none";
+}
+
+[theme="dark"] .sa-sprite-selected-count {
+    color: white;
+}

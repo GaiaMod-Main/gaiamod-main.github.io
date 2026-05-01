@@ -208,7 +208,7 @@ class TWRestorePointManager extends React.Component {
                 });
 
                 const blob = new Blob([arrayBuffer], { type: "application/x.scratch.sb3" });
-                downloadBlob("restore-point.pmp", blob);
+                downloadBlob("restore-point.gaia", blob);
             })
             .catch(error => {
                 log.error(error);

@@ -1,7 +1,7 @@
 @import "../css/colors.css";
 
 .base {
-    background-color: hsla(194, 100%, 50%, 0.5);
+    background-color: hsla(240, 100%, 50%, 0.5);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 [theme="dark"] .base {
-    background-color: #333a;
+    background-color: #05003A;
 }
 
 .promptBox {
@@ -34,7 +34,7 @@
 .header {
     width: 100%;
     height: 3.125em;
-    background-color: hsla(194, 100%, 50%, 1);
+    background-color: hsla(240, 100%, 50%, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,13 +63,13 @@
 }
 
 .promptButton:focus {
-    outline-color: hsla(194, 100%, 50%, 0.35);
+    outline-color: hsla(240, 100%, 50%, 0.35);
     outline-width: 4px;
     outline-style: solid;
 }
 
 .accept {
-    background-color: hsla(194, 100%, 50%, 1);
+    background-color: hsla(240, 100%, 50%, 1);
     color: white;
 }
 
@@ -83,7 +83,7 @@
 
 .filePicker {
     border: 0;
-    background-color: hsla(194, 100%, 50%, 1);
+    background-color: hsla(240, 100%, 50%, 1);
     border-radius: 4px;
     font-weight: 600;
     color: white;

@@ -203,12 +203,12 @@ const PromptComponent = props => props.isCustom ? (
                         values={{
                             packager: (
                                 <a
-                                    href="https://studio.penguinmod.com/PenguinMod-Packager"
+                                    href="https://gaiamod-main.github.io/GaiaMod-Packager"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     {/* Should not be translated */}
-                                    {'PenguinMod Packager'}
+                                    {'GaiaMod Packager'}
                                 </a>
                             )
                         }}

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import appTarget from '../app-target';
 import styles from './credits.css';
-import classNames from 'classnames';
 import { getInitialDarkMode } from '../../lib/tw-theme-hoc.jsx';
 
 // import fosshostLogo from './fosshost-light.png';
@@ -37,10 +36,8 @@ User.propTypes = {
     href: PropTypes.string
 };
 
-const UserList = ({ users, golden }) => (
-    <div className={classNames(styles.users, {
-        [styles.usersGolden]: golden,
-    })}>
+const UserList = ({ users }) => (
+    <div className={styles.users}>
         {users.map((data, index) => (
             <User
                 key={index}
@@ -50,52 +47,37 @@ const UserList = ({ users, golden }) => (
     </div>
 );
 UserList.propTypes = {
-    users: PropTypes.arrayOf(PropTypes.object),
-    golden: PropTypes.bool
+    users: PropTypes.arrayOf(PropTypes.object)
 };
 
 const Credits = () => (
     <main className={styles.main}>
         <header className={styles.headerContainer}>
             <h1 className={styles.headerText}>
-                PenguinMod Credits
+                GaiaMod Credits
             </h1>
         </header>
         <section>
-            <h1>PenguinMod</h1>
+            <h1>GaiaMod</h1>
         </section>
         <section>
             <h2>Thank you</h2>
             <p>
-                Without TurboWarp, PenguinMod may have never existed.
-                Thank you to everyone who worked on Scratch and TurboWarp,
+                Without PenguinMod and TurboWarp, GaiaMod may have never existed.
+                Thank you to everyone who worked on Scratch, TurboWarp, and PenguinMod
                 you have made many people finally be able to make whatever they can imagine.
             </p>
             <a href="https://scratch.mit.edu/donate">
                 Donate to support Scratch.
             </a>
-            <br></br>
-            {/* TurboWarp no longer accepts donations */}
-            {/* <br></br>
+            <br></br><br></br>
             <a href="https://github.com/sponsors/GarboMuffin">
                 Donate to support TurboWarp.
-            </a> */}
-            <h2>Our Supporters</h2>
-            <p>
-                We rely on the support of our users to keep running parts of the website for free.
-                You do not need to support PenguinMod if you do not want to, but it will help us run the services that power
-                our project sharing and other online features.
-            </p>
-            <a href="https://penguinmod.com/support">
-                Support PenguinMod
             </a>
-            <br></br>
-            <UserList users={UserData.pmSupporters} golden={true} />
-            <p><i>The list order is randomized on each refresh.</i></p>
             <h2>Contributors</h2>
             <p>
-                PenguinMod is made by a small bunch of developers.
-                A list is below, but you can also check <a href="https://github.com/orgs/PenguinMod/people">our GitHub</a> incase this one is out of date.
+                GaiaMod is made by only one developer (Gaia herself).
+                A list is below, but you can also check <a href="https://github.com/orgs/GaiaMod-Main/people">our GitHub</a> incase this one is out of date.
             </p>
             <UserList users={UserData.pmDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
@@ -114,7 +96,7 @@ const Credits = () => (
         </section>
         <section>
             <h2>GitHub Pages</h2>
-            <p>We currently use <a href="https://pages.github.com/">GitHub Pages</a> to host PenguinMod.</p>
+            <p>We currently use <a href="https://pages.github.com/">GitHub Pages</a> to host GaiaMod.</p>
             <a href="https://pages.github.com/">
                 <img
                     src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/github-pages-examples/github-pages-examples.png"
@@ -122,32 +104,9 @@ const Credits = () => (
                     height="160"
                 />
             </a>
-            <h2>Domain Provider</h2>
-            <p>
-                <a href="https://penguinmod.com">penguinmod.com</a> (and any subdomains) are currently
-                provided by <a href="https://github.com/enderhacker">enderhacker</a>.
-                <br></br>
-                <a href="https://github.com/enderhacker">
-                    <img src="https://avatars.githubusercontent.com/u/61245488?v=4" style={{ width: "128px" }}></img>
-                </a>
-            </p>
-            <h2>Server Host</h2>
-            <p>
-                PenguinMod's Project Sharing server is currently hosted by <a href="https://github.com/ianyourgod">ianyourgod</a>.
-                <br></br>
-                <a href="https://github.com/ianyourgod">
-                    <img src="https://avatars.githubusercontent.com/u/104151459?v=4" style={{ width: "128px" }}></img>
-                </a>
-            </p>
-            <p>
-                The PenguinMod Server API is maintained by many people.
-                A list is below, but you can also check <a href="https://github.com/PenguinMod/PenguinMod-IntermediateBackendApi/graphs/contributors">the GitHub repository</a> incase this one is out of date.
-            </p>
-            <UserList users={UserData.pmApiDevelopers} />
-            <p><i>The list order is randomized on each refresh.</i></p>
             <h2>Costumes</h2>
             <p>
-                All PenguinMod costumes are downloaded or created from:
+                All PenguinMod and GaiaMod costumes are downloaded or created from:
                 <ul>
                     <li><a href="https://publicdomainvectors.org/">https://publicdomainvectors.org/</a></li>
                     <li><a href="https://discord.gg/NZ9MBMYTZh">User-submissions from the PenguinMod Discord Server</a></li>
@@ -160,7 +119,7 @@ const Credits = () => (
             <p><i>The list order is randomized on each refresh.</i></p>
             <h2>Sound Effects</h2>
             <p>
-                All PenguinMod sounds are downloaded or created from:
+                All PenguinMod and GaiaMod sounds are downloaded or created from:
                 <ul>
                     <li><a href="https://freesound.org/">https://freesound.org/</a></li>
                     <li><a href="https://opengameart.org/">https://opengameart.org/</a> (only Public Domain ones)</li>
@@ -173,25 +132,14 @@ const Credits = () => (
             <p>This is the current list of user-submitted sound creators:</p>
             <UserList users={UserData.pmSoundSubmittors} />
             <p><i>The list order is randomized on each refresh.</i></p>
-            <h2>Accounts</h2>
-            <p>
-                Scratch login on PenguinMod is managed with <a href="https://oauth2.scratch-wiki.info/">ScratchOAuth2</a>,
-                see their <a href="https://github.com/ScratchVerifier/ScratchOAuth2">GitHub repository</a>.
-                <br />
-                <br />
-                <i>
-                    "ScratchOAuth2" is not actually affiliated with Scratch,
-                    the Scratch Team, or the Scratch Foundation.
-                </i>
-            </p>
         </section>
         <section>
-            <h1>PenguinMod & TurboWarp</h1>
+            <h1>GaiaMod, PenguinMod & TurboWarp</h1>
         </section>
         <section>
             <h2>Extensions</h2>
             <p><i>
-                If you are an extension developer who wants their extension removed from PenguinMod's extensions list,
+                If you are an extension developer who wants their extension removed from GaiaMod's extensions list,
                 contact us as soon as you can. We'll get it removed as soon as we are able to.
             </i></p>
             <p>
@@ -202,22 +150,11 @@ const Credits = () => (
             <UserList users={UserData.extensionDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
             <p>
-                PenguinMod also has a few people who made and submitted extensions too!
+                GaiaMod also has a few people who made and submitted extensions too!
                 This list may get outdated sometimes, but here they are listed below:
             </p>
             <UserList users={UserData.pmExtensionDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
-            <p>
-                The Scratch Auth extension has a login system managed with <a href="https://auth.itinerary.eu.org/">Scratch Auth</a>,
-                created by <a href="https://scratch.mit.edu/users/Looky1173/">Looky1173</a>.
-                (thanks for adding us to the user list!)
-                <br />
-                <br />
-                <i>
-                    "Scratch Auth" is not actually affiliated with Scratch,
-                    the Scratch Team, or the Scratch Foundation.
-                </i>
-            </p>
         </section>
         <section>
             <h2>Addons</h2>
@@ -236,27 +173,12 @@ const Credits = () => (
                 The TurboWarp project is made possible by the work of many volunteers.
                 <br></br>
                 You can check out TurboWarp's individual credits <a href="https://turbowarp.org/credits.html">here</a>.
-            </p>
-        </section>
-        {/* RIP Fosshost */}
-        {/* <section>
-            <h2>Fosshost</h2>
-            <p>
-                The TurboWarp project is proudly hosted by <a href="https://fosshost.org/">Fosshost</a> who provide free computing resources to the open source community.
-            </p>
-            <p>
-                <a href="https://fosshost.org/donate">
-                    Donate to support Fosshost.
+                <br></br>
+                <a href="https://github.com/sponsors/GarboMuffin">
+                    Donate to support TurboWarp.
                 </a>
             </p>
-            <a href="https://fosshost.org/">
-                <img
-                    src={fosshostLogo}
-                    width="250"
-                    height="125"
-                />
-            </a>
-        </section> */}
+        </section>
         <section>
             <h2>Scratch</h2>
             <p>

@@ -14,8 +14,17 @@ const MODAL_TIPS_LIBRARY = 'tipsLibrary';
 const MODAL_USERNAME = 'usernameModal';
 const MODAL_SETTINGS = 'settingsModal';
 const MODAL_CUSTOM_EXTENSION = 'customExtensionModal';
+const MODAL_EXTS = 'extensionManagerModal';
 const MODAL_RESTORE_POINTS = 'restorePointModal';
 const MODAL_FONTS = 'fontsModal';
+//const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
+//const MODAL_INVALID_PROJECT = 'invalidProjectModal';
+//const MODAL_GIT = 'gitModal';
+//const MODAL_PREFERENCES = 'preferencesModal';
+//const MODAL_SIMPLE_DIALOG = 'simpleDialog';
+//const MODAL_ONBOARDING = 'onboardingModal';
+//const MODAL_SHORTCUT_MANAGER = 'shortcutManagerModal';
+//const MODAL_MODTHEME = 'modthemeModal';
 
 const initialState = {
     [MODAL_BACKDROP_LIBRARY]: false,
@@ -31,9 +40,18 @@ const initialState = {
     [MODAL_USERNAME]: false,
     [MODAL_SETTINGS]: false,
     [MODAL_CUSTOM_EXTENSION]: false,
+	[MODAL_EXTS]: false,
     [MODAL_RESTORE_POINTS]: false,
     [MODAL_FONTS]: false,
-    extensionModalSwapId: null
+    extensionModalSwapId: null//,
+//    [MODAL_UNKNOWN_PLATFORM]: false,
+//    [MODAL_INVALID_PROJECT]: false,
+//    [MODAL_GIT]: false,
+//    [MODAL_PREFERENCES]: false,
+//    [MODAL_SIMPLE_DIALOG]: false,
+//    [MODAL_ONBOARDING]: false,
+//    [MODAL_SHORTCUT_MANAGER]: false,
+//    [MODAL_MODTHEME]: false
 };
 
 const reducer = function (state, action) {
@@ -106,12 +124,44 @@ const openSettingsModal = function () {
 const openCustomExtensionModal = function (swapId) {
     return openModal(MODAL_CUSTOM_EXTENSION, swapId);
 };
+const openExtManagerModal = () => {
+    return openModal(MODAL_EXTS);
+};
 const openRestorePointModal = function () {
     return openModal(MODAL_RESTORE_POINTS);
 };
 const openFontsModal = function () {
     return openModal(MODAL_FONTS);
 };
+/*
+const openUnknownPlatformModal = function () {
+    return openModal(MODAL_UNKNOWN_PLATFORM);
+};
+const openInvalidProjectModal = function () {
+    return openModal(MODAL_INVALID_PROJECT);
+};
+const openGitModal = function () {
+    return openModal(MODAL_GIT);
+};
+const openPreferencesModal = function () {
+    return openModal(MODAL_PREFERENCES);
+};
+const openOnboardingModal = function () {
+    return openModal(MODAL_ONBOARDING);
+};
+const openShortcutManagerModal = function () {
+    return openModal(MODAL_SHORTCUT_MANAGER);
+};
+const openModThemeModal = function () {
+    return openModal(MODAL_MODTHEME);
+};
+const openSimpleDialog = function (dialogConfig) {
+    return {
+        type: 'scratch-gui/modals/SHOW_SIMPLE_DIALOG',
+        dialogConfig
+    };
+};
+*/
 const closeBackdropLibrary = function () {
     return closeModal(MODAL_BACKDROP_LIBRARY);
 };
@@ -151,12 +201,38 @@ const closeSettingsModal = function () {
 const closeCustomExtensionModal = function () {
     return closeModal(MODAL_CUSTOM_EXTENSION);
 };
+const closeExtManagerModal = () => {
+    return closeModal(MODAL_EXTS);
+};
 const closeRestorePointModal = function () {
     return closeModal(MODAL_RESTORE_POINTS);
 };
 const closeFontsModal = function () {
     return closeModal(MODAL_FONTS);
 };
+/*
+const closeUnknownPlatformModal = function () {
+    return closeModal(MODAL_UNKNOWN_PLATFORM);
+};
+const closeInvalidProjectModal = function () {
+    return closeModal(MODAL_INVALID_PROJECT);
+};
+const closeGitModal = function () {
+    return closeModal(MODAL_GIT);
+};
+const closePreferencesModal = function () {
+    return closeModal(MODAL_PREFERENCES);
+};
+const closeOnboardingModal = function () {
+    return closeModal(MODAL_ONBOARDING);
+};
+const closeShortcutManagerModal = function () {
+    return closeModal(MODAL_SHORTCUT_MANAGER);
+};
+const closeModThemeModal = function () {
+    return closeModal(MODAL_MODTHEME);
+};
+*/
 export {
     reducer as default,
     initialState as modalsInitialState,
@@ -173,8 +249,18 @@ export {
     openUsernameModal,
     openSettingsModal,
     openCustomExtensionModal,
+	openExtManagerModal,
     openRestorePointModal,
-    openFontsModal,
+    openFontsModal,	
+//    openUnknownPlatformModal,
+//    openInvalidProjectModal,
+//    openExtensionManagerModal,
+//    openGitModal,
+//    openPreferencesModal,
+//    openOnboardingModal,
+//    openShortcutManagerModal,
+//    openModThemeModal,
+//    openSimpleDialog,
     closeBackdropLibrary,
     closeCostumeLibrary,
     closeExtensionLibrary,
@@ -188,6 +274,15 @@ export {
     closeUsernameModal,
     closeSettingsModal,
     closeCustomExtensionModal,
+	closeExtManagerModal,
     closeRestorePointModal,
-    closeFontsModal
+    closeFontsModal//,
+//    closeUnknownPlatformModal,
+//    closeInvalidProjectModal,
+//    closeExtensionManagerModal,
+//    closeGitModal,
+//    closePreferencesModal,
+//    closeOnboardingModal,
+//    closeShortcutManagerModal,
+//    closeModThemeModal
 };

@@ -12,7 +12,7 @@
         <circle cx="10" cy="9" r="5" fill="black"></circle>
     </mask>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="modify" fill="#00c3ff">
+        <g id="modify" fill="#2D2DD2">
             <rect x="7.5" y="2" width="5" height="16" rx="2.5" mask="url(#myMask)"></rect>
             <circle cx="10" cy="9" r="4"></circle>
         </g>

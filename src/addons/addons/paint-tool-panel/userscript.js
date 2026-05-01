@@ -248,7 +248,7 @@ export default async function () {
 
     /* GUI Utils */
     function getButtonURI(name, dontCompile) {
-        const themeHex = isPM ? "#00c3ff" : document.documentElement.style.getPropertyValue("--looks-secondary") || "#ff4c4c";
+        const themeHex = isPM ? "#2D2DD2" : document.documentElement.style.getPropertyValue("--looks-secondary") || "#ff4c4c";
         const guiSVG = guiIMGS[name].replaceAll("red", themeHex);
         if (dontCompile) return guiSVG;
         else return "data:image/svg+xml;base64," + btoa(guiSVG);

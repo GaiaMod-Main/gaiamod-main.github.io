@@ -37,6 +37,13 @@ import styles from './settings.css';
 import '../polyfill';
 import '../../lib/normalize.css';
 
+import TagButton from '../../containers/tag-button.jsx';
+
+import ReduxStore from '../settings-store-redux-store';
+
+//import LibraryComponent from './modified-library.jsx';
+import addonTags from './addon-tags.js';
+
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
 /* eslint-disable react/no-multi-comp */
@@ -55,7 +62,7 @@ if (locale !== 'en') {
     }
 }
 
-document.title = `${settingsTranslations.title} - PenguinMod`;
+document.title = `${settingsTranslations.title} - GaiaMod`;
 
 const theme = getInitialDarkMode() ? 'dark' : 'light';
 document.body.setAttribute('theme', theme);
@@ -229,6 +236,76 @@ const Tags = ({ manifest }) => (
                 {settingsTranslations.tagDanger}
             </span>
         )}
+{manifest.tags.includes('penguinmod') && (
+            <span className={classNames(styles.tag, styles.tagPenguinmod)}
+                style={{display: "inline-flex", alignItems: "center", gap: "5px"}}
+            >
+                <img
+                    src="https://studio.penguinmod.com/favicon.ico"
+                    style={{width: "13px", height: "13px"}}
+                    alt="PenguinMod Icon"
+                />
+                {settingsTranslations.tagPenguinMod}
+            </span>
+			        )}
+
+        {manifest.tags.includes('gaiamod') && (
+            <span className={classNames(styles.tag, styles.tagGaiamod)}
+                style={{display: "inline-flex", alignItems: "center", gap: "5px"}}
+            >
+                <img
+                    src="https://gaiamod-main.github.io/favicon.ico"
+                    style={{width: "13px", height: "13px"}}
+                    alt="GaiaMod Icon"
+                />
+                {settingsTranslations.tagGaiamod}
+            </span>
+        )}
+
+        {manifest.tags.includes('dinosaurmod') && (
+            <span className={classNames(styles.tag, styles.tagDinosaurmod)} 
+                style={{display: "inline-flex", alignItems: "center", gap: "5px"}}
+            >
+                <img
+                    src="https://dinosaurmod.github.io/favicon.ico"
+                    style={{width: "13px", height: "13px"}}
+                    alt="DinosaurMod Icon"
+                />
+                {settingsTranslations.tagDinosaurMod}
+            </span>
+			 )}
+
+        {manifest.tags.includes('snailide') && (
+            <span className={classNames(styles.tag, styles.tagSnailIDE)}
+                style={{display: "inline-flex", alignItems: "center", gap: "5px"}}
+            >
+                <img
+                    src="https://snail-ide.js.org/favicon.ico"
+                    style={{width: "13px", height: "13px"}}
+                    alt="Snail-IDE Icon"
+                />
+                {settingsTranslations.tagSnailIDE}
+            </span>
+			  )}
+			  
+        {manifest.tags.includes('electramod') && (
+            <span className={classNames(styles.tag, styles.tagElectramod)}
+                style={{display: "inline-flex", alignItems: "center", gap: "5px"}}
+            >
+                <img
+                    src="https://electramod.vercel.app/favicon.ico"
+                    style={{width: "13px", height: "13px"}}
+                    alt="ElectraMod Icon"
+                />
+                {settingsTranslations.tagElectramod}
+            </span>
+			
+                )}
+        {manifest.tags.includes('othermods') && (
+            <span className={classNames(styles.tag, styles.tagOtherMods)}>
+                {settingsTranslations.tagOtherMods}
+            </span>
+           )}
     </span>
 );
 Tags.propTypes = {

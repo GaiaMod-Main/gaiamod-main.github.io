@@ -150,18 +150,10 @@ const downloadLogs = async () => {
     const files = new JSZip();
     files.file('logs.json', stringify(consoleLogs));
     const index = {};
-    const messages = [
-        ...consoleLogs,
-        ...consoleLogs
-            .map(log => log.message)
-            .flat()
-            .filter(arg => arg instanceof Error)
-            .map(error => (error.trace = parseStack(error.stack), error))
-    ];
     // get files
     // sadly, this may just dead ass fail to get files due to blob lifecycle
     // and i dont want to make these files get stored at runtime, cause poopy doo doo ram
-    for (const log of messages) {
+    for (const log of consoleLogs) {
         for (const trace of log.trace) {
             if (index[trace.url]) continue;
             const id = uid();

@@ -30,6 +30,7 @@ const manifest = {
   ],
   "tags": [
     "editor",
+    "penguinmod",
     "new"
   ],
   "enabledByDefault": false,

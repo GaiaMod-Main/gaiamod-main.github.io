@@ -146,6 +146,31 @@ export default defineMessages({
         description: 'Tag for filtering a library by PenguinMod',
         id: 'pm.libraryTags.penguinmod'
     },
+    gaiamod: {
+        defaultMessage: 'GaiaMod',
+        description: 'Tag for filtering a library by GaiaMod',
+        id: 'pm.libraryTags.gaiamod'
+    },
+    electramod: {
+        defaultMessage: 'ElectraMod',
+        description: 'Tag for filtering a library by ElectraMod',
+        id: 'pm.libraryTags.electramod'
+    },
+    dinosaurmod: {
+        defaultMessage: 'DinosaurMod',
+        description: 'Tag for filtering a library by DinosaurMod',
+        id: 'pm.libraryTags.dinosaurmod'
+    },
+    snailide: {
+        defaultMessage: 'Snail IDE',
+        description: 'Tag for filtering a library by Snail IDE',
+        id: 'pm.libraryTags.snailide'
+    },
+    othermods: {
+        defaultMessage: 'Other Scratch Mods',
+        description: 'Tag for filtering a library by other Scratch mods like MistWarp, Gandi IDE, CreatiCode, Adacraft, etc..',
+        id: 'pm.libraryTags.othermods'
+    },
     scratch: {
         defaultMessage: 'Scratch',
         description: 'Tag for filtering a library by Scratch',
@@ -165,6 +190,11 @@ export default defineMessages({
         defaultMessage: 'Category Expansions',
         description: 'Tag for filtering a library by categoryexpansion',
         id: 'pm.libraryTags.categoryexpansion'
+    },
+    ai: {
+        defaultMessage: 'AI',
+        description: 'Tag for filtering a library by AI',
+        id: 'pm.libraryTags.ai'
     },
     ui: {
         defaultMessage: 'Menu',

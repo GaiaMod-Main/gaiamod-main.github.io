@@ -26,6 +26,15 @@
     left: 0;
 }
 
+
+.submenu > .menu {
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: #fff $motion-primary;
+    border-radius: 8px;
+}
+
 .menu-item {
     display: block;
     line-height: 34px;

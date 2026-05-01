@@ -40,6 +40,7 @@ import TWUsernameModal from '../../containers/tw-username-modal.jsx';
 import TWSettingsModal from '../../containers/tw-settings-modal.jsx';
 import TWSecurityManager from '../../containers/tw-security-manager.jsx';
 import TWCustomExtensionModal from '../../containers/tw-custom-extension-modal.jsx';
+import ExtensionManagerModal from '../../containers/extensions-modal.jsx';
 import TWRestorePointManager from '../../containers/tw-restore-point-manager.jsx';
 import TWFontsModal from '../../containers/tw-fonts-modal.jsx';
 import PMExtensionModals from '../../containers/pm-extension-modals.jsx';
@@ -161,7 +162,6 @@ const GUIComponent = props => {
         onShare,
         onShowPrivacyPolicy,
         onStartSelectingFileUpload,
-        onStartFolderUpload,
         onTelemetryModalCancel,
         onTelemetryModalOptIn,
         onTelemetryModalOptOut,
@@ -176,6 +176,7 @@ const GUIComponent = props => {
         usernameModalVisible,
         settingsModalVisible,
         customExtensionModalVisible,
+		extensionsManagerModalVisible,
         fontsModalVisible,
         isPlayground,
         vm,
@@ -373,6 +374,8 @@ const GUIComponent = props => {
                 {usernameModalVisible && <TWUsernameModal />}
                 {settingsModalVisible && <TWSettingsModal />}
                 {customExtensionModalVisible && <TWCustomExtensionModal />}
+				{extensionsManagerModalVisible && <ExtensionManagerModal />}
+                {extensionsManagerModalVisible && <ExtensionManagerModal />}
                 {fontsModalVisible && <TWFontsModal />}
                 <PMExtensionModals vm={vm} />
             </React.Fragment>
@@ -497,7 +500,6 @@ const GUIComponent = props => {
                         onSeeCommunity={onSeeCommunity}
                         onShare={onShare}
                         onStartSelectingFileUpload={onStartSelectingFileUpload}
-                        onStartFolderUpload={onStartFolderUpload}
                         onToggleLoginOpen={onToggleLoginOpen}
                     />
                 ) : null}
@@ -731,7 +733,6 @@ GUIComponent.propTypes = {
     onShare: PropTypes.func,
     onShowPrivacyPolicy: PropTypes.func,
     onStartSelectingFileUpload: PropTypes.func,
-    onStartFolderUpload: PropTypes.func,
     onTabSelect: PropTypes.func,
     onTelemetryModalCancel: PropTypes.func,
     onTelemetryModalOptIn: PropTypes.func,
@@ -749,6 +750,7 @@ GUIComponent.propTypes = {
     usernameModalVisible: PropTypes.bool,
     settingsModalVisible: PropTypes.bool,
     customExtensionModalVisible: PropTypes.bool,
+	extensionsManagerModalVisible : PropTypes.bool,
     fontsModalVisible: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired
 };

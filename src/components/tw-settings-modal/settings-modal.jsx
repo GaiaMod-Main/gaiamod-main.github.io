@@ -17,7 +17,7 @@ const BufferedInput = BufferedInputHOC(Input);
 
 const messages = defineMessages({
     title: {
-        defaultMessage: 'Settings',
+        defaultMessage: 'Advanced Settings',
         description: 'Title of settings modal',
         id: 'pm.settingsModal.title'
     },
@@ -399,6 +399,30 @@ const CustomStageSize = ({
                     >
                         16:9
                     </button>
+                    <button
+                        className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 640}
+                        data-mobile={true}
+                        onClick={() => onStagePresetUsed(3)}
+                    >
+                        9:16
+                    </button>
+                    <button
+                        className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 720}
+                        data-mobile-alt={true}
+                        onClick={() => onStagePresetUsed(4)}
+                    >
+                        9:18
+                    </button>
+                    <button
+                        className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 450}
+                        data-mobile-small={true}
+                        onClick={() => onStagePresetUsed(5)}
+                    >
+                        4:5
+                    </button>
                 </div>
                 <div className={styles.customStageSizeContainer}>
                     <FormattedMessage
@@ -637,9 +661,7 @@ SettingsModalComponent.propTypes = {
     disableCompiler: PropTypes.bool,
     dangerousOptimizations: PropTypes.bool,
     onDisableCompilerChange: PropTypes.func,
-    onEnableDangerousOptimizationsChange: PropTypes.func,
-    disableOffscreenRendering: PropTypes.bool,
-    onDisableOffscreenRenderingChange: PropTypes.func
+    onEnableDangerousOptimizationsChange: PropTypes.func
 };
 
 export default injectIntl(SettingsModalComponent);

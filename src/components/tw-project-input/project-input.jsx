@@ -8,11 +8,11 @@ import {defaultProjectId} from '../../reducers/project-state';
 import styles from './project-input.css';
 import {setProjectId} from '../../lib/tw-navigation-utils';
 
-const PROJECT_BASE = 'https://scratch.mit.edu/projects/';
+const PROJECT_BASE = 'https://studio.penguinmod.com/\#';
 
 const messages = defineMessages({
     tooltip: {
-        defaultMessage: 'Copy and paste a Scratch project link here!',
+        defaultMessage: 'Copy and paste a PenguinMod project link here!',
         description: 'Project ID input tooltip',
         id: 'tw.input.tooltip'
     }

@@ -39,7 +39,7 @@ import styles from './interface.css';
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'Playground',
+        defaultMessage: 'The Playground',
         description: 'Title of homepage',
         id: 'pm.playgroundDefaultTitle'
     }
@@ -71,9 +71,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle(title, isDefault) {
         if (isDefault || !title) {
-            document.title = `PenguinMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `GaiaMod - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - PenguinMod`;
+            document.title = `${title} - GaiaMod`;
         }
     }
     render() {

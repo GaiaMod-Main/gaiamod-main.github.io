@@ -1,32 +1,104 @@
-import { isApiAvailable, isTypeFilterAvailable } from './pm-mature-fs-available';
+const available = () => !!window.showSaveFilePicker;
 
-const available = isApiAvailable;
-
-// pm: Some bad mobile devices block any file type (iOS), so these funcs should allow all files on mobile
 const showSaveFilePicker = fileName => window.showSaveFilePicker({
     suggestedName: fileName,
-    ...(!isTypeFilterAvailable() ? {} : {
-        types: [
+    types: [
+            {
+                description: 'GaiaMod Project',
+                accept: {
+                    'application/x.scratch.sb3': '.gaia'
+                }
+            },
+            {
+                description: 'CodeTorch Project',
+                accept: {
+                    'application/x.scratch.sb3': '.torch'
+                }
+            },
+            {
+                description: 'Omega Turbo Project',
+                accept: {
+                    'application/x.scratch.sb3': '.omega'
+                }
+            },
+            {
+                description: 'DinosaurMod Project',
+                accept: {
+                    'application/x.scratch.sb3': '.dino'
+                }
+            },
+            {
+                description: 'ElectraMod Project',
+                accept: {
+                    'application/x.scratch.sb3': '.electra'
+                }
+            },
+            {
+                description: 'Snail-IDE Project',
+                accept: {
+                    'application/x.scratch.sb3': '.snail'
+                }
+            },
             {
                 description: 'PenguinMod Project',
                 accept: {
                     'application/x.scratch.sb3': '.pmp'
                 }
+            },
+            {
+                description: 'Scratch 3.0 Project',
+                accept: {
+                    'application/x.scratch.sb3': '.sb3'
+                }
             }
-        ],
-        excludeAcceptAllOption: true
-    }),
+    ],
+    excludeAcceptAllOption: true
 });
 
 const showOpenFilePicker = async () => {
     const [handle] = await window.showOpenFilePicker({
         multiple: false,
-        ...(!isTypeFilterAvailable() ? {} : {
-            types: [
+        types: [
                 {
                     description: 'Supported Files',
                     accept: {
-                        'application/x.scratch.sb3': ['.pmp', '.pm', '.sb3', '.sb2', '.sb']
+                        'application/x.scratch.sb3': ['.gaia', '.torch', '.omega', '.dino', '.electra', '.snail', '.pmp', '.pm', '.sb3', '.sb2', '.sb']
+                    }
+                },
+                {
+                    description: 'GaiaMod Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.gaia']
+                    }
+                },
+                {
+                    description: 'CodeTorch Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.torch']
+                    }
+                },
+                {
+                    description: 'Omega Turbo Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.omega']
+                    }
+                },
+                {
+                    description: 'DinosaurMod Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.dino']
+                    }
+                },
+                {
+                    description: 'ElectraMod Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.electra']
+                    }
+                },
+                {
+                    description: 'Snail-IDE Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.snail']
                     }
                 },
                 {
@@ -41,17 +113,7 @@ const showOpenFilePicker = async () => {
                         'application/x.scratch.sb3': ['.sb3', '.sb2', '.sb']
                     }
                 }
-            ]
-        }),
-    });
-    return handle;
-};
-
-const showDirectoryPicker = async (optId, optStartIn) => {
-    const handle = await window.showDirectoryPicker({
-        id: optId || "pm-directory-picker",
-        mode: "readwrite",
-        startIn: optStartIn || "documents",
+        ]
     });
     return handle;
 };
@@ -59,6 +121,5 @@ const showDirectoryPicker = async (optId, optStartIn) => {
 export default {
     available,
     showOpenFilePicker,
-    showSaveFilePicker,
-    showDirectoryPicker
+    showSaveFilePicker
 };

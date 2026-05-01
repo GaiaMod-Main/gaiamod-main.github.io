@@ -4,10 +4,9 @@ import classNames from 'classnames';
 import styles from './loader.css';
 import PropTypes from 'prop-types';
 import bindAll from 'lodash.bindall';
-
-import topBlock from './top-block.svg';
-import middleBlock from './middle-block.svg';
-import bottomBlock from './bottom-block.svg';
+import stars from './stars2.svg';
+import logo from './title.svg';
+import { randomMessages } from '../../lib/randomMessages';
 
 import * as progressMonitor from './tw-progress-monitor';
 import isScratchDesktop from '../../lib/isScratchDesktop';
@@ -20,38 +19,46 @@ import isScratchDesktop from '../../lib/isScratchDesktop';
 // The way of doing this is extremely unusual and weird compared to how things are typically done for performance.
 // This is because react updates are too performance crippling to handle the progress bar rapidly updating.
 
+
 const mainMessages = {
     'gui.loader.headline': (
         <FormattedMessage
-            defaultMessage="Loading Project"
+            defaultMessage="Loading a Project"
             description="Main loading message"
             id="gui.loader.headline"
         />
     ),
     'gui.loader.creating': (
         <FormattedMessage
-            defaultMessage="Creating Project"
+            defaultMessage="Creating a Project"
             description="Main creating message"
             id="gui.loader.creating"
         />
     ),
     'pm.loader.playground': (
         <FormattedMessage
-            defaultMessage="Loading Playground"
+            defaultMessage="Loading a Playground"
             description="Playground load message"
             id="pm.loader.playground"
+        />
+    ),
+    'pm.loader.almoststarted': (
+        <FormattedMessage
+            defaultMessage="Project is About to Start"
+            description="A message when the project almost starts."
+            id="pm.loader.almoststarted"
         />
     )
 };
 
 const messages = defineMessages({
     generic: {
-        defaultMessage: 'Loading project …',
+        defaultMessage: 'Loading a project …',
         description: 'Initial generic loading message',
         id: 'tw.loader.generic'
     },
     projectData: {
-        defaultMessage: 'Downloading project data …',
+        defaultMessage: 'Downloading a project data …',
         description: 'Appears when loading project data',
         id: 'tw.loader.data'
     },
@@ -74,6 +81,7 @@ class LoaderComponent extends React.Component {
         this.progress = 0;
         this.complete = 0;
         this.total = 0;
+        this.randomMessages = randomMessages[Math.round(Math.random() * randomMessages.length)];
         bindAll(this, [
             'barInnerRef',
             'handleProgressChange',
@@ -142,22 +150,12 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <img
-                            className={styles.topBlock}
-                            src={topBlock}
-                        />
-                        <img
-                            className={styles.middleBlock}
-                            src={middleBlock}
-                        />
-                        <img
-                            className={styles.bottomBlock}
-                            src={bottomBlock}
-                        />
+                        <img src={stars} alt="Stars"/>
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
+					<p dangerouslySetInnerHTML={{__html: this.randomMessages}} />
                     <div className={styles.messageContainerOuter}>
                         <div
                             className={styles.messageContainerInner}
@@ -175,7 +173,7 @@ class LoaderComponent extends React.Component {
                 </div>
             </div>
         );
-    }
+    }    
 }
 
 LoaderComponent.propTypes = {

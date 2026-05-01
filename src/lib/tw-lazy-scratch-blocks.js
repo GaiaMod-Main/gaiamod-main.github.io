@@ -58,7 +58,7 @@ const load = () => {
                             inputsInline: true,
                             previousStatement: null,
                             nextStatement: null,
-                            colour: '#ff0000',
+                            colour: '#0785FF',
                             tooltip: 'your mom :trel:',
                             helpUrl: 'https://tenor.com/view/urmom-your-mom-baldi-defaultdance-gif-19665250'
                         });
@@ -107,7 +107,7 @@ const load = () => {
                             if (this.inputList.length > 1) {
                                 this.moveInputBefore('yourMom', this.inputList[0].name);
                             }
-                            this.setColour('#ff0000');
+                            this.setColour('#0785FF');
                             this.setTooltip('your mom :trel:');
                             this.setHelpUrl('https://penguinmod.com/dump/urmom-your-mom.gif');
                         };
@@ -129,7 +129,7 @@ const load = () => {
                         if (this.inputList.length > 1) {
                             this.moveInputBefore('yourMom', this.inputList[0].name);
                         }
-                        this.setColour('#ff0000');
+                        this.setColour('#0785FF');
                         this.setTooltip('your mom :trel:');
                         this.setHelpUrl('https://penguinmod.com/dump/urmom-your-mom.gif');
                     };
