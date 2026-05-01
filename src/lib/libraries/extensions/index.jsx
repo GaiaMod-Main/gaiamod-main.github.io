@@ -236,7 +236,7 @@ const menuItems = [
         extensionId: 'https://gaiamod-main.github.io/GaiaAI.js',
         iconURL: gaiaAIThumb,
         tags: ['gaiamod', 'ai'],
-        description: 'A modified version of Pang AI originally made by logise1123!',
+        description: 'PangAI modified to add more stuff.',
         credits: 'logise1123',
         internetConnectionRequired: true,
         featured: true
@@ -290,6 +290,53 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Site Runtime',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/webextension.js',
+        tags: ['dinosaurmod'],
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/site-runtime.png',
+        description: 'A Combined version of 2 Extensions: Packager Applications & AdaBrowser',
+        featured: true,
+        extDeveloper: 'MrIncredibleMaker',
+        internetConnectionRequired: true,
+        disabled: false
+    },
+    {
+        name: 'Meme Extension',
+        extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
+        iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods'],
+        description: 'Get fresh baked memes.',
+        featured: true
+    },
+    {
+        name: 'Meme Extension',
+        extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
+        iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods'],
+        description: 'Get fresh baked memes.',
+        featured: true
+    },
+    {
+        name: 'Italian Brainrot Extension',
+        extensionId: 'https://banana-mod.github.io/Italian-Brainrot-Extension/italianbrainrot.js',
+        iconURL: 'https://banana-mod.github.io/Italian-Brainrot-Extension/itbr.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods'],
+        description: 'Let the italian brainrot enter!',
+        featured: true
+    },
+    {
+        name: 'BlockBeat',
+        extensionId: 'https://banana-mod.github.io/BlockBeat/blockBeat.js',
+        iconURL: 'https://banana-mod.github.io/BlockBeat/blockBeat.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods'],
+        description: 'Lets you play blockBeat!',
+        featured: true
+    },
+    {
         name: 'URL Information',
         extensionId: 'https://snail-ide.js.org/urlinfo.js',
         iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/urlinfo/urlinfo.png?raw=true',
@@ -308,38 +355,64 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Posenet2Scratch',
-        extensionId: 'posenet2scratch',
-        iconURL: 'https://www.adacraft.org/studio/static/assets/cc4d68fe9d6a77c7f35f9d5461b60967.png',
-        insetIconURL: 'https://raw.githubusercontent.com/champierre/posenet2scratch/master/scratch-gui/src/lib/libraries/extensions/posenet2scratch/posenet2scratch-small.png',
-        credits: 'champierre',
-        internetConnectionRequired: true,
+        name: 'PangAI',
+        extensionId: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.js',
+        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.png',
         tags: ['othermods', 'ai'],
-        description: 'Detect human poses quickly and accurately with a normal WebCam without using a special device',
+        description: 'Extension for AI usage.',
+        credits: 'logise1123',
+        internetConnectionRequired: true,
         featured: true
     },
     {
-        name: 'Facemesh2scratch',
-        extensionId: 'facemesh2scratch',
-        iconURL: 'https://raw.githubusercontent.com/champierre/facemesh2scratch/master/scratch-gui/src/lib/libraries/extensions/facemesh2scratch/facemesh2scratch.png',
-        insetIconURL: 'https://raw.githubusercontent.com/champierre/facemesh2scratch/master/scratch-gui/src/lib/libraries/extensions/facemesh2scratch/facemesh2scratch-small.png',
-        credits: 'champierre',
-        internetConnectionRequired: true,
+        name: 'FireBase Auth',
+        extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
+        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/firebaseauth.png',
         tags: ['othermods', 'ai'],
-        description: 'Use facetracking in your projects!',
+        description: 'Secure Authentication.',
+        credits: 'logise1123',
+        internetConnectionRequired: true,
+        featured: true
+    },
+        {
+        name: 'Video Sharing',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/main.js',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/cover.svg',
+        tags: ['penguinmod'],
+        description: 'Share your screen or camera on your project as a data-uri.',
+        extDeveloper: 'Pooiod7',
         featured: true
     },
     {
-        name: 'ImageClassifer2Scratch',
-        extensionId: 'ic2scratch',
-        iconURL: 'https://raw.githubusercontent.com/champierre/ic2scratch/master/scratch-gui/src/lib/libraries/extensions/ic2scratch/ic2scratch.png',
-        insetIconURL: 'https://raw.githubusercontent.com/champierre/ic2scratch/master/scratch-gui/src/lib/libraries/extensions/ic2scratch/ic2scratch-small.png',
-        credits: 'champierre',
+        name: 'Kobold AI',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/main.js',
+        extDeveloper: 'Pooiod7',
+        description: 'Generate text and images for free with the power of The Horde',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/cover.svg',
+        tags: ['penguinmod', 'ai'],
         internetConnectionRequired: true,
-        tags: ['othermods', 'ai'],
-        description: 'Image Classification Blocks.',
         featured: true
     },
+    {
+        name: 'Hand Positions',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/HandPos/main.js',
+        credits: 'champierre',
+        description: 'Hand tracking in scratch',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/HandPos/cover.svg',
+        tags: ['penguinmod', 'ai'],
+        internetConnectionRequired: true,
+        featured: true
+    },	
+    {
+        name: 'SAM Speech',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/Sam/main.js',
+        extDeveloper: 'Pooiod7',
+        description: 'Generate speech from text using sam',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/Sam/cover.svg',
+        tags: ['penguinmod', 'ai'],
+        internetConnectionRequired: true,
+        featured: true
+    },	
     {
         name: 'Beepbox Player',
         extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
@@ -546,35 +619,6 @@ const menuItems = [
         extDeveloper: 'LilyMakesThings',
         featured: true
     },
-        {
-        name: 'Video Sharing',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/main.js',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/cover.svg',
-        tags: ['penguinmod'],
-        description: 'Share your screen or camera on your project as a data-uri.',
-        extDeveloper: 'Pooiod7',
-        featured: true
-    },
-    {
-        name: 'Kobold AI',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/main.js',
-        extDeveloper: 'Pooiod7',
-        description: 'Generate text and images for free with the power of The Horde',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/cover.svg',
-        tags: ['othermods', 'ai'],
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'Hand Positions',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/HandPos/main.js',
-        credits: 'champierre',
-        description: 'Hand tracking in scratch',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/HandPos/cover.svg',
-        tags: ['othermods', 'ai'],
-        internetConnectionRequired: true,
-        featured: true
-    },	
     {
         name: 'Tweening',
         extensionId: 'jgTween',

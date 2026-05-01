@@ -4,7 +4,7 @@ export const randomMessages = [
     "GaiaMod.",
     'Crazy? I was crazy once. They locked me in a room, a dirty room. A dirty room with roaches and gnats. And roaches and gnats always make me crazy.',
     "I LOVE PENGUINMOD!!!",
-    "The default character sprite is called Mini-Gaia.",
+    "The default character sprite is a spaceship named Ship Guy.",
     "penguinmod:menguinpod, gaiamod:maiagod",
 	"You give garbage cans nicknames?",
 	"Fallout Bomberman?",
