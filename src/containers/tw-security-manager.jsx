@@ -29,8 +29,6 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://gaiamod-main.github.io/') ||
     url.startsWith('https://gaiamod-main.github.io/GaiaMod-Extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/GaiaMod-Main/GaiaMod-Extensions/refs/heads/main/src/extensions/') ||
-    url.startsWith('https://gaiawindwave90.github.io/scratch/projects/gaiamod/') ||
-    url.startsWith('https://raw.githubusercontent.com/gaiawindwave90/gaiawindwave90.github.io/refs/heads/main/scratch/gaiamod/') ||
     url.startsWith('https://raw.githubusercontent.com/champierre/') ||
     url.startsWith('https://snail-ide.js.org/') ||
     url.startsWith('https://snail-ide.vercel.app/') ||
