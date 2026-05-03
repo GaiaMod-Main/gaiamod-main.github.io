@@ -220,17 +220,17 @@ body[coloraccent="Rainbow"] {
     --menu-bar-background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.75) 0%, rgba(255, 154, 0, 0.75) 10%, rgba(208, 222, 33, 0.75) 20%, rgba(79, 220, 74, 0.75) 30%, rgba(63, 218, 216, 0.75) 40%, rgba(47, 201, 226, 0.75) 50%, rgba(28, 127, 238, 0.75) 60%, rgba(95, 21, 242, 0.75) 70%, rgba(186, 12, 248, 0.75) 80%, rgba(251, 7, 217, 0.75) 90%, rgba(255, 0, 0, 0.75) 100%);
 }
 
-body[coloraccent="OOHVERYSCARY"] {
-    --motion-primary: #ff0000;
-    --motion-tertiary: #d60000;
-    --motion-transparent: #ff000057;
-    --motion-light-transparent: #d6000026;
+body[coloraccent="NIGHTMARE"] {
+--motion-primary: #5E0000;
+--motion-tertiary: #470000; /* #007bc7 */
+--motion-transparent: #540000; /* 35% transparent version of motion-primary */
+--motion-light-transparent: #8F0000; /* 15% transparent version of motion-primary */
 
     --paint-motion-primary: #ff0000;
     --paint-motion-tertiary: #d60000;
     --paint-motion-transparent: #ff000057;
 
-    --motion-primary-dark: #ff0000;
+    --motion-primary-dark: #3D0000;
 
     --extensions-primary: rgb(0, 0, 0);
     --extensions-tertiary: rgb(47, 8, 0);

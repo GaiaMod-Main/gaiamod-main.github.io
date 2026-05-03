@@ -72,7 +72,7 @@
         if (accentTheme) document.body.setAttribute("coloraccent", accentTheme || "Gaia Blue")
         if (accentTheme == null) document.body.setAttribute("coloraccent", "Gaia Blue")
         window.Recolor = {primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')}
-        if (new URLSearchParams(location.search).has("666")) {document.body.setAttribute("colorAccent", "OOHVERYSCARY"); document.body.setAttribute('theme', 'dark'); document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+        if (new URLSearchParams(location.search).has("666")) {document.body.setAttribute("colorAccent", "NIGHTMARE"); document.body.setAttribute('theme', 'dark'); document.querySelector('#splash').setAttribute('splash-theme', 'dark');
           while (document.querySelector('#app') == null) {await new Promise(r => setTimeout(r, 50))}
           document.querySelector('#app').style.filter = "contrast(200%)";
           const evt = new Event('click');
