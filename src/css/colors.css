@@ -54,31 +54,60 @@ $drop-highlight: hsla(240, 100%, 77%, 1); /* lighter than motion-primary */
 }
 
 body[coloraccent="Lime Green"] {
-    --motion-primary: hsla(92, 91%, 53%, 1); /* #00c3ff */
-    --motion-tertiary: hsla(92, 80%, 43%, 1); /* #007bc7 */
-    --motion-transparent: hsla(92, 92%, 53%, 0.35); /* 35% transparent version of motion-primary */
-    --motion-light-transparent: hsla(92, 80%, 43%, 0.15); /* 15% transparent version of motion-primary */
+$ui-primary: hsla(215, 100%, 95%, 1); /* #E5F0FF */
+$ui-secondary: hsla(215, 75%, 95%, 1); /* #E9F1FC */
+$ui-tertiary: hsla(215, 50%, 90%, 1); /* #D9E3F2 */
 
-    --paint-motion-primary: hsla(92, 91%, 53%, 1); /* #00c3ff */
-    --paint-motion-tertiary: hsla(92, 80%, 43%, 1); /* #007bc7 */
-    --paint-motion-transparent: hsla(92, 92%, 53%, 0.35); /* 35% transparent version of motion-primary */
+$ui-modal-overlay: hsla(240, 100%, 65%, 0.9); /* 90% transparent version of motion-primary */
 
-    /* opt-in theme overrides */
-    --motion-primary-dark: hsla(84, 100%, 41%, 1); /*top bar color when in dark mode*/ /*when it doesn't work. change back: hsla(92, 91%, 53%, 1)*/
+$ui-white: hsla(0, 100%, 100%, 1); /* #FFFFFF */
+$ui-white-dim: hsla(0, 100%, 100%, 0.75); /* 25% transparent version of ui-white */
+$ui-white-transparent: hsla(0, 100%, 100%, 0.25); /* 25% transparent version of ui-white */
+$ui-transparent: hsla(0, 100%, 100%, 0); /* 25% transparent version of ui-white */
 
-    --extensions-primary: hsla(92, 91%, 53%, 1);
-    --extensions-tertiary: hsla(92, 80%, 43%, 1);
-    --extensions-transparent: hsla(92, 91%, 53%, 0.35); /* 35% transparent version of extensions-primary */
-    --extensions-light: hsla(92, 80%, 43%, 1); /* opaque version of extensions-transparent, on white bg */
+$ui-black-transparent-default: hsla(0, 0%, 0%, 0.15); /* 15% transparent version of black */
+$ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default);
 
-    --drop-highlight: hsla(92, 91%, 59%, 1); /* lighter than motion-primary */
+$text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); /* #575E75 */
+$text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
-    /* menu bar colors */
-    --menu-bar-background: var(--motion-primary);
-    --menu-bar-background-dark: var(--motion-primary-dark);
+$motion-primary: hsla(92, 91%, 53%, 1); /* #00c3ff */
+$motion-tertiary: hsla(92, 80%, 43%, 1); /* #007bc7 */
+$motion-transparent: hsla(92, 92%, 53%, 0.35); /* 35% transparent version of motion-primary */
+$motion-light-transparent: hsla(92, 80%, 43%, 0.15); /* 15% transparent version of motion-primary */
 
-    --menu-bar-background-image: none;
+/* opt-in theme overrides */
+$motion-primary-dark: hsla(240, 65%, 40%, 1); /*top bar color when in dark mode*/
+$ui-primary-light: hsla(215, 100%, 95%, 1);
+$ui-secondary-light: hsla(215, 75%, 95%, 1);
+$ui-tertiary-light: hsla(215, 50%, 90%, 1);
+$text-primary-light: hsla(225, 15%, 40%, 1);
+
+$red-primary: hsla(240, 65%, 50%, 1); /* #00c3ff */
+$red-tertiary: hsla(240, 65%, 30%, 1); /* #007bc7 */
+
+$sound-primary: hsla(300, 53%, 60%, 1); /* #CF63CF */
+$sound-tertiary: hsla(300, 48%, 50%, 1); /* #BD42BD */
+
+$control-primary: hsla(38, 100%, 55%, 1); /* #FFAB19 */
+
+$data-primary: hsla(30, 100%, 55%, 1); /* #FF8C1A */
+
+$pen-primary: hsla(163, 85%, 40%, 1); /* #0FBD8C */
+$pen-transparent: hsla(163, 85%, 40%, 0.25); /* #0FBD8C */
+
+$error-primary: hsla(30, 100%, 55%, 1); /* #FF8C1A */
+$error-light: hsla(30, 100%, 70%, 1); /* #FFB366 */
+$error-transparent: hsla(30, 100%, 55%, 0.25); /* #FF8C1A */
+
+$extensions-primary: hsla(92, 91%, 53%, 1);
+$extensions-tertiary: hsla(92, 80%, 43%, 1);
+$extensions-transparent: hsla(92, 91%, 53%, 0.35); /* 35% transparent version of extensions-primary */
+$extensions-light: hsla(92, 80%, 43%, 1); /* opaque version of extensions-transparent, on white bg */
+
+$drop-highlight: hsla(92, 91%, 59%, 1); /* lighter than motion-primary */
 }
+
 body[coloraccent="Light Blue"] {
     --motion-primary: hsla(194, 100%, 50%, 1);
     --motion-tertiary: hsla(203, 100%, 39%, 1);
@@ -103,6 +132,7 @@ body[coloraccent="Light Blue"] {
 
     --menu-bar-background-image: none;
 }
+
 body[coloraccent="Red"] {
     --motion-primary: #ff4c4c;
     --motion-tertiary: #cc3333;
@@ -151,6 +181,7 @@ body[coloraccent="Blue"] {
 
     --menu-bar-background-image: none;
 }
+
 body[coloraccent="Corrupted Blue"] {
     --motion-primary: #625e97;
     --motion-tertiary: hsla(203, 100%, 17%, 1);
@@ -175,6 +206,7 @@ body[coloraccent="Corrupted Blue"] {
 
     --menu-bar-background-image: none;
 }
+
 body[coloraccent="Scratch"] {
     --motion-primary: hsla(260, 60%, 60%, 1);
     --motion-tertiary: hsla(260, 42%, 51%, 1);
@@ -199,6 +231,7 @@ body[coloraccent="Scratch"] {
 
     --menu-bar-background-image: none;
 }
+
 body[coloraccent="Magenta"] {
     --motion-primary: hsla(289, 100%, 54%, 1);
     --motion-tertiary: hsla(289, 100%, 39%, 1);
@@ -223,6 +256,7 @@ body[coloraccent="Magenta"] {
 
     --menu-bar-background-image: none;
 }
+
 body[coloraccent="Rainbow"] {
     --motion-primary: #ff4c4c;
     --motion-tertiary: #cc3333;
@@ -247,6 +281,7 @@ body[coloraccent="Rainbow"] {
 
     --menu-bar-background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.75) 0%, rgba(255, 154, 0, 0.75) 10%, rgba(208, 222, 33, 0.75) 20%, rgba(79, 220, 74, 0.75) 30%, rgba(63, 218, 216, 0.75) 40%, rgba(47, 201, 226, 0.75) 50%, rgba(28, 127, 238, 0.75) 60%, rgba(95, 21, 242, 0.75) 70%, rgba(186, 12, 248, 0.75) 80%, rgba(251, 7, 217, 0.75) 90%, rgba(255, 0, 0, 0.75) 100%);
 }
+
 body[coloraccent="OOHVERYSCARY"] {
     --motion-primary: #ff0000;
     --motion-tertiary: #d60000;
