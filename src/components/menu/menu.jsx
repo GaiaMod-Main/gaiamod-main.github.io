@@ -32,6 +32,31 @@ MenuComponent.propTypes = {
     place: PropTypes.oneOf(['left', 'right'])
 };
 
+const Submenu = ({children, className, place, ...props}) => (
+    <div
+        className={classNames(
+            styles.submenu,
+            className,
+            {
+                [styles.left]: place === 'left',
+                [styles.right]: place === 'right'
+            }
+        )}
+    >
+        <MenuComponent
+            place={place}
+            {...props}
+        >
+            {children}
+        </MenuComponent>
+    </div>
+);
+
+Submenu.propTypes = {
+    children: PropTypes.node,
+    className: PropTypes.string,
+    place: PropTypes.oneOf(['left', 'right'])
+};
 
 const MenuItem = ({
     children,
@@ -80,5 +105,6 @@ MenuSection.propTypes = {
 export {
     MenuComponent as default,
     MenuItem,
-    MenuSection
+    MenuSection,
+    Submenu
 };

@@ -45,6 +45,8 @@ import TWRestorePointManager from '../../containers/tw-restore-point-manager.jsx
 import TWFontsModal from '../../containers/tw-fonts-modal.jsx';
 import PMExtensionModals from '../../containers/pm-extension-modals.jsx';
 
+import GMCustomAccentModal from '../../containers/gm-custom-accent-modal.jsx';
+
 import layout, {STAGE_SIZE_MODES} from '../../lib/layout-constants';
 import {resolveStageSize} from '../../lib/screen-utils';
 
@@ -176,6 +178,7 @@ const GUIComponent = props => {
         usernameModalVisible,
         settingsModalVisible,
         customExtensionModalVisible,
+		customAccentModalVisible,
 		extensionsManagerModalVisible,
         fontsModalVisible,
         isPlayground,
@@ -375,8 +378,8 @@ const GUIComponent = props => {
                 {settingsModalVisible && <TWSettingsModal />}
                 {customExtensionModalVisible && <TWCustomExtensionModal />}
 				{extensionsManagerModalVisible && <ExtensionManagerModal />}
-                {extensionsManagerModalVisible && <ExtensionManagerModal />}
                 {fontsModalVisible && <TWFontsModal />}
+				{customAccentModalVisible && <GMCustomAccentModal />}
                 <PMExtensionModals vm={vm} />
             </React.Fragment>
         );
@@ -750,6 +753,7 @@ GUIComponent.propTypes = {
     usernameModalVisible: PropTypes.bool,
     settingsModalVisible: PropTypes.bool,
     customExtensionModalVisible: PropTypes.bool,
+    customAccentModalVisible: PropTypes.bool,
 	extensionsManagerModalVisible : PropTypes.bool,
     fontsModalVisible: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired

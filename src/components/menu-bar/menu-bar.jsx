@@ -26,8 +26,8 @@ import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 
-//import TWAccentThemeMenu from './tw-theme-accent.jsx';
-//import TWGuiThemeMenu from './tw-theme-gui.jsx';
+import TWAccentThemeMenu from './tw-theme-accent.jsx';
+import TWGuiThemeMenu from './tw-theme-gui.jsx';
 import LanguageMenu from './language-menu.jsx';
 
 import FramerateChanger from '../../containers/tw-framerate-changer.jsx';
@@ -53,12 +53,12 @@ import {
     openAccountMenu,
     closeAccountMenu,
     accountMenuOpen,
-    openThemeMenu,
-    closeThemeMenu,
-    themeMenuOpen,
     openFileMenu,
     closeFileMenu,
     fileMenuOpen,
+    openSettingsMenu,
+    closeSettingsMenu,
+    settingsMenuOpen,
     openEditMenu,
     closeEditMenu,
     editMenuOpen,
@@ -87,6 +87,7 @@ import moonIcon from './tw-moon.svg';
 import sunIcon from './tw-sun.svg';
 
 import fileIcon from './gm-file.svg';
+import settingsIcon from './gm-wrench.svg';
 import editIcon from './gm-pencil.svg';
 import addonsIcon from './gm-puzzle.svg';
 import advancedIcon from './gm-star-advanced.svg';
@@ -525,7 +526,7 @@ class MenuBar extends React.Component {
                             </div>
                             <LanguageSelector label={this.props.intl.formatMessage(ariaMessages.language)} />
                         </div>)}
-                       {/* tw: theme toggler */}
+                       {/* tw: theme toggler }
                         {this.props.onClickTheme && (
                             <div
                                 className={classNames(styles.menuBarItem, styles.hoverable)}
@@ -548,7 +549,7 @@ class MenuBar extends React.Component {
                                     className={styles.sunIcon}
                                 />
                             </div>
-                        )}
+                        )*/}
                         {/* tw: display compile errors */}
                         {this.props.compileErrors.length > 0 && <div>
                             <div
@@ -602,6 +603,46 @@ class MenuBar extends React.Component {
                                 </MenuBarMenu>
                             </div>
                         </div>}
+<div
+                            className={classNames(styles.menuBarItem, styles.hoverable, {
+                                [styles.active]: this.props.settingsMenuOpen
+                            })}
+                            onMouseUp={this.props.onClickSettingsItem}
+                        >
+						<img
+                                    src={settingsIcon}
+                                    draggable={false}
+                                    width={20}
+                                    height={20}
+                                />
+                            <div className={classNames(styles.editMenu)}>
+                                <FormattedMessage
+                                    defaultMessage="Settings"
+                                    description="Text for settings dropdown menu"
+                                    id="gui.menuBar.settings"
+                                />
+                            </div>
+                            <MenuBarMenu
+                                className={classNames(styles.menuBarMenu)}
+                                open={this.props.settingsMenuOpen}
+                                place={this.props.isRtl ? 'left' : 'right'}
+                                onRequestClose={this.props.onRequestCloseSettings}
+                            >
+                                <MenuSection>
+                                    <TWGuiThemeMenu
+                                        onChangeTheme={this.props.onClickTheme}
+                                    />
+                                    <TWAccentThemeMenu />
+                                    {/*<MenuItem onClick={() => {alert("doesn't do anything")}}>
+                                        <FormattedMessage
+                                            defaultMessage="Doesn't do anything.."
+                                            description="Placeholder Menu bar item for settings"
+                                            id="dm.menuBar.placeHolder"
+                                        />
+                                    </MenuItem>*/}
+                                </MenuSection>
+                            </MenuBarMenu>
+                        </div>
                         {(this.props.canManageFiles) && (
                             <div
                                 className={classNames(styles.menuBarItem, styles.hoverable, {
@@ -1060,7 +1101,6 @@ MenuBar.propTypes = {
     onClickSeeInside: PropTypes.func,
     aboutMenuOpen: PropTypes.bool,
     accountMenuOpen: PropTypes.bool,
-    themeMenuOpen: PropTypes.bool,
     authorId: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     authorThumbnailUrl: PropTypes.string,
     authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -1083,6 +1123,7 @@ MenuBar.propTypes = {
     editMenuOpen: PropTypes.bool,
     enableCommunity: PropTypes.bool,
     fileMenuOpen: PropTypes.bool,
+    settingsMenuOpen: PropTypes.bool,
     handleSaveProject: PropTypes.func,
     intl: intlShape,
     isDirectoryPickerSupported: PropTypes.bool,
@@ -1120,6 +1161,7 @@ MenuBar.propTypes = {
     onClickSave: PropTypes.func,
     onClickSaveAsCopy: PropTypes.func,
     onClickSettings: PropTypes.func,
+    onClickSettingsItem: PropTypes.func,
     onClickExtManager: PropTypes.func,
     onClickCustManager: PropTypes.func,
     onClickErrors: PropTypes.func,
@@ -1131,6 +1173,7 @@ MenuBar.propTypes = {
     onRequestOpenAbout: PropTypes.func,
     onRequestCloseAbout: PropTypes.func,
     onRequestCloseAccount: PropTypes.func,
+    onRequestCloseSettings: PropTypes.func,
     onRequestCloseEdit: PropTypes.func,
     onRequestCloseFile: PropTypes.func,
     onRequestCloseLanguage: PropTypes.func,
@@ -1165,12 +1208,12 @@ const mapStateToProps = (state, ownProps) => {
     return {
         aboutMenuOpen: aboutMenuOpen(state),
         accountMenuOpen: accountMenuOpen(state),
-        themeMenuOpen: accountMenuOpen(state),
         authorThumbnailUrl: state.scratchGui.tw.author.thumbnail,
         authorUsername: state.scratchGui.tw.author.username,
         compileErrors: state.scratchGui.tw.compileErrors,
         fileMenuOpen: fileMenuOpen(state),
         editMenuOpen: editMenuOpen(state),
+        settingsMenuOpen: settingsMenuOpen(state),
         isPlayerOnly: state.scratchGui.mode.isPlayerOnly,
         isRtl: state.locales.isRtl,
         isUpdating: getIsUpdating(loadingState),
@@ -1197,6 +1240,8 @@ const mapDispatchToProps = dispatch => ({
     onClickAccount: () => dispatch(openAccountMenu()),
     onRequestCloseAccount: () => dispatch(closeAccountMenu()),
     onClickFile: () => dispatch(openFileMenu()),
+    onRequestCloseSettings: () => dispatch(closeSettingsMenu()),
+    onClickSettingsItem: () => dispatch(openSettingsMenu()),
     onRequestCloseFile: () => dispatch(closeFileMenu()),
     onClickEdit: () => dispatch(openEditMenu()),
     onRequestCloseEdit: () => dispatch(closeEditMenu()),
@@ -1220,6 +1265,7 @@ const mapDispatchToProps = dispatch => ({
         dispatch(openSettingsModal());
         dispatch(closeEditMenu());
     },
+onClickSettingsItem: () => dispatch(openSettingsMenu()),
    onClickExtManager: () => {
         dispatch(openExtManagerModal());
         dispatch(closeEditMenu());

@@ -24,17 +24,17 @@ const options = defineMessages({
     [ACCENT_GAIABLUE]: {
         defaultMessage: 'Gaia Blue',
         description: 'Name of the blue color scheme. Used by GaiaMod by default.',
-        id: 'dm.accent.gaiablue'
+        id: 'gm.accent.gaiablue'
     },
     [ACCENT_LIME]: {
         defaultMessage: 'Lime Green',
-        description: 'Name of the lime green color scheme. Matches DinosaurMod\'s colors.',
-        id: 'dm.accent.limegreen'
+        description: 'Name of the lime green color scheme.',
+        id: 'gm.accent.limegreen'
     },
     [ACCENT_LIGHTBLUE]: {
         defaultMessage: 'Light Blue',
         description: 'Name of the light blue color scheme. Matches Penguinmod\'s colors.',
-        id: 'dm.accent.lightblue'
+        id: 'gm.accent.lightblue'
     },
     [ACCENT_BLUE]: {
         defaultMessage: 'Blue',
@@ -44,12 +44,12 @@ const options = defineMessages({
     [ACCENT_SCRATCH]: {
         defaultMessage: 'Scratch',
         description: 'Name of the Scratch\'s color scheme. Matches Scratch-GUI\'s colors.',
-        id: 'dm.accent.scratch'
+        id: 'gm.accent.scratch'
     },
     [ACCENT_MAGENTA]: {
         defaultMessage: 'Magenta',
         description: 'Name of the magenta (sort of) color scheme. Matches Snail-IDE\'s colors.',
-        id: 'dm.accent.magenta'
+        id: 'gm.accent.magenta'
     },
     [ACCENT_RAINBOW]: {
         defaultMessage: 'Rainbow',
@@ -59,7 +59,7 @@ const options = defineMessages({
     ["custom"]: {
         defaultMessage: 'Custom Accent',
         description: 'Label of the button that opens a custom accent modal.',
-        id: 'dm.accent.custom'
+        id: 'gm.accent.custom'
     }
 });
 

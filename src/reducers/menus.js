@@ -3,6 +3,8 @@ const CLOSE_MENU = 'scratch-gui/menus/CLOSE_MENU';
 
 const MENU_ABOUT = 'aboutMenu';
 const MENU_ACCOUNT = 'accountMenu';
+const MENU_SETTINGS = 'settingsMenu';
+const MENU_ACCENT = 'accentMenu';
 const MENU_THEME = 'themeMenu';
 const MENU_FILE = 'fileMenu';
 const MENU_EDIT = 'editMenu';
@@ -15,12 +17,63 @@ const initialState = {
     [MENU_ABOUT]: false,
     [MENU_ACCOUNT]: false,
     [MENU_THEME]: false,
+    [MENU_SETTINGS]: false,
+    [MENU_ACCENT]: false,
     [MENU_FILE]: false,
     [MENU_EDIT]: false,
     [MENU_LANGUAGE]: false,
     [MENU_LOGIN]: false,
     [MENU_ERRORS]: false
 };
+
+class Menu {
+    constructor (id) {
+        this.id = id;
+        this.children = [];
+        this.parent = null;
+    }
+
+    addChild (menu) {
+        this.children.push(menu);
+        menu.parent = this;
+        return this;
+    }
+
+    descendants () {
+        return this.children.flatMap(child => [child, ...child.descendants()]);
+    }
+
+    siblings () {
+        if (!this.parent) return [];
+
+        return this.parent.children.filter(child => child.id !== this.id);
+    }
+
+    findById (id) {
+        if (this.id === id) return this;
+
+        for (const child of this.children) {
+            const found = child.findById(id);
+            if (found) return found;
+        }
+
+        return null;
+    }
+}
+
+// Structure of nested menus, used for collapsing submenus logic.
+const rootMenu = new Menu('root')
+    .addChild(new Menu(MENU_ERRORS))
+    .addChild(
+        new Menu(MENU_SETTINGS)
+            .addChild(new Menu(MENU_ACCENT))
+    )
+    .addChild(new Menu(MENU_FILE))
+    .addChild(new Menu(MENU_EDIT))
+    .addChild(new Menu(MENU_SETTINGS))
+    .addChild(new Menu(MENU_LOGIN))
+    .addChild(new Menu(MENU_ACCOUNT))
+    .addChild(new Menu(MENU_ABOUT));
 
 const reducer = function (state, action) {
     if (typeof state === 'undefined') state = initialState;
@@ -51,6 +104,12 @@ const aboutMenuOpen = state => state.scratchGui.menus[MENU_ABOUT];
 const openAccountMenu = () => openMenu(MENU_ACCOUNT);
 const closeAccountMenu = () => closeMenu(MENU_ACCOUNT);
 const accountMenuOpen = state => state.scratchGui.menus[MENU_ACCOUNT];
+const openSettingsMenu = () => openMenu(MENU_SETTINGS);
+const closeSettingsMenu = () => closeMenu(MENU_SETTINGS);
+const settingsMenuOpen = state => state.scratchGui.menus[MENU_SETTINGS];
+const openAccentMenu = () => openMenu(MENU_ACCENT);
+const closeAccentMenu = () => closeMenu(MENU_ACCENT);
+const accentMenuOpen = state => state.scratchGui.menus[MENU_ACCENT];
 const openThemeMenu = () => openMenu(MENU_THEME);
 const closeThemeMenu = () => closeMenu(MENU_THEME);
 const themeMenuOpen = state => state.scratchGui.menus[MENU_THEME];
@@ -79,6 +138,12 @@ export {
     openAccountMenu,
     closeAccountMenu,
     accountMenuOpen,
+    openSettingsMenu,
+    closeSettingsMenu,
+    settingsMenuOpen,
+    openAccentMenu,
+    closeAccentMenu,
+    accentMenuOpen,
     openThemeMenu,
     closeThemeMenu,
     themeMenuOpen,

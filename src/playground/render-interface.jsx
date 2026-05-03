@@ -527,7 +527,7 @@ class Interface extends React.Component {
                                     {/*<FormattedMessage
                                         // eslint-disable-next-line max-len
                                         defaultMessage="<a style='color: #80F41A; cursor: pointer;'>GaiaMod</a> is a mod of <a style='color: #00C3FF; cursor: pointer;' href='https://penguinmod.com'>Penguinmod</a> that adds new blocks and features in extensions or the main toolbox. <a style='color: #00C3FF; cursor: pointer;' href='https://penguinmod.com'>Penguinmod</a> is a cool mod of <a style='color: #FF4C4C; cursor: pointer;' href='https://turbowarp.org'>turbowarp</a> to share projects with other people. <a style='color: #FF4C4C; cursor: pointer;' href='https://turbowarp.org'>TurboWarp</a> is a <a style='color: #FCA919; cursor: pointer;' href='https://scratch.mit.edu'>Scratch</a> mod that compiles projects to JavaScript to make them run really fast. Try it out by choosing an uploaded project below or making your own in the editor."
-                                        description="Description of Dinosaurmod, PenguinMod and TurboWarp"
+                                        description="Description of GaiaMod, PenguinMod and TurboWarp"
                                         id="tw.home.description"
                                     />*/}
                                     <span>

@@ -50,12 +50,46 @@
         <div id="splash-spinner"></div>
      </div>
     </div>
-    <script>
-      (function() {
+<script>
+      (async function() {
         document.querySelector('#splash-content').style.display = 'block';
+        const errorLabel = document.querySelector('#splash-debug-error');
+        window.addEventListener('error', function(event) {
+          const errorDetails = {
+            message: event.message,
+            filename: event.filename,
+            lineno: event.lineno,
+            colno: event.colno,
+            error: event.error ? event.error.stack || event.error.toString() : 'No error object'
+          };
+          if (errorLabel) errorLabel.innerHTML += `<pre>${JSON.stringify(errorDetails, null, 2)}</pre>`;
+        });
         <% if (!htmlWebpackPlugin.options.noTheme) { %>
         try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
+        if (localStorage.getItem("tw:accent:customAccents") == null) localStorage.setItem("tw:accent:customAccents", JSON.stringify([]));
         if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+        try {var accentTheme = localStorage.getItem('tw:accent');} catch (e) {}
+        if (accentTheme) document.body.setAttribute("coloraccent", accentTheme || "Gaia Blue")
+        if (accentTheme == null) document.body.setAttribute("coloraccent", "Gaia Blue")
+        window.Recolor = {primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')}
+        if (new URLSearchParams(location.search).has("666")) {document.body.setAttribute("colorAccent", "OOHVERYSCARY"); document.body.setAttribute('theme', 'dark'); document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+          while (document.querySelector('#app') == null) {await new Promise(r => setTimeout(r, 50))}
+          document.querySelector('#app').style.filter = "contrast(200%)";
+          const evt = new Event('click');
+          document.dispatchEvent(evt);
+          while (true) {
+            const thisAudio = new Audio('https://dinosaurmod.github.io/this.mp3');
+            const waittillthis = Math.floor(Math.random() * (2500 * 100)) + 1
+            const thise = document.createElement("div");
+            thise.style.display = "none";
+            thise.innerHTML = String(waittillthis)
+            thise.className = "secret"
+            document.body.appendChild(thise)
+            await new Promise(r => setTimeout(r, waittillthis))
+            thisAudio.play()
+            document.body.removeChild(thise)
+          }
+        }
         <% } %>
       })();
     </script>

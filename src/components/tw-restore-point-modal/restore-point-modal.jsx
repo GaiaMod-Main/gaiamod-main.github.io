@@ -40,6 +40,9 @@ const INTERVAL_OPTIONS = [
     MINUTE * 10,
     MINUTE * 15,
     MINUTE * 30,
+    MINUTE * 55,
+    MINUTE * 70,
+    MINUTE * 95,
     -1
 ];
 const IntervalSelector = props => (

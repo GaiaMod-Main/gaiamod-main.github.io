@@ -5,7 +5,7 @@ const searchParams = new URLSearchParams(location.search);
 const cloudHost = searchParams.get('cloud_host') || 'wss://clouddata.turbowarp.org';
 
 const onClickLogo = () => {
-    window.location = 'https://gaiawindwave90.github.io/';
+    window.location = 'https://gaiamod-main.github.io/Gaia-Home';
 };
 
 const RenderGUI = props => (
