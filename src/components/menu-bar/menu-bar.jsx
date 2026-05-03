@@ -1062,22 +1062,6 @@ class MenuBar extends React.Component {
                             </Button>
                         </a>
                     </div>
-                       <div className={styles.menuBarItem}>
-                        <a
-                            className={styles.feedbackLink}
-                            href="https://gaiamod-main.github.io/GaiaGPT.html"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            <Button className={styles.feedbackButton}>
-                                <FormattedMessage
-                                    defaultMessage="GaiaGPT"
-                                    description="Button to go back to open the AI"
-                                    id="pm.aiButton"
-                                />
-                            </Button>
-                        </a>
-                    </div>
                 </div>
                 <div className={styles.accountInfoGroup}>
                     <div className={styles.menuBarItem}>

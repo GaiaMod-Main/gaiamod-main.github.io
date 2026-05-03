@@ -12,9 +12,6 @@ const guiColors = {
     'drop-highlight': 'hsla(92, 91%, 59%, 1)'
 };
 
-const blockColors = {};
-
 export {
-    guiColors,
-    blockColors
+    guiColors as default
 };
