@@ -193,7 +193,6 @@ import cocreaFetchThumb from './gaiamod/cocreaFetch.png';
 import promptsThumb from './gaiamod/prompts.png';
 import spinachThumb from './gaiamod/spinach.png';
 import penguinThumb from './gaiamod/PenguinAttack.png';
-import catsThumb from './gaiamod/CatFacts.png';
 import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
 import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
 
@@ -1190,7 +1189,7 @@ const menuItems = [
         {
             name: 'CATS',
             extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
-            iconURL: catsThumb
+            iconURL: 'https://extensions.penguinmod.com/images/Gen1x/cats.avif',
             tags: ['penguinmod', 'joke'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
@@ -1852,11 +1851,46 @@ if (IsLocal || IsLiveTests) {
             featured: true
         },
         {
+            name: 'Easy Save',
+            extensionId: 'jgEasySave',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', 'datamgmt'],
+            description: 'Save variables, lists and extra info to a file, then load those things back in.',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="TurboWarp Blocks"
+                    description="Name of TW extension"
+                    id="tw.twExtension.name"
+                    values={{
+                        APP_NAME: "TurboWarp"
+                    }}
+                />
+            ),
+            extensionId: 'tw',
+            twDeveloper: 'GarboMuffin',
+            tags: ['turbowarp'],
+            insetIconURL: turbowarpIcon,
+            iconURL: twIcon,
+            description: 'Weird new blocks. Replaced by Sensing Expansion.',
+            featured: true
+        },
+        {
             name: 'the doo doo extension',
             extensionId: 'jgDooDoo',
             iconURL: defaultExtensionIcon,
             tags: ['penguinmod', 'joke'],
             description: 'dr bob eae',
+            featured: true
+        },
+        {
+            name: 'Christmas',
+            extensionId: 'jgChristmas',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
+            tags: ['penguinmod', 'joke'],
+            description: 'hooraye',
             featured: true
         },
         {
@@ -1874,6 +1908,15 @@ if (IsLocal || IsLiveTests) {
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.avif',
             tags: ['penguinmod', 'joke'],
             description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
+            featured: true
+        },
+        {
+            name: 'CATS',
+            extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
+            iconURL: 'https://extensions.penguinmod.com/images/Gen1x/cats.avif',
+            tags: ['penguinmod', 'joke'],
+            description: 'Blocks related to cats.',
+            extDeveloper: 'G1nX',
             featured: true
         },
         {
