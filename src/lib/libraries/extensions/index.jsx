@@ -192,6 +192,7 @@ import kittenbotThumb from './gaiamod/KittenBot.png';
 import cocreaFetchThumb from './gaiamod/cocreaFetch.png';
 import promptsThumb from './gaiamod/prompts.png';
 import spinachThumb from './gaiamod/spinach.png';
+import catsThumb from './gaiamod/CatFacts.png';
 import penguinThumb from './gaiamod/PenguinAttack.png';
 import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
 import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
@@ -1189,7 +1190,7 @@ const menuItems = [
         {
             name: 'CATS',
             extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
-            iconURL: 'https://extensions.penguinmod.com/images/Gen1x/cats.avif',
+            iconURL: catsThumb,
             tags: ['penguinmod', 'joke'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
@@ -1890,7 +1891,7 @@ if (IsLocal || IsLiveTests) {
             extensionId: 'jgChristmas',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
             tags: ['penguinmod', 'joke'],
-            description: 'hooraye',
+            description: 'It\'s not Christmas just yet!',
             featured: true
         },
         {
@@ -1913,7 +1914,7 @@ if (IsLocal || IsLiveTests) {
         {
             name: 'CATS',
             extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
-            iconURL: 'https://extensions.penguinmod.com/images/Gen1x/cats.avif',
+            iconURL: catsThumb,
             tags: ['penguinmod', 'joke'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
