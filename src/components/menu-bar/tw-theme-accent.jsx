@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import {MenuItem, Submenu} from '../menu/menu.jsx';
-import {ACCENT_LIGHTBLUE, ACCENT_MAP, ACCENT_RED, ACCENT_GAIABLUE, ACCENT_LIME, ACCENT_BLUE, ACCENT_SCRATCH, ACCENT_MAGENTA, ACCENT_PINK, ACCENT_PALEPURPLE, ACCENT_RAINBOW, Theme} from '../../lib/themes/index.js';
+import {ACCENT_LIGHTBLUE, ACCENT_MAP, ACCENT_RED, ACCENT_GAIABLUE, ACCENT_LIME, ACCENT_BLUE, ACCENT_SCRATCH, ACCENT_MAGENTA, ACCENT_PINK, ACCENT_PALEPURPLE, ACCENT_GOLD, ACCENT_SILVER, ACCENT_BLACK, ACCENT_RAINBOW, Theme} from '../../lib/themes/index.js';
 import {openAccentMenu, accentMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {openCustomAccentModal} from '../../reducers/modals';
 import {setTheme} from '../../reducers/theme.js';
@@ -60,6 +60,21 @@ const options = defineMessages({
         defaultMessage: 'Pink',
         description: 'Name of the pink color scheme. Matches Genesis-IDE\'s colors.',
         id: 'gm.accent.pink'
+    },
+    [ACCENT_GOLD]: {
+        defaultMessage: 'Gold',
+        description: 'Name of the gold color scheme.',
+        id: 'gm.accent.gold'
+    },
+    [ACCENT_SILVER]: {
+        defaultMessage: 'Silver',
+        description: 'Name of the silver color scheme.',
+        id: 'gm.accent.silver'
+    },
+    [ACCENT_BLACK]: {
+        defaultMessage: 'Black',
+        description: 'Name of the black color scheme.',
+        id: 'gm.accent.black'
     },
     [ACCENT_RAINBOW]: {
         defaultMessage: 'Rainbow',

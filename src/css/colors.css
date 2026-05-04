@@ -246,6 +246,69 @@ body[coloraccent="Gray Purple"] {
     --menu-bar-background-image: none;
 }
 
+body[coloraccent="Gold"] {
+    --motion-primary: hsla(46, 100%, 64%, 1);
+    --motion-tertiary: hsla(46, 100%, 50%, 0.9);
+    --motion-transparent: hsla(46, 100%, 64%, 0.35);
+    --motion-light-transparent: hsla(46, 100%, 83%, 0.15);
+
+    --motion-primary-dark: hsla(46, 100%, 42%, 1);
+
+    --extensions-primary: hsla(46, 100%, 60%, 1);
+    --extensions-tertiary: hsla(46, 100%, 50%, 1);
+    --extensions-transparent: hsla(46, 100%, 64%, 0.35);
+    --extensions-light: hsla(46, 100%, 83%, 1);
+    
+    --drop-highlight: hsla(46, 100%, 64%, 1);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: none;
+}
+
+body[coloraccent="Silver"] {
+    --motion-primary: hsla(268, 0%, 73%, 1);
+    --motion-tertiary: hsla(268, 0%, 50%, 0.9);
+    --motion-transparent: hsla(268, 0%, 64%, 0.35);
+    --motion-light-transparent: hsla(268, 0%, 83%, 0.15);
+
+    --motion-primary-dark: hsla(268, 0%, 42%, 1);
+
+    --extensions-primary: hsla(268, 0%, 60%, 1);
+    --extensions-tertiary: hsla(268, 0%, 50%, 1);
+    --extensions-transparent: hsla(268, 0%, 64%, 0.35);
+    --extensions-light: hsla(268, 0%, 83%, 1);
+    
+    --drop-highlight: hsla(268, 0%, 64%, 1);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: none;
+}
+
+body[coloraccent="Black"] {
+    --motion-primary: hsla(268, 0%, 24% 1);
+    --motion-tertiary: hsla(268, 0%, 20% 0.9);
+    --motion-transparent: hsla(268, 0%, 23% 0.35);
+    --motion-light-transparent: hsla(268, 0%, 30% 0.15);
+
+    --motion-primary-dark: hsla(268, 0%, 10% 1);
+
+    --extensions-primary: hsla(268, 0%, 24%, 1);
+    --extensions-tertiary: hsla(268, 0%, 20%, 1);
+    --extensions-transparent: hsla(268, 0%, 23% 0.35);
+    --extensions-light: hsla(268, 0%, 30%, 1);
+    
+    --drop-highlight: hsla(268, 0%, 28%, 1);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: none;
+}
+
 body[coloraccent="Rainbow"] {
     --motion-primary: #ff4c4c;
     --motion-tertiary: #cc3333;
