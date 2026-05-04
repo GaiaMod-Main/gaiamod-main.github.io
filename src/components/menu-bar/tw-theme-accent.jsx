@@ -54,7 +54,7 @@ const options = defineMessages({
     [ACCENT_PALEPURPLE]: {
         defaultMessage: 'Gray Purple',
         description: 'Name of the purplish grey color scheme. Matches Electramod\'s colors.',
-        id: 'gm.accent.pink'
+        id: 'gm.accent.graypurple'
     },
     [ACCENT_PINK]: {
         defaultMessage: 'Pink',
