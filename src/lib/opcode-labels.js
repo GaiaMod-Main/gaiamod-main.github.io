@@ -182,6 +182,11 @@ const messages = defineMessages({
         description: 'Label for the loudness monitor when shown on the stage',
         id: 'gui.opcodeLabels.loudness'
     },
+   sensing_online: {
+        defaultMessage: 'online',
+        description: 'Label for the online monitor when shown on the stage',
+        id: 'gui.opcodeLabels.online'
+    },
     sensing_username: {
         defaultMessage: 'username',
         description: 'Label for the username monitor when shown on the stage',
@@ -337,6 +342,7 @@ class OpcodeLabels {
             // Sensing
             sensing_answer: {category: 'sensing'},
             sensing_loudness: {category: 'sensing'},
+            sensing_online: {category: 'sensing'},
             sensing_username: {category: 'sensing'},
             sensing_current: {category: 'sensing'},
             sensing_timer: {category: 'sensing'},
@@ -427,6 +433,7 @@ class OpcodeLabels {
         // Sensing
         this._opcodeMap.sensing_answer.labelFn = () => this._translator(messages.sensing_answer);
         this._opcodeMap.sensing_loudness.labelFn = () => this._translator(messages.sensing_loudness);
+		this._opcodeMap.sensing_online.labelFn = () => this._translator(messages.sensing_online);
         this._opcodeMap.sensing_username.labelFn = () => this._translator(messages.sensing_username);
         this._opcodeMap.sensing_current.labelFn = params => {
             switch (params.CURRENTMENU.toLowerCase()) {

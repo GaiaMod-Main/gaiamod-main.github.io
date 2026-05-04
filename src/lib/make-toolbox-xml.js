@@ -973,6 +973,7 @@ const sensing = function (isInitialSetup, isStage, targetId) {
         </block>
         ${blockSeparator}
         <button text="${helpManual}" callbackKey="OPEN_USERNAME_DOCS" isLaterDefined="true" />
+        <block type="sensing_online"/>
         <block type="sensing_username"/>
         <block type="sensing_loggedin"/>
         ${categorySeparator}
