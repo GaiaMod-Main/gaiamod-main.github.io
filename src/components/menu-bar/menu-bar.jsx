@@ -85,14 +85,14 @@ import aboutIcon from './icon--about.svg';
 import errorIcon from './tw-error.svg';
 import moonIcon from './tw-moon.svg';
 import sunIcon from './tw-sun.svg';
+import midnightIcon from './tw-midnight.svg';
 
-import fileIcon from './gm-file.svg';
-import settingsIcon from './gm-wrench.svg';
-import editIcon from './gm-pencil.svg';
-import addonsIcon from './gm-puzzle.svg';
+import fileIcon from './icon--file.svg';
+import settingsIcon from './icon--settings.svg';
+import editIcon from './icon--edit.svg';
+import addonsIcon from './addons.svg';
 import advancedIcon from './gm-star-advanced.svg';
 import videoIcon from './gm-video.svg';
-import toolsIcon from './gm-wrench.svg';
 
 import scratchLogo from './scratch-logo.svg';
 

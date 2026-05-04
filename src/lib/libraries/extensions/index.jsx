@@ -1803,6 +1803,17 @@ Please keep these in livetests to reduce bug reports on your fork! :)
 */
 if (IsLocal || IsLiveTests) {
     const extras = [
+    {
+        name: 'Scratch2WebSerialAPI',
+        extensionId: 'scratch2webserialapi',
+        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png',
+        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/Icon.png',
+        collaborator: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods'],
+        description: 'Do more complex things with hardware via the serial ports.',
+        featured: true
+    },
         {
             name: (
                 <FormattedMessage
