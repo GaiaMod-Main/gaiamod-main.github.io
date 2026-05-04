@@ -195,6 +195,57 @@ body[coloraccent="Magenta"] {
 
     --menu-bar-background-image: none;
 }
+
+body[coloraccent="Pink"] {
+    --motion-primary: hsla(325, 60%, 60%, 1);
+    --motion-tertiary: hsla(325, 60%, 40%, 0.9);
+    --motion-transparent: hsla(325, 42%, 51%, 0.35);
+    --motion-light-transparent: hsla(325, 60%, 83%, 0.15);
+
+    --paint-motion-primary: hsla(289, 100%, 54%, 1);
+    --paint-motion-tertiary: hsla(289, 100%, 39%, 1);
+    --paint-motion-transparent: hsla(289, 100%, 54%, 0.35);
+
+    --motion-primary-dark: hsla(325, 60%, 42%, 1);
+
+    --extensions-primary: hsla(325, 60%, 60%, 1);
+    --extensions-tertiary: hsla(325, 60%, 60%, 1);
+    --extensions-transparent: hsla(325, 42%, 51%, 0.35);
+    --extensions-light: hsla(325, 60%, 83%, 1);
+    
+    --drop-highlight: hsla(325, 60%, 64%, 1);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: none;
+}
+
+body[coloraccent="Gray Purple"] {
+    --motion-primary: hsla(244, 23%, 48%, 1);
+    --motion-tertiary: hsla(244, 23%, 38%, 0.9);
+    --motion-transparent: hsla(244, 23%, 48%, 0.35);
+    --motion-light-transparent: hsla(262, 22%, 59%, 0.15);
+
+    --paint-motion-primary: hsla(244, 23%, 48%, 1);
+    --paint-motion-tertiary: hsla(244, 23%, 39%, 1);
+    --paint-motion-transparent: hsla(244, 23%, 54%, 0.35);
+
+    --motion-primary-dark: hsla(243, 21%, 20%, 1);
+
+    --extensions-primary: hsla(244, 23%, 48%, 1);
+    --extensions-tertiary: hsla(244, 23%, 38%, 0.9);
+    --extensions-transparent: hsla(244, 23%, 48%, 0.35);
+    --extensions-light: hsla(262, 22%, 59%, 1);
+    
+    --drop-highlight: hsla(262, 25%, 58%, 1);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: none;
+}
+
 body[coloraccent="Rainbow"] {
     --motion-primary: #ff4c4c;
     --motion-tertiary: #cc3333;

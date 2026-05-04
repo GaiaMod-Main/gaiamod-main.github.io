@@ -14,6 +14,8 @@ const ACCENT_RED = 'Red';
 const ACCENT_BLUE = 'Blue';
 const ACCENT_SCRATCH = 'Scratch';
 const ACCENT_MAGENTA = 'Magenta';
+const ACCENT_PINK = 'Pink';
+const ACCENT_PALEPURPLE = 'Gray Purple';
 const ACCENT_RAINBOW = 'Rainbow';
 const ACCENT_MAP = {
     [ACCENT_GAIABLUE]: accentGaia,
@@ -29,6 +31,12 @@ const ACCENT_MAP = {
     },
     [ACCENT_MAGENTA]: {
         'motion-primary': 'hsla(289, 100%, 54%, 1)'
+    },
+    [ACCENT_PINK]: {
+        'motion-primary': 'hsla(325, 60%, 60%, 1)'
+    },
+    [ACCENT_PALEPURPLE]: {
+        'motion-primary': '#625E97'
     },
     [ACCENT_RAINBOW]: {
         'motion-primary': '#ff4c4c'
@@ -77,6 +85,8 @@ export {
     ACCENT_RED,
     ACCENT_SCRATCH,
     ACCENT_MAGENTA,
+    ACCENT_PINK,
+    ACCENT_PALEPURPLE,
     ACCENT_BLUE,
     ACCENT_RAINBOW,
     ACCENT_MAP

@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import {MenuItem, Submenu} from '../menu/menu.jsx';
-import {ACCENT_LIGHTBLUE, ACCENT_MAP, ACCENT_RED, ACCENT_GAIABLUE, ACCENT_LIME, ACCENT_BLUE, ACCENT_SCRATCH, ACCENT_MAGENTA, ACCENT_RAINBOW, Theme} from '../../lib/themes/index.js';
+import {ACCENT_LIGHTBLUE, ACCENT_MAP, ACCENT_RED, ACCENT_GAIABLUE, ACCENT_LIME, ACCENT_BLUE, ACCENT_SCRATCH, ACCENT_MAGENTA, ACCENT_PINK, ACCENT_PALEPURPLE, ACCENT_RAINBOW, Theme} from '../../lib/themes/index.js';
 import {openAccentMenu, accentMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {openCustomAccentModal} from '../../reducers/modals';
 import {setTheme} from '../../reducers/theme.js';
@@ -23,12 +23,12 @@ const options = defineMessages({
     },
     [ACCENT_GAIABLUE]: {
         defaultMessage: 'Gaia Blue',
-        description: 'Name of the blue color scheme. Used by GaiaMod by default.',
+        description: 'Name of the blue color scheme. Used by Gaiamod by default.',
         id: 'gm.accent.gaiablue'
     },
     [ACCENT_LIME]: {
         defaultMessage: 'Lime Green',
-        description: 'Name of the lime green color scheme.',
+        description: 'Name of the lime green color scheme. Matches Dinosaurmod\'s colors.',
         id: 'gm.accent.limegreen'
     },
     [ACCENT_LIGHTBLUE]: {
@@ -50,6 +50,16 @@ const options = defineMessages({
         defaultMessage: 'Magenta',
         description: 'Name of the magenta (sort of) color scheme. Matches Snail-IDE\'s colors.',
         id: 'gm.accent.magenta'
+    },
+    [ACCENT_PALEPURPLE]: {
+        defaultMessage: 'Gray Purple',
+        description: 'Name of the purplish grey color scheme. Matches Electramod\'s colors.',
+        id: 'gm.accent.pink'
+    },
+    [ACCENT_PINK]: {
+        defaultMessage: 'Pink',
+        description: 'Name of the pink color scheme. Matches Genesis-IDE\'s colors.',
+        id: 'gm.accent.pink'
     },
     [ACCENT_RAINBOW]: {
         defaultMessage: 'Rainbow',
