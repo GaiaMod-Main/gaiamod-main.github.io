@@ -4,7 +4,8 @@ class GaiaModDetector {
     getInfo() {
       return {
         id: 'gaiaModDetector',
-        name: 'Gaia Mod Detector',
+        name: 'GaiaMod Detector',
+        color1: '#2D2DD2',
         blocks: [
           {
             opcode: 'isGaiaMod',
