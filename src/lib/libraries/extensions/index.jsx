@@ -180,12 +180,10 @@ import turboBuilderIcon from './gaiamod/turbobuilder.png';
 import turboBuilderDevIcon from './gaiamod/turbobuilder-dev.png';
 import silvxrcatOddMessagesExtensionIcon from './penguinmod/extensions/oddmessages.svg';
 
-import chatgpt2scratchIconURL from './chatgpt2scratch.png';
-import chatgpt2scratchInsetIconURL from './chatgpt2scratch-small.png';
+import chatgpt2scratchIconURL from './chatgpt2scratch/chatgpt2scratch.png';
+import chatgpt2scratchInsetIconURL from './chatgpt2scratch/chatgpt2scratch-small.png';
 
 //gaiamod
-const gmExtensionURL = "https://gaiawindwave90.github.io/scratch/gaiamod/";
-const gmImageURL = "https://gaiamod-main.github.io/images/";
 import gaiaAIThumb from './gaiamod/gaiaai.png';
 import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
