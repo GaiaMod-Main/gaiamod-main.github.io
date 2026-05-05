@@ -180,6 +180,8 @@ import turboBuilderIcon from './gaiamod/turbobuilder.png';
 import turboBuilderDevIcon from './gaiamod/turbobuilder-dev.png';
 import silvxrcatOddMessagesExtensionIcon from './penguinmod/extensions/oddmessages.svg';
 
+import chatgpt2scratchIconURL from './chatgpt2scratch.png';
+import chatgpt2scratchInsetIconURL from './chatgpt2scratch-small.png';
 
 //gaiamod
 const gmExtensionURL = "https://gaiawindwave90.github.io/scratch/gaiamod/";
@@ -291,11 +293,25 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'ChatGPT2Scratch',
+        extensionId: 'chatgpt2scratch',
+        iconURL: chatgpt2scratchIconURL,
+        insetIconURL: chatgpt2scratchInsetIconURL,
+        credits: 'ichiroc',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Interact with ChatGPT in Scratch!',
+        featured: true
+    },
+    {
         name: 'Scratch2WebSerialAPI',
         extensionId: 'scratch2webserialapi',
         iconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png',
         insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/Icon.png',
-        collaborator: 'champierre',
+        credits: 'champierre',
         internetConnectionRequired: true,
         tags: ['othermods'],
         description: 'Do more complex things with hardware via the serial ports.',
