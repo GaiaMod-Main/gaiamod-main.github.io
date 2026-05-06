@@ -9,8 +9,8 @@ const ACCENT_KEY = 'tw:accent';
 const CUSTOM_ACCENTS_KEY = "tw:accent:customAccents";
 
 if (localStorage && localStorage.getItem(ACCENT_KEY) === null) {
-    localStorage.setItem(ACCENT_KEY, 'Lime Green')
-    window.Recolor = {primary: (new Theme().set('Lime Green')).accentData['motion-primary']}
+    localStorage.setItem(ACCENT_KEY, 'Gaia Blue')
+    window.Recolor = {primary: (new Theme().set('Gaia Blue')).accentData['motion-primary']}
 }
 
 window.Recolor = {primary: new Theme(localStorage.getItem(ACCENT_KEY)).accentData['motion-primary']}
@@ -40,7 +40,7 @@ const detectTheme = () => {
         const local = localStorage.getItem(ACCENT_KEY);
 
         return new Theme(
-            local || new Theme('lime green')
+            local || new Theme('gaia blue')
         );
     } catch (e) {
         // ignore

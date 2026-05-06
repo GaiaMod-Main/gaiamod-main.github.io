@@ -289,16 +289,16 @@ body[coloraccent="Silver"] {
 }
 
 body[coloraccent="Black"] {
-    --motion-primary: hsla(268, 0%, 24% 1);
-    --motion-tertiary: hsla(268, 0%, 20% 0.9);
-    --motion-transparent: hsla(268, 0%, 23% 0.35);
+    --motion-primary: hsla(268, 0%, 24%, 1);
+    --motion-tertiary: hsla(268, 0%, 20%, 0.9);
+    --motion-transparent: hsla(268, 0%, 23%, 0.35);
     --motion-light-transparent: hsla(268, 0%, 30% 0.15);
 
-    --motion-primary-dark: hsla(268, 0%, 10% 1);
+    --motion-primary-dark: hsla(268, 0%, 10%, 1);
 
     --extensions-primary: hsla(268, 0%, 24%, 1);
     --extensions-tertiary: hsla(268, 0%, 20%, 1);
-    --extensions-transparent: hsla(268, 0%, 23% 0.35);
+    --extensions-transparent: hsla(268, 0%, 23%, 0.35);
     --extensions-light: hsla(268, 0%, 30%, 1);
     
     --drop-highlight: hsla(268, 0%, 28%, 1);
