@@ -1,0 +1,21 @@
+body[data-color-theme="vittascience"] {
+    --ui-primary: hsla(153, 100%, 100%, 1);
+    --ui-secondary: hsla(153, 0%, 96%, 1);
+    --ui-tertiary: hsla(153, 50%, 90%, 1);
+
+    --ui-modal-overlay: hsla(153, 49%, 59%, 0.9); /* 90% transparent version of motion-primary */
+
+    --motion-primary: hsla(153, 68%, 42%, 1);
+    --motion-tertiary: hsla(153, 60%, 50%, 1);
+    --motion-transparent: hsla(153, 68%, 42%, 0.35); /* 35% transparent version of motion-primary */
+    --motion-light-transparent: hsla(153, 68%, 42%, 0.15); /* 15% transparent version of motion-primary */
+
+    --ui-primary-light: hsla(153, 100%, 95%, 1);
+    --ui-secondary-light: hsla(153, 75%, 95%, 1);
+    --ui-tertiary-light: hsla(153, 50%, 90%, 1);
+
+    --extensions-primary: hsla(35, 100%, 51%, 1);
+    --extensions-tertiary: hsla(10, 85%, 40%, 1);
+    --extensions-transparent: hsla(10, 85%, 65%, 0.35); /* 35% transparent version of extensions-primary */
+    --extensions-light: hsla(10, 57%, 85%, 1); /* opaque version of extensions-transparent, on white bg */
+}

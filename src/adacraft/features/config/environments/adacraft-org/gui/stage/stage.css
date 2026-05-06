@@ -1,0 +1,6 @@
+@import "../../../../../../../components/stage/stage.css";
+
+.stage.full-screen {
+    border: 0;
+    border-radius: 0;
+}

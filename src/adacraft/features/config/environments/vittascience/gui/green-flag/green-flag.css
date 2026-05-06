@@ -1,0 +1,26 @@
+@import "../../../../../../../css/colors.css";
+
+.green-flag {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.375rem;
+    border-radius: 50% 0px 0px 50%;
+    user-select: none;
+    user-drag: none;
+    cursor: pointer;
+    background-color: #cccccc;
+    object-fit: contain;
+}
+
+.green-flag:hover {
+    background-color: #cccccc;    
+}
+
+.green-flag.is-active {
+    background-color: $motion-transparent;
+}
+
+.green-flag:nth-last-child(2) {
+    border-radius: 0px 50% 50% 0px ;
+
+}

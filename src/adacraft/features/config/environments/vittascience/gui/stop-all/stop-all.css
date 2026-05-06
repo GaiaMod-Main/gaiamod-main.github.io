@@ -1,0 +1,22 @@
+.stop-all {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.375rem;
+    border-radius: 0px;
+    user-select: none;
+    cursor: pointer;
+    background-color: #cccccc;
+    margin: 0px 0.2em;
+}
+
+.stop-all:hover {
+    background-color: #cccccc;
+}
+
+.stop-all {
+    opacity: 0.5;
+}
+
+.stop-all.is-active {
+    opacity: 1;
+}

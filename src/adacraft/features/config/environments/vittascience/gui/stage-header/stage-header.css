@@ -1,0 +1,30 @@
+@import "../../../../../../../components/stage-header/stage-header.css";
+
+
+.stage-menu-wrapper {
+    justify-content: space-evenly;
+}
+
+.stage-button {
+    padding: 0 0.8rem;
+    border: transparent;
+    background-color: #cccccc;
+    /* Use "important" because we don't fully control the order of the rules
+    from other CSS files */
+    border-radius: 3rem !important;
+    width: auto;
+    height: 2rem;
+}
+
+.stage-button:hover {
+    background-color: #cccccc;
+}
+
+.stage-button div{
+    height: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.stage-header-wrapper-overlay {
+    background-color: rgb(232, 237, 241);
+}

@@ -93,6 +93,8 @@ import pmCameraExtensionIcon from './penguinmod/extensions/pmcamera_thumbnail.pn
 // cl waw
 // import cloudlinkThumb from './penguinmod/extensions/cloudlinkThumb.png';
 import cloudlinkIcon from './penguinmod/extensions/cloudlinkIcon.svg';
+import clfiveIcon from './cloudlink/cl5.svg';
+import clomegaIcon from './cloudlink/clomega.svg';
 
 // thx jeremey
 import canvasExtensionBanner from './penguinmod/extensions/CanvasExtensionMenu.png';
@@ -202,6 +204,29 @@ import tmpose2scratchInsetIconURL from './tmpose2scratch/tmpose2scratch-small.pn
 
 import roku from './roku/roku.jpg';
 
+// onegpio
+
+import onegpioArduinoImage from './onegpioArduino/onegpioArduino.png';
+import onegpioArduinoInsetIconURL from './onegpioArduino/onegpioArduino-small.png';
+
+import onegpioRpiImage from './onegpioRpi/onegpioRpi.png';
+import onegpioRpiInsetIconURL from './onegpioRpi/onegpioRpi-small.png';
+
+import onegpioEspImage from './onegpioEsp/onegpioEsp.png';
+import onegpioEspInsetIconURL from './onegpioEsp/onegpioEsp-small.png';
+
+import onegpioPicoboardImage from './onegpioPicoboard/onegpioPicoboard.jpg';
+import onegpioPicoboardInsetIconURL from './onegpioPicoboard/onegpioPicoboard-small.png';
+
+import onegpioCpxImage from './onegpioCpx/onegpioCpx.jpg';
+import onegpioCpxInsetIconURL from './onegpioCpx/onegpioCpx-small.png';
+
+import onegpioRoboHATImage from './onegpioRoboHAT/onegpioRoboHAT.png';
+import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.png';
+
+import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
+import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
+
 //gaiamod
 import gaiaAIThumb from './gaiamod/gaiaai.png';
 import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
@@ -213,6 +238,7 @@ import promptsThumb from './gaiamod/prompts.png';
 import spinachThumb from './gaiamod/spinach.png';
 import catsThumb from './gaiamod/CatFacts.png';
 import NESEmuThumb from './gaiamod/NESEmulator.png';
+import AlexaThumb from './gaiamod/Alexa.png';
 import penguinThumb from './gaiamod/PenguinAttack.png';
 import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
 import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
@@ -320,6 +346,26 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Rotur',
+        extensionId: 'https://extensions.mistium.com/featured/Rotur.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Rotur.png',
+        tags: ['othermods'],
+        description: "Utilise Rotur in your projects.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'RoturVoice',
+        extensionId: 'https://extensions.mistium.com/featured/roturVoice.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/roturVoice.png',
+        tags: ['othermods'],
+        description: "Voice and video calling for GaiaMod and other Scratch mods.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
         name: 'ChatGPT2Scratch',
         extensionId: 'chatgpt2scratch',
         iconURL: chatgpt2scratchIconURL,
@@ -375,6 +421,17 @@ const menuItems = [
         description: 'Lets you train with poses.',
         featured: true
     },
+    {
+        name: 'HandPose2Scratch',
+        extensionId: 'handpose2scratch',
+        credits: 'champierre',
+        description: 'Hand tracking in Scratch.',
+        iconURL: handpose2scratchIconURL,
+        insetIconURL: handpose2scratchInsetIconURL,
+        tags: ['othermods', 'ai'],
+        internetConnectionRequired: true,
+        featured: true
+    },	
     {
         name: 'Posenet2Scratch',
         extensionId: 'posenet2scratch',
@@ -451,9 +508,21 @@ const menuItems = [
         name: 'nesemulator',
         extensionId: 'nesemulator', // update reference once file names are updated
         tags: ['othermods'],
-        bluetoothRequired: true,
+        bluetoothRequired: false,
         internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
+        launchPeripheralConnectionFlow: false,
+        iconURL: NESEmuThumb,
+        description: 'Use the power of the NES emulation in your projects!',
+        featured: true,
+        credits: 'Unknown',
+    },
+    {
+        name: 'nesemulator',
+        extensionId: 'nesemulator', // update reference once file names are updated
+        tags: ['othermods'],
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
         iconURL: NESEmuThumb,
         description: 'Use the power of the NES emulation in your projects!',
         featured: true,
@@ -553,16 +622,6 @@ const menuItems = [
         internetConnectionRequired: true,
         featured: true
     },
-    {
-        name: 'Hand Positions',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/HandPos/main.js',
-        credits: 'champierre',
-        description: 'Hand tracking in scratch',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/HandPos/cover.svg',
-        tags: ['penguinmod', 'ai'],
-        internetConnectionRequired: true,
-        featured: true
-    },	
     {
         name: 'SAM Speech',
         extensionId: 'https://p7scratchextensions.pages.dev/ext/Sam/main.js',
@@ -934,7 +993,28 @@ const menuItems = [
         featured: true,
         extDeveloper: 'MikeDev',
         internetConnectionRequired: true
-    },   
+    },
+    {
+        name: 'CloudLink Ω',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/clomega.js',
+        tags: ['electramod', 'penguinmod', 'turbowarp'],
+        iconURL: clomegaIcon,
+        description: 'Register and login to accounts via Cloud Link 5 (WIP Extension!!!)',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: false
+    },
+    {
+        name: 'CloudLink 5',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/cl5.js',
+        tags: ['electramod', 'penguinmod', 'turbowarp'],
+        insetIconURL: cloudlinkIcon,
+        iconURL: clfiveIcon,
+        description: 'A powerful websocket extension for Scratch with account systems, and much more to offer. (WIP Extension!!!)',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: false
+    },
     {
         name: 'Scripts',
         extensionId: 'jgScripts',
@@ -1376,6 +1456,111 @@ const menuItems = [
             description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
             featured: true
         },
+{
+        name: 'OneGpio Arduino',
+        extensionId: 'onegpioArduino',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioArduinoImage,
+        insetIconURL: onegpioArduinoInsetIconURL,
+        description: 'OneGPIOArduino',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Raspberry Pi',
+        extensionId: 'onegpioRpi',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioRpiImage,
+        insetIconURL: onegpioRpiInsetIconURL,
+        description: 'OneGPIORpi',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio ESP-8266',
+        extensionId: 'onegpioEsp',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioEspImage,
+        insetIconURL: onegpioEspInsetIconURL,
+        description: 'OneGPIOEsp',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Picoboard',
+        extensionId: 'onegpioPicoboard',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioPicoboardImage,
+        insetIconURL: onegpioPicoboardInsetIconURL,
+        description: 'OneGPIOPicoboard',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Playground Express',
+        extensionId: 'onegpioCpx',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioCpxImage,
+        insetIconURL: onegpioCpxInsetIconURL,
+        description: 'OneGPIOCpx',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio RoboHAT MM1',
+        extensionId: 'onegpioRoboHAT',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioRoboHATImage,
+        insetIconURL: onegpioRoboHATInsetIconURL,
+        description: 'OneGPIORoboHAT',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Raspberry Pi Pico',
+        extensionId: 'onegpioRpiPico',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioRpiPicoImage,
+        insetIconURL: onegpioRpiPicoInsetIconURL,
+        description: 'onegpioRpiPico',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
     {
         name: (
             <FormattedMessage

@@ -1,0 +1,11 @@
+@import "../../../../../../../components/stage-wrapper/stage-wrapper.css";
+
+.stage-wrapper.full-screen {
+    /* For adacraft in fullscreen, the stage header is in front of the stage. So
+    the stage starts at the top of the screen */
+    top: 0;
+    /* The background color around the stage is black.*/
+    background-color: black;
+    /* The stage takes all the available space. */
+    padding: 0;
+}
