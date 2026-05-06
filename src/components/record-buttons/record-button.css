@@ -10,7 +10,7 @@
 }
 
 .recording:hover {
-    background-color: $looks-light-transparent;
+    background-color: $motion-light-transparent;
 }
 
 .recording {
