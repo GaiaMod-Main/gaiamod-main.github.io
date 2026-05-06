@@ -6,6 +6,7 @@ import {defineMessages, injectIntl, intlShape} from 'react-intl';
 import GreenFlag from '../green-flag/green-flag.jsx';
 import PauseButton from '../pause-button/pause-button.jsx';
 import StopAll from '../stop-all/stop-all.jsx';
+import Record from '../record-buttons/record.jsx';
 import TurboMode from '../turbo-mode/turbo-mode.jsx';
 import FramerateIndicator from '../tw-framerate-indicator/framerate-indicator.jsx';
 
@@ -32,12 +33,16 @@ const messages = defineMessages({
 const Controls = function (props) {
     const {
         active,
+		recording,
         paused,
         className,
         intl,
         onGreenFlagClick,
         onPauseButtonClick,
         onStopAllClick,
+		onRecordClick,
+        onStopRecordClick,
+        onDownloadClick,
         turbo,
         framerate,
         interpolation,
@@ -64,6 +69,11 @@ const Controls = function (props) {
                 title={intl.formatMessage(messages.stopTitle)}
                 onClick={onStopAllClick}
             />
+			<Record
+                active={recording}
+                title={intl.formatMessage(messages.stopTitle)}
+                onClick={onRecordClick}
+            />
             {turbo ? (
                 <TurboMode isSmall={isSmall} />
             ) : null}
@@ -79,12 +89,16 @@ const Controls = function (props) {
 
 Controls.propTypes = {
     active: PropTypes.bool,
+	recording: PropTypes.bool,
     paused: PropTypes.bool,
     className: PropTypes.string,
     intl: intlShape.isRequired,
     onGreenFlagClick: PropTypes.func.isRequired,
     onPauseButtonClick: PropTypes.func.isRequired,
     onStopAllClick: PropTypes.func.isRequired,
+	onRecordClick: PropTypes.func.isRequired,
+    onStopRecordClick: PropTypes.func.isRequired,
+    onDownloadClick: PropTypes.func.isRequired,
     framerate: PropTypes.number,
     interpolation: PropTypes.bool,
     isSmall: PropTypes.bool,

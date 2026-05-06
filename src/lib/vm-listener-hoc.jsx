@@ -9,7 +9,7 @@ import {updateTargets} from '../reducers/targets';
 import {updateBlockDrag} from '../reducers/block-drag';
 import {updateMonitors} from '../reducers/monitors';
 import {setProjectChanged, setProjectUnchanged} from '../reducers/project-changed';
-import {setRunningState, setPausedState, setTurboState, setStartedState} from '../reducers/vm-status';
+import {setRunningState, setPausedState, setTurboState, setStartedState, setRecordingState} from '../reducers/vm-status';
 import {showExtensionAlert} from '../reducers/alerts';
 import {updateMicIndicator} from '../reducers/mic-indicator';
 import {
@@ -54,6 +54,8 @@ const vmListenerHOC = function (WrappedComponent) {
             this.props.vm.on('BLOCK_DRAG_UPDATE', this.props.onBlockDragUpdate);
             this.props.vm.on('TURBO_MODE_ON', this.props.onTurboModeOn);
             this.props.vm.on('TURBO_MODE_OFF', this.props.onTurboModeOff);
+			this.props.vm.on('RECORDING_ON', this.props.onRecordingOn);
+            this.props.vm.on('RECORDING_OFF', this.props.onRecordingOff);
             this.props.vm.on('PROJECT_RUN_START', this.props.onProjectRunStart);
             this.props.vm.on('PROJECT_RUN_STOP', this.props.onProjectRunStop);
             this.props.vm.on('PROJECT_CHANGED', this.handleProjectChanged);
@@ -203,6 +205,8 @@ const vmListenerHOC = function (WrappedComponent) {
                 onRuntimeStopped,
                 onTurboModeOff,
                 onTurboModeOn,
+				onRecordingOn,
+                onRecordingOff,
                 hasCloudVariables,
                 onHasCloudVariablesChanged,
                 onFramerateChanged,
@@ -239,6 +243,8 @@ const vmListenerHOC = function (WrappedComponent) {
         onTargetsUpdate: PropTypes.func.isRequired,
         onTurboModeOff: PropTypes.func.isRequired,
         onTurboModeOn: PropTypes.func.isRequired,
+		onRecordingOff: PropTypes.func.isRequired,
+        onRecordingOn: PropTypes.func.isRequired,
         hasCloudVariables: PropTypes.bool,
         onHasCloudVariablesChanged: PropTypes.func.isRequired,
         onFramerateChanged: PropTypes.func.isRequired,
@@ -293,6 +299,8 @@ const vmListenerHOC = function (WrappedComponent) {
         onRuntimeUnpaused: () => dispatch(setPausedState(false)),
         onTurboModeOn: () => dispatch(setTurboState(true)),
         onTurboModeOff: () => dispatch(setTurboState(false)),
+		onRecordingOn: () => dispatch(setRecordingState(true)),
+        onRecordingOff: () => dispatch(setRecordingState(false)),
         onHasCloudVariablesChanged: hasCloudVariables => dispatch(setHasCloudVariables(hasCloudVariables)),
         onFramerateChanged: framerate => dispatch(setFramerateState(framerate)),
         onInterpolationChanged: interpolation => dispatch(setInterpolationState(interpolation)),

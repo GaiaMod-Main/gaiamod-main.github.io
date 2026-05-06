@@ -55,17 +55,31 @@ class Controls extends React.Component {
             projectRunning,
             paused,
             turbo,
+			recording,
             ...props
         } = this.props;
         return (
             <ControlsComponent
                 {...props}
-                active={projectRunning && isStarted}
-                paused={paused}
+                active={projectRunning}
                 turbo={turbo}
                 onGreenFlagClick={this.handleGreenFlagClick}
-                onPauseButtonClick={this.handlePauseButtonClick}
                 onStopAllClick={this.handleStopAllClick}
+                onRecordClick={() => {
+                    if (recording) {
+                        this.props.vm.stopRecording();
+                        this.props.vm.downloadRecording();
+                    } else {
+                        this.props.vm.startRecording();
+                    }
+                }}
+                onStopRecordClick={() => {
+                    this.props.vm.stopRecording()
+                }}
+                onDownloadClick={() => {
+                    this.props.vm.downloadRecording()
+                }}
+                recording={recording}
             />
         );
     }
@@ -79,6 +93,7 @@ Controls.propTypes = {
     interpolation: PropTypes.bool.isRequired,
     isSmall: PropTypes.bool,
     paused: PropTypes.bool,
+	recording: PropTypes.bool.isRequired,
     vm: PropTypes.instanceOf(VM)
 };
 
@@ -88,6 +103,7 @@ const mapStateToProps = state => ({
     framerate: state.scratchGui.tw.framerate,
     interpolation: state.scratchGui.tw.interpolation,
     turbo: state.scratchGui.vmStatus.turbo,
+	recording: state.scratchGui.vmStatus.recording,
     paused: state.scratchGui.vmStatus.paused
 });
 // no-op function to prevent dispatch prop being passed to component
