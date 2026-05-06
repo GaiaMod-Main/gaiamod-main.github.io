@@ -336,6 +336,34 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'TM2Scratch',
+        extensionId: 'ml2scratch',
+        iconURL: tm2scratchIconURL,
+        insetIconURL: tm2scratchInsetIconURL,
+		credits: 'Tsukurusha, YengawaLab and Google',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Lets you train with images and audio.',
+        featured: true
+    },
+    {
+        name: 'TMPose2Scratch',
+        extensionId: 'tmpose2scratch',
+        iconURL: tmpose2scratchIconURL,
+        insetIconURL: tmpose2scratchInsetIconURL,
+		credits: 'champierre',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Lets you train with poses.',
+        featured: true
+    },
+    {
         name: 'Posenet2Scratch',
         extensionId: 'posenet2scratch',
         iconURL: posenet2scratchIconURL,
