@@ -517,18 +517,6 @@ const menuItems = [
         credits: 'Unknown',
     },
     {
-        name: 'nesemulator',
-        extensionId: 'nesemulator', // update reference once file names are updated
-        tags: ['othermods'],
-        bluetoothRequired: false,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: false,
-        iconURL: NESEmuThumb,
-        description: 'Use the power of the NES emulation in your projects!',
-        featured: true,
-        credits: 'Unknown',
-    },
-    {
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
         iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
