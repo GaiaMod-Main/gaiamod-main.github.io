@@ -200,6 +200,8 @@ import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
 import tmpose2scratchIconURL from './tmpose2scratch/tmpose2scratch.png';
 import tmpose2scratchInsetIconURL from './tmpose2scratch/tmpose2scratch-small.png';
 
+import roku from './roku/roku.jpg';
+
 //gaiamod
 import gaiaAIThumb from './gaiamod/gaiaai.png';
 import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
@@ -400,6 +402,31 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'scratch2maqueen',
+        extensionId: 'scratch2maqueen', // update reference once file names are updated
+        tags: ['othermods'],
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png',
+        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png',
+        description: 'Control DFRobot Maqueen.',
+        featured: true,
+        credits: 'Vernier',
+    },
+    {
+        name: 'ImageClassifer2Scratch',
+        extensionId: 'ic2scratch',
+        iconURL: ic2scratchIconURL,
+        insetIconURL: ic2scratchInsetIconURL,
+        credits: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Image Classification Blocks.',
+        featured: true
+    },
+    {
         name: 'Site Runtime',
         extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/webextension.js',
         tags: ['dinosaurmod'],
@@ -473,6 +500,16 @@ const menuItems = [
         description: 'Secure Authentication.',
         credits: 'logise1123',
         internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'Roku',
+        extensionId: 'roku',
+        internetConnectionRequired: true,
+        credits: 'gvbvdxx',
+        iconURL: roku,
+        tags: ['othermods'],
+        description: 'Interact with your Roku tv via the GM2Helper software!',
         featured: true
     },
         {
