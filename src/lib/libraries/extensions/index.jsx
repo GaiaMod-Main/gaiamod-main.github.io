@@ -180,8 +180,25 @@ import turboBuilderIcon from './gaiamod/turbobuilder.png';
 import turboBuilderDevIcon from './gaiamod/turbobuilder-dev.png';
 import silvxrcatOddMessagesExtensionIcon from './penguinmod/extensions/oddmessages.svg';
 
+//sip snip snip lol
 import chatgpt2scratchIconURL from './chatgpt2scratch/chatgpt2scratch.png';
 import chatgpt2scratchInsetIconURL from './chatgpt2scratch/chatgpt2scratch-small.png';
+import facemesh2scratchIconURL from './facemesh2scratch/facemesh2scratch.png';
+import facemesh2scratchInsetIconURL from './facemesh2scratch/facemesh2scratch-small.png';
+import scratch2webserialapiIconURL from './scratch2webserialapi/scratch2webserialapi.png';
+import scratch2webserialapiInsetIconURL from './scratch2webserialapi/scratch2webserialapi-small.png';
+import handpose2scratchIconURL from './handpose2scratch/handpose2scratch.png';
+import handpose2scratchInsetIconURL from './handpose2scratch/handpose2scratch-small.png';
+import ic2scratchIconURL from './ic2scratch/ic2scratch.png';
+import ic2scratchInsetIconURL from './ic2scratch/ic2scratch-small.png';
+import posenet2scratchIconURL from './posenet2scratch/posenet2scratch.png';
+import posenet2scratchInsetIconURL from './posenet2scratch/posenet2scratch-small.png';
+import ml2scratchIconURL from './ml2scratch/ml2scratch.png';
+import ml2scratchInsetIconURL from './ml2scratch/ml2scratch-small.png';
+import tm2scratchIconURL from './tm2scratch/tm2scratch.png';
+import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
+import tmpose2scratchIconURL from './tmpose2scratch/tmpose2scratch.png';
+import tmpose2scratchInsetIconURL from './tmpose2scratch/tmpose2scratch-small.png';
 
 //gaiamod
 import gaiaAIThumb from './gaiamod/gaiaai.png';
@@ -305,10 +322,46 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'ML2Scratch',
+        extensionId: 'ml2scratch',
+        iconURL: ml2scratchIconURL,
+        insetIconURL: ml2scratchInsetIconURL,
+		credits: 'champierre',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'ML2Scratch Blocks.',
+        featured: true
+    },
+    {
+        name: 'Posenet2Scratch',
+        extensionId: 'posenet2scratch',
+        iconURL: posenet2scratchIconURL,
+        insetIconURL: posenet2scratchInsetIconURL',
+        credits: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Detect human poses quickly and accurately with a normal WebCam without using a special device',
+        featured: true
+    },
+    {
+        name: 'Facemesh2scratch',
+        extensionId: 'facemesh2scratch',
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        credits: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Use facetracking in your projects!',
+        featured: true
+    },
+    {
         name: 'Scratch2WebSerialAPI',
         extensionId: 'scratch2webserialapi',
-        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png',
-        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/Icon.png',
+        iconURL: scratch2webserialapiIconURL,
+        insetIconURL: scratch2webserialapiInsetIconURL,
         credits: 'champierre',
         internetConnectionRequired: true,
         tags: ['othermods'],
