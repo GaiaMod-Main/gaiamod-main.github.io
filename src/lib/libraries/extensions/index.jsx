@@ -212,6 +212,7 @@ import cocreaFetchThumb from './gaiamod/cocreaFetch.png';
 import promptsThumb from './gaiamod/prompts.png';
 import spinachThumb from './gaiamod/spinach.png';
 import catsThumb from './gaiamod/CatFacts.png';
+import NESEmuThumb from './gaiamod/NESEmulator.png';
 import penguinThumb from './gaiamod/PenguinAttack.png';
 import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
 import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
@@ -307,6 +308,15 @@ const menuItems = [
         credits: 'fath11',
         tags: ['othermods'],
         description: 'Fetches API from Ghande IDE.',
+        featured: true
+    },
+    {
+        name: 'Ada Browser',
+        tags: ['othermods'],
+        extensionId: 'adabrowser',
+        iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
+        description: 'Some new blocks to interact with the browser',
         featured: true
     },
     {
@@ -436,6 +446,18 @@ const menuItems = [
         extDeveloper: 'MrIncredibleMaker',
         internetConnectionRequired: true,
         disabled: false
+    },
+    {
+        name: 'nesemulator',
+        extensionId: 'nesemulator', // update reference once file names are updated
+        tags: ['othermods'],
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        iconURL: NESEmuThumb,
+        description: 'Use the power of the NES emulation in your projects!',
+        featured: true,
+        credits: 'Unknown',
     },
     {
         name: 'Meme Extension',
