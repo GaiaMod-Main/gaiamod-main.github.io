@@ -13,7 +13,8 @@
         e.preventDefault();
       }
     });
-
+	
+const renderer = Scratch.vm.runtime.renderer;
 
 
 class GaiaBlocks {
@@ -131,6 +132,23 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
             TEXT: { type: Scratch.ArgumentType.STRING }
           }
         },
+		{
+            opcode: "snapshotStage",
+            blockType: Scratch.BlockType.REPORTER,
+            text: Scratch.translate("snapshot stage"),
+            disableMonitor: true,
+          },
+		  {
+         opcode: 'setBackgroundColor',
+         text: 'set stage background color to [COLOR]',
+         blockType: Scratch.BlockType.COMMAND,
+         arguments: {
+         COLOR: {
+         type: Scratch.ArgumentType.COLOR,
+                defaultValue: "#855CD6",
+           }
+          }
+         },
 		/////lols
       ],
     };
@@ -230,6 +248,29 @@ widescreen() {
 	  sayName({ TEXT }) {
     return TEXT;
   }
+snapshotStage(args, util) {
+      return new Promise((resolve) => {
+        renderer.requestSnapshot((uri) => {
+          resolve(uri);
+        });
+      });
+    }
+setBackgroundColor(args) {
+        let RGB;
+        if (typeof args.COLOR === "number") {
+            RGB = Scratch.Cast.toRgbColorObject(args.COLOR);
+            this.runtime.renderer.setBackgroundColor(RGB.r / 255, RGB.g / 255, RGB.b / 255);
+        } else {
+            RGB = Scratch.Cast.toString(args.COLOR);
+            RGB = RGB.startsWith("#") ? RGB.slice(1) : RGB;
+            this.runtime.renderer.setBackgroundColor(
+                parseInt(RGB.slice(0, 2), 16) / 255,
+                parseInt(RGB.slice(2, 4), 16) / 255,
+                parseInt(RGB.slice(4, 6), 16) / 255,
+                RGB.length === 8 ? parseInt(RGB.slice(6, 8), 16) / 255 : 1
+            )
+        }
+    }
 }
     Scratch.extensions.register(new GaiaBlocks(Scratch.vm.runtime));
 })(Scratch);
