@@ -536,7 +536,7 @@ class Interface extends React.Component {
                                                 color: '#4A4AFF',
                                                 cursor: 'pointer'
                                             }}
-                                            href={'https://gaiawindwave90.github.io/'}
+                                            href={'https://gaiamod-main.github.io/GaiaMod-Home'}
                                         >
                                             GaiaMod
                                         </a>

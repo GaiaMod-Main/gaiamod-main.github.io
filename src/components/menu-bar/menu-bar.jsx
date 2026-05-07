@@ -503,7 +503,7 @@ class MenuBar extends React.Component {
                                 draggable={false}
                                 src={this.props.logo}
                                 onClick={() => {
-                                    window.location.href = "https://gaiamod-main.github.io/Gaia-Home/"
+                                    window.location.href = "https://gaiamod-main.github.io/GaiaMod-Home/"
                                 }}
                             />
                         </div>
