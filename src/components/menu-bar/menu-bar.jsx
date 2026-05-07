@@ -1049,7 +1049,7 @@ class MenuBar extends React.Component {
                     <div className={styles.menuBarItem}>
                         <a
                             className={styles.feedbackLink}
-                            href="https://gaiamod-main.github.io/Gaia-Home/"
+                            href="https://gaiamod-main.github.io/GaiaMod-Home/"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
