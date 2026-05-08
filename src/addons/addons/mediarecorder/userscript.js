@@ -1,4 +1,5 @@
 import downloadBlob from "../../libraries/common/cs/download-blob.js";
+import recordIcon from "./record.svg";
 
 export default async ({ addon, console, msg }) => {
     let recordElem;
@@ -379,8 +380,15 @@ export default async ({ addon, console, msg }) => {
         if (!recordElem) {
             recordElem = Object.assign(document.createElement("div"), {
                 className: "sa-record " + elem.className,
-                textContent: msg("record"),
-            });
+      });
+      const icon = Object.assign(document.createElement("img"), {
+        src: recordIcon,
+        className: "sa-record-icon",
+      });
+      recordElem.appendChild(icon);
+      recordTextSpan = Object.assign(document.createElement("span"), {
+        textContent: msg("record"),
+      });
             recordElem.addEventListener("click", async () => {
                 if (isRecording) {
                     stopRecording();
