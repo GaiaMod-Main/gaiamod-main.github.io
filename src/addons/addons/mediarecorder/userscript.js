@@ -458,6 +458,7 @@ let recordMimeType;
 
 if (selectedFormat === "mp4") {
   // Try MP4 with specific codec support for audio
+  ///?
   const mp4WithCodecs = "video/mp4; codecs=avc1,mp4a.40.2";
   if (MediaRecorder.isTypeSupported(mp4WithCodecs)) {
     recordMimeType = mp4WithCodecs;
