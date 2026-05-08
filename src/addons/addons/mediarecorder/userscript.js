@@ -378,18 +378,10 @@ export default async ({ addon, console, msg }) => {
             }, (delay - roundedDelay) * 1000);
         };
         if (!recordElem) {
-                  recordElem = Object.assign(document.createElement("div"), {
-        className: "sa-record " + elem.className,
-      });
-      const icon = Object.assign(document.createElement("img"), {
-        src: recordIcon,
-        className: "sa-record-icon",
-      });
-      recordElem.appendChild(icon);
-      recordTextSpan = Object.assign(document.createElement("span"), {
-        textContent: msg("record"),
-      });
-      recordElem.appendChild(recordTextSpan);
+            recordElem = Object.assign(document.createElement("div"), {
+                className: "sa-record " + elem.className,
+                textContent: msg("Record"),
+            });
             recordElem.addEventListener("click", async () => {
                 if (isRecording) {
                     stopRecording();
