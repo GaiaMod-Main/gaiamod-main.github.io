@@ -29,8 +29,6 @@
         "url": "git+ssh://git@github.com/LLK/scratch-gui.git"
     },
     "dependencies": {
- 		"@ffmpeg/ffmpeg": "^0.12.15",
-        "@ffmpeg/util": "^0.12.2",
         "@turbowarp/jszip": "^3.11.1",
         "@turbowarp/scratch-l10n": "^3.1000.20230326022803",
         "arraybuffer-loader": "^1.0.8",
