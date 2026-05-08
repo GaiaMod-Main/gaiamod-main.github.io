@@ -380,15 +380,8 @@ export default async ({ addon, console, msg }) => {
         if (!recordElem) {
             recordElem = Object.assign(document.createElement("div"), {
                 className: "sa-record " + elem.className,
-      });
-      const icon = Object.assign(document.createElement("img"), {
-        src: recordIcon,
-        className: "sa-record-icon",
-      });
-      recordElem.appendChild(icon);
-      recordTextSpan = Object.assign(document.createElement("span"), {
-        textContent: msg("record"),
-      });
+                textContent: msg("record"),
+            });
             recordElem.addEventListener("click", async () => {
                 if (isRecording) {
                     stopRecording();
