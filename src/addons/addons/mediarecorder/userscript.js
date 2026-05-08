@@ -380,7 +380,7 @@ export default async ({ addon, console, msg }) => {
         if (!recordElem) {
             recordElem = Object.assign(document.createElement("div"), {
                 className: "sa-record " + elem.className,
-                textContent: msg("Record"),
+                textContent: msg("record"),
             });
             recordElem.addEventListener("click", async () => {
                 if (isRecording) {
