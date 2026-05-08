@@ -10,20 +10,8 @@ export default async ({ addon, console, msg }) => {
     let recordBuffer = [];
     let recorder;
     let timeout;
-    
-	  // Determine supported formats
-  const supportedMimeTypes = [
-    "video/webm; codecs=vp9",
-    "video/webm",
-    "video/mp4",
-  ].filter((i) => MediaRecorder.isTypeSupported(i));
-  
-  const defaultMimeType = supportedMimeTypes[0];
-  const defaultFileExtension = defaultMimeType.split(";")[0].split("/")[1];
-  
-  // Available formats for dropdown
-  const availableFormats = ["webm", "mp4", "mkv", "gif" ,"mp3", "wav", "ogg"];
-	
+    const isMp4CodecSupported = true;
+    // const isMp4CodecSupported = MediaRecorder.isTypeSupported('video/webm;codecs=h264');
     while (true) {
         const elem = await addon.tab.waitForElement('div[class*="menu-bar_file-group"] > div:last-child:not(.sa-record)', {
             markAsSeen: true,
@@ -39,135 +27,17 @@ export default async ({ addon, console, msg }) => {
             
             content.appendChild(
                 Object.assign(document.createElement("p"), {
-                    textContent: msg("record-description", {
-                    extension: `.${defaultFileExtension}`,
-                    }),
+                    textContent: msg("record-description"),
                     className: "recordOptionDescription",
                 })
             );
-			
-			// Format selection dropdown
-        let recordOptionFormatInput, gifOptionWidthInput, gifOptionHeightInput, gifOptionFpsInput, gifOptionQualityInput;
-        if (availableFormats.length > 1) {
-          const recordOptionFormat = document.createElement("p");
-          const recordOptionFormatLabel = Object.assign(document.createElement("label"), {
-            htmlFor: "recordOptionFormatInput",
-            textContent: msg("format") || "Format",
-          });
-          recordOptionFormatInput = Object.assign(document.createElement("select"), {
-            id: "recordOptionFormatInput",
-            className: addon.tab.scratchClass("prompt_variable-name-text-input"),
-            style: "width: fit-content; max-width: 12rem;"
-          });
-          availableFormats.forEach(format => {
-            const option = document.createElement("option");
-            option.value = format;
-            option.textContent = format.toUpperCase();
-            if (format === defaultFileExtension) option.selected = true;
-            recordOptionFormatInput.appendChild(option);
-          });
-          recordOptionFormat.appendChild(recordOptionFormatLabel);
-          recordOptionFormat.appendChild(recordOptionFormatInput);
-          content.appendChild(recordOptionFormat);
-
-          // GIF specific options
-          const gifOptionsContainer = document.createElement("div");
-          gifOptionsContainer.style.display = recordOptionFormatInput.value === "gif" ? "block" : "none";
-          
-          recordOptionFormatInput.addEventListener("change", (e) => {
-            gifOptionsContainer.style.display = e.target.value === "gif" ? "block" : "none";
-          });
-
-          // GIF Size
-          const gifOptionSize = document.createElement("p");
-          gifOptionWidthInput = Object.assign(document.createElement("input"), {
-            type: "number",
-            min: 1,
-            defaultValue: 480,
-            id: "gifOptionWidthInput",
-            className: addon.tab.scratchClass("prompt_variable-name-text-input"),
-            style: "width: 5em; margin-left: 4px; margin-right: 5px; padding: 0 4px;"
-          });
-          const gifOptionCross = document.createElement("span");
-          gifOptionCross.textContent = " x ";
-          gifOptionHeightInput = Object.assign(document.createElement("input"), {
-            type: "number",
-            min: 1,
-            defaultValue: 360,
-            id: "gifOptionHeightInput",
-            className: addon.tab.scratchClass("prompt_variable-name-text-input"),
-            style: "width: 5em; margin-left: 15px; padding: 0 4px;"
-          });
-          const gifOptionSizeLabel = Object.assign(document.createElement("label"), {
-            htmlFor: "gifOptionWidthInput",
-            textContent: typeof msg === "function" && msg("gif-size") ? msg("gif-size") : "GIF Size (px): ",
-          });
-          gifOptionSize.appendChild(gifOptionSizeLabel);
-          gifOptionSize.appendChild(gifOptionWidthInput);
-          gifOptionSize.appendChild(gifOptionCross);
-          gifOptionSize.appendChild(gifOptionHeightInput);
-          gifOptionsContainer.appendChild(gifOptionSize);
-
-          // GIF FPS
-          const gifOptionFps = document.createElement("p");
-          gifOptionFpsInput = Object.assign(document.createElement("input"), {
-            type: "number",
-            min: 1,
-            max: 60,
-            defaultValue: 15,
-            id: "gifOptionFpsInput",
-            className: addon.tab.scratchClass("prompt_variable-name-text-input"),
-            style: "width: 5em; padding: 0 4px;"
-          });
-          const gifOptionFpsLabel = Object.assign(document.createElement("label"), {
-            htmlFor: "gifOptionFpsInput",
-            textContent: typeof msg === "function" && msg("gif-fps") ? msg("gif-fps") : "GIF FPS: ",
-          });
-          gifOptionFps.appendChild(gifOptionFpsLabel);
-          gifOptionFps.appendChild(gifOptionFpsInput);
-          gifOptionsContainer.appendChild(gifOptionFps);
-
-          // GIF Quality dropdown
-          const gifOptionQuality = document.createElement("p");
-          gifOptionQualityInput = Object.assign(document.createElement("select"), {
-            id: "gifOptionQualityInput",
-            className: addon.tab.scratchClass("prompt_variable-name-text-input"),
-            style: "width: fit-content; max-width: 12rem;"
-          });
-          const qualityOptions = [
-            { value: "high", text: typeof msg === "function" && msg("gif-quality-high") ? msg("gif-quality-high") : "High" },
-            { value: "medium", text: typeof msg === "function" && msg("gif-quality-medium") ? msg("gif-quality-medium") : "Medium" },
-            { value: "low", text: typeof msg === "function" && msg("gif-quality-low") ? msg("gif-quality-low") : "Low" },
-            { value: "very low", text: typeof msg === "function" && msg("gif-quality-very-low") ? msg("gif-quality-very-low") : "Very Low" },
-            { value: "garbage", text: typeof msg === "function" && msg("gif-quality-garbage") ? msg("gif-quality-garbage") : "Garbage" },
-            { value: "literally unusable", text: typeof msg === "function" && msg("gif-quality-literally-unusable") ? msg("gif-quality-literally-unusable") : "Literally Unusable" }
-          ];
-          // yes, literally unusable HAD to be an option
-        
-          qualityOptions.forEach(quality => {
-            const option = document.createElement("option");
-            option.value = quality.value;
-            option.textContent = quality.text;
-            if (quality.value === "high") option.selected = true;
-            gifOptionQualityInput.appendChild(option);
-          });
-          const gifOptionQualityLabel = Object.assign(document.createElement("label"), {
-            htmlFor: "gifOptionQualityInput",
-            textContent: typeof msg === "function" && msg("gif-quality") ? msg("gif-quality") : "GIF Quality: ",
-          });
-          gifOptionQuality.appendChild(gifOptionQualityLabel);
-          gifOptionQuality.appendChild(gifOptionQualityInput);
-          gifOptionsContainer.appendChild(gifOptionQuality);
-
-          content.appendChild(gifOptionsContainer);
-        }
             
             // Seconds
             const recordOptionSeconds = document.createElement("p");
             const recordOptionSecondsInput = Object.assign(document.createElement("input"), {
                 type: "number",
                 min: 1,
-                defaultValue: 400,
+                defaultValue: 300,
                 id: "recordOptionSecondsInput",
                 className: addon.tab.scratchClass("prompt_variable-name-text-input"),
             });
@@ -331,11 +201,6 @@ export default async ({ addon, console, msg }) => {
                     waitUntilFlag: recordOptionFlagInput.checked,
                     useStopSign: !recordOptionStopInput.disabled && recordOptionStopInput.checked,
                     recordWholeScreen: recordOptionScreenInput.checked,
-					format: availableFormats.length > 1 ? recordOptionFormatInput.value : defaultFileExtension,
-                    gifWidth: gifOptionWidthInput ? Number(gifOptionWidthInput.value) : 480,
-                    gifHeight: gifOptionHeightInput ? Number(gifOptionHeightInput.value) : 360,
-                    gifFps: gifOptionFpsInput ? Number(gifOptionFpsInput.value) : 15,
-                    gifQuality: gifOptionQualityInput ? gifOptionQualityInput.value : "high",
                 }),
                 { once: true }
             );
@@ -373,9 +238,11 @@ export default async ({ addon, console, msg }) => {
             } else {
                 recorder.onstop = () => {
                     const blob = new Blob(recordBuffer, {
-                        type: recordMimeType
+                        type: isMp4CodecSupported ?
+                        "video/mp4"
+                        : "video/webm"
                     });
-                    downloadBlob(recordMimeType, blob);
+                    downloadBlob(isMp4CodecSupported ? "video.mp4" : "video.webm", blob);
                     disposeRecorder();
                 };
                 recorder.stop();
@@ -451,27 +318,6 @@ export default async ({ addon, console, msg }) => {
             
             const ctx = new AudioContext();
             const dest = ctx.createMediaStreamDestination();
-			
-// Determine recording format
-const selectedFormat = opts.format || defaultFileExtension;
-let recordMimeType;
-
-if (selectedFormat === "mp4") {
-  // Try MP4 with specific codec support for audio
-  ///?
-  const mp4WithCodecs = "video/mp4; codecs=avc1,mp4a.40.2";
-  if (MediaRecorder.isTypeSupported(mp4WithCodecs)) {
-    recordMimeType = mp4WithCodecs;
-  } else if (MediaRecorder.isTypeSupported("video/mp4")) {
-    recordMimeType = "video/mp4";
-  } else {
-    // Fall back to WebM if MP4 not supported
-    recordMimeType = supportedMimeTypes.find(m => m.startsWith("video/webm")) || defaultMimeType;
-  }
-} else {
-  recordMimeType = supportedMimeTypes.find(m => m.startsWith("video/webm")) || defaultMimeType;
-}
-			
             if (opts.audioEnabled) {
                 const mediaStreamDestination = vm.runtime.audioEngine.audioContext.createMediaStreamDestination();
                 vm.runtime.audioEngine.inputNode.connect(mediaStreamDestination);
@@ -495,10 +341,13 @@ if (selectedFormat === "mp4") {
                 stream.addTrack(dest.stream.getAudioTracks()[0]);
             }
             try {
-                recorder = new MediaRecorder(stream, { mimeType: recordMimeType });
+                recorder = new MediaRecorder(stream, { mimeType: "video/webm;codecs=vp9" });
             } catch (err) {
                 console.error('Could not make a transparency compatable video', err);
-                recorder = new MediaRecorder(stream, { mimeType: recordMimeType
+                recorder = new MediaRecorder(stream, { mimeType:
+                    isMp4CodecSupported ?
+                    "video/webm;codecs=h264"
+                    : "video/webm"
                 });
             }
             recorder.ondataavailable = (e) => {
