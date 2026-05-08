@@ -219,8 +219,8 @@ const loadFFmpeg = async () => {
       const recordOptionSecondsInput = Object.assign(document.createElement("input"), {
         type: "number",
         min: 1,
-        max: 600,
-        defaultValue: 30,
+        max: 9000,
+        defaultValue: 300,
         id: "recordOptionSecondsInput",
         className: addon.tab.scratchClass("prompt_variable-name-text-input"),
       });
@@ -237,7 +237,7 @@ const loadFFmpeg = async () => {
       const recordOptionDelayInput = Object.assign(document.createElement("input"), {
         type: "number",
         min: 0,
-        max: 600,
+        max: 9000,
         defaultValue: 0,
         id: "recordOptionDelayInput",
         className: addon.tab.scratchClass("prompt_variable-name-text-input"),
