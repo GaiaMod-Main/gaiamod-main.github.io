@@ -343,6 +343,25 @@ const menuItems = [
         iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
         insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
         description: 'Some new blocks to interact with the browser',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Ada-Leaflet',
+        extensionId: 'adacraftleaflet',
+        tags: ['othermods'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/3afab8ab48ee840204fb83fa3fa3c6ed.png',
+        description: 'Display maps with a leaflet in your projects.',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Croquet',
+        extensionId: 'croquet',
+        tags: ['othermods'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/05479b8bc697d26fee9740d868c2a30e.png',
+        description: 'Croquet Collaboration Library',
+        credits: 'Croquet Corporation',
         featured: true
     },
     {
@@ -673,6 +692,15 @@ const menuItems = [
         extDeveloper: 'pinksheep2917'
     },
     {
+        name: 'Ruby Maps',
+        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/rubymaps.js',
+        tags: ['penguinmod', 'othermods'],
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/rubymaps.svg',
+        description: 'Lets you integrate the power of maps into your projects!',
+        credits: 'The RubyDevs Team',
+        featured: true
+    },
+    {
         name: 'Sound Systems',
         extensionId: 'jgExtendedAudio',
         iconURL: jgExtendedAudioExtensionIcon,
@@ -708,6 +736,25 @@ const menuItems = [
             featured: true,
             twDeveloper: 'TheShovel and Mio'
         },
+    {
+        name: 'Pang API',
+        extensionId: 'https://extensions.penguinmod.com/extensions/SammerLOL/pangapi.js',
+        iconURL: 'https://extensions.penguinmod.com/images/SammerLOL/pangapi.avif',
+        credits: 'oc9x97',
+        tags: ['penguinmod'],
+        description: 'Fetch details of projects and users from PenguinMod.',
+        featured: true
+    },
+    {
+        name: 'PenguinGPT',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/penguingpt.js',
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/penguingpt.png',
+        tags: ['penuinmod', 'ai'],
+        description: 'Using WorkingTurboGPT\'s source code, we made PenguinGPT! New features will come like DALL-E, etc, all for free!',
+        credits: 'MubiLop',
+        internetConnectionRequired: true,
+        featured: true
+    },
     {
         name: 'Looks Expanded',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Looks-Expanded.js',
@@ -883,6 +930,25 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Speech2Text',
+        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/speechtotext.js',
+        tags: ['penguinmod', 'othermods'],
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/speechtotext.png',
+        description: 'Recognizes words or sentences said into the microphone.',
+        credits: 'The RubyDevs Team',
+        featured: true
+    },
+    {
+        name: 'PenguinPedia',
+        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/penguinpedia.js',
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/penguinpedia.webp',
+        internetConnectionRequired: true,
+        tags: ['penguinmod', 'othermods'],
+        description: 'Get a lot of data from Wikipedia, like definitions and images!',
+        credits: 'The RubyDevs Team',
+        featured: true
+    },
+    {
         name: 'Turbo Skins',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Turbo-Skins.js',
         tags: ['penguinmod', 'graphics'],
@@ -1012,25 +1078,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Pang API',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SammerLOL/pangapi.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SammerLOL/pangapi.avif',
-        credits: 'oc9x97',
-        tags: ['penguinmod'],
-        description: 'Fetch details of projects and users from PenguinMod.',
-        featured: true
-    },
-    {
-        name: 'PenguinGPT',
-        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/penguingpt.js',
-        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/penguingpt.png',
-        tags: ['penuinmod', 'ai'],
-        description: 'Using WorkingTurboGPT\'s source code, we made PenguinGPT! New features will come like DALL-E, etc, all for free!',
-        credits: 'MubiLop',
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
         name: '3D Math',
         extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/3DMath.js',
         iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
@@ -1062,7 +1109,8 @@ const menuItems = [
         extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/toastnotifs.js',
         tags: ['penguinmod', 'othermods'],
         iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/toastnotifs.png',
-        description: 'Wanted to make an notification system in your project but you couldn\'t make it work? Toast Notifs is here!',
+        description: 'Use toast-styled notifications in your projects!',
+        credits: 'The RubyDevs Team',
         featured: true
     },
     {
@@ -1090,15 +1138,6 @@ const menuItems = [
         description: 'Blocks to place and move around frames that contain HTML content or websites.',
         featured: true,
         internetConnectionRequired: true
-    },
-    {
-        name: 'PenguinPedia',
-        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/penguinpedia.js',
-        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/penguinpedia.webp',
-        internetConnectionRequired: true,
-        tags: ['penguinmod', 'othermods'],
-        description: 'Get a lot of data from Wikipedia, like definitions and images!',
-        featured: true
     },
     {
         name: 'Color Picker',
