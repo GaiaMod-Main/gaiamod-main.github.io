@@ -403,15 +403,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Imitating Windows10&11 window pop-up animations',
-        extensionId: 'https://editors.astras.top/extensions/EsayWindows10Windows11Animations.js',
-        tags: ['othermods'],
-        iconURL: 'https://editors.astras.top/extensions/images/EsayWindows10Windows11Animations.png',
-        description: 'Let your Scratch OS project have window pop-up animations similar to Windows 10 & 11.',
-        extDeveloper: '蓝莓是颗果',
-        featured: true
-    },
-    {
         name: 'Multi-Source Extensions List',
         extensionId: 'https://editors.astras.top/extensions/ningqiMultiSourceExtensions.js',
         tags: ['othermods'],
