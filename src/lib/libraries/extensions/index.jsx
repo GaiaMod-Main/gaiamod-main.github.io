@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+/* Just a bunch of those lol */
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {APP_NAME} from '../../brand';
