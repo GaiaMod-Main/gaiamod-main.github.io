@@ -5,6 +5,7 @@ export default [
     { tag: 'electramod', intlLabel: messages.electramod },
     { tag: 'dinosaurmod', intlLabel: messages.dinosaurmod },
     { tag: 'snailide', intlLabel: messages.snailide },
+	{ tag: 'adacraft', intlLabel: messages.adacraft },
 	{ tag: 'othermods', intlLabel: messages.othermods },
     { tag: 'turbowarp', intlLabel: messages.turbowarp },
     { tag: 'scratch', intlLabel: messages.scratch },

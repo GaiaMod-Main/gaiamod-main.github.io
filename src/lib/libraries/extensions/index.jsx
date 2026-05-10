@@ -340,6 +340,16 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Adacraft HTTP',
+        extensionId: 'adahttp',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/dea779e4ed4e0d1e4d553755f0beea24.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/c82f3fea945be86f2c208f2e3d799c8e.svg',
+        description: 'Some new blocks to send GTTP requests ad manage results.',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
         name: 'Scratch Utitlites',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Scratch-Utilities.js',
         iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Scratch-Utilities.svg',
@@ -356,6 +366,16 @@ const menuItems = [
         iconURL: 'https://editors.astras.top/extensions/images/browserDetector.png',
         description: 'Detects the browser type running the project, supports multiple browser identification',
         extDeveloper: 'DVD',
+        featured: true
+    },
+    {
+        name: 'Adacraft GIF',
+        extensionId: 'gif',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/e482db7668b6f6bbc8ce5223e4427e96.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/bbb78885842b3cd65078881647f674f2.svg',
+        description: 'Some new blocks to encode GIF files.',
+        credits: 'Adacraft',
         featured: true
     },
     {
@@ -387,7 +407,7 @@ const menuItems = [
     },
     {
         name: 'Ada Browser',
-        tags: ['othermods'],
+        tags: ['adacraft'],
         extensionId: 'adabrowser',
         iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
         insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
@@ -398,8 +418,9 @@ const menuItems = [
     {
         name: 'Croquet',
         extensionId: 'croquet',
-        tags: ['othermods'],
+        tags: ['adacraft'],
         iconURL: 'https://www.adacraft.org/studio/static/assets/05479b8bc697d26fee9740d868c2a30e.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/3ebaeec3436fd9dd59d325a879e1a0dc.svg',
         description: 'Croquet Collaboration Library',
         credits: 'Croquet Corporation',
         featured: true
@@ -420,6 +441,26 @@ const menuItems = [
         extDeveloper: 'AxolayDev',
         tags: ['othermods'],
         description: 'Control your projects with multitouch without a hassle!',
+        featured: true
+    },
+    {
+        name: 'Ada Vision',
+        extensionId: 'adavision',
+        tags: ['adacraft', 'ai'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/e0dbaa558a96f981dd0a34c25b4b4b84.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/327aa5322c2e9cd1cd90cb69efa1c15a.svg',
+        description: 'Use TeachableMachine models to detect things in images.',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Ada Sound',
+        extensionId: 'adasound',
+        tags: ['adacraft', 'ai'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/3aa7424034ffdc3bd8027132a5b1b5b9.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/21800acf6e3a345f805d74d75e32bb2d.png',
+        description: 'Use TeachableMachine models to detect things in sounds.',
+        credits: 'Adacraft',
         featured: true
     },
     {
@@ -449,6 +490,16 @@ const menuItems = [
         iconURL: 'https://editors.astras.top/extensions/images/ningqiMultiSourceExtensions.png',
         description: 'Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.',
         extDeveloper: 'ningqi',
+        featured: true
+    },
+    {
+        name: 'Adacraft Runtime',
+        extensionId: 'adaruntime',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/53d3dbd30eb60a7860a3ffdb4753a43f.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
+        description: 'Some new blocks to interact with the adacraft runtime (renderer, VM, etc.)',
+        credits: 'Adacraft',
         featured: true
     },
     {

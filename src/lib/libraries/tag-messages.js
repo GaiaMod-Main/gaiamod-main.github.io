@@ -166,6 +166,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by Snail IDE',
         id: 'pm.libraryTags.snailide'
     },
+    adacraft: {
+        defaultMessage: 'Adacraft',
+        description: 'Tag for filtering a library by Adacraft',
+        id: 'pm.libraryTags.adacraft'
+    },
     othermods: {
         defaultMessage: 'Other Scratch Mods',
         description: 'Tag for filtering a library by other Scratch mods like MistWarp, Gandi IDE, CreatiCode, Adacraft, etc..',
