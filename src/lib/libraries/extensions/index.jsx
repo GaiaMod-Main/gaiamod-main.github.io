@@ -640,7 +640,7 @@ const menuItems = [
         name: 'FireBase Auth',
         extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
         iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/firebaseauth.png',
-        tags: ['othermods', 'ai'],
+        tags: ['othermods'],
         description: 'Secure Authentication.',
         credits: 'logise1123',
         internetConnectionRequired: true,
@@ -1713,7 +1713,7 @@ const menuItems = [
         name: 'Face Sensing',
         extensionId: 'https://extensions.turbowarp.org/lab/face-sensing.js',
         iconURL: faceSensingIconURL,
-        tags: ['scratch'],
+        tags: ['scratch', 'ai'],
         description: 'Sense faces with the camera.',
         featured: true
     },
