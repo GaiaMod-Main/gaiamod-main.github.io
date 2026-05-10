@@ -330,6 +330,16 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Extension Manager',
+        extensionId: 'https://gaiamod-main.github.io/extensionManager.js',
+        iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
+        credits: 'soiz1, with modifications by GaiaWindWave90',
+        tags: ['othermods'],
+        description: 'Manages extensions.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+    {
         name: 'Scratch Utitlites',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Scratch-Utilities.js',
         iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Scratch-Utilities.svg',
@@ -337,6 +347,15 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Do many things via the Scratch API; you can even fetch cloud data from projects!',
         internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'Browser Check',
+        tags: ['othermods'],
+        extensionId: 'https://editors.astras.top/extensions/browserDetector.js',
+        iconURL: 'https://editors.astras.top/extensions/images/browserDetector.png',
+        description: 'Detects the browser type running the project, supports multiple browser identification',
+        extDeveloper: 'DVD',
         featured: true
     },
     {
@@ -401,16 +420,6 @@ const menuItems = [
         extDeveloper: 'AxolayDev',
         tags: ['othermods'],
         description: 'Control your projects with multitouch without a hassle!',
-        featured: true
-    },
-    {
-        name: 'Extension Manager',
-        extensionId: 'https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/extension-manager-tools.js',
-        iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
-        credits: 'soiz1',
-        tags: ['othermods'],
-        description: 'Manages extensions.',
-        internetConnectionRequired: false,
         featured: true
     },
     {
