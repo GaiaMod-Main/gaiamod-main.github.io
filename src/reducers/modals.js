@@ -18,6 +18,9 @@ const MODAL_CUSTOM_EXTENSION = 'customExtensionModal';
 const MODAL_EXTS = 'extensionManagerModal';
 const MODAL_RESTORE_POINTS = 'restorePointModal';
 const MODAL_FONTS = 'fontsModal';
+const MODAL_README = 'readme';
+const MODAL_PREVIEW_EXT = 'previewExt';
+const MODAL_AE_FEATURES = 'aeFeaturesModal';
 //const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 //const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 //const MODAL_GIT = 'gitModal';
@@ -45,6 +48,9 @@ const initialState = {
 	[MODAL_EXTS]: false,
     [MODAL_RESTORE_POINTS]: false,
     [MODAL_FONTS]: false,
+	[MODAL_README]: false,
+    [MODAL_PREVIEW_EXT]: false,
+    [MODAL_AE_FEATURES]: false,
     extensionModalSwapId: null//,
 //    [MODAL_UNKNOWN_PLATFORM]: false,
 //    [MODAL_INVALID_PROJECT]: false,
@@ -96,6 +102,9 @@ const openCostumeLibrary = function () {
 const openExtensionLibrary = function () {
     return openModal(MODAL_EXTENSION_LIBRARY);
 };
+const openPreviewExt = function () {
+    return openModal(MODAL_PREVIEW_EXT);
+};
 const openLoadingProject = function () {
     return openModal(MODAL_LOADING_PROJECT);
 };
@@ -138,6 +147,18 @@ const openRestorePointModal = function () {
 const openFontsModal = function () {
     return openModal(MODAL_FONTS);
 };
+const openReadme = function () {
+    return openModal(MODAL_README);
+};
+const closeReadme = function() {
+    return closeModal(MODAL_README);
+};
+const openAeFeaturesModal = function () {
+    return openModal(MODAL_AE_FEATURES);
+};
+const closeAeFeaturesModal = function () {
+    return closeModal(MODAL_AE_FEATURES);
+};
 /*
 const openUnknownPlatformModal = function () {
     return openModal(MODAL_UNKNOWN_PLATFORM);
@@ -178,6 +199,9 @@ const closeExtensionLibrary = function () {
 };
 const closeLoadingProject = function () {
     return closeModal(MODAL_LOADING_PROJECT);
+};
+const closePreviewExt = function () {
+    return closeModal(MODAL_PREVIEW_EXT);
 };
 const closeTelemetryModal = function () {
     return closeModal(MODAL_TELEMETRY);
@@ -260,7 +284,13 @@ export {
     openCustomExtensionModal,
 	openExtManagerModal,
     openRestorePointModal,
-    openFontsModal,	
+    openFontsModal,
+	openReadme,
+    openPreviewExt,
+    openAeFeaturesModal,
+    closeAeFeaturesModal,
+    closePreviewExt,
+    closeReadme,
 //    openUnknownPlatformModal,
 //    openInvalidProjectModal,
 //    openExtensionManagerModal,
