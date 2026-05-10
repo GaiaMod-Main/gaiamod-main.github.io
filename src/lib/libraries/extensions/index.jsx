@@ -570,7 +570,7 @@ const menuItems = [
         disabled: false
     },
     {
-        name: 'nesemulator',
+        name: 'NES Emulator',
         extensionId: 'nesemulator', // update reference once file names are updated
         tags: ['othermods'],
         bluetoothRequired: false,
