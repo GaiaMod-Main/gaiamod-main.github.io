@@ -1530,6 +1530,34 @@ const menuItems = [
             featured: true
         },
 {
+        name: 'LEGO Duplo Train',
+        extensionId: 'duploTrain',
+        collaborator: "bricklife",
+        iconURL: 'https://bricklife.com/scratch-gui/static/assets/12fd44910fedc5b99761e024ddf05c59.png',
+        insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/4e8df03eb146bd7f93b355c62450029b.svg',
+        description: 'Build and control your train!',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: true
+
+    },
+{
+        name: 'LEGO Powered Up',
+        extensionId: 'poweredUp',
+        collaborator: "bricklife",
+        iconURL: 'https://bricklife.com/scratch-gui/static/assets/27d60d6cf54cf80ce2bbb8493e43262e.png',
+        insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/9a7b1e04a4d5afda42d2d4bb2de61247.svg',
+        description: 'Build qith motors and sensors!',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: true
+
+    },
+{
         name: 'OneGpio Arduino',
         extensionId: 'onegpioArduino',
         collaborator: "Mr. Y's Lab",
