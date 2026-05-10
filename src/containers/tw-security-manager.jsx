@@ -70,6 +70,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://banana-mod.github.io/') ||
     url.startsWith('https://omniblocks.github.io/') ||
     url.startsWith('https://editors.astras.top/extensions/') ||
+    url.startsWith('https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/') ||
 
     /* For development */
     url.startsWith('http://localhost:8000') ||
