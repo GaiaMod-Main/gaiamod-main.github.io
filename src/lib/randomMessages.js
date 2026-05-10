@@ -43,7 +43,7 @@ export const randomMessages = [
     "There's not a chance I am interested in this bear!",
     "LIBERATING LOBSTERS! YOU DID IT!",
     "Stupid storks and sausages!",
-    "A lot of Gaia's roleplays would mention things like face blemishes like pimples and moles and warts zooming into characters' faces and we thought that was sort of weird and one of the remedies was throwing vomit and feces on that character's face.",
+    "A lot of Gaia's roleplays would mention things like face blemishes like pimples and moles and warts zooming into characters' faces and we thought that was sort of weird and one of the remedies was throwing spinach and succotash on that character's face.",
     "Fun fact: Gaia also uploaded closing logos, bumpers, commercials, and other retro content.",
     "*Sees content farms* I don't mind content farms, but still.",
     "Just do succotash and spinach teeth from now on.",
