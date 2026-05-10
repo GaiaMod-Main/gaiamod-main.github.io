@@ -242,6 +242,8 @@ import AlexaThumb from './gaiamod/Alexa.png';
 import penguinThumb from './gaiamod/PenguinAttack.png';
 import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
 import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
+import loremIpsumThumb from './gaiamod/LoremIpsumThumb.png';
+import webcamThumb from './gaiamod/WebCamThumb.png';
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -317,6 +319,16 @@ const menuItems = [
             description: 'Edited version of the Fire in the Hole extension.',
             featured: true
         },
+    {
+        name: 'Webcam Recorder',
+        extensionId: 'https://gaiamod-main.github.io/Webcamrecorder.js',
+        iconURL: webcamThumb,
+        credits: '-SIPC-, with modifications by GaiaWindWave90',
+        tags: ['gaiamod'],
+        description: 'Records videos straight out of webcam!',
+        internetConnectionRequired: false,
+        featured: true
+    },
     {
         name: 'Scratch Utitlites',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Scratch-Utilities.js',
@@ -418,6 +430,16 @@ const menuItems = [
         iconURL: 'https://editors.astras.top/extensions/images/ningqiMultiSourceExtensions.png',
         description: 'Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.',
         extDeveloper: 'ningqi',
+        featured: true
+    },
+    {
+        name: 'Lorem Ipsum Generator',
+        extensionId: 'https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/Lorem-Ipsum-Generator.js',
+        iconURL: loremIpsumThumb,
+        credits: 'soiz1',
+        tags: ['othermods'],
+        description: 'Generates random text examples.',
+        internetConnectionRequired: false,
         featured: true
     },
     {
