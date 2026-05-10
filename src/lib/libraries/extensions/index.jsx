@@ -382,6 +382,15 @@ const menuItems = [
         extDeveloper: 'DVD',
         featured: true
     },
+	{
+        name: 'On-Screen Controls',
+        extensionId: 'https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/controls.js',
+        iconURL: 'https://github.com/axolayDev/extensions/blob/main/resources/controls.png?raw=true',
+        extDeveloper: 'AxolayDev',
+        tags: ['othermods'],
+        description: 'Control your projects with multitouch without a hassle!',
+        featured: true
+    },
     {
         name: 'Rotur',
         extensionId: 'https://extensions.mistium.com/featured/Rotur.js',
@@ -413,8 +422,8 @@ const menuItems = [
     },
     {
         name: 'Ollama',
-        extensionId: 'https://axolaydev.github.io/extensions/ollama.js',
-        iconURL: 'https://axolaydev.github.io/extensions/resources/ollama.png',
+        extensionId: 'https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/ollama.js',
+        iconURL: 'https://github.com/axolayDev/extensions/blob/main/resources/ollama.png?raw=true',
         extDeveloper: 'AxolayDev',
         tags: ['othermods', 'ai'],
         description: 'Connect to your local Ollama server or an API through Scratch!',

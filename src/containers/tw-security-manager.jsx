@@ -58,7 +58,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://ldsjvg.webwave.dev/') ||
     url.startsWith('https://axolaydev.github.io/') ||
     url.startsWith('https://axolaydev.github.io/extensions/') ||
-    url.startsWith('https://raw.githubusercontent.com/axolaydev/extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/') ||
     url.startsWith('https://p7scratchextensions.pages.dev/ext/') ||
     url.startsWith('https://logiseextensions.netlify.app/') ||
     url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
