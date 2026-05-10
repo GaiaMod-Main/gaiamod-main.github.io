@@ -404,6 +404,16 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Extension Manager',
+        extensionId: 'https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/extension-manager-tools.js',
+        iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
+        credits: 'soiz1',
+        tags: ['othermods'],
+        description: 'Manages extensions.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+    {
         name: 'Rotur',
         extensionId: 'https://extensions.mistium.com/featured/Rotur.js',
         credits: 'Mistium',
