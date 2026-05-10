@@ -6,6 +6,7 @@ import recordIcon from './icon--record-new.svg';
 import stopIcon from './icon--record-stop.svg';
 import styles from './record-button.css';
 
+    return (/*
 const RecordComponent = function (props) {
     const {
         active,
@@ -14,7 +15,7 @@ const RecordComponent = function (props) {
         title,
         ...componentProps
     } = props;
-    return (/*
+    return (
         <img
             className={classNames(
                 className,
@@ -29,8 +30,8 @@ const RecordComponent = function (props) {
             onClick={onClick}
             {...componentProps}
         />
-    */);
-};
+    );
+*/};
 
 RecordComponent.propTypes = {
     active: PropTypes.bool,
