@@ -56,6 +56,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://sayamindu.github.io/scratch-extensions/') ||
     url.startsWith('https://extensions.mistium.com/') ||
     url.startsWith('https://ldsjvg.webwave.dev/') ||
+    url.startsWith('https://axolaydev.github.io/extensions/') ||
     url.startsWith('https://p7scratchextensions.pages.dev/ext/') ||
     url.startsWith('https://logiseextensions.netlify.app/') ||
     url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
@@ -65,6 +66,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/banana-mod/extensions/refs/heads/main/src/extensions/') ||
     url.startsWith('https://banana-mod.github.io/') ||
+    url.startsWith('https://omniblocks.github.io/') ||
 
     /* For development */
     url.startsWith('http://localhost:8000') ||
@@ -110,6 +112,10 @@ const isAlwaysTrustedForFetching = parsed => (
     // Any PenguinMod service such as projects
     parsed.origin === 'https://penguinmod.com' ||
     parsed.origin.endsWith('.penguinmod.com') ||
+	
+    // Any Astra Editor service such as projects
+    parsed.origin === 'https://editors.astras.top/' ||
+    parsed.origin.endsWith('.astras.top.com') ||
 
     // GitHub
     parsed.origin === 'https://raw.githubusercontent.com' ||

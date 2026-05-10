@@ -333,7 +333,25 @@ const menuItems = [
         iconURL: cocreaFetchThumb,
         credits: 'fath11',
         tags: ['othermods'],
-        description: 'Fetches API from Ghande IDE.',
+        description: 'Fetches API from Cocrea.',
+        featured: true
+    },
+    {
+        name: 'Better Quake',
+        extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
+        iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
+        credits: 'fath11',
+        tags: ['othermods'],
+        description: 'Better shader loader.',
+        featured: true
+    },
+    {
+        name: 'Cyberexplorer\'s Toolbox Mini',
+        tags: ['othermods'],
+        extensionId: 'https://editors.astras.top/extensions/cyberexplorertools.js',
+        iconURL: 'https://editors.astras.top/extensions/images/cyberexplorertools.png',
+        description: 'Uh....',
+        extDeveloper: 'Cyberexplorer',
         featured: true
     },
     {
@@ -347,21 +365,21 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Ada-Leaflet',
-        extensionId: 'adacraftleaflet',
-        tags: ['othermods'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/3afab8ab48ee840204fb83fa3fa3c6ed.png',
-        description: 'Display maps with a leaflet in your projects.',
-        credits: 'Adacraft',
-        featured: true
-    },
-    {
         name: 'Croquet',
         extensionId: 'croquet',
         tags: ['othermods'],
         iconURL: 'https://www.adacraft.org/studio/static/assets/05479b8bc697d26fee9740d868c2a30e.png',
         description: 'Croquet Collaboration Library',
         credits: 'Croquet Corporation',
+        featured: true
+    },
+    {
+        name: 'Windows toast',
+        extensionId: 'https://editors.astras.top/extensions/windowstoast.js',
+        tags: ['othermods'],
+        iconURL: 'https://editors.astras.top/extensions/images/windowstoast.png',
+        description: 'Send Windows Toast notifications with icon, sound and duration settings',
+        extDeveloper: 'DVD',
         featured: true
     },
     {
@@ -381,6 +399,34 @@ const menuItems = [
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/roturVoice.png',
         tags: ['othermods'],
         description: "Voice and video calling for GaiaMod and other Scratch mods.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'Imitating Windows10&11 window pop-up animations',
+        extensionId: 'https://editors.astras.top/extensions/EsayWindows10Windows11Animations.js',
+        tags: ['othermods'],
+        iconURL: 'https://editors.astras.top/extensions/images/EsayWindows10Windows11Animations.png',
+        description: 'Let your Scratch OS project have window pop-up animations similar to Windows 10 & 11.',
+        extDeveloper: '蓝莓是颗果',
+        featured: true
+    },
+    {
+        name: 'Multi-Source Extensions List',
+        extensionId: 'https://editors.astras.top/extensions/ningqiMultiSourceExtensions.js',
+        tags: ['othermods'],
+        iconURL: 'https://editors.astras.top/extensions/images/ningqiMultiSourceExtensions.png',
+        description: 'Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.',
+        extDeveloper: 'ningqi',
+        featured: true
+    },
+    {
+        name: 'Ollama',
+        extensionId: 'https://axolaydev.github.io/extensions/ollama.js',
+        iconURL: 'https://axolaydev.github.io/extensions/resources/ollama.png',
+        extDeveloper: 'AxolayDev',
+        tags: ['othermods', 'ai'],
+        description: 'Connect to your local Ollama server or an API through Scratch!',
         internetConnectionRequired: true,
         featured: true
     },
