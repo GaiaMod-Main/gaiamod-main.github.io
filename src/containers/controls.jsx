@@ -55,7 +55,7 @@ class Controls extends React.Component {
             projectRunning,
             paused,
             turbo,
-			recording,
+			//recording,
             ...props
         } = this.props;
         return (
@@ -65,7 +65,7 @@ class Controls extends React.Component {
                 turbo={turbo}
                 onGreenFlagClick={this.handleGreenFlagClick}
                 onStopAllClick={this.handleStopAllClick}
-                onRecordClick={() => {
+                /*onRecordClick={() => {
                     if (recording) {
                         this.props.vm.stopRecording();
                         this.props.vm.downloadRecording();
@@ -79,7 +79,7 @@ class Controls extends React.Component {
                 onDownloadClick={() => {
                     this.props.vm.downloadRecording()
                 }}
-                recording={recording}
+                recording={recording}*/
             />
         );
     }
@@ -93,7 +93,7 @@ Controls.propTypes = {
     interpolation: PropTypes.bool.isRequired,
     isSmall: PropTypes.bool,
     paused: PropTypes.bool,
-	recording: PropTypes.bool.isRequired,
+	//recording: PropTypes.bool.isRequired,
     vm: PropTypes.instanceOf(VM)
 };
 
@@ -103,7 +103,7 @@ const mapStateToProps = state => ({
     framerate: state.scratchGui.tw.framerate,
     interpolation: state.scratchGui.tw.interpolation,
     turbo: state.scratchGui.vmStatus.turbo,
-	recording: state.scratchGui.vmStatus.recording,
+	//recording: state.scratchGui.vmStatus.recording,
     paused: state.scratchGui.vmStatus.paused
 });
 // no-op function to prevent dispatch prop being passed to component

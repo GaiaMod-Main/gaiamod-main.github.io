@@ -14,7 +14,7 @@ const RecordComponent = function (props) {
         title,
         ...componentProps
     } = props;
-    return (
+    return (/*
         <img
             className={classNames(
                 className,
@@ -29,7 +29,7 @@ const RecordComponent = function (props) {
             onClick={onClick}
             {...componentProps}
         />
-    );
+    */);
 };
 
 RecordComponent.propTypes = {
