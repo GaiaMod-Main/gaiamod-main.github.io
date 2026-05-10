@@ -346,7 +346,7 @@ const menuItems = [
         tags: ['adacraft'],
         iconURL: 'https://www.adacraft.org/studio/static/assets/dea779e4ed4e0d1e4d553755f0beea24.png',
         insetIconURL: 'https://www.adacraft.org/studio/static/assets/c82f3fea945be86f2c208f2e3d799c8e.svg',
-        description: 'Some new blocks to send GTTP requests ad manage results.',
+        description: 'Some new blocks to send HTTP requests ad manage results.',
         credits: 'Adacraft',
         featured: true
     },
