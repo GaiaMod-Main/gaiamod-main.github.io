@@ -54,15 +54,21 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-// turbowarp & gallery icons
+// turbowarp, penguinmod & gallery icons
 import twIcon from './tw/tw.svg';
+import rubyIcon from './snail-ide/ruby.png';
 import galleryIcon from './gallery/gallery.svg';
 import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
+import penguinmodIcon from './gaiamod/penguinmod_icon.svg';
+import electramodIcon from './electramod/electramod_icon.png';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
 import ExtForgeIcon from './penguinmod/extforge.svg';
+
+import DiscordIcon from './discord/icon.svg';
+import DiscordRPCIcon from './discord/rpc.png';
 
 import filesExtensionIcon from './penguinmod/extensions/files.svg';
 import jgTailgatingExtensionIcon from './penguinmod/extensions/tailgating.png';
@@ -314,7 +320,7 @@ const menuItems = [
             name: 'Penguin Attack!',
             extensionId: 'https://gaiamod-main.github.io/PenguinAttack.js',
             iconURL: penguinThumb,
-            tags: ['gaiamod', 'joke'],
+            tags: ['gaiamod', 'jokes'],
             internetConnectionRequired: true,
             credits: 'JeremyGamer13, with modifications by GaiaWindWave90',
             description: 'Edited version of the Fire in the Hole extension.',
@@ -326,7 +332,7 @@ const menuItems = [
         iconURL: webcamThumb,
         credits: '-SIPC-, with modifications by GaiaWindWave90',
         tags: ['gaiamod'],
-        description: 'Records videos straight out of webcam!',
+        description: 'Records videos straight out of webcam.',
         internetConnectionRequired: false,
         featured: true
     },
@@ -362,7 +368,7 @@ const menuItems = [
     },
     {
         name: 'Browser Check',
-        tags: ['othermods'],
+        tags: ['astraeditor'],
         extensionId: 'https://editors.astras.top/extensions/browserDetector.js',
         iconURL: 'https://editors.astras.top/extensions/images/browserDetector.png',
         description: 'Detects the browser type running the project, supports multiple browser identification',
@@ -399,7 +405,7 @@ const menuItems = [
     },
     {
         name: 'Cyberexplorer\'s Toolbox Mini',
-        tags: ['othermods'],
+        tags: ['astraeditor'],
         extensionId: 'https://editors.astras.top/extensions/cyberexplorertools.js',
         iconURL: 'https://editors.astras.top/extensions/images/cyberexplorertools.png',
         description: 'Uh....',
@@ -427,9 +433,9 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Windows toast',
+        name: 'Windows Toast',
         extensionId: 'https://editors.astras.top/extensions/windowstoast.js',
-        tags: ['othermods'],
+        tags: ['astraeditor'],
         iconURL: 'https://editors.astras.top/extensions/images/windowstoast.png',
         description: 'Send Windows Toast notifications with icon, sound and duration settings',
         extDeveloper: 'DVD',
@@ -487,7 +493,7 @@ const menuItems = [
     {
         name: 'Multi-Source Extensions List',
         extensionId: 'https://editors.astras.top/extensions/ningqiMultiSourceExtensions.js',
-        tags: ['othermods'],
+        tags: ['astraeditor'],
         iconURL: 'https://editors.astras.top/extensions/images/ningqiMultiSourceExtensions.png',
         description: 'Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.',
         extDeveloper: 'ningqi',
@@ -665,7 +671,7 @@ const menuItems = [
     {
         name: 'NES Emulator',
         extensionId: 'nesemulator', // update reference once file names are updated
-        tags: ['othermods'],
+        tags: ['snailide'],
         bluetoothRequired: false,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
@@ -723,7 +729,7 @@ const menuItems = [
         name: 'PangAI',
         extensionId: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.js',
         iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.png',
-        tags: ['othermods', 'ai'],
+        tags: ['penguinmod', 'ai'],
         description: 'Extension for AI usage.',
         credits: 'logise1123',
         internetConnectionRequired: true,
@@ -733,7 +739,7 @@ const menuItems = [
         name: 'FireBase Auth',
         extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
         iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/firebaseauth.png',
-        tags: ['othermods'],
+        tags: ['penguinmod'],
         description: 'Secure Authentication.',
         credits: 'logise1123',
         internetConnectionRequired: true,
@@ -745,7 +751,7 @@ const menuItems = [
         internetConnectionRequired: true,
         credits: 'gvbvdxx',
         iconURL: roku,
-        tags: ['othermods'],
+        tags: ['snailide'],
         description: 'Interact with your Roku tv via the GM2Helper software!',
         featured: true
     },
@@ -774,7 +780,7 @@ const menuItems = [
         extDeveloper: 'Pooiod7',
         description: 'Generate speech from text using sam',
         iconURL: 'https://p7scratchextensions.pages.dev/ext/Sam/cover.svg',
-        tags: ['penguinmod', 'ai'],
+        tags: ['penguinmod'],
         internetConnectionRequired: true,
         featured: true
     },	
@@ -833,7 +839,7 @@ const menuItems = [
     {
         name: 'Ruby Maps',
         extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/rubymaps.js',
-        tags: ['penguinmod', 'othermods'],
+        tags: ['penguinmod'],
         iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/rubymaps.svg',
         description: 'Lets you integrate the power of maps into your projects!',
         credits: 'The RubyDevs Team',
@@ -1436,6 +1442,7 @@ const menuItems = [
         credits: 'V1 & V2 by julmik6478, V3 by Aness6040',
         description: 'An Extension of Blocks Utilities by Jul Mik (V1 and V2 when named Jul Mik Blocks with Turbobuilder) and helped by Aness6040 (Actual v3)',
         iconURL: 'https://electramod-extensions-gallery.vercel.app/images/julmik6478/julmik_utilities.svg',
+		insetIconURL: electramodIcon,
         tags: ['electramod'],
         featured: true
     },
@@ -1597,7 +1604,7 @@ const menuItems = [
             name: 'Christmas',
             extensionId: 'jgChristmas',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'It\'s not Christmas just yet!',
             featured: true
         },
@@ -1605,7 +1612,7 @@ const menuItems = [
             name: 'CATS',
             extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
             iconURL: catsThumb,
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
             featured: true
@@ -2429,7 +2436,7 @@ if (IsLocal || IsLiveTests) {
             name: 'the doo doo extension',
             extensionId: 'jgDooDoo',
             iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'dr bob eae',
             featured: true
         },
@@ -2437,7 +2444,7 @@ if (IsLocal || IsLiveTests) {
             name: 'Christmas',
             extensionId: 'jgChristmas',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'It\'s not Christmas just yet!',
             featured: true
         },
@@ -2446,7 +2453,7 @@ if (IsLocal || IsLiveTests) {
             extensionId: 'jgBestExtension',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epic.avif',
             internetConnectionRequired: true,
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'this is SUCH A GOOD EXTENSION USE IT NOW',
             featured: true
         },
@@ -2454,7 +2461,7 @@ if (IsLocal || IsLiveTests) {
             name: 'Epic utilities',
             extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/AprilFools.js',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.avif',
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
             featured: true
         },
@@ -2462,7 +2469,7 @@ if (IsLocal || IsLiveTests) {
             name: 'CATS',
             extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
             iconURL: catsThumb,
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
             featured: true
@@ -2470,7 +2477,7 @@ if (IsLocal || IsLiveTests) {
         {
             name: 'McUtils',
             extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
-            tags: ['turbowarp', 'joke'],
+            tags: ['turbowarp', 'jokes'],
             iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
             insetIconURL: turbowarpIcon,
             description: 'Basic utilities for any fast food employee',
@@ -2481,7 +2488,7 @@ if (IsLocal || IsLiveTests) {
             name: 'image blocks',
             extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.avif',
-            tags: ['penguinmod', 'joke'],
+            tags: ['penguinmod', 'jokes'],
             internetConnectionRequired: true,
             description: 'who needs cat blocks when you have penguin block',
             extDeveloper: 'Ashimee, 0znzw, CST1229',

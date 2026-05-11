@@ -5,6 +5,7 @@ export default [
     {tag: 'electramod', intlLabel: messages.electramod},
     {tag: 'dinosaurmod', intlLabel: messages.dinosaurmod},
     {tag: 'adacraft', intlLabel: messages.adacraft},
+    {tag: 'astraeditor', intlLabel: messages.astraeditor},
     {tag: 'snailide', intlLabel: messages.snailide},
     {type: 'divider'},
     {type: 'subtitle', intlLabel: "Types"},

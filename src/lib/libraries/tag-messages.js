@@ -171,9 +171,14 @@ export default defineMessages({
         description: 'Tag for filtering a library by Adacraft',
         id: 'pm.libraryTags.adacraft'
     },
+    astraeditor: {
+        defaultMessage: 'Astra Editor',
+        description: 'Tag for filtering a library by Astra Editor',
+        id: 'pm.libraryTags.astraeditor'
+    },
     othermods: {
         defaultMessage: 'Other Scratch Mods',
-        description: 'Tag for filtering a library by other Scratch mods like MistWarp, Gandi IDE, CreatiCode, Adacraft, etc..',
+        description: 'Tag for filtering a library by other Scratch mods like Genesis IDE, MistWarp, OmniBlocks, Gandi IDE, CreatiCode, KittenBlock, etc..',
         id: 'pm.libraryTags.othermods'
     },
     scratch: {
@@ -200,6 +205,11 @@ export default defineMessages({
         defaultMessage: 'AI',
         description: 'Tag for filtering a library by AI',
         id: 'pm.libraryTags.ai'
+    },
+    jokes: {
+        defaultMessage: 'Jokes',
+        description: 'Tag for filtering a library by jokes',
+        id: 'pm.libraryTags.jokes'
     },
     ui: {
         defaultMessage: 'Menu',
