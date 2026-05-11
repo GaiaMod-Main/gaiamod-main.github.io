@@ -701,6 +701,17 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Newgrounds',
+        extensionId: 'https://extensions.turbowarp.org/obviousAlexC/newgroundsIO.js',
+        extDeveloper: 'ObviousAlexC',
+        iconURL: 'https://extensions.turbowarp.org/images/obviousAlexC/newgroundsIO.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Blocks that allow games to interact with the Newgrounds API.',
+        featured: true
+    },
+    {
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
         iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
@@ -725,6 +736,17 @@ const menuItems = [
         credits: 'Banana-mod',
         tags: ['othermods'],
         description: 'Lets you play blockBeat!',
+        featured: true
+    },
+    {
+        name: 'Dangerous, But Useful',
+        extensionId: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions/UpgradedDangerousBusUseful.js',
+        iconURL: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/extendedGallery/Icons/DBU.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        description: 'Dangerous Utility Blocks!',
+		extDeveloper: 'ObviousAlexC',
         featured: true
     },
     {
@@ -819,6 +841,8 @@ const menuItems = [
         name: 'Stage Camera',
         extensionId: 'pmCamera',
         iconURL: pmCameraExtensionIcon,
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: (
             <FormattedMessage
@@ -840,11 +864,22 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Network',
+        extensionId: 'https://extensions.turbowarp.org/true-fantom/network.js',
+        extDeveloper: 'TrueFantom',
+        iconURL: 'https://extensions.turbowarp.org/images/true-fantom/network.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Various blocks for interacting with the network.',
+        featured: true
+    },
+    {
         name: 'Zip',
         extensionId: 'https://extensions.turbowarp.org/CST1229/zip.js',
         iconURL: 'https://extensions.turbowarp.org/images/CST1229/zip.svg',
         insetIconURL: turbowarpIcon,
-		customInsetColor: '#ff4d4d'
+		customInsetColor: '#ff4d4d',
         tags: ['turbowarp', 'datamgmt'],
         description: 'Create and edit .zip format files, including .sb3 files.',
         twDeveloper: 'CST1229',
@@ -1935,8 +1970,8 @@ const menuItems = [
     {
         name: 'Animated Text',
         extensionId: 'text',
-        iconURL: animatedTextIconURL,
-        insetIconURL: animatedTextInsetIconURL,
+        iconURL: 'https://extensions.turbowarp.org/images/lab/text.svg',
+        insetIconURL: 'https://extensions.turbowarp.org/images/lab/text.svg',
         customInsetColor: '#9A66FF',
         tags: ['scratch'],
         description: 'Bring words to life.',
@@ -1967,7 +2002,8 @@ const menuItems = [
     {
         name: 'Face Sensing',
         extensionId: 'https://extensions.turbowarp.org/lab/face-sensing.js',
-        iconURL: faceSensingIconURL,
+        iconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg',
+		insetIconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg'.
         tags: ['scratch', 'ai'],
         description: 'Sense faces with the camera.',
         featured: true
