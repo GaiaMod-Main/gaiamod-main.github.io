@@ -373,6 +373,7 @@ const menuItems = [
         extensionId: 'https://editors.astras.top/extensions/browserDetector.js',
         iconURL: 'https://editors.astras.top/extensions/images/browserDetector.png',
         insetIconURL: astraeditorIcon,
+		customInsetColor: '#0099FF',
         description: 'Detects the browser type running the project, supports multiple browser identification',
         extDeveloper: 'DVD',
         featured: true
@@ -411,6 +412,7 @@ const menuItems = [
         extensionId: 'https://editors.astras.top/extensions/cyberexplorertools.js',
         iconURL: 'https://editors.astras.top/extensions/images/cyberexplorertools.png',
 		insetIconURL: astraeditorIcon,
+		customInsetColor: '#0099FF',
         description: 'Uh....',
         extDeveloper: 'Cyberexplorer',
         featured: true
@@ -441,6 +443,7 @@ const menuItems = [
         tags: ['astraeditor'],
         iconURL: 'https://editors.astras.top/extensions/images/windowstoast.png',
 		insetIconURL: astraeditorIcon,
+		customInsetColor: '#0099FF',
         description: 'Send Windows Toast notifications with icon, sound and duration settings',
         extDeveloper: 'DVD',
         featured: true
@@ -498,6 +501,8 @@ const menuItems = [
         name: 'Multi-Source Extensions List',
         extensionId: 'https://editors.astras.top/extensions/ningqiMultiSourceExtensions.js',
         tags: ['astraeditor'],
+		insetIconURL: astraeditorIcon,
+		customInsetColor: '#0099FF',
         iconURL: 'https://editors.astras.top/extensions/images/ningqiMultiSourceExtensions.png',
         description: 'Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.',
         extDeveloper: 'ningqi',
@@ -684,6 +689,17 @@ const menuItems = [
         featured: true,
         credits: 'Unknown',
     },
+{
+        name: '3D VR',
+        extensionId: 'jg3dVr',
+        iconURL: 'jgVrExtensionIcon',
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+        description: "Unfinished PenguinMod Extension.",
+        extDeveloper: "JeremyGamer13",
+        featured: true
+    },
     {
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
@@ -734,6 +750,7 @@ const menuItems = [
         extensionId: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.js',
         iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.png',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'ai'],
         description: 'Extension for AI usage.',
         credits: 'logise1123',
@@ -827,6 +844,7 @@ const menuItems = [
         extensionId: 'https://extensions.turbowarp.org/CST1229/zip.js',
         iconURL: 'https://extensions.turbowarp.org/images/CST1229/zip.svg',
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d'
         tags: ['turbowarp', 'datamgmt'],
         description: 'Create and edit .zip format files, including .sb3 files.',
         twDeveloper: 'CST1229',
@@ -855,6 +873,7 @@ const menuItems = [
         extensionId: 'jgExtendedAudio',
         iconURL: jgExtendedAudioExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'categoryexpansion', 'noisemaker'],
         description: 'An audio grouping system for more intensive audio work.',
         featured: true
@@ -883,6 +902,7 @@ const menuItems = [
             tags: ['turbowarp'],
             iconURL: 'https://extensions.turbowarp.org/images/TheShovel/ShovelUtils.png',
             insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
             description: 'A bunch of miscellaneous blocks.',
             featured: true,
             twDeveloper: 'TheShovel and Mio'
@@ -910,6 +930,7 @@ const menuItems = [
         name: 'Looks Expanded',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Looks-Expanded.js',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         iconURL: sharkpoolLooksExpandedIcon,
         tags: ['penguinmod', 'categoryexpansion', 'graphics'],
         description: 'Expansion of the Looks Category.',
@@ -921,6 +942,7 @@ const menuItems = [
         extensionId: 'pmMotionExpansion',
         iconURL: pmMotionExpansionExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'categoryexpansion'],
         description: 'More small motion blocks for movement or collision.',
         featured: true,
@@ -931,6 +953,7 @@ const menuItems = [
         extensionId: 'pmEventsExpansion',
         iconURL: pmEventsExpansionExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'categoryexpansion'],
         description: 'More events for sending & receiving information, notifing specific sprites or better control when things should happen.',
         featured: true,
@@ -941,6 +964,7 @@ const menuItems = [
         extensionId: 'pmControlsExpansion',
         iconURL: pmControlsExpansionExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'categoryexpansion'],
         description: 'More control blocks for animations, complex systems or cleaner one-time use blocks.',
         featured: true,
@@ -951,6 +975,7 @@ const menuItems = [
         extensionId: 'pmSensingExpansion',
         iconURL: pmSensingExpansionExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'categoryexpansion'],
         description: "More sensing blocks for specific use cases or interacting with the user's device.",
         credits: 'Some blocks from SharkPool-SP',
@@ -961,6 +986,7 @@ const menuItems = [
         extensionId: 'pmOperatorsExpansion',
         iconURL: pmOperatorsExpansionExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'categoryexpansion', 'math'],
         description: 'More operators like nand, nor, character code to character, reading multiple lined text line by line, etc.',
         featured: true
@@ -979,6 +1005,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/MoreFields.js',
         iconURL: 'https://extensions.penguinmod.com/images/0znzw/MoreFields.avif',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Custom Field Types',
         extDeveloper: 'yuri-kiss',
@@ -1007,6 +1034,7 @@ const menuItems = [
         extensionId: 'shovelcss',
         iconURL: theshovelCustomStylesIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'graphics'],
         description: 'Customize the appearance of variable monitors and prompts in your project.',
         extDeveloper: 'TheShovel',
@@ -1028,6 +1056,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
         iconURL: 'https://extensions.penguinmod.com/images/Lily/AllMenus.svg',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Every dropdown menu for each block, in one extension.',
         extDeveloper: 'LilyMakesThings',
@@ -1040,6 +1069,7 @@ const menuItems = [
         description: 'Smoothly animating values using different easing functions and directions.',
         iconURL: 'https://extensions.turbowarp.org/images/JeremyGamer13/tween.svg',
 		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         tags: ['turbowarp'],
         featured: true
     },
@@ -1049,6 +1079,7 @@ const menuItems = [
         description: 'Have sprites & clones follow behind other sprites & clones by an offset, like RPG party members.',
         iconURL: jgTailgatingExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         featured: true
     },
@@ -1057,6 +1088,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Tile-Grids.js',
         iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Tile-Grids.svg',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Place sprites on grids.',
         extDeveloper: 'SharkPool-SP',
@@ -1067,6 +1099,7 @@ const menuItems = [
         extensionId: 'theshovelcanvaseffects',
         iconURL: theshovelCanvasEffectsIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'graphics'],
         description: 'Apply visual effects to the entire stage.',
         extDeveloper: 'TheShovel',
@@ -1079,6 +1112,7 @@ const menuItems = [
         tags: ['turbowarp', 'categoryexpansion'],
         iconURL: 'https://extensions.turbowarp.org/images/Lily/ClonesPlus.svg',
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         description: "Expansion of Scratch's clone features.",
         featured: true,
         twDeveloper: 'LilyMakesThings'
@@ -1089,6 +1123,7 @@ const menuItems = [
         twDeveloper: 'PuzzlingGGG',
         iconURL: 'https://extensions.penguinmod.com/images/PuzzlingGGG/TTSR.avif',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'A better alternitive to the base text to speech extension. Powered by the TTStool API.',
         internetConnectionRequired: true,
@@ -1133,6 +1168,7 @@ const menuItems = [
         extensionId: 'jgTimers',
         iconURL: jgTimersExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Create different timers you can control seperately.',
         eventSubmittor: 'Arrow',
@@ -1143,6 +1179,7 @@ const menuItems = [
         extensionId: 'tempVars',
         iconURL: gsaTempVariablesExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Create temporary variables for use in one block stack.',
         featured: true
@@ -1154,6 +1191,7 @@ const menuItems = [
         tags: ['turbowarp'],
         description: 'Create disposable runtime or thread variables.',
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         credits: 'LilyMakesThings',
         featured: true
     },
@@ -1172,6 +1210,7 @@ const menuItems = [
         tags: ['penguinmod'],
         iconURL: jgRuntimeExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         description: 'Blocks for updating Scratch objects like the stage and sprites.',
         credits: 'TheShovel, showierdata9978, SharkPool',
         featured: true
@@ -1181,6 +1220,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Font-Manager.js',
         iconURL: spFontManagerIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'graphics'],
         description: 'Manage, create, and delete fonts.',
         credits: 'SharkPool, Ashimee',
@@ -1191,6 +1231,7 @@ const menuItems = [
         extensionId: 'jgStorage',
         iconURL: jgStorageExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Store data after PenguinMod has already been closed out. Basic Server Storage is also included.',
         eventSubmittor: 'Fir & silvxrcat',
@@ -1244,6 +1285,7 @@ const menuItems = [
         extensionId: 'jgScripts',
         iconURL: jgScriptsExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Create compiled scripts with blocks while the project is running.',
         featured: true
@@ -1253,6 +1295,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/3DMath.js',
         iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', '3d', 'graphics', 'math'],
         description: 'A handful of utilities for making your own sprite-based 3D engine.',
         extDeveloper: 'pinksheep2917',
@@ -1263,6 +1306,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/random_utils.js',
         iconURL: 'https://extensions.penguinmod.com/images/Gen1x/randomutils.avif',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Many blocks related to generating random values, including seed-based number generation, true number generation, UUID\'s, random strings, etc.',
         extDeveloper: 'G1nX',
@@ -1273,6 +1317,7 @@ const menuItems = [
         extensionId: 'shovellzcompresss',
         iconURL: theshovelLzCompressIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Compress and decompress text using lz-string.',
         extDeveloper: 'TheShovel',
@@ -1293,6 +1338,7 @@ const menuItems = [
         tags: ['penguinmod'],
         iconURL: silvxrcatOddMessagesExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         description: 'For logging and variable utilization.',
         featured: true,
         extDeveloper: 'silvxrcat'
@@ -1303,6 +1349,7 @@ const menuItems = [
         tags: ['penguinmod', 'datamgmt'],
         iconURL: jgPrismExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         description: 'Blocks for specific use-cases or major convenience.',
         featured: true
     },
@@ -1311,6 +1358,7 @@ const menuItems = [
         extensionId: 'jgIframe',
         iconURL: jgIframeExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Blocks to place and move around frames that contain HTML content or websites.',
         featured: true,
@@ -1321,6 +1369,7 @@ const menuItems = [
         extensionId: 'shovelColorPicker',
         iconURL: theshovelColorPickerIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Allow the user to choose a color using the built-in color picker, so you don\'t need to make your own.',
         extDeveloper: 'TheShovel',
@@ -1337,6 +1386,7 @@ const menuItems = [
         extensionId: 'jwProto',
         iconURL: jwProtoExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: (
             <FormattedMessage
@@ -1360,6 +1410,7 @@ const menuItems = [
         tags: ['penguinmod'],
         iconURL: iygPerlinNoiseExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         description: (
             <FormattedMessage
                 defaultMessage="Blocks for generating and using Perlin noise. Good for generating terrain, clouds, and other things."
@@ -1374,6 +1425,7 @@ const menuItems = [
         extensionId: 'Gamepad',
         tags: ['turbowarp', 'hardware'],
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         twDeveloper: 'GarboMuffin',
         iconURL: gp,
         description: (
@@ -1391,6 +1443,7 @@ const menuItems = [
         extensionId: 'sharkpoolPrinting',
         iconURL: sharkpoolPrintingIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         description: 'Allows you to show a dialog for printing text, images, and custom HTML to a printer.',
         featured: true
     },
@@ -1400,6 +1453,7 @@ const menuItems = [
         iconURL: clippingblending,
         tags: ['turbowarp', 'graphics'],
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         description: 'Clipping outside of a specified rectangular area and additive color blending.',
         featured: true,
         twDeveloper: 'Vadik1'
@@ -1409,6 +1463,7 @@ const menuItems = [
         extensionId: 'https://extensions.turbowarp.org/pointerlock.js',
         tags: ['turbowarp'],
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         iconURL: pointerlockThumb,
         description: (
             <FormattedMessage
@@ -1426,6 +1481,7 @@ const menuItems = [
         extensionId: 'https://extensions.turbowarp.org/cursor.js',
         tags: ['turbowarp'],
         insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
         iconURL: 'https://extensions.turbowarp.org/images/cursor.png',
         description: (
             <FormattedMessage
@@ -1443,6 +1499,7 @@ const menuItems = [
         extensionId: 'jgScratchAuthenticate',
         iconURL: jgScratchAuthExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
         featured: true
@@ -1461,6 +1518,7 @@ const menuItems = [
         extensionId: 'SPjavascriptV2',
         iconURL: jgJavascriptExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'programminglanguage'],
         description: 'Run your own custom code written in JavaScript!',
         featured: true
@@ -1481,6 +1539,7 @@ const menuItems = [
         description: 'An Extension of Blocks Utilities by Jul Mik (V1 and V2 when named Jul Mik Blocks with Turbobuilder) and helped by Aness6040 (Actual v3)',
         iconURL: 'https://electramod-extensions-gallery.vercel.app/images/julmik6478/julmik_utilities.svg',
 		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
         tags: ['electramod'],
         featured: true
     },
@@ -1507,6 +1566,7 @@ const menuItems = [
         extensionId: 'jwArray',
         iconURL: jwArrayExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Store data efficiently in multi-purpose arrays.',
         extDeveloper: 'jwklong',
@@ -1517,6 +1577,7 @@ const menuItems = [
         extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/dogeiscutObject.js',
         iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/dogeiscutObject.svg',
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Store data efficiently in multi-purpose objects.',
         extDeveloper: 'DogeisCut',
@@ -1527,6 +1588,7 @@ const menuItems = [
         extensionId: 'jwXML',
         iconURL: jwXMLExtensionIcon,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Creating, parsing and modifying XML data.',
         extDeveloper: 'jwklong',
@@ -1537,6 +1599,7 @@ const menuItems = [
         extensionId: 'jwTargets',
         iconURL: jwTargetsExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Direct access to sprites and their clones.',
         extDeveloper: 'jwklong',
@@ -1547,6 +1610,7 @@ const menuItems = [
         extensionId: 'jwNum',
         iconURL: jwNumExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'math'],
         description: 'Advanced number type capable of really big numbers.',
         extDeveloper: 'jwklong',
@@ -1558,6 +1622,7 @@ const menuItems = [
         extensionId: 'jwColor',
         iconURL: jwColorExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'graphics'],
         description: 'Utilities for anything involving colors.',
         extDeveloper: 'jwklong',
@@ -1568,6 +1633,7 @@ const menuItems = [
         extensionId: 'jwVector',
         iconURL: jwVectorExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'math'],
         description: 'Vector type for calculating with X and Y coordinates.',
         extDeveloper: 'jwklong',
@@ -1578,6 +1644,7 @@ const menuItems = [
         extensionId: 'jwLambda',
         iconURL: jwLambdaExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Create anonymous functions with arguments and execute them.',
         extDeveloper: 'jwklong',
@@ -1588,6 +1655,7 @@ const menuItems = [
         extensionId: 'jwScope',
         iconURL: jwScopeExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Temporary variables based on block stack. (extra blocks if used with Array extension)',
         extDeveloper: 'jwklong',
@@ -1598,6 +1666,7 @@ const menuItems = [
         extensionId: 'jwPointer',
         iconURL: jwPointerExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'datamgmt'],
         description: 'Define references to values. (extra blocks if used with Array extension)',
         extDeveloper: 'jwklong',
@@ -1608,6 +1677,7 @@ const menuItems = [
         extensionId: 'jwInt',
         iconURL: jwIntExtensionThumb,
 		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'math'],
         description: 'Large integers with zero precision loss.',
         extDeveloper: 'jwklong',
@@ -1619,6 +1689,7 @@ const menuItems = [
             iconURL: 'https://ldsjvg.webwave.dev/files/dynamicContent/sites/ldsjvg/images/pl/webpage_20/lwcfkkaq/element_437/rwdMode_1/574x139/block_18052024-18_19_55.webp',
             twDeveloper: 'julmik6478',
             tags: ['penguinmod'],
+			customInsetColor: '#00c3ff',
             description: 'Detect that extension is run in sandbox or without sandbox',
             featured: true
         },
@@ -1627,6 +1698,7 @@ const menuItems = [
             extensionId: 'jgEasySave',
             iconURL: defaultExtensionIcon,
 			insetIconURL: penguinmodIcon,
+			customInsetColor: '#00c3ff',
             tags: ['penguinmod', 'datamgmt'],
             description: 'Save variables, lists and extra info to a file, then load those things back in.',
             featured: true
@@ -1646,6 +1718,7 @@ const menuItems = [
             twDeveloper: 'GarboMuffin',
             tags: ['turbowarp'],
             insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
             iconURL: twIcon,
             description: 'Weird new blocks. Replaced by Sensing Expansion.',
             featured: true
@@ -1655,6 +1728,7 @@ const menuItems = [
             extensionId: 'jgChristmas',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
 			insetIconURL: penguinmodIcon,
+			customInsetColor: '#00c3ff',
             tags: ['penguinmod', 'jokes'],
             description: 'It\'s not Christmas just yet!',
             featured: true
@@ -1664,6 +1738,7 @@ const menuItems = [
             extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
             iconURL: catsThumb,
 			insetIconURL: penguinmodIcon,
+			customInsetColor: '#00c3ff',
             tags: ['penguinmod', 'jokes'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
@@ -2480,6 +2555,7 @@ if (IsLocal || IsLiveTests) {
             twDeveloper: 'GarboMuffin',
             tags: ['turbowarp'],
             insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
             iconURL: twIcon,
             description: 'Weird new blocks. Replaced by Sensing Expansion.',
             featured: true
@@ -2532,6 +2608,7 @@ if (IsLocal || IsLiveTests) {
             tags: ['turbowarp', 'jokes'],
             iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
             insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
             description: 'Basic utilities for any fast food employee',
             featured: true,
             twDeveloper: 'LilyMakesThings'
@@ -2540,6 +2617,8 @@ if (IsLocal || IsLiveTests) {
             name: 'image blocks',
             extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
             iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.avif',
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod', 'jokes'],
             internetConnectionRequired: true,
             description: 'who needs cat blocks when you have penguin block',
@@ -2550,6 +2629,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Unite',
             extensionId: 'jwUnite',
             iconURL: jwUniteExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod'],
             description: 'Legacy extension that was eventually merged into the default toolbox.',
             featured: true
@@ -2558,6 +2639,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Debugging',
             extensionId: 'jgDebugging',
             iconURL: jgDebuggingIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod'],
             description: 'Log information and run commands. Good for debugging packaged projects or just easily changing things.',
             featured: true
@@ -2606,6 +2689,8 @@ if (IsLocal || IsLiveTests) {
             extensionId: 'jwStructs',
             tags: ['penguinmod'],
             iconURL: jwStructsExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             description: (
                 <FormattedMessage
                     defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
@@ -2619,6 +2704,8 @@ if (IsLocal || IsLiveTests) {
             name: 'PenguinMod Permissions',
             extensionId: 'JgPermissionBlocks',
             iconURL: jgPermissionExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod'],
             description: 'Legacy extension, old blocks no longer serve a real purpose. Direct blocks to manage permissions that PenguinMod requires you have to do certain tasks.',
             featured: true
@@ -2627,6 +2714,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Jeremys Dev Tools',
             extensionId: 'jgDev',
             iconURL: defaultExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod'],
             description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
             credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
@@ -2636,6 +2725,8 @@ if (IsLocal || IsLiveTests) {
             name: '3D',
             extensionId: 'jg3d',
             iconURL: defaultExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod', '3d'],
             customInsetColor: '#B200FF',
             insetIconURL: jg3dInsetExtensionIcon,
@@ -2657,6 +2748,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Interfaces',
             extensionId: 'jgInterfaces',
             iconURL: jgsilvxrcatInterfacesExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             credits: 'silvxrcat',
             tags: ['penguinmod'],
             description: 'In development.',
@@ -2678,6 +2771,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Inline Blocks',
             extensionId: 'pmInlineBlocks',
             iconURL: pmInlineBlocksExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod'],
             description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
             featured: true
@@ -2693,6 +2788,8 @@ if (IsLocal || IsLiveTests) {
             extensionId: 'jgPathfinding',
             tags: ['penguinmod'],
             iconURL: jgPathfindingExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             description: (
                 <FormattedMessage
                     defaultMessage="(Unstable and or laggy; Needs further work) Have sprites navigate around obstacles in your game instead of clipping into them."
@@ -2706,6 +2803,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Animation',
             extensionId: 'jgAnimation',
             iconURL: jgAnimationExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod'],
             description: 'In development. Currently buggy and missing features.',
             featured: true
@@ -2714,6 +2813,8 @@ if (IsLocal || IsLiveTests) {
             name: 'Virtual Reality',
             extensionId: 'jgVr',
             iconURL: jgVrExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
             tags: ['penguinmod', 'hardware'],
             description: 'In development.',
             extDeveloper: "JeremyGamer13",
