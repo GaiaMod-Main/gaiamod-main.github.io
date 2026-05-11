@@ -2023,7 +2023,7 @@ const menuItems = [
         name: 'Face Sensing',
         extensionId: 'https://extensions.turbowarp.org/lab/face-sensing.js',
         iconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg',
-		insetIconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg'.
+		insetIconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg',
         tags: ['scratch', 'ai'],
         description: 'Sense faces with the camera.',
         featured: true
