@@ -534,7 +534,7 @@ const menuItems = [
         name: 'Lorem Ipsum Generator',
         extensionId: 'https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/Lorem-Ipsum-Generator.js',
         iconURL: loremIpsumThumb,
-        credits: 'soiz1',
+        credits: 'Flappy25',
         tags: ['othermods'],
         description: 'Generates random text examples.',
         internetConnectionRequired: false,
