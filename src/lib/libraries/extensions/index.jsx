@@ -722,6 +722,15 @@ const menuItems = [
         description: 'Blocks that allow games to interact with the Newgrounds API.',
         featured: true
     },
+	{
+        name: 'Newgrounds Audio',
+        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Newgrounds-Audio.js',
+        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Newgrounds-Audio.svg',
+        collaborator: 'SharkPool',
+        tags: ['penguinmod'],
+        description: 'Fetch Audio and Audio Information from Newgrounds. Works best with Tune Shark',
+        featured: true
+    },
     {
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
