@@ -388,6 +388,17 @@ const menuItems = [
         credits: 'Adacraft',
         featured: true
     },
+	{
+        name: '3D',
+        extensionId: 'jg3d',
+        iconURL: jg3dExtensionIcon,
+        tags: ['penguinmod'],
+        customInsetColor: '#B200FF',
+        insetIconURL: jg3dInsetExtensionIcon,
+        description: 'Use the wonders and magic of 3D to power-up your project!',
+        extDeveloper: 'JeremyGamer13',
+        featured: true
+    },
     {
         name: 'Cocrea Fetch API',
         extensionId: 'https://gaiamod-main.github.io/CocreaFetch.js',
@@ -2761,8 +2772,6 @@ if (IsLocal || IsLiveTests) {
             name: '3D',
             extensionId: 'jg3d',
             iconURL: defaultExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
             tags: ['penguinmod', '3d'],
             customInsetColor: '#B200FF',
             insetIconURL: jg3dInsetExtensionIcon,
