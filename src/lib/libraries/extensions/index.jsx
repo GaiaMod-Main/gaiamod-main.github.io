@@ -62,7 +62,7 @@ import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import penguinmodIcon from './gaiamod/penguinmod_icon.svg';
 import electramodIcon from './electramod/electramod_icon.png';
-import astraeditorIcon from './gaiamod/astraeditor_icon.png';
+import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
