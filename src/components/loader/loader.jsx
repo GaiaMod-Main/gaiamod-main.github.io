@@ -5,6 +5,7 @@ import styles from './loader.css';
 import PropTypes from 'prop-types';
 import bindAll from 'lodash.bindall';
 import stars from './stars2.svg';
+import ShipGuy from './ShipGuy.svg';
 import logo from './title.svg';
 import { randomMessages } from '../../lib/randomMessages';
 
@@ -150,7 +151,7 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <img src={stars} alt="Stars"/>
+                        <img src={ShipGuy} alt="Ship Guy"/>
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
