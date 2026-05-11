@@ -254,6 +254,8 @@ import loremIpsumThumb from './gaiamod/LoremIpsumThumb.png';
 import webcamThumb from './gaiamod/WebCamThumb.png';
 import chatNioThumb from './gaiamod/ChatNio.png';
 
+import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
+
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
@@ -2383,6 +2385,15 @@ const menuItems = [
         iconURL: snailIDEGalleryThumb,
         description: 'See some Snail-IDE and user-submitted extensions. Opens in a new tab.',
         tags: ['snailide', 'library'],
+        featured: true
+    },
+	{
+        name: 'AmpMod Extensions Gallery',
+        href: 'https://ampmod.codeberg.page/extensions/',
+        extensionId: 'special_ampmodExtensionLibrary',
+        iconURL: ampmodgalleryThumb,
+        description: 'See some AmpMod External extensions. Opens in a new tab.',
+        tags: ['othermods', 'library'],
         featured: true
     },
     {
