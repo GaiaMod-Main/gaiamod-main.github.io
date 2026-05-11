@@ -475,7 +475,6 @@ const menuItems = [
         tags: ['astraeditor', 'ai'],
         iconURL: chatNioThumb,
         description: 'Interact with a Chat Nio program.',
-        extDeveloper: 'ningqi',
         featured: true
     },
     {
