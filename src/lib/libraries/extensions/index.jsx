@@ -252,6 +252,7 @@ import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
 import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
 import loremIpsumThumb from './gaiamod/LoremIpsumThumb.png';
 import webcamThumb from './gaiamod/WebCamThumb.png';
+import chatNioThumb from './gaiamod/ChatNio.png';
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -466,6 +467,15 @@ const menuItems = [
         extDeveloper: 'AxolayDev',
         tags: ['othermods'],
         description: 'Control your projects with multitouch without a hassle!',
+        featured: true
+    },
+	    {
+        name: 'Chat Nio',
+        extensionId: 'https://github.com/ningqi24/TurbowarpExtension/raw/refs/heads/main/.js/ChatNio.js',
+        tags: ['astraeditor', 'ai'],
+        iconURL: chatNioThumb,
+        description: 'Interact with a Chat Nio program.',
+        extDeveloper: 'ningqi',
         featured: true
     },
     {
