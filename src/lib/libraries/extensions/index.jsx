@@ -469,14 +469,6 @@ const menuItems = [
         description: 'Control your projects with multitouch without a hassle!',
         featured: true
     },
-	    {
-        name: 'Chat Nio',
-        extensionId: 'https://github.com/ningqi24/TurbowarpExtension/raw/refs/heads/main/.js/ChatNio.js',
-        tags: ['astraeditor', 'ai'],
-        iconURL: chatNioThumb,
-        description: 'Interact with a Chat Nio program.',
-        featured: true
-    },
     {
         name: 'Ada Vision',
         extensionId: 'adavision',
