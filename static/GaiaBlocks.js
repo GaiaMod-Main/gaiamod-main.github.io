@@ -71,59 +71,6 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
             blockType: Scratch.BlockType.BOOLEAN,
             text: 'Is a PenguinMod fork?'
           },
-          {
-            opcode: 'loadExtension',
-            blockType: Scratch.BlockType.COMMAND,
-            text: 'load an extension from [TEXT]',
-            arguments: {
-              TEXT: {
-                type: Scratch.ArgumentType.STRING,
-                defaultValue: "https://extensions.turbowarp.org/utilities.js",
-              },
-            },
-          },
-          {
-            opcode: 'restartProject',
-            blockType: Scratch.BlockType.COMMAND,
-            text: 'Restart a project',
-            arguments: {
-              TEXT: {
-                type: Scratch.ArgumentType.STRING,
-                defaultValue: "0",
-              },
-            },
-          },
-          {
-            opcode: 'enableDebug',
-            blockType: Scratch.BlockType.COMMAND,
-            text: 'Enable debug mode',
-            arguments: {
-              TEXT: {
-                type: Scratch.ArgumentType.STRING,
-                defaultValue: "0",
-              },
-            },
-          },
-         {
-        opcode: 'widescreen',
-        blockType: Scratch.BlockType.COMMAND,
-        text: 'Widescreen',
-        },
-         {
-        opcode: 'normal',
-        blockType: Scratch.BlockType.COMMAND,
-        text: 'Standard screen',
-        },
-         {
-        opcode: 'widehd',
-        blockType: Scratch.BlockType.COMMAND,
-        text: 'Widescreen HD',
-        },
-         {
-        opcode: 'normalhd',
-        blockType: Scratch.BlockType.COMMAND,
-        text: 'Standard HD',
-        },
 		{
           opcode: 'sayName',
           blockType: Scratch.BlockType.REPORTER,
@@ -138,17 +85,6 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
             text: Scratch.translate("snapshot stage"),
             disableMonitor: true,
           },
-		  {
-         opcode: 'setBackgroundColor',
-         text: 'set stage background color to [COLOR]',
-         blockType: Scratch.BlockType.COMMAND,
-         arguments: {
-         COLOR: {
-         type: Scratch.ArgumentType.COLOR,
-                defaultValue: "#855CD6",
-           }
-          }
-         },
 		/////lols
       ],
     };
@@ -206,45 +142,6 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
   return this.isem
   
     }
-    restartProject() {
-      vm.greenFlag();
-    }
-    enableDebug() {
-      vm.enableDebug();
-    }
-    async loadExtension({ TEXT }) {
-      if (await vm.securityManager.canLoadExtensionFromProject(TEXT)) {
-        vm.extensionManager.loadExtensionURL(TEXT);
-      }
-    }
-widescreen() {
-        let width = 640;
-        let height = 360;
-        if (width <= 0) width = 1;
-        if (height <= 0) height = 1;
-        if (vm) vm.setStageSize(width, height);
-    }
-    normal() {
-        let width = 480;
-        let height = 360;
-        if (width <= 0) width = 1;
-        if (height <= 0) height = 1;
-        if (vm) vm.setStageSize(width, height);
-    }
-  widehd() {
-        let width = 1280;
-        let height = 720;
-        if (width <= 0) width = 1;
-        if (height <= 0) height = 1;
-        if (vm) vm.setStageSize(width, height);
-    }
-  normalhd() {
-        let width = 960;
-        let height = 720;
-        if (width <= 0) width = 1;
-        if (height <= 0) height = 1;
-        if (vm) vm.setStageSize(width, height);
-    }
 	  sayName({ TEXT }) {
     return TEXT;
   }
@@ -254,22 +151,6 @@ snapshotStage(args, util) {
           resolve(uri);
         });
       });
-    }
-setBackgroundColor(args) {
-        let RGB;
-        if (typeof args.COLOR === "number") {
-            RGB = Scratch.Cast.toRgbColorObject(args.COLOR);
-            this.runtime.renderer.setBackgroundColor(RGB.r / 255, RGB.g / 255, RGB.b / 255);
-        } else {
-            RGB = Scratch.Cast.toString(args.COLOR);
-            RGB = RGB.startsWith("#") ? RGB.slice(1) : RGB;
-            this.runtime.renderer.setBackgroundColor(
-                parseInt(RGB.slice(0, 2), 16) / 255,
-                parseInt(RGB.slice(2, 4), 16) / 255,
-                parseInt(RGB.slice(4, 6), 16) / 255,
-                RGB.length === 8 ? parseInt(RGB.slice(6, 8), 16) / 255 : 1
-            )
-        }
     }
 }
     Scratch.extensions.register(new GaiaBlocks(Scratch.vm.runtime));
