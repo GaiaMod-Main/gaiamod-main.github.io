@@ -315,7 +315,7 @@ const menuItems = [
         extensionId: 'https://gaiamod-main.github.io/SpinachFacts.js',
         iconURL: spinachThumb,
         extDeveloper: 'GaiaWindWave90',
-        tags: ['gaiamod'],
+        tags: ['gaiamod', 'jokes'],
         description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
         internetConnectionRequired: true,
         featured: true

@@ -7,6 +7,7 @@ export default [
     { tag: 'snailide', intlLabel: messages.snailide },
 	{ tag: 'adacraft', intlLabel: messages.adacraft },
 	{ tag: 'astraeditor', intlLabel: messages.astraeditor },
+	{ tag: 'genesiside', intlLabel: messages.genesiside },
 	{ tag: 'othermods', intlLabel: messages.othermods },
     { tag: 'turbowarp', intlLabel: messages.turbowarp },
     { tag: 'scratch', intlLabel: messages.scratch },

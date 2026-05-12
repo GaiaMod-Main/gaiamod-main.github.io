@@ -151,6 +151,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by GaiaMod',
         id: 'pm.libraryTags.gaiamod'
     },
+    genesiside: {
+        defaultMessage: 'Genesis IDE',
+        description: 'Tag for filtering a library by Genesis IDE',
+        id: 'pm.libraryTags.genesiside'
+    },
     electramod: {
         defaultMessage: 'ElectraMod',
         description: 'Tag for filtering a library by ElectraMod',
