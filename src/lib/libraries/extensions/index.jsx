@@ -440,6 +440,17 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Video',
+        extensionId: 'https://extensions.turbowarp.org/Lily/Video.js',
+        extDeveloper: 'LilyMakesThings, SharkPool, and Fath11',
+        iconURL: 'https://extensions.turbowarp.org/images/Lily/Video.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        description: 'Play videos from URLs.',
+        featured: true
+    },
+    {
         name: 'Better Quake',
         extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
         iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
