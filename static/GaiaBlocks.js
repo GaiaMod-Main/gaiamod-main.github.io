@@ -15,6 +15,7 @@
     });
 	
 const renderer = Scratch.vm.runtime.renderer;
+const runtime = Scratch.vm.runtime;
 
 
 class GaiaBlocks {

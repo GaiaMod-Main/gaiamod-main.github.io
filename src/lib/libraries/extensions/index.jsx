@@ -450,6 +450,55 @@ const menuItems = [
         description: 'Play videos from URLs.',
         featured: true
     },
+	   {
+        name: 'Newgrounds',
+        extensionId: 'https://extensions.turbowarp.org/obviousAlexC/newgroundsIO.js',
+        extDeveloper: 'ObviousAlexC',
+        iconURL: 'https://extensions.turbowarp.org/images/obviousAlexC/newgroundsIO.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Blocks that allow games to interact with the Newgrounds API.',
+        featured: true
+    },
+	{
+        name: 'Newgrounds Audio',
+        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Newgrounds-Audio.js',
+        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Newgrounds-Audio.svg',
+        collaborator: 'SharkPool',
+        tags: ['penguinmod'],
+        description: 'Fetch Audio and Audio Information from Newgrounds. Works best with Tune Shark',
+        featured: true
+    },
+    {
+        name: 'Dangerous, But Useful',
+        extensionId: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions/UpgradedDangerousBusUseful.js',
+        iconURL: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/extendedGallery/Icons/DBU.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        description: 'Dangerous Utility Blocks!',
+		extDeveloper: 'ObviousAlexC',
+        featured: true
+    },
+    {
+        name: 'URL Information',
+        extensionId: 'https://snail-ide.js.org/urlinfo.js',
+        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/urlinfo/urlinfo.png?raw=true',
+        tags: ['snailide'],
+        credits: 'redspacecat',
+        description: 'Get information about the URL',
+        featured: true
+    },
+    {
+        name: 'Browser & OS Information',
+        extensionId: 'https://snail-ide.js.org/browserandosinfo.js',
+        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/browserandosinfo/browserandosinfo.png?raw=true',
+        tags: ['snailide'],
+        credits: 'redspacecat',
+        description: 'Get information about the user\'s browser and operating system',
+        featured: true
+    },
     {
         name: 'Better Quake',
         extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
@@ -753,26 +802,85 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Newgrounds',
-        extensionId: 'https://extensions.turbowarp.org/obviousAlexC/newgroundsIO.js',
-        extDeveloper: 'ObviousAlexC',
-        iconURL: 'https://extensions.turbowarp.org/images/obviousAlexC/newgroundsIO.svg',
-		insetIconURL: turbowarpIcon,
-		customInsetColor: '#ff4d4d',
-        tags: ['turbowarp', 'datamgmt'],
-        description: 'Blocks that allow games to interact with the Newgrounds API.',
-        featured: true
-    },
-	{
-        name: 'Newgrounds Audio',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Newgrounds-Audio.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Newgrounds-Audio.svg',
-        collaborator: 'SharkPool',
-        tags: ['penguinmod'],
-        description: 'Fetch Audio and Audio Information from Newgrounds. Works best with Tune Shark',
+        name: 'PangAI',
+        extensionId: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.js',
+        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.png',
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod', 'ai'],
+        description: 'Extension for AI usage.',
+        credits: 'logise1123',
+        internetConnectionRequired: true,
         featured: true
     },
     {
+        name: 'FireBase Auth',
+        extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
+        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/firebaseauth.png',
+        tags: ['penguinmod'],
+        description: 'Secure Authentication.',
+        credits: 'logise1123',
+        internetConnectionRequired: true,
+        featured: true
+    },
+	    {
+        name: 'Kobold AI',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/main.js',
+        extDeveloper: 'Pooiod7',
+        description: 'Generate text and images for free with the power of The Horde',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/cover.svg',
+        tags: ['penguinmod', 'ai'],
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'SAM Speech',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/Sam/main.js',
+        extDeveloper: 'Pooiod7',
+        description: 'Generate speech from text using sam',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/Sam/cover.svg',
+        tags: ['penguinmod'],
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'QR Codes',
+        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/QR-Codes.js',
+        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/QR-Codes.svg',
+        tags: ['penguinmod'],
+        description: 'Create and Read QR Codes on the Client.',
+        extDeveloper: 'SharkPool',
+        featured: true
+    },
+    {
+        name: 'Roku',
+        extensionId: 'roku',
+        internetConnectionRequired: true,
+        credits: 'gvbvdxx',
+        iconURL: roku,
+        tags: ['snailide'],
+        description: 'Interact with your Roku tv via the GM2Helper software!',
+        featured: true
+    },
+        {
+        name: 'Video Sharing',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/main.js',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/cover.svg',
+        tags: ['penguinmod'],
+        description: 'Share your screen or camera on your project as a data-uri.',
+        extDeveloper: 'Pooiod7',
+        featured: true
+    },	
+    {
+        name: 'Beepbox Player',
+        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
+        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/BeepBoxPlayer.svg',
+        tags: ['penguinmod', 'noisemaker'],
+        description: 'Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!',
+        extDeveloper: 'DogeisCut',
+        featured: true
+    },
+	{
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
         iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
@@ -795,107 +903,8 @@ const menuItems = [
         extensionId: 'https://banana-mod.github.io/BlockBeat/blockBeat.js',
         iconURL: 'https://banana-mod.github.io/BlockBeat/blockBeat.svg',
         credits: 'Banana-mod',
-        tags: ['othermods'],
+        tags: ['othermods', 'noisemaker'],
         description: 'Lets you play blockBeat!',
-        featured: true
-    },
-    {
-        name: 'Dangerous, But Useful',
-        extensionId: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions/UpgradedDangerousBusUseful.js',
-        iconURL: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/extendedGallery/Icons/DBU.svg',
-		insetIconURL: turbowarpIcon,
-		customInsetColor: '#ff4d4d',
-        tags: ['turbowarp'],
-        description: 'Dangerous Utility Blocks!',
-		extDeveloper: 'ObviousAlexC',
-        featured: true
-    },
-    {
-        name: 'URL Information',
-        extensionId: 'https://snail-ide.js.org/urlinfo.js',
-        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/urlinfo/urlinfo.png?raw=true',
-        tags: ['snailide'],
-        credits: 'redspacecat',
-        description: 'Get information about the URL',
-        featured: true
-    },
-    {
-        name: 'Browser & OS Information',
-        extensionId: 'https://snail-ide.js.org/browserandosinfo.js',
-        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/browserandosinfo/browserandosinfo.png?raw=true',
-        tags: ['snailide'],
-        credits: 'redspacecat',
-        description: 'Get information about the user\'s browser and operating system',
-        featured: true
-    },
-    {
-        name: 'PangAI',
-        extensionId: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.js',
-        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/pangai.png',
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod', 'ai'],
-        description: 'Extension for AI usage.',
-        credits: 'logise1123',
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'FireBase Auth',
-        extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
-        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/firebaseauth.png',
-        tags: ['penguinmod'],
-        description: 'Secure Authentication.',
-        credits: 'logise1123',
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'Roku',
-        extensionId: 'roku',
-        internetConnectionRequired: true,
-        credits: 'gvbvdxx',
-        iconURL: roku,
-        tags: ['snailide'],
-        description: 'Interact with your Roku tv via the GM2Helper software!',
-        featured: true
-    },
-        {
-        name: 'Video Sharing',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/main.js',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/cover.svg',
-        tags: ['penguinmod'],
-        description: 'Share your screen or camera on your project as a data-uri.',
-        extDeveloper: 'Pooiod7',
-        featured: true
-    },
-    {
-        name: 'Kobold AI',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/main.js',
-        extDeveloper: 'Pooiod7',
-        description: 'Generate text and images for free with the power of The Horde',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/cover.svg',
-        tags: ['penguinmod', 'ai'],
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'SAM Speech',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/Sam/main.js',
-        extDeveloper: 'Pooiod7',
-        description: 'Generate speech from text using sam',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/Sam/cover.svg',
-        tags: ['penguinmod'],
-        internetConnectionRequired: true,
-        featured: true
-    },	
-    {
-        name: 'Beepbox Player',
-        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
-        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/BeepBoxPlayer.svg',
-        tags: ['penguinmod', 'noisemaker'],
-        description: 'Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!',
-        extDeveloper: 'DogeisCut',
         featured: true
     },
     {
@@ -922,6 +931,15 @@ const menuItems = [
         iconURL: filesExtensionIcon,
         tags: ['turbowarp', 'datamgmt'],
         description: 'Blocks for reading, editing, & creating files & folders.',
+        featured: true
+    },
+	    {
+        name: 'Beepbox Player',
+        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
+        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/BeepBoxPlayer.svg',
+        tags: ['penguinmod', 'noisemaker'],
+        description: 'Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!',
+        extDeveloper: 'DogeisCut',
         featured: true
     },
     {
@@ -1852,6 +1870,20 @@ const menuItems = [
             description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
             featured: true
         },
+{
+        name: 'Marty the Robot',
+        extensionId: 'marty',
+        collaborator: "Robotical",
+        iconURL: 'https://scratch3beta.robotical.io/static/assets/f1f767c70b08089a3940f35ebfdc315e.png',
+        insetIconURL: 'https://scratch3beta.robotical.io/static/assets/825efb8616528b0a1ed8fe7d6f325408.svg',
+        description: 'Play and program with Marty.',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: true
+
+    },
 {
         name: 'LEGO Duplo Train',
         extensionId: 'duploTrain',
