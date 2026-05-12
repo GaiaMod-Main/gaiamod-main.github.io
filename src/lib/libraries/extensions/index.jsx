@@ -963,15 +963,6 @@ const menuItems = [
         description: 'Blocks for reading, editing, & creating files & folders.',
         featured: true
     },
-	    {
-        name: 'Beepbox Player',
-        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
-        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/BeepBoxPlayer.svg',
-        tags: ['penguinmod', 'noisemaker'],
-        description: 'Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!',
-        extDeveloper: 'DogeisCut',
-        featured: true
-    },
     {
         name: 'Network',
         extensionId: 'https://extensions.turbowarp.org/true-fantom/network.js',
