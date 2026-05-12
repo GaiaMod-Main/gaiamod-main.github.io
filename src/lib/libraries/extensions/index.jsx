@@ -706,9 +706,8 @@ const menuItems = [
 {
         name: '3D VR',
         extensionId: 'jg3dVr',
-        iconURL: 'jgVrExtensionIcon',
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
+        iconURL: jg3dVrExtensionIcon,
+		insetIconURL: jg3dVrInsetExtensionIcon,
         tags: ['penguinmod'],
         description: "Unfinished PenguinMod Extension.",
         extDeveloper: "JeremyGamer13",
