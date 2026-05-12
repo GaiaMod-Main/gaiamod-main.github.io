@@ -18,7 +18,7 @@ class GaiaRuntime {
     return {
 		  id: "gaiaruntime",
 		  name: "Runtime Tools",
-		  color1: "#7A8EBA",
+		  color1: "#968eba",
       blocks: [
           {
             opcode: 'loadExtension',
