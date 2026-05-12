@@ -379,6 +379,16 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Speech Bubbles',
+        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Speech-Bubbles.js',
+        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Speech-Bubbles.svg',
+        credits: 'SharkPool',
+        tags: ['penguinmod'],
+        description: 'Customizable Speech Bubbles.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+    {
         name: 'Adacraft HTTP',
         extensionId: 'adahttp',
         tags: ['adacraft'],
@@ -878,6 +888,26 @@ const menuItems = [
         tags: ['penguinmod', 'noisemaker'],
         description: 'Play, edit, and read songs from any BeepBox mod directly from the URL or JSON!',
         extDeveloper: 'DogeisCut',
+        featured: true
+    },
+	    {
+        name: 'Spotify',
+        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Spotify.js',
+        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Spotify.svg',
+        credits: 'SharkPool',
+        tags: ['penguinmod', 'noisemaker'],
+        description: 'Fetch Statistics, Information, and Play Songs from Spotify.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+	    {
+        name: 'SoundCloud API',
+        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/SoundCloud-API.js',
+        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/SoundCloud-API.svg',
+        credits: 'SharkPool',
+        tags: ['penguinmod', 'noisemaker'],
+        description: 'Fetch Statistics, Information, and Play Songs from SoundCloud.',
+        internetConnectionRequired: false,
         featured: true
     },
 	{

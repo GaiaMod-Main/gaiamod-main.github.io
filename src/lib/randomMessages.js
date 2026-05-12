@@ -40,7 +40,7 @@ export const randomMessages = [
     "there's another username easter egg that isn't \"your mom\".",
     "You can thank this almighty Sprunki Wenda for giving us an idea!<img src='https://static.wikia.nocookie.net/incredibox-sprunki/images/d/d2/Wendasvg.svg' width='25px'>",
     "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?",
-	"I still think of this when I see UNCLE SUCKER!! lol!"
+	"I still think of this when I see UNCLE SUCKER!! lol!",
     "old macdonald had a freaking farm lol",
     "There's not a chance I am interested in this bear!",
     "LIBERATING LOBSTERS! YOU DID IT!",
