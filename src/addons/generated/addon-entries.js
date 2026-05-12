@@ -89,7 +89,7 @@ export default {
  "canvas-screenshot": () => import(/* webpackChunkName: "addon-entry-canvas-screenshot" */ "../addons/canvas-screenshot/_runtime_entry.js"),
  "green-flag-order": () => import(/* webpackChunkName: "addon-entry-green-flag-order" */ "../addons/green-flag-order/_runtime_entry.js"),
  //"autosave": () => import(/* webpackChunkName: "addon-entry-autosave" */ "../addons/autosave/_runtime_entry.js"),
-  "frame-stepper": () => import(/* webpackChunkName: "addon-entry-frame-stepper" */ "../addons/frame-stepper/_runtime_entry.js"),
-  //"custom-web-font": () => import(/* webpackChunkName: "addon-entry-custom-web-font" */ "../addons/custom-web-font/_runtime_entry.js"),
-  //"custom-block-font": () => import(/* webpackChunkName: "addon-entry-custom-block-font" */ "../addons/custom-block-font/_runtime_entry.js"),
+  //"frame-stepper": () => import(/* webpackChunkName: "addon-entry-frame-stepper" */ "../addons/frame-stepper/_runtime_entry.js"),
+  "custom-web-font": () => import(/* webpackChunkName: "addon-entry-custom-web-font" */ "../addons/custom-web-font/_runtime_entry.js"),
+  "custom-block-font": () => import(/* webpackChunkName: "addon-entry-custom-block-font" */ "../addons/custom-block-font/_runtime_entry.js"),
 };

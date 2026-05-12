@@ -60,7 +60,8 @@ import rubyIcon from './snail-ide/ruby.png';
 import galleryIcon from './gallery/gallery.svg';
 import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
-import penguinmodIcon from './gaiamod/penguinmod_icon.svg';
+import gaiamodIcon from './gaiamod/gaiamod_icon.png';
+import penguinmodIcon from './gaiamod/penguinmod_icon.png';
 import electramodIcon from './electramod/electramod_icon.png';
 import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
@@ -185,10 +186,14 @@ import pmOperatorsExpansionExtensionIcon from './penguinmod/extensions/operators
 import defaultExtensionIcon from './penguinmod/extensions/placeholder.png';
 
 
-// Um...
+// um...
 import turboBuilderIcon from './gaiamod/turbobuilder.png';
 import turboBuilderDevIcon from './gaiamod/turbobuilder-dev.png';
 import silvxrcatOddMessagesExtensionIcon from './penguinmod/extensions/oddmessages.svg';
+
+// dinosaurmod
+import luaIcon from './dinosaurmod/lua.png';
+import pythonIcon from './dinosaurmod/python.png';
 
 //sip snip snip lol
 import chatgpt2scratchIconURL from './chatgpt2scratch/chatgpt2scratch.png';
@@ -286,6 +291,8 @@ const menuItems = [
         extensionId: 'https://gaiamod-main.github.io/GaiaBlocks.js',
         extDeveloper: 'GaiaWindWave90',
         iconURL: gaiaBlocksThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
         tags: ['gaiamod'],
         description: 'Wonderful utility blocks! Modified by Gaia.',
         internetConnectionRequired: true,
@@ -295,6 +302,8 @@ const menuItems = [
         name: 'GaiaAI',
         extensionId: 'https://gaiamod-main.github.io/GaiaAI.js',
         iconURL: gaiaAIThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
         tags: ['gaiamod', 'ai'],
         description: 'PangAI modified to add more stuff.',
         credits: 'logise1123',
@@ -305,6 +314,8 @@ const menuItems = [
         name: 'Prompts',
         extensionId: 'https://gaiamod-main.github.io/GTPPrompts.js',
         iconURL: promptsThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
         extDeveloper: 'GaiaWindWave90',
         tags: ['gaiamod', 'ai'],
         description: 'Prompts made for Gaia AI. Inspired by the prompts extension found in Snail-IDE.',
@@ -314,6 +325,8 @@ const menuItems = [
         name: 'Spinach Facts',
         extensionId: 'https://gaiamod-main.github.io/SpinachFacts.js',
         iconURL: spinachThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
         extDeveloper: 'GaiaWindWave90',
         tags: ['gaiamod', 'jokes'],
         description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
@@ -324,6 +337,8 @@ const menuItems = [
             name: 'Penguin Attack!',
             extensionId: 'https://gaiamod-main.github.io/PenguinAttack.js',
             iconURL: penguinThumb,
+    		insetIconURL: gaiamodIcon,
+	    	customInsetColor: '#2D2DD2',
             tags: ['gaiamod', 'jokes'],
             internetConnectionRequired: true,
             credits: 'JeremyGamer13, with modifications by GaiaWindWave90',
@@ -334,6 +349,8 @@ const menuItems = [
         name: 'Webcam Recorder',
         extensionId: 'https://gaiamod-main.github.io/Webcamrecorder.js',
         iconURL: webcamThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
         credits: '-SIPC-, with modifications by GaiaWindWave90',
         tags: ['gaiamod'],
         description: 'Records videos straight out of webcam.',
