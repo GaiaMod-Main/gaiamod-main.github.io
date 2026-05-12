@@ -36,6 +36,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://editor.snail-ide.com/') ||
     url.startsWith('https://sharkpools-extensions.vercel.app/') || // SharkPool
     url.startsWith('https://sharkpool-sp.github.io/SharkPools-Extensions/') || // SharkPool (github link)
+    url.startsWith('https://sharkpools-extensions.vercel.app/extension-code/') || // SharkPool 2
     url.startsWith('https://pen-group.github.io/') || // Pen-Group / ObviousAlexC
     url.startsWith('https://rubyteam.tech/cdn/extensions/') ||
     url.startsWith('https://ruby-devs.vercel.app/gallery') ||
