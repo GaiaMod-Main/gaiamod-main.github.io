@@ -299,14 +299,14 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'GaiaAI',
-        extensionId: 'https://gaiamod-main.github.io/GaiaAI.js',
+        name: 'GaiaGPT',
+        extensionId: 'https://gaiamod-main.github.io/GaiaGPT.js',
         iconURL: gaiaAIThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod', 'ai'],
-        description: 'PangAI modified to add more stuff.',
-        credits: 'logise1123',
+        description: 'GaiaMod\'s modification of Pang AI with more prompts.',
+        extDeveloper: 'logise1123 and GaiaWindWave90',
         internetConnectionRequired: true,
         featured: true
     },
