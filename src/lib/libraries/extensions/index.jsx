@@ -241,7 +241,7 @@ import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
 //gaiamod
-import gaiaAIThumb from './gaiamod/gaiaai.png';
+import gaiaGPTThumb from './gaiamod/GaiaGPT.svg';
 import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
 import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
@@ -301,11 +301,11 @@ const menuItems = [
     {
         name: 'GaiaGPT',
         extensionId: 'https://gaiamod-main.github.io/GaiaGPT.js',
-        iconURL: gaiaAIThumb,
+        iconURL: gaiaGPTThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod', 'ai'],
-        description: 'GaiaMod\'s modification of Pang AI with more prompts.',
+        description: 'A GaiaMod modification of Pang AI with more prompts.',
         extDeveloper: 'logise1123 and GaiaWindWave90',
         internetConnectionRequired: true,
         featured: true
