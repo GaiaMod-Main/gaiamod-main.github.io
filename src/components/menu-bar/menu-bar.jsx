@@ -933,6 +933,11 @@ class MenuBar extends React.Component {
 								 <MenuItem onClick={this.props.onClickCustManager}>
                                         Add Custom Extension
                                     </MenuItem>
+								 <MenuItem onClick={() => {
+                                    window.location.href = "https://gaiamod-main.github.io/Extension-Editor/"
+                                }}>
+                                        Extension Editor
+                                    </MenuItem>
                                     <MenuItem onClick={this.handleClickDownloadLogs}>
                                         <FormattedMessage
                                             defaultMessage="Download Logs"
