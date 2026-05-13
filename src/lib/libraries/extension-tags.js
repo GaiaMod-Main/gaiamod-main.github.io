@@ -1,5 +1,11 @@
 import messages from './tag-messages.js';
 export default [
+    { tag: 'divider1', intlLabel: 'Actions', type: 'title' }, //??
+    { tag: 'custom', intlLabel: messages.customextension, type: 'custom', func: (library) => {
+        library.select(''); // selects custom extension since it's id is ''
+    } },
+	{ tag: 'divider3', intlLabel: messages.scratch, type: 'divider' },
+    { tag: 'divider1', intlLabel: 'Tags', type: 'title' }, //??
     { tag: 'penguinmod', intlLabel: messages.penguinmod },
     { tag: 'gaiamod', intlLabel: messages.gaiamod },
     { tag: 'electramod', intlLabel: messages.electramod },
@@ -25,9 +31,4 @@ export default [
     { tag: 'divider1', intlLabel: messages.scratch, type: 'divider' },
     { tag: 'library', intlLabel: messages.library },
     { tag: 'extcreate', intlLabel: messages.extcreate },
-    { tag: 'divider3', intlLabel: messages.scratch, type: 'divider' },
-    { tag: 'divider1', intlLabel: 'Actions', type: 'title' }, //??
-    { tag: 'custom', intlLabel: messages.customextension, type: 'custom', func: (library) => {
-        library.select(''); // selects custom extension since it's id is ''
-    } },
 ];
