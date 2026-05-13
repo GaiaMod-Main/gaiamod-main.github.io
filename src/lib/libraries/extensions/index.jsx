@@ -292,7 +292,7 @@ const menuItems = [
     },
     {
         name: 'GaiaBlocks',
-        extensionId: 'https://gaiamod-main.github.io/GaiaBlocks.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaBlocks.js',
         extDeveloper: 'GaiaWindWave90',
         iconURL: gaiaBlocksThumb,
 		insetIconURL: gaiamodIcon,
@@ -303,7 +303,7 @@ const menuItems = [
     },
     {
         name: 'GaiaGPT',
-        extensionId: 'https://gaiamod-main.github.io/GaiaGPT.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaGPT.js',
         iconURL: gaiaGPTThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
@@ -315,7 +315,7 @@ const menuItems = [
     },
     {
         name: 'Runtime Tools',
-        extensionId: 'https://gaiamod-main.github.io/GaiaRuntime.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaRuntime.js',
         iconURL: gaiaRuntimeThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
@@ -326,7 +326,7 @@ const menuItems = [
     },
     {
         name: 'Prompts',
-        extensionId: 'https://gaiamod-main.github.io/GTPPrompts.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GTPPrompts.js',
         iconURL: promptsThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
@@ -337,7 +337,7 @@ const menuItems = [
     },
     {
         name: 'Spinach Facts',
-        extensionId: 'https://gaiamod-main.github.io/SpinachFacts.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/SpinachFacts.js',
         iconURL: spinachThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
@@ -349,7 +349,7 @@ const menuItems = [
     },
     {
             name: 'Penguin Attack!',
-            extensionId: 'https://gaiamod-main.github.io/PenguinAttack.js',
+            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PenguinAttack.js',
             iconURL: penguinThumb,
     		insetIconURL: gaiamodIcon,
 	    	customInsetColor: '#2D2DD2',
@@ -361,7 +361,7 @@ const menuItems = [
         },
     {
         name: 'Webcam Recorder',
-        extensionId: 'https://gaiamod-main.github.io/Webcamrecorder.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
         iconURL: webcamThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
@@ -373,7 +373,7 @@ const menuItems = [
     },
     {
         name: 'Extension Manager',
-        extensionId: 'https://gaiamod-main.github.io/extensionManager.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/extensionManager.js',
         iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
         credits: 'soiz1, with modifications by GaiaWindWave90',
         tags: ['othermods'],
@@ -445,7 +445,7 @@ const menuItems = [
     },
     {
         name: 'Cocrea Fetch API',
-        extensionId: 'https://gaiamod-main.github.io/CocreaFetch.js',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/CocreaFetch.js',
         iconURL: cocreaFetchThumb,
         credits: 'fath11',
         tags: ['gandiide'],
