@@ -241,7 +241,7 @@ import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
 //gaiamod
-import gaiaGPTThumb from './gaiamod/GaiaGPT.svg';
+import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
 import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
 import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
