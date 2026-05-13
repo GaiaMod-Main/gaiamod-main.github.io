@@ -25,6 +25,7 @@ export const randomMessages = [
     "Fixing all of the grammar errors, lol",
 	"lmao nightmare-inducing closing logos",
 	"STOP! LOADING TIME!",
+	"You should try Versolot, Super ChaosMod, and Genesis IDE.",
 	"This site does not have cancer, you nitwit!",
     "Gaia the mortallized cat.",
     "Dave the magical cheese wizard.",
