@@ -259,11 +259,6 @@ export default async ({ addon, console, msg }) => {
             // Re-add camera icon
             const cameraIcon = document.createElement('span');
             cameraIcon.innerHTML = `./record.svg`;
-			
-			// Add icon and text
-            tempRecordElem.appendChild(cameraIcon);
-            tempRecordElem.appendChild(document.createTextNode(text));
-        };
 		
         const startRecording = async (opts) => {
             // Timer
@@ -396,10 +391,8 @@ export default async ({ addon, console, msg }) => {
         if (!recordElem) {
             recordElem = Object.assign(document.createElement("div"), {
                 className: "sa-record " + elem.className,
+                textContent: msg("record"),
             });
-			// Initialize button with camera icon and text
-            updateRecordButton(msg('record'));
-			
             recordElem.addEventListener("click", async () => {
                 if (isRecording) {
                     stopRecording();
