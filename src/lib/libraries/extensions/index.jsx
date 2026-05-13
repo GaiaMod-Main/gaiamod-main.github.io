@@ -445,7 +445,7 @@ const menuItems = [
         extensionId: 'https://gaiamod-main.github.io/CocreaFetch.js',
         iconURL: cocreaFetchThumb,
         credits: 'fath11',
-        tags: ['othermods'],
+        tags: ['gandiide'],
         description: 'Fetches API from Cocrea.',
         featured: true
     },
@@ -514,7 +514,7 @@ const menuItems = [
         extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
         iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
         credits: 'fath11',
-        tags: ['othermods'],
+        tags: ['gandiide'],
         description: 'Better shader loader.',
         featured: true
     },
