@@ -63,7 +63,7 @@ import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import gaiamodIcon from './gaiamod/gaiamod_icon.png';
 import penguinmodIcon from './gaiamod/penguinmod_icon.png';
 import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
-import snailideIcon from './snail-ide/snailide_icon.svg';
+import snailideIcon from './snail-ide/snailide_icon.png';
 import electramodIcon from './electramod/electramod_icon.png';
 import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
 import mistwarpIcon from './mistium/mistwarp_icon.svg';
