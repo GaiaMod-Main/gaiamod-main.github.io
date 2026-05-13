@@ -249,17 +249,6 @@ export default async ({ addon, console, msg }) => {
                 recorder.stop();
             }
         };
-		
-		// Function to update record button content while preserving camera icon
-        const updateRecordButton = text => {
-            // Clear all content
-            const tempRecordElem = getRecordElem();
-            tempRecordElem.innerHTML = '';
-      
-            // Re-add camera icon
-            const cameraIcon = document.createElement('span');
-            cameraIcon.innerHTML = `./record.svg`;
-		
         const startRecording = async (opts) => {
             // Timer
             const secs = Math.max(1, opts.secs);
