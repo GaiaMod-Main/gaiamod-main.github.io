@@ -594,7 +594,7 @@ const menuItems = [
         extensionId: 'https://extensions.mistium.com/featured/Rotur.js',
         credits: 'Mistium',
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Rotur.png',
-        tags: ['othermods'],
+        tags: ['mistwarp'],
         description: "Utilise Rotur in your projects.",
         internetConnectionRequired: true,
         featured: true
@@ -604,7 +604,7 @@ const menuItems = [
         extensionId: 'https://extensions.mistium.com/featured/roturVoice.js',
         credits: 'Mistium',
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/roturVoice.png',
-        tags: ['othermods'],
+        tags: ['mistwarp'],
         description: "Voice and video calling for GaiaMod and other Scratch mods.",
         internetConnectionRequired: true,
         featured: true
@@ -1691,7 +1691,7 @@ const menuItems = [
         name: 'Discord Bot',
         extensionId: 'https://extensions.mistium.com/featured/DiscordBot.js',
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/DiscordBot.png',
-        tags: ['othermods', 'datamgmt'],
+        tags: ['mistwarp', 'datamgmt'],
         description: 'Makes Discord bots.',
         credits: 'Mistium',
         featured: true
@@ -2419,7 +2419,7 @@ const menuItems = [
         extensionId: 'special_mistiumExtensionLibrary',
         iconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/mistium/library.svg',
         description: 'Extensions made by Mistium',
-        tags: ['library'],
+        tags: ['mistwarp', 'library'],
         featured: true
     },
     {
