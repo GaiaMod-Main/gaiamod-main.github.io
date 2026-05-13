@@ -1,8 +1,6 @@
 import downloadBlob from "../../libraries/common/cs/download-blob.js";
 import recordIcon from "./record.svg";
 
-import {Camera} from 'lucide-react';
-
 export default async ({ addon, console, msg }) => {
     let recordElem;
     let isRecording = false;
