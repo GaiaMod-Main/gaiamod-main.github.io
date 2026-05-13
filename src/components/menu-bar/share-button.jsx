@@ -179,7 +179,7 @@ class ShareButton extends React.Component {
                                 id="gui.menuBar.remix"
                             /> :
                             <FormattedMessage
-                                defaultMessage="Upload"
+                                defaultMessage="Upload to PM..."
                                 description="Label for project share button"
                                 id="pm.menuBar.pmshare"
                             />)}
