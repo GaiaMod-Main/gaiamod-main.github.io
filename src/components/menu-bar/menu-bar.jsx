@@ -223,7 +223,6 @@ class MenuBar extends React.Component {
             'handleClickSave',
             'handleClickSaveAsCopy',
             'handleClickPackager',
-            'handleClickExtensionEditor',
             'handleClickRestorePoints',
             'handleClickSeeCommunity',
             'handleClickDownloadLogs',
@@ -274,10 +273,6 @@ class MenuBar extends React.Component {
     }
     handleClickPackager () {
         this.props.onClickPackager();
-        this.props.onRequestCloseFile();
-    }
-    handleClickExtensionEditor () {
-        this.props.onClickExtensionEditor();
         this.props.onRequestCloseFile();
     }
     handleClickRestorePoints() {
@@ -938,7 +933,9 @@ class MenuBar extends React.Component {
 								 <MenuItem onClick={this.props.onClickCustManager}>
                                         Add Custom Extension
                                     </MenuItem>
-								 <MenuItem onClick={this.props.onClickExtensionEditor}>
+								 <MenuItem onClick={() => {
+                                    window.open = "https://gaiamod-main.github.io/Extension-Editor/"
+                                }}>
                                         Extension Editor
                                     </MenuItem>
                                     <MenuItem onClick={this.handleClickDownloadLogs}>
@@ -1141,7 +1138,6 @@ MenuBar.propTypes = {
     onClickAddonSettings: PropTypes.func,
     onClickTheme: PropTypes.func,
     onClickPackager: PropTypes.func,
-    onClickExtensionEditor: PropTypes.func,
     onClickRestorePoints: PropTypes.func,
     onClickEdit: PropTypes.func,
     onClickFile: PropTypes.func,

@@ -146,7 +146,6 @@ const GUIComponent = props => {
         onClickNewWindow,
         onClickTheme,
         onClickPackager,
-        onClickExtensionEditor,
         onLogOut,
         onOpenRegistration,
         onToggleLoginOpen,
@@ -496,7 +495,6 @@ const GUIComponent = props => {
                         onClickNewWindow={onClickNewWindow}
                         onClickTheme={onClickTheme}
                         onClickPackager={onClickPackager}
-                        onClickExtensionEditor={onClickExtensionEditor}
                         onClickLogo={onClickLogo}
                         onCloseAccountNav={onCloseAccountNav}
                         onLogOut={onLogOut}
@@ -726,7 +724,6 @@ GUIComponent.propTypes = {
     onClickNewWindow: PropTypes.func,
     onClickTheme: PropTypes.func,
     onClickPackager: PropTypes.func,
-    onClickExtensionEditor: PropTypes.func,
     onClickLogo: PropTypes.func,
     onCloseAccountNav: PropTypes.func,
     onExtensionButtonClick: PropTypes.func,
