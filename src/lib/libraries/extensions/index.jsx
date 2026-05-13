@@ -1838,6 +1838,15 @@ const menuItems = [
             description: 'Save variables, lists and extra info to a file, then load those things back in.',
             featured: true
         },
+		{
+        name: 'All Menus',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Lily/AllMenus.svg',
+        tags: ['penguinmod'],
+        description: 'Every dropdown menu for each block, in one extension.',
+        extDeveloper: 'LilyMakesThings',
+        featured: true
+    },
         {
             name: (
                 <FormattedMessage
@@ -1879,7 +1888,6 @@ const menuItems = [
             extDeveloper: 'G1nX',
             featured: true
         },
-		
         {
             name: 'Packager Applications',
             extensionId: 'jgPackagerApplications',
@@ -2590,15 +2598,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Odd Messages',
-        extensionId: 'oddMessage',
-        tags: ['penguinmod'],
-        iconURL: silvxrcatOddMessagesExtensionIcon,
-        description: 'For logging and variable utilization.',
-        featured: true,
-        extDeveloper: 'silvxrcat'
-    },
-    {
         name: 'Extra Mathematics',
         extensionId: 'https://extensions.penguinmod.com/extensions/jwklong/mathematics.js',
         iconURL: 'https://extensions.penguinmod.com/images/jwklong/mathematics.avif',
@@ -2616,17 +2615,7 @@ const menuItems = [
         extDeveloper: 'LilyMakesThings',
         featured: true
     },
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: 'TurboBuilder - Dev Branch',
-        href: 'https://turbobuilder-dev.vercel.app/',
-        extensionId: 'special_turboBuilderDev',
-        iconURL: turboBuilderDevIcon,
-        description: 'Publicly available developer branch, with the latest features.',
-        credits: 'Started by JeremyGamer13, continued by jwklong',
-        tags: ['extcreate'],
-        featured: true
-    },*/
+    */
 ];
 
 /*
