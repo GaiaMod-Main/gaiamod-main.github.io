@@ -66,7 +66,7 @@ import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
 import snailideIcon from './snail-ide/snailide_icon.svg';
 import electramodIcon from './electramod/electramod_icon.png';
 import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
-import mistwarpIcon from './mistium/mistwarp-logo';
+import mistwarpIcon from './mistium/mistwarp_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
@@ -818,6 +818,8 @@ const menuItems = [
         extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/webextension.js',
         tags: ['dinosaurmod'],
         iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/site-runtime.png',
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
         description: 'A Combined version of 2 Extensions: Packager Applications & AdaBrowser',
         featured: true,
         extDeveloper: 'MrIncredibleMaker',
@@ -915,7 +917,20 @@ const menuItems = [
         description: 'Share your screen or camera on your project as a data-uri.',
         extDeveloper: 'Pooiod7',
         featured: true
-    },	
+    },
+	    {
+        name: 'Lua',
+        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/lua.js',
+        tags: ['dinosaurmod'],
+        iconURL: 'https://dinosaurmod.github.io/extensions/f9ffd88d8aba0d58b284.png',
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Run your own custom code written in Lua using Fengari!',
+        featured: true,
+        extDeveloper: 'MrIncredibleMaker',
+        internetConnectionRequired: true,
+        disabled: false
+    },
     {
         name: 'Beepbox Player',
         extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
@@ -972,6 +987,19 @@ const menuItems = [
         description: 'Lets you play blockBeat!',
         featured: true
     },
+	 {
+        name: 'GitHub API',
+        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/github-api.js',
+        tags: ['dinosaurmod'],
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/githubapi.png',
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Fetch IDs, Description, etc. from Repositories, Users and Organizations.',
+        featured: true,
+        extDeveloper: 'MrIncredibleMaker',
+        internetConnectionRequired: true,
+        disabled: false
+    },
     {
         name: 'Stage Camera',
         extensionId: 'pmCamera',
@@ -1007,6 +1035,18 @@ const menuItems = [
 		customInsetColor: '#ff4d4d',
         tags: ['turbowarp', 'datamgmt'],
         description: 'Various blocks for interacting with the network.',
+        featured: true
+    },
+	 {
+        name: 'Shaders',
+        extensionId: 'https://extensions.mistium.com/featured/Shaders.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Shaders.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Run GLSL shaders on your sprites.",
+        internetConnectionRequired: false,
         featured: true
     },
     {
@@ -1534,6 +1574,18 @@ const menuItems = [
         featured: true,
         internetConnectionRequired: true
     },
+	{
+        name: 'Iframe+',
+        extensionId: 'https://extensions.mistium.com/featured/Iframe+.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Iframe+.png',
+        tags: ['mistwarp'],
+       insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Have many iframes at once.",
+        internetConnectionRequired: true,
+        featured: true
+    },
     {
         name: 'Color Picker',
         extensionId: 'shovelColorPicker',
@@ -1913,6 +1965,19 @@ const menuItems = [
             description: 'Weird new blocks. Replaced by Sensing Expansion.',
             featured: true
         },
+		 {
+        name: 'Useless Blocks',
+        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/Useless_Blocks.js',
+        tags: ['dinosaurmod', 'jokes'],
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/Useless_Blocks.png',
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Stupid blocks. Yuck.',
+        featured: true,
+        extDeveloper: 'Jambs / jlgri',
+        internetConnectionRequired: false,
+        disabled: false
+    },
         {
             name: 'Christmas',
             extensionId: 'jgChristmas',
