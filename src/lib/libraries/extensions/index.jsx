@@ -1474,6 +1474,7 @@ const menuItems = [
         extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/clomega.js',
         tags: ['electramod', 'penguinmod', 'turbowarp'],
         iconURL: clomegaIcon,
+        insetIconURL: cloudlinkIcon,
         description: 'Register and login to accounts via Cloud Link 5 (WIP Extension!!!)',
         featured: true,
         extDeveloper: 'MikeDev',
