@@ -62,8 +62,11 @@ import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import gaiamodIcon from './gaiamod/gaiamod_icon.png';
 import penguinmodIcon from './gaiamod/penguinmod_icon.png';
+import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
+import snailideIcon from './snail-ide/snailide_icon.svg';
 import electramodIcon from './electramod/electramod_icon.png';
 import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
+import mistwarpIcon from './mistium/mistwarp-logo';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
@@ -495,6 +498,8 @@ const menuItems = [
         name: 'URL Information',
         extensionId: 'https://snail-ide.js.org/urlinfo.js',
         iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/urlinfo/urlinfo.png?raw=true',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
         tags: ['snailide'],
         credits: 'redspacecat',
         description: 'Get information about the URL',
@@ -504,6 +509,8 @@ const menuItems = [
         name: 'Browser & OS Information',
         extensionId: 'https://snail-ide.js.org/browserandosinfo.js',
         iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/browserandosinfo/browserandosinfo.png?raw=true',
+	    insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
         tags: ['snailide'],
         credits: 'redspacecat',
         description: 'Get information about the user\'s browser and operating system',
@@ -516,6 +523,18 @@ const menuItems = [
         credits: 'fath11',
         tags: ['gandiide'],
         description: 'Better shader loader.',
+        featured: true
+    },
+	  {
+        name: 'OASM',
+        extensionId: 'https://extensions.mistium.com/featured/OASM.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/OASM.png',
+        tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        description: "Run the full oasm interpreter except very fast.",
+        internetConnectionRequired: false,
         featured: true
     },
     {
@@ -560,6 +579,18 @@ const menuItems = [
         extDeveloper: 'DVD',
         featured: true
     },
+	    {
+        name: 'Python',
+        extensionId: 'https://extensions.mistium.com/featured/Python.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Python.png',
+        tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        description: "Run python with piodide.",
+        internetConnectionRequired: false,
+        featured: true
+    },
 	{
         name: 'On-Screen Controls',
         extensionId: 'https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/controls.js',
@@ -595,6 +626,8 @@ const menuItems = [
         credits: 'Mistium',
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Rotur.png',
         tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
         description: "Utilise Rotur in your projects.",
         internetConnectionRequired: true,
         featured: true
@@ -605,6 +638,8 @@ const menuItems = [
         credits: 'Mistium',
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/roturVoice.png',
         tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
         description: "Voice and video calling for GaiaMod and other Scratch mods.",
         internetConnectionRequired: true,
         featured: true
@@ -1644,6 +1679,8 @@ const menuItems = [
         extensionId: 'https://snail-ide.js.org/random_utils.js',
         snailExt: true,
         iconURL: 'https://snail-ide.js.org/random.png',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
         tags: ['snailide'],
         description: "Random utilites that you may or may not use.",
         featured: true
@@ -1663,6 +1700,8 @@ const menuItems = [
         extensionId: 'https://snail-ide.js.org/save.js',
         credits: 'Mr_rudy',
         iconURL: 'https://raw.githubusercontent.com/Snail-IDE/snail-ide.github.io/2d2190779715b9d4d14e6c62dbd487f0563dbba0/src/lib/libraries/extensions/snailsavedata/cool.svg',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
         tags: ['snailide'],
         description: "Extremely easy way to save data.",
         featured: true
@@ -1683,8 +1722,22 @@ const menuItems = [
         extensionId: 'https://snail-ide.js.org/grayscale.js',
         credits: 'Mr_rudy',
         iconURL: 'https://snail-ide.js.org/grayscale.svg',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
         tags: ['penguinmod', 'snailide'],
         description: "Toggle a dramatic grayscale effect on your project. ",
+        featured: true
+    },
+	    {
+        name: 'WebsocketPlus',
+        extensionId: 'https://extensions.mistium.com/featured/WebsocketPlus.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/WebsocketPlus.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Connect and manage multiple websocket connections.",
+        internetConnectionRequired: true,
         featured: true
     },
     {
@@ -1693,6 +1746,8 @@ const menuItems = [
         iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/DiscordBot.png',
         tags: ['mistwarp', 'datamgmt'],
         description: 'Makes Discord bots.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
         credits: 'Mistium',
         featured: true
     },
