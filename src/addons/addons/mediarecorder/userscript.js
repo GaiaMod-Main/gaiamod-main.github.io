@@ -1,6 +1,8 @@
 import downloadBlob from "../../libraries/common/cs/download-blob.js";
 import recordIcon from "./record.svg";
 
+import {Camera} from 'lucide-react';
+
 export default async ({ addon, console, msg }) => {
     let recordElem;
     let isRecording = false;
@@ -249,6 +251,22 @@ export default async ({ addon, console, msg }) => {
                 recorder.stop();
             }
         };
+		
+		// Function to update record button content while preserving camera icon
+        const updateRecordButton = text => {
+            // Clear all content
+            const tempRecordElem = getRecordElem();
+            tempRecordElem.innerHTML = '';
+      
+            // Re-add camera icon
+            const cameraIcon = document.createElement('span');
+            cameraIcon.innerHTML = `./record.svg`;
+			
+			// Add icon and text
+            tempRecordElem.appendChild(cameraIcon);
+            tempRecordElem.appendChild(document.createTextNode(text));
+        };
+		
         const startRecording = async (opts) => {
             // Timer
             const secs = Math.max(1, opts.secs);
@@ -380,8 +398,10 @@ export default async ({ addon, console, msg }) => {
         if (!recordElem) {
             recordElem = Object.assign(document.createElement("div"), {
                 className: "sa-record " + elem.className,
-                textContent: msg("record"),
             });
+			// Initialize button with camera icon and text
+            updateRecordButton(msg('record'));
+			
             recordElem.addEventListener("click", async () => {
                 if (isRecording) {
                     stopRecording();
