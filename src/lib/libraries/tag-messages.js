@@ -181,10 +181,10 @@ export default defineMessages({
         description: 'Tag for filtering a library by Cocrea/Gandi IDE',
         id: 'pm.libraryTags.gandiide'
     },
-    02engine: {
+    zerotwoengine: {
         defaultMessage: '02Engine',
         description: 'Tag for filtering a library by 02Engine',
-        id: 'pm.libraryTags.02engine'
+        id: 'pm.libraryTags.zerotwoengine'
     },
     mistwarp: {
         defaultMessage: 'MistWarp',

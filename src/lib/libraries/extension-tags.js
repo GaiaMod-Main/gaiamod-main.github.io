@@ -13,7 +13,7 @@ export default [
     { tag: 'snailide', intlLabel: messages.snailide },
 	{ tag: 'adacraft', intlLabel: messages.adacraft },
 	{ tag: 'astraeditor', intlLabel: messages.astraeditor },
-	{ tag: '02engine', intlLabel: messages.02engine },
+	{ tag: 'zerotwoengine', intlLabel: messages.zerotwoengine },
 	{ tag: 'mistwarp', intlLabel: messages.mistwarp },
 	{ tag: 'gandiide', intlLabel: messages.gandiide },
 	{ tag: 'othermods', intlLabel: messages.othermods },
