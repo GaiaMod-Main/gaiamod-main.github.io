@@ -8,7 +8,7 @@ const defaultMsg_README = `
 
 Here, we put thi README feature from Astra Editor in here. Don't tell us that we stole those features because we are just lowkey people.
 
-For its source code, pelase visit our source codes: [code repository](https://github.com/GaiaMod-Main).
+For its source code, pelase visit our [code repository](https://github.com/GaiaMod-Main).
 
 Got a bug? Go to [this link](https://github.com/GaiaMod-Main/gaiamod-main.github.io/issues) to report it for us!
 
