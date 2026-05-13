@@ -1696,8 +1696,7 @@ const menuItems = [
         credits: 'Mistium',
         featured: true
     },
-    /*
-	{
+    /*{
         name: 'Arrays',
         extensionId: 'jwArray',
         iconURL: jwArrayExtensionThumb,
@@ -1818,8 +1817,7 @@ const menuItems = [
         description: 'Large integers with zero precision loss.',
         extDeveloper: 'jwklong',
         featured: true
-    },
-	*/
+    },*/
     {
             name: 'Unsandboxed Detector',
             extensionId: 'https://ldsjvg.webwave.dev/lib/ldsjvg/jmunsandboxdetect-lwcbhcjw.js',
@@ -1840,15 +1838,6 @@ const menuItems = [
             description: 'Save variables, lists and extra info to a file, then load those things back in.',
             featured: true
         },
-		{
-        name: 'All Menus',
-        extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
-        iconURL: 'https://extensions.penguinmod.com/images/Lily/AllMenus.svg',
-        tags: ['penguinmod'],
-        description: 'Every dropdown menu for each block, in one extension.',
-        extDeveloper: 'LilyMakesThings',
-        featured: true
-    },
         {
             name: (
                 <FormattedMessage
