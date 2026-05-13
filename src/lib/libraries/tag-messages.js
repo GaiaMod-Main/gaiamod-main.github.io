@@ -151,11 +151,6 @@ export default defineMessages({
         description: 'Tag for filtering a library by GaiaMod',
         id: 'pm.libraryTags.gaiamod'
     },
-    genesiside: {
-        defaultMessage: 'Genesis IDE',
-        description: 'Tag for filtering a library by Genesis IDE',
-        id: 'pm.libraryTags.genesiside'
-    },
     electramod: {
         defaultMessage: 'ElectraMod',
         description: 'Tag for filtering a library by ElectraMod',
@@ -180,6 +175,21 @@ export default defineMessages({
         defaultMessage: 'Astra Editor',
         description: 'Tag for filtering a library by Astra Editor',
         id: 'pm.libraryTags.astraeditor'
+    },
+    gandiide: {
+        defaultMessage: 'Cocrea/Gandi IDE',
+        description: 'Tag for filtering a library by Cocrea/Gandi IDE',
+        id: 'pm.libraryTags.gandiide'
+    },
+    02engine: {
+        defaultMessage: '02Engine',
+        description: 'Tag for filtering a library by 02Engine',
+        id: 'pm.libraryTags.02engine'
+    },
+    mistwarp: {
+        defaultMessage: 'MistWarp',
+        description: 'Tag for filtering a library by MistWarp',
+        id: 'pm.libraryTags.mistwarp'
     },
     othermods: {
         defaultMessage: 'Other Scratch Mods',
