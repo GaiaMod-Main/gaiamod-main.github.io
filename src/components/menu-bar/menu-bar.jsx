@@ -934,7 +934,7 @@ class MenuBar extends React.Component {
                                         Add Custom Extension
                                     </MenuItem>
 								 <MenuItem onClick={() => {
-                                    window.open = "https://gaiamod-main.github.io/Extension-Editor/"
+                                    window.location.href = "https://gaiamod-main.github.io/Extension-Editor/"
                                 }}>
                                         Extension Editor
                                     </MenuItem>
