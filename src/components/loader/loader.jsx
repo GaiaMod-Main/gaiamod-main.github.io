@@ -156,7 +156,7 @@ class LoaderComponent extends React.Component {
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
-					<img weight="100px" src={logo} alt="logo"/>
+					<img width="250px" src={logo} alt="logo"/>
 					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
                     <div className={styles.messageContainerOuter}>
                         <div
