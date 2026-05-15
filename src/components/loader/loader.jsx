@@ -150,13 +150,12 @@ class LoaderComponent extends React.Component {
                 })}
             >
                 <div className={styles.container}>
-				    <img src={logo} alt="logo"/>
+                    <div className={styles.blockAnimation}>
+                        <img width="300" src={logo} alt="logo"/>
+                    </div>
 					<div style={{
                         textAlign: "right"
                     }}> //
-                    <div className={styles.blockAnimation}>
-                        <img src={stars} alt="bouncer"/>
-                    </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
@@ -176,8 +175,8 @@ class LoaderComponent extends React.Component {
                         </div>
                     )}
                 </div>
-            </div>
-          </div> //
+            </div> //
+          </div> 
         );
     }    
 }
