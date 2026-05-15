@@ -15,6 +15,7 @@ export default [
 	{ tag: 'astraeditor', intlLabel: messages.astraeditor },
 	{ tag: 'zerotwoengine', intlLabel: messages.zerotwoengine },
 	{ tag: 'mistwarp', intlLabel: messages.mistwarp },
+	{ tag: 'dash', intlLabel: messages.dash },
 	{ tag: 'gandiide', intlLabel: messages.gandiide },
 	{ tag: 'othermods', intlLabel: messages.othermods },
     { tag: 'turbowarp', intlLabel: messages.turbowarp },

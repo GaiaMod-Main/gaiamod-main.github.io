@@ -191,6 +191,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by MistWarp',
         id: 'pm.libraryTags.mistwarp'
     },
+    dash: {
+        defaultMessage: 'Dash',
+        description: 'Tag for filtering a library by Dash',
+        id: 'pm.libraryTags.dash'
+    },
     othermods: {
         defaultMessage: 'Other Scratch Mods',
         description: 'Tag for filtering a library by other Scratch mods like Genesis IDE, MistWarp, OmniBlocks, Gandi IDE, CreatiCode, KittenBlock, etc..',
