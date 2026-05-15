@@ -62,6 +62,7 @@ export const randomMessages = [
     "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?",
 	"I still think of this when I see UNCLE SUCKER!! lol!",
     "old macdonald had a freaking farm lol",
+	"You should try <a style='color: blue;' href='https://gaiawindwave90.github.io/ding-ditch/'>Ding-Ditch Mod!</a>",
     "There's not a chance I am interested in this bear!",
 	"Fun fact: Ship Guy have hands as seen on the server errors.",
     "LIBERATING LOBSTERS! YOU DID IT!",
