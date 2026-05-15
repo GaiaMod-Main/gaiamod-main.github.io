@@ -100,7 +100,6 @@ class LoaderComponent extends React.Component {
     }
     componentWillUnmount () {
         // force completion
-        // yikes
         this.progress = 1;
         this.update();
         progressMonitor.setProgressHandler(() => {});
@@ -157,14 +156,14 @@ class LoaderComponent extends React.Component {
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
+					<img weight="100px" src={logo} alt="logo"/>
+					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
                     <div className={styles.messageContainerOuter}>
                         <div
                             className={styles.messageContainerInner}
                             ref={this.messageRef}
                         />
                     </div>
-					<img weight="250px" src={logo} alt="logo"/>
-					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
                     {!isScratchDesktop() && (
                         <div className={styles.twProgressOuter}>
                             <div
@@ -174,7 +173,6 @@ class LoaderComponent extends React.Component {
                         </div>
                     )}
                 </div>
-				
             </div>
         );
     }    
