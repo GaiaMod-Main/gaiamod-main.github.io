@@ -156,7 +156,6 @@ class LoaderComponent extends React.Component {
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
-					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
                     <div className={styles.messageContainerOuter}>
                         <div
                             className={styles.messageContainerInner}
@@ -172,6 +171,7 @@ class LoaderComponent extends React.Component {
                         </div>
                     )}
                 </div>
+				<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
             </div>
         );
     }    
