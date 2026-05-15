@@ -150,9 +150,9 @@ class LoaderComponent extends React.Component {
                 })}
             >
                 <div className={styles.container}>
-				    <img width="150" src={logo} alt="logo"/>
+				    <img width="250px" src={logo} alt="logo"/>
                     <div className={styles.blockAnimation}>
-                        <img width="150" src={stars} alt="bouncer"/>
+                        <img width="150px" src={stars} alt="bouncer"/>
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
