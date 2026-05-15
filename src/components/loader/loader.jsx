@@ -150,13 +150,13 @@ class LoaderComponent extends React.Component {
                 })}
             >
                 <div className={styles.container}>
+				    <img width="150" src={logo} alt="logo"/>
                     <div className={styles.blockAnimation}>
-                        <img src={stars} alt="bouncer"/>
+                        <img width="150" src={stars} alt="bouncer"/>
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
-					<img width="150" src={logo} alt="logo"/>
 					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
                     <div className={styles.messageContainerOuter}>
                         <div
