@@ -151,23 +151,25 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <img width="200" src={logo} alt="logo"/>
+                        <img width="250" src={logo} alt="logo"/>
                     </div>
-					<div style={{
-                        textAlign: "right"
-                    }}> 
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
+					
 					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
-                    <div className={styles.messageContainerOuter}>
-                        <div
+                    
+					<div className={styles.messageContainerOuter}>
+                    
+					<div
                             className={styles.messageContainerInner}
                             ref={this.messageRef}
                         />
                     </div>
+
                     {!isScratchDesktop() && (
                         <div className={styles.twProgressOuter}>
+
                             <div
                                 className={styles.twProgressInner}
                                 ref={this.barInnerRef}
@@ -175,7 +177,6 @@ class LoaderComponent extends React.Component {
                         </div>
                     )}
                 </div>
-            </div> 
           </div> 
         );
     }    
