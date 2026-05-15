@@ -150,6 +150,7 @@ class LoaderComponent extends React.Component {
                 })}
             >
                 <div className={styles.container}>
+                        <img src={logo} alt="logo"/>
                     <div className={styles.blockAnimation}>
                         <img src={ShipGuy} alt="Ship Guy"/>
                     </div>
@@ -162,6 +163,7 @@ class LoaderComponent extends React.Component {
                             ref={this.messageRef}
                         />
                     </div>
+					<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
                     {!isScratchDesktop() && (
                         <div className={styles.twProgressOuter}>
                             <div
@@ -171,7 +173,7 @@ class LoaderComponent extends React.Component {
                         </div>
                     )}
                 </div>
-				<i><p dangerouslySetInnerHTML={{__html: this.randomMessages}} /></i>
+				
             </div>
         );
     }    
