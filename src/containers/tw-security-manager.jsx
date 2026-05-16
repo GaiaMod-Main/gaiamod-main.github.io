@@ -39,10 +39,10 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://sharkpools-extensions.vercel.app/extension-code/') || // SharkPool 2
     url.startsWith('https://pen-group.github.io/') || // Pen-Group / ObviousAlexC
     url.startsWith('https://rubyteam.tech/cdn/extensions/') ||
-    url.startsWith('https://ruby-devs.vercel.app/gallery') ||
+    url.startsWith('https://ruby-devs.vercel.app/gallery/') ||
     url.startsWith('https://ruby-devs.vercel.app/cdn/extensions/') ||
     url.startsWith('https://nmsderp.is-a.dev/') ||
-    url.startsWith('https://opensnail.snail-ide.com/api/download') ||
+    url.startsWith('https://opensnail.snail-ide.com/api/download/') ||
     url.startsWith('https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/') ||
     url.startsWith('https://dumo.is-a.dev/') ||
     url.startsWith('https://ba4x.pro/') ||
