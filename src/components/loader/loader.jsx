@@ -151,7 +151,7 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <center><img width="350" src={logo} alt="logo"/></center>
+                        <img src={logo} alt="logo"/>
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
