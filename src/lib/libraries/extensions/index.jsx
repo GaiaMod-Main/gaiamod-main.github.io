@@ -2105,7 +2105,7 @@ const menuItems = [
     {
         name: 'Arduino ULTIMATE',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
-        iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg'
+        iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg',
 		insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
         tags: ['dash'],
