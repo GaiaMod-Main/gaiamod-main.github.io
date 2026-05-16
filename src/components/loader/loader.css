@@ -60,6 +60,17 @@
     z-index: $z-index-stage-wrapper-overlay;
 }
 
+.logo-float {
+  animation: floating 3s ease-in-out infinite;
+  margin: 50px auto 0px;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); } /* Moves up */
+  100% { transform: translateY(0px); } /* Returns home */
+}
+
 .block-animation {
     width: 125px;
     height: 150px;

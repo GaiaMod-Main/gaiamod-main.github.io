@@ -150,7 +150,7 @@ class LoaderComponent extends React.Component {
                 })}
             >
                 <div className={styles.container}>
-                    <div className={styles.blockAnimation}>
+                    <div className={styles.logoFloat}>
                         <img src={logo} alt="logo"/>
                     </div>
                     <div className={styles.title}>
