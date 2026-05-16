@@ -64,6 +64,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://logiseextensions.netlify.app/') ||
     url.startsWith('https://github.com/DashBlocks/extensions/blob/dff7d864c8e404ac7b028517d281f839c34c4b76/static/extensions/timaaos/') ||
     url.startsWith('https://dashblocks.github.io/extensions/') ||
+    url.startsWith('https://dashblocks.github.io/extensions/static/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
     url.startsWith('https://dinosaurmod.github.io/extensions/') ||
     url.startsWith('https://banana-mod.github.io/extensions/') ||

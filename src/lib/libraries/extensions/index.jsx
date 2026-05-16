@@ -243,6 +243,9 @@ import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.pn
 import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
+import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
+import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
+
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
 import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
@@ -453,6 +456,25 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'YaGames SDK',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/timaaos/YaGames.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/timaaos/YaGames.svg',
+        credits: 'timaaos, scratch_craft_2, Den4ik-12, DBDev-IT',
+        tags: ['dash'],
+        description: 'Blocks that initialize and interact with the Yandex Games SDK.',
+        featured: true
+    },
+    {
+        name: 'App Utilities',
+        extensionId: 'appmaker',
+        iconURL: appMakerIconURL,
+		insetIconURL: appMakerInsetIconURL,
+        credits: 'LibreKitten',
+        tags: ['othermods'],
+        description: 'Develop apps in GaiaMod.',
+        featured: true
+    },
+    {
         name: 'Video',
         extensionId: 'https://extensions.turbowarp.org/Lily/Video.js',
         extDeveloper: 'LilyMakesThings, SharkPool, and Fath11',
@@ -484,6 +506,16 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Telegram Bot API',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/damir2809/TelegramBotAPI.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/damir2809/TelegramBotAPI.svg',
+        credits: 'DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, Den4ik-12',
+        tags: ['dash'],
+        description: 'Blocks that interact with the Telegram API for bots.',
+		internetConnectionRequired: true,
+        featured: true
+    },
+    {
         name: 'Dangerous, But Useful',
         extensionId: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions/UpgradedDangerousBusUseful.js',
         iconURL: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/extendedGallery/Icons/DBU.svg',
@@ -506,6 +538,15 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Wheel Scroll',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/WheelScroll.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/WheelScroll.svg',
+        credits: 'Den4ik-12',
+        tags: ['dash'],
+        description: 'Blocks for detecting mouse wheel scrolling.',
+        featured: true
+    },
+    {
         name: 'Browser & OS Information',
         extensionId: 'https://snail-ide.js.org/browserandosinfo.js',
         iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/browserandosinfo/browserandosinfo.png?raw=true',
@@ -525,6 +566,15 @@ const menuItems = [
         description: 'Better shader loader.',
         featured: true
     },
+    {
+        name: 'Modals',
+        extensionId: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
+        credits: 'scratch_craft_2',
+        tags: ['dash'],
+        description: 'Control classic modal windows in browsers!',
+        featured: true
+    },
 	  {
         name: 'OASM',
         extensionId: 'https://extensions.mistium.com/featured/OASM.js',
@@ -534,7 +584,16 @@ const menuItems = [
 		insetIconURL: mistwarpIcon,
 		customInsetColor: '#D399E5',
         description: "Run the full oasm interpreter except very fast.",
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'Auto Save',
+        tags: ['dash'],
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/QBacks/AutoSave.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/QBacks/AutoSave.svg',
+        description: 'Several features for games',
+        extDeveloper: 'QBacks',
         featured: true
     },
     {
@@ -577,6 +636,15 @@ const menuItems = [
 		customInsetColor: '#0099FF',
         description: 'Send Windows Toast notifications with icon, sound and duration settings',
         extDeveloper: 'DVD',
+        featured: true
+    },
+    {
+        name: 'MediaRecorder',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js',
+        iconURL: defaultExtensionIcon
+        credits: 'scratch_craft_2',
+        tags: ['dash'],
+        description: 'Record your projects directly in GaiaMod!',
         featured: true
     },
 	    {
@@ -1804,7 +1872,7 @@ const menuItems = [
         credits: 'Mistium',
         featured: true
     },
-    /*{
+    {
         name: 'Arrays',
         extensionId: 'jwArray',
         iconURL: jwArrayExtensionThumb,
@@ -1925,7 +1993,7 @@ const menuItems = [
         description: 'Large integers with zero precision loss.',
         extDeveloper: 'jwklong',
         featured: true
-    },*/
+    },
     {
             name: 'Unsandboxed Detector',
             extensionId: 'https://ldsjvg.webwave.dev/lib/ldsjvg/jmunsandboxdetect-lwcbhcjw.js',
@@ -2011,6 +2079,16 @@ const menuItems = [
             description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
             featured: true
         },
+    {
+        name: 'Arduino ULTIMATE',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
+        iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg'
+        credits: 'scratch_craft_2',
+        tags: ['dash'],
+        description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
+		bluetoothRequired: true,
+        featured: true
+    },
 {
         name: 'Marty the Robot',
         extensionId: 'marty',
