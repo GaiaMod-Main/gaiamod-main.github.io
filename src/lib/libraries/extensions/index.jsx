@@ -67,6 +67,7 @@ import snailideIcon from './snail-ide/snailide_icon.png';
 import electramodIcon from './electramod/electramod_icon.png';
 import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
 import mistwarpIcon from './mistium/mistwarp_icon.svg';
+import dashblocksIcon from './dashblocks/dashblocks_icon.png';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
@@ -459,6 +460,7 @@ const menuItems = [
         name: 'YaGames SDK',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/timaaos/YaGames.js',
         iconURL: 'https://dashblocks.github.io/extensions/static/images/timaaos/YaGames.svg',
+		insetIconURL: dashblocksIcon,
         credits: 'timaaos, scratch_craft_2, Den4ik-12, DBDev-IT',
         tags: ['dash'],
         description: 'Blocks that initialize and interact with the Yandex Games SDK.',
@@ -472,6 +474,16 @@ const menuItems = [
         credits: 'LibreKitten',
         tags: ['othermods'],
         description: 'Develop apps in GaiaMod.',
+        featured: true
+    },
+    {
+        name: 'Code Cleaner',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/CodeCleaner.js',
+        iconURL: 'https://raw.githubusercontent.com/Mirazstudio-offical/Dash_code_cleaner_extension/refs/heads/main/logo.svg',
+		insetIconURL: dashblocksIcon,
+        credits: 'shilenin',
+        tags: ['dash'],
+        description: 'Clean and optimize your code!',
         featured: true
     },
     {
@@ -509,6 +521,7 @@ const menuItems = [
         name: 'Telegram Bot API',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/damir2809/TelegramBotAPI.js',
         iconURL: 'https://dashblocks.github.io/extensions/static/images/damir2809/TelegramBotAPI.svg',
+		insetIconURL: dashblocksIcon,
         credits: 'DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, Den4ik-12',
         tags: ['dash'],
         description: 'Blocks that interact with the Telegram API for bots.',
@@ -568,7 +581,7 @@ const menuItems = [
     },
     {
         name: 'Modals',
-        extensionId: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/Modals.js',
         iconURL: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
         credits: 'scratch_craft_2',
         tags: ['dash'],
@@ -641,7 +654,7 @@ const menuItems = [
     {
         name: 'MediaRecorder',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js',
-        iconURL: defaultExtensionIcon
+        iconURL: defaultExtensionIcon,
         credits: 'scratch_craft_2',
         tags: ['dash'],
         description: 'Record your projects directly in GaiaMod!',
@@ -657,6 +670,16 @@ const menuItems = [
 		customInsetColor: '#D399E5',
         description: "Run python with piodide.",
         internetConnectionRequired: false,
+        featured: true
+    },
+    {
+        name: 'Notification',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/Notification.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/shilenin/Notification.svg',
+		insetIconURL: dashblocksIcon,
+        credits: 'shilenin',
+        tags: ['dash'],
+        description: 'Send notifications with icons.',
         featured: true
     },
 	{
@@ -2083,6 +2106,7 @@ const menuItems = [
         name: 'Arduino ULTIMATE',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
         iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg'
+		insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
         tags: ['dash'],
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
