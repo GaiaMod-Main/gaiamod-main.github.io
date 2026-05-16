@@ -151,31 +151,38 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.logoFloat}>
-                        <img src={logo} alt="logo"/>
+                        <img
+                            src={logo}
+                            draggable={false}
+                        />
                     </div>
+
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
-					<p className={styles.tips} dangerouslySetInnerHTML={{__html: this.randomMessages}} />
-					<div className={styles.messageContainerOuter}>
+
+                    <div className={styles.messageContainerOuter}>
 					<div
                             className={styles.messageContainerInner}
                             ref={this.messageRef}
                         />
                     </div>
-                    {!isScratchDesktop() && (
-                        <div className={styles.twProgressOuter}>
 
+                 {!isScratchDesktop() && (
+                    <div className={styles.twProgressOuter}>
                             <div
                                 className={styles.twProgressInner}
                                 ref={this.barInnerRef}
                             />
                         </div>
                     )}
+					
+                    <p className={styles.tips} dangerouslySetInnerHTML={{__html: this.randomMessages}} />
+					
                 </div>
-          </div> 
+            </div>
         );
-    }    
+    }   
 }
 
 LoaderComponent.propTypes = {
