@@ -641,6 +641,17 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'WebRTC',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MikeDev101/webrtc.js',
+        tags: ['penguinmod'],
+        iconURL: 'https://extensions.penguinmod.com/images/MikeDev101/webrtc.svg',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        description: 'A barebones WebRTC implementation.',
+        credits: 'MikeDev101.',
+        featured: true
+    },
+    {
         name: 'Windows Toast',
         extensionId: 'https://editors.astras.top/extensions/windowstoast.js',
         tags: ['astraeditor'],
