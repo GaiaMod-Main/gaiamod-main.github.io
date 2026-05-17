@@ -14,26 +14,99 @@ const manifest = {
       "name": "Music",
       "id": "music",
       "type": "boolean",
-      "default": true
+      "default": false
     },
     {
       "name": "Pen",
       "id": "pen",
       "type": "boolean",
-      "default": true
+      "default": false
     },
     {
       "name": "Text to Speech",
       "id": "text2speech",
       "type": "boolean",
-      "default": false
+      "default": true
     },
     {
       "name": "Translate",
       "id": "translate",
       "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "App Utilities",
+      "id": "appmaker",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "Croquet",
+      "id": "croquet",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "ChatGPT2Scratch",
+      "id": "chatgpt2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "ML2Scratch",
+      "id": "ml2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "TM2Scratch",
+      "id": "tm2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "TMPose2Scratch",
+      "id": "tmpose2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "HandPose2Scratch",
+      "id": "handpose2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "PoseNet2Scratch",
+      "id": "posenet2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "FaceMesh2Scratch",
+      "id": "facemesh2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "ImageClassifer2Scratch",
+      "id": "ic2scratch",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "Scratch2WebSerialAPI",
+      "id": "scratch2webserialapi",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "TurboWarp",
+      "id": "tw",
+      "type": "boolean",
       "default": false
     }
+
   ],
   "dynamicDisable": true,
   "tags": []
