@@ -817,7 +817,7 @@ const menuItems = [
     },
     {
         name: 'TM2Scratch',
-        extensionId: 'ml2scratch',
+        extensionId: 'tm2scratch',
         iconURL: tm2scratchIconURL,
         insetIconURL: tm2scratchInsetIconURL,
 		credits: 'Tsukurusha, YengawaLab and Google',
@@ -889,20 +889,6 @@ const menuItems = [
         tags: ['othermods'],
         description: 'Do more complex things with hardware via the serial ports.',
         featured: true
-    },
-    {
-        name: 'scratch2maqueen',
-        extensionId: 'scratch2maqueen', // update reference once file names are updated
-        tags: ['othermods'],
-        bluetoothRequired: true,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: true,
-        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png',
-        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png',
-        description: 'Control DFRobot Maqueen.',
-        featured: true,
-        credits: 'Vernier',
     },
     {
         name: 'ImageClassifer2Scratch',
@@ -2114,12 +2100,26 @@ const menuItems = [
             featured: true
         },
     {
+        name: 'scratch2maqueen',
+        extensionId: 'scratch2maqueen', // update reference once file names are updated
+        tags: ['othermods', 'hardware'],
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png',
+        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png',
+        description: 'Control DFRobot Maqueen.',
+        featured: true,
+        credits: 'Vernier',
+    },
+    {
         name: 'Arduino ULTIMATE',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
         iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg',
 		insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
-        tags: ['dash'],
+        tags: ['dash', 'hardware'],
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
 		bluetoothRequired: true,
         featured: true
