@@ -244,6 +244,9 @@ import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.pn
 import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
+import poppyImage from './poppy/poppy.png';
+import poppyInsetIconURL from './poppy/poppy-small.png';
+
 import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
 import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 
@@ -2123,6 +2126,20 @@ const menuItems = [
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
 		bluetoothRequired: true,
         featured: true
+    },
+{
+        name: 'Poppy',
+        extensionId: 'poppy',
+        collaborator: "Poppy Project",
+        iconURL: poppyImage,
+        insetIconURL: poppyInsetIconURL,
+        description: 'Control Poppy, the humanoid robot creature!',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: true
+
     },
 {
         name: 'Marty the Robot',
