@@ -32,13 +32,13 @@ const manifest = {
       "name": "Translate",
       "id": "translate",
       "type": "boolean",
-      "default": true
+      "default": false
     },
     {
       "name": "App Utilities",
       "id": "appmaker",
       "type": "boolean",
-      "default": false
+      "default": true
     },
     {
       "name": "Croquet",
@@ -109,6 +109,7 @@ const manifest = {
 
   ],
   "dynamicDisable": true,
-  "tags": []
+  "tags": ["featured"],
+  "enabledByDefault": true
 };
 export default manifest;
