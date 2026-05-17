@@ -2128,20 +2128,6 @@ const menuItems = [
         featured: true
     },
 {
-        name: 'Poppy',
-        extensionId: 'poppy',
-        collaborator: "Poppy Project",
-        iconURL: poppyImage,
-        insetIconURL: poppyInsetIconURL,
-        description: 'Control Poppy, the humanoid robot creature!',
-        tags: ['othermods', 'hardware'],
-        featured: true,
-        disabled: false,
-        internetConnectionRequired: true,
-        bluetoothRequired: true
-
-    },
-{
         name: 'Marty the Robot',
         extensionId: 'marty',
         collaborator: "Robotical",
