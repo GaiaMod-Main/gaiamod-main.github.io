@@ -269,6 +269,8 @@ import snailIDEGalleryThumb from './gaiamod/snailIDEEXGallery.png';
 import loremIpsumThumb from './gaiamod/LoremIpsumThumb.png';
 import webcamThumb from './gaiamod/WebCamThumb.png';
 import chatNioThumb from './gaiamod/ChatNio.png';
+import mysteryThumb from './gaiamod/unknown.png';
+import mysteryInsetIcon from './gaiamod/unknown-small.png';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 
@@ -2057,6 +2059,16 @@ const menuItems = [
             description: 'Weird new blocks. Replaced by Sensing Expansion.',
             featured: true
         },
+	    {
+        name: '???',
+        extensionId: 'https://gaiamod-main.github.io/extensions/MysteryExtension.js',
+        iconURL: mysteryThumb,
+		insetIconURL: mysteryInsetIcon,
+        credits: 'arajf',
+        tags: ['othermods', 'jokes'],
+        description: 'What\'s this extension doing here? You only know it when you use it.',
+        featured: true
+    },
 		 {
         name: 'Useless Blocks',
         extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/Useless_Blocks.js',
