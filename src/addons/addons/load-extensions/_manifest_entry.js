@@ -41,12 +41,6 @@ const manifest = {
       "default": true
     },
     {
-      "name": "Croquet",
-      "id": "croquet",
-      "type": "boolean",
-      "default": false
-    },
-    {
       "name": "ChatGPT2Scratch",
       "id": "chatgpt2scratch",
       "type": "boolean",
