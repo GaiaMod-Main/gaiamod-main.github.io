@@ -15,9 +15,11 @@
     border-color: $motion-primary transparent $motion-primary transparent;
     animation: spinner 1.2s linear infinite;
 }
+
 [theme="dark"] .spinner {
     border-color: #fff transparent #fff transparent;
 }
+
 @keyframes spinner {
     0% {
         transform: rotate(0deg);
@@ -25,4 +27,46 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+.bounce-animation {
+    width: 125px;
+    height: 125px;
+    animation-name: bouncing;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes bouncing {
+  0% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+  }
+  25% {
+      left: 10px;
+      top: -50px;
+      transform: rotate(10deg);
+      animation-timing-function: ease-in;
+  }
+  50% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+  }
+  75% {
+      left: -10px;
+      top: -50px;
+      transform: rotate(-10deg);
+      animation-timing-function: ease-in;
+  }
+  100% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+  }
 }

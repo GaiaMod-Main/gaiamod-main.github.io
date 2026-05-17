@@ -20,7 +20,7 @@
       .tw-loaded #splash, #splash-content { display: none; }
       #splash[splash-theme="dark"] { background-color: #333; color: #fff; }
       #splash-spinner:after {
-        content: " "; display: block; width: 64px; height: 64px;
+        content: " "; display: block; width: 125px; height: 125px;
         border-radius: 50%; border: 6px solid; border-color: currentColor transparent currentColor transparent;
         animation: splash-spinner 1.2s linear infinite;
       }
@@ -28,6 +28,48 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
+	  
+	  .splash-bounce-animation {
+    width: 125px;
+    height: 125px;
+    animation-name: bouncing;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes bouncing {
+  0% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+  }
+  25% {
+      left: 10px;
+      top: -50px;
+      transform: rotate(10deg);
+      animation-timing-function: ease-in;
+  }
+  50% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+  }
+  75% {
+      left: -10px;
+      top: -50px;
+      transform: rotate(-10deg);
+      animation-timing-function: ease-in;
+  }
+  100% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+  }
+}
 
     </style>
 
