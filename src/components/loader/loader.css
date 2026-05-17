@@ -62,11 +62,10 @@
 
 .tips {
   color: hsla(100, 100%, 100%, 0.5);
-  font-family: Comic Sans MS;
   font-style: italic;
   font-weight: bold;
   font-variant: small-caps;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .logo-float {
