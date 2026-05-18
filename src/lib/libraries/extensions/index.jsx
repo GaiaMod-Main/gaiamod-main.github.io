@@ -2064,6 +2064,7 @@ const menuItems = [
         extensionId: 'https://gaiamod-main.github.io/extensions/MysteryExtension.js',
         iconURL: mysteryThumb,
 		insetIconURL: mysteryInsetIcon,
+		customInsetColor: '#0F0F0F',
         credits: 'arajf',
         tags: ['othermods', 'jokes'],
         description: 'What\'s this extension doing here? You only know it when you use it.',
