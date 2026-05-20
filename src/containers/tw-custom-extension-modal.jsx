@@ -130,6 +130,7 @@ class CustomExtensionModal extends React.Component {
         const oldUrl = this.props.vm.extensionManager.extensionUrlFromId(this.props.swapId);
         try {
             const url = await this.getExtensionURL();
+            const urls = await this.getExtensionURLs();
 			const shouldUnsandboxAll = this.props.loadUnsandboxedExtensions === true;
 
             if (!shouldUnsandboxAll && this.state.type !== 'url') {
