@@ -468,6 +468,7 @@ const menuItems = [
 		insetIconURL: dashblocksIcon,
         credits: 'timaaos, scratch_craft_2, Den4ik-12, DBDev-IT',
         tags: ['dash'],
+		customInsetColor: '#F98947',
         description: 'Blocks that initialize and interact with the Yandex Games SDK.',
         featured: true
     },
@@ -488,6 +489,7 @@ const menuItems = [
 		insetIconURL: dashblocksIcon,
         credits: 'shilenin',
         tags: ['dash'],
+		customInsetColor: '#F98947',
         description: 'Clean and optimize your code!',
         featured: true
     },
@@ -529,6 +531,7 @@ const menuItems = [
 		insetIconURL: dashblocksIcon,
         credits: 'DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, Den4ik-12',
         tags: ['dash'],
+		customInsetColor: '#F98947',
         description: 'Blocks that interact with the Telegram API for bots.',
 		internetConnectionRequired: true,
         featured: true
@@ -561,6 +564,8 @@ const menuItems = [
         iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/WheelScroll.svg',
         credits: 'Den4ik-12',
         tags: ['dash'],
+		insetIconURL: dashblocksIcon,
+		customInsetColor: '#F98947',
         description: 'Blocks for detecting mouse wheel scrolling.',
         featured: true
     },
@@ -590,6 +595,8 @@ const menuItems = [
         iconURL: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
         credits: 'scratch_craft_2',
         tags: ['dash'],
+		insetIconURL: dashblocksIcon,
+		customInsetColor: '#F98947',
         description: 'Control classic modal windows in browsers!',
         featured: true
     },
@@ -607,11 +614,13 @@ const menuItems = [
     },
     {
         name: 'Auto Save',
-        tags: ['dash'],
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/QBacks/AutoSave.js',
         iconURL: 'https://dashblocks.github.io/extensions/static/images/QBacks/AutoSave.svg',
         description: 'Several features for games',
         extDeveloper: 'QBacks',
+        tags: ['dash'],
+		insetIconURL: dashblocksIcon,
+		customInsetColor: '#F98947',
         featured: true
     },
     {
@@ -695,6 +704,7 @@ const menuItems = [
 		insetIconURL: dashblocksIcon,
         credits: 'shilenin',
         tags: ['dash'],
+		customInsetColor: '#F98947',
         description: 'Send notifications with icons.',
         featured: true
     },
@@ -2136,6 +2146,7 @@ const menuItems = [
 		insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
         tags: ['dash', 'hardware'],
+		customInsetColor: '#F98947',
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
 		bluetoothRequired: true,
         featured: true
