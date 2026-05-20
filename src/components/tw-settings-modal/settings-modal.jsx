@@ -375,7 +375,7 @@ const LoadUnsandboxedExtensions = props => (
                 id="tw.settingsModal.loadUnsandboxedExtensionsHelp"
             />
         }
-        slug="unrestrict-sandbox"
+        slug="unrestrictSandbox"
     />
 );
 
