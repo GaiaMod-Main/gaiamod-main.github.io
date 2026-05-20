@@ -7,6 +7,7 @@ import localforage from 'localforage';
 import CustomExtensionModalComponent from '../components/tw-custom-extension-modal/custom-extension-modal.jsx';
 import {closeCustomExtensionModal} from '../reducers/modals';
 import {manuallyTrustExtension, isTrustedExtension, isTrustedExtensionOrigin} from './tw-security-manager.jsx';
+import {getPersistedUnsandboxed, setPersistedUnsandboxed} from '../lib/tw-persisted-unsandboxed.js';
 
 const generateRandomId = () => {
     const randomChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -43,7 +44,7 @@ class CustomExtensionModal extends React.Component {
             url: this.fetchSwapUrl(),
             file: null,
             text: this.fetchSwapText(),
-            unsandboxed: false,
+            unsandboxed: getPersistedUnsandboxed(),
             addingToLibrary: false,
             libraryImageFile: null,
             libraryItem: {

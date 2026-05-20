@@ -6,6 +6,7 @@ import bindAll from 'lodash.bindall';
 import SecurityManagerModal from '../components/tw-security-manager-modal/security-manager-modal.jsx';
 import SecurityModals from '../lib/tw-security-manager-constants';
 import { isDefinitelyExecutable } from '../lib/pm-security-manager-download-util.js';
+import {getPersistedUnsandboxed, setPersistedUnsandboxed} from '../lib/tw-persisted-unsandboxed.js';
 
 /**
  * Set of extension URLs that the user has manually trusted to load unsandboxed.
@@ -387,6 +388,10 @@ class TWSecurityManagerComponent extends React.Component {
                 remember: checked
             }
         }));
+    }
+
+  shouldTrustAllExtensions () {
+        return this.props.loadUnsandboxedExtensions === true;
     }
 
     /**
