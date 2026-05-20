@@ -422,11 +422,14 @@ class TWSecurityManagerComponent extends React.Component {
         // when a file is unsandboxed it can request any website anyways, so its not like its preventing remote updates either.
         const allowed = await showModal(SecurityModals.LoadExtension, {
             url,
-            unsandboxed: true,
+            unsandboxed: getPersistedUnsandboxed(),
             remember: true,
             onChangeUnsandboxed: this.handleChangeUnsandboxed.bind(this),
             onChangeRemember: this.handleChangeRemember.bind(this),
         });
+		if (allowed) {
+                setPersistedUnsandboxed(this.state.data.unsandboxed);
+            }
         if (this.state.data.unsandboxed) {
             manuallyTrustExtension(url);
         }
