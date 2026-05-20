@@ -93,7 +93,7 @@ class UsernameModal extends React.Component {
     }
     handleLoadUnsandboxedExtensions (e) {
         this.props.vm.setCompilerOptions({
-            unrestrictSandbox: e.target.checked
+            loadUnsandboxedExtensions: e.target.checked
         });
     }
     handleDisableCompilerChange (e) {

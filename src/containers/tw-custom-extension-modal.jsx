@@ -129,7 +129,7 @@ class CustomExtensionModal extends React.Component {
         const oldUrl = this.props.vm.extensionManager.extensionUrlFromId(this.props.swapId);
         try {
             const url = await this.getExtensionURL();
-			const shouldUnsandboxAll = this.props.preferences['unrestrictSandbox'] === true;
+			const shouldUnsandboxAll = this.props.loadUnsandboxedExtensions === true;
 
             if (!shouldUnsandboxAll && this.state.type !== 'url') {
                 setPersistedUnsandboxed(this.state.unsandboxed);
@@ -244,7 +244,7 @@ class CustomExtensionModal extends React.Component {
     }
     isUnsandboxed () {
         if (this.state.type === 'url') {
-            if (isTrustedExtensionOrigin(this.state.url) || this.props.preferences['unrestrictSandbox']) return true;
+            if (isTrustedExtensionOrigin(this.state.url) || this.props.loadUnsandboxedExtensions) return true;
         }
         return this.state.unsandboxed;
     }
