@@ -966,10 +966,50 @@ const pmExtensionDevelopers = [
 
 const pmCodeUsedFrom = [
     {
+        text: "02 Engine",
+        image: `https://github.com/02engine.png`,
+        href: `https://github.com/02engine/`,
+    },
+    {
+        text: "AstraEditor",
+        image: `https://github.com/AstraEditor.png`,
+        href: `https://github.com/AstraEditor/`,
+    },
+    {
+        text: "MistWarp",
+        image: `https://github.com/MistWarp.png`,
+        href: `https://github.com/MistWarp/`,
+    },
+    {
+        text: "OmniBlocks",
+        image: `https://github.com/OmniBlocks.png`,
+        href: `https://github.com/OmniBlocks/`,
+    },
+    {
+        text: "Dash",
+        image: `https://github.com/dashblocks.png`,
+        href: `https://github.com/dashblocks/`,
+    },
+    {
         text: "Gandi-IDE",
         image: `https://github.com/Gandi-IDE.png`,
         href: `https://github.com/Gandi-IDE/`,
     },
+    {
+        text: "ElectraMod",
+        image: `https://github.com/ElectraMod.png`,
+        href: `https://github.com/ElectraMod/`,
+    },
+    {
+        text: "Snail IDE",
+        image: `https://github.com/Snail-IDE.png`,
+        href: `https://github.com/Snail-IDE/`,
+    },
+    {
+        text: "DinosaurMod",
+        image: `https://github.com/Dinosaurmod.png`,
+        href: `https://github.com/Dinosaurmod/`,
+    },	
     {
         text: "TurboWarp",
         image: `https://github.com/TurboWarp.png`,
