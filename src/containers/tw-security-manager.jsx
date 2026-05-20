@@ -399,6 +399,11 @@ class TWSecurityManagerComponent extends React.Component {
      * @returns {Promise<boolean>} Whether the extension can be loaded
      */
     async canLoadExtensionFromProject(url) {
+        if (this.shouldTrustAllExtensions()) {
+            log.info(`Loading extension ${url} automatically without security prompt`);
+            return true;
+        }
+		
         if (isTrustedExtension(url)) {
             log.info(`Loading extension ${url} automatically`);
             return true;
