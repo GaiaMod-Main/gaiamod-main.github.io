@@ -114,6 +114,7 @@ class CustomExtensionModal extends React.Component {
             this.handleLoadExtension();
         }
     }
+	
     async handleLoadExtension () {
         let failed = false;
         // i dont think this is a good idea to say anymore, either swap works or its bugged
@@ -123,13 +124,26 @@ class CustomExtensionModal extends React.Component {
                 return;
             }
         }
+		
         this.handleClose();
         const oldUrl = this.props.vm.extensionManager.extensionUrlFromId(this.props.swapId);
         try {
             const url = await this.getExtensionURL();
-            if (this.state.unsandboxed) {
-                manuallyTrustExtension(url);
+			const shouldUnsandboxAll = this.props.preferences['unrestrict-sandbox'] === true;
+
+            if (!shouldUnsandboxAll && this.state.type !== 'url') {
+                setPersistedUnsandboxed(this.state.unsandboxed);
+                if (this.state.unsandboxed) {
+                    for (const url of urls) {
+                        manuallyTrustExtension(url);
+                    }
+                }
             }
+
+            for (const url of urls) {
+                await this.props.vm.extensionManager.loadExtensionURL(url);
+            }
+			
             if (this.props.swapId) {
                 const runtime = this.props.vm.runtime;
                 this.props.vm.extensionManager.prepareSwap(this.props.swapId);
@@ -230,7 +244,7 @@ class CustomExtensionModal extends React.Component {
     }
     isUnsandboxed () {
         if (this.state.type === 'url') {
-            if (isTrustedExtensionOrigin(this.state.url)) return true;
+            if (isTrustedExtensionOrigin(this.state.url) || this.props.preferences['unrestrict-sandbox']) return true;
         }
         return this.state.unsandboxed;
     }

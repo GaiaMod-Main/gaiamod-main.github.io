@@ -31,6 +31,7 @@ class UsernameModal extends React.Component {
             'handleStageHeightChange',
             'handleStagePresetUsed',
             'handleDisableCompilerChange',
+            'handleLoadUnsandboxedExtensions',
             'handleStoreProjectOptions',
             'handleEnableDangerousOptimizationsChange',
             'handleDisableOffscreenRenderingChange',
@@ -88,6 +89,11 @@ class UsernameModal extends React.Component {
     handleWarpTimerChange (e) {
         this.props.vm.setCompilerOptions({
             warpTimer: e.target.checked
+        });
+    }
+    handleLoadUnsandboxedExtensions (e) {
+        this.props.vm.setCompilerOptions({
+            unrestrict-sandbox: e.target.checked
         });
     }
     handleDisableCompilerChange (e) {
@@ -148,6 +154,7 @@ class UsernameModal extends React.Component {
                 onDisableOffscreenRenderingChange={this.handleDisableOffscreenRenderingChange}
                 onDisableDirectionClamping={this.handleDisableDirectionClamping}
                 onWarpTimerChange={this.handleWarpTimerChange}
+                onLoadUnsandboxedExtensions={this.handleLoadUnsandboxedExtensions}
                 onStageWidthChange={this.handleStageWidthChange}
                 onStageHeightChange={this.handleStageHeightChange}
                 onStagePresetUsed={this.handleStagePresetUsed}
@@ -188,6 +195,7 @@ UsernameModal.propTypes = {
     removeLimits: PropTypes.bool,
     dangerousOptimizations: PropTypes.bool,
     warpTimer: PropTypes.bool,
+    loadUnsandboxedExtensions: PropTypes.bool,
     customStageSize: PropTypes.shape({
         width: PropTypes.number,
         height: PropTypes.number
@@ -208,6 +216,7 @@ const mapStateToProps = state => ({
     disableDirectionClamping: state.scratchGui.tw.runtimeOptions.disableDirectionClamping,
     dangerousOptimizations: state.scratchGui.tw.runtimeOptions.dangerousOptimizations,
     warpTimer: state.scratchGui.tw.compilerOptions.warpTimer,
+    loadUnsandboxedExtensions: state.scratchGui.tw.compilerOptions.loadUnsandboxedExtensions,
     customStageSize: state.scratchGui.customStageSize,
     disableCompiler: !state.scratchGui.tw.compilerOptions.enabled
 });

@@ -357,6 +357,28 @@ const WarpTimer = props => (
     />
 );
 
+const LoadUnsandboxedExtensions = props => (
+    <BooleanSetting
+        {...props}
+        label={
+            <FormattedMessage
+                defaultMessage="Allow all extensions to load unsandboxed"
+                description="Unrestrict extensions setting"
+                id="tw.settingsModal.loadUnsandboxedExtensions"
+            />
+        }
+        help={
+            <FormattedMessage
+                // eslint-disable-next-line max-len
+                defaultMessage="Disables extension security prompts and runs all extensions without the sandbox, including extension imports, URL parameter extensions, and project-loaded extensions. This is dangerous and should only be enabled if you fully trust all loaded extensions."
+                description="Unrestrict extensions help"
+                id="tw.settingsModal.loadUnsandboxedExtensionsHelp"
+            />
+        }
+        slug="unrestrict-sandbox"
+    />
+);
+
 const CustomStageSize = ({
     customStageSizeEnabled,
     stageWidth,
@@ -556,6 +578,10 @@ const SettingsModalComponent = props => (
                 value={props.warpTimer}
                 onChange={props.onWarpTimerChange}
             />
+            <LoadUnsandboxedExtensions
+                value={props.loadUnsandboxedExtensions}
+                onChange={props.onLoadUnsandboxedExtensions}
+            />
             <Header>
                 <FormattedMessage
                     defaultMessage="Remove Limits"
@@ -661,6 +687,8 @@ SettingsModalComponent.propTypes = {
     disableCompiler: PropTypes.bool,
     dangerousOptimizations: PropTypes.bool,
     onDisableCompilerChange: PropTypes.func,
+    loadUnsandboxedExtensions: PropTypes.func,
+    onLoadUnsandboxedExtensions: PropTypes.func,
     onEnableDangerousOptimizationsChange: PropTypes.func
 };
 
