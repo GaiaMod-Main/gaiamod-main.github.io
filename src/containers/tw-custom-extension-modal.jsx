@@ -75,6 +75,26 @@ class CustomExtensionModal extends React.Component {
         }
         return Promise.reject(new Error('Unknown type'));
     }
+getExtensionURLs () {
+        if (this.state.type === 'url') {
+            return Promise.resolve([
+                this.state.url
+            ]);
+        }
+
+        if (this.state.type === 'file') {
+            const files = Array.from(this.state.files);
+            return Promise.all(files.map(readAsDataURL));
+        }
+
+        if (this.state.type === 'text') {
+            return Promise.resolve([
+                `data:application/javascript,${encodeURIComponent(this.state.text)}`
+            ]);
+        }
+
+        return Promise.reject(new Error('Unknown type'));
+    }
     hasValidInput () {
         if (this.state.type === 'url') {
             try {
