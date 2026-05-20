@@ -170,17 +170,18 @@ const Credits = () => (
             <p><i>The list order is randomized on each refresh.</i></p>
             <p>PenguinMod addons are created by the contributors listed in the Contributors section.</p>
         </section>
-            <h1>PenguinMod</h1>
+        <section>
+            <h1>Penguinmod</h1>
         </section>
         <section>
             <p>
-                The PenguinMod project is made possible by the work of many volunteers.
+                Penguinmod is made possible by the work of many volunteers and contributors.
                 <br></br>
-                You can check out PenguinMod's individual credits <a href=https://studio.penguinmod.com/credits.html">here</a>.
+                You can check out Penguinmod's credits page <a href="https://studio.penguinmod.com/credits.html">here</a>.
                 <br></br>
-            <a href="https://penguinmod.com/donate">
-                Donate to support PenguinMod.
-            </a>
+                <a href="https://penguinmod.com/donate">
+                    Donate to support Penguinmod.
+                </a>
             </p>
         </section>
         <section>
