@@ -63,8 +63,8 @@ const Credits = () => (
         <section>
             <h2>Thank you</h2>
             <p>
-                Without PenguinMod and TurboWarp, GaiaMod may have never existed.
-                Thank you to everyone who worked on Scratch, TurboWarp, and PenguinMod
+                Without ElectraMod, Snail IDE, Gandi IDE, OmniBlocks, Astra Editor, Zero-Two Engine, CodeTorch, DinosaurMod, PenguinMod, TurboWarp, and others, GaiaMod may have never existed.
+                Thank you to everyone who worked on those Scratch Mods
                 you have made many people finally be able to make whatever they can imagine.
             </p>
             <a href="https://scratch.mit.edu/donate">
@@ -74,6 +74,10 @@ const Credits = () => (
             <a href="https://github.com/sponsors/GarboMuffin">
                 Donate to support TurboWarp.
             </a>
+            <br></br><br></br>
+            <a href="https://penguinmod.com/donate">
+                Donate to support PenguinMod.
+            </a>
             <h2>Contributors</h2>
             <p>
                 GaiaMod is made by only one developer (Gaia herself).
@@ -81,17 +85,18 @@ const Credits = () => (
             </p>
             <UserList users={UserData.pmDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
-            <p>There are even community members who have helped develop PenguinMod. People like <i>you!</i></p>
+            <p>There are even community members who have develop Scratch mods. People like <i>you!</i></p>
             <UserList users={UserData.pmPullRequestDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
             <p>
-                We've also included work from other open-source projects inside of PenguinMod.
+                We've also included work from other open-source projects inside of GaiaMod.
                 Here's a list of some other projects you should check out:
             </p>
             <UserList users={UserData.pmCodeUsedFrom} />
             <p><i>The list order is randomized on each refresh.</i></p>
             <ul>
                 <li>Code for "Center" option in Costume editor is from <a href="https://github.com/Nitro-Bolt/scratch-paint/blob/develop/src/containers/mode-tools.jsx#L203-L216">Cubester@Nitro-Bolt</a></li>
+				<li>The 404 page comes from <a href="https://github.com/Snail-ide/snail-ide.github.io/blob/develop/static/404.html">nmsderp@Snail-IDE</a></li>
             </ul>
         </section>
         <section>
@@ -127,7 +132,7 @@ const Credits = () => (
                     <li><a href="https://discord.gg/NZ9MBMYTZh">User-submissions from the PenguinMod Discord Server</a></li>
                     <li>The PenguinMod Developers</li>
                 </ul>
-                All sounds exclusive to PenguinMod are included under Public Domain licenses or licenses such as MIT and CC0.
+                All sounds exclusive to PenguinMod and GaiaMod are included under Public Domain licenses or licenses such as MIT and CC0.
             </p>
             <p>This is the current list of user-submitted sound creators:</p>
             <UserList users={UserData.pmSoundSubmittors} />
@@ -163,7 +168,20 @@ const Credits = () => (
             </p>
             <UserList users={UserData.addonDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
-            <p>PenguinMod-exclusive addons are created by the contributors listed in the Contributors section.</p>
+            <p>PenguinMod addons are created by the contributors listed in the Contributors section.</p>
+        </section>
+            <h1>PenguinMod</h1>
+        </section>
+        <section>
+            <p>
+                The PenguinMod project is made possible by the work of many volunteers.
+                <br></br>
+                You can check out PenguinMod's individual credits <a href=https://studio.penguinmod.com/credits.html">here</a>.
+                <br></br>
+            <a href="https://penguinmod.com/donate">
+                Donate to support PenguinMod.
+            </a>
+            </p>
         </section>
         <section>
             <h1>TurboWarp</h1>
@@ -197,10 +215,10 @@ const Credits = () => (
                 far more than we could hope to list here.
             </p>
             <p>
-                PenguinMod is also (very very slowly) getting translated into other languages, in the future
+                GaiaMod is also (very very slowly) getting translated into other languages, in the future
                 hopefully the same number of languages can be supported. It'll take a while until we get there though.
             </p>
-            <p>Here is the current list of PenguinMod Translators:</p>
+            <p>Here is the current list of Translators:</p>
             <UserList users={UserData.pmTranslators} />
             <p><i>The list order is randomized on each refresh.</i></p>
         </section>
