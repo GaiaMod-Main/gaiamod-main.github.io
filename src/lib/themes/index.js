@@ -62,16 +62,16 @@ const ACCENT_MAP = {
         'motion-primary': 'oklab(0.55 0.08 -0.12)'
     },
     [ACCENT_COSMIC]: {
-        'motion-primary': '#ff4c4c'
+        'motion-primary': 'oklab(0.68 0.15 -0.08)'
     },
     [ACCENT_AURORA]: {
-        'motion-primary': '#ff4c4c'
+        'motion-primary': 'oklab(0.70 -0.10 0.08)'
     },
     [ACCENT_MINT]: {
-        'motion-primary': '#ff4c4c'
+        'motion-primary': 'oklab(0.78 -0.12 0.08)'
     },
     [ACCENT_CHERRY]: {
-        'motion-primary': '#ff4c4c'
+        'motion-primary': 'oklab(0.70 0.18 0.08)'
     },
     ["custom"]: {}
 };
