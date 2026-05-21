@@ -89,14 +89,14 @@ const Credits = () => (
             <UserList users={UserData.pmPullRequestDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
             <p>
-                We've also included work from other open-source projects inside of GaiaMod.
-                Here's a list of some other projects you should check out:
+                We've also included some codes taken from other open-source Scratch mods inside of GaiaMod.
+                Here's a list of some other Scratch mods you should check out:
             </p>
             <UserList users={UserData.pmCodeUsedFrom} />
             <p><i>The list order is randomized on each refresh.</i></p>
             <ul>
                 <li>Code for "Center" option in Costume editor is from <a href="https://github.com/Nitro-Bolt/scratch-paint/blob/develop/src/containers/mode-tools.jsx#L203-L216">Cubester@Nitro-Bolt</a></li>
-				<li>The 404 page comes from <a href="https://github.com/Snail-ide/snail-ide.github.io/blob/develop/static/404.html">nmsderp@Snail-IDE</a></li>
+				<li>The 404 page comes from <a href="https://github.com/Snail-ide/snail-ide.github.io/blob/develop/static/404.html">nmsderp@Snail-IDE</a> and <a href="https://github.com/Dinosaurmod/dinosaurmod.github.io/blob/develop/static/404.html">MrIncredibleMakerZe@DinosaurMod</a></li>
             </ul>
         </section>
         <section>

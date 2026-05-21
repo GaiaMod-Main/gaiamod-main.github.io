@@ -20,6 +20,10 @@
     border-color: #fff transparent #fff transparent;
 }
 
+[theme="midnight"] .spinner {
+    border-color: #fff transparent #fff transparent;
+}
+
 @keyframes spinner {
     0% {
         transform: rotate(0deg);
