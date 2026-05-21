@@ -69,11 +69,6 @@ const Controls = function (props) {
                 title={intl.formatMessage(messages.stopTitle)}
                 onClick={onStopAllClick}
             />
-			<Record
-                active={recording}
-                title={intl.formatMessage(messages.stopTitle)}
-                onClick={onRecordClick}
-            />
             {turbo ? (
                 <TurboMode isSmall={isSmall} />
             ) : null}
