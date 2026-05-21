@@ -976,6 +976,11 @@ const pmCodeUsedFrom = [
         href: `https://github.com/AstraEditor/`,
     },
     {
+        text: "Adacraft",
+        image: `https://gitlab.com/uploads/-/system/group/avatar/8613368/logo.png`,
+        href: `https://gitlab.com/adacraft`,
+    },
+    {
         text: "MistWarp",
         image: `https://github.com/MistWarp.png`,
         href: `https://github.com/MistWarp/`,
