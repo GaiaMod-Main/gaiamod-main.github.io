@@ -81,6 +81,31 @@ const options = defineMessages({
         description: 'Name of color scheme that uses a rainbow.',
         id: 'tw.accent.rainbow'
     },
+    [ACCENT_NEBULA]: {
+        defaultMessage: 'Nebula',
+        description: 'Nebula color scheme.',
+        id: 'tw.accent.nebula'
+    },
+    [ACCENT_COSMIC]: {
+        defaultMessage: 'Cosmic',
+        description: 'Cosmic color scheme.',
+        id: 'tw.accent.cosmic'
+    },
+    [ACCENT_AURORA]: {
+        defaultMessage: 'Aurora',
+        description: 'Aurora color scheme.',
+        id: 'tw.accent.aurora'
+    },
+    [ACCENT_MINT]: {
+        defaultMessage: 'Mint',
+        description: 'Mint color scheme.',
+        id: 'tw.accent.mint'
+    },
+    [ACCENT_CHERRY]: {
+        defaultMessage: 'Cherry',
+        description: 'Cherry color scheme.',
+        id: 'tw.accent.cherry'
+    },
     ["custom"]: {
         defaultMessage: 'Custom Accent',
         description: 'Label of the button that opens a custom accent modal.',

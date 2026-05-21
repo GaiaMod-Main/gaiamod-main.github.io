@@ -20,6 +20,11 @@ const ACCENT_GOLD = 'Gold';
 const ACCENT_SILVER = 'Silver';
 const ACCENT_BLACK = 'Black';
 const ACCENT_RAINBOW = 'Rainbow';
+const ACCENT_NEBULA = 'Nebula';
+const ACCENT_COSMIC = 'Cosmic';
+const ACCENT_AURORA = 'Aurora';
+const ACCENT_MINT = 'Mint';
+const ACCENT_CHERRY = 'Cherry';
 const ACCENT_MAP = {
     [ACCENT_GAIABLUE]: accentGaia,
     [ACCENT_LIME]: accentLime,
@@ -51,6 +56,21 @@ const ACCENT_MAP = {
         'motion-primary': 'hsla(268, 0%, 24% 1)'
     },
     [ACCENT_RAINBOW]: {
+        'motion-primary': '#ff4c4c'
+    },
+    [ACCENT_NEBULA]: {
+        'motion-primary': 'oklab(0.55 0.08 -0.12)'
+    },
+    [ACCENT_COSMIC]: {
+        'motion-primary': '#ff4c4c'
+    },
+    [ACCENT_AURORA]: {
+        'motion-primary': '#ff4c4c'
+    },
+    [ACCENT_MINT]: {
+        'motion-primary': '#ff4c4c'
+    },
+    [ACCENT_CHERRY]: {
         'motion-primary': '#ff4c4c'
     },
     ["custom"]: {}
@@ -104,5 +124,10 @@ export {
     ACCENT_BLACK,
     ACCENT_BLUE,
     ACCENT_RAINBOW,
+    ACCENT_NEBULA,
+    ACCENT_COSMIC,
+    ACCENT_AURORA,
+    ACCENT_MINT,
+    ACCENT_CHERRY,
     ACCENT_MAP
 }

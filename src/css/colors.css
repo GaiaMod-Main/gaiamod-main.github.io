@@ -206,7 +206,7 @@ body[coloraccent="Pink"] {
     --paint-motion-tertiary: hsla(289, 100%, 39%, 1);
     --paint-motion-transparent: hsla(289, 100%, 54%, 0.35);
 
-    --motion-primary-dark: hsla(325, 60%, 42%, 1);
+    --motion-primary-dark: #333333;
 
     --extensions-primary: hsla(325, 60%, 60%, 1);
     --extensions-tertiary: hsla(325, 60%, 60%, 1);
@@ -332,6 +332,132 @@ body[coloraccent="Rainbow"] {
     --menu-bar-background-dark: var(--motion-primary-dark);
 
     --menu-bar-background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.75) 0%, rgba(255, 154, 0, 0.75) 10%, rgba(208, 222, 33, 0.75) 20%, rgba(79, 220, 74, 0.75) 30%, rgba(63, 218, 216, 0.75) 40%, rgba(47, 201, 226, 0.75) 50%, rgba(28, 127, 238, 0.75) 60%, rgba(95, 21, 242, 0.75) 70%, rgba(186, 12, 248, 0.75) 80%, rgba(251, 7, 217, 0.75) 90%, rgba(255, 0, 0, 0.75) 100%);
+}
+
+body[coloraccent="Nebula"] {
+    --motion-primary: oklab(0.55 0.08 -0.12);
+    --motion-tertiary: oklab(0.60 0.06 -0.10);
+    --motion-transparent: oklab(0.60 0.06 -0.12 / 0.75);
+    --motion-light-transparent: oklab(0.66 0.08 -0.12 / 0.75);
+
+    --paint-motion-primary: #865AF8;
+    --paint-motion-tertiary: #693FD6;
+    --paint-motion-transparent: #865AF857;
+
+    --motion-primary-dark: #333333;
+
+    --extensions-primary: oklab(0.60 0.06 -0.10);
+    --extensions-tertiary: oklab(0.50 0.12 0.04);
+    --extensions-transparent: oklab(0.60 0.06 -0.10 / 0.35);
+    --extensions-light: oklab(0.70 0.04 -0.08);
+    
+    --drop-highlight: oklab(0.55 0.08 -0.12);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: linear-gradient(90deg, oklab(0.25 0.02 -0.08 / 0.9) 0%, oklab(0.35 0.08 -0.12 / 0.85) 15%, oklab(0.45 0.12 -0.08 / 0.8) 30%, oklab(0.55 0.15 0.02 / 0.8) 50%, oklab(0.65 0.08 0.08 / 0.8) 70%, oklab(0.75 0.02 0.12 / 0.8) 85%, oklab(0.85 -0.02 0.08 / 0.8) 100%);
+}
+
+body[coloraccent="Cosmic"] {
+    --motion-primary: oklab(0.68 0.15 -0.08);
+    --motion-tertiary: oklab(0.72 0.12 -0.06);
+    --motion-transparent: oklab(0.68 0.15 -0.08 / 0.75);
+    --motion-light-transparent: oklab(0.78 0.15 -0.08 / 0.75);
+
+    --paint-motion-primary: #D36CC6;
+    --paint-motion-tertiary: #A8459C;
+    --paint-motion-transparent: #D36CC657;
+
+    --motion-primary-dark: #333333;
+
+    --extensions-primary: oklab(0.72 0.12 -0.06);
+    --extensions-tertiary: oklab(0.65 0.08 -0.12);
+    --extensions-transparent: oklab(0.72 0.12 -0.06 / 0.35);
+    --extensions-light: oklab(0.78 0.08 -0.04);
+    
+    --drop-highlight: oklab(0.68 0.15 -0.08);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: linear-gradient(90deg, oklab(0.45 0.08 -0.15 / 0.8) 0%, oklab(0.55 0.12 -0.12 / 0.8) 20%, oklab(0.65 0.15 -0.08 / 0.8) 40%, oklab(0.70 0.12 -0.04 / 0.8) 60%, oklab(0.65 0.05 -0.10 / 0.8) 80%, oklab(0.60 -0.02 -0.12 / 0.8) 100%);
+}
+
+body[coloraccent="Aurora"] {
+    --motion-primary: oklab(0.70 -0.10 0.08);
+    --motion-primary-transparent: oklab(0.70 -0.10 0.08 / 0.75);
+    --motion-tertiary: oklab(0.75 -0.08 0.06);
+	--motion-light-transparent: oklab(0.80 -0.10 0.08 / 0.75);
+
+    --paint-motion-primary: #6FB265;
+    --paint-motion-tertiary: #4B8C41;
+    --paint-motion-transparent: #6FB26557;
+
+    --motion-primary-dark: #333333;
+
+    --extensions-primary: oklab(0.75 -0.08 0.06);
+    --extensions-tertiary: oklab(0.65 -0.06 -0.08);
+    --extensions-transparent: oklab(0.75 -0.08 0.06 / 0.35);
+    --extensions-light: oklab(0.80 -0.04 0.04);
+    
+    --drop-highlight: oklab(0.70 -0.10 0.08);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: linear-gradient(90deg, oklab(0.65 -0.12 0.10 / 0.8) 0%, oklab(0.70 -0.10 0.05 / 0.8) 20%, oklab(0.65 -0.08 -0.05 / 0.8) 40%, oklab(0.60 -0.06 -0.10 / 0.8) 60%, oklab(0.55 0.02 -0.12 / 0.8) 80%, oklab(0.60 0.08 -0.08 / 0.8) 100%);
+}
+
+body[coloraccent="Mint"] {
+    --motion-primary: oklab(0.78 -0.12 0.08);
+    --motion-primary-transparent: oklab(0.78 -0.12 0.08 / 0.75);
+    --motion-tertiary: oklab(0.80 -0.10 0.06);
+	--motion-light-transparent: oklab(0.85 -0.12 0.08 / 0.75);
+
+    --paint-motion-primary: #75D07E;
+    --paint-motion-tertiary: #50A859;
+    --paint-motion-transparent: #75D07E57;
+
+    --motion-primary-dark: #333333;
+
+    --extensions-primary: oklab(0.80 -0.10 0.06);
+    --extensions-tertiary: oklab(0.75 -0.08 -0.02);
+    --extensions-transparent: oklab(0.80 -0.10 0.06 / 0.35);
+    --extensions-light: oklab(0.85 -0.06 0.04);
+    
+    --drop-highlight: oklab(0.78 -0.12 0.08);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: linear-gradient(90deg, oklab(0.75 -0.14 0.10 / 0.8) 0%, oklab(0.78 -0.12 0.08 / 0.8) 20%, oklab(0.80 -0.10 0.04 / 0.8) 40%, oklab(0.82 -0.08 0.00 / 0.8) 60%, oklab(0.80 -0.06 -0.04 / 0.8) 80%, oklab(0.75 -0.04 -0.08 / 0.8) 100%);
+}
+
+body[coloraccent="Cherry"] {
+    --motion-primary: oklab(0.70 0.18 0.08);
+    --motion-primary-transparent: oklab(0.70 0.18 0.08 / 0.75);
+    --motion-tertiary: oklab(0.72 0.16 0.10);
+	--motion-light-transparent: oklab(0.82 0.18 0.08 / 0.75);
+
+    --paint-motion-primary: #FF605F;
+    --paint-motion-tertiary: #C43130;
+    --paint-motion-transparent: #FF605F57;
+
+    --motion-primary-dark: #333333;
+
+    --extensions-primary: oklab(0.72 0.16 0.10);
+    --extensions-tertiary: oklab(0.68 0.14 0.04);
+    --extensions-transparent: oklab(0.72 0.16 0.10 / 0.35);
+    --extensions-light: oklab(0.78 0.12 0.12);
+    
+     --drop-highlight: oklab(0.70 0.18 0.08);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image:
+        linear-gradient(90deg, oklab(0.65 0.20 0.06 / 0.8) 0%, oklab(0.70 0.18 0.08 / 0.8) 20%, oklab(0.72 0.16 0.12 / 0.8) 40%, oklab(0.75 0.14 0.14 / 0.8) 60%, oklab(0.78 0.12 0.08 / 0.8) 80%, oklab(0.80 0.08 0.04 / 0.8) 100%);
 }
 
 body[coloraccent="NIGHTMARE"] {
