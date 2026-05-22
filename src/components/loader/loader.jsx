@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import bindAll from 'lodash.bindall';
 import stars from './stars2.svg';
 import shipguy from './ShipGuy.svg';
-import logo from './title.svg';
+import logo from './title.png';
 import { randomMessages } from '../../lib/randomMessages';
 
 import * as progressMonitor from './tw-progress-monitor';
@@ -152,6 +152,7 @@ class LoaderComponent extends React.Component {
                 <div className={styles.container}>
                     <div className={styles.logoFloat}>
                         <img
+                            width="350px"
                             src={logo}
                             draggable={false}
                         />
