@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $motion-transparent;
+    background-color: $motion-primary;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     color: white;
@@ -49,11 +49,11 @@
 }
 
 [theme="dark"] .background {
-    background-color: $motion-dark-transparent;
+    background-color: $motion-primary-dark;
 }
 
 [theme="midnight"] .background {
-    background-color: $motion-dark-transparent;
+    background-color: $motion-primary-dark;
 }
 
 .fullscreen {
