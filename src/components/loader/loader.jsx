@@ -152,7 +152,7 @@ class LoaderComponent extends React.Component {
                 <div className={styles.container}>
                     <div className={styles.logoFloat}>
                         <img
-                            width="350px"
+                            width="250px"
                             src={logo}
                             draggable={false}
                         />
