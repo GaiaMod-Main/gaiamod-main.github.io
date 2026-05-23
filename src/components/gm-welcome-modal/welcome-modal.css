@@ -1,0 +1,114 @@
+@import "../../css/colors.css";
+
+.modal-content {
+    max-width: 600px;
+}
+
+.body {
+    background: $ui-white;
+    padding: 1.5rem 2.25rem;
+    max-height: calc(80vh - 250px);
+    overflow-y: auto;
+}
+
+[theme="dark"] .body {
+    background: $ui-black;
+}
+
+.body input[type="checkbox"],
+.body input[type="radio"] {
+    margin: 3px;
+}
+
+.text-input {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid $ui-black-transparent;
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 3rem;
+    color: $text-primary-transparent;
+    font-size: .875rem;
+    background-color: $motion-primary;
+}
+
+[theme="dark"] .text-input {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid $ui-white-transparent;
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 3rem;
+    color: $text-primary-light-transparent;
+    font-size: .875rem;
+    background-color: $motion-primary-dark;
+}
+
+.dont-show-container {
+    display: flex;
+    align-items: center;
+}
+.dont-show-checkbox {
+    margin-right: 0.5rem;
+}
+
+.button-row {
+    font-weight: bolder;
+    text-align: right;
+    background: $ui-white;
+    padding: 1.5rem 2.25rem;
+}
+
+[theme="dark"] .button-row {
+    font-weight: bolder;
+    text-align: right;
+    background: $ui-black;
+    padding: 1.5rem 2.25rem;
+}
+
+.button-row button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    background: white;
+    border: 1px solid $ui-black-transparent;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+[theme="dark"] .button-row button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    background: black;
+    border: 1px solid $ui-white-transparent;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+[dir="ltr"] .button-row button + button {
+    margin-left: 0.5rem;
+}
+
+[dir="rtl"] .button-row button + button {
+    margin-right: 0.5rem;
+}
+
+.button-row button.close-button {
+    background: $motion-primary;
+    border: $motion-primary;
+    color: white;
+}
+
+[theme="dark"] .button-row button.close-button {
+    background: $motion-primary-dark;
+    border: $motion-primary-dark;
+    color: black;
+}
+
+.text {
+    margin-bottom: 1rem;
+}
+.poster {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}

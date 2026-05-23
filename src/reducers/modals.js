@@ -21,6 +21,7 @@ const MODAL_FONTS = 'fontsModal';
 const MODAL_README = 'readme';
 const MODAL_PREVIEW_EXT = 'previewExt';
 const MODAL_AE_FEATURES = 'aeFeaturesModal';
+const MODAL_WELCOME = 'welcomeModal';
 //const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 //const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 //const MODAL_GIT = 'gitModal';
@@ -51,6 +52,7 @@ const initialState = {
 	[MODAL_README]: false,
     [MODAL_PREVIEW_EXT]: false,
     [MODAL_AE_FEATURES]: false,
+    [MODAL_WELCOME]: false,
     extensionModalSwapId: null//,
 //    [MODAL_UNKNOWN_PLATFORM]: false,
 //    [MODAL_INVALID_PROJECT]: false,
@@ -158,6 +160,12 @@ const openAeFeaturesModal = function () {
 };
 const closeAeFeaturesModal = function () {
     return closeModal(MODAL_AE_FEATURES);
+};
+const openWelcomeModal = function () {
+    return openModal(MODAL_WELCOME);
+};
+const closeWelcomeModal = function () {
+    return closeModal(MODAL_WELCOME);
 };
 /*
 const openUnknownPlatformModal = function () {
@@ -289,6 +297,8 @@ export {
     openPreviewExt,
     openAeFeaturesModal,
     closeAeFeaturesModal,
+	openWelcomeModal,
+	closeWelcomeModal,
     closePreviewExt,
     closeReadme,
 //    openUnknownPlatformModal,

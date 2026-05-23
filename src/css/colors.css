@@ -519,8 +519,15 @@ $ui-white-dim: hsla(0, 100%, 100%, 0.75); /* 25% transparent version of ui-white
 $ui-white-transparent: hsla(0, 100%, 100%, 0.25); /* 25% transparent version of ui-white */
 $ui-transparent: hsla(0, 100%, 100%, 0); /* 25% transparent version of ui-white */
 
+$ui-black: hsla(0, 0%, 0%, 1); /* #FFFFFF */
+$ui-black-dim: hsla(0, 0%, 0%, 0.75); /* #FFFFFF */
 $ui-black-transparent-default: hsla(0, 0%, 0%, 0.15); /* 15% transparent version of black */
 $ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default);
+
+$ui-dark: hsla(0, 50%, 50%, 1); /* #FFFFFF */
+$ui-dark-dim: hsla(0, 50%, 50%, 0.75); /* #FFFFFF */
+$ui-dark-transparent-default: hsla(0, 50%, 50%, 0.15); /* 15% transparent version of black */
+$ui-dark-transparent: var(--ui-dark-transparent, $ui-dark-transparent-default);
 
 $text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); /* #575E75 */
 $text-primary-transparent: hsla(225, 15%, 40%, 0.75);
@@ -537,6 +544,7 @@ $ui-primary-light: hsla(215, 100%, 95%, 1);
 $ui-secondary-light: hsla(215, 75%, 95%, 1);
 $ui-tertiary-light: hsla(215, 50%, 90%, 1);
 $text-primary-light: hsla(225, 15%, 40%, 1);
+$text-primary-light-transparent: hsla(225, 15%, 40%, 0.75);
 
 $menu-bar-background: var(--menu-bar-background, $motion-primary);
 $menu-bar-background-dark: var(--menu-bar-background-dark, $motion-primary-dark);

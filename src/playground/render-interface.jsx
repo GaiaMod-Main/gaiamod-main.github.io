@@ -36,6 +36,7 @@ import VoteFrame from './vote-frame.jsx';
 import MenuBar from '../components/menu-bar/menu-bar.jsx';
 import ProjectInput from '../components/tw-project-input/project-input.jsx';
 import FeaturedProjects from '../components/tw-featured-projects/featured-projects.jsx';
+import WelcomeModal from '../containers/gm-welcome-modal.jsx';
 import Description from '../components/tw-description/description.jsx';
 import BrowserModal from '../components/browser-modal/browser-modal.jsx';
 import CloudVariableBadge from '../containers/tw-cloud-variable-badge.jsx';
@@ -88,6 +89,7 @@ const handleClickAddonSettings = () => {
     window.open(`${process.env.ROOT}${path}`);
 };
 
+
 const xmlEscape = function (unsafe) {
     return unsafe.replace(/[<>&'"]/g, c => {
         switch (c) {
@@ -122,6 +124,7 @@ const messages = defineMessages({
     }
 });
 
+
 const WrappedMenuBar = compose(
     SBFileUploaderHOC,
     TWPackagerIntegrationHOC
@@ -138,6 +141,85 @@ if (AddonChannels.changeChannel) {
         SettingsStore.setStoreWithVersionCheck(e.data);
     });
 }
+
+const RenderLoader = () => {
+    const [pageLoaded, setPageLoaded] = useState(false);
+
+    useEffect(() => {
+        const handleLoad = () => {
+            setPageLoaded(true);
+        };
+
+        if (document.readyState === 'complete') {
+            setPageLoaded(true);
+        } else {
+            window.addEventListener('load', handleLoad);
+        }
+
+        return () => {
+            window.removeEventListener('load', handleLoad);
+        };
+    }, []);
+
+    return !pageLoaded ? (
+        <Loader
+            isFullScreen
+            messageId="gm.loader.loadingPage"
+        />
+    ) : null;
+};
+
+const RenderWelcomeModal = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    function handleOnOpen() {
+        setIsOpen(true);
+    }
+
+    function handleOnClose() {
+        setIsOpen(false);
+    }
+
+    return (
+        <>
+            <a onClick={handleOnOpen}>
+                {/* todo: translate */}
+                <FormattedMessage
+                    defaultMessage="Welcome Modal"
+                    description="Link to open welcome modal"
+                    id="gm.home.welcomeModal"
+                />
+            </a>
+            {isOpen && <WelcomeModal onClose={handleOnClose}/>}
+        </>
+    );
+};
+
+const RenderVersion = () => {
+    const [version, setVersion] = React.useState();
+
+    const fetchVersion = () => {
+        fetch('https://api.github.com/repos/GaiaMod-Main/gaiamod-main.github.io/commits')
+            .then(response => response.json())
+            .then(data => {
+                const latestCommit = data[0];
+                const matchedVersion = latestCommit.commit.message.match(/^(\[(\d+(\.\d+)*)\])/);
+                setVersion(matchedVersion[2]);
+            });
+    };
+
+    useEffect(() => {
+        fetchVersion();
+    }, []);
+
+    return (
+        <div className={styles.footerText}>
+            <div className={styles.commitVersion}>
+                {version}
+            </div>
+        </div>
+    );
+};
 
 runAddons();
 
@@ -170,6 +252,7 @@ const Footer = () => (
             </div>
             <div className={styles.footerColumns}>
                 <div className={styles.footerSection}>
+				<RenderWelcomeModal />
                     <a href="credits.html">
                         <FormattedMessage
                             defaultMessage="Credits"
@@ -599,7 +682,7 @@ class Interface extends React.Component {
                             </div>
                             <a
                                 target="_blank"
-                                href="https://penguinmod.com/search?q=featured:"
+                                href="https://penguinmod.com/search?q=newest:"
                                 rel="noreferrer"
                             >
                                 See more projects
