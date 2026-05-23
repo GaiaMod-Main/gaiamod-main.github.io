@@ -46,7 +46,7 @@ const WelcomeModalComponent = props => (
             </label>
             <p className={styles.text}>
                 <FormattedMessage
-                    defaultMessage="By using Dash, you agree to our {termsOfService} and {privacyPolicy}."
+                    defaultMessage="By using GaiaMod, you agree to our {termsOfService} and {privacyPolicy}."
                     description="Text to inform users about terms of service and privacy policy when registering"
                     id="gm.tosAndPrivacy"
                     values={{
