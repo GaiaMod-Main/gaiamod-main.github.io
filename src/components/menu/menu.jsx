@@ -32,6 +32,7 @@ MenuComponent.propTypes = {
     place: PropTypes.oneOf(['left', 'right'])
 };
 
+
 const Submenu = ({children, className, place, ...props}) => (
     <div
         className={classNames(
@@ -61,13 +62,15 @@ Submenu.propTypes = {
 const MenuItem = ({
     children,
     className,
+    expanded = false,
     onClick
 }) => (
     <li
         className={classNames(
             styles.menuItem,
             styles.hoverable,
-            className
+            className,
+            {[styles.expanded]: expanded}
         )}
         onClick={onClick}
     >
@@ -78,6 +81,7 @@ const MenuItem = ({
 MenuItem.propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
+    expanded: PropTypes.bool,
     onClick: PropTypes.func
 };
 
