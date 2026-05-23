@@ -215,7 +215,7 @@ const RenderVersion = () => {
     return (
         <div className={styles.footerText}>
             <div className={styles.commitVersion}>
-                {version}
+                {'v' + version}
             </div>
         </div>
     );
@@ -242,7 +242,6 @@ runAddons();
 const Footer = () => (
     <footer className={styles.footer}>
         <div className={styles.footerContent}>
-		<RenderVersion />
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
