@@ -16,7 +16,7 @@
 
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
 import {FormattedMessage, defineMessages, injectIntl, intlShape} from 'react-intl';
@@ -242,6 +242,7 @@ runAddons();
 const Footer = () => (
     <footer className={styles.footer}>
         <div className={styles.footerContent}>
+		<RenderVersion />
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
