@@ -11,6 +11,11 @@ const handleRemoveBtnClick = (ext, props) => {
     props.onClose(); 
 };
 
+const handleRemoveUnusedBtnClick = (props) => {
+    props.vm.extensionManager.removeUnusedExtensions();
+    props.onClose(); 
+};
+
 
 const ExtensionsManagerModalComponent = props => {
     const [loadedExtensions, setLoadedExtensions] = useState([]);
@@ -34,6 +39,7 @@ const ExtensionsManagerModalComponent = props => {
             setLoadedExtensions([...loadedExtensions.sort((a, b) => a[2] - b[2])]);
         }
     };
+	
 
     return (
         <Modal
@@ -51,7 +57,8 @@ const ExtensionsManagerModalComponent = props => {
                         <div>
                             {loadedExtensions.map((ext, i) => (
                                 <React.Fragment key={i}>
-                                    <button className={styles.button} onClick={() => handleRemoveBtnClick(ext, props)}>
+                                    <button className={styles.button} 
+									onClick={() => handleRemoveBtnClick(ext, props)}>
                                         Remove {ext[0]}
                                     </button>
                                     &nbsp;
@@ -76,6 +83,15 @@ const ExtensionsManagerModalComponent = props => {
                                 </select>
                             </center>
                         </div>
+						<div>
+                            <center>
+								<button className={styles.button} 
+									onClick={() => handleRemoveUnusedBtnClick(props)}>
+                                        Remove all unused extensions
+                                    </button>
+                            </center>
+                        </div>
+						
                     </>
                 ) : (
                     <div>

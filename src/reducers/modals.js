@@ -22,6 +22,8 @@ const MODAL_README = 'readme';
 const MODAL_PREVIEW_EXT = 'previewExt';
 const MODAL_AE_FEATURES = 'aeFeaturesModal';
 const MODAL_WELCOME = 'welcomeModal';
+const MODAL_WALLPAPER = 'wallpaperModal';
+const MODAL_CUSTOMFONTS = 'customFonts';
 //const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 //const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 //const MODAL_GIT = 'gitModal';
@@ -53,6 +55,8 @@ const initialState = {
     [MODAL_PREVIEW_EXT]: false,
     [MODAL_AE_FEATURES]: false,
     [MODAL_WELCOME]: false,
+    [MODAL_WALLPAPER]: false,
+    [MODAL_CUSTOMFONTS]: false,
     extensionModalSwapId: null//,
 //    [MODAL_UNKNOWN_PLATFORM]: false,
 //    [MODAL_INVALID_PROJECT]: false,
@@ -166,6 +170,18 @@ const openWelcomeModal = function () {
 };
 const closeWelcomeModal = function () {
     return closeModal(MODAL_WELCOME);
+};
+const openWallpaperModal = function () {
+    return openModal(MODAL_WALLPAPER);
+};
+const closeWallpaperModal = function () {
+    return closeModal(MODAL_WALLPAPER);
+};
+const openCustomFontsModal = function () {
+    return openModal(MODAL_CUSTOMFONTS);
+};
+const closeCustomFontsModal = function () {
+    return closeModal(MODAL_CUSTOMFONTS);
 };
 /*
 const openUnknownPlatformModal = function () {
@@ -299,6 +315,10 @@ export {
     closeAeFeaturesModal,
 	openWelcomeModal,
 	closeWelcomeModal,
+	openWallpaperModal,
+	closeWallpaperModal,
+	openCustomFontsModal,
+	closeCustomFontsModal,
     closePreviewExt,
     closeReadme,
 //    openUnknownPlatformModal,
