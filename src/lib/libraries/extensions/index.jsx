@@ -253,7 +253,7 @@ import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
 import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
-import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
+import gaiaBlocksThumb from './gaiamod/GaiaBlocks.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
 import sailormoonThumb from './gaiamod/lolsailormoon.png';
 import kittenbotThumb from './gaiamod/KittenBot.png';
@@ -271,6 +271,7 @@ import webcamThumb from './gaiamod/WebCamThumb.png';
 import chatNioThumb from './gaiamod/ChatNio.png';
 import mysteryThumb from './gaiamod/unknown.png';
 import mysteryInsetIcon from './gaiamod/unknown-small.png';
+import scratchUtilitiesIcon from './gaiamod/ScratchUtilities.png';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 
@@ -413,7 +414,7 @@ const menuItems = [
     {
         name: 'Scratch Utitlites',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Scratch-Utilities.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Scratch-Utilities.svg',
+        iconURL: scratchUtilitiesIcon,
         credits: 'SharkPool',
         tags: ['penguinmod'],
         description: 'Do many things via the Scratch API; you can even fetch cloud data from projects!',
