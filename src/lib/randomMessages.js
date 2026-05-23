@@ -31,7 +31,7 @@ export const randomMessages = [
 	"Look behind you >:3",
     "Did you know: GaiaMod has LORE!!?",
     "Lore: Ship Guy has a brother named Shippo.",
-    "Lore: Ship Guy is basically a lifeform, rather than a spaceship.",
+    "Lore: Ship Guy and Shippo are basically robots, rather than spaceships.",
     "Lore: Shippo has a bad case of misophonia, while Ship Guy is very much the opposite.",
 	"You should try Versolot, Super ChaosMod, and Genesis IDE.",
 	"This site does not have cancer, you nitwit!",
