@@ -253,7 +253,7 @@ import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
 import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
-import gaiaBlocksThumb from './gaiamod/GaiaBlocks.png';
+import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
 import sailormoonThumb from './gaiamod/lolsailormoon.png';
 import kittenbotThumb from './gaiamod/KittenBot.png';
