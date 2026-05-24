@@ -42,6 +42,7 @@ class GaiaRuntime {
             blockType: Scratch.BlockType.COMMAND,
             text: 'Refresh blocks',
           },
+          "---",
           {
             opcode: 'setTurboMode',
             blockType: Scratch.BlockType.COMMAND,
@@ -75,6 +76,24 @@ class GaiaRuntime {
               },
             },
           },
+		   "---",
+          {
+            opcode: "getFramerate",
+            text: Scratch.translate("framerate limit"),
+            blockType: Scratch.BlockType.REPORTER,
+          },
+          {
+            opcode: "setFramerate",
+            text: Scratch.translate("set framerate limit to [fps]"),
+            blockType: Scratch.BlockType.COMMAND,
+            arguments: {
+              fps: {
+                type: Scratch.ArgumentType.NUMBER,
+                defaultValue: "30",
+              },
+            },
+          },
+          "---",
           {
             opcode: 'setStageSize',
             blockType: Scratch.BlockType.COMMAND,
@@ -110,6 +129,25 @@ class GaiaRuntime {
         blockType: Scratch.BlockType.COMMAND,
         text: 'Standard HD',
         },
+          "---",
+		  {
+            opcode: "renderscale",
+            blockType: Scratch.BlockType.COMMAND,
+            text: Scratch.translate(
+              "set canvas render size to width: [X] height: [Y]"
+            ),
+            arguments: {
+              X: {
+                type: Scratch.ArgumentType.NUMBER,
+                defaultValue: "640",
+              },
+              Y: {
+                type: Scratch.ArgumentType.NUMBER,
+                defaultValue: "360",
+              },
+            },
+          },
+          "---",
 		  {
          opcode: 'setBackgroundColor',
          text: 'set stage background color to [COLOR]',
@@ -153,6 +191,14 @@ class GaiaRuntime {
 	setTurboMode(args) {
       vm.setTurboMode(args.ENABLED === 'on');
     }
+	getFramerate() {
+      return Scratch.vm.runtime.frameLoop.framerate;
+    }
+
+    setFramerate({ fps }) {
+      fps = Scratch.Cast.toNumber(fps);
+      Scratch.vm.setFramerate(fps);
+    }
 	setStageSize(args) {
         if (vm) vm.setStageSize(
             Math.max(1, Scratch.Cast.toNumber(args.WIDTH)), Math.max(1, Scratch.Cast.toNumber(args.HEIGHT))
@@ -186,7 +232,14 @@ widescreen() {
         if (height <= 0) height = 1;
         if (vm) vm.setStageSize(width, height);
     }
-
+    renderscale({ X, Y }) {
+      // The function normally expects a stage size and therefore scales by DPI.
+      // However, this block is meant for a fixed pixel size
+      // (usually used in conjunction with the pixelated resize rendering mode).
+      // Therefore, scale it back according to the devicePixelRatio.
+      const pixelRatio = window.devicePixelRatio || 1;
+      Scratch.vm.renderer.resize(X / pixelRatio, Y / pixelRatio);
+    }
 setBackgroundColor(args) {
         let RGB;
         if (typeof args.COLOR === "number") {

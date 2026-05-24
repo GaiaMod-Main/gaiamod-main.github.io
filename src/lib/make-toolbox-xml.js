@@ -865,7 +865,33 @@ const sensing = function (isInitialSetup, isStage, targetId) {
             ${blockSeparator}
         `}
         ${isInitialSetup ? '' : `
-            <block id="askandwait" type="sensing_askandwait">
+            <block type="sensing_alert">
+                <value name="MESSAGE">
+                    <shadow type="text">
+                        <field name="TEXT">${hello}</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="sensing_prompt">
+                <value name="MESSAGE">
+                    <shadow type="text">
+                        <field name="TEXT">${name}</field>
+                    </shadow>
+                </value>
+                <value name="VALUE">
+                    <shadow type="text">
+                        <field name="TEXT"/>
+                    </shadow>
+                </value>
+            </block>
+            <block type="sensing_confirm">
+                <value name="MESSAGE">
+                    <shadow type="text">
+                        <field name="TEXT">Have you played that game?</field>
+                    </shadow>
+                </value>
+            </block>
+			<block id="askandwait" type="sensing_askandwait">
                 <value name="QUESTION">
                     <shadow type="text">
                         <field name="TEXT">${name}</field>
