@@ -2378,7 +2378,7 @@ const menuItems = [
         name: 'Face Sensing',
         extensionId: 'https://extensions.turbowarp.org/lab/face-sensing.js',
         iconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg',
-		insetIconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg',
+		insetIconURL: 'https://nitrobolt.org/static/assets/e3a21b920ed4b4c2d9830ec68132c011.svg',
         tags: ['scratch', 'ai'],
         description: 'Sense faces with the camera.',
         featured: true
