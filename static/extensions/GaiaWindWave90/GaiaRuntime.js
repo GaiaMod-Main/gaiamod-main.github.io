@@ -43,6 +43,17 @@ class GaiaRuntime {
             text: 'Refresh blocks',
           },
           {
+            opcode: 'setTurboMode',
+            blockType: Scratch.BlockType.COMMAND,
+            text: 'Set Turbo Mode to [ENABLED]',
+            arguments: {
+              ENABLED: {
+                type: Scratch.ArgumentType.STRING,
+                menu: 'ENABLED_MENU'
+              },
+            },
+          },
+          {
             opcode: 'restartProject',
             blockType: Scratch.BlockType.COMMAND,
             text: 'Restart a project',
@@ -112,6 +123,12 @@ class GaiaRuntime {
          },
 		/////lols
       ],
+        menus: {
+          ENABLED_MENU: {
+            acceptReporters: true,
+            items: ['on', 'off']
+          }
+        }
     };
   }
 
@@ -129,6 +146,9 @@ class GaiaRuntime {
     }
     async removeUnusedExtensions() {
       vm.extensionManager.removeUnusedExtensions();
+    }
+	setTurboMode(args) {
+      vm.setTurboMode(args.ENABLED === 'on');
     }
 	setStageSize(args) {
         if (vm) vm.setStageSize(
