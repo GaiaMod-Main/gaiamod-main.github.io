@@ -303,7 +303,7 @@ const menuItems = [
     {
         name: 'GaiaBlocks',
         extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaBlocks.js',
-        extDeveloper: 'GaiaWindWave90',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
         iconURL: gaiaBlocksThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
@@ -331,7 +331,7 @@ const menuItems = [
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod'],
         description: 'Blocks for modifying Scratch objects like Turbo Mode, stage size, clone limits, and more!',
-        extDeveloper: 'GaiaWindWave90',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
         featured: true
     },
     {
@@ -351,7 +351,7 @@ const menuItems = [
         iconURL: spinachThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
-        extDeveloper: 'GaiaWindWave90',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
         tags: ['gaiamod', 'jokes'],
         description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
         internetConnectionRequired: true,
