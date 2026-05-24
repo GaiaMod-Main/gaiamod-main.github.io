@@ -24,13 +24,23 @@ class GaiaRuntime {
           {
             opcode: 'loadExtension',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'load an extension from [TEXT]',
+            text: 'Load an extension from [TEXT]',
             arguments: {
               TEXT: {
                 type: Scratch.ArgumentType.STRING,
                 defaultValue: "https://extensions.turbowarp.org/utilities.js",
               },
             },
+          },
+          {
+            opcode: 'removeUnusedExtensions',
+            blockType: Scratch.BlockType.COMMAND,
+            text: 'Remove all unused extensions',
+          },
+          {
+            opcode: 'refreshBlocks',
+            blockType: Scratch.BlockType.COMMAND,
+            text: 'Refresh blocks',
           },
           {
             opcode: 'restartProject',
@@ -52,6 +62,21 @@ class GaiaRuntime {
                 type: Scratch.ArgumentType.STRING,
                 defaultValue: "0",
               },
+            },
+          },
+          {
+            opcode: 'setStageSize',
+            blockType: Scratch.BlockType.COMMAND,
+            text: 'Set stage width: [WIDTH] height: [HEIGHT]',
+            arguments: {
+              WIDTH: {
+            type: Scratch.ArgumentType.NUMBER,
+            defaultValue: "640"
+               },
+              HEIGHT: {
+            type: Scratch.ArgumentType.NUMBER,
+            defaultValue: "360"
+               },
             },
           },
          {
@@ -101,6 +126,14 @@ class GaiaRuntime {
       if (await vm.securityManager.canLoadExtensionFromProject(TEXT)) {
         vm.extensionManager.loadExtensionURL(TEXT);
       }
+    }
+    async removeUnusedExtensions() {
+      vm.extensionManager.removeUnusedExtensions();
+    }
+	setStageSize(args) {
+        if (vm) vm.setStageSize(
+            Math.max(1, Scratch.Cast.toNumber(args.WIDTH)), Math.max(1, Scratch.Cast.toNumber(args.HEIGHT))
+        );
     }
 widescreen() {
         let width = 640;
