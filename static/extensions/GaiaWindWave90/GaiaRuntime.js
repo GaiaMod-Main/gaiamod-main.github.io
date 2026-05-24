@@ -147,6 +147,9 @@ class GaiaRuntime {
     async removeUnusedExtensions() {
       vm.extensionManager.removeUnusedExtensions();
     }
+	refreshBlocks() {
+            vm.extensionManager.refreshBlocks();
+        }
 	setTurboMode(args) {
       vm.setTurboMode(args.ENABLED === 'on');
     }
