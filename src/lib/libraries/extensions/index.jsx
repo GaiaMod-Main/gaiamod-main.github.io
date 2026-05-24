@@ -432,6 +432,16 @@ const menuItems = [
         extDeveloper: 'DVD',
         featured: true
     },
+  {
+        name: 'Bluetooth Request',
+        extensionId: 'https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/bluetooth.js',
+        credits: 'BludIsAnLemon',
+        iconURL: 'https://bludisanlemon.github.io/lemons-gallery/images/Lemon/bluetooth.png',
+        tags: ['othermods'],
+        description: "Allows you to send out bluetooth requests to nearby bluetooth devices.",
+        internetConnectionRequired: false,
+        featured: true
+    },
     {
         name: 'Adacraft GIF',
         extensionId: 'gif',
