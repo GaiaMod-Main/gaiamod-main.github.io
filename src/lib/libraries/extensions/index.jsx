@@ -2705,7 +2705,7 @@ const menuItems = [
     },
     {
         name: 'GaiaMod Extra Extensions',
-        href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/',
+        href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/?editor=true',
         extensionId: 'special_gaiamodExtensionLibrary',
         iconURL: gaiaExGalleryThumb,
         description: 'See some GaiaMod External extensions, even user-submitted. Opens in a new tab.',

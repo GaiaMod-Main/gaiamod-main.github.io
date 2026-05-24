@@ -29,6 +29,12 @@ const messages = defineMessages({
         description: 'Confirm loading Scratch-incompatible extension',
         id: 'tw.confirmIncompatibleExtension'
     },
+    incompatibletw: {
+        // eslint-disable-next-line max-len
+        defaultMessage: 'This extension may be incompatible with Turbowarp and its forks. One of the blocks that removes unused extensions may break if imported into Turbowarp. Are you sure you want to do this?',
+        description: 'Confirm loading TurboWarp-incompatible extension',
+        id: 'pm.confirmIncompatibleExtensionTW'
+    },
     extensionWarning: {
         // eslint-disable-next-line max-len
         defaultMessage: 'This extension is not recommended for real projects. It may be unstable and cause problems with your project later on. Are you sure you want to enable it?',
@@ -173,6 +179,10 @@ class ExtensionLibrary extends React.PureComponent {
         }
         if (extensionId === 'special_penguinmodExtensionLibrary') {
             window.open('https://extensions.penguinmod.com/?editor=true');
+            return;
+        }
+        if (extensionId === 'special_gaiamodExtensionLibrary') {
+            window.open('https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/?editor=true');
             return;
         }
         const url = (item.extensionURL ? item.extensionURL : extensionId);
