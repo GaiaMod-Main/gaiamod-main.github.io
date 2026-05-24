@@ -905,33 +905,6 @@ const sensing = function (isInitialSetup, isStage, targetId) {
             </value>
         </block>
         ${blockSeparator}
-            <block type="sensing_alert">
-                <value name="MESSAGE">
-                    <shadow type="text">
-                        <field name="TEXT">Hello</field>
-                    </shadow>
-                </value>
-            </block>
-            <block type="sensing_prompt">
-                <value name="MESSAGE">
-                    <shadow type="text">
-                        <field name="TEXT">Hello</field>
-                    </shadow>
-                </value>
-                <value name="VALUE">
-                    <shadow type="text">
-                        <field name="TEXT"/>
-                    </shadow>
-                </value>
-            </block>
-            <block type="sensing_confirm">
-                <value name="MESSAGE">
-                    <shadow type="text">
-                        <field name="TEXT">Have you played that game?</field>
-                    </shadow>
-                </value>
-            </block>
-        ${blockSeparator}
         <block type="sensing_mousedown"/>
         <block type="sensing_mouseclicked"/>
         <block type="sensing_mousex"/>
