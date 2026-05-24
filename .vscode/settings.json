@@ -1,5 +1,6 @@
 {
     "yaml.schemas": {
         "https://gitpod.io/schemas/gitpod-schema.json": "file:///workspace/penguinmod.github.io/.gitpod.yml"
-    }
+    },
+    "AutoPreview.serverURL": "http://localhost:3000/"
 }
