@@ -251,6 +251,9 @@ import poppyInsetIconURL from './poppy/poppy-small.png';
 import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
 import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 
+import mbotIconURL from './mbot/mbot-header.png';
+import mbotInsetIconURL from './mbot/mbot.svg';
+
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
 import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
@@ -2244,6 +2247,19 @@ const menuItems = [
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
 		bluetoothRequired: true,
         featured: true
+    },
+    {
+        name: 'MBot',
+        extensionId: 'mbot',
+        collaborator: "MBot Robotics Ecosystem",
+        iconURL: mbotIconURL,
+        insetIconURL: mbotInsetIconURL,
+        description: 'Control an MBot.',
+        tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true
+
     },
 {
         name: 'Marty the Robot',
