@@ -329,6 +329,7 @@ import chatNioThumb from './gaiamod/ChatNio.png';
 import mysteryThumb from './gaiamod/unknown.png';
 import mysteryInsetIcon from './gaiamod/unknown-small.png';
 import scratchUtilitiesIcon from './gaiamod/ScratchUtilities.png';
+import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 
@@ -436,6 +437,18 @@ const menuItems = [
         tags: ['gaiamod'],
         description: 'Records videos straight out of webcam.',
         internetConnectionRequired: false,
+        featured: true
+    },
+    {
+        name: 'Wonder Blocks',
+        extensionId: 'wonderblocks',
+        iconURL: wonderBlocksIcon,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        tags: ['gaiamod'],
+        description: 'Some mysterious blocks.',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
+        gaiaModRequired: true,
         featured: true
     },
     {
@@ -2529,7 +2542,7 @@ const menuItems = [
         collaborator: 'ir-brain',
         iconURL: aidroneIconURL,
         insetIconURL: aidroneInsetIconURL,
-        description: 'AI Drone with Scratch 3.0',
+        description: 'AI Drone with GaiaMod',
         featured: true,
         disabled: false,
 		tags: ['othermods', 'ai', 'hardware'],
@@ -2548,7 +2561,7 @@ const menuItems = [
         collaborator: 'K-EdTech',
         iconURL: aicobotIconURL,
         insetIconURL: aicobotInsetIconURL,
-        description: 'AICoBot with Scratch 3.0',
+        description: 'AICoBot with GaiaMod',
         featured: true,
         disabled: false,
 		tags: ['othermods', 'ai', 'hardware'],
