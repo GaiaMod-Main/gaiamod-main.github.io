@@ -1342,7 +1342,7 @@ const menuItems = [
         iconURL: 'https://extensions.arkide.site/images/Ark/storemystuff.png',
 		insetIconURL: arkideIcon,
 		customInsetColor: '#5900FF',
-        tags: ['arkide'],
+        tags: ['arkide', 'datamgmt'],
         description: 'Another varible storage extension but the server is running on the centeral ArkIDE server instead.',
         featured: true
     },
@@ -1686,7 +1686,7 @@ const menuItems = [
         extensionId: 'webmidi',
         iconURL: webmidiIconURL,
         insetIconURL: webmidiInsetIconURL,
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'noisemaker'],
         description: 'Web MIDI for Musical Instrument',
         featured: true
     },
