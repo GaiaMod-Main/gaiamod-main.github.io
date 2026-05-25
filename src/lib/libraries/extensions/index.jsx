@@ -62,6 +62,7 @@ import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import gaiamodIcon from './gaiamod/gaiamod_icon.png';
 import penguinmodIcon from './gaiamod/penguinmod_icon.png';
+import arkideIcon from './arkide/arkide_icon.png';
 import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
 import snailideIcon from './snail-ide/snailide_icon.png';
 import electramodIcon from './electramod/electramod_icon.png';
@@ -200,7 +201,7 @@ import silvxrcatOddMessagesExtensionIcon from './penguinmod/extensions/oddmessag
 import luaIcon from './dinosaurmod/lua.png';
 import pythonIcon from './dinosaurmod/python.png';
 
-//sip snip snip lol
+//champierre
 import chatgpt2scratchIconURL from './chatgpt2scratch/chatgpt2scratch.png';
 import chatgpt2scratchInsetIconURL from './chatgpt2scratch/chatgpt2scratch-small.png';
 import facemesh2scratchIconURL from './facemesh2scratch/facemesh2scratch.png';
@@ -220,6 +221,7 @@ import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
 import tmpose2scratchIconURL from './tmpose2scratch/tmpose2scratch.png';
 import tmpose2scratchInsetIconURL from './tmpose2scratch/tmpose2scratch-small.png';
 
+//um
 import ohbotIconURL from './ohbot/ohbot.png';
 import ohbotInsetIconURL from './ohbot/ohbot-small.svg';
 import webmidiIconURL from './webmidi/webmidi.png';
@@ -228,44 +230,82 @@ import newBlockImage from './newblocks/newblocks.png';
 import newBlockButtonImage from './newblocks/newblocks-small.png';
 import newMicrobitImage from './newmicrobit/newmicrobit.png';
 import newMicrobitButtonImage from './newmicrobit/newmicrobit-small.png';
-import objectDetectionIconURL from './objectdetection/objectdetection.png';
-import objectDetectionInsetIconURL from './objectdetection/objectdetectionsmall.svg';
-import poseHandIconURL from "./posehand/pose-hand.png";
-import poseHandInsetIconURL from "./posehand/pose-hand-small.svg";
-import teachableMachineIconURL from './teachableMachine/teachable-machine-blocks.png';
-import teachableMachineInsetIconURL from './teachableMachine/teachable-machine-blocks-small.svg';
-import roku from './roku/roku.jpg';
 
-// onegpio
+//junilab
+import jdcodeIconURL from './jdcode/jdcode.png';
+import jdcodeInsetIconURL from './jdcode/jdcode-small.png';
+import jdcodeConnectionIconURL from './jdcode/jdcode-illustration.png';
+import jdcodeConnectionSmallIconURL from './jdcode/jdcode-small.png';
+import robodogIconURL from './robodog/robodog.png';
+import robodogInsetIconURL from './robodog/robodog-small.png';
+import robodogConnectionIconURL from './robodog/robodog-illustration.png';
+import robodogConnectionSmallIconURL from './robodog/robodog-small.png';
+import jcboardIconURL from './jcboard/jcboard.png';
+import jcboardInsetIconURL from './jcboard/jcboard-small.png';
+import jcboardConnectionIconURL from './jcboard/jcboard-illustration.png';
+import jcboardConnectionSmallIconURL from './jcboard/jcboard-small.png';
+import uglybotIconURL from './uglybot/uglybot.png';
+import uglybotInsetIconURL from './uglybot/uglybot-small.png';
+import uglybotConnectionIconURL from './uglybot/uglybot-illustration.png';
+import uglybotConnectionSmallIconURL from './uglybot/uglybot-small.png';
+import firmtechIconURL from './firmtech/firmtech.png';
+import firmtechInsetIconURL from './firmtech/firmtech-small.png';
+import firmtechConnectionIconURL from './firmtech/firmtech-illustration.png';
+import firmtechConnectionSmallIconURL from './firmtech/firmtech-small.png';
+import aidroneIconURL from './aidrone/aidrone.png';
+import aidroneInsetIconURL from './aidrone/aidrone-small.png';
+import aidroneConnectionIconURL from './aidrone/aidrone-illustration.png';
+import aidroneConnectionSmallIconURL from './aidrone/aidrone-small.png';
+import aicobotIconURL from './aicobot/aicobot.png';
+import aicobotInsetIconURL from './aicobot/aicobot-small.png';
+import aicobotConnectionIconURL from './aicobot/aicobot-illustration.png';
+import aicobotConnectionSmallIconURL from './aicobot/aicobot-small.png';
 
-import onegpioArduinoImage from './onegpioArduino/onegpioArduino.png';
-import onegpioArduinoInsetIconURL from './onegpioArduino/onegpioArduino-small.png';
+//AkariGroup
+import akariBlocksImage from './akariBlocks/logo320.jpg';
+import akariBlocksButtonImage from './akariBlocks/logo320_ex.jpg';
+import akariCameraImage from './akariCamera/logo320.jpg';
+import akariCameraButtonImage from './akariCamera/logo320_ex.jpg';
+import akariBlocksSimpleImage from './akariBlocksSimple/logo320.jpg';
+import akariBlocksSimpleButtonImage from './akariBlocksSimple/logo320_ex.jpg';
+import akariCameraSimpleImage from './akariCameraSimple/logo320.jpg';
+import akariCameraSimpleButtonImage from './akariCameraSimple/logo320_ex.jpg';
 
-import onegpioRpiImage from './onegpioRpi/onegpioRpi.png';
-import onegpioRpiInsetIconURL from './onegpioRpi/onegpioRpi-small.png';
-
-import onegpioEspImage from './onegpioEsp/onegpioEsp.png';
-import onegpioEspInsetIconURL from './onegpioEsp/onegpioEsp-small.png';
-
-import onegpioPicoboardImage from './onegpioPicoboard/onegpioPicoboard.jpg';
-import onegpioPicoboardInsetIconURL from './onegpioPicoboard/onegpioPicoboard-small.png';
-
-import onegpioCpxImage from './onegpioCpx/onegpioCpx.jpg';
-import onegpioCpxInsetIconURL from './onegpioCpx/onegpioCpx-small.png';
-
-import onegpioRoboHATImage from './onegpioRoboHAT/onegpioRoboHAT.png';
-import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.png';
-
-import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
-import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
-
-//mufumufu
-import poppyImage from './poppy/poppy.png';
-import poppyInsetIconURL from './poppy/poppy-small.png';
+//other
 import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
 import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 import mbotIconURL from './mbot/mbot-header.png';
 import mbotInsetIconURL from './mbot/mbot.svg';
+import roku from './roku/roku.jpg';
+
+//166iwase-lgtm/taichan0123
+import meshImage from './mesh/mesh.png';
+import ledButtonImage from './led/led-small.png';
+import brightnessButtonImage from './brightness/brightness-small.png';
+import motionButtonImage from './motion/motion-small.png';
+import gpioButtonImage from './gpio/gpio-small.png';
+
+//garragames
+import koriIconURL from './kori/kori.png';
+import koriInsetIconURL from './kori/kori-small.svg';
+import koriConnectionIconURL from './kori/kori-illustration.svg';
+import koriConnectionSmallIconURL from './kori/kori-small.svg';
+
+// onegpio
+import onegpioArduinoImage from './onegpioArduino/onegpioArduino.png';
+import onegpioArduinoInsetIconURL from './onegpioArduino/onegpioArduino-small.png';
+import onegpioRpiImage from './onegpioRpi/onegpioRpi.png';
+import onegpioRpiInsetIconURL from './onegpioRpi/onegpioRpi-small.png';
+import onegpioEspImage from './onegpioEsp/onegpioEsp.png';
+import onegpioEspInsetIconURL from './onegpioEsp/onegpioEsp-small.png';
+import onegpioPicoboardImage from './onegpioPicoboard/onegpioPicoboard.jpg';
+import onegpioPicoboardInsetIconURL from './onegpioPicoboard/onegpioPicoboard-small.png';
+import onegpioCpxImage from './onegpioCpx/onegpioCpx.jpg';
+import onegpioCpxInsetIconURL from './onegpioCpx/onegpioCpx-small.png';
+import onegpioRoboHATImage from './onegpioRoboHAT/onegpioRoboHAT.png';
+import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.png';
+import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
+import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
@@ -1091,6 +1131,17 @@ const menuItems = [
         internetConnectionRequired: false,
         featured: true
     },
+	    {
+        name: 'ArkIDE additions',
+        extensionId: 'https://extensions.arkide.site/extensions/Ark/arkide-additons.js',
+        credits: 'Ark',
+        iconURL: 'https://extensions.arkide.site/images/Ark/banner.png',
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide', 'ai'],
+        description: 'A simple extension that adds some cool new blocks from ArkIDE. Google Gemini included.',
+        featured: true
+    },
     {
         name: 'QR Codes',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/QR-Codes.js',
@@ -1117,6 +1168,17 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Share your screen or camera on your project as a data-uri.',
         extDeveloper: 'Pooiod7',
+        featured: true
+    },
+	   {
+        name: 'Console',
+        extensionId: 'https://extensions.arkide.site/extensions/Ark/arkide-console.js',
+        credits: 'Ark',
+        iconURL: 'https://extensions.arkide.site/images/Ark/console.png',
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        description: 'Add a console to your project to log messages, errors, and warnings.',
         featured: true
     },
       {
@@ -1200,6 +1262,17 @@ const menuItems = [
         description: 'Lets you play blockBeat!',
         featured: true
     },
+	    {
+        name: 'Timer Utils',
+        extensionId: 'https://extensions.arkide.site/extensions/Ark/timerutils.js',
+        credits: 'Ark',
+        iconURL: 'https://extensions.arkide.site/images/Ark/timerutils.svg',
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        description: 'An extension that helps you count down to certain dates without having to do a bunch of math and coding.',
+        featured: true
+    },
 	 {
         name: 'GitHub API',
         extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/github-api.js',
@@ -1260,6 +1333,17 @@ const menuItems = [
        customInsetColor: '#D399E5',
         description: "Run GLSL shaders on your sprites.",
         internetConnectionRequired: false,
+        featured: true
+    },
+	    {
+        name: 'Store My Stuff',
+        extensionId: 'https://extensions.arkide.site/extensions/Ark/store-my-stuff.js',
+        credits: 'Ark',
+        iconURL: 'https://extensions.arkide.site/images/Ark/storemystuff.png',
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        description: 'Another varible storage extension but the server is running on the centeral ArkIDE server instead.',
         featured: true
     },
     {
@@ -1595,6 +1679,15 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Create different timers you can control seperately.',
         eventSubmittor: 'Arrow',
+        featured: true
+    },
+	{
+        name: 'WebMIDI',
+        extensionId: 'webmidi',
+        iconURL: webmidiIconURL,
+        insetIconURL: webmidiInsetIconURL,
+        tags: ['othermods', 'hardware'],
+        description: 'Web MIDI for Musical Instrument',
         featured: true
     },
     {
@@ -2236,6 +2329,25 @@ const menuItems = [
             featured: true
         },
     {
+        name: 'Kori Assistant',
+        extensionId: 'kori',
+        collaborator: 'OpenAI',
+        iconURL: koriIconURL,
+        insetIconURL: koriInsetIconURL,
+		connectionIconURL: koriConnectionIconURL,
+        connectionSmallIconURL: koriConnectionSmallIconURL,
+		connectingMessage: 'Connecting',
+        tags: ['othermods', 'ai', 'hardware'],
+        description: 'Experiment with Generative AI.',
+		disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+		launchPeripheralConnectionFlow: true,
+		useAutoScan: false,
+		helpLink: 'https://scratch.mit.edu/kori',
+        featured: true
+    },
+    {
         name: 'scratch2maqueen',
         extensionId: 'scratch2maqueen', // update reference once file names are updated
         tags: ['othermods', 'hardware'],
@@ -2317,6 +2429,139 @@ const menuItems = [
 
     },
 {
+        name: 'JDCode',
+        extensionId: 'jdcode',
+        collaborator: 'Junilab Inc.',
+        iconURL: jdcodeIconURL,
+        insetIconURL: jdcodeInsetIconURL,
+        description: 'JDCode Drone with GaiaMod',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+		tags: ['othermods', 'hardware'],
+        useAutoScan: false,
+        connectionIconURL: jdcodeConnectionIconURL,
+        connectionSmallIconURL: jdcodeConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://www.junilab.co.kr/sub/jdkit.php'
+    },
+    {
+        name: 'JCBoard',
+        extensionId: 'jcboard',
+        collaborator: 'Junilab Inc.',
+        iconURL: jcboardIconURL,
+        insetIconURL: jcboardInsetIconURL,
+        description: 'JCBoard with GaiaMod',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+		tags: ['othermods', 'hardware'],
+        useAutoScan: false,
+        connectionIconURL: jcboardConnectionIconURL,
+        connectionSmallIconURL: jcboardConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://www.junilab.co.kr/sub/jcboard.php'
+    },
+    {
+        name: 'UglyBot',
+        extensionId: 'uglybot',
+        collaborator: 'Junilab Inc.',
+        iconURL: uglybotIconURL,
+        insetIconURL: uglybotInsetIconURL,
+        description: 'UglyBot with GaiaMod',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+		tags: ['othermods', 'hardware'],
+        useAutoScan: false,
+        connectionIconURL: uglybotConnectionIconURL,
+        connectionSmallIconURL: uglybotConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
+    },
+    {
+        name: 'Robodog',
+        extensionId: 'robodog',
+        collaborator: 'Junilab Inc.',
+        iconURL: robodogIconURL,
+        insetIconURL: robodogInsetIconURL,
+        description: 'RoboDog with GaiaMod',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+		tags: ['othermods', 'hardware'],
+        useAutoScan: false,
+        connectionIconURL: robodogConnectionIconURL,
+        connectionSmallIconURL: robodogConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://jcblock.co.kr'
+    },
+    {
+        name: 'Firmtech Drone2',
+        extensionId: 'firmtech',
+        collaborator: 'www.codingkit.co.kr',
+        iconURL: firmtechIconURL,
+        insetIconURL: firmtechInsetIconURL,
+        description: 'Firmtech Drone2 with GaiaMod',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+		tags: ['othermods', 'hardware'],
+        useAutoScan: false,
+        connectionIconURL: firmtechConnectionIconURL,
+        connectionSmallIconURL: firmtechConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://www.codingkit.co.kr'
+    },
+    {
+        name: 'AIDrone',
+        extensionId: 'aidrone',
+        collaborator: 'ir-brain',
+        iconURL: aidroneIconURL,
+        insetIconURL: aidroneInsetIconURL,
+        description: 'AI Drone with Scratch 3.0',
+        featured: true,
+        disabled: false,
+		tags: ['othermods', 'ai', 'hardware'],
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: aidroneConnectionIconURL,
+        connectionSmallIconURL: aidroneConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://www.ir-brain.com/'
+    },
+    {
+        name: 'AICoBot',
+        extensionId: 'aicobot',
+        collaborator: 'K-EdTech',
+        iconURL: aicobotIconURL,
+        insetIconURL: aicobotInsetIconURL,
+        description: 'AICoBot with Scratch 3.0',
+        featured: true,
+        disabled: false,
+		tags: ['othermods', 'ai', 'hardware'],
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: aicobotConnectionIconURL,
+        connectionSmallIconURL: aicobotConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'http://www.k-edtech.co.kr'
+    },
+{
         name: 'OneGpio Arduino',
         extensionId: 'onegpioArduino',
         collaborator: "Mr. Y's Lab",
@@ -2329,7 +2574,6 @@ const menuItems = [
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
-
     },
     {
         name: 'OneGpio Raspberry Pi',
@@ -2832,6 +3076,15 @@ const menuItems = [
         iconURL: gaiaExGalleryThumb,
         description: 'See some GaiaMod External extensions, even user-submitted. Opens in a new tab.',
         tags: ['gaiamod', 'library'],
+        featured: true
+    },
+    {
+        name: 'ArkIDE Extra Extensions',
+        href: 'https://extensions.arkide.site/',
+        extensionId: 'special_arkideExtensionLibrary',
+        iconURL: 'https://studio.arkide.site/static/assets/ec6c0b201605163f47d10636142e36b9.svg',
+        description: 'See some Ark IDE External extensions, even user-submitted. Opens in a new tab.',
+        tags: ['arkide', 'library'],
         featured: true
     },
     {
