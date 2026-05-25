@@ -66,6 +66,7 @@ import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
 import snailideIcon from './snail-ide/snailide_icon.png';
 import electramodIcon from './electramod/electramod_icon.png';
 import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
+import zeroTwoEngineIcon from './gaiamod/zerotwoengine_icon.png';
 import mistwarpIcon from './mistium/mistwarp_icon.svg';
 import dashblocksIcon from './dashblocks/dashblocks_icon.png';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
@@ -308,7 +309,7 @@ const menuItems = [
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod'],
-        description: 'Wonderful utility blocks! Modified by Gaia.',
+        description: 'Wonderful utility blocks!',
         featured: true
     },
     {
@@ -386,7 +387,7 @@ const menuItems = [
         extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/extensionManager.js',
         iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
         credits: 'soiz1, with modifications by GaiaWindWave90',
-        tags: ['othermods'],
+        tags: ['gaiamod', 'othermods'],
         description: 'Manages extensions.',
         internetConnectionRequired: false,
         featured: true
@@ -419,6 +420,18 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Do many things via the Scratch API; you can even fetch cloud data from projects!',
         internetConnectionRequired: true,
+        featured: true
+    },
+     {
+        name: 'Cocrea Extension Wrapper',
+        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/wrapper.global.js',
+       extDeveloper: 'Xbdowf, FurryR',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/ccw.svg',
+        tags: ['zerotwoengine'],
+        insetIconURL: zeroTwoEngineIcon,
+		customInsetColor: '#00BAAD',
+        description: "A Bootstrap extension for Gandi IDE loaders in GaiaMod.",
+        internetConnectionRequired: false,
         featured: true
     },
     {
@@ -545,6 +558,16 @@ const menuItems = [
 		customInsetColor: '#F98947',
         description: 'Blocks that interact with the Telegram API for bots.',
 		internetConnectionRequired: true,
+        featured: true
+    },
+        {
+        name: 'Screenshot (Slow)',
+        extensionId: 'https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/screenshot.js',
+        credits: 'BludIsAnLemon',
+        iconURL: 'https://bludisanlemon.github.io/lemons-gallery/images/Lemon/screenshot.png',
+        tags: ['othermods'],
+        description: "Screenshot the entire page in one click.",
+        internetConnectionRequired: false,
         featured: true
     },
     {
@@ -803,6 +826,18 @@ const menuItems = [
         internetConnectionRequired: false,
         featured: true
     },
+       {
+        name: 'QwQAI',
+        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/QwQAI%E5%A4%A7%E6%A8%A1%E5%9E%8B.js',
+        credits: 'zekkei',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/QwQAI%E5%A4%A7%E6%A8%A1%E5%9E%8B.jpg',
+        tags: ['zerotwoengine', 'ai'],
+        insetIconURL: zeroTwoEngineIcon,
+		customInsetColor: '#00BAAD',
+        description: "Interact with a QwQ model by Tongyi Qianwen and some other models as well.",
+        internetConnectionRequired: false,
+        featured: true
+    },
     {
         name: 'Ollama',
         extensionId: 'https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/ollama.js',
@@ -927,6 +962,18 @@ const menuItems = [
         description: 'Image Classification Blocks.',
         featured: true
     },
+     {
+        name: 'Hugging Face Transformers',
+        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/transformers.js',
+       extDeveloper: 'PPN-design',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/transformers.png',
+        tags: ['zerotwoengine', 'ai'],
+        insetIconURL: zeroTwoEngineIcon,
+		customInsetColor: '#00BAAD',
+        description: "Transformers for Scratch. Based on Hugging Face Transformers.js.",
+        internetConnectionRequired: false,
+        featured: true
+    },
     {
         name: 'Site Runtime',
         extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/webextension.js',
@@ -960,6 +1007,18 @@ const menuItems = [
         tags: ['penguinmod'],
         description: "Unfinished PenguinMod Extension.",
         extDeveloper: "JeremyGamer13",
+        featured: true
+    },
+{
+        name: 'TensorFlow.js',
+        extensionId: 'https://github.com/DDguan2010/02engine-extensions/raw/refs/heads/master/extension/tensorflow.js',
+       extDeveloper: 'PPN-design',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/tensorflow.png',
+        tags: ['zerotwoengine', 'ai'],
+        insetIconURL: zeroTwoEngineIcon,
+		customInsetColor: '#00BAAD',
+        description: "Scratch neural network engine based on TensorFlow.js.",
+        internetConnectionRequired: false,
         featured: true
     },
     {
@@ -1005,6 +1064,18 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Neural Networks',
+        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.js',
+       extDeveloper: '瓜子',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.jpg',
+        tags: ['zerotwoengine', 'ai'],
+        insetIconURL: zeroTwoEngineIcon,
+		customInsetColor: '#00BAAD',
+        description: "A very easy-to use neural network extension.",
+        internetConnectionRequired: false,
+        featured: true
+    },
+    {
         name: 'QR Codes',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/QR-Codes.js',
         iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/QR-Codes.svg',
@@ -1030,6 +1101,18 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Share your screen or camera on your project as a data-uri.',
         extDeveloper: 'Pooiod7',
+        featured: true
+    },
+      {
+        name: 'Bezier Curve',
+        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF.js',
+       extDeveloper: '空明2403',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/bezier-curve.png',
+        tags: ['zerotwoengine'],
+        insetIconURL: zeroTwoEngineIcon,
+		customInsetColor: '#00BAAD',
+        description: "Generates Bezier curves, supports control point settings and calculates coordinates and tangent angles of any point on the curve.",
+        internetConnectionRequired: false,
         featured: true
     },
 	    {
