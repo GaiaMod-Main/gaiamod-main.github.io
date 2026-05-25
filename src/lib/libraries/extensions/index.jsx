@@ -220,6 +220,22 @@ import tm2scratchInsetIconURL from './tm2scratch/tm2scratch-small.png';
 import tmpose2scratchIconURL from './tmpose2scratch/tmpose2scratch.png';
 import tmpose2scratchInsetIconURL from './tmpose2scratch/tmpose2scratch-small.png';
 
+import ohbotIconURL from './ohbot/ohbot.png';
+import ohbotInsetIconURL from './ohbot/ohbot-small.svg';
+import musicIconURL from './music/music.png';
+import musicInsetIconURL from './music/music-small.svg';
+import webmidiIconURL from './webmidi/webmidi.png';
+import webmidiInsetIconURL from './webmidi/webmidi-small.png';
+import newBlockImage from './newblocks/newblocks.png';
+import newBlockButtonImage from './newblocks/newblocks-small.png';
+import newMicrobitImage from './newmicrobit/newmicrobit.png';
+import newMicrobitButtonImage from './newmicrobit/newmicrobit-small.png';
+import objectDetectionIconURL from './objectdetection/objectdetection.png';
+import objectDetectionInsetIconURL from './objectdetection/objectdetectionsmall.svg';
+import poseHandIconURL from "./posehand/pose-hand.png";
+import poseHandInsetIconURL from "./posehand/pose-hand-small.svg";
+import teachableMachineIconURL from './teachableMachine/teachable-machine-blocks.png';
+import teachableMachineInsetIconURL from './teachableMachine/teachable-machine-blocks-small.svg';
 import roku from './roku/roku.jpg';
 
 // onegpio
@@ -245,12 +261,11 @@ import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.pn
 import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
 import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
 
+//mufumufu
 import poppyImage from './poppy/poppy.png';
 import poppyInsetIconURL from './poppy/poppy-small.png';
-
 import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
 import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
-
 import mbotIconURL from './mbot/mbot-header.png';
 import mbotInsetIconURL from './mbot/mbot.svg';
 
