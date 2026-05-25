@@ -44,6 +44,7 @@ import ExtensionManagerModal from '../../containers/extensions-modal.jsx';
 import TWRestorePointManager from '../../containers/tw-restore-point-manager.jsx';
 import TWFontsModal from '../../containers/tw-fonts-modal.jsx';
 import PMExtensionModals from '../../containers/pm-extension-modals.jsx';
+import TWScreenshotModal from '../../containers/screenshot-modal.jsx';
 
 import GMCustomAccentModal from '../../containers/gm-custom-accent-modal.jsx';
 
@@ -181,6 +182,7 @@ const GUIComponent = props => {
 		customAccentModalVisible,
 		extensionsManagerModalVisible,
         fontsModalVisible,
+		screenshotModalVisible,
         isPlayground,
         vm,
         ...componentProps
@@ -379,6 +381,7 @@ const GUIComponent = props => {
                 {customExtensionModalVisible && <TWCustomExtensionModal />}
 				{extensionsManagerModalVisible && <ExtensionManagerModal />}
                 {fontsModalVisible && <TWFontsModal />}
+				{screenshotModalVisible && <TWScreenshotModal />}
 				{customAccentModalVisible && <GMCustomAccentModal />}
                 <PMExtensionModals vm={vm} />
             </React.Fragment>
@@ -756,6 +759,7 @@ GUIComponent.propTypes = {
     customAccentModalVisible: PropTypes.bool,
 	extensionsManagerModalVisible : PropTypes.bool,
     fontsModalVisible: PropTypes.bool,
+	screenshotModalVisible: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired
 };
 GUIComponent.defaultProps = {
@@ -783,7 +787,8 @@ const mapStateToProps = state => ({
     customStageSize: state.scratchGui.customStageSize,
     isWindowFullScreen: state.scratchGui.tw.isWindowFullScreen,
     // This is the button's mode, as opposed to the actual current state
-    stageSizeMode: state.scratchGui.stageSize.stageSize
+    stageSizeMode: state.scratchGui.stageSize.stageSize,
+	screenshotModalVisible: state.scratchGui.modals.screenshotModal
 });
 
 export default injectIntl(connect(

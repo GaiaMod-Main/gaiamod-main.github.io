@@ -37,6 +37,30 @@ const onVmInit = _vm => {
     vm = _vm;
     if (vm.runtime.renderer?.setPrivateSkinAccess)
         vm.runtime.renderer.setPrivateSkinAccess(false);
+	
+// Add global screenshot function
+    window.takeScreenshot = () => {
+        if (!vm) return;
+        const renderer = vm.runtime.renderer;
+        const canvas = renderer.canvas;
+        
+        const captureCallback = () => {
+            const now = new Date();
+            const filename = `arkide-${now.toISOString().split('T')[0]}-${now.toTimeString().split(' ')[0].replace(/:/g, '-')}`;
+            
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.download = `${filename}.png`;
+                link.href = url;
+                link.click();
+                URL.revokeObjectURL(url);
+            });
+        };
+        
+        renderer._snapshotCallbacks.push(captureCallback);
+        renderer.dirty = true;
+    };
 };
 
 const onProjectLoaded = () => {
@@ -44,6 +68,14 @@ const onProjectLoaded = () => {
         vm.start();
         vm.greenFlag();
     }
+
+    // Add screenshot keyboard shortcut (Ctrl+Shift+S)
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.shiftKey && e.key === 'S') {
+            e.preventDefault();
+            window.takeScreenshot();
+        }
+    });
 };
 
 const WrappedGUI = compose(

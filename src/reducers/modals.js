@@ -24,6 +24,7 @@ const MODAL_AE_FEATURES = 'aeFeaturesModal';
 const MODAL_WELCOME = 'welcomeModal';
 const MODAL_WALLPAPER = 'wallpaperModal';
 const MODAL_CUSTOMFONTS = 'customFonts';
+const MODAL_SCREENSHOT = 'screenshotModal';
 //const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 //const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 //const MODAL_GIT = 'gitModal';
@@ -57,6 +58,7 @@ const initialState = {
     [MODAL_WELCOME]: false,
     [MODAL_WALLPAPER]: false,
     [MODAL_CUSTOMFONTS]: false,
+	[MODAL_SCREENSHOT]: false,
     extensionModalSwapId: null//,
 //    [MODAL_UNKNOWN_PLATFORM]: false,
 //    [MODAL_INVALID_PROJECT]: false,
@@ -152,6 +154,12 @@ const openRestorePointModal = function () {
 };
 const openFontsModal = function () {
     return openModal(MODAL_FONTS);
+};
+const openScreenshotModal = function () {
+    return openModal(MODAL_SCREENSHOT);
+};
+const closeScreenshotModal = function () {
+    return closeModal(MODAL_SCREENSHOT);
 };
 const openReadme = function () {
     return openModal(MODAL_README);
@@ -321,6 +329,8 @@ export {
 	closeCustomFontsModal,
     closePreviewExt,
     closeReadme,
+	openScreenshotModal,
+    closeScreenshotModal,
 //    openUnknownPlatformModal,
 //    openInvalidProjectModal,
 //    openExtensionManagerModal,

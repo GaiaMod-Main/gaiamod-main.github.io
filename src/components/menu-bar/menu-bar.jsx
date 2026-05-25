@@ -36,6 +36,7 @@ import CloudVariablesToggler from '../../containers/tw-cloud-toggler.jsx';
 import TWSaveStatus from './tw-save-status.jsx';
 
 import { openTipsLibrary, openSettingsModal, openRestorePointModal, openExtManagerModal, openCustomExtensionModal } from '../../reducers/modals';
+import { openScreenshotModal } from '../../reducers/modals';
 import { setPlayer } from '../../reducers/mode';
 import {
     autoUpdateProject,
@@ -86,6 +87,7 @@ import errorIcon from './tw-error.svg';
 import moonIcon from './tw-moon.svg';
 import sunIcon from './tw-sun.svg';
 import midnightIcon from './tw-midnight.svg';
+import cameraIcon from '../../../static/camera.svg';
 
 import fileIcon from './icon--file.svg';
 import settingsIcon from './icon--settings.svg';
@@ -226,6 +228,7 @@ class MenuBar extends React.Component {
             'handleClickRestorePoints',
             'handleClickSeeCommunity',
             'handleClickDownloadLogs',
+			'handleClickScreenshot',  // ADD THIS LINE
             'handleClickShare',
             'handleKeyPress',
             'handleLanguageMouseUp',
@@ -442,6 +445,9 @@ class MenuBar extends React.Component {
         };
     }
     handleClickDownloadLogs() { downloadLogs(); }
+	handleClickScreenshot() {
+        this.props.onClickScreenshot();
+    }
     render() {
         const saveNowMessage = (
             <FormattedMessage
@@ -484,6 +490,7 @@ class MenuBar extends React.Component {
                 {remixMessage}
             </Button>
         );
+        // Show the About button only if we have a handler for it (like in the desktop app)
         // Show the About button only if we have a handler for it (like in the desktop app)
         const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
         return (
@@ -550,6 +557,18 @@ class MenuBar extends React.Component {
                                 />
                             </div>
                         )*/}
+						{/* tw: screenshot button */}
+                        <div
+                            className={classNames(styles.menuBarItem, styles.hoverable)}
+                            onMouseUp={this.handleClickScreenshot}
+                        >
+                            <img
+                                src={cameraIcon}
+                                width="24"
+                                height="24"
+                                draggable={false}
+                            />
+                        </div>
                         {/* tw: display compile errors */}
                         {this.props.compileErrors.length > 0 && <div>
                             <div
@@ -1182,7 +1201,8 @@ MenuBar.propTypes = {
     userOwnsProject: PropTypes.bool,
     username: PropTypes.string,
     usernameLoggedIn: PropTypes.bool.isRequired,
-    vm: PropTypes.instanceOf(VM).isRequired
+    vm: PropTypes.instanceOf(VM).isRequired,
+	onClickScreenshot: PropTypes.func
 };
 
 MenuBar.defaultProps = {
@@ -1263,7 +1283,8 @@ onClickSettingsItem: () => dispatch(openSettingsMenu()),
         dispatch(openCustomExtensionModal());
         dispatch(closeEditMenu());
     },
-    onSeeCommunity: () => dispatch(setPlayer(true))
+    onSeeCommunity: () => dispatch(setPlayer(true)),
+	onClickScreenshot: () => dispatch(openScreenshotModal())
 });
 
 export default compose(

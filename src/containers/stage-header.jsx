@@ -68,12 +68,52 @@ const mapStateToProps = state => ({
     isPlayerOnly: state.scratchGui.mode.isPlayerOnly
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch, ownProps) => ({
     onSetStageLarge: () => dispatch(setStageSize(STAGE_SIZE_MODES.large)),
     onSetStageSmall: () => dispatch(setStageSize(STAGE_SIZE_MODES.small)),
     onSetStageFull: () => dispatch(setFullScreen(true)),
     onSetStageUnFull: () => dispatch(setFullScreen(false)),
-    onOpenSettings: () => dispatch(openSettingsModal())
+    onOpenSettings: () => dispatch(openSettingsModal()),
+	onTakeScreenshot: () => {
+        const vm = ownProps.vm;
+        if (!vm || !vm.runtime || !vm.runtime.renderer) {
+            console.error('VM not available for screenshot');
+            return;
+        }
+        
+        try {
+            const renderer = vm.runtime.renderer;
+            const canvas = renderer.canvas;
+            
+            if (!canvas) {
+                console.error('Canvas not available');
+                return;
+            }
+            
+            const captureCallback = () => {
+                const now = new Date();
+                const filename = `gaiamod-${now.toISOString().split('T')[0]}-${now.toTimeString().split(' ')[0].replace(/:/g, '-')}`;
+                
+                canvas.toBlob((blob) => {
+                    if (!blob) {
+                        console.error('Failed to create blob');
+                        return;
+                    }
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.download = `${filename}.png`;
+                    link.href = url;
+                    link.click();
+                    URL.revokeObjectURL(url);
+                });
+            };
+            
+            renderer._snapshotCallbacks.push(captureCallback);
+            renderer.dirty = true;
+        } catch (error) {
+            console.error('Screenshot error:', error);
+        }
+    }
 });
 
 export default connect(
