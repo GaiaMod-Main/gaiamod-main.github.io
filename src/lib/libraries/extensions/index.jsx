@@ -222,8 +222,6 @@ import tmpose2scratchInsetIconURL from './tmpose2scratch/tmpose2scratch-small.pn
 
 import ohbotIconURL from './ohbot/ohbot.png';
 import ohbotInsetIconURL from './ohbot/ohbot-small.svg';
-import musicIconURL from './music/music.png';
-import musicInsetIconURL from './music/music-small.svg';
 import webmidiIconURL from './webmidi/webmidi.png';
 import webmidiInsetIconURL from './webmidi/webmidi-small.png';
 import newBlockImage from './newblocks/newblocks.png';
