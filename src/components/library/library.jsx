@@ -471,6 +471,7 @@ class LibraryComponent extends React.Component {
                                 extensionWarningOnImport={dataItem.extensionWarningOnImport}
                                 insetIconURL={dataItem.insetIconURL}
                                 internetConnectionRequired={dataItem.internetConnectionRequired}
+                                gaiaModRequired={dataItem.gaiaModRequired}
                                 isPlaying={this.state.playingItem === index}
                                 key={typeof dataItem.name === 'string' ? dataItem.name : dataItem.rawURL}
                                 name={dataItem.name}

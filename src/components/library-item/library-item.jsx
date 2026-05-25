@@ -9,6 +9,7 @@ import classNames from 'classnames';
 
 import bluetoothIconURL from './bluetooth.svg';
 import internetConnectionIconURL from './internet-connection.svg';
+import shipGuyIconURL from './shipguy.svg';
 
 import favoritedFilledUrl from './favorite/filled.svg';
 import favoritedOutlineUrl from './favorite/outline.svg';
@@ -208,6 +209,7 @@ class LibraryItemComponent extends React.PureComponent {
                 {
                     this.props.bluetoothRequired ||
                         this.props.internetConnectionRequired ||
+                        this.props.gaiaModRequired ||
                         this.props.collaborator ||
                         this.props.extDeveloper ||
                         this.props.twDeveloper ||
@@ -216,7 +218,7 @@ class LibraryItemComponent extends React.PureComponent {
                         ? (
                             <div className={styles.featuredExtensionMetadata}>
                                 <div className={styles.featuredExtensionRequirement}>
-                                    {this.props.bluetoothRequired || this.props.internetConnectionRequired ? (
+                                    {this.props.bluetoothRequired || this.props.internetConnectionRequired || this.props.gaiaModRequired ? (
                                         <div>
                                             <div>
                                                 <FormattedMessage
@@ -233,6 +235,9 @@ class LibraryItemComponent extends React.PureComponent {
                                                 ) : null}
                                                 {this.props.internetConnectionRequired ? (
                                                     <img src={internetConnectionIconURL} />
+                                                ) : null}
+												{this.props.gaiaModRequired ? (
+                                                    <img src={shipGuyIconURL} />
                                                 ) : null}
                                             </div>
                                         </div>
@@ -473,6 +478,7 @@ LibraryItemComponent.propTypes = {
     soundLength: PropTypes.number,
     customInsetColor: PropTypes.string,
     internetConnectionRequired: PropTypes.bool,
+    gaiaModRequired: PropTypes.bool,
     isPlaying: PropTypes.bool,
     name: PropTypes.oneOfType([
         PropTypes.string,

@@ -166,6 +166,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by Snail IDE',
         id: 'pm.libraryTags.snailide'
     },
+    arkide: {
+        defaultMessage: 'Ark IDE',
+        description: 'Tag for filtering a library by Ark IDE',
+        id: 'pm.libraryTags.arkide'
+    },
     adacraft: {
         defaultMessage: 'Adacraft',
         description: 'Tag for filtering a library by Adacraft',

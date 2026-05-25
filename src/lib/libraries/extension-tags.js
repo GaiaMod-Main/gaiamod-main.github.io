@@ -11,6 +11,7 @@ export default [
     { tag: 'electramod', intlLabel: messages.electramod },
     { tag: 'dinosaurmod', intlLabel: messages.dinosaurmod },
     { tag: 'snailide', intlLabel: messages.snailide },
+    { tag: 'arkide', intlLabel: messages.arkide },
 	{ tag: 'adacraft', intlLabel: messages.adacraft },
 	{ tag: 'astraeditor', intlLabel: messages.astraeditor },
 	{ tag: 'zerotwoengine', intlLabel: messages.zerotwoengine },

@@ -205,6 +205,7 @@ class LibraryItem extends React.PureComponent {
                 insetIconURL={this.props.insetIconURL}
                 customInsetColor={this.props.customInsetColor}
                 internetConnectionRequired={this.props.internetConnectionRequired}
+                gaiaModRequired={this.props.gaiaModRequired}
                 isPlaying={this.props.isPlaying}
                 name={this.props.name}
                 showPlayButton={this.props.showPlayButton}
@@ -292,6 +293,7 @@ LibraryItem.propTypes = {
     extensionWarningOnImport: PropTypes.bool,
     insetIconURL: PropTypes.string,
     internetConnectionRequired: PropTypes.bool,
+    gaiaModRequired: PropTypes.bool,
     isPlaying: PropTypes.bool,
     name: PropTypes.oneOfType([
         PropTypes.string,
