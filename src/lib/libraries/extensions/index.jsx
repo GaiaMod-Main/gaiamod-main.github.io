@@ -371,6 +371,7 @@ const menuItems = [
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod'],
+		gaiaModRequired: true,
         description: 'Wonderful utility blocks!',
         featured: true
     },
@@ -381,6 +382,7 @@ const menuItems = [
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod', 'ai'],
+		gaiaModRequired: true,
         description: 'A GaiaMod modification of Pang AI with more prompts.',
         extDeveloper: 'logise1123 and GaiaWindWave90',
         internetConnectionRequired: true,
@@ -393,6 +395,7 @@ const menuItems = [
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
         tags: ['gaiamod'],
+		gaiaModRequired: true,
         description: 'Blocks for modifying Scratch objects like Turbo Mode, stage size, clone limits, and more!',
         credits: 'GaiaWindWave90 with some blocks from other users.',
         featured: true
@@ -405,6 +408,7 @@ const menuItems = [
 		customInsetColor: '#2D2DD2',
         extDeveloper: 'GaiaWindWave90',
         tags: ['gaiamod', 'ai'],
+		gaiaModRequired: true,
         description: 'Prompts made for Gaia AI. Inspired by the prompts extension found in Snail-IDE.',
         featured: true
     },
@@ -416,6 +420,7 @@ const menuItems = [
 		customInsetColor: '#2D2DD2',
         credits: 'GaiaWindWave90 with some blocks from other users.',
         tags: ['gaiamod', 'jokes'],
+		gaiaModRequired: true,
         description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
         internetConnectionRequired: true,
         featured: true
@@ -427,6 +432,7 @@ const menuItems = [
     		insetIconURL: gaiamodIcon,
 	    	customInsetColor: '#2D2DD2',
             tags: ['gaiamod', 'jokes'],
+			gaiaModRequired: true,
             internetConnectionRequired: true,
             credits: 'JeremyGamer13, with modifications by GaiaWindWave90',
             description: 'Edited version of the Fire in the Hole extension.',
@@ -440,6 +446,7 @@ const menuItems = [
 		customInsetColor: '#2D2DD2',
         credits: '-SIPC-, with modifications by GaiaWindWave90',
         tags: ['gaiamod'],
+		gaiaModRequired: true,
         description: 'Records videos straight out of webcam.',
         internetConnectionRequired: false,
         featured: true
