@@ -279,6 +279,8 @@ import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 import mbotIconURL from './mbot/mbot-header.png';
 import mbotInsetIconURL from './mbot/mbot.svg';
 import roku from './roku/roku.jpg';
+import axerAIIconURL from './other/AxerAI.svg';
+import axerAIInsetIconURL from './other/InsetAxerAI.png';
 
 //166iwase-lgtm/taichan0123
 import meshImage from './mesh/mesh.png';
@@ -1123,6 +1125,15 @@ const menuItems = [
         iconURL: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/cover.svg',
         tags: ['penguinmod', 'ai'],
         internetConnectionRequired: true,
+        featured: true
+    },
+	 {
+        name: 'AxerAI',
+        extensionId: 'axerai',
+        IconURL: axerAIInsetIconURL,
+		credits: 'AxerBoost',
+        tags: ['othermods', 'ai'],
+        description: 'Bring your AI assistant to life with AxerAI.',
         featured: true
     },
     {
@@ -2363,6 +2374,14 @@ const menuItems = [
 		helpLink: 'https://scratch.mit.edu/kori',
         featured: true
     },
+	{
+        name: 'Ohbot',
+        extensionId: 'ohbot',
+        iconURL: ohbotIconURL,
+        insetIconURL: ohbotInsetIconURL,
+        description: 'Control your Ohbot',
+        featured: true
+    },
     {
         name: 'scratch2maqueen',
         extensionId: 'scratch2maqueen', // update reference once file names are updated
@@ -2444,6 +2463,58 @@ const menuItems = [
         bluetoothRequired: true
 
     },
+	{
+        name: 'AKARI Blocks',
+        extensionId: 'akariblocks',
+        collaborator: 'AKARI Groups',
+        iconURL: akariBlocksImage,
+        insetIconURL: akariBlocksButtonImage,
+        description: 'AKARI control block',
+		tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
+    {
+        name: 'AKARI Camera',
+        extensionId: 'akaricamera',
+        collaborator: 'AKARI Groups',
+        iconURL: akariCameraImage,
+        insetIconURL: akariCameraButtonImage,
+        description: 'AKARI camera block',
+		tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
+    {
+        name: 'AKARI Blocks(Simple)',
+        extensionId: 'akariblockssimple',
+        collaborator: 'AKARI Groups',
+        iconURL: akariBlocksSimpleImage,
+        insetIconURL: akariBlocksSimpleButtonImage,
+        description: 'Simple Akari blocks.',
+		tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
+    {
+        name: 'AKARI Camera(Simple)',
+        extensionId: 'akaricamerasimple',
+        collaborator: 'AKARI Groups',
+        iconURL: akariCameraSimpleImage,
+        insetIconURL: akariCameraSimpleButtonImage,
+        description: 'Simple Akari camera blocks.',
+		tags: ['othermods', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    }
 {
         name: 'JDCode',
         extensionId: 'jdcode',

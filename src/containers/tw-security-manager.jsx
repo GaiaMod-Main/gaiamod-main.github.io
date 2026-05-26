@@ -74,6 +74,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://raw.githubusercontent.com/banana-mod/extensions/refs/heads/main/src/extensions/') ||
     url.startsWith('https://banana-mod.github.io/') ||
     url.startsWith('https://omniblocks.github.io/') ||
+    url.startsWith('https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/') ||
     url.startsWith('https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions') ||
     url.startsWith('https://raw.githubusercontent.com/ningqi24/TurbowarpExtension/refs/heads/main/.js/') ||
     url.startsWith('https://editors.astras.top/extensions/') ||
