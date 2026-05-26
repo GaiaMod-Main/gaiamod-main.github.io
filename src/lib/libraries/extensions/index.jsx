@@ -59,6 +59,8 @@ import twIcon from './tw/tw.svg';
 import rubyIcon from './snail-ide/ruby.png';
 import galleryIcon from './gallery/gallery.svg';
 import customExtensionIcon from './custom/custom.svg';
+import customExtIcon from './custom/CustomEx.svg';
+import customExtInsetIcon from './custom/CustomSmall.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import gaiamodIcon from './gaiamod/gaiamod_icon.png';
 import penguinmodIcon from './gaiamod/penguinmod_icon.png';
@@ -348,7 +350,8 @@ const menuItems = [
             />
         ),
         extensionId: '',
-        iconURL: customExtensionIcon,
+        iconURL: customExtIcon, //customExtensionIcon
+		insetIconURL: customExtInsetIcon,
         description: (
             <FormattedMessage
                 defaultMessage="Load custom extensions from URLs, files, or JavaScript source code."
