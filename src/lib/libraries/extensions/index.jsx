@@ -2514,7 +2514,7 @@ const menuItems = [
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false
-    }
+    },
 {
         name: 'JDCode',
         extensionId: 'jdcode',
