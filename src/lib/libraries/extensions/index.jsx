@@ -1127,15 +1127,6 @@ const menuItems = [
         internetConnectionRequired: true,
         featured: true
     },
-	 {
-        name: 'AxerAI',
-        extensionId: 'axerai',
-        IconURL: axerAIInsetIconURL,
-		credits: 'AxerBoost',
-        tags: ['othermods', 'ai'],
-        description: 'Bring your AI assistant to life with AxerAI.',
-        featured: true
-    },
     {
         name: 'SAM Speech',
         extensionId: 'https://p7scratchextensions.pages.dev/ext/Sam/main.js',
