@@ -1449,14 +1449,15 @@ const menuItems = [
         description: 'Fetch details of projects and users from PenguinMod.',
         featured: true
     },
-    {
-        name: 'PenguinGPT',
-        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/penguingpt.js',
-        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/penguingpt.png',
-        tags: ['penuinmod', 'ai'],
-        description: 'Using WorkingTurboGPT\'s source code, we made PenguinGPT! New features will come like DALL-E, etc, all for free!',
-        credits: 'MubiLop',
-        internetConnectionRequired: true,
+        {
+        name: 'ElectraAPI',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/electraapi.js',
+        extDeveloper: 'Aness6040',
+        description: 'Based on Pang API for ElectraMod.',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/electraapi.svg',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
         featured: true
     },
     {
@@ -1853,6 +1854,17 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Many blocks related to generating random values, including seed-based number generation, true number generation, UUID\'s, random strings, etc.',
         extDeveloper: 'G1nX',
+        featured: true
+    },
+        {
+        name: 'Lazy Multi-lines',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/lazymultilines.js',
+        extDeveloper: 'Aness6040',
+        description: 'A handy extension for JavaScript Extension or to create your own text file!',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/lazymultilines.svg',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
         featured: true
     },
     {
