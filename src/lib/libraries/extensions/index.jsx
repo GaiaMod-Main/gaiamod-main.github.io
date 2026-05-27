@@ -3201,6 +3201,24 @@ const menuItems = [
         featured: true
     },
 	{
+        name: 'Dash Extra Extensions',
+        href: 'https://dashblocks.github.io/extensions/',
+        extensionId: 'special_dashExtensionLibrary',
+        iconURL: 'https://raw.githubusercontent.com/DashBlocks/scratch-gui/3ce7fe9c45c09bc33b5da54b7b9db449344bdfec/src/lib/libraries/extensions/gallery/gallery.svg',
+        description: 'See some Dash External extensions. Opens in a new tab.',
+        tags: ['dash', 'library'],
+        featured: true
+    },
+	{
+        name: 'Astra Editor Extra Extensions',
+        href: 'https://editors.astras.top/extensions/',
+        extensionId: 'special_aeExtensionLibrary',
+        iconURL: 'https://github.com/AstraEditor/scratch-gui/blob/develop/src/lib/libraries/extensions/gallery/aegallery.png?raw=true',
+        description: 'See some Astra Editor External extensions. Opens in a new tab.',
+        tags: ['astraeditor', 'library'],
+        featured: true
+    },
+	{
         name: 'AmpMod Extra Extensions',
         href: 'https://ampmod.codeberg.page/extensions/',
         extensionId: 'special_ampmodExtensionLibrary',
