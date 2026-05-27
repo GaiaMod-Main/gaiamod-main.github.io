@@ -183,6 +183,8 @@ class LibraryItem extends React.PureComponent {
                 collaborator={this.props.collaborator}
                 twDeveloper={this.props.twDeveloper}
                 credits={this.props.credits}
+                docsURI={this.props.docsURI}
+                samples={this.props.samples}
                 extDeveloper={this.props.extDeveloper}
                 eventSubmittor={this.props.eventSubmittor}
                 extraLabels={this.props.extraLabels}

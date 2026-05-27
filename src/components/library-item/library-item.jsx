@@ -140,6 +140,39 @@ class LibraryItemComponent extends React.PureComponent {
                     <span className={styles.libraryItemName}>{this.props.name}</span>
                     <br />
                     <span className={styles.featuredDescription}>{this.props.description}</span>
+					{(this.props.docsURI || this.props.samples) && (
+                    <div className={styles.extensionLinks}>
+                        {this.props.docsURI && (
+                            <a
+                                href={this.props.docsURI}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FormattedMessage
+                                    defaultMessage="Documentation"
+                                    // eslint-disable-next-line max-len
+                                    description="Appears in the extension list. Links to additional extension documentation."
+                                    id="tw.documentation"
+                                />
+                            </a>
+                        )}
+
+                        {this.props.samples && (
+                            <a
+                                href={this.props.samples[0].href}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FormattedMessage
+                                    defaultMessage="Sample project"
+                                    // eslint-disable-next-line max-len
+                                    description="Appears in the extension list. Links to a sample project for an extension."
+                                    id="tw.sample"
+                                />
+                            </a>
+                        )}
+                    </div>
+                )}
                     {this.props.custom && (
                         <>
                             <br />
@@ -437,6 +470,12 @@ LibraryItemComponent.propTypes = {
         PropTypes.string,
         PropTypes.node
     ]),
+    docsURI: PropTypes.string,
+    samples: PropTypes.arrayOf(PropTypes.shape({
+        href: PropTypes.string,
+        text: PropTypes.string
+    })),
+
     twDeveloper: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.node

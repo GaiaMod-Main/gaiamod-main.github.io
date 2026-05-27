@@ -14,9 +14,19 @@ import extensionIcon from '../components/action-menu/icon--sprite.svg';
 
 const messages = defineMessages({
     extensionTitle: {
-        defaultMessage: 'Choose an Extension',
+        defaultMessage: 'Choose an extension',
         description: 'Heading for the extension library',
         id: 'gui.extensionLibrary.chooseAnExtension'
+    },
+batchImport: {
+        defaultMessage: 'Batch import {count} extensions',
+        description: 'Button label for importing multiple selected extensions',
+        id: 'tw.extensionLibrary.batchImport'
+    },
+    clearSelection: {
+        defaultMessage: 'Clear selection',
+        description: 'Button label for clearing selected extensions from the batch queue',
+        id: 'tw.extensionLibrary.clearSelection'
     },
     // extensionUrl: {
     //     defaultMessage: 'Enter the URL of the extension',
@@ -41,8 +51,63 @@ const messages = defineMessages({
         description: 'Confirm loading buggy and unstable extension',
         id: 'pm.confirmBuggyUnstableExtension'
     },
+   moreSection: {
+        defaultMessage: 'More from {source}',
+        description: 'Section title for remaining source extensions after the common section',
+        id: 'tw.extensionLibrary.section.more'
+    },
+    emptyTitle: {
+        defaultMessage: 'No extensions match those filters',
+        description: 'Empty state title in the extension library',
+        id: 'tw.extensionLibrary.emptyTitle'
+    },
+    emptyDescription: {
+        defaultMessage: 'Try another source, clear a filter, or search for a different keyword.',
+        description: 'Empty state description in the extension library',
+        id: 'tw.extensionLibrary.emptyDescription'
+    },
+    clearFilters: {
+        defaultMessage: 'Clear filters',
+        description: 'Button label to clear extension library filters',
+        id: 'tw.extensionLibrary.clearFilters'
+    },
+    badgeIncompatible: {
+        defaultMessage: 'Not Scratch-compatible',
+        description: 'Status badge for incompatible extensions',
+        id: 'tw.extensionLibrary.badge.incompatible'
+    },
+    badgeNative: {
+        defaultMessage: 'Native',
+        description: 'Status badge for native extensions',
+        id: 'tw.extensionLibrary.badge.native'
+    },
+    openWebsite: {
+        defaultMessage: 'Open website',
+        description: 'Action hint for extension library website links',
+        id: 'tw.extensionLibrary.action.website'
+    },
+    enableFeature: {
+        defaultMessage: 'Enable feature',
+        description: 'Action hint for special extension actions',
+        id: 'tw.extensionLibrary.action.enableFeature'
+    },
+    importExtension: {
+        defaultMessage: 'Click to import',
+        description: 'Action hint for importing an extension',
+        id: 'tw.extensionLibrary.action.import'
+    },
+    ccwName: {
+        defaultMessage: '加载CCW扩展',
+        description: 'Name of the CCW extension loader item',
+        id: 'tw.extensionLibrary.ccw.name'
+    },
+    ccwDescription: {
+        defaultMessage: '从共创世界加载扩展，可从 https://assets.ccw.site/extensions 获取。',
+        description: 'Description of the CCW extension loader item',
+        id: 'tw.extensionLibrary.ccw.description'
+    },
     libraryHeader: {
-        defaultMessage: 'Extensions',
+        defaultMessage: 'Extension Library',
         description: 'Header for the extension picker',
         id: 'pm.costumeLibrary.extensionsHeader'
     }

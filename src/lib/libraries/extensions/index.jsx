@@ -333,6 +333,7 @@ import chatNioThumb from './gaiamod/ChatNio.png';
 import mysteryThumb from './gaiamod/unknown.png';
 import mysteryInsetIcon from './gaiamod/unknown-small.png';
 import scratchUtilitiesIcon from './gaiamod/ScratchUtilities.png';
+import turboWeatherIcon from './gaiamod/TurboWeather.png';
 import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
@@ -1398,7 +1399,7 @@ const menuItems = [
         tags: ['penguinmod'],
         iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/rubymaps.svg',
         description: 'Lets you integrate the power of maps into your projects!',
-        credits: 'The RubyDevs Team',
+        credits: 'RubyDevs',
         featured: true
     },
     {
@@ -1669,7 +1670,7 @@ const menuItems = [
         tags: ['penguinmod', 'othermods'],
         iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/speechtotext.png',
         description: 'Recognizes words or sentences said into the microphone.',
-        credits: 'The RubyDevs Team',
+        credits: 'RubyDevs',
         featured: true
     },
     {
@@ -1679,7 +1680,7 @@ const menuItems = [
         internetConnectionRequired: true,
         tags: ['penguinmod', 'othermods'],
         description: 'Get a lot of data from Wikipedia, like definitions and images!',
-        credits: 'The RubyDevs Team',
+        credits: 'RubyDevs',
         featured: true
     },
     {
@@ -1745,6 +1746,17 @@ const menuItems = [
         tags: ['penguinmod', 'datamgmt'],
         extDeveloper: 'SharkPool',
         description: 'FAST Extension for handling JSON objects and arrays efficiently. Recommended if you are heavily using JSON several times in a project.',
+        featured: true
+    },
+    {
+        name: 'AuthPenguin',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/authpenguin.js',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/authpenguin.avif',
+        description: 'Authenticate with anything and everything!',
+        credits: 'MubiLop',
         featured: true
     },
     {
@@ -1845,6 +1857,17 @@ const menuItems = [
         extDeveloper: 'pinksheep2917',
         featured: true
     },
+        {
+        name: 'TurboWeather',
+        extensionId: 'https://extensions.penguinmod.com/extensions/RubyDevs/turboweather.js',
+        extDeveloper: 'RubyDevs',
+        description: 'Show weather and location data for any place in our world. Data that could be used for doxxing is deleted from results.',
+        iconURL: turboWeatherIcon,
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
+    },
     {
         name: 'Random Utilities',
         extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/random_utils.js',
@@ -1880,11 +1903,13 @@ const menuItems = [
     },
     {
         name: 'ToastNotifs',
-        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/toastnotifs.js',
-        tags: ['penguinmod', 'othermods'],
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/toastnotifs.js',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
         iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/toastnotifs.png',
         description: 'Use toast-styled notifications in your projects!',
-        credits: 'The RubyDevs Team',
+        credits: 'MubiLop',
         featured: true
     },
     {

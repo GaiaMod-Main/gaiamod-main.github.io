@@ -313,45 +313,18 @@ class LibraryComponent extends React.Component {
                 id={this.props.id}
                 onRequestClose={this.handleClose}
             >
-                {this.props.header ? (
-                    <h1
-                        className={classNames(
-                            styles.libraryHeader,
-                            styles.whiteTextInDarkMode
-                        )}
-                    >
-                        <button
-                            style={this.state.collapsed ? { transform: "scaleX(0.65)" } : null}
-                            className={classNames(styles.libraryFilterCollapse)}
-                            onClick={() => {
-                                this.setState({
-                                    collapsed: !this.state.collapsed
-                                });
-                            }}
-                        />
-                        {this.props.header}
-                        <p
-                            className={classNames(styles.libraryItemCount)}
-                        >
-                            {this.state.data.length}
-                        </p>
-                    </h1>
-                ) : null}
-                {/* filter bar & stuff */}
-                <div className={classNames(styles.libraryContentWrapper)}>
-                    <div
-                        className={classNames(styles.libraryFilterBar)}
-                        style={this.state.collapsed ? { display: "none" } : null}
-                    >
-                        <h3 className={classNames(styles.whiteTextInDarkMode)}>
-                            <FormattedMessage
-                                defaultMessage="Filters"
-                                description="Header text for the filter controls in the asset picker"
-                                id="pm.library.filtersHeader"
-                            />
-                        </h3>
-                        {this.props.filterable && (
-                            <div>
+			     <center className={classNames(styles.whiteTextInDarkMode)}>
+                            Item Count:
+							<span
+                             className={classNames(styles.libraryItemCount)}
+                              >
+							{this.state.data.length}
+							</span>
+                        </center>
+						
+                        
+              {this.props.filterable && (
+                            <div><center>
                                 <Filter
                                     className={classNames(
                                         styles.filterBarItem,
@@ -364,8 +337,14 @@ class LibraryComponent extends React.Component {
                                     onClear={this.handleFilterClear}
                                 />
                                 <Divider className={classNames(styles.filterBarItem, styles.divider)} />
-                            </div>
+                            </center></div>
                         )}
+                {/* filter bar & stuff */}
+                <div className={classNames(styles.libraryContentWrapper)}>
+                    <div
+                        className={classNames(styles.libraryFilterBar)}
+                        style={this.state.collapsed ? { display: "none" } : null}
+                    >
                         {this.props.tags &&
                             <div>
                                 {tagListPrefix.concat(this.props.tags).map((tagProps, id) => {
@@ -447,6 +426,8 @@ class LibraryComponent extends React.Component {
                                 collaborator={dataItem.collaborator}
                                 extDeveloper={dataItem.extDeveloper}
                                 credits={dataItem.credits}
+                                samples={dataItem.samples}
+								docsURI={dataItem.docsURI}
                                 twDeveloper={dataItem.twDeveloper}
                                 eventSubmittor={dataItem.eventSubmittor}
                                 extraLabels={dataItem.extraLabels}

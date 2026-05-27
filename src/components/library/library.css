@@ -82,7 +82,7 @@
     height: calc($library-filter-bar-height + 2rem); /* padding */
     background-color: $motion-transparent;
     padding: 0 1rem;
-    font-size: .875rem;
+    font-size: .675rem;
 }
 
 .filter-bar-item {
@@ -145,6 +145,7 @@
     flex-wrap: wrap;
     height: $library-filter-bar-height;
     overflow: hidden;
+	font-size: 1em;
 }
 
 .spinner-wrapper {
