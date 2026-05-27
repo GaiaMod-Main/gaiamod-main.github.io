@@ -68,6 +68,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://dashblocks.github.io/extensions/static/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
     url.startsWith('https://dinosaurmod.github.io/extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/GabsTheCuriousKid/DinosaurModExtensions/refs/heads/main/extensions/') ||
     url.startsWith('https://banana-mod.github.io/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/Logise1123/myextensions/') ||
     url.startsWith('https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/') ||

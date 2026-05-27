@@ -336,6 +336,7 @@ import scratchUtilitiesIcon from './gaiamod/ScratchUtilities.png';
 import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
+import obgalleryIcon from './gaiamod/OmniBlocks.svg';
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -3182,7 +3183,7 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'DinosaurMod Extensions',
+        name: 'DinosaurMod Extra Extensions',
         href: 'https://dinosaurmod.github.io/extensions/',
         extensionId: 'special_dinosaurmodExtensionLibrary',
         iconURL: 'https://raw.githubusercontent.com/Dinosaurmod/Dinosaurmod.github.io/d32911e4a99caafcc7ba7523b468cf91de061b7e/src/lib/libraries/extensions/dinosaurmod/gallery.svg',
@@ -3200,11 +3201,20 @@ const menuItems = [
         featured: true
     },
 	{
-        name: 'AmpMod Extensions Gallery',
+        name: 'AmpMod Extra Extensions',
         href: 'https://ampmod.codeberg.page/extensions/',
         extensionId: 'special_ampmodExtensionLibrary',
         iconURL: ampmodgalleryThumb,
         description: 'See some AmpMod External extensions. Opens in a new tab.',
+        tags: ['othermods', 'library'],
+        featured: true
+    },
+	{
+        name: 'OmniBlocks Extra Extensions',
+        href: 'https://omniblocks.github.io/extensions/',
+        extensionId: 'special_omniblocksExtensionLibrary',
+        iconURL: obgalleryIcon,
+        description: 'See some OmniBlocks External extensions. Opens in a new tab.',
         tags: ['othermods', 'library'],
         featured: true
     },
