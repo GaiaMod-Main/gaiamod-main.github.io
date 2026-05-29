@@ -31,7 +31,8 @@ import {
     closeExtensionLibrary,
     openSoundRecorder,
     openConnectionModal,
-    openCustomExtensionModal
+    openCustomExtensionModal,
+    openCCWExtensionModal
 } from '../reducers/modals';
 import {activateCustomProcedures, deactivateCustomProcedures} from '../reducers/custom-procedures';
 import {setConnectionModalExtensionId} from '../reducers/connection-modal';
@@ -796,6 +797,7 @@ class Blocks extends React.Component {
             onOpenConnectionModal,
             onOpenSoundRecorder,
             onOpenCustomExtensionModal,
+            onOpenCCWExtensionModal,
             updateToolboxState,
             onActivateCustomProcedures,
             onRequestCloseExtensionLibrary,
@@ -850,6 +852,7 @@ class Blocks extends React.Component {
                         onEnableProcedureReturns={this.handleEnableProcedureReturns}
                         onRequestClose={onRequestCloseExtensionLibrary}
                         onOpenCustomExtensionModal={this.props.onOpenCustomExtensionModal}
+                        onOpenCCWExtensionModal={this.props.onOpenCCWExtensionModal}
                     />
                 ) : null}
                 {customProceduresVisible ? (
@@ -884,6 +887,7 @@ Blocks.propTypes = {
     onOpenConnectionModal: PropTypes.func,
     onOpenSoundRecorder: PropTypes.func,
     onOpenCustomExtensionModal: PropTypes.func,
+    onOpenCCWExtensionModal: PropTypes.func,
     onRequestCloseCustomProcedures: PropTypes.func,
     onRequestCloseExtensionLibrary: PropTypes.func,
     options: PropTypes.shape({
@@ -982,6 +986,7 @@ const mapDispatchToProps = dispatch => ({
         dispatch(openSoundRecorder());
     },
     onOpenCustomExtensionModal: swapId => dispatch(openCustomExtensionModal(swapId)),
+    onOpenCCWExtensionModal: swapId => dispatch(openCCWExtensionModal(swapId)),
     onRequestCloseExtensionLibrary: () => {
         dispatch(closeExtensionLibrary());
     },

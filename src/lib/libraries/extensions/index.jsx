@@ -464,6 +464,7 @@ const menuItems = [
         credits: 'GaiaWindWave90 with some blocks from other users.',
         gaiaModRequired: true,
 		extensionNew: true,
+		isNew: true,
         featured: true
     },
     {
@@ -3333,6 +3334,13 @@ const menuItems = [
         featured: true
     }
     /*DEPRECATED
+	    {
+        name: 'CCW Extension Loader',
+        extensionId: 'ccw_extension_loader',
+        iconURL: 'https://extensions.02engine.02studio.xyz/image/ccw.svg',
+        description: 'Load extensions from Cocrea World.',
+        featured: true
+    },
     {
         name: 'JSON',
         extensionId: 'jgJSON',

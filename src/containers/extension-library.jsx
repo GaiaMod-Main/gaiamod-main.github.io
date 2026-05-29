@@ -237,14 +237,13 @@ class ExtensionLibrary extends React.PureComponent {
         // }
         
         const extensionId = item.extensionId;
-        const isCustomURL = (!item.disabled) && !extensionId;
+        const isCustomURL = (!item.disabled || !item.comingSoon) && !extensionId;
         if (isCustomURL) {
             this.props.onOpenCustomExtensionModal();
             return;
         }
-        const isCustomURL2 = (!item.comingSoon) && !extensionId;
-        if (isCustomURL2) {
-            this.props.onOpenCustomExtensionModal();
+		if (extensionId === 'ccw_extension_loader') {
+            this.props.onOpenCCWExtensionModal();
             return;
         }
         if (extensionId === 'special_penguinmodExtensionLibrary') {
@@ -318,6 +317,7 @@ ExtensionLibrary.propTypes = {
     intl: intlShape.isRequired,
     onCategorySelected: PropTypes.func,
     onOpenCustomExtensionModal: PropTypes.func,
+    onOpenCCWExtensionModal: PropTypes.func,
     onRequestClose: PropTypes.func,
     visible: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired // eslint-disable-line react/no-unused-prop-types

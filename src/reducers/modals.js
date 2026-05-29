@@ -25,6 +25,7 @@ const MODAL_WELCOME = 'welcomeModal';
 const MODAL_WALLPAPER = 'wallpaperModal';
 const MODAL_CUSTOMFONTS = 'customFonts';
 const MODAL_SCREENSHOT = 'screenshotModal';
+const MODAL_CCW_EXTENSION = 'ccwExtensionModal';
 //const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 //const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 //const MODAL_GIT = 'gitModal';
@@ -59,6 +60,7 @@ const initialState = {
     [MODAL_WALLPAPER]: false,
     [MODAL_CUSTOMFONTS]: false,
 	[MODAL_SCREENSHOT]: false,
+	[MODAL_CCW_EXTENSION]: false,
     extensionModalSwapId: null//,
 //    [MODAL_UNKNOWN_PLATFORM]: false,
 //    [MODAL_INVALID_PROJECT]: false,
@@ -160,6 +162,12 @@ const openScreenshotModal = function () {
 };
 const closeScreenshotModal = function () {
     return closeModal(MODAL_SCREENSHOT);
+};
+const openCCWExtensionModal = function (swapId) {
+    return openModal(MODAL_CCW_EXTENSION, swapId);
+};
+const closeCCWExtensionModal = function () {
+    return closeModal(MODAL_CCW_EXTENSION);
 };
 const openReadme = function () {
     return openModal(MODAL_README);
@@ -331,6 +339,8 @@ export {
     closeReadme,
 	openScreenshotModal,
     closeScreenshotModal,
+	openCCWExtensionModal,
+    closeCCWExtensionModal,
 //    openUnknownPlatformModal,
 //    openInvalidProjectModal,
 //    openExtensionManagerModal,

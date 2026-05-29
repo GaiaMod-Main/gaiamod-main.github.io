@@ -56,14 +56,8 @@ class LibraryItem extends React.PureComponent {
                 this.props.onSelect(this.props.id, e);
             }
         }
-		if (!this.props.comingSoon) {
-            if (this.props.href) {
-                window.open(this.props.href);
-            } else {
-                this.props.onSelect(this.props.id, e);
-            }
-        }
         e.preventDefault();
+		
     }
     handleFavoriteClick (...args) {
         this.processFavoriteClick(...args);

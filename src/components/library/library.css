@@ -78,15 +78,37 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    height: calc($library-filter-bar-height + 2rem); /* padding */
-    background-color: $motion-transparent;
-    padding: 0 1rem;
-    font-size: .675rem;
+    width: 30px;
+    border: 0;
+    border-radius: $roundedness;
+    background-color: $ui-tertiary;
+    border: $ui-black-transparent 1px solid;
+    margin: $margin;
+    font-size: 0.875rem;
+    height: calc(100% - calc($margin - 2));
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: center;
 }
 
 .filter-bar-item {
     border: 1px solid $ui-black-transparent;
+}
+
+.filter-bar-open {
+    display: flex;
+    width: 300px;
+}
+.filter-bar-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 4px;
+    padding: calc($margin * 3);
+    padding-left: $margin;
 }
 
 .filter {
@@ -94,8 +116,8 @@
 }
 
 .filter-input {
-    width: 11.5rem;
-    transition: .2s;
+    width: 100%;
+    transition: 0.2s;
 }
 
 .filter-input:focus,
@@ -140,12 +162,10 @@
 }
 
 .tag-wrapper {
-    display: flex;
-    flex-direction: row;
+ display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    height: $library-filter-bar-height;
-    overflow: hidden;
-	font-size: 1em;
+    gap: 8px;
 }
 
 .spinner-wrapper {
@@ -154,4 +174,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1449px) {
+    .library-scroll-grid {
+        width: 100%; 
+        margin-left: 40px;
+    }
+    
+    .filter-bar {
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        height: calc(100% - $library-header-height);
+        margin-right: 0;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .filter-bar:not(.filter-bar-open), .open-button {
+        width: 40px; /* Better for touchscreens */
+    }
+
+    .library-overlay {
+        z-index: 9;
+        position: fixed;
+        height: calc(100% - $library-header-height);
+        top: $library-header-height;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
 }

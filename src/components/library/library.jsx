@@ -313,38 +313,34 @@ class LibraryComponent extends React.Component {
                 id={this.props.id}
                 onRequestClose={this.handleClose}
             >
-			     <center className={classNames(styles.whiteTextInDarkMode)}>
-                            Item Count:
-							<span
-                             className={classNames(styles.libraryItemCount)}
-                              >
-							{this.state.data.length}
-							</span>
-                        </center>
-						
-                        
-              {this.props.filterable && (
-                            <div><center>
-                                <Filter
-                                    className={classNames(
-                                        styles.filterBarItem,
-                                        styles.filter
-                                    )}
-                                    filterQuery={this.state.filterQuery}
-                                    inputClassName={styles.filterInput}
-                                    placeholderText={this.props.intl.formatMessage(messages.filterPlaceholder)}
-                                    onChange={this.handleFilterChange}
-                                    onClear={this.handleFilterClear}
-                                />
-                                <Divider className={classNames(styles.filterBarItem, styles.divider)} />
-                            </center></div>
-                        )}
+			     <span className={classNames(styles.whiteTextInDarkMode)}>
+                            <b>Item Count:</b> {this.state.data.length}
+                        </span>
                 {/* filter bar & stuff */}
                 <div className={classNames(styles.libraryContentWrapper)}>
                     <div
                         className={classNames(styles.libraryFilterBar)}
                         style={this.state.collapsed ? { display: "none" } : null}
                     >
+                        {/*
+                            todo: translation?
+                        */}
+                        {this.props.filterable && (
+                            <div>
+                                    <Filter
+                                        className={classNames(
+                                            styles.filterBarItem,
+                                            styles.filter
+                                        )}
+                                        filterQuery={this.state.filterQuery}
+                                        inputClassName={styles.filterInput}
+                                        placeholderText={this.props.intl.formatMessage(messages.filterPlaceholder)}
+                                        onChange={this.handleFilterChange}
+                                        onClear={this.handleFilterClear}
+                                    />
+                                <Divider className={classNames(styles.filterBarItem, styles.divider)} />
+                            </div>
+                        )}
                         {this.props.tags &&
                             <div>
                                 {tagListPrefix.concat(this.props.tags).map((tagProps, id) => {
@@ -439,7 +435,7 @@ class LibraryComponent extends React.Component {
                                 featured={dataItem.featured}
                                 hidden={dataItem.hidden}
                                 isNew={dataItem.tags && dataItem.tags.includes("new")}
-                                extensionNew={dataItem.extensionNew && dataItem.tags && dataItem.tags.includes("new")}
+                                extensionNew={dataItem.extensionNew}
                                 href={dataItem.href}
                                 iconMd5={dataItem.costumes ? dataItem.costumes[0].md5ext : dataItem.md5ext}
                                 iconRawURL={this.props.actor === "CostumeLibrary" ? `${PM_LIBRARY_API}files/${dataItem.libraryFilePage}` : dataItem.rawURL}

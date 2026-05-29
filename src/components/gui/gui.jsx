@@ -40,6 +40,7 @@ import TWUsernameModal from '../../containers/tw-username-modal.jsx';
 import TWSettingsModal from '../../containers/tw-settings-modal.jsx';
 import TWSecurityManager from '../../containers/tw-security-manager.jsx';
 import TWCustomExtensionModal from '../../containers/tw-custom-extension-modal.jsx';
+import TWCCWExtensionModal from '../../containers/tw-ccw-extension-modal.jsx';
 import ExtensionManagerModal from '../../containers/extensions-modal.jsx';
 import TWRestorePointManager from '../../containers/tw-restore-point-manager.jsx';
 import TWFontsModal from '../../containers/tw-fonts-modal.jsx';
@@ -183,6 +184,7 @@ const GUIComponent = props => {
 		extensionsManagerModalVisible,
         fontsModalVisible,
 		screenshotModalVisible,
+		ccwExtensionModalVisible,
         isPlayground,
         vm,
         ...componentProps
@@ -382,6 +384,7 @@ const GUIComponent = props => {
 				{extensionsManagerModalVisible && <ExtensionManagerModal />}
                 {fontsModalVisible && <TWFontsModal />}
 				{screenshotModalVisible && <TWScreenshotModal />}
+				{ccwExtensionModalVisible && <TWCCWExtensionModal />}
 				{customAccentModalVisible && <GMCustomAccentModal />}
                 <PMExtensionModals vm={vm} />
             </React.Fragment>
@@ -760,6 +763,7 @@ GUIComponent.propTypes = {
 	extensionsManagerModalVisible : PropTypes.bool,
     fontsModalVisible: PropTypes.bool,
 	screenshotModalVisible: PropTypes.bool,
+	ccwExtensionModalVisible: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired
 };
 GUIComponent.defaultProps = {
