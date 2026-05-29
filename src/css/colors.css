@@ -504,6 +504,35 @@ body[coloraccent="NIGHTMARE"] {
 
     --menu-bar-background-image: none;
 }
+
+body[coloraccent="Party Time"] {
+--ui-modal-overlay: #FF5EFC90 /* 90% transparent version of motion-primary */
+
+--motion-primary: #CAB5F5; /* #00c3ff */
+--motion-tertiary: #9E7FDE; /* #007bc7 */
+--motion-transparent: #CAB5F535; /* 35% transparent version of motion-primary */
+--motion-light-transparent: #DFD4F515; /* 15% transparent version of motion-primary */
+
+/* opt-in theme overrides */
+--motion-primary-dark: #866ABF; /*top bar color when in dark mode*/
+--motion-dark-transparent: #866ABF40; /*top bar color when in dark mode*/
+
+--red-primary: #CAB5F5; /* #00c3ff */
+--red-tertiary: #9E7FDE; /* #007bc7 */
+
+--extensions-primary: #FF00CC;
+--extensions-tertiary: #CC009E;
+--extensions-transparent: #FF00CC35; /* 35% transparent version of extensions-primary */
+--extensions-light: #FF73E3; /* opaque version of extensions-transparent, on white bg */
+
+--drop-highlight: #DFD4F5; /* lighter than motion-primary */
+
+--menu-bar-background: var(--motion-primary);
+--menu-bar-background-dark: var(--motion-primary-dark);
+
+--menu-bar-background-image: none;
+}
+
 body[coloraccent="custom"] {
     
 }

@@ -111,11 +111,13 @@
         try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
         if (localStorage.getItem("tw:accent:customAccents") == null) localStorage.setItem("tw:accent:customAccents", JSON.stringify([]));
         if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+        if (localTheme ? localTheme === 'midnight' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('#splash').setAttribute('splash-theme', 'midnight');
         try {var accentTheme = localStorage.getItem('tw:accent');} catch (e) {}
         if (accentTheme) document.body.setAttribute("coloraccent", accentTheme || "Gaia Blue")
         if (accentTheme == null) document.body.setAttribute("coloraccent", "Gaia Blue")
         window.Recolor = {primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')}
         if (new URLSearchParams(location.search).has("666")) {document.body.setAttribute("colorAccent", "NIGHTMARE"); document.body.setAttribute('theme', 'dark'); document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+        if (new URLSearchParams(location.search).has("shipguy")) {document.body.setAttribute("colorAccent", "Party Time"); document.body.setAttribute('theme', 'light'); document.querySelector('#splash').setAttribute('splash-theme', 'light');
           while (document.querySelector('#app') == null) {await new Promise(r => setTimeout(r, 50))}
           document.querySelector('#app').style.filter = "contrast(200%)";
           const evt = new Event('click');
