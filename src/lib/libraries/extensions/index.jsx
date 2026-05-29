@@ -2460,10 +2460,10 @@ const menuItems = [
         collaborator: "MBot Robotics Ecosystem",
         iconURL: mbotIconURL,
         insetIconURL: mbotInsetIconURL,
-        description: 'Control an MBot.',
+        description: 'Control an MBot. Disabled due to the websocket confinct over HTTPS.',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
+        disabled: true,
         bluetoothRequired: true
 
     },
@@ -3353,8 +3353,9 @@ const menuItems = [
         insetIconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/ext-create/inset.svg',
         customInsetColor: '#FFF',
         description: 'Snail IDE version of TurboBuilder',
-        credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp',
+        credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp. Disabled due to the link not working.',
         tags: ['snail-ide', 'builders', 'extcreate'],
+        disabled: true,
         featured: true
     },
     {
