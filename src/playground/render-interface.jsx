@@ -69,6 +69,7 @@ if (process.env.ANNOUNCEMENT) {
 const Toast = Swal.mixin({
     toast: true,
     position: 'bottom-start',
+    iconColor: 'blue',
     customClass: {
       popup: 'colored-toast',
     },
@@ -79,6 +80,7 @@ const Toast = Swal.mixin({
 
 
 Toast.fire({
+    icon: 'success',
     title: 'GaiaMod is loading...'
 })
 
