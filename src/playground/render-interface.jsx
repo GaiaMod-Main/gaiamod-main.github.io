@@ -48,6 +48,8 @@ import runAddons from '../addons/entry';
 import styles from './interface.css';
 import restore from './restore.js';
 
+import Swal from 'sweetalert2';
+
 const urlparams = new URLSearchParams(location.search);
 const restoring = urlparams.get('restore');
 const restoreHandler = urlparams.get('handler');
@@ -64,11 +66,10 @@ if (process.env.ANNOUNCEMENT) {
 }
 
 
-/*
 const Toast = Swal.mixin({
     toast: true,
     position: 'bottom-start',
-    iconColor: 'white',
+    iconColor: 'blue',
     customClass: {
       popup: 'colored-toast',
     },
@@ -80,9 +81,8 @@ const Toast = Swal.mixin({
 
 Toast.fire({
     icon: 'success',
-    title: 'Welcome to the GaiaMod Beta!'
+    title: 'Welcome to GaiaMod!'
 })
-*/
 
 const handleClickAddonSettings = () => {
     const path = process.env.ROUTING_STYLE === 'wildcard' ? 'addons' : 'addons.html';
