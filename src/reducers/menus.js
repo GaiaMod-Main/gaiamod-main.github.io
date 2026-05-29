@@ -156,12 +156,12 @@ export {
     openAccentMenu,
     closeAccentMenu,
     accentMenuOpen,
-	openWallpaperMenu
-	closeWallpaperMenu
-	wallpaperMenuOpen
-	openFontsMenu
-	closeFontsMenu
-	fontsMenuOpen
+	openWallpaperMenu,
+	closeWallpaperMenu,
+	wallpaperMenuOpen,
+	openFontsMenu,
+	closeFontsMenu,
+	fontsMenuOpen,
     openThemeMenu,
     closeThemeMenu,
     themeMenuOpen,

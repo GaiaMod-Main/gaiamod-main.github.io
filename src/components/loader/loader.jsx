@@ -12,6 +12,8 @@ import { randomMessages } from '../../lib/randomMessages';
 import * as progressMonitor from './tw-progress-monitor';
 import isScratchDesktop from '../../lib/isScratchDesktop';
 
+import isAprilFools from '../../lib/enable-pranks';
+
 // tw:
 // we make some rather large changes here:
 //  - remove random message, replaced with message dependent on what is actually being loaded
@@ -86,7 +88,9 @@ class LoaderComponent extends React.Component {
         bindAll(this, [
             'barInnerRef',
             'handleProgressChange',
-            'messageRef'
+            'messageRef',
+            'randomMessagesRef',
+            'updateRandomMessages'
         ]);
     }
     componentDidMount () {
@@ -150,14 +154,20 @@ class LoaderComponent extends React.Component {
                 })}
             >
                 <div className={styles.container}>
-                    <div className={styles.logoFloat}>
+				
+                    if (isAprilFools) {
+              <div className={styles.blockAnimation}>
+                        <img src={shipguy} />
+                    </div>
+            } else  {
+                <div className={styles.logoFloat}>
                         <img
                             width="250px"
                             src={logo}
                             draggable={false}
                         />
                     </div>
-
+                 }
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
