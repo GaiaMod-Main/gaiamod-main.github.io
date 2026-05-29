@@ -506,7 +506,7 @@ body[coloraccent="NIGHTMARE"] {
 }
 
 body[coloraccent="Party Time"] {
---ui-modal-overlay: #FF5EFC90 /* 90% transparent version of motion-primary */
+--ui-modal-overlay: #FF5EFC90; /* 90% transparent version of motion-primary */
 
 --motion-primary: #CAB5F5; /* #00c3ff */
 --motion-tertiary: #9E7FDE; /* #007bc7 */
