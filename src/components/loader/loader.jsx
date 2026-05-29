@@ -12,7 +12,7 @@ import { randomMessages } from '../../lib/randomMessages';
 import * as progressMonitor from './tw-progress-monitor';
 import isScratchDesktop from '../../lib/isScratchDesktop';
 
-import isAprilFools from '../../lib/enable-pranks';
+import isAprilFools from '../../lib/enable-pranks.ts';
 
 // tw:
 // we make some rather large changes here:
