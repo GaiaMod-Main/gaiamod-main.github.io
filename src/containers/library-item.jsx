@@ -56,6 +56,13 @@ class LibraryItem extends React.PureComponent {
                 this.props.onSelect(this.props.id, e);
             }
         }
+		if (!this.props.comingSoon) {
+            if (this.props.href) {
+                window.open(this.props.href);
+            } else {
+                this.props.onSelect(this.props.id, e);
+            }
+        }
         e.preventDefault();
     }
     handleFavoriteClick (...args) {
@@ -190,7 +197,9 @@ class LibraryItem extends React.PureComponent {
                 extraLabels={this.props.extraLabels}
                 description={this.props.description}
                 disabled={this.props.disabled}
+                comingSoon={this.props.comingSoon}
                 isNew={this.props.isNew}
+                extensionNew={this.props.isNew}
                 extensionId={this.props.extensionId}
                 featured={this.props.featured}
                 hidden={this.props.hidden}
@@ -208,6 +217,8 @@ class LibraryItem extends React.PureComponent {
                 customInsetColor={this.props.customInsetColor}
                 internetConnectionRequired={this.props.internetConnectionRequired}
                 gaiaModRequired={this.props.gaiaModRequired}
+                nfcRequired={this.props.nfcRequired}
+                packageRequired={this.props.packageRequired}
                 isPlaying={this.props.isPlaying}
                 name={this.props.name}
                 showPlayButton={this.props.showPlayButton}
@@ -273,10 +284,12 @@ LibraryItem.propTypes = {
         PropTypes.node
     ]),
     disabled: PropTypes.bool,
+    comingSoon: PropTypes.bool,
     extensionId: PropTypes.string,
     href: PropTypes.string,
     featured: PropTypes.bool,
     isNew: PropTypes.bool,
+    extensionNew: PropTypes.bool,
     hidden: PropTypes.bool,
     iconMd5: PropTypes.string,
     iconRawURL: PropTypes.string,

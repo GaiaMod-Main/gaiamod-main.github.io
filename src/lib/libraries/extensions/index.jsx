@@ -463,6 +463,7 @@ const menuItems = [
         description: 'Some mysterious blocks.',
         credits: 'GaiaWindWave90 with some blocks from other users.',
         gaiaModRequired: true,
+		extensionNew: true,
         featured: true
     },
     {
@@ -938,7 +939,6 @@ const menuItems = [
         insetIconURL: chatgpt2scratchInsetIconURL,
         credits: 'ichiroc',
         featured: true,
-        disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: true,
         tags: ['othermods', 'ai'],
@@ -952,7 +952,6 @@ const menuItems = [
         insetIconURL: ml2scratchInsetIconURL,
 		credits: 'champierre',
         featured: true,
-        disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: true,
         tags: ['othermods', 'ai'],
@@ -966,7 +965,6 @@ const menuItems = [
         insetIconURL: tm2scratchInsetIconURL,
 		credits: 'Tsukurusha, YengawaLab and Google',
         featured: true,
-        disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: true,
         tags: ['othermods', 'ai'],
@@ -980,7 +978,6 @@ const menuItems = [
         insetIconURL: tmpose2scratchInsetIconURL,
 		credits: 'champierre',
         featured: true,
-        disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: true,
         tags: ['othermods', 'ai'],
@@ -1005,7 +1002,6 @@ const menuItems = [
         insetIconURL: posenet2scratchInsetIconURL,
         credits: 'champierre',
         featured: true,
-        disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: true,
         tags: ['othermods', 'ai'],
@@ -1067,8 +1063,7 @@ const menuItems = [
         description: 'A Combined version of 2 Extensions: Packager Applications & AdaBrowser',
         featured: true,
         extDeveloper: 'MrIncredibleMaker',
-        internetConnectionRequired: true,
-        disabled: false
+        internetConnectionRequired: true
     },
     {
         name: 'NES Emulator',
@@ -1230,8 +1225,7 @@ const menuItems = [
         description: 'Run your own custom code written in Lua using Fengari!',
         featured: true,
         extDeveloper: 'MrIncredibleMaker',
-        internetConnectionRequired: true,
-        disabled: false
+        internetConnectionRequired: true
     },
     {
         name: 'Beepbox Player',
@@ -1310,8 +1304,7 @@ const menuItems = [
         description: 'Fetch IDs, Description, etc. from Repositories, Users and Organizations.',
         featured: true,
         extDeveloper: 'MrIncredibleMaker',
-        internetConnectionRequired: true,
-        disabled: false
+        internetConnectionRequired: true
     },
     {
         name: 'Stage Camera',
@@ -2356,8 +2349,7 @@ const menuItems = [
         description: 'Stupid blocks. Yuck.',
         featured: true,
         extDeveloper: 'Jambs / jlgri',
-        internetConnectionRequired: false,
-        disabled: false
+        internetConnectionRequired: false
     },
         {
             name: 'Christmas',
@@ -2412,7 +2404,6 @@ const menuItems = [
 		connectingMessage: 'Connecting',
         tags: ['othermods', 'ai', 'hardware'],
         description: 'Experiment with Generative AI.',
-		disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
 		launchPeripheralConnectionFlow: true,
@@ -2476,7 +2467,6 @@ const menuItems = [
         description: 'Play and program with Marty.',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: true
 
@@ -2490,7 +2480,6 @@ const menuItems = [
         description: 'Build and control your train!',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: true
 
@@ -2504,7 +2493,6 @@ const menuItems = [
         description: 'Build with motors and sensors!',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: true
 
@@ -2518,7 +2506,6 @@ const menuItems = [
         description: 'AKARI control block',
 		tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false
     },
@@ -2531,7 +2518,6 @@ const menuItems = [
         description: 'AKARI camera block',
 		tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false
     },
@@ -2544,7 +2530,6 @@ const menuItems = [
         description: 'Simple Akari blocks.',
 		tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false
     },
@@ -2557,7 +2542,6 @@ const menuItems = [
         description: 'Simple Akari camera blocks.',
 		tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false
     },
@@ -2569,7 +2553,6 @@ const menuItems = [
         insetIconURL: jdcodeInsetIconURL,
         description: 'JDCode Drone with GaiaMod',
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -2588,7 +2571,6 @@ const menuItems = [
         insetIconURL: jcboardInsetIconURL,
         description: 'JCBoard with GaiaMod',
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -2607,7 +2589,6 @@ const menuItems = [
         insetIconURL: uglybotInsetIconURL,
         description: 'UglyBot with GaiaMod',
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -2626,7 +2607,6 @@ const menuItems = [
         insetIconURL: robodogInsetIconURL,
         description: 'RoboDog with GaiaMod',
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -2645,7 +2625,6 @@ const menuItems = [
         insetIconURL: firmtechInsetIconURL,
         description: 'Firmtech Drone2 with GaiaMod',
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -2664,7 +2643,6 @@ const menuItems = [
         insetIconURL: aidroneInsetIconURL,
         description: 'AI Drone with GaiaMod',
         featured: true,
-        disabled: false,
 		tags: ['othermods', 'ai', 'hardware'],
         bluetoothRequired: true,
         internetConnectionRequired: false,
@@ -2683,7 +2661,6 @@ const menuItems = [
         insetIconURL: aicobotInsetIconURL,
         description: 'AICoBot with GaiaMod',
         featured: true,
-        disabled: false,
 		tags: ['othermods', 'ai', 'hardware'],
         bluetoothRequired: true,
         internetConnectionRequired: false,
@@ -2703,7 +2680,6 @@ const menuItems = [
         description: 'OneGPIOArduino',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2717,7 +2693,6 @@ const menuItems = [
         description: 'OneGPIORpi',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2732,7 +2707,6 @@ const menuItems = [
         description: 'OneGPIOEsp',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2747,7 +2721,6 @@ const menuItems = [
         description: 'OneGPIOPicoboard',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2762,7 +2735,6 @@ const menuItems = [
         description: 'OneGPIOCpx',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2777,7 +2749,6 @@ const menuItems = [
         description: 'OneGPIORoboHAT',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2792,7 +2763,6 @@ const menuItems = [
         description: 'onegpioRpiPico',
         tags: ['othermods', 'hardware'],
         featured: true,
-        disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
         helpLink: 'https://mryslab.github.io/s3-extend/'
@@ -2963,7 +2933,6 @@ const menuItems = [
             />
         ),
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
@@ -2994,7 +2963,6 @@ const menuItems = [
             />
         ),
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
@@ -3026,7 +2994,6 @@ const menuItems = [
             />
         ),
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
@@ -3058,7 +3025,6 @@ const menuItems = [
             />
         ),
         featured: true,
-        disabled: false,
         tags: ['scratch', 'hardware'],
         bluetoothRequired: true,
         internetConnectionRequired: true,
@@ -3093,7 +3059,6 @@ const menuItems = [
             />
         ),
         featured: true,
-        disabled: false,
         bluetoothRequired: true,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
@@ -3300,7 +3265,6 @@ const menuItems = [
         iconURL: ExtForgeIcon,
         description: 'Create extensions with a block-based UI.',
         extDeveloper: 'jwklong',
-        isNew: true,
         tags: ['penguinmod', 'builders', 'extcreate'],
         featured: true
     },
@@ -3335,6 +3299,19 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'ExtCreate',
+        href: 'https://extcreate.snail-ide.com/',
+        extensionId: 'special_ExtCreate',
+        iconURL: 'https://raw.githubusercontent.com/Snail-IDE/snail-ide.github.io/2d2190779715b9d4d14e6c62dbd487f0563dbba0/src/lib/libraries/extensions/ext-create/logo.svg',
+        insetIconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/ext-create/inset.svg',
+        customInsetColor: '#FFF',
+        description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
+        credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
+        tags: ['snail-ide', 'builders', 'extcreate'],
+        disabled: true,
+        featured: true
+    },
+    {
         name: 'DinoBuilder',
         href: 'https://dinobuilder.vercel.app',
         extensionId: 'special_dinoBuilder',
@@ -3342,20 +3319,6 @@ const menuItems = [
         description: 'Create your own amazing extensions using a TurboBuilder Mod scratch-based UI!',
         credits: 'MrIncredibleMaker',
         tags: ['dinosaurmod', 'builders', 'extcreate'],
-        featured: true,
-        disabled: false
-    },
-    {
-        name: 'ExtCreate',
-        href: 'https://extcreate.snail-ide.com/',
-        extensionId: 'special_ExtCreate',
-        iconURL: 'https://raw.githubusercontent.com/Snail-IDE/snail-ide.github.io/2d2190779715b9d4d14e6c62dbd487f0563dbba0/src/lib/libraries/extensions/ext-create/logo.svg',
-        insetIconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/ext-create/inset.svg',
-        customInsetColor: '#FFF',
-        description: 'Snail IDE version of TurboBuilder',
-        credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp. Disabled due to the link not working.',
-        tags: ['snail-ide', 'builders', 'extcreate'],
-        disabled: true,
         featured: true
     },
     {

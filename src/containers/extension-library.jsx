@@ -237,8 +237,13 @@ class ExtensionLibrary extends React.PureComponent {
         // }
         
         const extensionId = item.extensionId;
-        const isCustomURL = !item.disabled && !extensionId;
+        const isCustomURL = (!item.disabled) && !extensionId;
         if (isCustomURL) {
+            this.props.onOpenCustomExtensionModal();
+            return;
+        }
+        const isCustomURL2 = (!item.comingSoon) && !extensionId;
+        if (isCustomURL2) {
             this.props.onOpenCustomExtensionModal();
             return;
         }
@@ -258,7 +263,7 @@ class ExtensionLibrary extends React.PureComponent {
                 await this.props.vm.securityManager.canLoadExtensionFromProject(url);
             }
         }
-        if (!item.disabled) {
+        if (!item.disabled || !item.comingSoon) {
             if (this.props.vm.extensionManager.isExtensionLoaded(extensionId)) {
                 this.props.onCategorySelected(extensionId);
             } else {
@@ -289,6 +294,7 @@ class ExtensionLibrary extends React.PureComponent {
         const extensionLibraryThumbnailData = extensionLibraryContent.map(extension => ({
             rawURL: extension.iconURL || extensionIcon,
             disabled: extension.disabled && !this.props.liveTest,
+            comingSoon: extension.comingSoon && !this.props.liveTest,
             ...extension
         }));
         return (

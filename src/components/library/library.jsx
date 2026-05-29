@@ -434,10 +434,12 @@ class LibraryComponent extends React.Component {
                                 customInsetColor={dataItem.customInsetColor}
                                 description={dataItem.description}
                                 disabled={dataItem.disabled}
+                                comingSoon={dataItem.comingSoon}
                                 extensionId={dataItem.extensionId}
                                 featured={dataItem.featured}
                                 hidden={dataItem.hidden}
                                 isNew={dataItem.tags && dataItem.tags.includes("new")}
+                                extensionNew={dataItem.extensionNew && dataItem.tags && dataItem.tags.includes("new")}
                                 href={dataItem.href}
                                 iconMd5={dataItem.costumes ? dataItem.costumes[0].md5ext : dataItem.md5ext}
                                 iconRawURL={this.props.actor === "CostumeLibrary" ? `${PM_LIBRARY_API}files/${dataItem.libraryFilePage}` : dataItem.rawURL}
@@ -453,6 +455,8 @@ class LibraryComponent extends React.Component {
                                 insetIconURL={dataItem.insetIconURL}
                                 internetConnectionRequired={dataItem.internetConnectionRequired}
                                 gaiaModRequired={dataItem.gaiaModRequired}
+                                nfcRequired={dataItem.nfcRequired}
+                                packageRequired={dataItem.packageRequired}
                                 isPlaying={this.state.playingItem === index}
                                 key={typeof dataItem.name === 'string' ? dataItem.name : dataItem.rawURL}
                                 name={dataItem.name}

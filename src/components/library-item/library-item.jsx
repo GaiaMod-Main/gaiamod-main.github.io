@@ -15,6 +15,8 @@ import favoritedFilledUrl from './favorite/filled.svg';
 import favoritedOutlineUrl from './favorite/outline.svg';
 import deleteFilledUrl from './delete/filled.svg';
 import downloadFilled from './download/filled.svg';
+import nfcIconURL from './nfc.svg';
+import packagedIconURL from './packaged.svg';
 
 const getURLOrigin = (url) => {
     let urlObj;
@@ -39,7 +41,9 @@ class LibraryItemComponent extends React.PureComponent {
                     styles.libraryItem,
                     styles.featuredItem,
                     {
-                        [styles.disabled]: this.props.disabled
+                        [styles.disabled]: this.props.disabled,
+                        [styles.comingSoon]: this.props.comingSoon,
+                        [styles.libraryItemNew]: this.props.isNew
                     },
                     typeof this.props.extensionId === 'string' ? styles.libraryItemExtension : null,
                     this.props.hidden ? styles.hidden : null
@@ -47,13 +51,32 @@ class LibraryItemComponent extends React.PureComponent {
                 onClick={this.props.onClick}
             >
                 <div className={styles.featuredImageContainer}>
-                    {this.props.disabled ? (
+                    {this.props.comingSoon ? (
                         <div className={styles.comingSoonText}>
                             <FormattedMessage
                                 defaultMessage="Coming Soon"
                                 description="Label for extensions that are not yet implemented"
                                 id="gui.extensionLibrary.comingSoon"
                             />
+                        </div>
+                    ) : null}
+					{this.props.disabled ? (
+                        <div className={styles.disabledText}>
+                            <FormattedMessage
+                                defaultMessage="Disabled"
+                                description="Label for extensions that are disabled"
+                                id="gui.extensionLibrary.disabled"
+                            />
+                        </div>
+                    ) : null}
+					{this.props.isNew ? (
+                        <div className={styles.libraryItemNewBadge}>
+                             <FormattedMessage
+                                defaultMessage="New!"
+                                description="Label for extensions that are new"
+                                id="gui.extensionLibrary.newExtensions"
+                            />
+                           
                         </div>
                     ) : null}
                     <img
@@ -243,6 +266,8 @@ class LibraryItemComponent extends React.PureComponent {
                     this.props.bluetoothRequired ||
                         this.props.internetConnectionRequired ||
                         this.props.gaiaModRequired ||
+                        this.props.nfcRequired ||
+                        this.props.packageRequired ||
                         this.props.collaborator ||
                         this.props.extDeveloper ||
                         this.props.twDeveloper ||
@@ -251,7 +276,7 @@ class LibraryItemComponent extends React.PureComponent {
                         ? (
                             <div className={styles.featuredExtensionMetadata}>
                                 <div className={styles.featuredExtensionRequirement}>
-                                    {this.props.bluetoothRequired || this.props.internetConnectionRequired || this.props.gaiaModRequired ? (
+                                    {this.props.bluetoothRequired || this.props.internetConnectionRequired || this.props.gaiaModRequired || this.props.nfcRequired || this.props.packageRequired ? (
                                         <div>
                                             <div>
                                                 <FormattedMessage
@@ -271,6 +296,12 @@ class LibraryItemComponent extends React.PureComponent {
                                                 ) : null}
 												{this.props.gaiaModRequired ? (
                                                     <img src={shipGuyIconURL} />
+                                                ) : null}
+												{this.props.nfcRequired ? (
+                                                    <img src={nfcIconURL} />
+                                                ) : null}
+												{this.props.packageRequired ? (
+                                                    <img src={packagedIconURL} />
                                                 ) : null}
                                             </div>
                                         </div>
@@ -394,7 +425,7 @@ class LibraryItemComponent extends React.PureComponent {
                 {this.props.isNew && (
                     <div className={styles.libraryItemNewBadge}>
                         <FormattedMessage
-                            defaultMessage="NEW"
+                            defaultMessage="New!"
                             description="Badge text for new library items"
                             id="pm.libraryItem.newItemBadge"
                         />
@@ -505,9 +536,11 @@ LibraryItemComponent.propTypes = {
         PropTypes.node
     ]),
     disabled: PropTypes.bool,
+    comingSoon: PropTypes.bool,
     extensionId: PropTypes.string,
     featured: PropTypes.bool,
     isNew: PropTypes.bool,
+    extensionNew: PropTypes.bool,
     hidden: PropTypes.bool,
     iconURL: PropTypes.string,
     overlayURL: PropTypes.string,
@@ -518,6 +551,8 @@ LibraryItemComponent.propTypes = {
     customInsetColor: PropTypes.string,
     internetConnectionRequired: PropTypes.bool,
     gaiaModRequired: PropTypes.bool,
+    nfcRequired: PropTypes.bool,
+    packageRequired: PropTypes.bool,
     isPlaying: PropTypes.bool,
     name: PropTypes.oneOfType([
         PropTypes.string,
@@ -545,6 +580,7 @@ LibraryItemComponent.propTypes = {
 
 LibraryItemComponent.defaultProps = {
     disabled: false,
+    comingSoon: false,
     showPlayButton: false
 };
 
