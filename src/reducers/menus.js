@@ -5,6 +5,8 @@ const MENU_ABOUT = 'aboutMenu';
 const MENU_ACCOUNT = 'accountMenu';
 const MENU_SETTINGS = 'settingsMenu';
 const MENU_ACCENT = 'accentMenu';
+const MENU_WALLPAPER = 'wallpaperMenu';
+const MENU_CUSTOMFONTS = 'fontsMenu';
 const MENU_THEME = 'themeMenu';
 const MENU_FILE = 'fileMenu';
 const MENU_EDIT = 'editMenu';
@@ -19,6 +21,8 @@ const initialState = {
     [MENU_THEME]: false,
     [MENU_SETTINGS]: false,
     [MENU_ACCENT]: false,
+    [MENU_WALLPAPER]: false,
+    [MENU_CUSTOMFONTS]: false,
     [MENU_FILE]: false,
     [MENU_EDIT]: false,
     [MENU_LANGUAGE]: false,
@@ -67,6 +71,8 @@ const rootMenu = new Menu('root')
     .addChild(
         new Menu(MENU_SETTINGS)
             .addChild(new Menu(MENU_ACCENT))
+            .addChild(new Menu(MENU_WALLPAPER))
+            .addChild(new Menu(MENU_CUSTOMFONTS))
     )
     .addChild(new Menu(MENU_FILE))
     .addChild(new Menu(MENU_EDIT))
@@ -110,6 +116,12 @@ const settingsMenuOpen = state => state.scratchGui.menus[MENU_SETTINGS];
 const openAccentMenu = () => openMenu(MENU_ACCENT);
 const closeAccentMenu = () => closeMenu(MENU_ACCENT);
 const accentMenuOpen = state => state.scratchGui.menus[MENU_ACCENT];
+const openWallpaperMenu = () => openMenu(MENU_WALLPAPER);
+const closeWallpaperMenu = () => closeMenu(MENU_WALLPAPER);
+const wallpaperMenuOpen = state => state.scratchGui.menus[MENU_WALLPAPER];
+const openFontsMenu = () => openMenu(MENU_CUSTOMFONTS);
+const closeFontsMenu = () => closeMenu(MENU_CUSTOMFONTS);
+const fontsMenuOpen = state => state.scratchGui.menus[MENU_CUSTOMFONTS];
 const openThemeMenu = () => openMenu(MENU_THEME);
 const closeThemeMenu = () => closeMenu(MENU_THEME);
 const themeMenuOpen = state => state.scratchGui.menus[MENU_THEME];
@@ -144,6 +156,12 @@ export {
     openAccentMenu,
     closeAccentMenu,
     accentMenuOpen,
+	openWallpaperMenu
+	closeWallpaperMenu
+	wallpaperMenuOpen
+	openFontsMenu
+	closeFontsMenu
+	fontsMenuOpen
     openThemeMenu,
     closeThemeMenu,
     themeMenuOpen,

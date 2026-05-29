@@ -52,7 +52,7 @@ const Backpack = ({
     showMore,
     onToggle,
     onDelete,
-    onExport,
+	onExport,
     onRename,
     onMouseEnter,
     onMouseLeave,
@@ -125,7 +125,7 @@ const Backpack = ({
                                         name={intl.formatMessage(labelMap[item.type])}
                                         selected={false}
                                         onClick={noop}
-                                        onExportButtonClick={item.type === 'script' ? null : onExport}
+										onExportButtonClick={item.type === 'script' ? null : onExport}
                                         onDeleteButtonClick={onDelete}
                                         // Currently, renaming sprites is not supported.
                                         onRenameButtonClick={item.type === 'sprite' ? null : onRename}
@@ -175,7 +175,7 @@ Backpack.propTypes = {
     intl: intlShape,
     loading: PropTypes.bool,
     onDelete: PropTypes.func,
-    onExport: PropTypes.func,
+	onExport: PropTypes.func,
     onRename: PropTypes.func,
     onMore: PropTypes.func,
     onMouseEnter: PropTypes.func,
