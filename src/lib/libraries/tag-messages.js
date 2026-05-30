@@ -271,6 +271,21 @@ export default defineMessages({
         description: 'Tag for finding all extension creator programs / website',
         id: 'pm.libraryTags.extcreate'
     },
+    new: {
+        defaultMessage: 'New',
+        description: 'Tag for filtering a library that are new',
+        id: 'gm.libraryTags.new'
+    },
+    disabled: {
+        defaultMessage: 'Disabled',
+        description: 'Tag for filtering a library that are disabled',
+        id: 'gm.libraryTags.disabled'
+    },
+    comingsoon: {
+        defaultMessage: 'Coming soon',
+        description: 'Tag for filtering a library that are not implemented yet',
+        id: 'gm.libraryTags.comingsoon'
+    },
     datamgmt: {
         defaultMessage: 'Data Management',
         description: 'Tag for filtering a library by data management',

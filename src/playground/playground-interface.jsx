@@ -37,6 +37,8 @@ import runAddons from '../addons/entry';
 
 import styles from './interface.css';
 
+import Swal from 'sweetalert2';
+
 const messages = defineMessages({
     defaultTitle: {
         defaultMessage: 'The Playground',

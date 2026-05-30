@@ -463,8 +463,6 @@ const menuItems = [
         description: 'Some mysterious blocks.',
         credits: 'GaiaWindWave90 with some blocks from other users.',
         gaiaModRequired: true,
-		extensionNew: true,
-		isNew: true,
         featured: true
     },
     {
@@ -2453,7 +2451,7 @@ const menuItems = [
         iconURL: mbotIconURL,
         insetIconURL: mbotInsetIconURL,
         description: 'Control an MBot. Disabled due to the websocket confinct over HTTPS.',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'disabled'],
         featured: true,
         disabled: true,
         bluetoothRequired: true
@@ -3308,7 +3306,7 @@ const menuItems = [
         customInsetColor: '#FFF',
         description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
         credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
-        tags: ['snail-ide', 'builders', 'extcreate'],
+        tags: ['snail-ide', 'builders', 'extcreate', 'disabled'],
         disabled: true,
         featured: true
     },

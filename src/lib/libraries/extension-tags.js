@@ -35,4 +35,8 @@ export default [
     { tag: 'divider1', intlLabel: messages.scratch, type: 'divider' },
     { tag: 'library', intlLabel: messages.library },
     { tag: 'extcreate', intlLabel: messages.extcreate },
+    { tag: 'divider2', intlLabel: messages.scratch, type: 'divider' },
+    { tag: 'new', intlLabel: messages.new },
+    { tag: 'disabled', intlLabel: messages.disabled },
+    { tag: 'comingsoon', intlLabel: messages.comingsoon },
 ];

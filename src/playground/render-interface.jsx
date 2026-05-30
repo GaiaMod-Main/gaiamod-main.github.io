@@ -65,24 +65,22 @@ if (process.env.ANNOUNCEMENT) {
     announcement.innerHTML = process.env.ANNOUNCEMENT;
 }
 
-
-const Toast = Swal.mixin({
-    toast: true,
-    position: 'bottom-start',
-    iconColor: 'blue',
-    customClass: {
-      popup: 'colored-toast',
-    },
-    showConfirmButton: false,
-    timer: 3500,
-    timerProgressBar: true,
+Swal.mixin({
+  toast: true,
+  iconColor: 'blue',
+  position: "bottom-start",
+  showConfirmButton: false,
+  theme: 'auto',
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  }
+}).fire({
+  icon: "success",
+  title: 'GaiaMod is loading...'
 });
-
-
-Toast.fire({
-    icon: 'success',
-    title: 'GaiaMod is loading...'
-})
 
 const handleClickAddonSettings = () => {
     const path = process.env.ROUTING_STYLE === 'wildcard' ? 'addons' : 'addons.html';
