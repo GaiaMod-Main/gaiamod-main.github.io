@@ -1,0 +1,52 @@
+@import '../../css/colors.css';
+
+.ship-guy-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    margin: 60px;
+    margin-bottom: 150px;
+    pointer-events: none;
+}
+
+.ship-guy-fixed {
+    margin: none;
+    position: fixed;
+}
+
+.ship-guy-tip {
+    background-color: $ui-white;
+    border: 1px solid $ui-black-transparent;
+    padding: 8px 12px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    border-radius: 15px;
+    max-width: 200px;
+    font-size: 1em;
+    font-family: 'Inter Variable', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: $text-primary;
+    display: inline-block;
+    position: relative; /* Ensure relative positioning for the pseudo-elements */
+    overflow: hidden;
+}
+
+.ship-guy-image {
+    cursor: pointer;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: -10px;
+    pointer-events: all;
+}
+
+[dir='rtl'] .ship-guy-container {
+    left: 20px;
+}
+
+[dir='rtl'] .ship-guy-image {
+    right: 10px;
+}
+
+[dir='rtl'] #react-tabs-1 .ship-guy-container {
+    margin-right: 320px;
+}

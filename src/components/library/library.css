@@ -6,13 +6,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: calc(100% - (3.4em + $library-header-height));
+    height: calc(100% - (0.5em + $library-header-height));
 }
 .library-filter-bar {
-    width: 342px;
+    width: 300px;
     height: calc(100% - 4px);
-    padding: 6px;
-    margin-left: 4px;
+    padding: 4px;
+    margin-left: 2px;
     border-radius: 8px;
     background: white;
     overflow: auto;
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 6px;
+    margin-left: 4px;
 }
 .library-item-count {
     opacity: 0.5;
@@ -38,7 +38,7 @@
 }
 [dir="rtl"] .library-header {
     margin-left: initial;
-    margin-right: 6px;
+    margin-right: 4px;
 }
 [dir="rtl"] .library-item-count {
     margin-left: initial;
@@ -78,13 +78,13 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 30px;
+    width: 5px;
     border: 0;
     border-radius: $roundedness;
     background-color: $ui-tertiary;
     border: $ui-black-transparent 1px solid;
     margin: $margin;
-    font-size: 0.875rem;
+    font-size: 0.275rem;
     height: calc(100% - calc($margin - 2));
     overflow-y: hidden;
     overflow-x: hidden;
@@ -106,7 +106,7 @@
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
-    gap: 4px;
+    gap: 3px;
     padding: calc($margin * 3);
     padding-left: $margin;
 }
@@ -122,7 +122,7 @@
 
 .filter-input:focus,
 .filter-input:not([value=""]) {
-    width: 18.75rem;
+    width: 10.25rem;
 }
 
 .tag-checkbox-wrapper {
@@ -165,7 +165,7 @@
  display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 1px;
 }
 
 .spinner-wrapper {
