@@ -117,7 +117,7 @@
         if (accentTheme == null) document.body.setAttribute("coloraccent", "Gaia Blue")
         window.Recolor = {primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')}
         if (new URLSearchParams(location.search).has("666")) {document.body.setAttribute("colorAccent", "NIGHTMARE"); document.body.setAttribute('theme', 'dark'); document.querySelector('#splash').setAttribute('splash-theme', 'dark');
-        if (new URLSearchParams(location.search).has("shipguy")) {document.body.setAttribute("colorAccent", "Party Time"); document.body.setAttribute('theme', 'light'); document.querySelector('#splash').setAttribute('splash-theme', 'light');
+        if (new URLSearchParams(location.search).has("shipguywashere")) {document.body.setAttribute("colorAccent", "Partytime"); document.body.setAttribute('theme', 'light'); document.querySelector('#splash').setAttribute('splash-theme', 'light');
           while (document.querySelector('#app') == null) {await new Promise(r => setTimeout(r, 50))}
           document.querySelector('#app').style.filter = "contrast(200%)";
           const evt = new Event('click');

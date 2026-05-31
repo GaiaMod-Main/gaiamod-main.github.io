@@ -505,7 +505,7 @@ body[coloraccent="NIGHTMARE"] {
     --menu-bar-background-image: none;
 }
 
-body[coloraccent="Party Time"] {
+body[coloraccent="Partytime"] {
 --ui-modal-overlay: #FF5EFC90; /* 90% transparent version of motion-primary */
 
 --motion-primary: #CAB5F5; /* #00c3ff */
