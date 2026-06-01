@@ -1246,7 +1246,7 @@ const menuItems = [
 		tags: ['othermods'],
         description: (
             <FormattedMessage
-                defaultMessage="webkit"
+                defaultMessage="Make your own webkit in GaiaMod!"
                 description="Description for the 'webkit' extension"
                 id="gui.extension.toonco1.description"
             />
