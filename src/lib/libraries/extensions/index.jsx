@@ -301,6 +301,9 @@ import mbotInsetIconURL from './mbot/mbot.svg';
 import roku from './roku/roku.jpg';
 import axerAIIconURL from './other/AxerAI.svg';
 import axerAIInsetIconURL from './other/InsetAxerAI.png';
+import motionButtonImage from './motion/motion-small.png';
+import nftIconURL from './nft/nft.png';
+import nftInsetIconURL from './nft/nft-small.svg';
 
 //166iwase-lgtm/taichan0123
 import meshImage from './mesh/mesh.png';
@@ -2356,6 +2359,26 @@ const menuItems = [
         credits: 'arajf',
         tags: ['othermods', 'jokes'],
         description: 'What\'s this extension doing here? You only know it when you use it.',
+        featured: true
+    },
+	{
+        name: (
+            <FormattedMessage
+                defaultMessage="NFT Collection Utilities"
+                description="Name for the 'NFT' extension"
+                id="gui.extension.nft.name"
+            />
+        ),
+        extensionId: 'nft',
+        iconURL: nftIconURL,
+        insetIconURL: nftInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Create NFTs"
+                description="Description for the 'nft' extension"
+                id="gui.extension.nft.description"
+            />
+        ),
         featured: true
     },
 		 {
