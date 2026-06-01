@@ -303,8 +303,8 @@ import axerAIIconURL from './other/AxerAI.svg';
 import axerAIInsetIconURL from './other/InsetAxerAI.png';
 import nftIconURL from './nft/nft.png';
 import nftInsetIconURL from './nft/nft-small.svg';
-import toonco1ImageURL from "./webkit/webKit.png";
-import toonco1ImageSmallURL from "./webkit/Webkit-small.png";
+import toonco1ImageURL from "./webKit/webKit.png";
+import toonco1ImageSmallURL from "./webKit/Webkit-small.png";
 
 // ESP32
 import esp32SerialIconURL from './zumiAI/zumiAI.png';
