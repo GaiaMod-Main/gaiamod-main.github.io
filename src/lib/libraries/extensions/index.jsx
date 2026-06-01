@@ -304,6 +304,18 @@ import axerAIInsetIconURL from './other/InsetAxerAI.png';
 import nftIconURL from './nft/nft.png';
 import nftInsetIconURL from './nft/nft-small.svg';
 
+// ESP32
+import esp32SerialIconURL from './zumiAI/zumiAI.png';
+import esp32SerialInsetIconURL from './zumiAI/zumiAI-small.svg';
+import esp32SerialConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
+import esp32SerialConnectionSmallIconURL from './zumiAI/zumiAI-small.svg';
+
+// ESP32
+import esp32BluetoothIconURL from './zumiAI/zumiAI.png';
+import esp32BluetoothInsetIconURL from './zumiAI/zumiAI_bluetooth-small.svg';
+import esp32BluetoothConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
+import esp32BluetoothConnectionSmallIconURL from './zumiAI/zumiAI_bluetooth-small.svg'; //
+
 //166iwase-lgtm/taichan0123
 import meshImage from './mesh/mesh.png';
 import ledButtonImage from './led/led-small.png';
@@ -2371,6 +2383,7 @@ const menuItems = [
         extensionId: 'nft',
         iconURL: nftIconURL,
         insetIconURL: nftInsetIconURL,
+		tags: ['othermods'],
         description: (
             <FormattedMessage
                 defaultMessage="Create NFTs"
@@ -2558,6 +2571,57 @@ const menuItems = [
 		tags: ['othermods'],
         featured: true,
         disabled: false
+    },
+	{
+        name: 'Zumi AI (with dongle)',
+        extensionId: 'zumiAIS',
+        collaborator: 'ROBOLINK',
+        iconURL: esp32SerialIconURL,
+        insetIconURL: esp32SerialInsetIconURL,
+        description: (
+            <FormattedMessage
+                id="gui.extension.zumiAIS.description"
+                defaultMessage="Zumi AI for Scratch 3 with Bluetooth"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+		tags: ['othermods', 'hardware'],
+        connectionIconURL: esp32SerialConnectionIconURL,
+        connectionSmallIconURL: esp32SerialConnectionSmallIconURL,
+        connectingMessage: 'connecting...', //
+
+        helpLink: 'https://your-custom-help-link.com'
+    },
+
+    {
+        name: 'Zumi AI (with bluetooth)',
+        extensionId: 'zumiAIB',
+        collaborator: 'ROBOLINK',
+        iconURL: esp32BluetoothIconURL,
+        insetIconURL: esp32BluetoothInsetIconURL,
+        description: (
+            <FormattedMessage
+                id="gui.extension.zumiAIB.description"
+                defaultMessage="Zumi AI for Scratch 3 with Bluetooth"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+		tags: ['othermods', 'hardware'],
+        connectionIconURL: esp32BluetoothConnectionIconURL,
+        connectionSmallIconURL: esp32BluetoothConnectionSmallIconURL,
+        connectingMessage: 'connecting...', // 👈
+
+        helpLink: 'https://your-custom-help-link.com'
     },
 	 {        
         name: 'PlayGo',
