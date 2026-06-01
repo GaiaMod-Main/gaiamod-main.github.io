@@ -301,7 +301,6 @@ import mbotInsetIconURL from './mbot/mbot.svg';
 import roku from './roku/roku.jpg';
 import axerAIIconURL from './other/AxerAI.svg';
 import axerAIInsetIconURL from './other/InsetAxerAI.png';
-import motionButtonImage from './motion/motion-small.png';
 import nftIconURL from './nft/nft.png';
 import nftInsetIconURL from './nft/nft-small.svg';
 
