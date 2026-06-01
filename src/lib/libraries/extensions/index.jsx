@@ -303,6 +303,8 @@ import axerAIIconURL from './other/AxerAI.svg';
 import axerAIInsetIconURL from './other/InsetAxerAI.png';
 import nftIconURL from './nft/nft.png';
 import nftInsetIconURL from './nft/nft-small.svg';
+import toonco1ImageURL from "./webkit/webKit.png";
+import toonco1ImageSmallURL from "./webkit/Webkit-small.png";
 
 // ESP32
 import esp32SerialIconURL from './zumiAI/zumiAI.png';
@@ -1215,6 +1217,28 @@ const menuItems = [
         tags: ['snailide'],
         description: 'Interact with your Roku tv via the GM2Helper software!',
         featured: true
+    },
+	{
+        name: (
+            <FormattedMessage
+                defaultMessage="Web kit"
+                description="Name for the 'webkit' extension"
+                id="gui.extension.webkit.name"
+            />
+        ),
+        extensionId: "webkit",
+        iconURL: toonco1ImageURL,
+        insetIconURL: toonco1ImageSmallURL,
+		credits: 'toonco1',
+		tags: ['othermods'],
+        description: (
+            <FormattedMessage
+                defaultMessage="webkit"
+                description="Description for the 'webkit' extension"
+                id="gui.extension.toonco1.description"
+            />
+        ),
+        featured: true,
     },
         {
         name: 'Video Sharing',
@@ -2383,6 +2407,7 @@ const menuItems = [
         extensionId: 'nft',
         iconURL: nftIconURL,
         insetIconURL: nftInsetIconURL,
+        credits: 'Digital Education Safety',
 		tags: ['othermods'],
         description: (
             <FormattedMessage
@@ -2470,6 +2495,7 @@ const menuItems = [
         extensionId: 'ohbot',
         iconURL: ohbotIconURL,
         insetIconURL: ohbotInsetIconURL,
+		credits: 'Ohbot',
         description: 'Control your Ohbot',
         featured: true
     },
