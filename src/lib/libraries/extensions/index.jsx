@@ -232,6 +232,26 @@ import newBlockImage from './newblocks/newblocks.png';
 import newBlockButtonImage from './newblocks/newblocks-small.png';
 import newMicrobitImage from './newmicrobit/newmicrobit.png';
 import newMicrobitButtonImage from './newmicrobit/newmicrobit-small.png';
+import ExtensionInsetIconURL from './ellabsextension/extension-icon.png';
+import ExtensionIconURL from './ellabsextension/extension-background.png';
+
+import playgoIconURL from './playgo/playgo.png';
+import playgoInsetIconURL from './playgo/playgo-small.svg';
+import playgoConnectionIconURL from './wedo2/wedo-illustration.svg';
+import playgoConnectionSmallIconURL from './wedo2/wedo-small.svg';
+import playgoConnectionTipIconURL from './wedo2/wedo-button-illustration.svg';
+
+import playIoTIconURL from './playiot/playiot.png';
+import playIoTInsetIconURL from './playiot/playiot-small.svg';
+import playIoTConnectionIconURL from './wedo2/wedo-illustration.svg';
+import playIoTConnectionSmallIconURL from './wedo2/wedo-small.svg';
+import playIoTConnectionTipIconURL from './wedo2/wedo-button-illustration.svg';
+
+import playMeIconURL from './playme/playme.png';
+import playMeInsetIconURL from './playme/playme-small.svg';
+import playMeConnectionIconURL from './wedo2/wedo-illustration.svg';
+import playMeConnectionSmallIconURL from './wedo2/wedo-small.svg';
+import playMeConnectionTipIconURL from './wedo2/wedo-button-illustration.svg';
 
 //junilab
 import jdcodeIconURL from './jdcode/jdcode.png';
@@ -2505,6 +2525,34 @@ const menuItems = [
         internetConnectionRequired: true,
         bluetoothRequired: true
 
+    },
+	 {
+        name: 'ELLabs Extension',
+        extensionId: 'ellabsextension',
+        iconURL: ExtensionIconURL,
+        insetIconURL: ExtensionInsetIconURL,
+		collaborator: "ishakboufatah",
+        description: 'ELLabs Scratch extension',
+        featured: true,
+        disabled: false
+    },
+	 {        
+        name: 'tdrobotica:PlayGo',
+        extensionId: 'playgo',
+        collaborator: 'tdrobotica',
+        iconURL: playgoIconURL,
+        insetIconURL: playgoInsetIconURL,
+        description: 'Playgo Scratch extension',
+        featured: true,        
+    }, 
+    {
+        name: 'tdrobotica:PlayIoT',
+        extensionId: 'playiot',
+        collaborator: 'tdrobotica',
+        iconURL: playIoTIconURL,
+        insetIconURL: playIoTInsetIconURL,
+		description: 'PlayIoT Scratch extension',
+        featured: true,        
     },
 	{
         name: 'AKARI Blocks',
