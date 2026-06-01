@@ -305,8 +305,8 @@ import nftIconURL from './nft/nft.png';
 import nftInsetIconURL from './nft/nft-small.svg';
 import toonco1ImageURL from './webKit/webKit.png';
 import toonco1ImageSmallURL from './webKit/webKit-small.png';
-import lightSensingIconURL from './lightSensing/light-sensing.png';
-import lightSensingInsetIconURL from './lightSensing/light-sensing-small.svg';
+import bodyblocksIconURL from './bodyblocks/background.png';
+import bodyblocksInsetIconURL from './bodyblocks/inset-small.svg';
 
 // ESP32
 import esp32SerialIconURL from './zumiAI/zumiAI.png';
@@ -1101,6 +1101,17 @@ const menuItems = [
         featured: true,
         extDeveloper: 'MrIncredibleMaker',
         internetConnectionRequired: true
+    },
+	 // Adding bodyblocks extension
+    {
+        name: 'Body Blocks',
+        extensionId: 'bodyblocks',
+        iconURL: bodyblocksIconURL,
+        insetIconURL: bodyblocksInsetIconURL,
+		credits: 'Stephen Howell',
+		tags: ['othermods'],
+        description: 'Control sprites with body movements.\nRequires Android phone app.',
+        featured: true
     },
     {
         name: 'NES Emulator',
@@ -2618,7 +2629,7 @@ const menuItems = [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'ai'],
         connectionIconURL: esp32SerialConnectionIconURL,
         connectionSmallIconURL: esp32SerialConnectionSmallIconURL,
         connectingMessage: 'connecting...', //
@@ -2644,7 +2655,7 @@ const menuItems = [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'ai'],
         connectionIconURL: esp32BluetoothConnectionIconURL,
         connectionSmallIconURL: esp32BluetoothConnectionSmallIconURL,
         connectingMessage: 'connecting...', // 👈
