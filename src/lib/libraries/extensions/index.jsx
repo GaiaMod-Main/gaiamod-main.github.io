@@ -307,6 +307,10 @@ import toonco1ImageURL from './webKit/webKit.png';
 import toonco1ImageSmallURL from './webKit/webKit-small.png';
 import bodyblocksIconURL from './bodyblocks/background.png';
 import bodyblocksInsetIconURL from './bodyblocks/inset-small.svg';
+import PictoBloxMathIconURL from './PictoBloxMath/PictoBloxMath.png';
+import PictoBloxMathInsetIconURL from './PictoBloxMath/PictoBloxMath-small.svg';
+import PictoBloxStringIconURL from './PictoBloxString/PictoBloxString.png';
+import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small.svg';
 
 // ESP32
 import esp32SerialIconURL from './zumiAI/zumiAI.png';
@@ -1077,6 +1081,18 @@ const menuItems = [
         tags: ['othermods', 'ai'],
         description: 'Image Classification Blocks.',
         featured: true
+    },
+{
+        name: 'Another ChatGPT',
+        extensionId: 'https://raw.githubusercontent.com/kokofixcomputers/scratch-extension-collection/refs/heads/main/downloads/chatgpt_scratch_extensions.js',
+        collaborator: 'OpenAI',
+        iconURL: chatgptInsetIconURL,
+        insetIconURL: chatgptIconUrl,
+        tags: ['ai', 'othermods'],
+        description: 'Add the power of ChatGPT to your projects!',
+        extDeveloper: 'kokofixcomputers',
+        featured: true,
+        internetConnectionRequired: true,
     },
      {
         name: 'Hugging Face Transformers',
@@ -2378,6 +2394,26 @@ const menuItems = [
             description: 'Save variables, lists and extra info to a file, then load those things back in.',
             featured: true
         },
+{
+        name: 'PictoBloxMath',
+        extensionId: 'pictobloxmath',
+        iconURL: PictoBloxMathIconURL,
+        insetIconURL: PictoBloxMathInsetIconURL,
+        description: 'New extension for Square',
+		tags: ['othermods'],
+		credits: 'rachit-keshari',
+        featured: true,
+    },
+    {
+        name: 'PictoBloxString',
+        extensionId: 'pictobloxstring',
+        iconURL: PictoBloxStringIconURL,
+        insetIconURL: PictoBloxStringInsetIconURL,
+        description: 'New extension for PictoBlox String',
+		tags: ['othermods'],
+		credits: 'rachit-keshari',
+        featured: true,
+    },
         {
             name: (
                 <FormattedMessage

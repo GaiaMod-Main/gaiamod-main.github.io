@@ -77,6 +77,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://omniblocks.github.io/') ||
     url.startsWith('https://m.ccw.site/user_projects_assets/') || //Cocrea gets it!
     url.startsWith('https://khanning.github.io/scratch-arduino-extension/') ||
+    url.startsWith('https://raw.githubusercontent.com/kokofixcomputers/scratch-extension-collection/refs/heads/main/downloads/') ||
     url.startsWith('https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/') ||
     url.startsWith('https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions') ||
     url.startsWith('https://raw.githubusercontent.com/ningqi24/TurbowarpExtension/refs/heads/main/.js/') ||
