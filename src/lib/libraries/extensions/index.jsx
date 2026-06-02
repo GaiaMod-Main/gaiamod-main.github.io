@@ -234,8 +234,6 @@ import newMicrobitImage from './newmicrobit/newmicrobit.png';
 import newMicrobitButtonImage from './newmicrobit/newmicrobit-small.png';
 import ExtensionInsetIconURL from './ellabsextension/extension-icon.png';
 import ExtensionIconURL from './ellabsextension/extension-background.png';
-import chatgptIconUrl from './penguinmod/extensions/chatgpt.png';
-import chatgptInsetIconURL from './penguinmod/extensions/chatgpt.svg';
 
 import playgoIconURL from './playgo/playgo.png';
 import playgoInsetIconURL from './playgo/playgo-small.svg';
@@ -1103,8 +1101,8 @@ const menuItems = [
         name: 'Another ChatGPT',
         extensionId: 'https://raw.githubusercontent.com/kokofixcomputers/scratch-extension-collection/refs/heads/main/downloads/chatgpt_scratch_extensions.js',
         collaborator: 'OpenAI',
-        iconURL: chatgptInsetIconURL,
-        insetIconURL: chatgptIconUrl,
+        iconURL: 'https://raw.githubusercontent.com/kokodevelopment/kokodevelopment.github.io/04e15b4520da3443d930e38811e8b1e37f9e96b6/src/lib/libraries/extensions/penguinmod/extensions/chatgpt.svg',
+        insetIconURL: 'https://github.com/kokodevelopment/kokodevelopment.github.io/blob/04e15b4520da3443d930e38811e8b1e37f9e96b6/src/lib/libraries/extensions/penguinmod/extensions/chatgpt.png?raw=true',
         tags: ['ai', 'othermods'],
         description: 'Add the power of ChatGPT to your projects!',
         extDeveloper: 'kokofixcomputers',
