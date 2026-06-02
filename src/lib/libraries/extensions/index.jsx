@@ -315,19 +315,19 @@ import PictoBloxStringIconURL from './PictoBloxString/PictoBloxString.png';
 import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small.svg';
 
 //by yj
-import battleImage from './battle.png';
-import battleInsetImage from './battle-small.svg';
-import puzzleImage from './puzzle.png';
-import puzzleInsetImage from './puzzle-small.svg';
-import communityImage from './community.png';
-import communityInsetImage from './community-small.svg';
-import kinectImage from './kinect.png';
-import kinectInsetImage from './kinect-small.svg';
-import canvasIconURL from './canvas.png';
-import canvasInsetIconURL from './canvas-small.svg';
-import lazyAudioIconURL from './lazy-audio.png';
-import lazyAudioInsetIconURL from './lazy-audio-small.svg';
-import jsInsetIconURL from './js-small.svg';
+import battleImage from './gitblock/battle.png';
+import battleInsetImage from './gitblock/battle-small.svg';
+import puzzleImage from './gitblock/puzzle.png';
+import puzzleInsetImage from './gitblock/puzzle-small.svg';
+import communityImage from './gitblock/community.png';
+import communityInsetImage from './gitblock/community-small.svg';
+import kinectImage from './gitblock/kinect.png';
+import kinectInsetImage from './gitblock/kinect-small.svg';
+import canvasIconURL from './gitblock/canvas.png';
+import canvasInsetIconURL from './gitblock/canvas-small.svg';
+import lazyAudioIconURL from './gitblock/lazy-audio.png';
+import lazyAudioInsetIconURL from './gitblock/lazy-audio-small.svg';
+import jsInsetIconURL from './gitblock/js-small.svg';
 
 // ESP32
 import esp32SerialIconURL from './zumiAI/zumiAI.png';
