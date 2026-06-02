@@ -317,8 +317,6 @@ import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small
 //by yj
 import battleImage from './battle.png';
 import battleInsetImage from './battle-small.svg';
-import stringExtImage from './stringExt/string-ext.png';
-import stringExtInsetImage from './stringExt/string-ext-small.svg';
 import puzzleImage from './puzzle.png';
 import puzzleInsetImage from './puzzle-small.svg';
 import communityImage from './community.png';
