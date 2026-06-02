@@ -434,92 +434,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'GaiaGPT',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaGPT.js',
-        iconURL: gaiaGPTThumb,
-		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
-        tags: ['gaiamod', 'ai'],
-		gaiaModRequired: true,
-        description: 'A GaiaMod modification of Pang AI with more prompts.',
-        extDeveloper: 'logise1123 and GaiaWindWave90',
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'Prompts',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GTPPrompts.js',
-        iconURL: promptsThumb,
-		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
-        extDeveloper: 'GaiaWindWave90',
-        tags: ['gaiamod', 'ai'],
-		gaiaModRequired: true,
-        description: 'Prompts made for Gaia AI. Inspired by the prompts extension found in Snail-IDE.',
-        featured: true
-    },
-    {
-        name: 'Spinach Facts',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/SpinachFacts.js',
-        iconURL: spinachThumb,
-		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
-        credits: 'GaiaWindWave90 with some blocks from other users.',
-        tags: ['gaiamod', 'jokes'],
-		gaiaModRequired: true,
-        description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
-        internetConnectionRequired: true,
-        featured: true
-    },
-    {
-            name: 'Penguin Attack!',
-            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PenguinAttack.js',
-            iconURL: penguinThumb,
-    		insetIconURL: gaiamodIcon,
-	    	customInsetColor: '#2D2DD2',
-            tags: ['gaiamod', 'jokes'],
-			gaiaModRequired: true,
-            internetConnectionRequired: true,
-            credits: 'JeremyGamer13, with modifications by GaiaWindWave90',
-            description: 'Edited version of the Fire in the Hole extension.',
-            featured: true
-        },
-    {
-        name: 'Webcam Recorder',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
-        iconURL: webcamThumb,
-		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
-        credits: '-SIPC-, with modifications by GaiaWindWave90',
-        tags: ['gaiamod'],
-		gaiaModRequired: true,
-        description: 'Records videos straight out of webcam.',
-        internetConnectionRequired: false,
-        featured: true
-    },
-    {
-        name: 'Wonder Blocks',
-        extensionId: 'wonderblocks',
-        iconURL: wonderBlocksIcon,
-		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
-        tags: ['gaiamod'],
-        description: 'Some mysterious blocks.',
-        credits: 'GaiaWindWave90 with some blocks from other users.',
-        gaiaModRequired: true,
-        featured: true
-    },
-    {
-        name: 'Extension Manager',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/extensionManager.js',
-        iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
-        credits: 'soiz1, with modifications by GaiaWindWave90',
-        tags: ['gaiamod', 'othermods'],
-        description: 'Manages extensions.',
-        internetConnectionRequired: false,
-        featured: true
-    },
-    {
         name: 'Speech Bubbles',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Speech-Bubbles.js',
         iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Speech-Bubbles.svg',
@@ -572,6 +486,18 @@ const menuItems = [
         extDeveloper: 'DVD',
         featured: true
     },
+	    {
+        name: 'Wonder Blocks',
+        extensionId: 'wonderblocks',
+        iconURL: wonderBlocksIcon,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        tags: ['gaiamod'],
+        description: 'Some mysterious blocks.',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
+        gaiaModRequired: true,
+        featured: true
+    },
   {
         name: 'Bluetooth Request',
         extensionId: 'https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/bluetooth.js',
@@ -579,6 +505,16 @@ const menuItems = [
         iconURL: 'https://bludisanlemon.github.io/lemons-gallery/images/Lemon/bluetooth.png',
         tags: ['othermods'],
         description: "Allows you to send out bluetooth requests to nearby bluetooth devices.",
+        internetConnectionRequired: false,
+        featured: true
+    },
+	 {
+        name: 'Extension Manager',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/extensionManager.js',
+        iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
+        credits: 'soiz1, with modifications by GaiaWindWave90',
+        tags: ['gaiamod', 'othermods'],
+        description: 'Manages extensions.',
         internetConnectionRequired: false,
         featured: true
     },
@@ -847,6 +783,18 @@ const menuItems = [
         featured: true
     },
 	    {
+        name: 'Prompts',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GTPPrompts.js',
+        iconURL: promptsThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        extDeveloper: 'GaiaWindWave90',
+        tags: ['gaiamod', 'ai'],
+		gaiaModRequired: true,
+        description: 'Prompts made for Gaia AI. Inspired by the prompts extension found in Snail-IDE.',
+        featured: true
+    },
+	    {
         name: 'Python',
         extensionId: 'https://extensions.mistium.com/featured/Python.js',
         credits: 'Mistium',
@@ -856,6 +804,19 @@ const menuItems = [
 		customInsetColor: '#D399E5',
         description: "Run python with piodide.",
         internetConnectionRequired: false,
+        featured: true
+    },
+	    {
+        name: 'GaiaGPT',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaGPT.js',
+        iconURL: gaiaGPTThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        tags: ['gaiamod', 'ai'],
+		gaiaModRequired: true,
+        description: 'A GaiaMod modification of Pang AI with more prompts.',
+        extDeveloper: 'logise1123 and GaiaWindWave90',
+        internetConnectionRequired: true,
         featured: true
     },
     {
@@ -1119,6 +1080,19 @@ const menuItems = [
         featured: true,
         extDeveloper: 'MrIncredibleMaker',
         internetConnectionRequired: true
+    },
+	 {
+        name: 'Webcam Recorder',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
+        iconURL: webcamThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        credits: '-SIPC-, with modifications by GaiaWindWave90',
+        tags: ['gaiamod'],
+		gaiaModRequired: true,
+        description: 'Records videos straight out of webcam.',
+        internetConnectionRequired: false,
+        featured: true
     },
 	 // Adding bodyblocks extension
     {
@@ -2491,6 +2465,19 @@ const menuItems = [
         extDeveloper: 'Jambs / jlgri',
         internetConnectionRequired: false
     },
+	 {
+        name: 'Spinach Facts',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/SpinachFacts.js',
+        iconURL: spinachThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
+        tags: ['gaiamod', 'jokes'],
+		gaiaModRequired: true,
+        description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
+        internetConnectionRequired: true,
+        featured: true
+    },
         {
             name: 'Christmas',
             extensionId: 'jgChristmas',
@@ -2521,6 +2508,19 @@ const menuItems = [
             customInsetColor: '#66B8FF',
             tags: ['penguinmod', 'packager'],
             description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
+            featured: true
+        },
+		  {
+            name: 'Penguin Attack!',
+            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PenguinAttack.js',
+            iconURL: penguinThumb,
+    		insetIconURL: gaiamodIcon,
+	    	customInsetColor: '#2D2DD2',
+            tags: ['gaiamod', 'jokes'],
+			gaiaModRequired: true,
+            internetConnectionRequired: true,
+            credits: 'JeremyGamer13, with modifications by GaiaWindWave90',
+            description: 'Edited version of the Fire in the Hole extension.',
             featured: true
         },
       {
