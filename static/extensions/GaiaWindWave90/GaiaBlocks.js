@@ -153,11 +153,6 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
            }
              }
                },
-        {
-            opcode: 'refreshBlocks',
-            blockType: Scratch.BlockType.COMMAND,
-            text: 'Refresh blocks',
-          },
 		  {
             opcode: 'loadExtension',
             blockType: Scratch.BlockType.COMMAND,
