@@ -1833,6 +1833,16 @@ const menuItems = [
         credits: 'LilyMakesThings',
         featured: true
     },
+	{
+        name: 'GitBlock Community',
+        extensionId: 'community',
+        collaborator: 'GitBlock',
+        iconURL: communityImage,
+        insetIconURL: communityInsetImage,
+        description: 'Community blocks.',
+		tags: ['othermods'],
+        featured: true
+    },
     {
         name: 'Swift JSON',
         extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/JSON-Array.js',
@@ -2536,6 +2546,16 @@ const menuItems = [
 		tags: ['othermods'],
         featured: true
     },
+ {
+        name: 'Puzzle',
+        extensionId: 'puzzle',
+        collaborator: 'GitBlock',
+        iconURL: puzzleImage,
+        insetIconURL: puzzleInsetImage,
+        description: 'Puzzle blocks.',
+		tags: ['othermods'],
+        featured: true
+    },
     {
         name: 'Kori Assistant',
         extensionId: 'kori',
@@ -2561,6 +2581,16 @@ const menuItems = [
         insetIconURL: ohbotInsetIconURL,
 		credits: 'Ohbot',
         description: 'Control your Ohbot',
+        featured: true
+    },
+	{
+        name: 'Kinect',
+        extensionId: 'kinect',
+        collaborator: 'GitBlock',
+        iconURL: kinectImage,
+        insetIconURL: kinectInsetImage,
+        description: 'Kinect blocks.',
+		tags: ['othermods', 'hardware'],
         featured: true
     },
     {
