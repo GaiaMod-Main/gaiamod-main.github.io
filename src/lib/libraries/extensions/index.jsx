@@ -370,7 +370,7 @@ import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.pn
 
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
-import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
+import gaiaBlocksThumb from './gaiamod/GaiaUtilities.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
 import sailormoonThumb from './gaiamod/lolsailormoon.png';
 import kittenbotThumb from './gaiamod/KittenBot.png';
