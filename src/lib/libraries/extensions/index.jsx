@@ -370,7 +370,6 @@ import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.pn
 
 //gaiamod
 import gaiaGPTThumb from './gaiamod/GaiaGPT.png';
-import gaiaRuntimeThumb from './gaiamod/runtimeThumb.svg';
 import gaiaBlocksThumb from './gaiamod/gaiablocks.png';
 import gaiaExGalleryThumb from './gaiamod/gallery.png';
 import sailormoonThumb from './gaiamod/lolsailormoon.png';
@@ -423,7 +422,7 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'GaiaBlocks',
+        name: 'Gaia Utilities',
         extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaBlocks.js',
         credits: 'GaiaWindWave90 with some blocks from other users.',
         iconURL: gaiaBlocksThumb,
@@ -445,18 +444,6 @@ const menuItems = [
         description: 'A GaiaMod modification of Pang AI with more prompts.',
         extDeveloper: 'logise1123 and GaiaWindWave90',
         internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'Runtime Tools',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaRuntime.js',
-        iconURL: gaiaRuntimeThumb,
-		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
-        tags: ['gaiamod'],
-		gaiaModRequired: true,
-        description: 'Blocks for modifying Scratch objects like Turbo Mode, stage size, clone limits, and more!',
-        credits: 'GaiaWindWave90 with some blocks from other users.',
         featured: true
     },
     {
