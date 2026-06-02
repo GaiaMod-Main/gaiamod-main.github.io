@@ -234,6 +234,8 @@ import newMicrobitImage from './newmicrobit/newmicrobit.png';
 import newMicrobitButtonImage from './newmicrobit/newmicrobit-small.png';
 import ExtensionInsetIconURL from './ellabsextension/extension-icon.png';
 import ExtensionIconURL from './ellabsextension/extension-background.png';
+import chatgptIconUrl from './penguinmod/extensions/chatgpt.png';
+import chatgptInsetIconURL from './penguinmod/extensions/chatgpt.svg';
 
 import playgoIconURL from './playgo/playgo.png';
 import playgoInsetIconURL from './playgo/playgo-small.svg';
@@ -311,6 +313,23 @@ import PictoBloxMathIconURL from './PictoBloxMath/PictoBloxMath.png';
 import PictoBloxMathInsetIconURL from './PictoBloxMath/PictoBloxMath-small.svg';
 import PictoBloxStringIconURL from './PictoBloxString/PictoBloxString.png';
 import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small.svg';
+
+//by yj
+import battleImage from './battle.png';
+import battleInsetImage from './battle-small.svg';
+import stringExtImage from './stringExt/string-ext.png';
+import stringExtInsetImage from './stringExt/string-ext-small.svg';
+import puzzleImage from './puzzle.png';
+import puzzleInsetImage from './puzzle-small.svg';
+import communityImage from './community.png';
+import communityInsetImage from './community-small.svg';
+import kinectImage from './kinect.png';
+import kinectInsetImage from './kinect-small.svg';
+import canvasIconURL from './canvas.png';
+import canvasInsetIconURL from './canvas-small.svg';
+import lazyAudioIconURL from './lazy-audio.png';
+import lazyAudioInsetIconURL from './lazy-audio-small.svg';
+import jsInsetIconURL from './js-small.svg';
 
 // ESP32
 import esp32SerialIconURL from './zumiAI/zumiAI.png';
