@@ -26,7 +26,10 @@ const TargetPane = ({
     onChangeSpriteName,
     onChangeSpriteRotationStyle,
     onChangeSpriteSize,
+    onChangeSpriteVolume,
     onChangeSpriteVisibility,
+    onChangeSpriteDraggability,
+    onChangeSpriteLayer,
     onChangeSpriteX,
     onChangeSpriteY,
     onDeleteSprite,
@@ -64,7 +67,10 @@ const TargetPane = ({
             onChangeSpriteName={onChangeSpriteName}
             onChangeSpriteRotationStyle={onChangeSpriteRotationStyle}
             onChangeSpriteSize={onChangeSpriteSize}
+            onChangeSpriteVolume={onChangeSpriteVolume}
             onChangeSpriteVisibility={onChangeSpriteVisibility}
+            onChangeSpriteDraggability={onChangeSpriteDraggability}
+            onChangeSpriteLayer={onChangeSpriteLayer}
             onChangeSpriteX={onChangeSpriteX}
             onChangeSpriteY={onChangeSpriteY}
             onDeleteSprite={onDeleteSprite}
@@ -120,7 +126,14 @@ const spriteShape = PropTypes.shape({
     name: PropTypes.string,
     order: PropTypes.number,
     size: PropTypes.number,
+    layer: PropTypes.oneOfType([
+        PropTypes.func,
+        PropTypes.number,
+        PropTypes.string
+    ]),
+    volume: PropTypes.number,
     visibility: PropTypes.bool,
+    draggability: PropTypes.bool,
     x: PropTypes.number,
     y: PropTypes.number
 });
@@ -138,7 +151,10 @@ TargetPane.propTypes = {
     onChangeSpriteName: PropTypes.func,
     onChangeSpriteRotationStyle: PropTypes.func,
     onChangeSpriteSize: PropTypes.func,
+    onChangeSpriteVolume: PropTypes.func,
     onChangeSpriteVisibility: PropTypes.func,
+    onChangeSpriteDraggability: PropTypes.func,
+    onChangeSpriteLayer: PropTypes.func,
     onChangeSpriteX: PropTypes.func,
     onChangeSpriteY: PropTypes.func,
     onDeleteSprite: PropTypes.func,

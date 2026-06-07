@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
 
 import Box from '../box/box.jsx';
 import Label from '../forms/label.jsx';
@@ -17,8 +18,12 @@ import styles from './sprite-info.css';
 
 import xIcon from './icon--x.svg';
 import yIcon from './icon--y.svg';
-import showIcon from './icon--show.svg';
-import hideIcon from './icon--hide.svg';
+import showIcon from '!../../lib/tw-recolor/build!./icon--show.svg';
+import hideIcon from '!../../lib/tw-recolor/build!./icon--hide.svg';
+import dragOnIcon from '!../../lib/tw-recolor/build!./icon--draggable-on.svg';
+import dragOffIcon from '!../../lib/tw-recolor/build!./icon--draggable-off.svg';
+
+import { setSpriteInfoDisabled } from '../../reducers/set-spriteinfo-disabled.js';
 
 const BufferedInput = BufferedInputHOC(Input);
 
@@ -31,6 +36,14 @@ const messages = defineMessages({
 });
 
 class SpriteInfo extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { tick: 0 };
+        this.refresh = this.refresh.bind(this);
+    }
+    refresh() {
+        this.setState({ tick: this.state.tick + 1 });
+    }
     shouldComponentUpdate (nextProps) {
         return (
             this.props.rotationStyle !== nextProps.rotationStyle ||
@@ -38,17 +51,29 @@ class SpriteInfo extends React.Component {
             this.props.name !== nextProps.name ||
             this.props.stageSize !== nextProps.stageSize ||
             this.props.visible !== nextProps.visible ||
+            this.props.draggable !== nextProps.draggable ||
             // Only update these if rounded value has changed
             Math.round(this.props.direction) !== Math.round(nextProps.direction) ||
             Math.round(this.props.size) !== Math.round(nextProps.size) ||
+            Math.round(this.props.volume) !== Math.round(nextProps.volume) ||
             Math.round(this.props.x) !== Math.round(nextProps.x) ||
-            Math.round(this.props.y) !== Math.round(nextProps.y)
+            Math.round(this.props.y) !== Math.round(nextProps.y) ||
+            Math.round(this.props.layer) !== Math.round(nextProps.layer)
         );
+    }
+    componentDidUpdate (prevProps) {
+        if (prevProps.disabled !== this.props.disabled) {
+            this.props.setSpriteInfoDisabled(this.props.disabled);
+        }
     }
     render () {
         const {
             stageSize
         } = this.props;
+
+        document.body.addEventListener("RecolorEvent", (e) => {
+            this.refresh();
+        })
 
         const sprite = (
             <FormattedMessage
@@ -69,6 +94,27 @@ class SpriteInfo extends React.Component {
                 defaultMessage="Size"
                 description="Sprite info size label"
                 id="gui.SpriteInfo.size"
+            />
+        );
+        const dragLabel = (
+            <FormattedMessage
+                defaultMessage="Draggability"
+                description="Sprite info drag label"
+                id="gui.SpriteInfo.drag"
+            />
+        );
+        const volumeLabel = (
+            <FormattedMessage
+                defaultMessage="Volume"
+                description="Sprite info volume label"
+                id="gui.SpriteInfo.volume"
+            />
+        );
+        const layerLabel = (
+            <FormattedMessage
+                defaultMessage="Layer"
+                description="Sprite info layer label"
+                id="gui.SpriteInfo.layer"
             />
         );
 
@@ -157,8 +203,13 @@ class SpriteInfo extends React.Component {
                         {xPosition}
                         {yPosition}
                     </div>
+                    <div className={classNames(styles.row, styles.rowTertiary)}></div>
                 </Box>
             );
+        }
+
+        if (stageSize === STAGE_DISPLAY_SIZES.none) {
+            return null;
         }
 
         return (
@@ -202,7 +253,7 @@ class SpriteInfo extends React.Component {
                             >
                                 <img
                                     className={styles.icon}
-                                    src={showIcon}
+                                    src={showIcon()}
                                 />
                             </div>
                             <div
@@ -221,7 +272,7 @@ class SpriteInfo extends React.Component {
                             >
                                 <img
                                     className={styles.icon}
-                                    src={hideIcon}
+                                    src={hideIcon()}
                                 />
                             </div>
                         </div>
@@ -254,6 +305,92 @@ class SpriteInfo extends React.Component {
                         />
                     </div>
                 </div>
+                <div className={classNames(styles.row, styles.rowTertiary)}>
+                    <div className={labelAbove ? styles.column : styles.group}>
+                        {
+                            stageSize === STAGE_DISPLAY_SIZES.large ?
+                                <Label
+                                    secondary
+                                    text={dragLabel}
+                                /> :
+                                null
+                        }
+                        <div className={styles.radioWrapper}>
+                            <div
+                                className={classNames(
+                                    styles.radio,
+                                    styles.radioFirst,
+                                    styles.iconWrapper,
+                                    {
+                                        [styles.isActive]: this.props.draggable && !this.props.disabled,
+                                        [styles.isDisabled]: this.props.disabled
+                                    }
+                                )}
+                                tabIndex="0"
+                                onClick={this.props.onClickDraggable}
+                                onKeyPress={this.props.onPressDraggable}
+                            >
+                                <img
+                                    className={styles.icon}
+                                    src={dragOnIcon()}
+                                />
+                            </div>
+                            <div
+                                className={classNames(
+                                    styles.radio,
+                                    styles.radioLast,
+                                    styles.iconWrapper,
+                                    {
+                                        [styles.isActive]: !this.props.draggable && !this.props.disabled,
+                                        [styles.isDisabled]: this.props.disabled
+                                    }
+                                )}
+                                tabIndex="0"
+                                onClick={this.props.onClickNotDraggable}
+                                onKeyPress={this.props.onPressNotDraggable}
+                            >
+                                <img
+                                    className={styles.icon}
+                                    src={dragOffIcon()}
+                                />
+                            </div>
+                        </div>
+                        {/*<div className={classNames(styles.group, styles.largerInput)}>
+                            <Label
+                                secondary
+                                above={labelAbove}
+                                text={layerLabel}
+                            >
+                                <BufferedInput
+                                    small
+                                    disabled={this.props.disabled}
+                                    label={layerLabel}
+                                    tabIndex="0"
+                                    type="text"
+                                    value={this.props.disabled ? '' : Math.round(typeof this.props.layer === "function" ? this.props.layer() : this.props.layer)}
+                                    onSubmit={this.props.onChangeLayer}
+                                />
+                            </Label>
+                        </div>*/}
+                    </div>{/*
+                    <div className={classNames(styles.group, styles.largerInput)}>
+                        <Label
+                            secondary
+                            above={labelAbove}
+                            text={volumeLabel}
+                        >
+                            <BufferedInput
+                                small
+                                disabled={this.props.disabled}
+                                label={volumeLabel}
+                                tabIndex="0"
+                                type="text"
+                                value={this.props.disabled ? '' : Math.round(this.props.volume)}
+                                onSubmit={this.props.onChangeVolume}
+                            />
+                        </Label>
+                    </div>*/}
+                </div>
             </Box>
         );
     }
@@ -271,19 +408,35 @@ SpriteInfo.propTypes = {
     onChangeName: PropTypes.func,
     onChangeRotationStyle: PropTypes.func,
     onChangeSize: PropTypes.func,
+    onChangeVolume: PropTypes.func,
+    onChangeLayer: PropTypes.func,
     onChangeX: PropTypes.func,
     onChangeY: PropTypes.func,
     onClickNotVisible: PropTypes.func,
     onClickVisible: PropTypes.func,
     onPressNotVisible: PropTypes.func,
     onPressVisible: PropTypes.func,
+    onClickNotDraggable: PropTypes.func,
+    onClickDraggable: PropTypes.func,
+    onPressNotDraggable: PropTypes.func,
+    onPressDraggable: PropTypes.func,
     rotationStyle: PropTypes.string,
     size: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number
     ]),
+    volume: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
+    layer: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+        PropTypes.func
+    ]),
     stageSize: PropTypes.oneOf(Object.keys(STAGE_DISPLAY_SIZES)).isRequired,
     visible: PropTypes.bool,
+    draggable: PropTypes.bool,
     x: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number
@@ -294,4 +447,9 @@ SpriteInfo.propTypes = {
     ])
 };
 
-export default injectIntl(SpriteInfo);
+const mapDispatchToProps = dispatch => ({
+    setSpriteInfoDisabled: (value) => 
+        dispatch(setSpriteInfoDisabled(value)),
+});
+
+export default connect(null, mapDispatchToProps)(injectIntl(SpriteInfo));
