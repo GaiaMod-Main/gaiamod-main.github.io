@@ -49,7 +49,10 @@ const SpriteSelectorComponent = function (props) {
         onChangeSpriteName,
         onChangeSpriteRotationStyle,
         onChangeSpriteSize,
+        onChangeSpriteVolume,
         onChangeSpriteVisibility,
+        onChangeSpriteDraggability,
+        onChangeSpriteLayer,
         onChangeSpriteX,
         onChangeSpriteY,
         onDrop,
@@ -75,6 +78,7 @@ const SpriteSelectorComponent = function (props) {
         selectedSprite = {};
         spriteInfoDisabled = true;
     }
+    //console.log(selectedSprite)
     return (
         <Box
             className={styles.spriteSelector}
@@ -88,14 +92,20 @@ const SpriteSelectorComponent = function (props) {
                 rotationStyle={selectedSprite.rotationStyle}
                 size={selectedSprite.size}
                 stageSize={stageSize}
+                layer={selectedSprite.getSpriteLayer}
+                volume={selectedSprite.volume}
                 visible={selectedSprite.visible}
+                draggable={selectedSprite.draggable}
                 x={selectedSprite.x}
                 y={selectedSprite.y}
                 onChangeDirection={onChangeSpriteDirection}
                 onChangeName={onChangeSpriteName}
                 onChangeRotationStyle={onChangeSpriteRotationStyle}
                 onChangeSize={onChangeSpriteSize}
+                onChangeVolume={onChangeSpriteVolume}
                 onChangeVisibility={onChangeSpriteVisibility}
+                onChangeDraggability={onChangeSpriteDraggability}
+                onChangeLayer={onChangeSpriteLayer}
                 onChangeX={onChangeSpriteX}
                 onChangeY={onChangeSpriteY}
             />
@@ -120,7 +130,7 @@ const SpriteSelectorComponent = function (props) {
                         title: intl.formatMessage(messages.addSpriteFromFile),
                         img: fileUploadIcon,
                         onClick: onFileUploadClick,
-                        fileAccept: '.svg, .png, .bmp, .webp, .avif, .jpg, .jpeg, .jfif, .webp, .sprite2, .sprite3, .gif, .pms',
+                        fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .sprite2, .sprite3, .gif, .pms',
                         fileChange: onSpriteUpload,
                         fileInput: spriteFileInput,
                         fileMultiple: true
@@ -157,7 +167,10 @@ SpriteSelectorComponent.propTypes = {
     onChangeSpriteName: PropTypes.func,
     onChangeSpriteRotationStyle: PropTypes.func,
     onChangeSpriteSize: PropTypes.func,
+    onChangeSpriteVolume: PropTypes.func,
     onChangeSpriteVisibility: PropTypes.func,
+    onChangeSpriteDraggability: PropTypes.func,
+    onChangeSpriteLayer: PropTypes.func,
     onChangeSpriteX: PropTypes.func,
     onChangeSpriteY: PropTypes.func,
     onDeleteSprite: PropTypes.func,
