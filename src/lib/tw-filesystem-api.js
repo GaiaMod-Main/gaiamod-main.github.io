@@ -58,6 +58,12 @@ const showSaveFilePicker = fileName => window.showSaveFilePicker({
                 }
             },
             {
+                description: 'ScratchX Project',
+                accept: {
+                    'application/x.scratch.sb3': '.sbx'
+                }
+            },
+            {
                 description: 'Scratch 3.0 Project',
                 accept: {
                     'application/x.scratch.sb3': '.sb3'
@@ -74,7 +80,7 @@ const showOpenFilePicker = async () => {
                 {
                     description: 'Supported Files',
                     accept: {
-                        'application/x.scratch.sb3': ['.gaia', '.torch', '.dbp', '.coffee', '.arkide', '.dino', '.electra', '.snail', '.pmp', '.pm', '.sb3', '.sb2', '.sb']
+                        'application/x.scratch.sb3': ['.gaia', '.torch', '.dbp', '.coffee', '.arkide', '.dino', '.electra', '.snail', '.pmp', '.pm', '.sbx', '.sb3', '.sb2', '.sb']
                     }
                 },
                 {
@@ -129,6 +135,12 @@ const showOpenFilePicker = async () => {
                     description: 'PenguinMod Project',
                     accept: {
                         'application/x.scratch.sb3': ['.pmp', '.pm']
+                    }
+                },
+                {
+                    description: 'ScratchX Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.sbx']
                     }
                 },
                 {

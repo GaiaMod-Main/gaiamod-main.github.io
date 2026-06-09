@@ -109,7 +109,7 @@ const SBFileUploaderHOC = function (WrappedComponent) {
                 
                 // pm: Some bad browsers block any file type (Safari) so we need to only add .accept for those which can handle it properly
                 if (isTypeFilterAvailable()) {
-                    this.inputElement.accept = '.sb,.sb2,.sb3,.pm,.pmp,.gaia,.torch,.dbp,.coffee,.arkide,.snail,.dino,.electra';
+                    this.inputElement.accept = '.sb,.sb2,.sb3,.sbx,.pm,.pmp,.gaia,.torch,.dbp,.coffee,.arkide,.snail,.dino,.electra';
                 }
 
                 this.inputElement.style = 'display: none;';
@@ -186,7 +186,7 @@ const SBFileUploaderHOC = function (WrappedComponent) {
             if (!fileInputFilename) return '';
             // only parse title with valid scratch project extensions
             // (.sb, .sb2, and .sb3)
-            const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp|\.gaia|\.torch|\.omega|\.snail|\.dino|\.electra)$/);
+            const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.sbx|\.pm|\.pmp|\.gaia|\.torch|\.dbp|\.coffee|\.arkide|\.snail|\.dino|\.electra)$/);
             if (!matches) return '';
             return matches[1].substring(0, 100); // truncate project title to max 100 chars
         }
