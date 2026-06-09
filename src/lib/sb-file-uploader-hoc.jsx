@@ -186,6 +186,7 @@ const SBFileUploaderHOC = function (WrappedComponent) {
             if (!fileInputFilename) return '';
             // only parse title with valid scratch project extensions
             // (.sb, .sb2, and .sb3)
+			////TODO later: .ich, .zinc, .falcon, .banana, .tera, .cw, .genesis
             const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.sbx|\.pm|\.pmp|\.gaia|\.torch|\.dbp|\.coffee|\.arkide|\.snail|\.dino|\.electra)$/);
             if (!matches) return '';
             return matches[1].substring(0, 100); // truncate project title to max 100 chars
