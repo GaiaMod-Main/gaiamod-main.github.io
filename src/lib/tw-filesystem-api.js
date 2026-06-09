@@ -15,10 +15,22 @@ const showSaveFilePicker = fileName => window.showSaveFilePicker({
                     'application/x.scratch.sb3': '.torch'
                 }
             },
-            {
-                description: 'Omega Turbo Project',
+			{
+                description: 'DashBlocks Project',
                 accept: {
-                    'application/x.scratch.sb3': '.omega'
+                    'application/x.scratch.sb3': '.dbp'
+                }
+            },
+            {
+                description: 'Espresso Project',
+                accept: {
+                    'application/x.scratch.sb3': '.coffee'
+                }
+            },
+            {
+                description: 'Ark IDE Project',
+                accept: {
+                    'application/x.scratch.sb3': '.arkide'
                 }
             },
             {
@@ -62,7 +74,7 @@ const showOpenFilePicker = async () => {
                 {
                     description: 'Supported Files',
                     accept: {
-                        'application/x.scratch.sb3': ['.gaia', '.torch', '.omega', '.dino', '.electra', '.snail', '.pmp', '.pm', '.sb3', '.sb2', '.sb']
+                        'application/x.scratch.sb3': ['.gaia', '.torch', '.dbp', '.coffee', '.arkide', '.dino', '.electra', '.snail', '.pmp', '.pm', '.sb3', '.sb2', '.sb']
                     }
                 },
                 {
@@ -77,10 +89,22 @@ const showOpenFilePicker = async () => {
                         'application/x.scratch.sb3': ['.torch']
                     }
                 },
-                {
-                    description: 'Omega Turbo Project',
+				{
+                    description: 'DashBlocks Project',
                     accept: {
-                        'application/x.scratch.sb3': ['.omega']
+                        'application/x.scratch.sb3': ['.dbp']
+                    }
+                },
+                {
+                    description: 'Espresso Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.coffee']
+                    }
+                },
+                {
+                    description: 'Ark IDE Project',
+                    accept: {
+                        'application/x.scratch.sb3': ['.arkide']
                     }
                 },
                 {
