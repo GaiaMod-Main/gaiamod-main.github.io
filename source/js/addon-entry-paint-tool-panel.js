@@ -1,0 +1,203 @@
+(window["webpackJsonpGUI"] = window["webpackJsonpGUI"] || []).push([["addon-entry-paint-tool-panel"],{
+
+/***/ "./node_modules/css-loader/index.js!./src/addons/addons/editor-theme3/compatibility.css":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/css-loader!./src/addons/addons/editor-theme3/compatibility.css ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* Imported by other addons */\n\n.sa-block-color {\n  --sa-block-colored-background: var(--sa-block-background-primary);\n  --sa-block-colored-background-secondary: var(--sa-block-field-background);\n  --sa-block-bright-background: var(--sa-block-background-primary);\n  --sa-block-text: white;\n  --sa-block-gray-text: white;\n  --sa-block-colored-text: var(--sa-block-background-primary);\n  --sa-block-text-on-bright-background: white;\n}\n\n.sa-block-color-motion {\n  --sa-block-background-primary: var(--editorTheme3-motion-primary, #4c97ff);\n  --sa-block-background-secondary: var(--editorTheme3-motion-secondary, #4280d7);\n  --sa-block-background-tertiary: var(--editorTheme3-motion-tertiary, #3373cc);\n  --sa-block-field-background: var(--editorTheme3-motion-field, #3373cc);\n}\n\n.sa-block-color-looks {\n  --sa-block-background-primary: var(--editorTheme3-looks-primary, #9966ff);\n  --sa-block-background-secondary: var(--editorTheme3-looks-secondary, #855cd6);\n  --sa-block-background-tertiary: var(--editorTheme3-looks-tertiary, #774dcb);\n  --sa-block-field-background: var(--editorTheme3-looks-field, #774dcb);\n}\n\n.sa-block-color-sounds {\n  --sa-block-background-primary: var(--editorTheme3-sounds-primary, #cf63cf);\n  --sa-block-background-secondary: var(--editorTheme3-sounds-secondary, #c94fc9);\n  --sa-block-background-tertiary: var(--editorTheme3-sounds-tertiary, #bd42bd);\n  --sa-block-field-background: var(--editorTheme3-sounds-field, #bd42bd);\n}\n\n.sa-block-color-events {\n  --sa-block-background-primary: var(--editorTheme3-event-primary, #ffbf00);\n  --sa-block-background-secondary: var(--editorTheme3-event-secondary, #e6ac00);\n  --sa-block-background-tertiary: var(--editorTheme3-event-tertiary, #cc9900);\n  --sa-block-field-background: var(--editorTheme3-event-field, #cc9900);\n}\n\n.sa-block-color-control {\n  --sa-block-background-primary: var(--editorTheme3-control-primary, #ffab19);\n  --sa-block-background-secondary: var(--editorTheme3-control-secondary, #ec9c13);\n  --sa-block-background-tertiary: var(--editorTheme3-control-tertiary, #cf8b17);\n  --sa-block-field-background: var(--editorTheme3-control-field, #cf8b17);\n}\n\n.sa-block-color-sensing {\n  --sa-block-background-primary: var(--editorTheme3-sensing-primary, #5cb1d6);\n  --sa-block-background-secondary: var(--editorTheme3-sensing-secondary, #47a8d1);\n  --sa-block-background-tertiary: var(--editorTheme3-sensing-tertiary, #2e8eb8);\n  --sa-block-field-background: var(--editorTheme3-sensing-field, #2e8eb8);\n}\n\n.sa-block-color-operators {\n  --sa-block-background-primary: var(--editorTheme3-operators-primary, #59c059);\n  --sa-block-background-secondary: var(--editorTheme3-operators-secondary, #46b946);\n  --sa-block-background-tertiary: var(--editorTheme3-operators-tertiary, #389438);\n  --sa-block-field-background: var(--editorTheme3-operators-field, #389438);\n}\n\n.sa-block-color-data {\n  --sa-block-background-primary: var(--editorTheme3-data-primary, #ff8c1a);\n  --sa-block-background-secondary: var(--editorTheme3-data-secondary, #ff8000);\n  --sa-block-background-tertiary: var(--editorTheme3-data-tertiary, #db6e00);\n  --sa-block-field-background: var(--editorTheme3-data-field, #db6e00);\n}\n\n.sa-block-color-data-lists,\n.sa-block-color-list {\n  --sa-block-background-primary: var(--editorTheme3-data_lists-primary, #ff661a);\n  --sa-block-background-secondary: var(--editorTheme3-data_lists-secondary, #ff5500);\n  --sa-block-background-tertiary: var(--editorTheme3-data_lists-tertiary, #e64d00);\n  --sa-block-field-background: var(--editorTheme3-data_lists-field, #e64d00);\n}\n\n.sa-block-color-more,\n.sa-block-color-null {\n  --sa-block-background-primary: var(--editorTheme3-more-primary, #ff6680);\n  --sa-block-background-secondary: var(--editorTheme3-more-secondary, #ff4d6a);\n  --sa-block-background-tertiary: var(--editorTheme3-more-tertiary, #ff3355);\n  --sa-block-field-background: var(--editorTheme3-more-field, #ff3355);\n}\n\n.sa-block-color-pen {\n  --sa-block-background-primary: var(--editorTheme3-pen-primary, #0fbd8c);\n  --sa-block-background-secondary: var(--editorTheme3-pen-secondary, #0da57a);\n  --sa-block-background-tertiary: var(--editorTheme3-pen-tertiary, #0b8e69);\n  --sa-block-field-background: var(--editorTheme3-pen-field, #0b8e69);\n}\n\n.sa-block-color-addon-custom-block {\n  --sa-block-background-primary: var(--editorTheme3-sa-primary, #29beb8);\n  --sa-block-background-secondary: var(--editorTheme3-sa-secondary, #3aa8a4);\n  --sa-block-background-tertiary: var(--editorTheme3-sa-tertiary, #3aa8a4);\n  --sa-block-field-background: var(--editorTheme3-sa-field, #3aa8a4);\n}\n\n.sa-block-color-TurboWarp {\n  --sa-block-background-primary: var(--editorTheme3-tw-primary, #ff4c4c);\n  --sa-block-background-secondary: var(--editorTheme3-tw-secondary, #e64444);\n  --sa-block-background-tertiary: var(--editorTheme3-tw-tertiary, #e64444);\n  --sa-block-field-background: var(--editorTheme3-tw-field, #e64444);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./src/addons/addons/undo-redo-buttons/undo-redo-buttons.css":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/css-loader!./src/addons/addons/undo-redo-buttons/undo-redo-buttons.css ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.i(__webpack_require__(/*! -!../../../../node_modules/css-loader!../editor-theme3/compatibility.css */ "./node_modules/css-loader/index.js!./src/addons/addons/editor-theme3/compatibility.css"), "");
+
+// module
+exports.push([module.i, ".sa-buttons-container {\n    display: flex;\n    align-items: center;\n    white-space: nowrap;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    width: 100%;\n    height: 100%;\n    margin-left: 1em;\n}\n.sa-buttons-container[hidden] {\n    /* !important to override displayNoneWhileDisabled */\n    display: none !important;\n}\n\n.sa-buttons-wrapper {\n    overflow: visible;\n    position: relative;\n    height: 2rem;\n    width: 100%;\n    max-width: 16em;\n}\n\n.sa-buttons-dropdown-out {\n    display: block;\n    top: -6px;\n    z-index: 100;\n    width: 100%;\n    max-width: 16em;\n    position: relative;\n    padding: 4px;\n    border: none;\n    border-radius: 4px;\n    margin-top: 6px;\n}\n\n/* We need to modify Scratch styles so that the place where the buttons are injected */\n/* has actually correct size information, which is used to make the buttons not cover up controls */\n[class*=\"gui_tab-list_\"] {\n    width: 100%;\n}\n[class*=\"gui_tab_\"] {\n    flex-grow: 0;\n}\n\nbutton[class*=\"sa-buttons-button\"] {\n    line-height: 28px;\n    width: calc(2rem + 2px);\n    height: calc(2rem + 2px);\n    text-align: center;\n    cursor: pointer;\n    background-color: white;\n}\n\n[theme=\"dark\"] button[class*=\"sa-buttons-button\"] {\n    background-color: #111111;\n}\n\n.icon {\n    width: 100%;\n    height: 100%;\n}\n\nbutton[class*=\"sa-buttons-button\"][disabled] {\n    /* !important to override displayNoneWhileDisabled */\n    filter: saturate(0) !important;\n    cursor: not-allowed !important;\n}\n\nbutton[class*=\"sa-radio-first\"] {\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n}\n\nbutton[class*=\"sa-radio-first\"][dir=\"ltr\"] {\n    border-top-left-radius: var(--form-radius, calc(0.5rem / 2));\n    border-bottom-left-radius: var(--form-radius, calc(0.5rem / 2));\n}\n\nbutton[class*=\"sa-radio-first\"][dir=\"rtl\"] {\n    border-top-right-radius: var(--form-radius, calc(0.5rem / 2));\n    border-bottom-right-radius: var(--form-radius, calc(0.5rem / 2));\n}\n\nbutton[class*=\"sa-radio-first\"]:focus {\n    border-color: var(--motion-primary, hsla(240, 91%, 53%, 1));\n    box-shadow: inset 0 0 0 -2px var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n}\n\nbutton[class*=\"sa-radio-last\"] {\n    border-bottom: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-top: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n}\n\nbutton[class*=\"sa-radio-last\"][dir=\"ltr\"]  {\n    border-right: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-left: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-top-right-radius: var(--form-radius, calc(0.5rem / 2));\n    border-bottom-right-radius: var(--form-radius, calc(0.5rem / 2));\n}\n\nbutton[class*=\"sa-radio-last\"][dir=\"rtl\"] {\n    border-left: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-right: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-top-left-radius: var(--form-radius, calc(0.5rem / 2));\n    border-bottom-left-radius: var(--form-radius, calc(0.5rem / 2));\n}\n\nbutton[class*=\"sa-radio-last\"]:focus {\n    border-color: var(--motion-primary, hsla(240, 91%, 53%, 1));\n    box-shadow: inset 0 0 0 -2px var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./src/addons/addons/undo-redo-buttons/_runtime_entry.js":
+/*!***************************************************************!*\
+  !*** ./src/addons/addons/undo-redo-buttons/_runtime_entry.js ***!
+  \***************************************************************/
+/*! exports provided: resources */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resources", function() { return resources; });
+/* harmony import */ var _userscript_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./userscript.js */ "./src/addons/addons/undo-redo-buttons/userscript.js");
+/* harmony import */ var _css_loader_undo_redo_buttons_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! css-loader!./undo-redo-buttons.css */ "./node_modules/css-loader/index.js!./src/addons/addons/undo-redo-buttons/undo-redo-buttons.css");
+/* harmony import */ var _css_loader_undo_redo_buttons_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_undo_redo_buttons_css__WEBPACK_IMPORTED_MODULE_1__);
+/* generated by pull.js */
+
+
+const resources = {
+  "userscript.js": _userscript_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  "undo-redo-buttons.css": _css_loader_undo_redo_buttons_css__WEBPACK_IMPORTED_MODULE_1___default.a
+};
+
+/***/ }),
+
+/***/ "./src/addons/addons/undo-redo-buttons/userscript.js":
+/*!***********************************************************!*\
+  !*** ./src/addons/addons/undo-redo-buttons/userscript.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
+  let addon = _ref.addon,
+    msg = _ref.msg,
+    console = _ref.console;
+  let buttonsContainer, undoButton, redoButton;
+  let isUIloaded = false;
+  const ThisBlockly = await addon.tab.traps.getBlockly();
+  const icons = {
+    "undoSvg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><svg width=\"20px\" height=\"20px\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch --><title>undo</title><desc>Created with Sketch.</desc><defs></defs><g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g id=\"undo\" fill=\"#2D2DD2\"><path d=\"M15.5581635,12.7700651 L11.8403972,16.4941315 C11.5610922,16.7671364 11.1830854,16.9211391 10.7903784,16.9211391 C10.3990715,16.9211391 10.0210647,16.7671364 9.74035971,16.4941315 L6.02399342,12.7700651 C5.5969858,12.3430574 5.47098355,11.7060461 5.70198767,11.1530362 C5.93299179,10.6000263 6.46500128,10.24302 7.06701202,10.24302 L8.40403587,10.24302 C8.36903525,9.92101423 8.27803362,9.55700774 8.12403088,9.17200087 C8.07573002,9.05999887 8.02602913,8.94799688 7.97002813,8.83599488 C7.89302676,8.70999263 7.90072689,8.67499201 7.79502501,8.52098926 C7.62702201,8.26898476 7.47301926,8.07998139 7.29031601,7.86297752 C6.9200094,7.4639704 6.47200141,7.12096429 5.99599292,6.86895979 C5.5129843,6.6169553 5.00897531,6.46295255 4.56096732,6.37895105 C4.11995945,6.30194968 3.71395221,6.29494955 3.47594796,6.29494955 C3.35694584,6.28794943 3.2029431,6.31594993 3.12594172,6.32295005 C3.04194022,6.32995018 2.99293935,6.3369503 2.99293935,6.3369503 C2.49593048,6.38595117 2.04792249,6.02194468 1.99892162,5.52493582 C1.95692087,5.10492832 2.20192524,4.72692158 2.57293186,4.58691908 C2.57293186,4.58691908 2.62193273,4.56591871 2.6989341,4.53791821 C2.78993573,4.50991771 2.87393723,4.46091684 3.06994072,4.40491584 C3.46194772,4.28591371 3.95895658,4.15991147 4.60996819,4.09691034 C5.25397968,4.04090934 6.03099354,4.05490959 6.85070816,4.22291259 C7.66902276,4.39791571 8.53003812,4.72692158 9.32805235,5.20293007 C9.7060591,5.44793444 10.1120663,5.73493956 10.427072,6.01494456 C10.5670745,6.11994643 10.8050787,6.35795068 10.9450812,6.5049533 C11.1060841,6.67295629 11.2530867,6.84095929 11.4007893,7.01596241 C11.9670994,7.7159749 12.3871069,8.47198839 12.6601118,9.15800062 C12.8211147,9.55000762 12.9331167,9.92101423 13.0171182,10.24302 L14.5151449,10.24302 C15.1171556,10.24302 15.6491651,10.6000263 15.8801692,11.1530362 C16.1111734,11.7060461 15.9851711,12.3430574 15.5581635,12.7700651\" id=\"Fill-1\" transform=\"translate(8.994247, 10.494247) scale(-1, 1) rotate(-45.000000) translate(-8.994247, -10.494247) \"></path></g></g></svg>",
+    "redoSvg": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><svg width=\"20px\" height=\"20px\" viewBox=\"0 0 20 20\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch --><title>redo</title><desc>Created with Sketch.</desc><defs></defs><g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g id=\"redo\" fill=\"#2D2DD2\"><path d=\"M17.5581635,12.7700651 L13.8403972,16.4941315 C13.5610922,16.7671364 13.1830854,16.9211391 12.7903784,16.9211391 C12.3990715,16.9211391 12.0210647,16.7671364 11.7403597,16.4941315 L8.02399342,12.7700651 C7.5969858,12.3430574 7.47098355,11.7060461 7.70198767,11.1530362 C7.93299179,10.6000263 8.46500128,10.24302 9.06701202,10.24302 L10.4040359,10.24302 C10.3690352,9.92101423 10.2780336,9.55700774 10.1240309,9.17200087 C10.07573,9.05999887 10.0260291,8.94799688 9.97002813,8.83599488 C9.89302676,8.70999263 9.90072689,8.67499201 9.79502501,8.52098926 C9.62702201,8.26898476 9.47301926,8.07998139 9.29031601,7.86297752 C8.9200094,7.4639704 8.47200141,7.12096429 7.99599292,6.86895979 C7.5129843,6.6169553 7.00897531,6.46295255 6.56096732,6.37895105 C6.11995945,6.30194968 5.71395221,6.29494955 5.47594796,6.29494955 C5.35694584,6.28794943 5.2029431,6.31594993 5.12594172,6.32295005 C5.04194022,6.32995018 4.99293935,6.3369503 4.99293935,6.3369503 C4.49593048,6.38595117 4.04792249,6.02194468 3.99892162,5.52493582 C3.95692087,5.10492832 4.20192524,4.72692158 4.57293186,4.58691908 C4.57293186,4.58691908 4.62193273,4.56591871 4.6989341,4.53791821 C4.78993573,4.50991771 4.87393723,4.46091684 5.06994072,4.40491584 C5.46194772,4.28591371 5.95895658,4.15991147 6.60996819,4.09691034 C7.25397968,4.04090934 8.03099354,4.05490959 8.85070816,4.22291259 C9.66902276,4.39791571 10.5300381,4.72692158 11.3280524,5.20293007 C11.7060591,5.44793444 12.1120663,5.73493956 12.427072,6.01494456 C12.5670745,6.11994643 12.8050787,6.35795068 12.9450812,6.5049533 C13.1060841,6.67295629 13.2530867,6.84095929 13.4007893,7.01596241 C13.9670994,7.7159749 14.3871069,8.47198839 14.6601118,9.15800062 C14.8211147,9.55000762 14.9331167,9.92101423 15.0171182,10.24302 L16.5151449,10.24302 C17.1171556,10.24302 17.6491651,10.6000263 17.8801692,11.1530362 C18.1111734,11.7060461 17.9851711,12.3430574 17.5581635,12.7700651\" id=\"Fill-1\" transform=\"translate(10.994247, 10.494247) rotate(-45.000000) translate(-10.994247, -10.494247) \"></path></g></g></svg>"
+  };
+  class BlocklyUtil {
+    constructor(blocklyInstance) {
+      this.Blockly = blocklyInstance;
+    }
+    get getBlockly() {
+      return this.Blockly;
+    }
+    get getWorkspace() {
+      const blockly = this.getBlockly;
+      return blockly.getMainWorkspace();
+    }
+  }
+  const Blockly = new BlocklyUtil(ThisBlockly);
+  function createIconButton(title, iconSVG, onClick) {
+    let extraClasses = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '';
+    let attributes = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : '';
+    const imageNode = document.createElement("img");
+    imageNode.src = "data:image/svg+xml;utf8," + encodeURIComponent(iconSVG);
+    imageNode.className = "icon";
+    const button = document.createElement("button");
+    button.title = title;
+    button.className = "sa-buttons-button" + (extraClasses !== '' ? ' ' + extraClasses : '');
+    for (const attribute of attributes) {
+      button[attribute["name"]] = attribute["value"];
+    }
+    button.addEventListener("click", onClick);
+    button.appendChild(imageNode);
+    return button;
+  }
+  function createUI(root) {
+    buttonsContainer = document.createElement("div");
+    buttonsContainer.className = "sa-buttons-container";
+    addon.tab.displayNoneWhileDisabled(buttonsContainer, {
+      display: "flex"
+    });
+    root.appendChild(buttonsContainer);
+    let buttonsWrapper = buttonsContainer.appendChild(document.createElement("span"));
+    buttonsWrapper.className = "sa-buttons-wrapper";
+    let buttonsOut = buttonsWrapper.appendChild(document.createElement("label"));
+    buttonsOut.className = "sa-buttons-dropdown-out";
+    undoButton = createIconButton("Undo", icons["undoSvg"], () => Blockly.getWorkspace.undo(false), 'sa-radio-first', [{
+      "name": "dir",
+      "value": "ltr"
+    }, {
+      "name": "draggable",
+      "value": "no"
+    }]);
+    redoButton = createIconButton("Redo", icons["redoSvg"], () => Blockly.getWorkspace.undo(true), 'sa-radio-last', [{
+      "name": "dir",
+      "value": "ltr"
+    }, {
+      "name": "draggable",
+      "value": "no"
+    }]);
+    buttonsOut.appendChild(undoButton);
+    buttonsOut.appendChild(redoButton);
+    isUIloaded = true;
+  }
+  function tabChanged(node) {
+    if (!node) {
+      return;
+    }
+    const tab = addon.tab.redux.state.scratchGui.editorTab.activeTabIndex;
+    const visible = tab === 0;
+    node.hidden = !visible;
+  }
+  let previousActiveTabDisabled = null;
+  const activeTabUnsubscribe = ReduxStore.subscribe(() => {
+    const newActiveTabDisabled = addon.tab.redux.state.scratchGui.editorTab.activeTabIndex;
+    if (previousActiveTabDisabled !== newActiveTabDisabled) {
+      tabChanged(buttonsContainer);
+    }
+    previousActiveTabDisabled = newActiveTabDisabled;
+  });
+  let previousUndoLength = null;
+  let previousRedoLength = null;
+  const stackUnsubscribe = ReduxStore.subscribe(() => {
+    (async () => {
+      while (!isUIloaded) {
+        await new Promise(resolve => setTimeout(resolve, 10));
+      }
+      const uiUndoButton = document.querySelector("button[class=\"sa-buttons-button sa-radio-first\"]");
+      const uiRedoButton = document.querySelector("button[class=\"sa-buttons-button sa-radio-last\"]");
+      const undoStack = Blockly.getWorkspace.undoStack_;
+      const redoStack = Blockly.getWorkspace.redoStack_;
+      const undoLength = undoStack.length;
+      const redoLength = redoStack.length;
+      if (undoLength !== previousUndoLength) {
+        if (undoLength < 1) {
+          uiUndoButton.setAttribute("disabled", "");
+        } else {
+          uiUndoButton.removeAttribute("disabled");
+        }
+        previousUndoLength = undoLength;
+      }
+      if (redoLength !== previousRedoLength) {
+        if (redoLength < 1) {
+          uiRedoButton.setAttribute("disabled", "");
+        } else {
+          uiRedoButton.removeAttribute("disabled");
+        }
+        previousRedoLength = redoLength;
+      }
+    })();
+  });
+  while (true) {
+    const root = await addon.tab.waitForElement("ul[class*=gui_tab-list_]", {
+      markAsSeen: true,
+      reduxEvents: ["scratch-gui/mode/SET_PLAYER", "fontsLoaded/SET_FONTS_LOADED", "scratch-gui/locales/SELECT_LOCALE"],
+      reduxCondition: state => !state.scratchGui.mode.isPlayerOnly
+    });
+    createUI(root);
+    tabChanged(buttonsContainer);
+  }
+});
+
+/***/ })
+
+}]);
+//# sourceMappingURL=addon-entry-paint-tool-panel.js.map
