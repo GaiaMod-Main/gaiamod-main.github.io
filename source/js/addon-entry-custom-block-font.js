@@ -1,0 +1,56 @@
+(window["webpackJsonpGUI"] = window["webpackJsonpGUI"] || []).push([["addon-entry-custom-block-font"],{
+
+/***/ "./src/addons/addons/custom-block-font/_runtime_entry.js":
+/*!***************************************************************!*\
+  !*** ./src/addons/addons/custom-block-font/_runtime_entry.js ***!
+  \***************************************************************/
+/*! exports provided: resources */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resources", function() { return resources; });
+/* harmony import */ var _userscript_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./userscript.js */ "./src/addons/addons/custom-block-font/userscript.js");
+
+const resources = {
+  "userscript.js": _userscript_js__WEBPACK_IMPORTED_MODULE_0__["default"]
+};
+
+/***/ }),
+
+/***/ "./src/addons/addons/custom-block-font/userscript.js":
+/*!***********************************************************!*\
+  !*** ./src/addons/addons/custom-block-font/userscript.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (async function (_ref) {
+  let addon = _ref.addon,
+    global = _ref.global,
+    console = _ref.console;
+  addon.settings.addEventListener("change", changeFont);
+  addon.self.addEventListener("disabled", disableFont);
+  addon.self.addEventListener("reenabled", changeFont);
+  async function disableFont() {
+    document.querySelectorAll(".customFontForBlocks").forEach(function (el) {
+      el.remove();
+    });
+  }
+  async function changeFont() {
+    disableFont();
+    const font = addon.settings.get("blockFont");
+    var style = document.createElement("style");
+    style.className = "customFontForBlocks";
+    style.innerHTML = "\n            @import url('https://fonts.googleapis.com/css2?family=".concat(font.replaceAll(")", "").replaceAll("'", "").replaceAll("}", "").replaceAll(" ", "+"), ":wght@200;300;400;500;600;700&display=swap');\n            \n            .goog-menuitem-content,\n            .blocklyText {\n                font-family: '").concat(font.replaceAll("\\", "").replaceAll("'", "").replaceAll("}", ""), "', sans-serif;\n            }\n        ");
+    document.body.appendChild(style);
+  }
+  changeFont();
+});
+
+/***/ })
+
+}]);
+//# sourceMappingURL=addon-entry-custom-block-font.js.map
