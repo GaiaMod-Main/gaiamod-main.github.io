@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GaiaMod - Settings</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .window-shell {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0px;
+      border: 0px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
+      outline: 0px solid rgba(89, 0, 255, 0.6);
+    }
+
+    .modal-header {
+      background: rgba(89, 0, 255, 1);
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-shrink: 0;
+      -webkit-app-region: drag;
+    }
+
+    .modal-header-title {
+      font-size: 15px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .modal-close {
+      -webkit-app-region: no-drag;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.25);
+      border: none;
+      color: #ffffff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1;
+    }
+
+    .modal-close:hover {
+      background: rgba(0,0,0,0.45);
+    }
+
+    .body {
+      background: rgba(17, 17, 17, 0.97);
+      padding: 1.5rem 2.25rem;
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tab-container {
+      display: flex;
+      gap: 1.5rem;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      min-width: 180px;
+      padding-right: 1rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      flex-shrink: 0;
+    }
+
+    .tab-button {
+      background: transparent;
+      border: none;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 14px;
+      color: #aaaaaa;
+      transition: background-color 0.15s ease;
+    }
+
+    .tab-button:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-button.active {
+      background: #4f00d872;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      flex: 1;
+      overflow-y: auto;
+      padding-right: 0.5rem;
+      color: #ffffff;
+    }
+
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .setting {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem 0;
+      border-radius: 4px;
+    }
+
+    .setting.active {
+      background: #4f00d872;
+    }
+
+    .setting:hover,
+    .setting:focus-within {
+      background: #2d2041a1;
+    }
+
+    .setting-label {
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .setting-label input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      accent-color: rgba(89, 0, 255, 1);
+      flex-shrink: 0;
+      border-radius: 2px;
+    }
+
+    .help-detail {
+      font-size: 12px;
+      color: #aaaaaa;
+      margin-top: 4px;
+      line-height: 1.5;
+      padding-bottom: 4px;
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0.5rem 0 0 0;
+      font-weight: bold;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .divider {
+      flex-grow: 1;
+      margin-left: 1rem;
+      border-top: 1px dashed rgba(255,255,255,0.2);
+    }
+
+    .btn {
+      font-family: inherit;
+      font-size: 14px;
+      background-color: rgba(89, 0, 255, 1);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem 0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn:hover { background-color: #6600ff; }
+    .btn:active { box-shadow: 0 0 0 3px rgba(89, 0, 255, 0.35); }
+    .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .btn-muted { background-color: #2e2e2e; color: #cccccc; }
+    .btn-muted:hover { background-color: #383838; }
+    .btn-green { background-color: #16a34a; }
+    .btn-green:hover { background-color: #15803d; }
+    .btn-full { display: flex; width: 100%; justify-content: center; }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f87171;
+      flex-shrink: 0;
+    }
+    .status-dot.connected { background: #4ade80; }
+    .status-text.connected { color: #4ade80; }
+    .status-text.disconnected { color: #f87171; }
+
+    .hint {
+      font-size: 12px;
+      color: #555555;
+      padding: 0 1rem;
+      margin-bottom: 12px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.4rem 1rem;
+      font-size: 14px;
+      color: #cccccc;
+    }
+    .info-row span:last-child { color: #ffffff; font-weight: 500; }
+
+    .info-body {
+      font-size: 14px;
+      color: #cccccc;
+      padding: 0.5rem 1rem;
+      line-height: 1.7;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: #555555;
+      padding: 1rem 1rem 0;
+      line-height: 1.8;
+      display: block;
+      text-align: center;
+    }
+
+    .update-status {
+      margin: 0.25rem 0;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      display: none;
+      align-items: center;
+      gap: 8px;
+    }
+    .update-status.checking         { background: #1a2e4a; color: #93c5fd; display: flex; }
+    .update-status.up-to-date       { background: #0f3320; color: #86efac; display: flex; }
+    .update-status.update-available { background: #3a1a00; color: #fdba74; display: flex; }
+    .update-status.error            { background: #3a0f0f; color: #fca5a5; display: flex; }
+
+    .release-notes {
+      background: #1c1c1c;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 14px;
+      border-radius: 4px;
+      max-height: 110px;
+      overflow-y: auto;
+      margin: 0.25rem 0;
+      font-size: 12px;
+      color: #999999;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      flex-shrink: 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .discord-error {
+      font-size: 12px;
+      color: #f87171;
+      padding: 4px 1rem;
+    }
+    .revinfo {
+      font-size: 26px;
+      font-weight: 900;
+      text-align: center;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="window-shell">
+
+    <div class="modal-header">
+      <span class="modal-header-title">GaiaMod Settings</span>
+      <button class="modal-close" onclick="window.close()"><img src="close.svg" width="14" height="14" draggable="false" style="display:block; rotate: 45deg" /></button>
+    </div>
+
+    <div class="body">
+      <div class="tab-container">
+
+        <div class="sidebar">
+          <button class="tab-button active" onclick="switchTab('discord', this)">Discord</button>
+          <button class="tab-button" onclick="switchTab('version', this)">Version</button>
+          <button class="tab-button" onclick="switchTab('feedback', this)">Feedback</button>
+          <button class="tab-button" onclick="switchTab('about', this)">About</button>
+        </div>
+
+        <div class="tab-content">
+
+          <div class="panel active" id="panel-discord">
+            <div class="status-row">
+              <span class="status-dot" id="discord-dot"></span>
+              <span>Status:</span>
+              <span class="status-text disconnected" id="discord-status-text">Disconnected</span>
+            </div>
+            <p class="hint">Show "Making projects on GaiaMod" on your Discord profile</p>
+            <button id="discord-toggle-btn" class="btn btn-full" onclick="toggleDiscord()">
+              Enable Discord Presence
+            </button>
+          </div>
+
+          <div class="panel" id="panel-version">
+            <div class="info-row">
+              <span>Current Version:</span>
+              <span id="current-version">v<span id="current-version-inner">...</span></span>
+            </div>
+            <div class="info-row">
+              <span>Latest Version:</span>
+              <span id="latest-version">—</span>
+            </div>
+            <div id="update-status" class="update-status"></div>
+            <div id="release-notes" class="release-notes"></div>
+            <button id="check-update-btn" class="btn btn-full" onclick="checkForUpdates()">
+              🔄 Check for Updates
+            </button>
+            <button id="download-btn" class="btn btn-green btn-full" style="display:none;" onclick="downloadUpdate()">
+              ⬇️ Download Latest Version
+            </button>
+          </div>
+
+          <div class="panel" id="panel-feedback">
+            <p class="info-body">Please give us feedback on our editor here on our Github page:</p>
+            <button class="btn btn-full"
+                    onclick="window.open('https://github.com/GaiaMod-Main/gaiamod-main.github.io', '_blank')">
+              ➕ Give us feedback
+            </button>
+          </div>
+
+          <div class="panel" id="panel-about">
+            <p class="revinfo">
+              GaiaMod Desktop R41
+            </p>
+            <div class="footer-note">
+              Made with &lt;3 a modification of Ark IDE Dsktop by GaiaWindWave90<br>
+             GaiaMod Desktop Version: <span id="about-version">...</span> &nbsp;|&nbsp; Kronos Version: <span id="kronos-version">[GHCOMMIT]</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let discordEnabled = false;
+
+    function switchTab(id, el) {
+      document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+      document.getElementById('panel-' + id).classList.add('active');
+      el.classList.add('active');
+    }
+
+    async function toggleDiscord() {
+      const btn = document.getElementById('discord-toggle-btn');
+      const statusText = document.getElementById('discord-status-text');
+      const dot = document.getElementById('discord-dot');
+      btn.disabled = true;
+      btn.innerHTML = '<span class="spinner"></span> Processing...';
+      try {
+        if (discordEnabled) {
+          const result = await window.electronAPI.disableDiscord();
+          if (result.success) {
+            discordEnabled = false;
+            btn.textContent = 'Enable Discord Presence';
+            btn.className = 'btn btn-full';
+            statusText.textContent = 'Disconnected';
+            statusText.className = 'status-text disconnected';
+            dot.className = 'status-dot';
+          }
+        } else {
+          const result = await window.electronAPI.enableDiscord();
+          if (result.success && result.connected) {
+            discordEnabled = true;
+            btn.textContent = 'Disable Discord Presence';
+            btn.className = 'btn btn-muted btn-full';
+            statusText.textContent = 'Connected';
+            statusText.className = 'status-text connected';
+            dot.className = 'status-dot connected';
+          } else {
+            statusText.textContent = 'Failed to Connect';
+            statusText.className = 'status-text disconnected';
+            dot.className = 'status-dot';
+            btn.textContent = 'Enable Discord Presence';
+            btn.className = 'btn btn-full';
+            const existing = document.querySelector('.discord-error');
+            if (existing) existing.remove();
+            const err = document.createElement('p');
+            err.className = 'discord-error';
+            err.textContent = '⚠️ Could not connect to Discord. Make sure Discord is running.';
+            btn.parentElement.appendChild(err);
+            setTimeout(() => err.remove(), 5000);
+          }
+        }
+      } catch (error) {
+        statusText.textContent = 'Error';
+        statusText.className = 'status-text disconnected';
+        dot.className = 'status-dot';
+        btn.textContent = 'Enable Discord Presence';
+        btn.className = 'btn btn-full';
+      }
+      btn.disabled = false;
+    }
+
+    async function checkDiscordStatus() {
+      const status = await window.electronAPI.getDiscordStatus();
+      const statusText = document.getElementById('discord-status-text');
+      const dot = document.getElementById('discord-dot');
+      const btn = document.getElementById('discord-toggle-btn');
+      if (status) {
+        discordEnabled = true;
+        statusText.textContent = 'Connected';
+        statusText.className = 'status-text connected';
+        dot.className = 'status-dot connected';
+        btn.textContent = 'Disable Discord Presence';
+        btn.className = 'btn btn-muted btn-full';
+      } else {
+        discordEnabled = false;
+        statusText.textContent = 'Disconnected';
+        statusText.className = 'status-text disconnected';
+        dot.className = 'status-dot';
+        btn.textContent = 'Enable Discord Presence';
+        btn.className = 'btn btn-full';
+      }
+    }
+
+    async function checkForUpdates() {
+      const statusEl = document.getElementById('update-status');
+      const latestVersionEl = document.getElementById('latest-version');
+      const checkBtn = document.getElementById('check-update-btn');
+      const downloadBtn = document.getElementById('download-btn');
+      const releaseNotesEl = document.getElementById('release-notes');
+      statusEl.className = 'update-status checking';
+      statusEl.innerHTML = '<span class="spinner"></span> Checking for updates...';
+      checkBtn.disabled = true;
+      downloadBtn.style.display = 'none';
+      releaseNotesEl.style.display = 'none';
+      try {
+        const result = await window.electronAPI.checkUpdates();
+        if (result.error) {
+          statusEl.className = 'update-status error';
+          statusEl.textContent = '❌ Error: ' + result.error;
+          latestVersionEl.textContent = 'Error';
+        } else {
+          latestVersionEl.textContent = 'v' + result.latestVersion;
+          const isAhead = result.currentVersion.localeCompare(result.latestVersion, undefined, { numeric: true, sensitivity: 'base' }) > 0;
+          if (isAhead) {
+            statusEl.className = 'update-status update-available';
+            statusEl.textContent = '🤔 It seems you\'re somehow on a later version. You\'re either a developer or someone who stole our in-development code.';
+          } else if (result.isUpToDate) {
+            statusEl.className = 'update-status up-to-date';
+            statusEl.textContent = '✅ You are running the latest version!';
+          } else {
+            statusEl.className = 'update-status update-available';
+            statusEl.textContent = '🎉 New version available: v' + result.latestVersion;
+            downloadBtn.style.display = 'flex';
+            downloadBtn.setAttribute('data-url', result.downloadUrl);
+            releaseNotesEl.style.display = 'block';
+            releaseNotesEl.innerHTML = '<strong>Release Notes:</strong><br>' +
+              (typeof result.releaseNotes === 'string' && result.releaseNotes.trim()
+                ? result.releaseNotes.replace(/\n/g, '<br>')
+                : 'No release notes provided.');
+          }
+        }
+      } catch (error) {
+        statusEl.className = 'update-status error';
+        statusEl.textContent = '❌ Failed to check for updates: ' + error.message;
+        latestVersionEl.textContent = 'Error';
+      }
+      checkBtn.disabled = false;
+    }
+
+    function downloadUpdate() {
+      const url = document.getElementById('download-btn').getAttribute('data-url');
+      if (url) window.electronAPI.openUrl(url);
+    }
+
+    async function fetchLatestCommit() {
+      const el = document.getElementById('kronos-version');
+      try {
+        const response = await fetch('https://api.github.com/repos/GaiaMod-Main/gaiamod-main.github.io/commits/main', {
+          headers: { 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if (!response.ok) throw new Error('Failed');
+        const data = await response.json();
+        el.textContent = data.sha.substring(0, 7);
+        el.title = data.commit.message.split('\n')[0];
+      } catch {
+        el.textContent = 'Unknown';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      checkDiscordStatus();
+      setTimeout(checkForUpdates, 500);
+      fetchLatestCommit();
+      window.electronAPI.getAppVersion().then(v => {
+        const inner = document.getElementById('current-version-inner');
+        const about = document.getElementById('about-version');
+        if (inner) inner.textContent = v;
+        if (about) about.textContent = v;
+      });
+    });
+  </script>
+</body>
+</html>

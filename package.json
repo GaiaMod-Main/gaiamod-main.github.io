@@ -1,0 +1,62 @@
+{
+  "name": "ark-ide",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Ark IDE Desktop Application",
+  "author": "arc",
+  "scripts": {
+    "start": "electron .",
+    "update": "bash update-source.sh",
+    "build": "electron-builder",
+    "build:linux": "electron-builder --linux",
+    "build:win": "electron-builder --windows",
+    "build:mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.arc.arkide",
+    "productName": "ArkIDE",
+    "files": [
+      "main.js",
+      "preload.js",
+      "source/**/*",
+      "package.json",
+      "assets/**/*",
+      "settings.html",
+      "close.svg",
+      "version.txt"
+    ],
+    "publish": {
+      "provider": "github",
+      "owner": "arc360alt",
+      "repo": "ArkIDE-Desktop"
+    },
+    "icon": "assets/icons/icon.png",
+    "linux": {
+      "icon": "assets/icons/icon.png",
+      "target": [
+        "AppImage"
+      ],
+      "category": "Development"
+    },
+    "win": {
+      "icon": "assets/icons/icon.ico",
+      "target": [
+        "nsis"
+      ]
+    },
+    "mac": {
+      "icon": "assets/icons/icon.icns",
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "devDependencies": {
+    "electron": "^41.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
