@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GaiaMod, PenguinMod & TurboWarp Credits</title>
+    <style>
+      body[splash-theme="dark"]:not(.tw-loaded) {
+        background: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      (function() {
+        try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
+        if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.setAttribute('splash-theme', 'dark');
+        if (localTheme ? localTheme === 'midnight' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.body.setAttribute('splash-theme', 'midnight');
+        try {var accentTheme = localStorage.getItem('tw:accent');} catch (e) {}
+        if (accentTheme) document.body.setAttribute("coloraccent", accentTheme || "Gaia Blue")
+        if (accentTheme == null) document.body.setAttribute("coloraccent", "Gaia Blue")
+        window.Recolor = {
+          primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')
+        }
+      })();
+    </script>
+    <div id="app"></div>
+  <script src="js/vendors~addon-settings~credits~editor~embed~fullscreen~player~playground.js"></script><script src="js/credits.js"></script></body>
+</html>

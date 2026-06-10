@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <meta name="description" content="GaiaMod is a mod of PenguinMod that was made to add tons of cool stuff to allow for crazy projects." />
+    <title>GaiaMod - A mod of PenguinMod</title>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/GaiaMod-Main/gaiamod-main.github.io/refs/heads/develop/favicon.ico">
+    
+      <link rel="manifest" href="manifest.webmanifest">
+    
+    <style>
+      #splash {
+        position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+        display: flex; align-items: center; justify-content: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #2D2DD2;
+      }
+      .tw-loaded #splash, #splash-content { display: none; }
+      #splash[splash-theme="dark"] { background-color: #333; color: #fff; }
+	  #splash[splash-theme="midight"] { background-color: #000; color: #fff; }
+      #splash-spinner:after {
+        content: " "; display: block; width: 125px; height: 125px;
+        border-radius: 50%; border: 6px solid; border-color: currentColor transparent currentColor transparent;
+        animation: splash-spinner 1.2s linear infinite;
+      }
+      @keyframes splash-spinner {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+	  
+	  .splash-bounce-animation {
+    width: 125px;
+    height: 125px;
+    animation-name: bouncing;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes bouncing {
+  0% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+  }
+  25% {
+      left: 10px;
+      top: -50px;
+      transform: rotate(10deg);
+      animation-timing-function: ease-in;
+  }
+  50% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+      animation-timing-function: ease-out;
+  }
+  75% {
+      left: -10px;
+      top: -50px;
+      transform: rotate(-10deg);
+      animation-timing-function: ease-in;
+  }
+  100% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+  }
+}
+
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEVT078EB6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JEVT078EB6');
+    </script>
+  </head>
+  <body>
+    <div id="splash" aria-hidden="true">
+<noscript>
+  <h3>You must enable Javascript to view the page. Not fair? Then SCRAM!</h3>
+</noscript>
+      <div id="splash-content">
+        <div id="splash-spinner"></div>
+     </div>
+    </div>
+<script>
+      (async function() {
+        document.querySelector('#splash-content').style.display = 'block';
+        const errorLabel = document.querySelector('#splash-debug-error');
+        window.addEventListener('error', function(event) {
+          const errorDetails = {
+            message: event.message,
+            filename: event.filename,
+            lineno: event.lineno,
+            colno: event.colno,
+            error: event.error ? event.error.stack || event.error.toString() : 'No error object'
+          };
+          if (errorLabel) errorLabel.innerHTML += `<pre>${JSON.stringify(errorDetails, null, 2)}</pre>`;
+        });
+        
+        try {var localTheme = localStorage.getItem('tw:theme');} catch (e) {}
+        if (localStorage.getItem("tw:accent:customAccents") == null) localStorage.setItem("tw:accent:customAccents", JSON.stringify([]));
+        if (localTheme ? localTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+        if (localTheme ? localTheme === 'midnight' : window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('#splash').setAttribute('splash-theme', 'midnight');
+        try {var accentTheme = localStorage.getItem('tw:accent');} catch (e) {}
+        if (accentTheme) document.body.setAttribute("coloraccent", accentTheme || "Gaia Blue")
+        if (accentTheme == null) document.body.setAttribute("coloraccent", "Gaia Blue")
+        window.Recolor = {primary: getComputedStyle(document.body).getPropertyValue('--motion-primary')}
+        if (new URLSearchParams(location.search).has("666")) {document.body.setAttribute("colorAccent", "NIGHTMARE"); document.body.setAttribute('theme', 'dark'); document.querySelector('#splash').setAttribute('splash-theme', 'dark');
+          while (document.querySelector('#app') == null) {await new Promise(r => setTimeout(r, 50))}
+          document.querySelector('#app').style.filter = "contrast(200%)";
+          const evt = new Event('click');
+          document.dispatchEvent(evt);
+          while (true) {
+            const thisAudio = new Audio('https://dinosaurmod.github.io/this.mp3');
+            const waittillthis = Math.floor(Math.random() * (2500 * 100)) + 1
+            const thise = document.createElement("div");
+            thise.style.display = "none";
+            thise.innerHTML = String(waittillthis)
+            thise.className = "secret"
+            document.body.appendChild(thise)
+            await new Promise(r => setTimeout(r, waittillthis))
+            thisAudio.play()
+            document.body.removeChild(thise)
+  }
+        }
+        
+      })();
+    </script>
+    <div id="app"></div>
+  <script src="js/vendors~addon-settings~credits~editor~embed~fullscreen~player~playground.js"></script><script src="js/vendors~addon-settings~editor~embed~fullscreen~player~playground.js"></script><script src="js/vendors~editor~embed~fullscreen~player~playground.js"></script><script src="js/addon-settings~addons~editor~fullscreen~player~playground.js"></script><script src="js/player.js"></script></body>
+</html>
