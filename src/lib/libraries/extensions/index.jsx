@@ -312,8 +312,27 @@ import PictoBloxMathIconURL from './PictoBloxMath/PictoBloxMath.png';
 import PictoBloxMathInsetIconURL from './PictoBloxMath/PictoBloxMath-small.svg';
 import PictoBloxStringIconURL from './PictoBloxString/PictoBloxString.png';
 import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small.svg';
+
+//GvbvdxxMod2
 import NESEmuThumb from './nes_emulator/nes.svg';
 import NESInsetIcon from './nes_emulator/nes-small.svg';
+import gm2HTML5Small from './html5/small.svg';
+import gm2HTML5Large from './html5/large.svg';
+import sndanalyserBig from './sound_analyser/big.svg';
+import jsDialogsBigIcon from './dialog/dialogs.png';
+import jsDialogsSmallIcon from './dialog/small.png';
+import speech4pcDialogsBigIcon from './speech4pc/speech.png';
+import speech4pcDialogsSmallIcon from './speech4pc/small.png';
+import websitesBigIcon from './websites/websites.png';
+import websitesSmallIcon from './websites/small.png';
+import scratchBigIcon from './control/scratch.png';
+import scratchSmallIcon from './control/small.png';
+import wssmall from './websockets/small.png';
+import wsbig from './websockets/big.png';
+import audioctxsmall from './audio_context/small.png';
+import audioctxbig from './audio_context/big.png';
+import userdatasmall from './userdata/small.png';
+import userdatabig from './userdata/big.png';
 
 //by yj
 import battleImage from './gitblock/battle.png';
@@ -615,6 +634,16 @@ const menuItems = [
         description: 'Develop apps in GaiaMod.',
         featured: true
     },
+		{
+        name: 'HTML5 Elements',
+        extensionId: 'html5',
+		insetIconURL: gm2HTML5Small,
+        iconURL: gm2HTML5Large,
+        description: 'Create HTMl5 elements. Display sprite costumes out of the stage!',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['othermods'],
+    },
     {
         name: 'Code Cleaner',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/CodeCleaner.js',
@@ -689,6 +718,15 @@ const menuItems = [
         description: 'Dangerous Utility Blocks!',
 		extDeveloper: 'ObviousAlexC',
         featured: true
+    },
+		{
+        name: 'Gvbvdxx Extras',
+        extensionId: 'extra',
+		iconURL: defaultExtensionIcon,
+        description: 'Unfinished Gvbvdxx Mod Helper App.',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['othermods'],
     },
     {
         name: 'URL Information',
@@ -819,6 +857,16 @@ const menuItems = [
         extDeveloper: 'DVD',
         featured: true
     },
+		{
+        name: 'Website API',
+        extensionId: 'websites',
+		iconURL: websitesBigIcon,
+        insetIconURL: websitesSmallIcon,
+        description: 'Website API',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['othermods'],
+    },
     {
         name: 'MediaRecorder',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js',
@@ -864,6 +912,16 @@ const menuItems = [
         extDeveloper: 'logise1123 and GaiaWindWave90',
         internetConnectionRequired: true,
         featured: true
+    },
+	{
+        name: 'Websockets',
+        extensionId: 'websocket',
+        iconURL: wsbig,
+        insetIconURL: wssmall,
+        description: 'Connect to servers!',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['othermods'],
     },
     {
         name: 'Notification',
