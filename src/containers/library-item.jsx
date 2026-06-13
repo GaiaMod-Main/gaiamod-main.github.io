@@ -207,6 +207,7 @@ class LibraryItem extends React.PureComponent {
                 _id={this.props._id}
                 incompatibleWithScratch={this.props.incompatibleWithScratch}
                 extensionWarningOnImport={this.props.extensionWarningOnImport}
+                isBuggy={this.props.isBuggy}
                 insetIconURL={this.props.insetIconURL}
                 customInsetColor={this.props.customInsetColor}
                 internetConnectionRequired={this.props.internetConnectionRequired}
@@ -300,6 +301,7 @@ LibraryItem.propTypes = {
     id: PropTypes.number.isRequired,
     incompatibleWithScratch: PropTypes.bool,
     extensionWarningOnImport: PropTypes.bool,
+    isBuggy: PropTypes.bool,
     insetIconURL: PropTypes.string,
     internetConnectionRequired: PropTypes.bool,
     gaiaModRequired: PropTypes.bool,

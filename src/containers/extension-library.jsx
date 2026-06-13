@@ -51,6 +51,13 @@ batchImport: {
         description: 'Confirm loading buggy and unstable extension',
         id: 'pm.confirmBuggyUnstableExtension'
     },
+    bugWarning: {
+        // eslint-disable-next-line max-len
+        // Copypasted from GvbvdxxMod2
+        defaultMessage: 'This extension is not trusted, and it has some glitches and bugs, adding this in might make GaiaMod collapse, or some blocks may not work correctly, BACK UP YOUR PROJECT FIRST BEFORE USING THESE. Do you want to add the extension now?',
+        description: 'Confirm loading buggy and unstable extension',
+        id: 'pm.confirmBuggyExtension'
+    },
    moreSection: {
         defaultMessage: 'More from {source}',
         description: 'Section title for remaining source extensions after the common section',
@@ -223,6 +230,10 @@ class ExtensionLibrary extends React.PureComponent {
     }
 
     async handleItemSelect(item) {
+       // eslint-disable-next-line no-alert
+        if (item.isBuggy && !confirm(this.props.intl.formatMessage(messages.bugWarning))) {
+            return;
+        }
         // eslint-disable-next-line no-alert
         if (item.extensionWarningOnImport && !confirm(this.props.intl.formatMessage(messages.extensionWarning))) {
             return;

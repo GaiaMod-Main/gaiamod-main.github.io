@@ -298,7 +298,8 @@ import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
 import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
 import mbotIconURL from './mbot/mbot-header.png';
 import mbotInsetIconURL from './mbot/mbot.svg';
-import roku from './roku/roku.jpg';
+import roku from './roku/big.jpg';
+import rokuSmall from './roku/small.png';
 import axerAIIconURL from './other/AxerAI.svg';
 import axerAIInsetIconURL from './other/InsetAxerAI.png';
 import nftIconURL from './nft/nft.png';
@@ -311,6 +312,8 @@ import PictoBloxMathIconURL from './PictoBloxMath/PictoBloxMath.png';
 import PictoBloxMathInsetIconURL from './PictoBloxMath/PictoBloxMath-small.svg';
 import PictoBloxStringIconURL from './PictoBloxString/PictoBloxString.png';
 import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small.svg';
+import NESEmuThumb from './nes_emulator/nes.svg';
+import NESInsetIcon from './nes_emulator/nes-small.svg';
 
 //by yj
 import battleImage from './gitblock/battle.png';
@@ -378,7 +381,6 @@ import cocreaFetchThumb from './gaiamod/cocreaFetch.png';
 import promptsThumb from './gaiamod/prompts.png';
 import spinachThumb from './gaiamod/spinach.png';
 import catsThumb from './gaiamod/CatFacts.png';
-import NESEmuThumb from './gaiamod/NESEmulator.png';
 import AlexaThumb from './gaiamod/Alexa.png';
 import penguinThumb from './gaiamod/PenguinAttack.png';
 import scratchmegarepoThumb from './gaiamod/ScratchMegaRepo.png';
@@ -395,9 +397,64 @@ import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 import obgalleryIcon from './gaiamod/OmniBlocks.svg';
 
+//The "Holy Smokes" extensions that fetches? Got it from GvbvdxxMod2.
+import TWExtensions from './tw-extensions.json'; //TurboWarp
+import AEExtensions from './ae-extensions.json'; //Astra Editor
+import ZTExtensions from './ztengine-extensions.json'; //02 Engine
+import MWExtensions from './mw-extensions.json'; //MistWarp
+import AMExtensions from './am-extensions.json'; //AcidMod
+import SPExtensions from './sp-extensions.json'; //SharkPool
+
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
+
+var amExtensionList = [];
+
+for (var ext of AMExtensions.extensions) {
+	if (!(ext.id.toLowerCase() == "gamepad")) {
+		var extraText = "";
+		if (ext.by) {
+			var tmpArray = [].concat(ext.by);
+			extraText += "By: ";
+			for (var user of tmpArray) {
+				extraText += user.name+" ";
+			}
+		}
+		var extraText2 = "";
+		if (ext.original) {
+			var tmpArray = [].concat(ext.original);
+			extraText2 += "Original: ";
+			for (var user of tmpArray) {
+				extraText2 += user.name+" ";
+			}
+			
+		}
+		var extDescription = ext.description + " " + extraText + "" + extraText2;
+		amExtensionList.push({
+			name: ext.name,
+			extensionId: ext.id,
+			iconURL: defaultExtensionIcon,
+			description: (
+				<div>
+					<span>
+						{extDescription}
+					</span>
+					<br/>
+					<span>From AcidMod Extensions.</span>
+				</div>
+			),
+			featured: true,
+			disabled: false,
+			internetConnectionRequired: false,
+			bluetoothRequired: false,
+			helpLink: '',
+			tags: [
+				"othermods"
+			]
+		});
+	}
+}
 
 const menuItems = [
     {
@@ -526,17 +583,6 @@ const menuItems = [
         insetIconURL: 'https://www.adacraft.org/studio/static/assets/bbb78885842b3cd65078881647f674f2.svg',
         description: 'Some new blocks to encode GIF files.',
         credits: 'Adacraft',
-        featured: true
-    },
-	{
-        name: '3D',
-        extensionId: 'jg3d',
-        iconURL: jg3dExtensionIcon,
-        tags: ['penguinmod'],
-        customInsetColor: '#B200FF',
-        insetIconURL: jg3dInsetExtensionIcon,
-        description: 'Use the wonders and magic of 3D to power-up your project!',
-        extDeveloper: 'JeremyGamer13',
         featured: true
     },
     {
@@ -1108,14 +1154,15 @@ const menuItems = [
     {
         name: 'NES Emulator',
         extensionId: 'nesemulator', // update reference once file names are updated
-        tags: ['snailide'],
+        tags: ['othermods'],
         bluetoothRequired: false,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         iconURL: NESEmuThumb,
-        description: 'Use the power of the NES emulation in your projects!',
+        insetIconURL: NESInsetIcon,
+        description: 'Use the power of the NES emulation in GaiaMod!',
         featured: true,
-        credits: 'Unknown',
+        credits: 'Gvbvdxx',
     },
 {
         name: '3D VR',
@@ -1125,7 +1172,8 @@ const menuItems = [
         tags: ['penguinmod'],
         description: "Unfinished PenguinMod Extension.",
         extDeveloper: "JeremyGamer13",
-        featured: true
+        featured: true,
+		isBuggy: true
     },
 {
         name: 'TensorFlow.js',
@@ -1217,9 +1265,10 @@ const menuItems = [
         name: 'Roku',
         extensionId: 'roku',
         internetConnectionRequired: true,
-        credits: 'gvbvdxx',
+        credits: 'Gvbvdxx',
         iconURL: roku,
-        tags: ['snailide'],
+		insetIconURL: rokuSmall,
+        tags: ['othermods'],
         description: 'Interact with your Roku tv via the GM2Helper software!',
         featured: true
     },
@@ -2497,17 +2546,6 @@ const menuItems = [
             tags: ['penguinmod', 'jokes'],
             description: 'Blocks related to cats.',
             extDeveloper: 'G1nX',
-            featured: true
-        },
-        {
-            name: 'Packager Applications',
-            extensionId: 'jgPackagerApplications',
-            iconURL: jgPackagerApplicationsExtensionIcon,
-            insetIconURL: jgPackagerApplicationsInsetExtensionIcon,
-            twDeveloper: 'CubesterYT',
-            customInsetColor: '#66B8FF',
-            tags: ['penguinmod', 'packager'],
-            description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
             featured: true
         },
 		  {
@@ -3884,7 +3922,7 @@ if (IsLocal || IsLiveTests) {
             insetIconURL: jg3dInsetExtensionIcon,
             description: 'Do not use for real projects. Not recommended, unstable, and will be rewritten/remade entirely at a later date. In development.',
             featured: true,
-            extensionWarningOnImport: true
+            isBuggy: true
         },
         {
             name: '3D Physics',
@@ -3977,7 +4015,7 @@ if (IsLocal || IsLiveTests) {
                 }
             ],
             featured: true,
-            extensionWarningOnImport: true
+            isBuggy: true
         }
     ];
     extras.forEach(ext => {

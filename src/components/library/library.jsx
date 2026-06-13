@@ -448,6 +448,7 @@ class LibraryComponent extends React.Component {
                                 soundLength={dataItem.soundLength}
                                 incompatibleWithScratch={dataItem.incompatibleWithScratch}
                                 extensionWarningOnImport={dataItem.extensionWarningOnImport}
+                                isBuggy={dataItem.isBuggy}
                                 insetIconURL={dataItem.insetIconURL}
                                 internetConnectionRequired={dataItem.internetConnectionRequired}
                                 gaiaModRequired={dataItem.gaiaModRequired}
