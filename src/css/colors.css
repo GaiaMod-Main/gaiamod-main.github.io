@@ -230,6 +230,28 @@ body[coloraccent="Pink"] {
     --menu-bar-background-image: none;
 }
 
+body[coloraccent="Serene Blue"] {
+    --motion-primary: hsla(261, 100%, 50%, 1);
+    --motion-tertiary: hsla(261, 100%, 39%, 1);
+    --motion-transparent: hsla(261, 100%, 50%, 0.35);
+    --motion-light-transparent: hsla(261, 100%, 50%, 0.15);
+
+    --motion-primary-dark: rgba(89, 0, 255);
+    --motion-dark-transparent: rgba(89, 0, 255, 57);
+
+    --extensions-primary: hsla(261, 100%, 50%, 1));
+    --extensions-tertiary: hsla(261, 100%, 39%, 1);
+    --extensions-transparent: hsla(261, 100%, 50%, 0.35);
+    --extensions-light: hsla(261, 100%, 50%, 1);
+    
+    --drop-highlight: hsla(261, 100%, 77%, 1);
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: none;
+}
+
 body[coloraccent="Gray Purple"] {
     --motion-primary: hsla(244, 23%, 48%, 1);
     --motion-tertiary: hsla(244, 23%, 38%, 0.9);

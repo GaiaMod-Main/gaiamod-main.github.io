@@ -15,6 +15,7 @@ const ACCENT_BLUE = 'Blue';
 const ACCENT_SCRATCH = 'Scratch';
 const ACCENT_MAGENTA = 'Magenta';
 const ACCENT_PINK = 'Pink';
+const ACCENT_SERENEBLUE = 'Serene Blue';
 const ACCENT_PALEPURPLE = 'Gray Purple';
 const ACCENT_GOLD = 'Gold';
 const ACCENT_SILVER = 'Silver';
@@ -42,6 +43,9 @@ const ACCENT_MAP = {
     },
     [ACCENT_PINK]: {
         'motion-primary': 'hsla(325, 60%, 60%, 1)'
+    },
+    [ACCENT_SERENEBLUE]: {
+        'motion-primary': 'hsla(261, 100%, 50%, 1)'
     },
     [ACCENT_PALEPURPLE]: {
         'motion-primary': '#625E97'
@@ -118,6 +122,7 @@ export {
     ACCENT_SCRATCH,
     ACCENT_MAGENTA,
     ACCENT_PINK,
+    ACCENT_SERENEBLUE,
     ACCENT_PALEPURPLE,
     ACCENT_GOLD,
     ACCENT_SILVER,

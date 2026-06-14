@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import {MenuItem, Submenu} from '../menu/menu.jsx';
-import {ACCENT_LIGHTBLUE, ACCENT_MAP, ACCENT_RED, ACCENT_GAIABLUE, ACCENT_LIME, ACCENT_BLUE, ACCENT_SCRATCH, ACCENT_MAGENTA, ACCENT_PINK, ACCENT_PALEPURPLE, ACCENT_GOLD, ACCENT_SILVER, ACCENT_BLACK, ACCENT_RAINBOW, ACCENT_NEBULA, ACCENT_COSMIC, ACCENT_AURORA, ACCENT_MINT, ACCENT_CHERRY, Theme} from '../../lib/themes/index.js';
+import {ACCENT_LIGHTBLUE, ACCENT_MAP, ACCENT_RED, ACCENT_GAIABLUE, ACCENT_LIME, ACCENT_BLUE, ACCENT_SCRATCH, ACCENT_MAGENTA, ACCENT_PINK, ACCENT_SERENEBLUE, ACCENT_PALEPURPLE, ACCENT_GOLD, ACCENT_SILVER, ACCENT_BLACK, ACCENT_RAINBOW, ACCENT_NEBULA, ACCENT_COSMIC, ACCENT_AURORA, ACCENT_MINT, ACCENT_CHERRY, Theme} from '../../lib/themes/index.js';
 import {openAccentMenu, accentMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {openCustomAccentModal} from '../../reducers/modals';
 import {setTheme} from '../../reducers/theme.js';
@@ -58,8 +58,13 @@ const options = defineMessages({
     },
     [ACCENT_PINK]: {
         defaultMessage: 'Pink',
-        description: 'Name of the pink color scheme. Matches Genesis-IDE\'s colors.',
+        description: 'Name of the pink color scheme.',
         id: 'gm.accent.pink'
+    },
+    [ACCENT_SERENEBLUE]: {
+        defaultMessage: 'Serene Blue',
+        description: 'Name of the indigoish blue color scheme. Matches Ark IDE\'s colors.',
+        id: 'gm.accent.sereneblue'
     },
     [ACCENT_GOLD]: {
         defaultMessage: 'Gold',
