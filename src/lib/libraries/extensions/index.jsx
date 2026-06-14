@@ -3282,19 +3282,6 @@ const menuItems = [
         helpLink: 'http://www.k-edtech.co.kr'
     },
 	{
-        name: 'Scratch Emo',
-        extensionId: 'emo',
-        collaborator: 'Yukai Engineering Inc.',
-		tags: ['othermods', 'hardware', 'iot'],
-        iconURL: emoBlockImage,
-        insetIconURL: emoBlockInsertIconImage,
-        description: "Play with BOCCO emo!",
-        featured: true,
-        disabled: false,
-        internetConnectionRequired: true,
-        bluetoothRequired: false,
-    },
-	{
         name: 'Snap Circuits U33',
         extensionId: 'snapCircuitsU33',
         collaborator: 'PlusPlus',
