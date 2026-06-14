@@ -1941,6 +1941,17 @@ const menuItems = [
         description: 'Web MIDI for Musical Instrument',
         featured: true
     },
+	{
+        name: 'Another MIDI',
+        extensionId: 'midi',
+        collaborator: 'UchiwaFuujinn',
+        iconURL: midiIconURL,
+        insetIconURL: midiInsetIconURL,
+		tags: ['othermods', 'hardware', 'noisemaker'],
+        description: 'A second Web MIDI extension.',
+        featured: true,
+        disabled: false
+    },
     {
         name: 'Temporary Variables',
         extensionId: 'tempVars',
