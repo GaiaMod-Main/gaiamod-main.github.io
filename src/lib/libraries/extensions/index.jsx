@@ -295,10 +295,6 @@ import akariBlocksSimpleButtonImage from './akariBlocksSimple/logo320_ex.jpg';
 import akariCameraSimpleImage from './akariCameraSimple/logo320.jpg';
 import akariCameraSimpleButtonImage from './akariCameraSimple/logo320_ex.jpg';
 
-// 20210601 otani
-import fromzeroaiIconURL from './fromzeroai/fromzeroai.png';
-import fromzeroaiInsetIconURL from './fromzeroai/fromzeroai-icon.png';
-
 //other
 import appMakerIconURL from './librekitten/appmaker/appmaker.svg';
 import appMakerInsetIconURL from './librekitten/appmaker/software-small.svg';
@@ -2856,18 +2852,6 @@ const menuItems = [
 		tags: ['othermods', 'hardware', 'iot'],
         featured: true
     },
-	{
-        name: "fromZERO AI",
-        extensionId: 'fromzeroai',
-        iconURL: fromzeroaiIconURL,
-        insetIconURL: fromzeroaiInsetIconURL,
-		tags: ['othermods', 'iot', 'ai'],
-        collaborator: 'fromZERO.AI',
-        description: "Identify the names of people, places, and colors in a Japanese text!",
-        featured: true,
-        internetConnectionRequired: true,
-        helpLink: 'https://fromzero.ai/'
-    },
     {
         name: 'scratch2maqueen',
         extensionId: 'scratch2maqueen', // update reference once file names are updated
@@ -3280,6 +3264,33 @@ const menuItems = [
         connectionSmallIconURL: aicobotConnectionSmallIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'http://www.k-edtech.co.kr'
+    },
+	{
+        name: 'Scratch Emo',
+        extensionId: 'emo',
+        collaborator: 'Yukai Engineering Inc.',
+		tags: ['othermods', 'hardware', 'iot'],
+        iconURL: emoBlockImage,
+        insetIconURL: emoBlockInsertIconImage,
+        description: "Play with BOCCO emo!",
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+    },
+	 {
+        name: "Miss Mix A Lot",
+        extensionId: "missmixalot",
+        collaborator: "Coding Class Odense",
+        iconURL: missmixalotIconURL,
+        insetIconURL: missmixalotInsetIconURL,
+		tags: ['othermods', 'iot'],
+        description: 'Miss Mix A Lot blocks.',
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: "https://codingclassodense.dk/",
     },
 	{
         name: 'Snap Circuits U33',
