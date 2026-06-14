@@ -1175,7 +1175,7 @@ const menuItems = [
     },
     {
         name: 'Site Runtime',
-        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/webextension.js',
+        extensionId: 'https://raw.githubusercontent.com/GabsTheCuriousKid/DinosaurModExtensions/refs/heads/main/extensions/webextension.js',
         tags: ['dinosaurmod'],
         iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/site-runtime.png',
 		insetIconURL: dinosaurmodIcon,
