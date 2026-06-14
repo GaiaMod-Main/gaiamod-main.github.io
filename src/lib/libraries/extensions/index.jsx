@@ -234,6 +234,8 @@ import newMicrobitImage from './newmicrobit/newmicrobit.png';
 import newMicrobitButtonImage from './newmicrobit/newmicrobit-small.png';
 import ExtensionInsetIconURL from './ellabsextension/extension-icon.png';
 import ExtensionIconURL from './ellabsextension/extension-background.png';
+import maikaIconURL from './olliMaika/maika.png';
+import maikaforInsetIconURL from './olliMaika/maika-small.png';
 
 import playgoIconURL from './playgo/playgo.png';
 import playgoInsetIconURL from './playgo/playgo-small.svg';
@@ -415,6 +417,38 @@ import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 import obgalleryIcon from './gaiamod/OmniBlocks.svg';
+
+import lassImage from "./lass/lass.png";
+import iftttImage from "./ifttt/ifttt.png";
+import thingspeakImage from "./thingspeak/thingspeak.png";
+
+import smartLumiesIconURL from './smart-lumies/smart-lumies.png';
+import smartLumiesInsetIconURL from './smart-lumies/smart-lumies-small.svg';
+import smartLumiesConnectionIconURL from './smart-lumies/smart-lumies-illustration.svg';
+import smartLumiesConnectionSmallIconURL from './smart-lumies/smart-lumies-small.svg';
+import smartLumiesConnectionTipIconURL from './smart-lumies/smart-lumies-button-illustration.svg';
+import matatabotIconURL from './matatabot/matatabot.png';
+import matatabotInsetIconURL from './matatabot/matatabot-small.svg';
+import matatabotConnectionIconURL from './matatabot/matatabot-illustration.svg';
+import matatabotConnectionSmallIconURL from './matatabot/matatabot-small.svg';
+import midiIconURL from './midi/midi.png';
+import midiInsetIconURL from './midi/midi-small.svg';
+import spikePrimeIconURL from './spikePrime/spikePrime.png';
+import spikePrimeInsetIconURL from './spikePrime/spikePrime-small.svg';
+import spikePrimeConnectionIconURL from './spikePrime/spikePrime-illustration.svg';
+import spikePrimeConnectionSmallIconURL from './spikePrime/spikePrime-small.svg';
+import futureBoardIconURL from './futureBoard/futureBoard.png';
+import futureBoardInsetIconURL from './futureBoard/futureBoard-small.svg';
+import minecraftIconURL from './minecraft/minecraft.png';
+import minecraftInsetIconURL from './minecraft/minecraft-small.svg';
+import toolboxIconURL from './toolbox/toolbox.png';
+import toolboxInsetIconURL from './toolbox/toolbox-small.svg';
+import iCarProIconURL from './iCarPro/iCarPro.png';
+import iCarProInsetIconURL from './iCarPro/iCarPro-small.svg';
+import snapCircuitsU33IconURL from './snapCircuitsU33/snapCircuitsU33.png';
+import snapCircuitsU33InsetIconURL from './snapCircuitsU33/snapCircuitsU33-small.svg';
+import magicBlueUUIconURL from './magicBlueUU/magicBlueUU.png';
+import magicBlueUUInsetIconURL from './magicBlueUU/magicBlueUU-small.svg';
 
 //The "Holy Smokes" extensions that fetches? Got it from GvbvdxxMod2.
 import TWExtensions from './tw-extensions.json'; //TurboWarp
@@ -1063,7 +1097,7 @@ const menuItems = [
         bluetoothRequired: false,
         internetConnectionRequired: true,
         tags: ['othermods', 'ai'],
-        description: 'ML2Scratch Blocks.',
+        description: 'Lets you train with Machine Learning blocks.',
         featured: true
     },
     {
@@ -1134,7 +1168,7 @@ const menuItems = [
         insetIconURL: scratch2webserialapiInsetIconURL,
         credits: 'champierre',
         internetConnectionRequired: true,
-        tags: ['othermods'],
+        tags: ['othermods', 'iot'],
         description: 'Do more complex things with hardware via the serial ports.',
         featured: true
     },
@@ -1197,6 +1231,19 @@ const menuItems = [
         description: 'Records videos straight out of webcam.',
         internetConnectionRequired: false,
         featured: true
+    },
+{
+        name: "LASS",
+        extensionId: "gasoLASS",
+        collaborator: "gasolin",
+        iconURL: lassImage,
+        description: 'Fetch LASS.',
+		tags: ['othermods', 'iot'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        useAutoScan: false,
+        helpLink: "https://github.com/gasolin/scratch3-internet",
     },
 	 // Adding bodyblocks extension
     {
@@ -1326,30 +1373,31 @@ const menuItems = [
         credits: 'Gvbvdxx',
         iconURL: roku,
 		insetIconURL: rokuSmall,
-        tags: ['othermods'],
+        tags: ['othermods', 'iot'],
         description: 'Interact with your Roku tv via the GM2Helper software!',
         featured: true
     },
 	{
-        name: (
-            <FormattedMessage
-                defaultMessage="Web kit"
-                description="Name for the 'webkit' extension"
-                id="gui.extension.webkit.name"
-            />
-        ),
+        name: "ThingSpeak",
+        extensionId: "gasoThingSpeak",
+        collaborator: "gasolin",
+        iconURL: thingspeakImage,
+        description: 'ThingSpeak blocks.',
+        featured: true,
+        disabled: false,
+		tags: ['othermods', 'iot'],
+        internetConnectionRequired: true,
+        useAutoScan: false,
+        helpLink: "https://github.com/gasolin/scratch3-internet",
+    },
+	{
+        name: 'Web kit',
         extensionId: "webkit",
         iconURL: toonco1ImageURL,
         insetIconURL: toonco1ImageSmallURL,
 		credits: 'toonco1',
-		tags: ['othermods'],
-        description: (
-            <FormattedMessage
-                defaultMessage="Make your own webkit in GaiaMod!"
-                description="Description for the 'webkit' extension"
-                id="gui.extension.toonco1.description"
-            />
-        ),
+		tags: ['othermods', 'iot'],
+        description: 'Make your own webkit in GaiaMod!',
         featured: true,
     },
         {
@@ -1500,6 +1548,19 @@ const menuItems = [
         tags: ['turbowarp', 'datamgmt'],
         description: 'Blocks for reading, editing, & creating files & folders.',
         featured: true
+    },
+	{
+        name: "IFTTT",
+        extensionId: "gasoIFTTT",
+        collaborator: "gasolin",
+        iconURL: iftttImage,
+        description: 'IFTTT Webhook',
+        featured: true,
+        disabled: false,
+		tags: ['othermods', 'iot'],
+        internetConnectionRequired: true,
+        useAutoScan: false,
+        helpLink: "https://github.com/gasolin/scratch3-internet",
     },
     {
         name: 'Network',
@@ -2629,6 +2690,23 @@ const menuItems = [
 		tags: ['othermods'],
         featured: true
     },
+	{
+        name: 'Minecraft EDU',
+        extensionId: 'minecraft',
+        collaborator: 'PlusPlus',
+        iconURL: minecraftIconURL,
+        insetIconURL: minecraftInsetIconURL,
+		tags: ['othermods'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Minecraft EDU extension."
+                description="Description for the Minecraft EDU extension"
+                id="gui.extension.minecraft.description"
+            />
+        ),
+        featured: true,
+        disabled: false
+    },
  {
         name: 'Puzzle',
         extensionId: 'puzzle',
@@ -2639,6 +2717,71 @@ const menuItems = [
 		tags: ['othermods'],
         featured: true
     },
+	{
+        name: 'Toolbox',
+        extensionId: 'toolbox',
+        collaborator: 'PlusPlus',
+        iconURL: toolboxIconURL,
+        insetIconURL: toolboxInsetIconURL,
+		tags: ['othermods'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Blocks that help the user in one way or another."
+                description="Description for the Toolbox extension"
+                id="gui.extension.toolbox.description"
+            />
+        ),
+        featured: true,
+        disabled: false
+    },
+	{
+        name: 'Smart Lumies',
+        extensionId: 'smartLumies',
+        collaborator: 'PlusPlus',
+        iconURL: smartLumiesIconURL,
+        insetIconURL: smartLumiesInsetIconURL,
+        description: 'Have fun with Smart Lumies Cube in GaiaMod!',
+		tags: ['othermods', 'iot'],
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: smartLumiesConnectionIconURL,
+        connectionSmallIconURL: smartLumiesConnectionSmallIconURL,
+        connectionTipIconURL: smartLumiesConnectionTipIconURL,
+        connectingMessage: 'Have your Cube nearby.',
+        helpLink: 'https://smartlumies.com'
+    },
+	{
+        name: 'Magic Blue UU',
+        extensionId: 'magicBlueUU',
+        collaborator: 'PlusPlus',
+        iconURL: magicBlueUUIconURL,
+        insetIconURL: magicBlueUUInsetIconURL,
+		tags: ['othermods', 'hardware', 'iot'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Magic Blue UU extension."
+                description="Description for the Magic Blue UU extension"
+                id="gui.extension.magicBlueUU.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Have your Magic Blue UU nearby."
+                id="gui.extension.magicBlueUU.connectingMessage"
+            />
+        )
+    },
     {
         name: 'Kori Assistant',
         extensionId: 'kori',
@@ -2648,7 +2791,7 @@ const menuItems = [
 		connectionIconURL: koriConnectionIconURL,
         connectionSmallIconURL: koriConnectionSmallIconURL,
 		connectingMessage: 'Connecting',
-        tags: ['othermods', 'ai', 'hardware'],
+        tags: ['othermods', 'ai', 'hardware', 'iot'],
         description: 'Experiment with Generative AI.',
         bluetoothRequired: true,
         internetConnectionRequired: true,
@@ -2663,8 +2806,26 @@ const menuItems = [
         iconURL: ohbotIconURL,
         insetIconURL: ohbotInsetIconURL,
 		credits: 'Ohbot',
+		tags: ['othermods', 'hardware', 'iot'],
         description: 'Control your Ohbot',
         featured: true
+    },
+	{
+        name: 'Future Board',
+        extensionId: 'futureBoard',
+        collaborator: 'PlusPlus',
+        iconURL: futureBoardIconURL,
+        insetIconURL: futureBoardInsetIconURL,
+		tags: ['othermods', 'hardware', 'iot'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Future Board extension."
+                description="Description for the Future Board extension"
+                id="gui.extension.futureBoard.description"
+            />
+        ),
+        featured: true,
+        disabled: false
     },
 	{
         name: 'Kinect',
@@ -2673,13 +2834,13 @@ const menuItems = [
         iconURL: kinectImage,
         insetIconURL: kinectInsetImage,
         description: 'Kinect blocks.',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         featured: true
     },
     {
         name: 'scratch2maqueen',
         extensionId: 'scratch2maqueen', // update reference once file names are updated
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         bluetoothRequired: true,
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
@@ -2696,7 +2857,7 @@ const menuItems = [
         twDeveloper: 'khanning',
         iconURL: 'https://web.archive.org/web/20220326094337im_/https://scratchx.org/images/extensions/arduino_small.png',
         insetIconURL: 'https://play-lh.googleusercontent.com/AmzHCh6UEelYfh9AfWXh1WIOC0Z_Z69N9bTvEi-hbRhDe7XL04xuuQfvQXCKLHSHcgVk',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         description: 'Scratch X - Experiment',
         featured: true
     },
@@ -2706,7 +2867,7 @@ const menuItems = [
         iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg',
 		insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
-        tags: ['dash', 'hardware'],
+        tags: ['dash', 'hardware', 'iot'],
 		customInsetColor: '#F98947',
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
 		bluetoothRequired: true,
@@ -2719,7 +2880,7 @@ const menuItems = [
         iconURL: mbotIconURL,
         insetIconURL: mbotInsetIconURL,
         description: 'Control an MBot. Disabled due to the websocket confinct over HTTPS.',
-        tags: ['othermods', 'hardware', 'disabled'],
+        tags: ['othermods', 'hardware', 'disabled', 'iot'],
         featured: true,
         disabled: true,
         bluetoothRequired: true
@@ -2732,7 +2893,7 @@ const menuItems = [
         iconURL: 'https://scratch3beta.robotical.io/static/assets/f1f767c70b08089a3940f35ebfdc315e.png',
         insetIconURL: 'https://scratch3beta.robotical.io/static/assets/825efb8616528b0a1ed8fe7d6f325408.svg',
         description: 'Play and program with Marty.',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: true
@@ -2745,7 +2906,7 @@ const menuItems = [
         iconURL: 'https://bricklife.com/scratch-gui/static/assets/12fd44910fedc5b99761e024ddf05c59.png',
         insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/4e8df03eb146bd7f93b355c62450029b.svg',
         description: 'Build and control your train!',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: true
@@ -2758,11 +2919,29 @@ const menuItems = [
         iconURL: 'https://bricklife.com/scratch-gui/static/assets/27d60d6cf54cf80ce2bbb8493e43262e.png',
         insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/9a7b1e04a4d5afda42d2d4bb2de61247.svg',
         description: 'Build with motors and sensors!',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: true
-
+    },
+    {
+        name: 'LEGO SPIKE Prime',
+        extensionId: 'spikePrime',
+        collaborator: 'bricklife',
+        iconURL: spikePrimeIconURL,
+        insetIconURL: spikePrimeInsetIconURL,
+        description: 'LEGO SPIKE Prime extension.',
+		tags: ['othermods', 'hardware', 'iot'],
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: spikePrimeConnectionIconURL,
+        connectionSmallIconURL: spikePrimeConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://github.com/bricklife/scratch-lego-bluetooth-extensions'
     },
 	 {
         name: 'ELLabs Extension',
@@ -2771,7 +2950,7 @@ const menuItems = [
         insetIconURL: ExtensionInsetIconURL,
 		collaborator: "ishakboufatah",
         description: 'ELLabs Scratch extension',
-		tags: ['othermods'],
+		tags: ['othermods', 'iot'],
         featured: true,
         disabled: false
     },
@@ -2793,7 +2972,7 @@ const menuItems = [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-		tags: ['othermods', 'hardware', 'ai'],
+		tags: ['othermods', 'hardware', 'ai', 'iot'],
         connectionIconURL: esp32SerialConnectionIconURL,
         connectionSmallIconURL: esp32SerialConnectionSmallIconURL,
         connectingMessage: 'connecting...', //
@@ -2819,7 +2998,7 @@ const menuItems = [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-		tags: ['othermods', 'hardware', 'ai'],
+		tags: ['othermods', 'hardware', 'ai', 'iot'],
         connectionIconURL: esp32BluetoothConnectionIconURL,
         connectionSmallIconURL: esp32BluetoothConnectionSmallIconURL,
         connectingMessage: 'connecting...', // 👈
@@ -2833,7 +3012,7 @@ const menuItems = [
         iconURL: playgoIconURL,
         insetIconURL: playgoInsetIconURL,
         description: 'Playgo Scratch extension',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
 		internetConnectionRequired: true,
 		bluetoothRequired: true,
         featured: true,        
@@ -2845,7 +3024,7 @@ const menuItems = [
         iconURL: playIoTIconURL,
         insetIconURL: playIoTInsetIconURL,
 		description: 'PlayIoT Scratch extension',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
 		internetConnectionRequired: true,
 		bluetoothRequired: true,
         featured: true,        
@@ -2857,7 +3036,7 @@ const menuItems = [
         iconURL: akariBlocksImage,
         insetIconURL: akariBlocksButtonImage,
         description: 'AKARI control block',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false
@@ -2869,7 +3048,7 @@ const menuItems = [
         iconURL: akariCameraImage,
         insetIconURL: akariCameraButtonImage,
         description: 'AKARI camera block',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false
@@ -2881,7 +3060,7 @@ const menuItems = [
         iconURL: akariBlocksSimpleImage,
         insetIconURL: akariBlocksSimpleButtonImage,
         description: 'Simple Akari blocks.',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false
@@ -2893,10 +3072,57 @@ const menuItems = [
         iconURL: akariCameraSimpleImage,
         insetIconURL: akariCameraSimpleButtonImage,
         description: 'Simple Akari camera blocks.',
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false
+    },
+	{
+        name: 'MatataBot',
+        extensionId: 'matatabot',
+        collaborator: 'matatalab',
+        iconURL: matatabotIconURL,
+        insetIconURL: matatabotInsetIconURL,
+		tags: ['othermods', 'hardware', 'iot'],
+        description: 'Connect your projects with the MatataBot.',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: matatabotConnectionIconURL,
+        connectionSmallIconURL: matatabotConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://matatalab.com/'
+    },
+	{
+        name: 'Vgate iCar Pro',
+        extensionId: 'iCarPro',
+        collaborator: 'PlusPlus',
+        iconURL: iCarProIconURL,
+        insetIconURL: iCarProInsetIconURL,
+		tags: ['othermods', 'hardware', 'iot'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Vgate iCar Pro extension."
+                description="Description for the Vgate iCar Pro extension"
+                id="gui.extension.iCarPro.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Have your iCar Pro nearby."
+                id="gui.extension.iCarPro.connectingMessage"
+            />
+        )
     },
 {
         name: 'JDCode',
@@ -2909,7 +3135,7 @@ const menuItems = [
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         useAutoScan: false,
         connectionIconURL: jdcodeConnectionIconURL,
         connectionSmallIconURL: jdcodeConnectionSmallIconURL,
@@ -2927,7 +3153,7 @@ const menuItems = [
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         useAutoScan: false,
         connectionIconURL: jcboardConnectionIconURL,
         connectionSmallIconURL: jcboardConnectionSmallIconURL,
@@ -2945,7 +3171,7 @@ const menuItems = [
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         useAutoScan: false,
         connectionIconURL: uglybotConnectionIconURL,
         connectionSmallIconURL: uglybotConnectionSmallIconURL,
@@ -2963,7 +3189,7 @@ const menuItems = [
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         useAutoScan: false,
         connectionIconURL: robodogConnectionIconURL,
         connectionSmallIconURL: robodogConnectionSmallIconURL,
@@ -2981,7 +3207,7 @@ const menuItems = [
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
-		tags: ['othermods', 'hardware'],
+		tags: ['othermods', 'hardware', 'iot'],
         useAutoScan: false,
         connectionIconURL: firmtechConnectionIconURL,
         connectionSmallIconURL: firmtechConnectionSmallIconURL,
@@ -2996,7 +3222,7 @@ const menuItems = [
         insetIconURL: aidroneInsetIconURL,
         description: 'AI Drone with GaiaMod',
         featured: true,
-		tags: ['othermods', 'ai', 'hardware'],
+		tags: ['othermods', 'ai', 'hardware', 'iot'],
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -3014,7 +3240,7 @@ const menuItems = [
         insetIconURL: aicobotInsetIconURL,
         description: 'AICoBot with GaiaMod',
         featured: true,
-		tags: ['othermods', 'ai', 'hardware'],
+		tags: ['othermods', 'ai', 'hardware', 'iot'],
         bluetoothRequired: true,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
@@ -3024,6 +3250,34 @@ const menuItems = [
         connectingMessage: 'Connecting',
         helpLink: 'http://www.k-edtech.co.kr'
     },
+	{
+        name: 'Snap Circuits U33',
+        extensionId: 'snapCircuitsU33',
+        collaborator: 'PlusPlus',
+        iconURL: snapCircuitsU33IconURL,
+        insetIconURL: snapCircuitsU33InsetIconURL,
+		tags: ['othermods', 'hardware', 'iot'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Snap Circuits U33 extension."
+                description="Description for the Snap Circuits U33 extension"
+                id="gui.extension.snapCircuitsU33.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Have your Snap Circuits U33 nearby."
+                id="gui.extension.snapCircuitsU33.connectingMessage"
+            />
+        )
+    },
 {
         name: 'OneGpio Arduino',
         extensionId: 'onegpioArduino',
@@ -3031,7 +3285,7 @@ const menuItems = [
         iconURL: onegpioArduinoImage,
         insetIconURL: onegpioArduinoInsetIconURL,
         description: 'OneGPIOArduino',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,
@@ -3044,7 +3298,7 @@ const menuItems = [
         iconURL: onegpioRpiImage,
         insetIconURL: onegpioRpiInsetIconURL,
         description: 'OneGPIORpi',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,
@@ -3058,7 +3312,7 @@ const menuItems = [
         iconURL: onegpioEspImage,
         insetIconURL: onegpioEspInsetIconURL,
         description: 'OneGPIOEsp',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,
@@ -3072,7 +3326,7 @@ const menuItems = [
         iconURL: onegpioPicoboardImage,
         insetIconURL: onegpioPicoboardInsetIconURL,
         description: 'OneGPIOPicoboard',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,
@@ -3086,7 +3340,7 @@ const menuItems = [
         iconURL: onegpioCpxImage,
         insetIconURL: onegpioCpxInsetIconURL,
         description: 'OneGPIOCpx',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,
@@ -3100,7 +3354,7 @@ const menuItems = [
         iconURL: onegpioRoboHATImage,
         insetIconURL: onegpioRoboHATInsetIconURL,
         description: 'OneGPIORoboHAT',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,
@@ -3114,7 +3368,7 @@ const menuItems = [
         iconURL: onegpioRpiPicoImage,
         insetIconURL: onegpioRpiPicoInsetIconURL,
         description: 'onegpioRpiPico',
-        tags: ['othermods', 'hardware'],
+        tags: ['othermods', 'hardware', 'iot'],
         featured: true,
         internetConnectionRequired: true,
         bluetoothRequired: false,

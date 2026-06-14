@@ -231,6 +231,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by AI',
         id: 'pm.libraryTags.ai'
     },
+    iot: {
+        defaultMessage: 'IoT',
+        description: 'Tag for filtering a library by internet of things',
+        id: 'pm.libraryTags.iot'
+    },
     jokes: {
         defaultMessage: 'Jokes',
         description: 'Tag for filtering a library by jokes',
