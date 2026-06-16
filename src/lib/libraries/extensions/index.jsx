@@ -461,6 +461,7 @@ import ZTExtensions from './ztengine-extensions.json'; //02 Engine
 import MWExtensions from './mw-extensions.json'; //MistWarp
 import AMExtensions from './am-extensions.json'; //AcidMod
 import SPExtensions from './sp-extensions.json'; //SharkPool
+import NBExtensions from './nb-extensions.json'; //NitroBolt
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -468,7 +469,7 @@ const IsLiveTests = urlParams.has('livetests');
 
 var amExtensionList = [];
 
-for (var ext of AMExtensions.extensions) {
+for (var ext of NBExtensions.extensions) {
 	if (!(ext.id.toLowerCase() == "gamepad")) {
 		var extraText = "";
 		if (ext.by) {
@@ -498,7 +499,7 @@ for (var ext of AMExtensions.extensions) {
 						{extDescription}
 					</span>
 					<br/>
-					<span>From AcidMod Extensions.</span>
+					<span>From NitroBolt Extensions.</span>
 				</div>
 			),
 			featured: true,
