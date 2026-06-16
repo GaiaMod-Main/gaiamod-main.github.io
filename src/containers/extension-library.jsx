@@ -18,16 +18,6 @@ const messages = defineMessages({
         description: 'Heading for the extension library',
         id: 'gui.extensionLibrary.chooseAnExtension'
     },
-batchImport: {
-        defaultMessage: 'Batch import {count} extensions',
-        description: 'Button label for importing multiple selected extensions',
-        id: 'tw.extensionLibrary.batchImport'
-    },
-    clearSelection: {
-        defaultMessage: 'Clear selection',
-        description: 'Button label for clearing selected extensions from the batch queue',
-        id: 'tw.extensionLibrary.clearSelection'
-    },
     // extensionUrl: {
     //     defaultMessage: 'Enter the URL of the extension',
     //     description: 'Prompt for unoffical extension url',
@@ -73,45 +63,15 @@ batchImport: {
         description: 'Empty state description in the extension library',
         id: 'tw.extensionLibrary.emptyDescription'
     },
-    clearFilters: {
-        defaultMessage: 'Clear filters',
-        description: 'Button label to clear extension library filters',
-        id: 'tw.extensionLibrary.clearFilters'
-    },
     badgeIncompatible: {
         defaultMessage: 'Not Scratch-compatible',
         description: 'Status badge for incompatible extensions',
         id: 'tw.extensionLibrary.badge.incompatible'
     },
-    badgeNative: {
-        defaultMessage: 'Native',
-        description: 'Status badge for native extensions',
-        id: 'tw.extensionLibrary.badge.native'
-    },
-    openWebsite: {
-        defaultMessage: 'Open website',
-        description: 'Action hint for extension library website links',
-        id: 'tw.extensionLibrary.action.website'
-    },
-    enableFeature: {
-        defaultMessage: 'Enable feature',
-        description: 'Action hint for special extension actions',
-        id: 'tw.extensionLibrary.action.enableFeature'
-    },
     importExtension: {
         defaultMessage: 'Click to import',
         description: 'Action hint for importing an extension',
         id: 'tw.extensionLibrary.action.import'
-    },
-    ccwName: {
-        defaultMessage: '加载CCW扩展',
-        description: 'Name of the CCW extension loader item',
-        id: 'tw.extensionLibrary.ccw.name'
-    },
-    ccwDescription: {
-        defaultMessage: '从共创世界加载扩展，可从 https://assets.ccw.site/extensions 获取。',
-        description: 'Description of the CCW extension loader item',
-        id: 'tw.extensionLibrary.ccw.description'
     },
     libraryHeader: {
         defaultMessage: 'Extension Library',

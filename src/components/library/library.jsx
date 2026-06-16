@@ -313,9 +313,33 @@ class LibraryComponent extends React.Component {
                 id={this.props.id}
                 onRequestClose={this.handleClose}
             >
-			     <span className={classNames(styles.whiteTextInDarkMode)}>
-                            <b>Item Count:</b> {this.state.data.length}
-                        </span>
+                {/*
+                    todo: translation support?
+                */}
+                {this.props.header ? (
+                    <h1
+                        className={classNames(
+                            styles.libraryHeader,
+                            styles.whiteTextInDarkMode
+                        )}
+                    >
+                        <button
+                            style={this.state.collapsed ? { transform: "scaleX(0.65)" } : null}
+                            className={classNames(styles.libraryFilterCollapse)}
+                            onClick={() => {
+                                this.setState({
+                                    collapsed: !this.state.collapsed
+                                });
+                            }}
+                        />
+                        {this.props.header}
+                        <p
+                            className={classNames(styles.libraryItemCount)}
+                        >
+                            {this.state.data.length}
+                        </p>
+                    </h1>
+                ) : null}
                 {/* filter bar & stuff */}
                 <div className={classNames(styles.libraryContentWrapper)}>
                     <div

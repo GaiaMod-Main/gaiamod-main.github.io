@@ -56,7 +56,6 @@
 }
 
 .library-scroll-grid {
-    width: calc(100% - 346px);
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
@@ -64,10 +63,10 @@
     background: $ui-secondary;
     flex-grow: 1;
     flex-wrap: wrap;
-    overflow-y: auto;
+    overflow-y: scroll;
     height: auto;
+    width: calc(100% - 600px);
     padding: 0.5rem;
-    height: calc(100%);
 }
 
 .library-scroll-grid.withFilterBar {
@@ -78,13 +77,13 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 5px;
+    width: 30px;
     border: 0;
     border-radius: $roundedness;
     background-color: $ui-tertiary;
     border: $ui-black-transparent 1px solid;
     margin: $margin;
-    font-size: 0.275rem;
+    font-size: 0.375rem;
     height: calc(100% - calc($margin - 2));
     overflow-y: hidden;
     overflow-x: hidden;
@@ -106,7 +105,7 @@
     justify-content: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
-    gap: 3px;
+    gap: 4px;
     padding: calc($margin * 3);
     padding-left: $margin;
 }
@@ -196,7 +195,7 @@
     }
 
     .filter-bar:not(.filter-bar-open), .open-button {
-        width: 40px; /* Better for touchscreens */
+        width: 30px; /* Better for touchscreens */
     }
 
     .library-overlay {

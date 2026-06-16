@@ -61,6 +61,11 @@ export default defineMessages({
         description: 'Tag for filtering a library for notes',
         id: 'gui.libraryTags.notes'
     },
+	oc: {
+        defaultMessage: 'Original characters',
+        description: 'Tag for filtering a library for original characters',
+        id: 'gui.libraryTags.oc'
+    },
     outdoors: {
         defaultMessage: 'Outdoors',
         description: 'Tag for filtering a library for outdoors',

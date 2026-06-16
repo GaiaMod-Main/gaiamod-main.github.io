@@ -467,53 +467,6 @@ const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
 
-var nbExtensionList = [];
-
-for (var ext of NBExtensions.extensions) {
-	if (!(ext.id.toLowerCase() == "gamepad")) {
-		var extraText = "";
-		if (ext.by) {
-			var tmpArray = [].concat(ext.by);
-			extraText += "By: ";
-			for (var user of tmpArray) {
-				extraText += user.name+" ";
-			}
-		}
-		var extraText2 = "";
-		if (ext.original) {
-			var tmpArray = [].concat(ext.original);
-			extraText2 += "Original: ";
-			for (var user of tmpArray) {
-				extraText2 += user.name+" ";
-			}
-			
-		}
-		var extDescription = ext.description + " " + extraText + "" + extraText2;
-		nbExtensionList.push({
-			name: ext.name,
-			extensionId: ext.id,
-			iconURL: defaultExtensionIcon,
-			description: (
-				<div>
-					<span>
-						{extDescription}
-					</span>
-					<br/>
-					<span>From NitroBolt Extensions.</span>
-				</div>
-			),
-			featured: true,
-			disabled: false,
-			internetConnectionRequired: false,
-			bluetoothRequired: false,
-			helpLink: '',
-			tags: [
-				"othermods"
-			]
-		});
-	}
-}
-
 const menuItems = [
     {
         // not really an extension, but it's easiest to present it as one
@@ -3772,7 +3725,7 @@ const menuItems = [
     },
     {
         name: 'SharkPool\'s Extension Collection',
-        href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
+        href: 'https://sharkpools-extensions.vercel.app',
         extensionId: 'special_sharkpoolExtensionLibrary',
         iconURL: sharkpoolGalleryIcon,
         description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
