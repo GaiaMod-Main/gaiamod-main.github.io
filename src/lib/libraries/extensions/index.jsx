@@ -467,7 +467,7 @@ const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
 
-var amExtensionList = [];
+var nbExtensionList = [];
 
 for (var ext of NBExtensions.extensions) {
 	if (!(ext.id.toLowerCase() == "gamepad")) {
@@ -489,7 +489,7 @@ for (var ext of NBExtensions.extensions) {
 			
 		}
 		var extDescription = ext.description + " " + extraText + "" + extraText2;
-		amExtensionList.push({
+		nbExtensionList.push({
 			name: ext.name,
 			extensionId: ext.id,
 			iconURL: defaultExtensionIcon,
