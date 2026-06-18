@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import locales from '@turbowarp/scratch-l10n';
 
 import check from './check.svg';
-import {MenuItem} from '../menu/menu.jsx';
+import {MenuItem, Submenu} from '../menu/menu.jsx';
 import languageIcon from '../language-selector/language-icon.svg';
 import {languageMenuOpen, openLanguageMenu} from '../../reducers/menus.js';
 import {selectLocale} from '../../reducers/locales.js';

@@ -477,8 +477,10 @@ class Interface extends React.Component {
                     />
                     {isHomepage ? (
                         <React.Fragment>
+						<div className={styles.mainSection}>
                             <div className={styles.section}>
                                 <ProjectInput />
+                            </div>
                             </div>
                             {/* project not approved message */}
                             {(!extraProjectInfo.accepted) && (

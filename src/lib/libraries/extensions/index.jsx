@@ -418,6 +418,8 @@ import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 import obgalleryIcon from './gaiamod/OmniBlocks.svg';
 
+import shareImage from "./share/share.svg";
+
 import lassImage from "./lass/lass.png";
 import iftttImage from "./ifttt/ifttt.png";
 import thingspeakImage from "./thingspeak/thingspeak.png";
@@ -762,6 +764,16 @@ const menuItems = [
         description: 'Better shader loader.',
         featured: true
     },
+	{
+            name: 'Share',
+            extensionId: 'shareExt',
+            iconURL: shareImage,
+            insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+            description: 'Share your projects with friends!',
+            featured: true
+        },
     {
         name: 'Modals',
         extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/Modals.js',

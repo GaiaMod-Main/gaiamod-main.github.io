@@ -514,7 +514,7 @@ class MenuBar extends React.Component {
                                 }}
                             />
                         </div>
-                        {(this.props.canChangeLanguage) && (<div
+                        {/*(this.props.canChangeLanguage) && (<div
                             className={classNames(styles.menuBarItem, styles.hoverable, styles.languageMenu)}
                         >
                             <div>
@@ -532,7 +532,7 @@ class MenuBar extends React.Component {
                                 />
                             </div>
                             <LanguageSelector label={this.props.intl.formatMessage(ariaMessages.language)} />
-                        </div>)}
+                        </div>)*/}
                        {/* tw: theme toggler }
                         {this.props.onClickTheme && (
                             <div
@@ -648,6 +648,7 @@ class MenuBar extends React.Component {
                                 onRequestClose={this.props.onRequestCloseSettings}
                             >
                                 <MenuSection>
+								{this.props.canChangeLanguage && <LanguageMenu onRequestCloseSettings={this.props.onRequestCloseSettings} />}
                                     <TWGuiThemeMenu
                                         onChangeTheme={this.props.onClickTheme}
                                     />
