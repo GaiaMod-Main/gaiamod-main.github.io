@@ -6,6 +6,7 @@ import {APP_NAME} from '../../brand';
 import {
 	pmExtensions,
 	pmExtras,
+	arkExtensions,
 	spExtensions,
 	nbExtensions,
 	amExtensions,
@@ -1290,17 +1291,6 @@ const menuItems = [
         internetConnectionRequired: false,
         featured: true
     },
-	    {
-        name: 'ArkIDE additions',
-        extensionId: 'https://extensions.arkide.site/extensions/Ark/arkide-additons.js',
-        credits: 'Ark',
-        iconURL: 'https://extensions.arkide.site/images/Ark/banner.png',
-		insetIconURL: arkideIcon,
-		customInsetColor: '#5900FF',
-        tags: ['arkide', 'ai'],
-        description: 'A simple extension that adds some cool new blocks from ArkIDE. Google Gemini included.',
-        featured: true
-    },
     {
         name: 'Roku',
         extensionId: 'roku',
@@ -1342,17 +1332,6 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Share your screen or camera on your project as a data-uri.',
         extDeveloper: 'Pooiod7',
-        featured: true
-    },
-	   {
-        name: 'Console',
-        extensionId: 'https://extensions.arkide.site/extensions/Ark/arkide-console.js',
-        credits: 'Ark',
-        iconURL: 'https://extensions.arkide.site/images/Ark/console.png',
-		insetIconURL: arkideIcon,
-		customInsetColor: '#5900FF',
-        tags: ['arkide'],
-        description: 'Add a console to your project to log messages, errors, and warnings.',
         featured: true
     },
       {
@@ -1413,17 +1392,6 @@ const menuItems = [
         credits: 'Banana-mod',
         tags: ['othermods', 'noisemaker'],
         description: 'Lets you play blockBeat!',
-        featured: true
-    },
-	    {
-        name: 'Timer Utils',
-        extensionId: 'https://extensions.arkide.site/extensions/Ark/timerutils.js',
-        credits: 'Ark',
-        iconURL: 'https://extensions.arkide.site/images/Ark/timerutils.svg',
-		insetIconURL: arkideIcon,
-		customInsetColor: '#5900FF',
-        tags: ['arkide'],
-        description: 'An extension that helps you count down to certain dates without having to do a bunch of math and coding.',
         featured: true
     },
 	 {
@@ -1489,17 +1457,6 @@ const menuItems = [
        customInsetColor: '#D399E5',
         description: "Run GLSL shaders on your sprites.",
         internetConnectionRequired: false,
-        featured: true
-    },
-	    {
-        name: 'Store My Stuff',
-        extensionId: 'https://extensions.arkide.site/extensions/Ark/store-my-stuff.js',
-        credits: 'Ark',
-        iconURL: 'https://extensions.arkide.site/images/Ark/storemystuff.png',
-		insetIconURL: arkideIcon,
-		customInsetColor: '#5900FF',
-        tags: ['arkide', 'datamgmt'],
-        description: 'Another varible storage extension but the server is running on the centeral ArkIDE server instead.',
         featured: true
     },
     {
@@ -3561,6 +3518,11 @@ const menuItems = [
 spExtensions.forEach(ext => {
         menuItems.push(ext);
     });
+	
+//Ark IDE
+arkExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
 
 //NitroBolt
 nbExtensions.forEach(ext => {
@@ -3600,7 +3562,353 @@ Please keep these in livetests to reduce bug reports on your fork! :)
 ----------------------------------------------
 */
 if (IsLocal || IsLiveTests) {
-    pmExtras.forEach(ext => {
+	
+    const extras = [
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="HTML Canvas"
+                    description="Name of Text extension"
+                    id="canvas.name"
+                />
+            ),
+            extensionId: 'newCanvas',
+            iconURL: canvasExtensionBanner,
+            tags: ['penguinmod'],
+            insetIconURL: canvasExtensionIcon,
+            customInsetColor: '#0094FF',
+            description: (
+                <FormattedMessage
+                    defaultMessage="Extra drawing tools using an HTML Canvas. Works well when used with other extensions."
+                    description="Description of Text extension"
+                    id="text.description"
+                />
+            ),
+            featured: true
+        },
+        {
+            name: 'OLD Canvas',
+            extensionId: 'canvas',
+            iconURL: canvasExtensionBanner,
+            tags: ['penguinmod'],
+            insetIconURL: canvasExtensionIcon,
+            customInsetColor: '#0094FF',
+            description: 'depracated version of HTML Canvas.',
+            featured: true
+        },
+        {
+            name: 'Legacy Files',
+            extensionId: 'jgFiles',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', 'datamgmt'],
+            description: 'Basic blocks for files. This has been replaced by the TurboWarp files extension.',
+            featured: true
+        },
+        {
+            name: 'Clone Communication',
+            extensionId: 'jgClones',
+            iconURL: jgCloneManagerExtensionIcon,
+            tags: ['penguinmod'],
+            description: 'Mainly sharing data between clones and the main sprite, but also some other small features. This has been replaced by the TurboWarp Clones+ extension.',
+            featured: true
+        },
+        {
+            name: 'Easy Save',
+            extensionId: 'jgEasySave',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', 'datamgmt'],
+            description: 'Save variables, lists and extra info to a file, then load those things back in.',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="TurboWarp Blocks"
+                    description="Name of TW extension"
+                    id="tw.twExtension.name"
+                    values={{
+                        APP_NAME: "TurboWarp"
+                    }}
+                />
+            ),
+            extensionId: 'tw',
+            twDeveloper: 'GarboMuffin',
+            tags: ['turbowarp'],
+            insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
+            iconURL: twIcon,
+            description: 'Weird new blocks. Replaced by Sensing Expansion.',
+            featured: true
+        },
+        {
+            name: 'the doo doo extension',
+            extensionId: 'jgDooDoo',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', 'jokes'],
+            description: 'dr bob eae',
+            featured: true
+        },
+        {
+            name: 'Christmas',
+            extensionId: 'jgChristmas',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
+            tags: ['penguinmod', 'jokes'],
+            description: 'It\'s not Christmas just yet!',
+            featured: true
+        },
+        {
+            name: 'an amazing extension',
+            extensionId: 'jgBestExtension',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epic.avif',
+            internetConnectionRequired: true,
+            tags: ['penguinmod', 'jokes'],
+            description: 'this is SUCH A GOOD EXTENSION USE IT NOW',
+            featured: true
+        },
+        {
+            name: 'Epic utilities',
+            extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/AprilFools.js',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.avif',
+            tags: ['penguinmod', 'jokes'],
+            description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
+            featured: true
+        },
+        {
+            name: 'CATS',
+            extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
+            iconURL: catsThumb,
+            tags: ['penguinmod', 'jokes'],
+            description: 'Blocks related to cats.',
+            extDeveloper: 'G1nX',
+            featured: true
+        },
+        {
+            name: 'McUtils',
+            extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
+            tags: ['turbowarp', 'jokes'],
+            iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
+            insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
+            description: 'Basic utilities for any fast food employee',
+            featured: true,
+            twDeveloper: 'LilyMakesThings'
+        },
+        {
+            name: 'image blocks',
+            extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.avif',
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod', 'jokes'],
+            internetConnectionRequired: true,
+            description: 'who needs cat blocks when you have penguin block',
+            extDeveloper: 'Ashimee, 0znzw, CST1229',
+            featured: true
+        },
+        {
+            name: 'Unite',
+            extensionId: 'jwUnite',
+            iconURL: jwUniteExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Legacy extension that was eventually merged into the default toolbox.',
+            featured: true
+        },
+        {
+            name: 'Debugging',
+            extensionId: 'jgDebugging',
+            iconURL: jgDebuggingIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Log information and run commands. Good for debugging packaged projects or just easily changing things.',
+            featured: true
+        },
+        {
+            name: 'Test Extension Loader',
+            href: 'https://studio.penguinmod.com/loadExt.html',
+            extensionId: 'special_testExtensionLibrary',
+            iconURL: defaultExtensionIcon,
+            description: 'Test loading extensions from a library. For developers.',
+            featured: true
+        },
+		
+        {
+            name: 'Editor',
+            href: 'https://studio.penguinmod.com/editor.html',
+            extensionId: 'special_editorExtensionLibrary',
+            iconURL: penguinmodLibraryExtensionIcon,
+            description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
+            featured: true
+        },
+        {
+            name: 'localhost:5173',
+            href: 'http://localhost:5173',
+            extensionId: 'special_extensionLibraryLocalhost5173',
+            iconURL: defaultExtensionIcon,
+            description: 'Opens localhost:5173 in a new tab with this tab as the parent. For developers',
+            featured: true
+        },
+        {
+            name: 'localhost:5173?editor=true',
+            href: 'http://localhost:5173?editor=true',
+            extensionId: 'special_extensionLibraryLocalhost5173EditorTrue',
+            iconURL: defaultExtensionIcon,
+            description: 'Opens localhost:5173 in a new tab with this tab as the parent. Sets ?editor=true. For developers',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="OOP"
+                    description="Name of OOP extension"
+                    id="jwStructs.jwStructsExtension.name"
+                />
+            ),
+            extensionId: 'jwStructs',
+            tags: ['penguinmod'],
+            iconURL: jwStructsExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            description: (
+                <FormattedMessage
+                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
+                    description="Description of OOP extension"
+                    id="jwStructs.jwStructsExtension.description"
+                />
+            ),
+            featured: true
+        },
+        {
+            name: 'PenguinMod Permissions',
+            extensionId: 'JgPermissionBlocks',
+            iconURL: jgPermissionExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Legacy extension, old blocks no longer serve a real purpose. Direct blocks to manage permissions that PenguinMod requires you have to do certain tasks.',
+            featured: true
+        },
+        {
+            name: 'Jeremys Dev Tools',
+            extensionId: 'jgDev',
+            iconURL: defaultExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
+            credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
+            featured: true
+        },
+        {
+            name: '3D',
+            extensionId: 'jg3d',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#B200FF',
+            insetIconURL: jg3dInsetExtensionIcon,
+            description: 'Do not use for real projects. Not recommended, unstable, and will be rewritten/remade entirely at a later date. In development.',
+            featured: true,
+            isBuggy: true
+        },
+        {
+            name: '3D Physics',
+            extensionId: 'fr3d',
+            iconURL: fr3dPhysicsExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#D066FE',
+            insetIconURL: fr3dPhysicsInsetExtensionIcon,
+            description: 'Physics for the 3D extension.',
+            featured: true
+        },
+        {
+            name: 'Interfaces',
+            extensionId: 'jgInterfaces',
+            iconURL: jgsilvxrcatInterfacesExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            credits: 'silvxrcat',
+            tags: ['penguinmod'],
+            description: 'In development.',
+            featured: true
+        },
+        {
+            name: 'Packager Applications',
+            extensionId: 'jgPackagerApplications',
+            iconURL: jgPackagerApplicationsExtensionIcon,
+            insetIconURL: jgPackagerApplicationsInsetExtensionIcon,
+            twDeveloper: 'CubesterYT',
+            customInsetColor: '#66B8FF',
+            tags: ['penguinmod', 'packager'],
+            description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
+            featured: true
+        },
+
+        {
+            name: 'Inline Blocks',
+            extensionId: 'pmInlineBlocks',
+            iconURL: pmInlineBlocksExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="Pathfinding"
+                    description="Name of Pathfinding extension"
+                    id="jgPathfinding.Pathfinding.name"
+                />
+            ),
+            extensionId: 'jgPathfinding',
+            tags: ['penguinmod'],
+            iconURL: jgPathfindingExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            description: (
+                <FormattedMessage
+                    defaultMessage="(Unstable and or laggy; Needs further work) Have sprites navigate around obstacles in your game instead of clipping into them."
+                    description="Description of Pathfinding extension"
+                    id="jgPathfinding.Pathfinding.description"
+                />
+            ),
+            featured: true
+        },
+        {
+            name: 'Animation',
+            extensionId: 'jgAnimation',
+            iconURL: jgAnimationExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'In development. Currently buggy and missing features.',
+            featured: true
+        },
+        {
+            name: 'Virtual Reality',
+            extensionId: 'jgVr',
+            iconURL: jgVrExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod', 'hardware'],
+            description: 'In development.',
+            extDeveloper: "JeremyGamer13",
+            extraLabels: [
+                {
+                    name: "Uses code from",
+                    value: "\"Augmented Reality\" by Vadik1"
+                }
+            ],
+            featured: true,
+            isBuggy: true
+        }
+    ];
+
+	
+    extras.forEach(ext => {
         menuItems.push(ext);
     });
 }
