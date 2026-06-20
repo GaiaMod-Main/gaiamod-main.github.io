@@ -70,7 +70,7 @@ Swal.mixin({
   iconColor: 'blue',
   position: "bottom-start",
   showConfirmButton: false,
-  theme: 'auto',
+  theme: 'light',
   timer: 3000,
   timerProgressBar: true,
   didOpen: (toast) => {
