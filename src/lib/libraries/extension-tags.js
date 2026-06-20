@@ -14,6 +14,7 @@ export default [
     { tag: 'snailide', intlLabel: messages.snailide },
     { tag: 'arkide', intlLabel: messages.arkide },
 	{ tag: 'adacraft', intlLabel: messages.adacraft },
+	{ tag: 'nitrobolt', intlLabel: messages.nitrobolt },
 	{ tag: 'astraeditor', intlLabel: messages.astraeditor },
 	{ tag: 'zerotwoengine', intlLabel: messages.zerotwoengine },
 	{ tag: 'mistwarp', intlLabel: messages.mistwarp },

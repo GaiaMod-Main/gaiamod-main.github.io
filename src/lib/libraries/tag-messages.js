@@ -186,6 +186,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by Astra Editor',
         id: 'pm.libraryTags.astraeditor'
     },
+    bilup: {
+        defaultMessage: 'Bilup',
+        description: 'Tag for filtering a library by Bilup',
+        id: 'pm.libraryTags.bilup'
+    },
     gandiide: {
         defaultMessage: 'Cocrea/Gandi IDE',
         description: 'Tag for filtering a library by Cocrea/Gandi IDE',
@@ -200,6 +205,16 @@ export default defineMessages({
         defaultMessage: 'MistWarp',
         description: 'Tag for filtering a library by MistWarp',
         id: 'pm.libraryTags.mistwarp'
+    },
+	    acidmod: {
+        defaultMessage: 'AcidMod',
+        description: 'Tag for filtering a library by AcidMod',
+        id: 'pm.libraryTags.acidmod'
+    },
+	    nitrobolt: {
+        defaultMessage: 'NitroBolt',
+        description: 'Tag for filtering a library by NitroBolt',
+        id: 'pm.libraryTags.nitrobolt'
     },
     dash: {
         defaultMessage: 'Dash',
@@ -220,6 +235,11 @@ export default defineMessages({
         defaultMessage: 'TurboWarp',
         description: 'Tag for filtering a library by TurboWarp',
         id: 'pm.libraryTags.turbowarp'
+    },
+    builtin: {
+        defaultMessage: 'Built-In',
+        description: 'Tag for filtering a library by built-in',
+        id: 'pm.libraryTags.builtin'
     },
     programminglanguage: {
         defaultMessage: 'Programming Languages',

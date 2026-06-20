@@ -3,6 +3,7 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {APP_NAME} from '../../brand';
+import {nbExtensions} from './extensionlist.jsx';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -457,13 +458,13 @@ import missmixalotIconURL from "./missmixalot/missmixalot.png";
 import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
 
 //The "Holy Smokes" extensions that fetches? Got it from GvbvdxxMod2.
-import TWExtensions from './tw-extensions.json'; //TurboWarp
-import AEExtensions from './ae-extensions.json'; //Astra Editor
-import ZTExtensions from './ztengine-extensions.json'; //02 Engine
-import MWExtensions from './mw-extensions.json'; //MistWarp
-import AMExtensions from './am-extensions.json'; //AcidMod
-import SPExtensions from './sp-extensions.json'; //SharkPool
-import NBExtensions from './nb-extensions.json'; //NitroBolt
+//import TWExtensions from './tw-extensions.json'; //TurboWarp
+//import AEExtensions from './ae-extensions.json'; //Astra Editor
+//import ZTExtensions from './ztengine-extensions.json'; //02 Engine
+//import MWExtensions from './mw-extensions.json'; //MistWarp
+//import AMExtensions from './am-extensions.json'; //AcidMod
+//import SPExtensions from './sp-extensions.json'; //SharkPool
+//import NBExtensions from './nb-extensions.json'; //NitroBolt
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -3981,6 +3982,11 @@ const menuItems = [
         featured: false
     },*/
 ];
+
+//NitroBolt. Used for testing.
+nbExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
 
 /*
 ----------------------------------------------
