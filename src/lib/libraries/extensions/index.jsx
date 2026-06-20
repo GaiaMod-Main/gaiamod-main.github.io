@@ -5,7 +5,6 @@ import {FormattedMessage} from 'react-intl';
 import {APP_NAME} from '../../brand';
 import {
 	pmExtensions,
-	pmExtras,
 	arkExtensions,
 	spExtensions,
 	nbExtensions,
@@ -1659,17 +1658,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Tile Grids',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Tile-Grids.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Tile-Grids.svg',
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod'],
-        description: 'Place sprites on grids.',
-        extDeveloper: 'SharkPool-SP',
-        featured: true
-    },
-    {
         name: 'Canvas Effects',
         extensionId: 'theshovelcanvaseffects',
         iconURL: theshovelCanvasEffectsIcon,
@@ -1805,17 +1793,6 @@ const menuItems = [
 		customInsetColor: '#00c3ff',
         description: 'Blocks for updating Scratch objects like the stage and sprites.',
         credits: 'TheShovel, showierdata9978, SharkPool',
-        featured: true
-    },
-    {
-        name: 'Font Manager',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Font-Manager.js',
-        iconURL: spFontManagerIcon,
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod', 'graphics'],
-        description: 'Manage, create, and delete fonts.',
-        credits: 'SharkPool, Ashimee',
         featured: true
     },
     {

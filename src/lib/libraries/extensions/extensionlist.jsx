@@ -1698,7 +1698,7 @@ const spExtensions = [
       description: 'Generate randomized Perlin Noise',
       credits: 'SharkPool',
       extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Perlin-Noise.js',
-      iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Seeds.svg',
+      iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Perlin-Noise.svg',
       tags: ['sharkpool'],
 	  featured: true,
 	  credits: 'SharkPool'
