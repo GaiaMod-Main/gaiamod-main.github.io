@@ -3315,7 +3315,7 @@ const builtIns = [
         iconURL: sharkpoolGalleryIcon,
         description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
         credits: 'Listed in the site',
-        tags: ['library'],
+        tags: ['sharkpool', 'library'],
         featured: true
     },
     {
@@ -3525,6 +3525,8 @@ const builtIns = [
         featured: true
     }
    ];
+
+
 
 export {
 	pmExtensions,
