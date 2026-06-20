@@ -226,6 +226,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by other Scratch mods like Genesis IDE, MistWarp, OmniBlocks, Gandi IDE, CreatiCode, KittenBlock, etc..',
         id: 'pm.libraryTags.othermods'
     },
+    sharkpool: {
+        defaultMessage: 'SharkPool',
+        description: 'Tag for filtering a library by SharkPool',
+        id: 'pm.libraryTags.sharkpool'
+    },
     scratch: {
         defaultMessage: 'Scratch',
         description: 'Tag for filtering a library by Scratch',

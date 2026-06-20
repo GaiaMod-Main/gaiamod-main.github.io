@@ -3,7 +3,18 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import {APP_NAME} from '../../brand';
-import {nbExtensions} from './extensionlist.jsx';
+import {
+	pmExtensions,
+	pmExtras,
+	spExtensions,
+	nbExtensions,
+	amExtensions,
+	bilupExtensions,
+	builtIns,
+	extensionGalleries,
+	extensionBuilders
+	}
+	from './extensionlist.jsx';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -457,15 +468,6 @@ import emoBlockInsertIconImage from './emo/bocco-emo_body.png';
 import missmixalotIconURL from "./missmixalot/missmixalot.png";
 import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
 
-//The "Holy Smokes" extensions that fetches? Got it from GvbvdxxMod2.
-//import TWExtensions from './tw-extensions.json'; //TurboWarp
-//import AEExtensions from './ae-extensions.json'; //Astra Editor
-//import ZTExtensions from './ztengine-extensions.json'; //02 Engine
-//import MWExtensions from './mw-extensions.json'; //MistWarp
-//import AMExtensions from './am-extensions.json'; //AcidMod
-//import SPExtensions from './sp-extensions.json'; //SharkPool
-//import NBExtensions from './nb-extensions.json'; //NitroBolt
-
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
@@ -505,16 +507,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Speech Bubbles',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Speech-Bubbles.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Speech-Bubbles.svg',
-        credits: 'SharkPool',
-        tags: ['penguinmod'],
-        description: 'Customizable Speech Bubbles.',
-        internetConnectionRequired: false,
-        featured: true
-    },
-    {
         name: 'Adacraft HTTP',
         extensionId: 'adahttp',
         tags: ['adacraft'],
@@ -522,16 +514,6 @@ const menuItems = [
         insetIconURL: 'https://www.adacraft.org/studio/static/assets/c82f3fea945be86f2c208f2e3d799c8e.svg',
         description: 'Some new blocks to send HTTP requests ad manage results.',
         credits: 'Adacraft',
-        featured: true
-    },
-    {
-        name: 'Scratch Utitlites',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Scratch-Utilities.js',
-        iconURL: scratchUtilitiesIcon,
-        credits: 'SharkPool',
-        tags: ['penguinmod'],
-        description: 'Do many things via the Scratch API; you can even fetch cloud data from projects!',
-        internetConnectionRequired: true,
         featured: true
     },
      {
@@ -670,15 +652,6 @@ const menuItems = [
 		customInsetColor: '#ff4d4d',
         tags: ['turbowarp', 'datamgmt'],
         description: 'Blocks that allow games to interact with the Newgrounds API.',
-        featured: true
-    },
-	{
-        name: 'Newgrounds Audio',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Newgrounds-Audio.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Newgrounds-Audio.svg',
-        collaborator: 'SharkPool',
-        tags: ['penguinmod'],
-        description: 'Fetch Audio and Audio Information from Newgrounds. Works best with Tune Shark',
         featured: true
     },
     {
@@ -1329,15 +1302,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'QR Codes',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/QR-Codes.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/QR-Codes.svg',
-        tags: ['penguinmod'],
-        description: 'Create and Read QR Codes on the Client.',
-        extDeveloper: 'SharkPool',
-        featured: true
-    },
-    {
         name: 'Roku',
         extensionId: 'roku',
         internetConnectionRequired: true,
@@ -1424,26 +1388,6 @@ const menuItems = [
         extDeveloper: 'DogeisCut',
         featured: true
     },
-	    {
-        name: 'Spotify',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Spotify.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/Spotify.svg',
-        credits: 'SharkPool',
-        tags: ['penguinmod', 'noisemaker'],
-        description: 'Fetch Statistics, Information, and Play Songs from Spotify.',
-        internetConnectionRequired: false,
-        featured: true
-    },
-	    {
-        name: 'SoundCloud API',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/SoundCloud-API.js',
-        iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/SoundCloud-API.svg',
-        credits: 'SharkPool',
-        tags: ['penguinmod', 'noisemaker'],
-        description: 'Fetch Statistics, Information, and Play Songs from SoundCloud.',
-        internetConnectionRequired: false,
-        featured: true
-    },
 	{
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
@@ -1509,15 +1453,6 @@ const menuItems = [
             />
         ),
         credits: 'Inspired by⠀⠀⠀⠀⠀⠀ DT-is-not-available',
-        featured: true
-    },
-    {
-        name: 'Files',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Files-Expanded.js',
-        extDeveloper: 'SharkPool',
-        iconURL: filesExtensionIcon,
-        tags: ['turbowarp', 'datamgmt'],
-        description: 'Blocks for reading, editing, & creating files & folders.',
         featured: true
     },
 	{
@@ -1607,15 +1542,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Tune Shark V3',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Tune-Shark-V3.js',
-        iconURL: sharkpoolTuneIcon,
-        tags: ['penguinmod', 'categoryexpansion', 'noisemaker'],
-        description: 'Advanced audio engine with complex sound control, multiple audio effects and more!',
-        extDeveloper: 'SharkPool',
-        featured: true
-    },
-    {
         name: 'Sound Waves',
         extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Sound-Waves.js',
         iconURL: spSoundWaveIcon,
@@ -1655,17 +1581,7 @@ const menuItems = [
         tags: ['electramod'],
         featured: true
     },
-    {
-        name: 'Looks Expanded',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Looks-Expanded.js',
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        iconURL: sharkpoolLooksExpandedIcon,
-        tags: ['penguinmod', 'categoryexpansion', 'graphics'],
-        description: 'Expansion of the Looks Category.',
-        extDeveloper: 'SharkPool, CST1229',
-        featured: true
-    },
+
     {
         name: 'Motion Expansion',
         extensionId: 'pmMotionExpansion',
@@ -1721,15 +1637,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'My Blocks+',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/My-Blocks-Plus.js',
-        iconURL: sharkpoolMBPIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Create private or global custom blocks with custom inputs, colors, and more!',
-        extDeveloper: 'SharkPool, CST1229, 0znzw',
-        featured: true
-    },
-    {
         name: 'More Fields',
         extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/MoreFields.js',
         iconURL: 'https://extensions.penguinmod.com/images/0znzw/MoreFields.avif',
@@ -1738,24 +1645,6 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Custom Field Types',
         extDeveloper: 'yuri-kiss',
-        featured: true
-    },
-    {
-        name: 'Better Comments',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Better-Comments.js',
-        iconURL: sharkpoolBCIcon,
-        tags: ['penguinmod', 'categoryexpansion'],
-        description: 'Better Comments with Customization and Markdown support',
-        extDeveloper: 'SharkPool',
-        featured: true
-    },
-    {
-        name: 'Particle Engine',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Particle-Engine.js',
-        iconURL: sharkpoolPEIcon,
-        tags: ['penguinmod', 'graphics'],
-        description: 'Create powerful Particle Engines without Clones',
-        extDeveloper: 'SharkPool',
         featured: true
     },
     {
@@ -1878,21 +1767,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Turbo Skins',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/Turbo-Skins.js',
-        tags: ['penguinmod', 'graphics'],
-        iconURL: spTurboSkinsIcon,
-        description: 'Display sprites with various images or costumes and control their hitboxes',
-        extraLabels: [
-            {
-                name: "Inspired by",
-                value: "\"Skins\" by LilyMakesThings"
-            }
-        ],
-        featured: true,
-        credits: 'SharkPool'
-    },
-    {
         name: 'Multiple Timers',
         extensionId: 'jgTimers',
         iconURL: jgTimersExtensionIcon,
@@ -1952,15 +1826,6 @@ const menuItems = [
         insetIconURL: communityInsetImage,
         description: 'Community blocks.',
 		tags: ['othermods'],
-        featured: true
-    },
-    {
-        name: 'Swift JSON',
-        extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/JSON-Array.js',
-        iconURL: spJSONExtensionIcon,
-        tags: ['penguinmod', 'datamgmt'],
-        extDeveloper: 'SharkPool',
-        description: 'FAST Extension for handling JSON objects and arrays efficiently. Recommended if you are heavily using JSON several times in a project.',
         featured: true
     },
     {
@@ -3689,302 +3554,36 @@ const menuItems = [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="PenguinMod Extra Extensions"
-                description="Name of library item to open the Extra Extensions gallery"
-                id="pm.extraLibraryExtensions.name"
-            />
-        ),
-        href: 'https://extensions.penguinmod.com/?editor=true',
-        extensionId: 'special_penguinmodExtensionLibrary',
-        iconURL: penguinmodLibraryExtensionIcon,
-        description: (
-            <FormattedMessage
-                defaultMessage="See some user-submitted extensions. Opens in a new tab."
-                description="Description of library item to open the Extra Extensions gallery"
-                id="pm.extraLibraryExtensions.description"
-            />
-        ),
-        tags: ['penguinmod', 'library'],
-        featured: true
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="TurboWarp Extension Gallery"
-                description="Name of extensions.turbowarp.org in extension library"
-                id="tw.extensionGallery.name"
-                values={{
-                    APP_NAME: "TurboWarp"
-                }}
-            />
-        ),
-        href: 'https://extensions.turbowarp.org/',
-        extensionId: 'special_turbowarpExtensionLibrary',
-        iconURL: galleryIcon,
-        description: (
-            <FormattedMessage
-                // eslint-disable-next-line max-len
-                defaultMessage="We list many TurboWarp extensions here for convenience, but you can find even more on extensions.turbowarp.org."
-                description="Description of extensions.turbowarp.org in extension library"
-                id="tw.extensionGallery.description"
-            />
-        ),
-        tags: ['tw', 'turbowarp', 'library'],
-        featured: true
-    },
-    {
-        name: 'SharkPool\'s Extension Collection',
-        href: 'https://sharkpools-extensions.vercel.app',
-        extensionId: 'special_sharkpoolExtensionLibrary',
-        iconURL: sharkpoolGalleryIcon,
-        description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
-        credits: 'Listed in the site',
-        tags: ['library'],
-        featured: true
-    },
-    {
-        name: 'Scratch Repo Mega Extension Gallery',
-        href: 'https://scratchmegarepo.pages.dev/extensions',
-        extensionId: 'special_scratchmegaExtensionLibrary',
-        iconURL: scratchmegarepoThumb,
-        description: 'A mega gallery for most of the extensions',
-        tags: ['library'],
-        featured: true
-    },
-    {
-        name: 'Mistium\'s Extensions Gallery',
-        href: 'https://extensions.mistium.com/',
-        extensionId: 'special_mistiumExtensionLibrary',
-        iconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/mistium/library.svg',
-        description: 'Extensions made by Mistium',
-        tags: ['mistwarp', 'library'],
-        featured: true
-    },
-    {
-        name: 'ElmoBear\'s Extension Gallery',
-        href: 'https://kylekart.github.io/ScratchExtensions/',
-        extensionId: 'special_elmobearExtensionLibrary',
-        iconURL: defaultExtensionIcon,
-        description: 'Extensions made by ElmoBear',
-        tags: ['library'],
-        featured: true
-    },
-        {
-        name: 'Ruby Extension Gallery',
-        href: 'https://ruby-devs.vercel.app/gallery',
-        extensionId: 'rubyextension',
-        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/snail-ide/ruby.png?raw=true',
-        description: 'View the Useful Ruby Team Extensions!',
-        credits: 'Ruby Team',
-        tags: ['library'],
-        featured: true
-    },
-    {
-        name: 'GaiaMod Extra Extensions',
-        href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/?editor=true',
-        extensionId: 'special_gaiamodExtensionLibrary',
-        iconURL: gaiaExGalleryThumb,
-        description: 'See some GaiaMod External extensions, even user-submitted. Opens in a new tab.',
-        tags: ['gaiamod', 'library'],
-        featured: true
-    },
-    {
-        name: 'ArkIDE Extra Extensions',
-        href: 'https://extensions.arkide.site/',
-        extensionId: 'special_arkideExtensionLibrary',
-        iconURL: 'https://studio.arkide.site/static/assets/ec6c0b201605163f47d10636142e36b9.svg',
-        description: 'See some Ark IDE External extensions, even user-submitted. Opens in a new tab.',
-        tags: ['arkide', 'library'],
-        featured: true
-    },
-    {
-        name: 'ElectraMod Extra Extensions',
-        href: 'https://electramod-extensions-gallery.vercel.app',
-        extensionId: 'special_electramodExtensionLibrary',
-        iconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/electramod/library.svg',
-        description: 'See some user-submitted, ElectraMod External extensions. Opens in a new tab.',
-        tags: ['electramod', 'library'],
-        featured: true
-    },
-    {
-        name: 'DinosaurMod Extra Extensions',
-        href: 'https://dinosaurmod.github.io/extensions/',
-        extensionId: 'special_dinosaurmodExtensionLibrary',
-        iconURL: 'https://raw.githubusercontent.com/Dinosaurmod/Dinosaurmod.github.io/d32911e4a99caafcc7ba7523b468cf91de061b7e/src/lib/libraries/extensions/dinosaurmod/gallery.svg',
-        description: 'See some Dinosaurmod and user-submitted extensions. Opens in a new tab.',
-        tags: ['dinosaurmod', 'library'],
-        featured: true
-    },
-    {
-        name: 'Snail-IDE Extra Extensions',
-        href: 'https://snail-ide-extensions-gallery.vercel.app/',
-        extensionId: 'special_snailideExtensionLibrary',
-        iconURL: snailIDEGalleryThumb,
-        description: 'See some Snail-IDE and user-submitted extensions. Opens in a new tab.',
-        tags: ['snailide', 'library'],
-        featured: true
-    },
-	{
-        name: 'Dash Extra Extensions',
-        href: 'https://dashblocks.github.io/extensions/',
-        extensionId: 'special_dashExtensionLibrary',
-        iconURL: 'https://raw.githubusercontent.com/DashBlocks/scratch-gui/3ce7fe9c45c09bc33b5da54b7b9db449344bdfec/src/lib/libraries/extensions/gallery/gallery.svg',
-        description: 'See some Dash External extensions. Opens in a new tab.',
-        tags: ['dash', 'library'],
-        featured: true
-    },
-	{
-        name: 'Astra Editor Extra Extensions',
-        href: 'https://editors.astras.top/extensions/',
-        extensionId: 'special_aeExtensionLibrary',
-        iconURL: 'https://github.com/AstraEditor/scratch-gui/blob/develop/src/lib/libraries/extensions/gallery/aegallery.png?raw=true',
-        description: 'See some Astra Editor External extensions. Opens in a new tab.',
-        tags: ['astraeditor', 'library'],
-        featured: true
-    },
-	{
-        name: 'AmpMod Extra Extensions',
-        href: 'https://ampmod.codeberg.page/extensions/',
-        extensionId: 'special_ampmodExtensionLibrary',
-        iconURL: ampmodgalleryThumb,
-        description: 'See some AmpMod External extensions. Opens in a new tab.',
-        tags: ['othermods', 'library'],
-        featured: true
-    },
-	{
-        name: 'OmniBlocks Extra Extensions',
-        href: 'https://omniblocks.github.io/extensions/',
-        extensionId: 'special_omniblocksExtensionLibrary',
-        iconURL: obgalleryIcon,
-        description: 'See some OmniBlocks External extensions. Opens in a new tab.',
-        tags: ['othermods', 'library'],
-        featured: true
-    },
-    {
-        name: 'KittenBot Extension Maker',
-        href: 'https://kittenbot.github.io/scratch3-extension/',
-        extensionId: 'special_kittenBotExtensionMaker',
-        iconURL: kittenbotThumb,
-        description: 'Create extensions with KittenBot!',
-        tags: ['othermods', 'builders', 'extcreate'],
-        featured: true
-    },
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: 'ExtForge',
-        href: 'https://jwklong.github.io/extforge',
-        extensionId: 'special_extforge',
-        iconURL: ExtForgeIcon,
-        description: 'Create extensions with a block-based UI.',
-        extDeveloper: 'jwklong',
-        tags: ['penguinmod', 'builders', 'extcreate'],
-        featured: true
-    },
-    {
-        name: 'TurboBuilder',
-        href: 'https://turbobuilder.vercel.app/',
-        extensionId: 'special_turboBuilder',
-        iconURL: turboBuilderIcon,
-        description: 'Create your own amazing extensions using a scratch-based UI!',
-        credits: 'Started by JeremyGamer13, continued by jwklong',
-        tags: ['turbowarp', 'builders', 'extcreate'],
-        featured: true
-    },
-    {
-        name: 'TurboBuilder - Dev Branch',
-        href: 'https://dev-turbobuilder.vercel.app/',
-        extensionId: 'special_turboBuilderDev',
-        iconURL: turboBuilderDevIcon,
-        description: 'Publicly available developer branch, with the latest features.',
-        credits: 'Started by JeremyGamer13, continued by jwklong',
-        tags: ['turbowarp', 'builders', 'extcreate'],
-        featured: true
-    },
-    {
-        name: 'PenguinBuilder',
-        href: 'https://penguinbuilder.github.io/editor/',
-        extensionId: 'special_PenguinBuilder',
-        iconURL: 'https://u.cubeupload.com/Mr_rudy/costume1.png',
-        description: 'Create your own extensions using Blockly.',
-        credits: 'chickencuber',
-        tags: ['penguinmod', 'builders', 'extcreate'],
-        featured: true
-    },
-    {
-        name: 'ExtCreate',
-        href: 'https://extcreate.snail-ide.com/',
-        extensionId: 'special_ExtCreate',
-        iconURL: 'https://raw.githubusercontent.com/Snail-IDE/snail-ide.github.io/2d2190779715b9d4d14e6c62dbd487f0563dbba0/src/lib/libraries/extensions/ext-create/logo.svg',
-        insetIconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/ext-create/inset.svg',
-        customInsetColor: '#FFF',
-        description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
-        credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
-        tags: ['snail-ide', 'builders', 'extcreate', 'disabled'],
-        disabled: true,
-        featured: true
-    },
-    {
-        name: 'DinoBuilder',
-        href: 'https://dinobuilder.vercel.app',
-        extensionId: 'special_dinoBuilder',
-        iconURL: 'https://github.com/Dinosaurmod/Dinosaurmod.github.io/blob/develop/src/lib/libraries/extensions/dinosaurmod/dinobuilder.png?raw=true',
-        description: 'Create your own amazing extensions using a TurboBuilder Mod scratch-based UI!',
-        credits: 'MrIncredibleMaker',
-        tags: ['dinosaurmod', 'builders', 'extcreate'],
-        featured: true
-    },
-    {
-        name: 'ElectraBuilder',
-        href: 'https://electrabuilder.vercel.app/',
-        extensionId: 'special_electraBuilder',
-        iconURL: 'https://raw.githubusercontent.com/ElectraMod/scratch-gui/4751b8232c951c6119cca8776054fa5b496c30dc/src/lib/libraries/extensions/electramod/electrabuilder.svg',
-        insetIconURL: 'https://github.com/ElectraMod/scratch-gui/blob/develop/src/lib/libraries/extensions/electramod/electrabuilder.png?raw=true',
-        description: 'ElectraMod version of TurboBuilder',
-        credits: 'Started by JeremyGamer13, continued by jwklong, modified by Aness6040',
-        tags: ['electramod', 'builders', 'extcreate'],
-        featured: true
     }
-    /*DEPRECATED
-	    {
-        name: 'CCW Extension Loader',
-        extensionId: 'ccw_extension_loader',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/ccw.svg',
-        description: 'Load extensions from Cocrea World.',
-        featured: true
-    },
-    {
-        name: 'JSON',
-        extensionId: 'jgJSON',
-        iconURL: jgJSONExtensionIcon,
-        tags: ['penguinmod', 'datamgmt'],
-        description: 'Blocks for handling JSON objects and Arrays.',
-        featured: true
-    },
-    {
-        name: 'Color Utility Blocks',
-        extensionId: 'colors',
-        iconURL: gsaColorUtilExtensionIcon,
-        tags: ['penguinmod'],
-        description: 'Converters for Hex, RGB, HSV and Decimal colors and other color related things.',
-        featured: true
-    },
-    {
-        name: 'Extra Mathematics',
-        extensionId: 'https://extensions.penguinmod.com/extensions/jwklong/mathematics.js',
-        iconURL: 'https://extensions.penguinmod.com/images/jwklong/mathematics.avif',
-        tags: ['penguinmod', 'categoryexpansion', 'math'],
-        description: 'Complicated maths extension for nerds.',
-        extDeveloper: 'jwklong',
-        featured: false
-    },*/
 ];
 
-//NitroBolt. Used for testing.
+//SharkPool
+spExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+
+//NitroBolt
 nbExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//AcidMod
+amExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//Bilup
+bilupExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//Galleries
+extensionGalleries.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//Builders
+extensionBuilders.forEach(ext => {
         menuItems.push(ext);
     });
 
@@ -4001,350 +3600,7 @@ Please keep these in livetests to reduce bug reports on your fork! :)
 ----------------------------------------------
 */
 if (IsLocal || IsLiveTests) {
-    const extras = [
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="HTML Canvas"
-                    description="Name of Text extension"
-                    id="canvas.name"
-                />
-            ),
-            extensionId: 'newCanvas',
-            iconURL: canvasExtensionBanner,
-            tags: ['penguinmod'],
-            insetIconURL: canvasExtensionIcon,
-            customInsetColor: '#0094FF',
-            description: (
-                <FormattedMessage
-                    defaultMessage="Extra drawing tools using an HTML Canvas. Works well when used with other extensions."
-                    description="Description of Text extension"
-                    id="text.description"
-                />
-            ),
-            featured: true
-        },
-        {
-            name: 'OLD Canvas',
-            extensionId: 'canvas',
-            iconURL: canvasExtensionBanner,
-            tags: ['penguinmod'],
-            insetIconURL: canvasExtensionIcon,
-            customInsetColor: '#0094FF',
-            description: 'depracated version of HTML Canvas.',
-            featured: true
-        },
-        {
-            name: 'Legacy Files',
-            extensionId: 'jgFiles',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'datamgmt'],
-            description: 'Basic blocks for files. This has been replaced by the TurboWarp files extension.',
-            featured: true
-        },
-        {
-            name: 'Clone Communication',
-            extensionId: 'jgClones',
-            iconURL: jgCloneManagerExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Mainly sharing data between clones and the main sprite, but also some other small features. This has been replaced by the TurboWarp Clones+ extension.',
-            featured: true
-        },
-        {
-            name: 'Easy Save',
-            extensionId: 'jgEasySave',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'datamgmt'],
-            description: 'Save variables, lists and extra info to a file, then load those things back in.',
-            featured: true
-        },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="TurboWarp Blocks"
-                    description="Name of TW extension"
-                    id="tw.twExtension.name"
-                    values={{
-                        APP_NAME: "TurboWarp"
-                    }}
-                />
-            ),
-            extensionId: 'tw',
-            twDeveloper: 'GarboMuffin',
-            tags: ['turbowarp'],
-            insetIconURL: turbowarpIcon,
-			customInsetColor: '#ff4d4d',
-            iconURL: twIcon,
-            description: 'Weird new blocks. Replaced by Sensing Expansion.',
-            featured: true
-        },
-        {
-            name: 'the doo doo extension',
-            extensionId: 'jgDooDoo',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', 'jokes'],
-            description: 'dr bob eae',
-            featured: true
-        },
-        {
-            name: 'Christmas',
-            extensionId: 'jgChristmas',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
-            tags: ['penguinmod', 'jokes'],
-            description: 'It\'s not Christmas just yet!',
-            featured: true
-        },
-        {
-            name: 'an amazing extension',
-            extensionId: 'jgBestExtension',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epic.avif',
-            internetConnectionRequired: true,
-            tags: ['penguinmod', 'jokes'],
-            description: 'this is SUCH A GOOD EXTENSION USE IT NOW',
-            featured: true
-        },
-        {
-            name: 'Epic utilities',
-            extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/AprilFools.js',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.avif',
-            tags: ['penguinmod', 'jokes'],
-            description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
-            featured: true
-        },
-        {
-            name: 'CATS',
-            extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
-            iconURL: catsThumb,
-            tags: ['penguinmod', 'jokes'],
-            description: 'Blocks related to cats.',
-            extDeveloper: 'G1nX',
-            featured: true
-        },
-        {
-            name: 'McUtils',
-            extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
-            tags: ['turbowarp', 'jokes'],
-            iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
-            insetIconURL: turbowarpIcon,
-			customInsetColor: '#ff4d4d',
-            description: 'Basic utilities for any fast food employee',
-            featured: true,
-            twDeveloper: 'LilyMakesThings'
-        },
-        {
-            name: 'image blocks',
-            extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
-            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.avif',
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod', 'jokes'],
-            internetConnectionRequired: true,
-            description: 'who needs cat blocks when you have penguin block',
-            extDeveloper: 'Ashimee, 0znzw, CST1229',
-            featured: true
-        },
-        {
-            name: 'Unite',
-            extensionId: 'jwUnite',
-            iconURL: jwUniteExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod'],
-            description: 'Legacy extension that was eventually merged into the default toolbox.',
-            featured: true
-        },
-        {
-            name: 'Debugging',
-            extensionId: 'jgDebugging',
-            iconURL: jgDebuggingIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod'],
-            description: 'Log information and run commands. Good for debugging packaged projects or just easily changing things.',
-            featured: true
-        },
-        {
-            name: 'Test Extension Loader',
-            href: 'https://studio.penguinmod.com/loadExt.html',
-            extensionId: 'special_testExtensionLibrary',
-            iconURL: defaultExtensionIcon,
-            description: 'Test loading extensions from a library. For developers.',
-            featured: true
-        },
-		
-        {
-            name: 'Editor',
-            href: 'https://studio.penguinmod.com/editor.html',
-            extensionId: 'special_editorExtensionLibrary',
-            iconURL: penguinmodLibraryExtensionIcon,
-            description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
-            featured: true
-        },
-        {
-            name: 'localhost:5173',
-            href: 'http://localhost:5173',
-            extensionId: 'special_extensionLibraryLocalhost5173',
-            iconURL: defaultExtensionIcon,
-            description: 'Opens localhost:5173 in a new tab with this tab as the parent. For developers',
-            featured: true
-        },
-        {
-            name: 'localhost:5173?editor=true',
-            href: 'http://localhost:5173?editor=true',
-            extensionId: 'special_extensionLibraryLocalhost5173EditorTrue',
-            iconURL: defaultExtensionIcon,
-            description: 'Opens localhost:5173 in a new tab with this tab as the parent. Sets ?editor=true. For developers',
-            featured: true
-        },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="OOP"
-                    description="Name of OOP extension"
-                    id="jwStructs.jwStructsExtension.name"
-                />
-            ),
-            extensionId: 'jwStructs',
-            tags: ['penguinmod'],
-            iconURL: jwStructsExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            description: (
-                <FormattedMessage
-                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
-                    description="Description of OOP extension"
-                    id="jwStructs.jwStructsExtension.description"
-                />
-            ),
-            featured: true
-        },
-        {
-            name: 'PenguinMod Permissions',
-            extensionId: 'JgPermissionBlocks',
-            iconURL: jgPermissionExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod'],
-            description: 'Legacy extension, old blocks no longer serve a real purpose. Direct blocks to manage permissions that PenguinMod requires you have to do certain tasks.',
-            featured: true
-        },
-        {
-            name: 'Jeremys Dev Tools',
-            extensionId: 'jgDev',
-            iconURL: defaultExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod'],
-            description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
-            credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
-            featured: true
-        },
-        {
-            name: '3D',
-            extensionId: 'jg3d',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod', '3d'],
-            customInsetColor: '#B200FF',
-            insetIconURL: jg3dInsetExtensionIcon,
-            description: 'Do not use for real projects. Not recommended, unstable, and will be rewritten/remade entirely at a later date. In development.',
-            featured: true,
-            isBuggy: true
-        },
-        {
-            name: '3D Physics',
-            extensionId: 'fr3d',
-            iconURL: fr3dPhysicsExtensionIcon,
-            tags: ['penguinmod', '3d'],
-            customInsetColor: '#D066FE',
-            insetIconURL: fr3dPhysicsInsetExtensionIcon,
-            description: 'Physics for the 3D extension.',
-            featured: true
-        },
-        {
-            name: 'Interfaces',
-            extensionId: 'jgInterfaces',
-            iconURL: jgsilvxrcatInterfacesExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            credits: 'silvxrcat',
-            tags: ['penguinmod'],
-            description: 'In development.',
-            featured: true
-        },
-        {
-            name: 'Packager Applications',
-            extensionId: 'jgPackagerApplications',
-            iconURL: jgPackagerApplicationsExtensionIcon,
-            insetIconURL: jgPackagerApplicationsInsetExtensionIcon,
-            twDeveloper: 'CubesterYT',
-            customInsetColor: '#66B8FF',
-            tags: ['penguinmod', 'packager'],
-            description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
-            featured: true
-        },
-
-        {
-            name: 'Inline Blocks',
-            extensionId: 'pmInlineBlocks',
-            iconURL: pmInlineBlocksExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod'],
-            description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
-            featured: true
-        },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="Pathfinding"
-                    description="Name of Pathfinding extension"
-                    id="jgPathfinding.Pathfinding.name"
-                />
-            ),
-            extensionId: 'jgPathfinding',
-            tags: ['penguinmod'],
-            iconURL: jgPathfindingExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            description: (
-                <FormattedMessage
-                    defaultMessage="(Unstable and or laggy; Needs further work) Have sprites navigate around obstacles in your game instead of clipping into them."
-                    description="Description of Pathfinding extension"
-                    id="jgPathfinding.Pathfinding.description"
-                />
-            ),
-            featured: true
-        },
-        {
-            name: 'Animation',
-            extensionId: 'jgAnimation',
-            iconURL: jgAnimationExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod'],
-            description: 'In development. Currently buggy and missing features.',
-            featured: true
-        },
-        {
-            name: 'Virtual Reality',
-            extensionId: 'jgVr',
-            iconURL: jgVrExtensionIcon,
-			insetIconURL: penguinmodIcon,
-		    customInsetColor: '#00c3ff',
-            tags: ['penguinmod', 'hardware'],
-            description: 'In development.',
-            extDeveloper: "JeremyGamer13",
-            extraLabels: [
-                {
-                    name: "Uses code from",
-                    value: "\"Augmented Reality\" by Vadik1"
-                }
-            ],
-            featured: true,
-            isBuggy: true
-        }
-    ];
-    extras.forEach(ext => {
+    pmExtras.forEach(ext => {
         menuItems.push(ext);
     });
 }

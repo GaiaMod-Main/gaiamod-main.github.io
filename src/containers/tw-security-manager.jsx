@@ -79,6 +79,13 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://khanning.github.io/scratch-arduino-extension/') ||
     url.startsWith('https://raw.githubusercontent.com/kokofixcomputers/scratch-extension-collection/refs/heads/main/downloads/') ||
     url.startsWith('https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/') ||
+    url.startsWith('https://acidmod.github.io/extensions/') ||
+    url.startsWith('https://acidmod.js.org/extensions/') ||
+    url.startsWith('https://raw.githubusercontent.com/AcidMod/extensions/refs/heads/master/extensions/') ||
+    url.startsWith('https://extensions.bilup.org/') ||
+    url.startsWith('https://raw.githubusercontent.com/Bilup/extensions/refs/heads/main/extensions/') ||
+    url.startsWith('https://extensions.nitrobolt.org/') ||
+    url.startsWith('https://raw.githubusercontent.com/Nitro-Bolt/extensions/refs/heads/master/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions') ||
     url.startsWith('https://raw.githubusercontent.com/ningqi24/TurbowarpExtension/refs/heads/main/.js/') ||
     url.startsWith('https://editors.astras.top/extensions/') ||
