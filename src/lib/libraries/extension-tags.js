@@ -13,6 +13,7 @@ export default [
     { tag: 'dinosaurmod', intlLabel: messages.dinosaurmod },
     { tag: 'snailide', intlLabel: messages.snailide },
     { tag: 'arkide', intlLabel: messages.arkide },
+	{ tag: 'gvbvdxxmod', intlLabel: messages.gvbvdxxmod },
 	{ tag: 'adacraft', intlLabel: messages.adacraft },
 	{ tag: 'sharkpool', intlLabel: messages.sharkpool },
 	{ tag: 'nitrobolt', intlLabel: messages.nitrobolt },

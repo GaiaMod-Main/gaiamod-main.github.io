@@ -181,6 +181,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by Adacraft',
         id: 'pm.libraryTags.adacraft'
     },
+    gvbvdxxmod: {
+        defaultMessage: 'GvbvdxxMod',
+        description: 'Tag for filtering a library by GvbvdxxMod',
+        id: 'pm.libraryTags.gvbvdxxmod'
+    },
     astraeditor: {
         defaultMessage: 'Astra Editor',
         description: 'Tag for filtering a library by Astra Editor',

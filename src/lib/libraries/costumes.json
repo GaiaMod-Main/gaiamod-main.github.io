@@ -9352,6 +9352,21 @@
         "libraryFilePage": "images/lemon.svg"
     },
     {
+        "name": "Librekitty",
+        "tags": [
+            "cat",
+            "animals",
+            "librekitten",
+            "o97doge"
+        ],
+        "assetId": "39d0fabb78d55a32d8e0ab85591523b2",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "39d0fabb78d55a32d8e0ab85591523b2.svg",
+        "rotationCenterX": 93.33143615722656,
+        "rotationCenterY": 84.04513549804688
+    },
+    {
         "name": "Lightning",
         "tags": [
             "weather",

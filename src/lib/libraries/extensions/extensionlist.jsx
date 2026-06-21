@@ -333,6 +333,11 @@ import audioctxsmall from './audio_context/small.png';
 import audioctxbig from './audio_context/big.png';
 import userdatasmall from './userdata/small.png';
 import userdatabig from './userdata/big.png';
+import beepboxsmall from './beepbox_synth/small.png';
+import beepboxbig from './beepbox_synth/big.png';
+import betteraudioBigIcon from './better_audio/big.png';
+import betteraudioSmallIcon from './better_audio/small.png';
+
 
 //by yj
 import battleImage from './gitblock/battle.png';
@@ -454,8 +459,246 @@ import emoBlockInsertIconImage from './emo/bocco-emo_body.png';
 import missmixalotIconURL from "./missmixalot/missmixalot.png";
 import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
 
+
+
 // PenguinMod extensions
 const pmExtensions = [
+    {
+        name: 'Shovel Debugger',
+        description: 'Shovel\'s improved and feature rich debugger!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/TheShovel/shoveldebugger.js',
+        iconURL: 'https://extensions.penguinmod.com/images/TheShovel/thumbnail-shoveldebugger.avif',
+        credits: 'TheShovel',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Server Storage',
+        description: 'Similar to the server storage blocks in the \'storage\' extension, but with a better server uptime and non-global keys.\nDid you know the server is open source?',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Ikelene/serverStorageExtension.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Ikelene/serverStorageIMG.avif',
+        credits: 'Ikelene',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
+    },
+    {
+        name: 'Storage Plus',
+        description: 'A storage extension with many more features. Featuring server storage (with a fast server), local storage and more!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/storage_plus.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/storage_plus.avif',
+        credits: 'G1nX',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'MotionSprite',
+        description: 'An advanced math-based animation system',
+        extensionId: 'https://extensions.penguinmod.com/extensions/TheShovel/qoan-renderer.js',
+        iconURL: 'https://extensions.penguinmod.com/images/TheShovel/thumbnail-motionsprite.avif',
+        isGitHub: true,
+        credits: 'TheShovel',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Boxed Physics',
+        description: 'Implements the Box2D physics engine into PenguinMod, adding joints, springs, etc. This is different from TurboWarp\'s implementation.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/pooiod/Box2D.js',
+        iconURL: 'https://extensions.penguinmod.com/images/pooiod/B2Dimg.svg',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'pooiod7',
+		featured: true
+    },
+    {
+        name: 'Lighting',
+        description: 'A fast, powerful and easy-to-use lighting engine powered by WebGL!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/lighting.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/lighting.avif',
+        credits: 'G1nX',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'GPU.sb3',
+        description: 'Use WebGPU compute shaders to accelerate your projects. Use Pen+ for rendering, not this.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/derpygamer2142/gpusb3.js',
+        iconURL: 'https://extensions.penguinmod.com/images/derpygamer2142/gpusb3.png',
+        credits: 'derpygamer2142',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Beat Sync',
+        description: 'An extension designed to let you sync anything in your project to a musical beat, with incredible precision.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/beat_sync.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/beat_sync.avif',
+        credits: 'G1nX',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Object',
+        description: 'Handle large JSON files at an extreme speed.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/skyhigh173/object.js',
+        iconURL: 'https://extensions.penguinmod.com/images/skyhigh173/object.svg',
+        credits: 'skyhigh173',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Extra Timers',
+        description: 'Allows for the creation and management of additional timer blocks.',
+        notes: 'thumbnail by Dillon',
+        extensionId: 'https://extensions.penguinmod.com/extensions/steve0greatness/timers.js',
+        iconURL: 'https://extensions.penguinmod.com/images/steve0greatness/timers.svg',
+        credits: 'Steve0Greatness',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    
+    {
+        name: 'Dictation',
+        description: 'Convert your voice into text. (not supported in all browsers)',
+        extensionId: 'https://extensions.penguinmod.com/extensions/pooiod/Dictation.js',
+        iconURL: 'https://extensions.penguinmod.com/images/pooiod/Dictation.svg',
+        credits: 'pooiod7',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+        {
+        name: 'Doodle Recognition',
+        description: 'A implementation of Google\'s Quick Draw image vision model',
+        extensionId: 'https://extensions.penguinmod.com/extensions/TheShovel/doodlerec.js',
+        iconURL: 'https://extensions.penguinmod.com/images/TheShovel/thumbnail-doodlerec.avif',
+        credits: 'TheShovel',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+            {
+        name: 'Stylus',
+        description: 'Get the pressure and tilt of a stylus or graphic tablet',
+        extensionId: 'https://extensions.penguinmod.com/extensions/sourdoggy/stylus extension.js',
+        iconURL: 'https://extensions.penguinmod.com/images/sourdoggy/stylus_ext.avif',
+        credits: 'sourdoggy',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Cryptography',
+        description: 'Hash, encrypt and verify values using various algorithms. Actual security not guaranteed',
+        extensionId: 'https://extensions.penguinmod.com/extensions/gaimerI17/crypto.js',
+        iconURL: 'https://extensions.penguinmod.com/images/gaimerI17/crypto.avif',
+        credits: 'gaimerI17',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Online Captcha',
+        description: 'Protect your project with simple, easy to use captcha implementation. Fully client-side, bypass-proof captcha solution!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/NotHouse/OnlineCaptcha.js',
+        iconURL: 'https://extensions.penguinmod.com/images/NotHouse/OnlineCaptcha-banner.avif',
+        credits: 'enderhacker',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Better Storage',
+        description: 'Like PenguinMod\'s Storage Extension, but with a couple more features, and faster servers.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/better_storage.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/betterstorage.avif',
+        credits: 'G1nX',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+    {
+        name: 'Mouth Washer',
+        description: 'Includes many utilities related to cleaning bad words, swearing and profanity. Thought of as an extra layer of security for filtering messages.\n\n(ft. violet and jwklong)',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/mouth_washer.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/mw-placeholder.avif',
+        credits: 'G1nX',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+
+        {
+        name: 'Smoke Detector',
+        description: 'Plays a beep every 30 seconds.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/electricfuzzball_pm/firealarm.js',
+        iconURL: 'https://extensions.penguinmod.com/images/electricfuzzball_pm/firealarm.svg',
+        credits: 'ElectricFuzzball_PM',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+		
+    },
+        {
+        name: 'Stage Brah',
+        description: 'Spawn Brah cats in your codespace!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/electricfuzzball_pm/StageBrah.js',
+        iconURL: 'https://extensions.penguinmod.com/images/electricfuzzball_pm/StageBrah.svg',
+        credits: 'ElectricFuzzball_PM',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+        {
+        name: 'MIDI Controller',
+        description: 'Use a MIDI keyboard to interact with projects!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/electricfuzzball_pm/MIDI.js',
+        iconURL: 'https://extensions.penguinmod.com/images/electricfuzzball_pm/MIDI.svg',
+        credits: 'ElectricFuzzball_PM',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+        {
+        name: 'Array Buffers',
+        description: 'Read, parse, and write raw data efficiently using Array Buffers',
+        extensionId: 'https://extensions.penguinmod.com/extensions/AndrewGaming587/agBuffer.js',
+        iconURL: 'https://extensions.penguinmod.com/images/AndrewGaming587/agBuffer.svg',
+        credits: 'AndrewGaming587',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
 {
         name: 'WebRTC',
         extensionId: 'https://extensions.penguinmod.com/extensions/MikeDev101/webrtc.js',
@@ -464,7 +707,7 @@ const pmExtensions = [
         insetIconURL: penguinmodIcon,
 		customInsetColor: '#00c3ff',
         description: 'A barebones WebRTC implementation.',
-        credits: 'MikeDev101.',
+        credits: 'MikeDev101',
         featured: true
     },
 {
@@ -514,35 +757,6 @@ const pmExtensions = [
             />
         ),
         credits: 'Inspired by⠀⠀⠀⠀⠀⠀ DT-is-not-available',
-        featured: true
-    },
-    {
-        name: 'Zip',
-        extensionId: 'https://extensions.turbowarp.org/CST1229/zip.js',
-        iconURL: 'https://extensions.turbowarp.org/images/CST1229/zip.svg',
-        insetIconURL: turbowarpIcon,
-		customInsetColor: '#ff4d4d',
-        tags: ['turbowarp', 'datamgmt'],
-        description: 'Create and edit .zip format files, including .sb3 files.',
-        twDeveloper: 'CST1229',
-        featured: true
-    },
-    {
-        name: 'Pen+',
-        extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/PenPlus.js',
-        tags: ['categoryexpansion', 'graphics'],
-        iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/PenPlus.svg',
-        description: 'An extension to the Pen category! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.',
-        featured: true,
-        extDeveloper: 'pinksheep2917'
-    },
-    {
-        name: 'Sound Waves',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Sound-Waves.js',
-        iconURL: spSoundWaveIcon,
-        tags: ['penguinmod', 'noisemaker'],
-        description: 'Make sounds with oscillators!',
-        extDeveloper: 'SharkPool',
         featured: true
     },
 	    {
@@ -630,39 +844,6 @@ const pmExtensions = [
         featured: true
     },
     {
-        name: 'Custom Styles',
-        extensionId: 'shovelcss',
-        iconURL: theshovelCustomStylesIcon,
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod', 'graphics'],
-        description: 'Customize the appearance of variable monitors and prompts in your project.',
-        extDeveloper: 'TheShovel',
-        featured: true
-    },
-        {
-        name: 'All Menus',
-        extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
-        iconURL: 'https://extensions.penguinmod.com/images/Lily/AllMenus.svg',
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod'],
-        description: 'Every dropdown menu for each block, in one extension.',
-        extDeveloper: 'LilyMakesThings',
-        featured: true
-    },
-    {
-        name: 'Tweening',
-        extensionId: 'jgTween',
-        credits: 'easings.net, Arrow & GarboMuffin',
-        description: 'Smoothly animating values using different easing functions and directions.',
-        iconURL: 'https://extensions.turbowarp.org/images/JeremyGamer13/tween.svg',
-		insetIconURL: turbowarpIcon,
-		customInsetColor: '#ff4d4d',
-        tags: ['turbowarp'],
-        featured: true
-    },
-    {
         name: 'Tailgating',
         extensionId: 'jgTailgating',
         description: 'Have sprites & clones follow behind other sprites & clones by an offset, like RPG party members.',
@@ -670,17 +851,6 @@ const pmExtensions = [
 		insetIconURL: penguinmodIcon,
 		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
-        featured: true
-    },
-    {
-        name: 'Tile Grids',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Tile-Grids.js',
-        iconURL: 'https://extensions.penguinmod.com/images/SharkPool/Tile-Grids.svg',
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod'],
-        description: 'Place sprites on grids.',
-        extDeveloper: 'SharkPool-SP',
         featured: true
     },
     {
@@ -748,17 +918,6 @@ const pmExtensions = [
 		customInsetColor: '#00c3ff',
         description: 'Blocks for updating Scratch objects like the stage and sprites.',
         credits: 'TheShovel, showierdata9978, SharkPool',
-        featured: true
-    },
-    {
-        name: 'Font Manager',
-        extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/Font-Manager.js',
-        iconURL: spFontManagerIcon,
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        tags: ['penguinmod', 'graphics'],
-        description: 'Manage, create, and delete fonts.',
-        credits: 'SharkPool, Ashimee',
         featured: true
     },
     {
@@ -1070,7 +1229,8 @@ const pmExtensions = [
             name: 'Unsandboxed Detector',
             extensionId: 'https://ldsjvg.webwave.dev/lib/ldsjvg/jmunsandboxdetect-lwcbhcjw.js',
             iconURL: 'https://ldsjvg.webwave.dev/files/dynamicContent/sites/ldsjvg/images/pl/webpage_20/lwcfkkaq/element_437/rwdMode_1/574x139/block_18052024-18_19_55.webp',
-            twDeveloper: 'julmik6478',
+            extDeveloper: 'julmik6478',
+            insetIconURL: penguinmodIcon,
             tags: ['penguinmod'],
 			customInsetColor: '#00c3ff',
             description: 'Detect that extension is run in sandbox or without sandbox',
@@ -1084,6 +1244,27 @@ const pmExtensions = [
 			customInsetColor: '#00c3ff',
             tags: ['penguinmod', 'datamgmt'],
             description: 'Save variables, lists and extra info to a file, then load those things back in.',
+            featured: true
+        },
+ {
+            name: 'Christmas',
+            extensionId: 'jgChristmas',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/christmas.avif',
+			insetIconURL: penguinmodIcon,
+			customInsetColor: '#00c3ff',
+            tags: ['penguinmod', 'jokes'],
+            description: 'It\'s not Christmas just yet!',
+            featured: true
+        },
+        {
+            name: 'CATS',
+            extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/CATS.js',
+            iconURL: catsThumb,
+			insetIconURL: penguinmodIcon,
+			customInsetColor: '#00c3ff',
+            tags: ['penguinmod', 'jokes'],
+            description: 'Blocks related to cats.',
+            extDeveloper: 'G1nX',
             featured: true
         },
     /*DEPRECATED
@@ -1194,17 +1375,6 @@ const pmExtensions = [
             tags: ['penguinmod', 'jokes'],
             description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
             featured: true
-        },
-        {
-            name: 'McUtils',
-            extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
-            tags: ['turbowarp', 'jokes'],
-            iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
-            insetIconURL: turbowarpIcon,
-			customInsetColor: '#ff4d4d',
-            description: 'Basic utilities for any fast food employee',
-            featured: true,
-            twDeveloper: 'LilyMakesThings'
         },
         {
             name: 'image blocks',
@@ -2297,6 +2467,89 @@ const arkExtensions = [
     },
 ];
 
+// ElectraMod extensions
+const emExtensions = [
+  {
+        name: 'Debugger Console',
+        description: 'Based on Turbowarp CN\'s Debugger by NOname',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/debuggerconsole.js',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/debuggerconsole.svg',
+        credits: 'Aness6040',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+    {
+        name: 'Lazy Multi-lines',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/lazymultilines.js',
+        extDeveloper: 'Aness6040',
+        description: 'A handy extension for JavaScript Extension or to create your own text file!',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/lazymultilines.svg',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+    {
+        name: 'Jul Mik Utilities',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/julmik6478/julmik_utilities.js',
+        credits: 'V1 & V2 by julmik6478, V3 by Aness6040',
+        description: 'An Extension of Blocks Utilities by Jul Mik (V1 and V2 when named Jul Mik Blocks with Turbobuilder) and helped by Aness6040 (Actual v3)',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/julmik6478/julmik_utilities.svg',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+    {
+        name: 'E2EE',
+        description: 'This is a Scratch 3 extension that enables E2EE (End-to-End Encryption). This E2EE extension utilizes the same underlying cryptography code that powers CloudLink Omega.',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/MikeDev101/e2ee.js',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/MikeDev101/e2ee.svg',
+        credits: 'MikeDev101',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+     {
+        name: 'ElectraAPI',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/electraapi.js',
+        extDeveloper: 'Aness6040',
+        description: 'Based on Pang API for ElectraMod.',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/electraapi.svg',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+    {
+        name: 'ElectraGPT',
+        description: 'ElectraMod modification of PenguinGPT! Adds more prompts like Mishael or Slixbot!\nElectraGPT banner by Aness6040',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/MubiLop/electragpt.js',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/MubiLop/electragpt.png',
+        credits: 'MubiLop',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+    {
+        name: 'Markdown to HTML',
+        description: 'Converts Markdown to HTML code.',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/md2html.js',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/md2html.png',
+        credits: 'Aness6040',
+		insetIconURL: electramodIcon,
+		customInsetColor: '#625e97',
+        tags: ['electramod'],
+        featured: true
+    },
+];
+
+
+
 //DinosaurMod extensions
 const dinoExtensions = [
  {
@@ -2306,7 +2559,7 @@ const dinoExtensions = [
 			insetIconURL: dinosaurmodIcon,
 		    customInsetColor: '#80f41a',
             iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/ExtraInputsThumbnail.png',
-            description: "This Extension has been merged into the main toolbox. Extra Inputs that you can use.",
+            description: 'This Extension has been merged into the main toolbox. Extra Inputs that you can use.',
             featured: true,
             extDeveloper: 'MrIncredibleMakerZe'
         },
@@ -2317,7 +2570,7 @@ const dinoExtensions = [
 			insetIconURL: dinosaurmodIcon,
 		    customInsetColor: '#80f41a',
             iconURL: defaultExtensionIcon,
-            description: "(This Extension won't be worked on because during the creation of this extension i forgot about the Multiple Timers Extension) (Timers don't save!) Create your own timers! There's also pause and resume options.",
+            description: '(This Extension won\'t be worked on because during the creation of this extension i forgot about the Multiple Timers Extension) (Timers don\'t save!) Create your own timers! There\'s also pause and resume options.',
             featured: true,
             extDeveloper: 'MrIncredibleMakerZe'
         },
@@ -2420,7 +2673,7 @@ const dinoExtensions = [
         tags: ['dinosaurmod', 'categoryexpansion'],
 		insetIconURL: dinosaurmodIcon,
 		customInsetColor: '#80f41a',
-        description: "More wait blocks, i guess..",
+        description: 'More wait blocks, i guess..',
         featured: true,
     },
 	{
@@ -2523,7 +2776,7 @@ const snailExtensions = [
 		insetIconURL: snailideIcon,
 		customInsetColor: '#cc00ff',
         tags: ['snailide'],
-        description: "Random utilites that you may or may not use.",
+        description: 'Random utilites that you may or may not use.',
         featured: true
     },
 	{
@@ -2534,7 +2787,7 @@ const snailExtensions = [
         insetIconURL: snailideIcon,
 		customInsetColor: '#cc00ff',
         tags: ['snailide'],
-        description: "Simple blocks to handle time.",
+        description: 'Simple blocks to handle time.',
         featured: true
     },
 	{
@@ -2555,7 +2808,7 @@ const snailExtensions = [
 		insetIconURL: snailideIcon,
 		customInsetColor: '#cc00ff',
         tags: ['snailide'],
-        description: "Extremely easy way to save data.",
+        description: 'Extremely easy way to save data.',
         featured: true
     },
     {
@@ -2566,7 +2819,7 @@ const snailExtensions = [
 		insetIconURL: snailideIcon,
 		customInsetColor: '#cc00ff',
         tags: ['penguinmod', 'snailide'],
-        description: "Toggle a dramatic grayscale effect on your project. ",
+        description: 'Toggle a dramatic grayscale effect on your project. ',
         featured: true
     },
 ];
@@ -2756,33 +3009,33 @@ const amExtensions = [
 // DashBlocks extensions
 const dbExtensions = [
     {
-        name: "Playgama Bridge SDK",
-        description: "Blocks that initialize and interact with the Playgama Bridge SDK. Official.",
-        extensionId: "https://github.com/playgama/bridge-scratch/releases/latest/download/PlaygamaBridge.js",
+        name: 'Playgama Bridge SDK',
+        description: 'Blocks that initialize and interact with the Playgama Bridge SDK. Official.',
+        extensionId: 'https://github.com/playgama/bridge-scratch/releases/latest/download/PlaygamaBridge.js',
 		iconURL: defaultExtensionIcon,
-        credits: "Playgama, sergei-playgama and DBDev-IT",
+        credits: 'Playgama, sergei-playgama and DBDev-IT',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "YaGames SDK",
-        description: "Blocks that initialize and interact with the Yandex Games SDK. Unofficial.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/timaaos/YaGames.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/timaaos/YaGames.svg",
-        credits: "timaaos, scratch_craft_2, DBDev-IT, and Den4ik-12",
+        name: 'YaGames SDK',
+        description: 'Blocks that initialize and interact with the Yandex Games SDK. Unofficial.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/timaaos/YaGames.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/timaaos/YaGames.svg',
+        credits: 'timaaos, scratch_craft_2, DBDev-IT, and Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Telegram Bot API",
-        description: "Blocks that interact with the Telegram API for bots. Unofficial.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/damir2809/TelegramBotAPI.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/damir2809/TelegramBotAPI.svg",
-        credits: "DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, and Den4ik-12",
+        name: 'Telegram Bot API',
+        description: 'Blocks that interact with the Telegram API for bots. Unofficial.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/damir2809/TelegramBotAPI.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/damir2809/TelegramBotAPI.svg',
+        credits: 'DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, and Den4ik-12',
         internetConnectionRequired: true,
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -2790,11 +3043,11 @@ const dbExtensions = [
 		featured: true
     },
     {
-        name: "Discord Webhook API",
-        description: "Blocks that interact with the Discord Webhook API. Unofficial.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/damir2809/DiscordWebhookAPI.js",
+        name: 'Discord Webhook API',
+        description: 'Blocks that interact with the Discord Webhook API. Unofficial.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/damir2809/DiscordWebhookAPI.js',
 		iconURL: defaultExtensionIcon,
-        credits: "DBDev-IT",
+        credits: 'DBDev-IT',
         internetConnectionRequired: true,
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -2802,76 +3055,76 @@ const dbExtensions = [
 		featured: true
     },
     {
-        name: "Pathfinding",
-        description: "Find paths from one position to another, avoiding obstacles.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Pathfinding.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/Pathfinding.svg",
-        credits: "Den4ik-12",
+        name: 'Pathfinding',
+        description: 'Find paths from one position to another, avoiding obstacles.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Pathfinding.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/Pathfinding.svg',
+        credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Wheel Scroll",
-        description: "Blocks for detecting mouse wheel scrolling.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/WheelScroll.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/WheelScroll.svg",
-        credits: "Den4ik-12",
+        name: 'Wheel Scroll',
+        description: 'Blocks for detecting mouse wheel scrolling.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/WheelScroll.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/WheelScroll.svg',
+        credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Maps",
-        description: "Blocks for working with Map, which is more powerful than Object.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Maps.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/Maps.svg",
-        credits: "Den4ik-12",
+        name: 'Maps',
+        description: 'Blocks for working with Map, which is more powerful than Object.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Maps.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/Maps.svg',
+        credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Dash Targets",
-        description: "Easily manage your sprites, clones, and their properties.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Targets.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/Targets.svg",
-        credits: "Den4ik-12",
+        name: 'Dash Targets',
+        description: 'Easily manage your sprites, clones, and their properties.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Targets.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/Targets.svg',
+        credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Modals",
-        description: "Control classic modal windows in browsers!",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/Modals.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png",
-        credits: "scratch_craft_2",
+        name: 'Modals',
+        description: 'Control classic modal windows in browsers!',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/Modals.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
+        credits: 'scratch_craft_2',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "MediaRecorder",
-        description: "Record your projects directly in Dash!",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js",
+        name: 'MediaRecorder',
+        description: 'Record your projects directly in Dash!',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js',
 		iconURL: defaultExtensionIcon,
-        credits: "scratch_craft_2",
+        credits: 'scratch_craft_2',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Arduino ULTIMATE",
-        description: "Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.",
-		iconURL: "https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js",
+        name: 'Arduino ULTIMATE',
+        description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
+		iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
         insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
         tags: ['dash', 'hardware', 'iot'],
@@ -2880,44 +3133,44 @@ const dbExtensions = [
         featured: true
     },
     {
-        name: "Notification",
-        description: "Send notifications with icons.",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/shilenin/Notification.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/shilenin/Notification.svg",
-        credits: "shilenin",
+        name: 'Notification',
+        description: 'Send notifications with icons.',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/Notification.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/shilenin/Notification.svg',
+        credits: 'shilenin',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Code Cleaner",
-        description: "Clean and optimize your code!",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/shilenin/CodeCleaner.js",
-        iconURL: "https://raw.githubusercontent.com/Mirazstudio-offical/Dash_code_cleaner_extension/refs/heads/main/logo.svg",
-        credits: "shilenin",
+        name: 'Code Cleaner',
+        description: 'Clean and optimize your code!',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/CodeCleaner.js',
+        iconURL: 'https://raw.githubusercontent.com/Mirazstudio-offical/Dash_code_cleaner_extension/refs/heads/main/logo.svg',
+        credits: 'shilenin',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "JavaScript Runner",
-        description: "Run the JavaScript code!",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/shaman2016/JavaScriptRunner.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/shaman2016/JavaScriptRunner.svg",
-        credits: "polzovatel_8787 and DBDev-IT",
+        name: 'JavaScript Runner',
+        description: 'Run the JavaScript code!',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shaman2016/JavaScriptRunner.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/shaman2016/JavaScriptRunner.svg',
+        credits: 'polzovatel_8787 and DBDev-IT',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
 		featured: true
     },
     {
-        name: "Auto Save",
-        description: "Several features for games",
-        extensionId: "https://dashblocks.github.io/extensions/static/extensions/QBacks/AutoSave.js",
-        iconURL: "https://dashblocks.github.io/extensions/static/images/QBacks/AutoSave.svg",
-        credits: "QBacks",
+        name: 'Auto Save',
+        description: 'Several features for games',
+        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/QBacks/AutoSave.js',
+        iconURL: 'https://dashblocks.github.io/extensions/static/images/QBacks/AutoSave.svg',
+        credits: 'QBacks',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
 		customInsetColor: '#F98947',
@@ -2935,7 +3188,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
         insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Have your sprites render as other images or costumes.",
+        description: 'Have your sprites render as other images or costumes.',
         featured: true
     },
 {
@@ -2946,7 +3199,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
         insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Create and manipulate canvases with this extension.",
+        description: 'Create and manipulate canvases with this extension.',
         featured: true
     },
     {
@@ -3001,7 +3254,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
        insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Have many iframes at once.",
+        description: 'Have many iframes at once.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3013,7 +3266,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
        insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Access and write to IndexedDB.",
+        description: 'Access and write to IndexedDB.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3025,7 +3278,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
        insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Manage previous keys simply",
+        description: 'Manage previous keys simply',
         featured: true
     },
 	    {
@@ -3069,7 +3322,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
 		insetIconURL: mistwarpIcon,
 		customInsetColor: '#D399E5',
-        description: "Run the full oasm interpreter except very fast.",
+        description: 'Run the full oasm interpreter except very fast.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3092,7 +3345,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
 		insetIconURL: mistwarpIcon,
 		customInsetColor: '#D399E5',
-        description: "Run python with piodide.",
+        description: 'Run python with piodide.',
         internetConnectionRequired: false,
         featured: true
     },
@@ -3115,7 +3368,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
 		insetIconURL: mistwarpIcon,
 		customInsetColor: '#D399E5',
-        description: "Utilise Rotur in your projects.",
+        description: 'Utilise Rotur in your projects.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3127,7 +3380,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
 		insetIconURL: mistwarpIcon,
 		customInsetColor: '#D399E5',
-        description: "Voice and video calling for GaiaMod and other Scratch mods.",
+        description: 'Voice and video calling for GaiaMod and other Scratch mods.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3139,7 +3392,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
         insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Run GLSL shaders on your sprites.",
+        description: 'Run GLSL shaders on your sprites.',
         internetConnectionRequired: false,
         featured: true
     },
@@ -3162,7 +3415,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
         insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "in memory file system as an ext goes pretty crazy.",
+        description: 'in memory file system as an ext goes pretty crazy.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3174,7 +3427,7 @@ const mistExtensions = [
         tags: ['mistwarp'],
         insetIconURL: mistwarpIcon,
        customInsetColor: '#D399E5',
-        description: "Connect and manage multiple websocket connections.",
+        description: 'Connect and manage multiple websocket connections.',
         internetConnectionRequired: true,
         featured: true
     },
@@ -3464,7 +3717,1586 @@ const bilupExtensions = [
     }
 ];
 
-//Others/Built-Ins
+
+// TurboWarp extensions
+const twExtensions = [
+    {
+      extensionId: 'https://extensions.turbowarp.org/stretch.js',
+      name: 'Stretch',
+      description: 'Stretch sprites horizontally or vertically.',
+      iconURL: 'https://extensions.turbowarp.org/images/stretch.svg',
+      credits: 'GarboMuffin and TheStarWorld',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+     {
+        name: 'GamePad',
+        extensionId: 'Gamepad',
+        tags: ['turbowarp', 'hardware'],
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        twDeveloper: 'GarboMuffin',
+        iconURL: gp,
+        description: 'Directly access gamepads instead of just mapping buttons to keys.',
+        featured: true
+    },
+    {
+        name: 'Physics',
+        extensionId: 'https://extensions.turbowarp.org/box2d.js',
+        tags: ['turbowarp'],
+        extDeveloper: 'griffpatch',
+        iconURL: griffpatchPhysicsThumb,
+        insetIconURL: griffpatchPhysicsIcon,
+        description: 'Box2D Physics extension created by Griffpatch.',
+        customInsetColor: '#D9F0FF',
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/files.js',
+      name: 'Files',
+      description: 'Read and download files.',
+      iconURL: 'https://extensions.turbowarp.org/images/files.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'Pointer Lock',
+        extensionId: 'https://extensions.turbowarp.org/pointerlock.js',
+        tags: ['turbowarp'],
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        iconURL: pointerlockThumb,
+        description: (
+            <FormattedMessage
+                defaultMessage='A extension to lock the mouse cursor in the stage.'
+                description='Scratch utilities'
+                id='gui.extension.pointerlock.description'
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: false,
+        twDeveloper: 'GarboMuffin'
+    },
+    {
+        name: 'Mouse Cursor',
+        extensionId: 'https://extensions.turbowarp.org/cursor.js',
+        tags: ['turbowarp'],
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        iconURL: 'https://extensions.turbowarp.org/images/cursor.png',
+        description: (
+            <FormattedMessage
+                defaultMessage='A extension to change what the mouse cursor looks like on the stage.'
+                description='Scratch utilities'
+                id='gui.extension.MouseCursor.description'
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: false,
+        twDeveloper: 'GarboMuffin'
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/runtime-options.js',
+      name: 'Runtime Options',
+      description: 'Get and modify turbo mode, framerate, interpolation, clone limit, stage size, and more.',
+      iconURL: 'https://extensions.turbowarp.org/images/runtime-options.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/fetch.js',
+      name: 'Fetch',
+      description: 'Make requests to the broader internet.',
+      iconURL: 'https://extensions.turbowarp.org/images/fetch.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/text.js',
+      name: 'Text',
+      description: 'Manipulate characters and text.',
+      iconURL: 'https://extensions.turbowarp.org/images/text.svg',
+      credits: 'CST1229, BludIsAnLemon and Man-o-Valor',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/local-storage.js',
+      name: 'Local Storage',
+      description: 'Store data persistently. Like cookies, but better.',
+      iconURL: 'https://extensions.turbowarp.org/images/local-storage.svg',
+      credits: 'infernostars and GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/true-fantom/base.js',
+      name: 'Base',
+      description: 'Convert numbers between bases.',
+      iconURL: 'https://extensions.turbowarp.org/images/true-fantom/base.svg',
+      credits: 'TrueFantom',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/bitwise.js',
+      name: 'Bitwise',
+      description: 'Blocks that operate on the binary representation of numbers in computers.',
+      iconURL: 'https://extensions.turbowarp.org/images/bitwise.svg',
+      credits: 'TrueFantom',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Skyhigh173/bigint.js',
+      name: 'BigInt',
+      description: 'Math blocks that work on infinitely large integers (no decimals).',
+      iconURL: 'https://extensions.turbowarp.org/images/Skyhigh173/bigint.svg',
+      credits: 'Skyhigh173',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/utilities.js',
+      name: 'Utilities',
+      description: 'A bunch of interesting blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/utilities.svg',
+      'original': 'Sheep_maker',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/sound.js',
+      name: 'URL Playback',
+      description: 'Play sounds from URLs. Previously called \'Sound\'.',
+      iconURL: 'https://extensions.turbowarp.org/images/sound.svg',
+      credits: 'softed and GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'Video',
+        extensionId: 'https://extensions.turbowarp.org/Lily/Video.js',
+        extDeveloper: 'LilyMakesThings, SharkPool, and Fath11',
+        iconURL: 'https://extensions.turbowarp.org/images/Lily/Video.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        description: 'Play videos from URLs.',
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/iframe.js',
+      name: 'Iframe',
+      description: 'Display webpages or HTML over the stage.',
+      iconURL: 'https://extensions.turbowarp.org/images/iframe.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Clay/htmlEncode.js',
+      name: 'HTML Encode',
+      description: 'Escape untrusted text to safely include in HTML.',
+      iconURL: 'https://extensions.turbowarp.org/images/Clay/htmlEncode.svg',
+      credits: 'clay-rip',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'Clipping and Blending',
+        extensionId: 'https://extensions.turbowarp.org/Xeltalliv/clippingblending.js',
+        iconURL: clippingblending,
+        tags: ['turbowarp', 'graphics'],
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        description: 'Clipping outside of a specified rectangular area and additive color blending.',
+        featured: true,
+        twDeveloper: 'Vadik1'
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/clipboard.js',
+      name: 'Clipboard',
+      description: 'Read and write from the system clipboard.',
+      iconURL: 'https://extensions.turbowarp.org/images/clipboard.svg',
+      credits: 'tomyo-code, AdamMady and NamelessCat',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/obviousAlexC/penPlus.js',
+      name: 'Pen Plus V7',
+      description: 'Advanced rendering capabilities.',
+      iconURL: 'https://extensions.turbowarp.org/images/obviousAlexC/penPlus.svg',
+      credits: 'ObviousAlexC and Pen-Group',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/penplus.js',
+      name: 'Pen Plus V5 (Old)',
+      description: 'Replaced by Pen Plus V7.',
+      iconURL: 'https://extensions.turbowarp.org/images/penplus.svg',
+      credits: 'ObviousAlexC',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Xeltalliv/simple3D.js',
+      name: 'Simple 3D',
+      description: 'Make GPU accelerated 3D projects easily.',
+      iconURL: 'https://extensions.turbowarp.org/images/Xeltalliv/simple3D.png',
+      credits: 'Vadik1',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/Skins.js',
+      name: 'Skins',
+      description: 'Have your sprites render as other images or costumes.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/Skins.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/obviousAlexC/SensingPlus.js',
+      name: 'Sensing Plus',
+      description: 'An extension to the sensing category.',
+      iconURL: 'https://extensions.turbowarp.org/images/obviousAlexC/SensingPlus.svg',
+      credits: 'ObviousAlexC',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/CubesterYT/KeySimulation.js',
+      name: 'Key Simulation',
+      description: 'Simulate key presses and mouse clicks.',
+      iconURL: 'https://extensions.turbowarp.org/images/CubesterYT/KeySimulation.svg',
+      credits: 'CubesterYT',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'Clones+',
+        extensionId: 'https://extensions.turbowarp.org/Lily/ClonesPlus.js',
+        tags: ['turbowarp', 'categoryexpansion'],
+        iconURL: 'https://extensions.turbowarp.org/images/Lily/ClonesPlus.svg',
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        description: 'Expansion of Scratch\'s clone features.',
+        featured: true,
+        twDeveloper: 'LilyMakesThings'
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/LooksPlus.js',
+      name: 'Looks Plus',
+      description: 'Expands upon the looks category, allowing you to show/hide, get costume data and edit SVG skins on sprites.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/LooksPlus.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/MoreEvents.js',
+      name: 'More Events',
+      description: 'Start your scripts in new ways.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/MoreEvents.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/ListTools.js',
+      name: 'List Tools',
+      description: 'An assortment of new ways to interact with lists.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/ListTools.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/veggiecan/mobilekeyboard.js',
+      name: 'Mobile Keyboard',
+      description: 'Show the keyboard on mobile devices and get the users input without showing any input modal.',
+      iconURL: 'https://extensions.turbowarp.org/images/veggiecan/mobilekeyboard.svg',
+      credits: 'veggiecan0419',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/NexusKitten/moremotion.js',
+      name: 'More Motion',
+      description: 'More motion-related blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/NexusKitten/moremotion.svg',
+      credits: 'NamelessCat',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/CubesterYT/WindowControls.js',
+      name: 'Window Controls',
+      description: 'Move, resize, rename the window, enter fullscreen, get screen size, and more.',
+      iconURL: 'https://extensions.turbowarp.org/images/CubesterYT/WindowControls.svg',
+      credits: 'CubesterYT',
+      'original': 'BlueDome77',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/veggiecan/browserfullscreen.js',
+      name: 'Browser Fullscreen',
+      description: 'Enter and exit fullscreen mode.',
+      iconURL: 'https://extensions.turbowarp.org/images/veggiecan/browserfullscreen.svg',
+      credits: 'Veggiecan0419',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/shreder95ua/resolution.js',
+      name: 'Screen Resolution',
+      description: 'Get the resolution of the primary screen.',
+      iconURL: 'https://extensions.turbowarp.org/images/shreder95ua/resolution.svg',
+      credits: 'shreder95ua',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/XmerOriginals/closecontrol.js',
+      name: 'Ask Before Closing Tab',
+      description: 'Show a prompt when someone tries to close the tab.',
+      iconURL: 'https://extensions.turbowarp.org/images/XmerOriginals/closecontrol.svg',
+      credits: 'XmerOriginals',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/navigator.js',
+      name: 'Navigator',
+      description: 'Details about the user\'s browser and operating system.',
+      iconURL: 'https://extensions.turbowarp.org/images/navigator.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/battery.js',
+      name: 'Battery',
+      description: 'Access information about the battery of phones or laptops. May not work on all devices and browsers.',
+      iconURL: 'https://extensions.turbowarp.org/images/battery.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/PwLDev/vibration.js',
+      name: 'Vibration',
+      description: 'Control the device\'s vibration. Only works on Chrome for Android.',
+      iconURL: 'https://extensions.turbowarp.org/images/PwLDev/vibration.svg',
+      credits: 'PwLDev',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/TheShovel/CustomStyles.js',
+      name: 'Custom Styles',
+      description: 'Customize the appearance of variable monitors and prompts in your project.',
+      iconURL: 'https://extensions.turbowarp.org/images/TheShovel/CustomStyles.svg',
+      credits: 'TheShovel',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/NexusKitten/controlcontrols.js',
+      name: 'Control Controls',
+      description: 'Show and hide the project\'s controls.',
+      iconURL: 'https://extensions.turbowarp.org/images/NexusKitten/controlcontrols.svg',
+      credits: 'NamelessCat',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/mdwalters/notifications.js',
+      name: 'Notifications',
+      description: 'Display notifications.',
+      iconURL: 'https://extensions.turbowarp.org/images/mdwalters/notifications.svg',
+      credits: 'mdwalters',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/XeroName/Deltatime.js',
+      name: 'Delta Time',
+      description: 'Precise delta timing blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/XeroName/Deltatime.svg',
+      credits: 'XeroName',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/ar.js',
+      name: 'Augmented Reality',
+      description: 'Shows image from camera and performs motion tracking, allowing 3D projects to correctly overlay virtual objects on real world.',
+      iconURL: 'https://extensions.turbowarp.org/images/ar.svg',
+      credits: 'Vadik1',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true,
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/encoding.js',
+      name: 'Encoding',
+      description: 'Encode and decode strings into their unicode numbers, base 64, or URLs.',
+      iconURL: 'https://extensions.turbowarp.org/images/encoding.svg',
+      credits: '-SIPC-',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/SoundExpanded.js',
+      name: 'Sound Expanded',
+      description: 'Adds more sound-related blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/SoundExpanded.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'TurboWarp Temporary Variables',
+        extensionId: 'lmsTempVars2',
+        iconURL: lilyTempVariablesExtensionIcon,
+        tags: ['turbowarp'],
+        description: 'Create disposable runtime or thread variables.',
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        credits: 'LilyMakesThings',
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/MoreTimers.js',
+      name: 'More Timers',
+      description: 'Control several timers at once.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/MoreTimers.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/clouddata-ping.js',
+      name: 'Ping Cloud Data',
+      description: 'Determine whether a cloud variable server is probably up.',
+      iconURL: 'https://extensions.turbowarp.org/images/clouddata-ping.svg',
+      credits: 'GarboMuffin',
+      'original': 'TheShovel',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'CloudLink',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MikeDev101/cloudlink.js',
+        tags: ['turbowarp'],
+        insetIconURL: cloudlinkIcon,
+        iconURL: 'https://extensions.penguinmod.com/images/MikeDev101/cloudlink.svg',
+        description: 'A powerful WebSocket extension for Scratch.',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: true
+    },
+	{
+        name: 'CloudLink 5',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/cl5.js',
+        tags: ['turbowarp'],
+        insetIconURL: cloudlinkIcon,
+        iconURL: clfiveIcon,
+        description: 'A powerful websocket extension for Scratch with account systems, and much more to offer. (WIP Extension!!!)',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: false
+    },
+	{
+        name: 'CloudLink Ω',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/clomega.js',
+        tags: ['turbowarp'],
+        iconURL: clomegaIcon,
+        insetIconURL: cloudlinkIcon,
+        description: 'Register and login to accounts via Cloud Link 5 (WIP Extension!!!)',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: false
+    },
+    {
+        name: 'Network',
+        extensionId: 'https://extensions.turbowarp.org/true-fantom/network.js',
+        extDeveloper: 'TrueFantom',
+        iconURL: 'https://extensions.turbowarp.org/images/true-fantom/network.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Various blocks for interacting with the network.',
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/true-fantom/math.js',
+      name: 'Math',
+      description: 'A lot of operators blocks, from exponentiation to trigonometric functions.',
+      iconURL: 'https://extensions.turbowarp.org/images/true-fantom/math.svg',
+      credits: 'TrueFantom',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/true-fantom/regexp.js',
+      name: 'RegExp',
+      description: 'Full interface for working with Regular Expressions.',
+      iconURL: 'https://extensions.turbowarp.org/images/true-fantom/regexp.svg',
+      credits: 'TrueFantom',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/true-fantom/couplers.js',
+      name: 'Couplers',
+      description: 'A few adapter blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/true-fantom/couplers.svg',
+      credits: 'TrueFantom',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/DogeisCut/FormatNumbers.js',
+      name: 'Format Numbers',
+      description: 'Format large numbers into AD standard, fixed decimal, comma separated, or scientific notation.',
+      iconURL: 'https://extensions.turbowarp.org/images/DogeisCut/FormatNumbers.png',
+      credits: 'DogeisCut',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'All Menus',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Lily/AllMenus.js',
+        iconURL: 'https://extensions.turbowarp.org/images/Lily/AllMenus.svg',
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        description: 'Every dropdown menu for each block, in one extension.',
+        extDeveloper: 'LilyMakesThings',
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/HackedBlocks.js',
+      name: 'Hidden Block Collection',
+      description: 'Various \'hacked blocks\' that work in Scratch but are not visible in the palette.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/HackedBlocks.svg',
+      credits: 'LilyMakesThings and pumpkinhasapatch',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/Cast.js',
+      name: 'Cast',
+      description: 'Convert values between types.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/Cast.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/-SIPC-/time.js',
+      name: 'Time',
+      description: 'Blocks for times, dates, and time zones.',
+      iconURL: 'https://extensions.turbowarp.org/images/-SIPC-/time.svg',
+      credits: '-SIPC- and SharkPool',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/-SIPC-/consoles.js',
+      name: 'Consoles (TW)',
+      description: 'Blocks that interact with the JavaScript console built in to your browser\'s developer tools.',
+      iconURL: 'https://extensions.turbowarp.org/images/-SIPC-/consoles.svg',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+      credits: '-SIPC-',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/ZXMushroom63/searchApi.js',
+      name: 'Search Params',
+      description: 'Interact with URL search parameters: the part of the URL after a question mark.',
+      iconURL: 'https://extensions.turbowarp.org/images/ZXMushroom63/searchApi.svg',
+      credits: 'ZXMushroom63',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+   {
+            name: 'ShovelUtils',
+            extensionId: 'https://extensions.turbowarp.org/TheShovel/ShovelUtils.js',
+            tags: ['turbowarp'],
+            iconURL: 'https://extensions.turbowarp.org/images/TheShovel/ShovelUtils.png',
+            insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
+            description: 'A bunch of miscellaneous blocks.',
+            featured: true,
+            twDeveloper: 'TheShovel and Mio'
+        },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/Assets.js',
+      name: 'Asset Manager',
+      description: 'Add, remove, and get data from various types of assets.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/Assets.svg',
+      credits: 'LilyMakesThings and Mio',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/DNin/wake-lock.js',
+      name: 'Wake Lock',
+      description: 'Prevent the computer from falling asleep.',
+      iconURL: 'https://extensions.turbowarp.org/images/DNin/wake-lock.svg',
+      credits: 'D-ScratchNinja',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Skyhigh173/json.js',
+      name: 'JSON (TW)',
+      description: 'Handle JSON strings and arrays.',
+      iconURL: 'https://extensions.turbowarp.org/images/Skyhigh173/json.svg',
+      credits: 'Skyhigh173 and Mio',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/mbw/xml.js',
+      name: 'XML (TW)',
+      description: 'Create and extract values from XML.',
+      iconURL: 'https://extensions.turbowarp.org/images/mbw/xml.svg',
+      credits: 'mybearworld',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/numerical-encoding-2.js',
+      name: 'Numerical Encoding V2',
+      description: 'Encode strings as numbers for cloud variables. Not compatible with V1 due to using much more efficient format.',
+      iconURL: 'https://extensions.turbowarp.org/images/numerical-encoding-2.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/cs2627883/numericalencoding.js',
+      name: 'Numerical Encoding V1',
+      description: 'Use V2 instead as it is more efficient. V1 only exists for compatibility reasons.',
+      credits: 'cs2627883',
+	  iconURL: 'https://extensions.turbowarp.org/images/unknown.svg',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/DT/cameracontrols.js',
+      name: 'Camera V1',
+      description: 'Move the visible part of the stage.',
+      iconURL: 'https://extensions.turbowarp.org/images/DT/cameracontrols.svg',
+      credits: 'DT',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/TheShovel/CanvasEffects.js',
+      name: 'Canvas Effects (TW)',
+      description: 'Apply visual effects to the entire stage.',
+      iconURL: 'https://extensions.turbowarp.org/images/TheShovel/CanvasEffects.svg',
+      credits: 'TheShovel and SharkPool',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Longboost/color_channels.js',
+      name: 'RGB Channels',
+      description: 'Only render or stamp certain RGB channels.',
+      iconURL: 'https://extensions.turbowarp.org/images/Longboost/color_channels.svg',
+      credits: 'Longboost',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'Zip',
+        extensionId: 'https://extensions.turbowarp.org/CST1229/zip.js',
+        iconURL: 'https://extensions.turbowarp.org/images/CST1229/zip.svg',
+        insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Create and edit .zip format files, including .sb3 files.',
+        twDeveloper: 'CST1229',
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/CST1229/images.js',
+      name: 'Images (TW)',
+      description: 'Some blocks for working with images.',
+      iconURL: 'https://extensions.turbowarp.org/images/CST1229/images.svg',
+      'original': 'CST1229',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/0832/rxFS2.js',
+      name: 'rxFS',
+      description: 'Blocks for interacting with a virtual in-memory filesystem.',
+      iconURL: 'https://extensions.turbowarp.org/images/0832/rxFS2.svg',
+      credits: '0832',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/NexusKitten/sgrab.js',
+      name: 'S-Grab',
+      description: 'Get information about Scratch projects and Scratch users.',
+      iconURL: 'https://extensions.turbowarp.org/images/NexusKitten/sgrab.svg',
+      credits: 'NamelessCat',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/NOname-awa/graphics2d.js',
+      name: 'Graphics 2D',
+      description: 'Blocks to compute lengths, angles, and areas in two dimensions.',
+      iconURL: 'https://extensions.turbowarp.org/images/NOname-awa/graphics2d.svg',
+      credits: 'NOname-awa',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/NOname-awa/more-comparisons.js',
+      name: 'More Comparisons',
+      description: 'More comparison blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/NOname-awa/more-comparisons.svg',
+      credits: 'NOname-awa',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'Tweening',
+        extensionId: 'jgTween',
+        credits: 'easings.net, Arrow & GarboMuffin',
+        description: 'Smoothly animating values using different easing functions and directions.',
+        iconURL: 'https://extensions.turbowarp.org/images/JeremyGamer13/tween.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/rixxyx.js',
+      name: 'RixxyX',
+      description: 'Various utility blocks.',
+      iconURL: 'https://extensions.turbowarp.org/images/rixxyx.svg',
+      credits: 'RixTheTyrunt',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/lmsutils.js',
+      name: 'Lily\'s Toolbox',
+      description: 'Previously called LMS Utilities.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/lmsutils.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/qxsck/data-analysis.js',
+      name: 'Data Analysis',
+      description: 'Blocks to compute means, medians, maximums, minimums, variances, and modes.',
+      iconURL: 'https://extensions.turbowarp.org/images/qxsck/data-analysis.svg',
+      credits: 'qxsck',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/qxsck/var-and-list.js',
+      name: 'Variable and list',
+      description: 'More blocks related to variables and lists.',
+      iconURL: 'https://extensions.turbowarp.org/images/qxsck/var-and-list.svg',
+      credits: 'qxsck',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/vercte/dictionaries.js',
+      name: 'Dictionaries',
+      description: 'Use the power of dictionaries in your project.',
+      iconURL: 'https://extensions.turbowarp.org/images/vercte/dictionaries.svg',
+      credits: 'Vercte',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+        name: 'HTTP',
+        extensionId: 'https://extensions.turbowarp.org/godslayerakp/http.js',
+        iconURL: 'https://extensions.turbowarp.org/images/godslayerakp/http.svg',
+        insetIconURL: turbowarpIcon,
+        tags: ['turbowarp'],
+        description: 'Comprehensive extension for interacting with external websites.',
+        featured: true,
+        internetConnectionRequired: true,
+        customInsetColor: '#ff4d4d'
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/godslayerakp/ws.js',
+      name: 'WebSocket',
+      description: 'Manually connect to WebSocket servers.',
+      iconURL: 'https://extensions.turbowarp.org/images/godslayerakp/ws.png',
+      credits: 'RedMan13',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/CubesterYT/Webhooks.js',
+      name: 'Webhooks',
+      description: 'A modern, very capable Webhook extension.',
+      iconURL: 'https://extensions.turbowarp.org/images/CubesterYT/Webhooks.svg',
+      credits: 'CubesterYT',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/CommentBlocks.js',
+      name: 'Comment Blocks',
+      description: 'Annotate your scripts.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/CommentBlocks.svg',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/veggiecan/LongmanDictionary.js',
+      name: 'Longman Dictionary',
+      description: 'Get the definitions of words from the Longman Dictionary in your projects.',
+      iconURL: 'https://extensions.turbowarp.org/images/veggiecan/LongmanDictionary.svg',
+      credits: 'veggiecan0419',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Alestore/nfcwarp.js',
+      name: 'NFCWarp',
+      description: 'Allows reading data from NFC (NDEF) devices. Only works in Chrome on Android.',
+      iconURL: 'https://extensions.turbowarp.org/images/Alestore/nfcwarp.svg',
+      credits: 'Alestore Games',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/NishiOwO/dectalk.js',
+      name: 'DECtalk Text to Speech',
+      description: 'Text to speech powered by DECtalk. Does not use an internet connection, so it works offline. English only.',
+      iconURL: 'https://extensions.turbowarp.org/images/NishiOwO/dectalk.png',
+      credits: 'NishiOwO',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/steamworks.js',
+      name: 'Steamworks',
+      description: 'Connect your project to Steamworks APIs.',
+      iconURL: 'https://extensions.turbowarp.org/images/unknown.svg',
+      credits: 'GarboMuffin',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/itchio.js',
+      name: 'itch.io',
+      description: 'Blocks that interact with the itch.io website. Unofficial.',
+      iconURL: 'https://extensions.turbowarp.org/images/itchio.svg',
+      credits: 'softed',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/gamejolt.js',
+      name: 'Game Jolt',
+      description: 'Blocks that allow games to interact with the GameJolt API. Unofficial.',
+      iconURL: 'https://extensions.turbowarp.org/images/gamejolt.png',
+      credits: 'softed',
+	  tags: ['turbowarp'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+   {
+        name: 'Newgrounds',
+        extensionId: 'https://extensions.turbowarp.org/obviousAlexC/newgroundsIO.js',
+        extDeveloper: 'ObviousAlexC',
+        iconURL: 'https://extensions.turbowarp.org/images/obviousAlexC/newgroundsIO.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp', 'datamgmt'],
+        description: 'Blocks that allow games to interact with the Newgrounds API.',
+        featured: true
+    },
+	 {
+        name: 'Dangerous, But Useful',
+        extensionId: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/custom%20extensions/UpgradedDangerousBusUseful.js',
+        iconURL: 'https://raw.githubusercontent.com/David-Orangemoon/Modified-Extension-Loader-Turbowarp/main/extendedGallery/Icons/DBU.svg',
+		insetIconURL: turbowarpIcon,
+		customInsetColor: '#ff4d4d',
+        tags: ['turbowarp'],
+        description: 'Dangerous Utility Blocks!',
+		extDeveloper: 'ObviousAlexC',
+        featured: true
+		
+    },
+    {
+      extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
+      name: 'McUtils',
+      description: 'Helpful utilities for any fast food employee.',
+      iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
+      credits: 'LilyMakesThings',
+	  tags: ['turbowarp', 'jokes'],
+      insetIconURL: turbowarpIcon,
+      customInsetColor: '#ff4d4d',
+	  featured: true
+    },
+	{
+            name: (
+                <FormattedMessage
+                    defaultMessage='TurboWarp Blocks'
+                    description='Name of TW extension'
+                    id='tw.twExtension.name'
+                    values={{
+                        APP_NAME: 'TurboWarp'
+                    }}
+                />
+            ),
+            extensionId: 'tw',
+            twDeveloper: 'GarboMuffin',
+            tags: ['turbowarp'],
+            insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
+            iconURL: twIcon,
+            description: 'Weird new blocks. Replaced by Sensing Expansion.',
+            featured: true
+        },
+];
+
+//GvbvdxxMod extensions
+const gvbmExtensions = [
+		{
+        name: 'HTML5 Elements',
+        extensionId: 'html5',
+		insetIconURL: gm2HTML5Small,
+        iconURL: gm2HTML5Large,
+        description: 'Create HTMl5 elements. Display sprite costumes out of the stage!',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['gvbvdxxmod']
+    },
+{
+        name: 'Gvbvdxx Extras',
+        extensionId: 'extra',
+		iconURL: defaultExtensionIcon,
+        description: 'Unfinished Gvbvdxx Mod Helper App.',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['gvbvdxxmod']
+    },
+{
+        name: 'Website API',
+        extensionId: 'websites',
+		iconURL: websitesBigIcon,
+        insetIconURL: websitesSmallIcon,
+        description: 'Website API',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['gvbvdxxmod']
+    },
+{
+        name: 'Websockets',
+        extensionId: 'websocket',
+        iconURL: wsbig,
+        insetIconURL: wssmall,
+        description: 'Connect to servers!',
+        featured: true,
+        credits: 'Gvbvdxx',
+        tags: ['gvbvdxxmod']
+    },
+    {
+        name: 'Roku',
+        extensionId: 'roku',
+        internetConnectionRequired: true,
+        credits: 'Gvbvdxx',
+        iconURL: roku,
+		insetIconURL: rokuSmall,
+        tags: ['gvbvdxxmod', 'iot'],
+        description: 'Interact with your Roku tv via the GM2Helper software!',
+        featured: true
+    },
+    {
+        name: 'NES Emulator',
+        extensionId: 'nesemulator', // update reference once file names are updated
+        tags: ['gvbvdxxmod'],
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        iconURL: NESEmuThumb,
+        insetIconURL: NESInsetIcon,
+        description: 'Use the power of the NES emulation in GaiaMod!',
+        featured: true,
+        credits: 'Gvbvdxx'
+    },
+{
+        name: 'Sound Analyser',
+        extensionId: 'sndanalyser',
+        iconURL: sndanalyserBig,
+        description: 'Read the information about sounds playing from the project.',
+        featured: true,
+		tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+    },
+	{
+        name: 'User Data',
+        extensionId: 'userdata',
+        iconURL: userdatabig,
+        insetIconURL: userdatasmall,
+        description: 'Get The User\'s Data',
+        featured: true,
+        tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+	},
+	{
+        name: 'Audio Context',
+        extensionId: 'audioctx',
+        iconURL: audioctxbig,
+        insetIconURL: audioctxsmall,
+        description: 'Play 8-bit sounds',
+        featured: true,
+        tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+	},
+{
+        name: 'Beepbox Synth',
+        extensionId: 'beepboxsynth',
+        iconURL: beepboxbig,
+        insetIconURL: beepboxsmall,
+        description: 'Play beepbox songs',
+        featured: true,
+        tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+	},
+	 {
+        name: 'Better Audio',
+        extensionId: 'betteraudio',
+        iconURL: betteraudioBigIcon,
+        insetIconURL: betteraudioSmallIcon,
+        description: 'etter Audio For Scratch',
+        featured: true,
+        tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+	},
+	 {
+        name: 'JS (GM2)',
+        extensionId: 'dialogs',
+        iconURL: jsDialogsBigIcon,
+        insetIconURL: jsDialogsSmallIcon,
+        description: 'JS Blocks',
+        featured: true,
+        tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+	},
+    {
+        name: 'speech4pc',
+        extensionId: 'speech4pc',
+        iconURL: speech4pcDialogsBigIcon,
+        insetIconURL: speech4pcDialogsSmallIcon,
+        description: 'Pc Version Of Text To Speech.',
+        featured: true,
+        tags: ['gvbvdxxmod'],
+        credits: 'Gvbvdxx'
+	},
+];
+
+//Others
+const otherExtensions = [
+ {
+        name: 'Bluetooth Request',
+        extensionId: 'https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/bluetooth.js',
+        credits: 'BludIsAnLemon',
+        iconURL: 'https://bludisanlemon.github.io/lemons-gallery/images/Lemon/bluetooth.png',
+        tags: ['othermods'],
+        description: "Allows you to send out bluetooth requests to nearby bluetooth devices.",
+        internetConnectionRequired: false,
+        featured: true
+    },
+	{
+        name: 'Screenshot (Slow)',
+        extensionId: 'https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/screenshot.js',
+        credits: 'BludIsAnLemon',
+        iconURL: 'https://bludisanlemon.github.io/lemons-gallery/images/Lemon/screenshot.png',
+        tags: ['othermods'],
+        description: "Screenshot the entire page in one click.",
+        internetConnectionRequired: false,
+        featured: true
+    },
+	{
+        name: 'Better Quake',
+        extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
+        iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
+        credits: 'fath11',
+        tags: ['gandiide'],
+        description: 'Better shader loader.',
+        featured: true
+    },
+	
+	{
+        name: 'Cocrea Fetch API',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/CocreaFetch.js',
+        iconURL: cocreaFetchThumb,
+        credits: 'fath11',
+        tags: ['gandiide'],
+        description: 'Fetches API from Cocrea.',
+        featured: true
+    },
+	{
+        name: 'On-Screen Controls',
+        extensionId: 'https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/controls.js',
+        iconURL: 'https://github.com/axolayDev/extensions/blob/main/resources/controls.png?raw=true',
+        extDeveloper: 'AxolayDev',
+        tags: ['othermods'],
+        description: 'Control your projects with multitouch without a hassle!',
+        featured: true
+    },
+	{
+        name: 'Lorem Ipsum Generator',
+        extensionId: 'https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/Lorem-Ipsum-Generator.js',
+        iconURL: loremIpsumThumb,
+        credits: 'Flappy25',
+        tags: ['othermods'],
+        description: 'Generates random text examples.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+	{
+        name: 'Ollama',
+        extensionId: 'https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/ollama.js',
+        iconURL: 'https://github.com/axolayDev/extensions/blob/main/resources/ollama.png?raw=true',
+        extDeveloper: 'AxolayDev',
+        tags: ['othermods', 'ai'],
+        description: 'Connect to your local Ollama server or an API through Scratch!',
+        internetConnectionRequired: true,
+        featured: true
+    },
+	{
+        name: 'Another ChatGPT',
+        extensionId: 'https://raw.githubusercontent.com/kokofixcomputers/scratch-extension-collection/refs/heads/main/downloads/chatgpt_scratch_extensions.js',
+        collaborator: 'OpenAI',
+        iconURL: 'https://raw.githubusercontent.com/kokodevelopment/kokodevelopment.github.io/04e15b4520da3443d930e38811e8b1e37f9e96b6/src/lib/libraries/extensions/penguinmod/extensions/chatgpt.svg',
+        insetIconURL: 'https://github.com/kokodevelopment/kokodevelopment.github.io/blob/04e15b4520da3443d930e38811e8b1e37f9e96b6/src/lib/libraries/extensions/penguinmod/extensions/chatgpt.png?raw=true',
+        tags: ['ai', 'othermods'],
+        description: 'Add the power of ChatGPT to your projects!',
+        extDeveloper: 'kokofixcomputers',
+        featured: true,
+        internetConnectionRequired: true,
+    },
+	{
+        name: 'FireBase Auth',
+        extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
+        iconURL: 'https://raw.githubusercontent.com/Logise1123/myextensions/refs/heads/main/firebaseauth.png',
+        tags: ['penguinmod'],
+        description: 'Secure Authentication.',
+        credits: 'logise1123',
+        internetConnectionRequired: true,
+        featured: true
+    },
+	{
+        name: 'Kobold AI',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/main.js',
+        extDeveloper: 'Pooiod7',
+        description: 'Generate text and images for free with the power of The Horde',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/KoboldAI/cover.svg',
+        tags: ['penguinmod', 'ai'],
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'SAM Speech',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/Sam/main.js',
+        extDeveloper: 'Pooiod7',
+        description: 'Generate speech from text using sam',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/Sam/cover.svg',
+        tags: ['penguinmod'],
+        internetConnectionRequired: true,
+        featured: true
+    },
+	{
+        name: 'Video Sharing',
+        extensionId: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/main.js',
+        iconURL: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/cover.svg',
+        tags: ['penguinmod'],
+        description: 'Share your screen or camera on your project as a data-uri.',
+        extDeveloper: 'Pooiod7',
+        featured: true
+    },
+	{
+        name: 'Meme Extension',
+        extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
+        iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods'],
+        description: 'Get fresh baked memes.',
+        featured: true
+    },
+    {
+        name: 'Italian Brainrot Extension',
+        extensionId: 'https://banana-mod.github.io/Italian-Brainrot-Extension/italianbrainrot.js',
+        iconURL: 'https://banana-mod.github.io/Italian-Brainrot-Extension/itbr.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods'],
+        description: 'Let the italian brainrot enter!',
+        featured: true
+    },
+    {
+        name: 'BlockBeat',
+        extensionId: 'https://banana-mod.github.io/BlockBeat/blockBeat.js',
+        iconURL: 'https://banana-mod.github.io/BlockBeat/blockBeat.svg',
+        credits: 'Banana-mod',
+        tags: ['othermods', 'noisemaker'],
+        description: 'Lets you play blockBeat!',
+        featured: true
+    },
+	{
+        name: 'Ruby Maps',
+        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/rubymaps.js',
+        tags: ['penguinmod'],
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/rubymaps.svg',
+        description: 'Lets you integrate the power of maps into your projects!',
+        credits: 'RubyDevs',
+        featured: true
+    },
+    {
+        name: 'Speech2Text',
+        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/speechtotext.js',
+        tags: ['penguinmod', 'othermods'],
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/speechtotext.png',
+        description: 'Recognizes words or sentences said into the microphone.',
+        credits: 'RubyDevs',
+        featured: true
+    },
+    {
+        name: 'PenguinPedia',
+        extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/penguinpedia.js',
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/penguinpedia.webp',
+        internetConnectionRequired: true,
+        tags: ['penguinmod', 'othermods'],
+        description: 'Get a lot of data from Wikipedia, like definitions and images!',
+        credits: 'RubyDevs',
+        featured: true
+    },
+	{
+        name: 'ToastNotifs',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/toastnotifs.js',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/toastnotifs.png',
+        description: 'Use toast-styled notifications in your projects!',
+        credits: 'MubiLop',
+        featured: true
+    },
+		    {
+        name: 'Adruino',
+        extensionId: 'https://khanning.github.io/scratch-arduino-extension/arduino_extension.js',
+        twDeveloper: 'khanning',
+        iconURL: 'https://web.archive.org/web/20220326094337im_/https://scratchx.org/images/extensions/arduino_small.png',
+        insetIconURL: 'https://play-lh.googleusercontent.com/AmzHCh6UEelYfh9AfWXh1WIOC0Z_Z69N9bTvEi-hbRhDe7XL04xuuQfvQXCKLHSHcgVk',
+        tags: ['othermods', 'hardware', 'iot'],
+        description: 'Scratch X - Experiment',
+        featured: true
+    },
+	{
+        name: '???',
+        extensionId: 'https://gaiamod-main.github.io/extensions/MysteryExtension.js',
+        iconURL: mysteryThumb,
+		insetIconURL: mysteryInsetIcon,
+		customInsetColor: '#0F0F0F',
+        credits: 'arajf',
+        tags: ['othermods', 'jokes'],
+        description: 'What\'s this extension doing here? You only know it when you use it.',
+        featured: true
+    },
+];
+
+//ML5-powered
+const ml5Extensions = [
+{
+        name: 'ChatGPT2Scratch',
+        extensionId: 'chatgpt2scratch',
+        iconURL: chatgpt2scratchIconURL,
+        insetIconURL: chatgpt2scratchInsetIconURL,
+        credits: 'ichiroc',
+        featured: true,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Interact with ChatGPT in Scratch!',
+        featured: true
+    },
+    {
+        name: 'ML2Scratch',
+        extensionId: 'ml2scratch',
+        iconURL: ml2scratchIconURL,
+        insetIconURL: ml2scratchInsetIconURL,
+		credits: 'champierre',
+        featured: true,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Lets you train with Machine Learning blocks.',
+        featured: true
+    },
+    {
+        name: 'TM2Scratch',
+        extensionId: 'tm2scratch',
+        iconURL: tm2scratchIconURL,
+        insetIconURL: tm2scratchInsetIconURL,
+		credits: 'Tsukurusha, YengawaLab and Google',
+        featured: true,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Lets you train with images and audio.',
+        featured: true
+    },
+    {
+        name: 'TMPose2Scratch',
+        extensionId: 'tmpose2scratch',
+        iconURL: tmpose2scratchIconURL,
+        insetIconURL: tmpose2scratchInsetIconURL,
+		credits: 'champierre',
+        featured: true,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Lets you train with poses.',
+        featured: true
+    },
+    {
+        name: 'HandPose2Scratch',
+        extensionId: 'handpose2scratch',
+        credits: 'champierre',
+        description: 'Hand tracking in Scratch.',
+        iconURL: handpose2scratchIconURL,
+        insetIconURL: handpose2scratchInsetIconURL,
+        tags: ['othermods', 'ai'],
+        internetConnectionRequired: true,
+        featured: true
+    },	
+    {
+        name: 'Posenet2Scratch',
+        extensionId: 'posenet2scratch',
+        iconURL: posenet2scratchIconURL,
+        insetIconURL: posenet2scratchInsetIconURL,
+        credits: 'champierre',
+        featured: true,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Detect human poses quickly and accurately with a normal WebCam without using a special device',
+        featured: true
+    },
+    {
+        name: 'Facemesh2scratch',
+        extensionId: 'facemesh2scratch',
+        iconURL: facemesh2scratchIconURL,
+        insetIconURL: facemesh2scratchInsetIconURL,
+        credits: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Use facetracking in your projects!',
+        featured: true
+    },
+    {
+        name: 'Scratch2WebSerialAPI',
+        extensionId: 'scratch2webserialapi',
+        iconURL: scratch2webserialapiIconURL,
+        insetIconURL: scratch2webserialapiInsetIconURL,
+        credits: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods', 'iot'],
+        description: 'Do more complex things with hardware via the serial ports.',
+        featured: true
+    },
+    {
+        name: 'ImageClassifer2Scratch',
+        extensionId: 'ic2scratch',
+        iconURL: ic2scratchIconURL,
+        insetIconURL: ic2scratchInsetIconURL,
+        credits: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermods', 'ai'],
+        description: 'Image Classification Blocks.',
+        featured: true
+    },
+];
+
+//Other Built-Ins
 const builtIns = [
  {
         name: 'App Utilities',
@@ -3476,60 +5308,10 @@ const builtIns = [
         description: 'Develop apps in GaiaMod.',
         featured: true
     },
-		{
-        name: 'HTML5 Elements',
-        extensionId: 'html5',
-		insetIconURL: gm2HTML5Small,
-        iconURL: gm2HTML5Large,
-        description: 'Create HTMl5 elements. Display sprite costumes out of the stage!',
-        featured: true,
-        credits: 'Gvbvdxx',
-        tags: ['othermods'],
-    },
-{
-        name: 'Gvbvdxx Extras',
-        extensionId: 'extra',
-		iconURL: defaultExtensionIcon,
-        description: 'Unfinished Gvbvdxx Mod Helper App.',
-        featured: true,
-        credits: 'Gvbvdxx',
-        tags: ['othermods'],
-    },
-{
-        name: 'Website API',
-        extensionId: 'websites',
-		iconURL: websitesBigIcon,
-        insetIconURL: websitesSmallIcon,
-        description: 'Website API',
-        featured: true,
-        credits: 'Gvbvdxx',
-        tags: ['othermods'],
-    },
-{
-        name: 'Websockets',
-        extensionId: 'websocket',
-        iconURL: wsbig,
-        insetIconURL: wssmall,
-        description: 'Connect to servers!',
-        featured: true,
-        credits: 'Gvbvdxx',
-        tags: ['othermods'],
-    },
-    {
-        name: 'Roku',
-        extensionId: 'roku',
-        internetConnectionRequired: true,
-        credits: 'Gvbvdxx',
-        iconURL: roku,
-		insetIconURL: rokuSmall,
-        tags: ['othermods', 'iot'],
-        description: 'Interact with your Roku tv via the GM2Helper software!',
-        featured: true
-    },
 	{
-        name: "LASS",
-        extensionId: "gasoLASS",
-        collaborator: "gasolin",
+        name: 'LASS',
+        extensionId: 'gasoLASS',
+        collaborator: 'gasolin',
         iconURL: lassImage,
         description: 'Fetch LASS.',
 		tags: ['othermods', 'iot'],
@@ -3537,12 +5319,12 @@ const builtIns = [
         disabled: false,
         internetConnectionRequired: true,
         useAutoScan: false,
-        helpLink: "https://github.com/gasolin/scratch3-internet",
+        helpLink: 'https://github.com/gasolin/scratch3-internet',
     },
 	{
-        name: "ThingSpeak",
-        extensionId: "gasoThingSpeak",
-        collaborator: "gasolin",
+        name: 'ThingSpeak',
+        extensionId: 'gasoThingSpeak',
+        collaborator: 'gasolin',
         iconURL: thingspeakImage,
         description: 'ThingSpeak blocks.',
         featured: true,
@@ -3550,12 +5332,12 @@ const builtIns = [
 		tags: ['othermods', 'iot'],
         internetConnectionRequired: true,
         useAutoScan: false,
-        helpLink: "https://github.com/gasolin/scratch3-internet",
+        helpLink: 'https://github.com/gasolin/scratch3-internet',
     },
 	{
-        name: "IFTTT",
-        extensionId: "gasoIFTTT",
-        collaborator: "gasolin",
+        name: 'IFTTT',
+        extensionId: 'gasoIFTTT',
+        collaborator: 'gasolin',
         iconURL: iftttImage,
         description: 'IFTTT Webhook',
         featured: true,
@@ -3563,11 +5345,11 @@ const builtIns = [
 		tags: ['othermods', 'iot'],
         internetConnectionRequired: true,
         useAutoScan: false,
-        helpLink: "https://github.com/gasolin/scratch3-internet",
+        helpLink: 'https://github.com/gasolin/scratch3-internet',
     },
 	{
         name: 'Web kit',
-        extensionId: "webkit",
+        extensionId: 'webkit',
         iconURL: toonco1ImageURL,
         insetIconURL: toonco1ImageSmallURL,
 		credits: 'toonco1',
@@ -3585,20 +5367,6 @@ const builtIns = [
         description: 'Control sprites with body movements.\nRequires Android phone app.',
         featured: true
     },
-    {
-        name: 'NES Emulator',
-        extensionId: 'nesemulator', // update reference once file names are updated
-        tags: ['othermods'],
-        bluetoothRequired: false,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: false,
-        iconURL: NESEmuThumb,
-        insetIconURL: NESInsetIcon,
-        description: 'Use the power of the NES emulation in GaiaMod!',
-        featured: true,
-        credits: 'Gvbvdxx',
-    },
-	
 	{
         name: 'WebMIDI',
         extensionId: 'webmidi',
@@ -3650,25 +5418,13 @@ const builtIns = [
         featured: true,
     },
       {
-        name: (
-            <FormattedMessage
-                defaultMessage="NFT Collection Utilities"
-                description="Name for the 'NFT' extension"
-                id="gui.extension.nft.name"
-            />
-        ),
+        name: 'NFT Collection Utilities',
         extensionId: 'nft',
         iconURL: nftIconURL,
         insetIconURL: nftInsetIconURL,
         credits: 'Digital Education Safety',
 		tags: ['othermods'],
-        description: (
-            <FormattedMessage
-                defaultMessage="Create NFTs"
-                description="Description for the 'nft' extension"
-                id="gui.extension.nft.description"
-            />
-        ),
+        description: 'Create NFTs',
         featured: true
     },
 	  {
@@ -3690,9 +5446,9 @@ const builtIns = [
 		tags: ['othermods'],
         description: (
             <FormattedMessage
-                defaultMessage="Minecraft EDU extension."
-                description="Description for the Minecraft EDU extension"
-                id="gui.extension.minecraft.description"
+                defaultMessage='Minecraft EDU extension.'
+                description='Description for the Minecraft EDU extension'
+                id='gui.extension.minecraft.description'
             />
         ),
         featured: true,
@@ -3717,9 +5473,9 @@ const builtIns = [
 		tags: ['othermods'],
         description: (
             <FormattedMessage
-                defaultMessage="Blocks that help the user in one way or another."
-                description="Description for the Toolbox extension"
-                id="gui.extension.toolbox.description"
+                defaultMessage='Blocks that help the user in one way or another.'
+                description='Description for the Toolbox extension'
+                id='gui.extension.toolbox.description'
             />
         ),
         featured: true,
@@ -3754,9 +5510,9 @@ const builtIns = [
 		tags: ['othermods', 'hardware', 'iot'],
         description: (
             <FormattedMessage
-                defaultMessage="Magic Blue UU extension."
-                description="Description for the Magic Blue UU extension"
-                id="gui.extension.magicBlueUU.description"
+                defaultMessage='Magic Blue UU extension.'
+                description='Description for the Magic Blue UU extension'
+                id='gui.extension.magicBlueUU.description'
             />
         ),
         featured: true,
@@ -3767,9 +5523,9 @@ const builtIns = [
         useAutoScan: false,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Have your Magic Blue UU nearby."
-                id="gui.extension.magicBlueUU.connectingMessage"
+                defaultMessage='Connecting'
+                description='Have your Magic Blue UU nearby.'
+                id='gui.extension.magicBlueUU.connectingMessage'
             />
         )
     },
@@ -3810,9 +5566,9 @@ const builtIns = [
 		tags: ['othermods', 'hardware', 'iot'],
         description: (
             <FormattedMessage
-                defaultMessage="Future Board extension."
-                description="Description for the Future Board extension"
-                id="gui.extension.futureBoard.description"
+                defaultMessage='Future Board extension.'
+                description='Description for the Future Board extension'
+                id='gui.extension.futureBoard.description'
             />
         ),
         featured: true,
@@ -3842,20 +5598,10 @@ const builtIns = [
         featured: true,
         credits: 'Vernier',
     },
-	    {
-        name: 'Adruino',
-        extensionId: 'https://khanning.github.io/scratch-arduino-extension/arduino_extension.js',
-        twDeveloper: 'khanning',
-        iconURL: 'https://web.archive.org/web/20220326094337im_/https://scratchx.org/images/extensions/arduino_small.png',
-        insetIconURL: 'https://play-lh.googleusercontent.com/AmzHCh6UEelYfh9AfWXh1WIOC0Z_Z69N9bTvEi-hbRhDe7XL04xuuQfvQXCKLHSHcgVk',
-        tags: ['othermods', 'hardware', 'iot'],
-        description: 'Scratch X - Experiment',
-        featured: true
-    },
 {
         name: 'Marty the Robot',
         extensionId: 'marty',
-        collaborator: "Robotical",
+        collaborator: 'Robotical',
         iconURL: 'https://scratch3beta.robotical.io/static/assets/f1f767c70b08089a3940f35ebfdc315e.png',
         insetIconURL: 'https://scratch3beta.robotical.io/static/assets/825efb8616528b0a1ed8fe7d6f325408.svg',
         description: 'Play and program with Marty.',
@@ -3868,7 +5614,7 @@ const builtIns = [
 {
         name: 'LEGO Duplo Train',
         extensionId: 'duploTrain',
-        collaborator: "bricklife",
+        collaborator: 'bricklife',
         iconURL: 'https://bricklife.com/scratch-gui/static/assets/12fd44910fedc5b99761e024ddf05c59.png',
         insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/4e8df03eb146bd7f93b355c62450029b.svg',
         description: 'Build and control your train!',
@@ -3881,7 +5627,7 @@ const builtIns = [
 {
         name: 'LEGO Powered Up',
         extensionId: 'poweredUp',
-        collaborator: "bricklife",
+        collaborator: 'bricklife',
         iconURL: 'https://bricklife.com/scratch-gui/static/assets/27d60d6cf54cf80ce2bbb8493e43262e.png',
         insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/9a7b1e04a4d5afda42d2d4bb2de61247.svg',
         description: 'Build with motors and sensors!',
@@ -3914,7 +5660,7 @@ const builtIns = [
         extensionId: 'ellabsextension',
         iconURL: ExtensionIconURL,
         insetIconURL: ExtensionInsetIconURL,
-		collaborator: "ishakboufatah",
+		collaborator: 'ishakboufatah',
         description: 'ELLabs Scratch extension',
 		tags: ['othermods', 'iot'],
         featured: true,
@@ -3928,8 +5674,8 @@ const builtIns = [
         insetIconURL: esp32SerialInsetIconURL,
         description: (
             <FormattedMessage
-                id="gui.extension.zumiAIS.description"
-                defaultMessage="Zumi AI for Scratch 3 with Bluetooth"
+                id='gui.extension.zumiAIS.description'
+                defaultMessage='Zumi AI for Scratch 3 with Bluetooth'
             />
         ),
         featured: true,
@@ -3954,8 +5700,8 @@ const builtIns = [
         insetIconURL: esp32BluetoothInsetIconURL,
         description: (
             <FormattedMessage
-                id="gui.extension.zumiAIB.description"
-                defaultMessage="Zumi AI for Scratch 3 with Bluetooth"
+                id='gui.extension.zumiAIB.description'
+                defaultMessage='Zumi AI for Scratch 3 with Bluetooth'
             />
         ),
         featured: true,
@@ -4071,9 +5817,9 @@ const builtIns = [
 		tags: ['othermods', 'hardware', 'iot'],
         description: (
             <FormattedMessage
-                defaultMessage="Vgate iCar Pro extension."
-                description="Description for the Vgate iCar Pro extension"
-                id="gui.extension.iCarPro.description"
+                defaultMessage='Vgate iCar Pro extension.'
+                description='Description for the Vgate iCar Pro extension'
+                id='gui.extension.iCarPro.description'
             />
         ),
         featured: true,
@@ -4084,9 +5830,9 @@ const builtIns = [
         useAutoScan: false,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Have your iCar Pro nearby."
-                id="gui.extension.iCarPro.connectingMessage"
+                defaultMessage='Connecting'
+                description='Have your iCar Pro nearby.'
+                id='gui.extension.iCarPro.connectingMessage'
             />
         )
     },
@@ -4223,16 +5969,16 @@ const builtIns = [
 		tags: ['othermods', 'hardware', 'iot'],
         iconURL: emoBlockImage,
         insetIconURL: emoBlockInsertIconImage,
-        description: "Play with BOCCO emo!",
+        description: 'Play with BOCCO emo!',
         featured: true,
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
     },
 	 {
-        name: "Miss Mix A Lot",
-        extensionId: "missmixalot",
-        collaborator: "Coding Class Odense",
+        name: 'Miss Mix A Lot',
+        extensionId: 'missmixalot',
+        collaborator: 'Coding Class Odense',
         iconURL: missmixalotIconURL,
         insetIconURL: missmixalotInsetIconURL,
 		tags: ['othermods', 'iot'],
@@ -4241,7 +5987,7 @@ const builtIns = [
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false,
-        helpLink: "https://codingclassodense.dk/",
+        helpLink: 'https://codingclassodense.dk/',
     },
 	{
         name: 'Snap Circuits U33',
@@ -4252,9 +5998,9 @@ const builtIns = [
 		tags: ['othermods', 'hardware', 'iot'],
         description: (
             <FormattedMessage
-                defaultMessage="Snap Circuits U33 extension."
-                description="Description for the Snap Circuits U33 extension"
-                id="gui.extension.snapCircuitsU33.description"
+                defaultMessage='Snap Circuits U33 extension.'
+                description='Description for the Snap Circuits U33 extension'
+                id='gui.extension.snapCircuitsU33.description'
             />
         ),
         featured: true,
@@ -4265,16 +6011,16 @@ const builtIns = [
         useAutoScan: false,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Have your Snap Circuits U33 nearby."
-                id="gui.extension.snapCircuitsU33.connectingMessage"
+                defaultMessage='Connecting'
+                description='Have your Snap Circuits U33 nearby.'
+                id='gui.extension.snapCircuitsU33.connectingMessage'
             />
         )
     },
 {
         name: 'OneGpio Arduino',
         extensionId: 'onegpioArduino',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioArduinoImage,
         insetIconURL: onegpioArduinoInsetIconURL,
         description: 'OneGPIOArduino',
@@ -4287,7 +6033,7 @@ const builtIns = [
     {
         name: 'OneGpio Raspberry Pi',
         extensionId: 'onegpioRpi',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioRpiImage,
         insetIconURL: onegpioRpiInsetIconURL,
         description: 'OneGPIORpi',
@@ -4301,7 +6047,7 @@ const builtIns = [
     {
         name: 'OneGpio ESP-8266',
         extensionId: 'onegpioEsp',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioEspImage,
         insetIconURL: onegpioEspInsetIconURL,
         description: 'OneGPIOEsp',
@@ -4315,7 +6061,7 @@ const builtIns = [
     {
         name: 'OneGpio Picoboard',
         extensionId: 'onegpioPicoboard',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioPicoboardImage,
         insetIconURL: onegpioPicoboardInsetIconURL,
         description: 'OneGPIOPicoboard',
@@ -4329,7 +6075,7 @@ const builtIns = [
     {
         name: 'OneGpio Playground Express',
         extensionId: 'onegpioCpx',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioCpxImage,
         insetIconURL: onegpioCpxInsetIconURL,
         description: 'OneGPIOCpx',
@@ -4343,7 +6089,7 @@ const builtIns = [
     {
         name: 'OneGpio RoboHAT MM1',
         extensionId: 'onegpioRoboHAT',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioRoboHATImage,
         insetIconURL: onegpioRoboHATInsetIconURL,
         description: 'OneGPIORoboHAT',
@@ -4357,7 +6103,7 @@ const builtIns = [
     {
         name: 'OneGpio Raspberry Pi Pico',
         extensionId: 'onegpioRpiPico',
-        collaborator: "Mr. Y's Lab",
+        collaborator: 'Mr. Y\'s Lab',
         iconURL: onegpioRpiPicoImage,
         insetIconURL: onegpioRpiPicoInsetIconURL,
         description: 'onegpioRpiPico',
@@ -4370,14 +6116,333 @@ const builtIns = [
     },
 ];
 
+//Official Scratch
+const scratch =[
+	{
+      extensionId: 'https://extensions.turbowarp.org/lab/video-sprites.js',
+      name: 'Video Sprites',
+      description: 'Replace sprites with a live video feed.',
+	  iconURL: 'https://lab.scratch.mit.edu/static/assets/8bcbd3665e71d3c863c666b1b7ecad96.png',
+	  tags: ['scratch'],
+	  featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Music"
+                description="Name for the 'Music' extension"
+                id="gui.extension.music.name"
+            />
+        ),
+        extensionId: 'music',
+        iconURL: musicIconURL,
+        insetIconURL: musicInsetIconURL,
+        customInsetColor: '#CF63CF',
+        tags: ['scratch', 'noisemaker'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Play instruments and drums."
+                description="Description for the 'Music' extension"
+                id="gui.extension.music.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Pen"
+                description="Name for the 'Pen' extension"
+                id="gui.extension.pen.name"
+            />
+        ),
+        extensionId: 'pen',
+        iconURL: penIconURL,
+        insetIconURL: penInsetIconURL,
+        tags: ['scratch', 'graphics'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Draw with your sprites."
+                description="Description for the 'Pen' extension"
+                id="gui.extension.pen.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: 'Animated Text',
+        extensionId: 'text',
+        iconURL: 'https://extensions.turbowarp.org/images/lab/text.svg',
+        insetIconURL: 'https://extensions.turbowarp.org/images/lab/text.svg',
+        customInsetColor: '#9A66FF',
+        tags: ['scratch'],
+        description: 'Bring words to life.',
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Video Sensing"
+                description="Name for the 'Video Sensing' extension"
+                id="gui.extension.videosensing.name"
+            />
+        ),
+        extensionId: 'videoSensing',
+        iconURL: videoSensingIconURL,
+        insetIconURL: videoSensingInsetIconURL,
+        customInsetColor: '#74BDDC',
+        tags: ['scratch', 'hardware'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Sense motion with the camera."
+                description="Description for the 'Video Sensing' extension"
+                id="gui.extension.videosensing.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: 'Face Sensing',
+        extensionId: 'https://extensions.turbowarp.org/lab/face-sensing.js',
+        iconURL: 'https://extensions.turbowarp.org/images/lab/face-sensing.svg',
+		insetIconURL: 'https://nitrobolt.org/static/assets/e3a21b920ed4b4c2d9830ec68132c011.svg',
+        tags: ['scratch', 'ai'],
+        description: 'Sense faces with the camera.',
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Text to Speech"
+                description="Name for the Text to Speech extension"
+                id="gui.extension.text2speech.name"
+            />
+        ),
+        extensionId: 'text2speech',
+        collaborator: 'Amazon Web Services',
+        credits: 'Google TTS',
+        iconURL: text2speechIconURL,
+        insetIconURL: text2speechInsetIconURL,
+        customInsetColor: '#9966FF',
+        tags: ['scratch', 'noisemaker'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Make your projects talk."
+                description="Description for the Text to speech extension"
+                id="gui.extension.text2speech.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Translate"
+                description="Name for the Translate extension"
+                id="gui.extension.translate.name"
+            />
+        ),
+        extensionId: 'translate',
+        collaborator: 'Google',
+        iconURL: translateIconURL,
+        insetIconURL: translateInsetIconURL,
+        customInsetColor: '#5CB1D6',
+        tags: ['scratch'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Translate text into many languages."
+                description="Description for the Translate extension"
+                id="gui.extension.translate.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: 'Makey Makey',
+        extensionId: 'makeymakey',
+        collaborator: 'JoyLabz',
+        iconURL: makeymakeyIconURL,
+        insetIconURL: makeymakeyInsetIconURL,
+        customInsetColor: '#E64D00',
+        tags: ['scratch', 'hardware'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Make anything into a key."
+                description="Description for the 'Makey Makey' extension"
+                id="gui.extension.makeymakey.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: 'micro:bit',
+        extensionId: 'microbit',
+        collaborator: 'micro:bit',
+        iconURL: microbitIconURL,
+        insetIconURL: microbitInsetIconURL,
+        tags: ['scratch', 'hardware'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect your projects with the world."
+                description="Description for the 'micro:bit' extension"
+                id="gui.extension.microbit.description"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: microbitConnectionIconURL,
+        connectionSmallIconURL: microbitConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their micro:bit."
+                id="gui.extension.microbit.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/microbit'
+    },
+    {
+        name: 'LEGO MINDSTORMS EV3',
+        extensionId: 'ev3',
+        collaborator: 'LEGO',
+        iconURL: ev3IconURL,
+        insetIconURL: ev3InsetIconURL,
+        tags: ['scratch', 'hardware'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Build interactive robots and more."
+                description="Description for the 'LEGO MINDSTORMS EV3' extension"
+                id="gui.extension.ev3.description"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: ev3ConnectionIconURL,
+        connectionSmallIconURL: ev3ConnectionSmallIconURL,
+        customInsetColor: '#FFBF00',
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting. Make sure the pin on your EV3 is set to 1234."
+                description="Message to help people connect to their EV3. Must note the PIN should be 1234."
+                id="gui.extension.ev3.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/ev3'
+    },
+    {
+        name: 'LEGO BOOST',
+        extensionId: 'boost',
+        collaborator: 'LEGO',
+        iconURL: boostIconURL,
+        insetIconURL: boostInsetIconURL,
+        tags: ['scratch', 'hardware'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Bring robotic creations to life."
+                description="Description for the 'LEGO BOOST' extension"
+                id="gui.extension.boost.description"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        connectionIconURL: boostConnectionIconURL,
+        connectionSmallIconURL: boostConnectionSmallIconURL,
+        connectionTipIconURL: boostConnectionTipIconURL,
+        customInsetColor: '#FFAB19',
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their BOOST."
+                id="gui.extension.boost.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/boost'
+    },
+    {
+        name: 'LEGO Education WeDo 2.0',
+        extensionId: 'wedo2',
+        collaborator: 'LEGO',
+        iconURL: wedo2IconURL,
+        insetIconURL: wedo2InsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Build with motors and sensors."
+                description="Description for the 'LEGO WeDo 2.0' extension"
+                id="gui.extension.wedo2.description"
+            />
+        ),
+        featured: true,
+        tags: ['scratch', 'hardware'],
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        connectionIconURL: wedo2ConnectionIconURL,
+        connectionSmallIconURL: wedo2ConnectionSmallIconURL,
+        connectionTipIconURL: wedo2ConnectionTipIconURL,
+        customInsetColor: '#FF6680',
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their WeDo."
+                id="gui.extension.wedo2.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/wedo'
+    },
+    {
+        name: 'Go Direct Force & Acceleration',
+        extensionId: 'gdxfor',
+        collaborator: 'Vernier',
+        iconURL: gdxforIconURL,
+        insetIconURL: gdxforInsetIconURL,
+        customInsetColor: '#4C97FF',
+        tags: ['scratch', 'hardware'],
+        description: (
+            <FormattedMessage
+                defaultMessage="Sense push, pull, motion, and spin."
+                description="Description for the Vernier Go Direct Force and Acceleration sensor extension"
+                id="gui.extension.gdxfor.description"
+            />
+        ),
+        featured: true,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: gdxforConnectionIconURL,
+        connectionSmallIconURL: gdxforConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their force and acceleration sensor."
+                id="gui.extension.gdxfor.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/vernier'
+    }
+];
+
+
 // Extension Galleries
     const extensionGalleries = [
 {
         name: (
             <FormattedMessage
-                defaultMessage="PenguinMod Extra Extensions"
-                description="Name of library item to open the Extra Extensions gallery"
-                id="pm.extraLibraryExtensions.name"
+                defaultMessage='PenguinMod Extra Extensions'
+                description='Name of library item to open the Extra Extensions gallery'
+                id='pm.extraLibraryExtensions.name'
             />
         ),
         href: 'https://extensions.penguinmod.com/?editor=true',
@@ -4385,9 +6450,9 @@ const builtIns = [
         iconURL: penguinmodLibraryExtensionIcon,
         description: (
             <FormattedMessage
-                defaultMessage="See some user-submitted extensions. Opens in a new tab."
-                description="Description of library item to open the Extra Extensions gallery"
-                id="pm.extraLibraryExtensions.description"
+                defaultMessage='See some user-submitted extensions. Opens in a new tab.'
+                description='Description of library item to open the Extra Extensions gallery'
+                id='pm.extraLibraryExtensions.description'
             />
         ),
         tags: ['penguinmod', 'library'],
@@ -4396,11 +6461,11 @@ const builtIns = [
     {
         name: (
             <FormattedMessage
-                defaultMessage="TurboWarp Extension Gallery"
-                description="Name of extensions.turbowarp.org in extension library"
-                id="tw.extensionGallery.name"
+                defaultMessage='TurboWarp Extension Gallery'
+                description='Name of extensions.turbowarp.org in extension library'
+                id='tw.extensionGallery.name'
                 values={{
-                    APP_NAME: "TurboWarp"
+                    APP_NAME: 'TurboWarp'
                 }}
             />
         ),
@@ -4410,9 +6475,9 @@ const builtIns = [
         description: (
             <FormattedMessage
                 // eslint-disable-next-line max-len
-                defaultMessage="We list many TurboWarp extensions here for convenience, but you can find even more on extensions.turbowarp.org."
-                description="Description of extensions.turbowarp.org in extension library"
-                id="tw.extensionGallery.description"
+                defaultMessage='We list many TurboWarp extensions here for convenience, but you can find even more on extensions.turbowarp.org.'
+                description='Description of extensions.turbowarp.org in extension library'
+                id='tw.extensionGallery.description'
             />
         ),
         tags: ['tw', 'turbowarp', 'library'],
@@ -4644,7 +6709,9 @@ export {
 	arkExtensions,
 	dinoExtensions,
 	snailExtensions,
+	emExtensions,
 	gmExtensions,
+	gvbmExtensions,
 	spExtensions,
 	nbExtensions,
 	amExtensions,
@@ -4652,7 +6719,11 @@ export {
 	mistExtensions,
 	aeExtensions,
 	bilupExtensions,
+	twExtensions,
+	otherExtensions,
+	ml5Extensions,
 	builtIns,
+	scratch,
 	extensionGalleries,
 	extensionBuilders
 	}
