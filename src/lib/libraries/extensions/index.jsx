@@ -7,6 +7,8 @@ import {
 	pmExtensions,
 	pmExtras,
 	arkExtensions,
+	dinoExtensions,
+	snailExtensions,
 	gmExtensions,
 	spExtensions,
 	nbExtensions,
@@ -657,28 +659,6 @@ const menuItems = [
         tags: ['othermods'],
     },
     {
-        name: 'URL Information',
-        extensionId: 'https://snail-ide.js.org/urlinfo.js',
-        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/urlinfo/urlinfo.png?raw=true',
-		insetIconURL: snailideIcon,
-		customInsetColor: '#cc00ff',
-        tags: ['snailide'],
-        credits: 'redspacecat',
-        description: 'Get information about the URL',
-        featured: true
-    },
-    {
-        name: 'Browser & OS Information',
-        extensionId: 'https://snail-ide.js.org/browserandosinfo.js',
-        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/browserandosinfo/browserandosinfo.png?raw=true',
-	    insetIconURL: snailideIcon,
-		customInsetColor: '#cc00ff',
-        tags: ['snailide'],
-        credits: 'redspacecat',
-        description: 'Get information about the user\'s browser and operating system',
-        featured: true
-    },
-    {
         name: 'Better Quake',
         extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
         iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
@@ -687,16 +667,6 @@ const menuItems = [
         description: 'Better shader loader.',
         featured: true
     },
-	{
-            name: 'Share',
-            extensionId: 'shareExt',
-            iconURL: shareImage,
-            insetIconURL: snailideIcon,
-		customInsetColor: '#cc00ff',
-        tags: ['snailide'],
-            description: 'Share your projects with friends!',
-            featured: true
-        },
 
     {
         name: 'Ada Browser',
@@ -978,18 +948,6 @@ const menuItems = [
         internetConnectionRequired: false,
         featured: true
     },
-    {
-        name: 'Site Runtime',
-        extensionId: 'https://raw.githubusercontent.com/GabsTheCuriousKid/DinosaurModExtensions/refs/heads/main/extensions/webextension.js',
-        tags: ['dinosaurmod'],
-        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/site-runtime.png',
-		insetIconURL: dinosaurmodIcon,
-		customInsetColor: '#80f41a',
-        description: 'A Combined version of 2 Extensions: Packager Applications & AdaBrowser',
-        featured: true,
-        extDeveloper: 'MrIncredibleMaker',
-        internetConnectionRequired: true
-    },
 	 {
         name: 'Webcam Recorder',
         extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
@@ -1172,18 +1130,6 @@ const menuItems = [
         internetConnectionRequired: false,
         featured: true
     },
-	    {
-        name: 'Lua',
-        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/lua.js',
-        tags: ['dinosaurmod'],
-        iconURL: 'https://dinosaurmod.github.io/extensions/f9ffd88d8aba0d58b284.png',
-		insetIconURL: dinosaurmodIcon,
-		customInsetColor: '#80f41a',
-        description: 'Run your own custom code written in Lua using Fengari!',
-        featured: true,
-        extDeveloper: 'MrIncredibleMaker',
-        internetConnectionRequired: true
-    },
     {
         name: 'Beepbox Player',
         extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/BeepBoxPlayer.js',
@@ -1219,18 +1165,6 @@ const menuItems = [
         tags: ['othermods', 'noisemaker'],
         description: 'Lets you play blockBeat!',
         featured: true
-    },
-	 {
-        name: 'GitHub API',
-        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/github-api.js',
-        tags: ['dinosaurmod'],
-        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/githubapi.png',
-		insetIconURL: dinosaurmodIcon,
-		customInsetColor: '#80f41a',
-        description: 'Fetch IDs, Description, etc. from Repositories, Users and Organizations.',
-        featured: true,
-        extDeveloper: 'MrIncredibleMaker',
-        internetConnectionRequired: true
     },
     {
         name: 'Stage Camera',
@@ -1914,17 +1848,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Random Utils',
-        extensionId: 'https://snail-ide.js.org/random_utils.js',
-        snailExt: true,
-        iconURL: 'https://snail-ide.js.org/random.png',
-		insetIconURL: snailideIcon,
-		customInsetColor: '#cc00ff',
-        tags: ['snailide'],
-        description: "Random utilites that you may or may not use.",
-        featured: true
-    },
-    {
         name: 'JavaScript',
         extensionId: 'SPjavascriptV2',
         iconURL: jgJavascriptExtensionIcon,
@@ -1932,17 +1855,6 @@ const menuItems = [
 		customInsetColor: '#00c3ff',
         tags: ['penguinmod', 'programminglanguage'],
         description: 'Run your own custom code written in JavaScript!',
-        featured: true
-    },
-    {
-        name: 'Save Data',
-        extensionId: 'https://snail-ide.js.org/save.js',
-        credits: 'Mr_rudy',
-        iconURL: 'https://raw.githubusercontent.com/Snail-IDE/snail-ide.github.io/2d2190779715b9d4d14e6c62dbd487f0563dbba0/src/lib/libraries/extensions/snailsavedata/cool.svg',
-		insetIconURL: snailideIcon,
-		customInsetColor: '#cc00ff',
-        tags: ['snailide'],
-        description: "Extremely easy way to save data.",
         featured: true
     },
         {
@@ -1954,17 +1866,6 @@ const menuItems = [
 		insetIconURL: electramodIcon,
 		customInsetColor: '#625e97',
         tags: ['electramod'],
-        featured: true
-    },
-    {
-        name: 'Grayscale',
-        extensionId: 'https://snail-ide.js.org/grayscale.js',
-        credits: 'Mr_rudy',
-        iconURL: 'https://snail-ide.js.org/grayscale.svg',
-		insetIconURL: snailideIcon,
-		customInsetColor: '#cc00ff',
-        tags: ['penguinmod', 'snailide'],
-        description: "Toggle a dramatic grayscale effect on your project. ",
         featured: true
     },
     {
@@ -2181,18 +2082,6 @@ const menuItems = [
             />
         ),
         featured: true
-    },
-		 {
-        name: 'Useless Blocks',
-        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/Useless_Blocks.js',
-        tags: ['dinosaurmod', 'jokes'],
-        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/Useless_Blocks.png',
-		insetIconURL: dinosaurmodIcon,
-		customInsetColor: '#80f41a',
-        description: 'Stupid blocks. Yuck.',
-        featured: true,
-        extDeveloper: 'Jambs / jlgri',
-        internetConnectionRequired: false
     },
 	 {
         name: 'Spinach Facts',
@@ -3253,6 +3142,16 @@ spExtensions.forEach(ext => {
 	
 //Ark IDE
 arkExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+
+//Dino Mod
+dinoExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+
+//Snail IDE
+snailExtensions.forEach(ext => {
         menuItems.push(ext);
     });
 

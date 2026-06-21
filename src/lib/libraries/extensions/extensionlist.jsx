@@ -2240,8 +2240,336 @@ const arkExtensions = [
         description: 'Adds comment blocks to your project.',
         featured: true
     },
+    {
+        name: "Advanced Keyboard",
+        description: "Upgraded keyboard input: key combos (2–5 keys), long press detection, WASD direction, key counters, HAT events with edge trigger, and last key tracking..",
+        extensionId:"https://extensions.arkide.site/extensions/Askyy/Advanced_keyboard.js",
+        iconURL: "https://extensions.arkide.site/images/Askyy/keyboard.jpg",
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        credits: "Askyy",
+		featured: true
+    },
+    {
+        name: "Game Dev Utils",
+        description: "Essential game dev blocks: FPS counter, delta time, frame count, rectangle collision, LERP, distance & angle calculations, camera follow, snap-to-grid, named timers, and screen wrap.",
+        extensionId:"https://extensions.arkide.site/extensions/Askyy/Devs_utilities_ex.js",
+        iconURL: "https://extensions.arkide.site/images/Askyy/game_dev_utils.jpg",
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        credits: "Askyy",
+		featured: true
+    },
+    {
+        name: "Geography (Ark)",
+        description: "Country data for 195+ nations: capital, population, region, subregion, currency, timezone, flag URL, languages. Plus live geolocation and IP address lookup.",
+        extensionId:"https://extensions.arkide.site/extensions/Askyy/Geography_ex.js",
+        iconURL: "https://extensions.arkide.site/images/Askyy/geography.jpg",
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        credits: "Askyy",
+		featured: true
+    },
+    {
+        name: "Internet & Device",
+        description: "Read device info directly from the browser: connection status, browser name/version, screen size, CPU cores, memory, orientation, language, battery level and charging state.",
+        extensionId:"https://extensions.arkide.site/extensions/Askyy/Internet_Device_ex.js",
+        iconURL: "https://extensions.arkide.site/images/Askyy/internet_and_device.jpg",
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        credits: "Askyy",
+		featured: true
+    },
+    {
+        name: "Weather",
+        description: "Real-time weather for 300+ world cities via Open-Meteo: temperature, feels like, humidity, wind speed & direction, weather description, rain/snow detection, and tomorrow's forecast.",
+        extensionId:"https://extensions.arkide.site/extensions/Askyy/Weather_ex.js",
+        iconURL: "https://extensions.arkide.site/images/Askyy/weather.png",
+		insetIconURL: arkideIcon,
+		customInsetColor: '#5900FF',
+        tags: ['arkide'],
+        credits: "Askyy",
+		featured: true
+    },
 ];
 
+//DinosaurMod extensions
+const dinoExtensions = [
+ {
+            name: 'Extra Inputs',
+            extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/extrainputs.js',
+            tags: ['dinosaurmod'],
+			insetIconURL: dinosaurmodIcon,
+		    customInsetColor: '#80f41a',
+            iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/ExtraInputsThumbnail.png',
+            description: "This Extension has been merged into the main toolbox. Extra Inputs that you can use.",
+            featured: true,
+            extDeveloper: 'MrIncredibleMakerZe'
+        },
+        {
+            name: 'Timers Plus',
+            extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/legacy-extensions/timers-plus.js',
+            tags: ['dinosaurmod'],
+			insetIconURL: dinosaurmodIcon,
+		    customInsetColor: '#80f41a',
+            iconURL: defaultExtensionIcon,
+            description: "(This Extension won't be worked on because during the creation of this extension i forgot about the Multiple Timers Extension) (Timers don't save!) Create your own timers! There's also pause and resume options.",
+            featured: true,
+            extDeveloper: 'MrIncredibleMakerZe'
+        },
+{
+            name: 'Typable Tab Key',
+            extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/typable-tab-character.js',
+            iconURL: defaultExtensionIcon,
+            tags: ['dinosaurmod'],
+			insetIconURL: dinosaurmodIcon,
+		    customInsetColor: '#80f41a',
+            description: 'Replaced by the Keys+ Extension. Gives the ability of typing the tab character.',
+            featured: true
+        },
+{
+        name: 'DinosaurMod Blocks',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/dinosaurmodextras.js',
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/dinosaurmodextras.png',
+        tags: ['dinosaurmod'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Extra Blocks',
+        inspiredExt: 'TurboWarp Blocks',
+        featured: true
+    },
+ {
+        name: 'Python (DinosaurMod)',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/python.js',
+        iconURL: 'https://dinosaurmod.github.io/extensions/e6fa369466ec201961c4.png',
+        tags: ['dinosaurmod', 'programminglanguage'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Run your own custom code written in Python using Pyodide!',
+        credits: 'Pyodide',
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'Lua',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/lua.js',
+        iconURL: 'https://dinosaurmod.github.io/extensions/f9ffd88d8aba0d58b284.png',
+        tags: ['dinosaurmod', 'programminglanguage'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Run your own custom code written in Lua using Fengari!',
+        credits: 'Fengari',
+        internetConnectionRequired: true,
+        featured: true
+    },
+{
+        name: 'GitHub API',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/github-api.js',
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/githubapi.png',
+        tags: ['dinosaurmod'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Fetch IDs, Description, etc. from Repositories, Users and Organizations.',
+        internetConnectionRequired: true,
+        featured: true
+    },
+{
+        name: 'Site Runtime',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/webextension.js',
+        tags: ['dinosaurmod'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/site-runtime.png',
+        description: 'A Combined version of 2 Extensions: Packager Applications & AdaBrowser',
+        featured: true,
+        extDeveloper: 'MrIncredibleMaker',
+        internetConnectionRequired: true,
+        disabled: false
+    },
+{
+        name: 'Keys Plus (DinosaurMod)',
+        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/keys-plus-extension.js',
+        iconURL: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/icons/keysPlus.png',
+        tags: ['categoryexpansion', 'dinosaurmod'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Detect more keys when they are pressed or hit and make certain keys typable.',
+        extDeveloper: 'MrIncredibleMaker',
+        inspiredExt: 'Typable Tab Key Extension and More Keys Events (by julmik6478) Extension',
+        featured: true
+    },
+{
+        name: 'Hacked Blocks',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/penguinmod-version/hackedblocks.js',
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/hackedblocks.png',
+        tags: ['dinosaurmod'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Hacked Blocks that exist in Penguinmod but are not shown on the main toolbox.',
+        credits: 'Some blocks from pumpkinhasapatch, LilyMakesThings, MrIncredibleMakerZE',
+        featured: true
+    },
+{
+        name: 'Wait block Expansion',
+        extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/waitblockexpansion.js',
+        iconURL: pmControlsExpansionExtensionIcon,
+        tags: ['dinosaurmod', 'categoryexpansion'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: "More wait blocks, i guess..",
+        featured: true,
+    },
+	{
+        name: 'Useless blocks',
+        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/Useless_Blocks.js',
+		iconURL: defaultExtensionIcon,
+		tags: ['dinosaurmod', 'jokes'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/Useless_Blocks.png',
+        description: 'Stupid blocks.',
+		credits: 'Jambs / jlgri',
+        featured: true
+    },
+    {
+        name: 'Dogs',
+        extensionId: 'https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/dogs.js',
+        iconURL: defaultExtensionIcon,
+		tags: ['dinosaurmod', 'jokes'],
+		insetIconURL: dinosaurmodIcon,
+		customInsetColor: '#80f41a',
+        description: 'Blocks related to dogs.',
+        featured: true,
+        inspiredExt: 'G1nX\'s Cats Extension',
+        extDeveloper: 'MrIncredibleMaker'
+    },
+];
+
+// Snail IDE extensions.
+const snailExtensions = [
+     {
+        name: 'Rounding+',
+        description: 'Expansion to the rounding blocks',
+        extensionId: 'https://snail-ide-extensions-gallery.vercel.app/extensions/CharCoalAfterLife/rounding.js',
+        iconURL: 'https://snail-ide-extensions-gallery.vercel.app/images/CharCoalAfterLife/rounding.png',
+        credits: 'CharCoalAfterLife',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+		tags: ['snailide'],
+		featured: true
+    },
+      {
+        name: 'SnailShare API',
+        extensionId: 'https://snail-ide.js.org/api.js',
+        iconURL: 'https://snail-ide.js.org/snailideapiext.png',
+        collaborator: 'BA4X',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        description: 'Fetch details of projects and users from Snailshare.',
+        featured: true
+    },
+     {
+        name: 'Prompts (Snail)',
+        extensionId: 'https://snail-ide.js.org/Prompts.js',
+        iconURL: 'https://snail-ide.js.org/Prompts.png',
+        collaborator: 'LoganCreatez',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide', 'ai'],
+        description: 'Good prompts for PenguinGPT',
+        featured: true
+    },
+	{
+        name: 'ISS',
+        extensionId: 'https://snail-ide.js.org/iss.js',
+        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/snail-ide/iss.jpg?raw=true',
+        insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        description: 'Get the latitude and longitude of the International Space Station',
+        featured: true
+    },
+     {
+        name: 'URL Information',
+        extensionId: 'https://snail-ide.js.org/urlinfo.js',
+        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/urlinfo/urlinfo.png?raw=true',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        credits: 'redspacecat',
+        description: 'Get information about the URL',
+        featured: true
+    },
+    {
+        name: 'Browser & OS Information',
+        extensionId: 'https://snail-ide.js.org/browserandosinfo.js',
+        iconURL: 'https://github.com/Snail-IDE/snail-ide.github.io/blob/develop/src/lib/libraries/extensions/browserandosinfo/browserandosinfo.png?raw=true',
+	    insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        credits: 'redspacecat',
+        description: 'Get information about the user\'s browser and operating system',
+        featured: true
+    },
+      {
+        name: 'Random Utils',
+        extensionId: 'https://snail-ide.js.org/random_utils.js',
+        iconURL: 'https://snail-ide.js.org/random.png',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        description: "Random utilites that you may or may not use.",
+        featured: true
+    },
+	{
+        name: 'Time Utils',
+        extensionId: 'https://snail-ide.js.org/Time_Utilities.js',
+        iconURL: 'https://snail-ide.js.org/time.svg',
+        collaborator: 'GingerNinjaStickdudeWorld',
+        insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        description: "Simple blocks to handle time.",
+        featured: true
+    },
+	{
+            name: 'Share',
+            extensionId: 'shareExt',
+            iconURL: shareImage,
+            insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+            description: 'Share your projects with friends!',
+            featured: true
+        },
+      {
+        name: 'Save Data',
+        extensionId: 'https://snail-ide.js.org/save.js',
+        credits: 'Mr_rudy',
+        iconURL: 'https://raw.githubusercontent.com/Snail-IDE/snail-ide.github.io/2d2190779715b9d4d14e6c62dbd487f0563dbba0/src/lib/libraries/extensions/snailsavedata/cool.svg',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['snailide'],
+        description: "Extremely easy way to save data.",
+        featured: true
+    },
+    {
+        name: 'Grayscale',
+        extensionId: 'https://snail-ide.js.org/grayscale.js',
+        credits: 'Mr_rudy',
+        iconURL: 'https://snail-ide.js.org/grayscale.svg',
+		insetIconURL: snailideIcon,
+		customInsetColor: '#cc00ff',
+        tags: ['penguinmod', 'snailide'],
+        description: "Toggle a dramatic grayscale effect on your project. ",
+        featured: true
+    },
+];
 
 // GaiaMod extensions
 const gmExtensions = [
@@ -4314,6 +4642,8 @@ export {
 	pmExtensions,
 	pmExtras,
 	arkExtensions,
+	dinoExtensions,
+	snailExtensions,
 	gmExtensions,
 	spExtensions,
 	nbExtensions,

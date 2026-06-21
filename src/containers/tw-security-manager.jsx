@@ -93,7 +93,9 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://huggingface.co/datasets/soiz1/my-scratch-ai-extensions/raw/main/') ||
     url.startsWith('https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/') ||
     url.startsWith('https://extensions.arkide.site/extensions/Ark/') ||
+    url.startsWith('https://extensions.arkide.site/extensions/Askyy/') ||
     url.startsWith('https://github.com/The-ArkIDE-Project/ArkIDE-ExtensionGallery/blob/main/static/extensions/Ark/') ||
+    url.startsWith('https://github.com/The-ArkIDE-Project/ArkIDE-ExtensionGallery/blob/main/static/extensions/Askyy') ||
    
     
 
