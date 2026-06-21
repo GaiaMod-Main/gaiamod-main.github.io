@@ -4973,6 +4973,166 @@ const gvbmExtensions = [
 	},
 ];
 
+// CCW extensions
+const ccwExtensions = [
+	{
+        name: 'Better Quake',
+        extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
+        iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
+        credits: 'fath11',
+        tags: ['gandiide'],
+        description: 'Better shader loader.',
+        featured: true
+    },
+	{
+        name: 'Cocrea Fetch API',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/CocreaFetch.js',
+        iconURL: cocreaFetchThumb,
+        credits: 'fath11',
+        tags: ['gandiide'],
+        description: 'Fetches API from Cocrea.',
+        featured: true
+    },
+	{
+        name: 'Nostalgist',
+        extensionId: 'https://m.ccw.site/user_projects_assets/b45605a0ce457806eb9a6d4a675058e6.js',
+        iconURL: 'https://m.ccw.site/works-covers/1a43ba56-d1a9-4e55-aa93-c5c2c0397381.png',
+        credits: '酷可mc',
+        tags: ['gandiide'],
+        description: 'Supports games on platforms such as FC, SFC, MEGADRIVE, GB, GBC, GBA, and more!',
+        featured: true
+    },
+	{
+        name: 'Better Pop-Ups',
+        extensionId: 'https://gaiamod-main.github.io/extensions/BetterPopUps.js',
+        iconURL: 'https://m.ccw.site/works-covers/31844375-9b2b-4a7c-abc1-268adb9c7008.png',
+        credits: 'skydog221',
+        tags: ['gandiide'],
+        description: 'Makes pop-ups better using SweetAlert!',
+        featured: true
+    },
+	{
+        name: 'Dolly Pro 1.2.4',
+        extensionId: 'https://m.ccw.site/user_projects_assets/a093723478387c8a2e96fcf301f538ed.js',
+        iconURL: 'https://m.ccw.site/works-covers/eb7fe635-91d5-4b50-9fd8-458f988d6782.png',
+        credits: 'Arkos',
+        tags: ['gandiide'],
+        description: 'Create better clones with this one!',
+        featured: true
+    },
+	{
+        name: 'Watermelon Webpage Walker',
+        extensionId: 'https://m.ccw.site/user_projects_assets/1c86cee6a6479bd689727d2a79b8c226.js',
+        iconURL: 'https://m.ccw.site/works-covers/68a90dfc-2065-4378-8cc9-74dc240806ca.png',
+        credits: '海糖西瓜君',
+        tags: ['gandiide'],
+        description: 'Bring characters off the stage!',
+        featured: true
+    },
+	{
+        name: 'Mouse Game Pop-Up',
+        extensionId: 'https://m.ccw.site/user_projects_assets/7d6758a5943a16e2b00f5b3079fd281e.js',
+        iconURL: 'https://m.ccw.site/works-covers/70489530-2dab-4e82-86c0-013cc28963d3.png',
+        credits: '末·开心的小默鼠[森林镇]（鼠鼠团）',
+        tags: ['gandiide'],
+        description: 'Better game making.',
+        featured: true
+    },
+	{
+        name: 'Sky Dog\'s Window Manipulation',
+        extensionId: 'https://gaiamod-main.github.io/extensions/SkyDogWindowRig.js',
+        iconURL: 'https://m.ccw.site/works-covers/6cc77124-4ead-4306-8327-15797f464da2.jpg',
+        credits: 'skydog221',
+        tags: ['gandiide'],
+        description: 'Manipulate the window object! Set the page icon！',
+        featured: true
+    },
+	{
+        name: 'Dynamic Pop-up Tool',
+        extensionId: 'https://m.ccw.site/user_projects_assets/a12e32d88eb5553fb009b363667964fa.js',
+        iconURL: 'https://m.ccw.site/works-covers/19c9ed87-01bd-42e6-94ed-cb7ac2467dd7.png',
+        credits: '橙膏_Orangy',
+        tags: ['gandiide'],
+        description: 'Packed with astonishing features and amazing animations!',
+        featured: true
+    },
+];
+
+// Adacraft extensions
+const adacraftExtensions = [
+{
+        name: 'Adacraft HTTP',
+        extensionId: 'adahttp',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/dea779e4ed4e0d1e4d553755f0beea24.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/c82f3fea945be86f2c208f2e3d799c8e.svg',
+        description: 'Some new blocks to send HTTP requests ad manage results.',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Adacraft GIF',
+        extensionId: 'gif',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/e482db7668b6f6bbc8ce5223e4427e96.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/bbb78885842b3cd65078881647f674f2.svg',
+        description: 'Some new blocks to encode GIF files.',
+        credits: 'Adacraft',
+        featured: true
+    },
+{
+        name: 'Ada Vision',
+        extensionId: 'adavision',
+        tags: ['adacraft', 'ai'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/e0dbaa558a96f981dd0a34c25b4b4b84.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/327aa5322c2e9cd1cd90cb69efa1c15a.svg',
+        description: 'Use TeachableMachine models to detect things in images.',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Ada Sound',
+        extensionId: 'adasound',
+        tags: ['adacraft', 'ai'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/3aa7424034ffdc3bd8027132a5b1b5b9.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/21800acf6e3a345f805d74d75e32bb2d.png',
+        description: 'Use TeachableMachine models to detect things in sounds.',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Adacraft Runtime',
+        extensionId: 'adaruntime',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/53d3dbd30eb60a7860a3ffdb4753a43f.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
+        description: 'Some new blocks to interact with the adacraft runtime (renderer, VM, etc.)',
+        credits: 'Adacraft',
+        featured: true
+    },
+{
+        name: 'Ada Browser',
+        tags: ['adacraft'],
+        extensionId: 'adabrowser',
+        iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
+        description: 'Some new blocks to interact with the browser',
+        credits: 'Adacraft',
+        featured: true
+    },
+    {
+        name: 'Croquet',
+        extensionId: 'croquet',
+        tags: ['adacraft'],
+        iconURL: 'https://www.adacraft.org/studio/static/assets/05479b8bc697d26fee9740d868c2a30e.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/3ebaeec3436fd9dd59d325a879e1a0dc.svg',
+        description: 'Croquet Collaboration Library',
+        credits: 'Croquet Corporation',
+        featured: true
+    },
+];
+
+
 //Others
 const otherExtensions = [
  {
@@ -4993,25 +5153,6 @@ const otherExtensions = [
         tags: ['othermods'],
         description: "Screenshot the entire page in one click.",
         internetConnectionRequired: false,
-        featured: true
-    },
-	{
-        name: 'Better Quake',
-        extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
-        iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
-        credits: 'fath11',
-        tags: ['gandiide'],
-        description: 'Better shader loader.',
-        featured: true
-    },
-	
-	{
-        name: 'Cocrea Fetch API',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/CocreaFetch.js',
-        iconURL: cocreaFetchThumb,
-        credits: 'fath11',
-        tags: ['gandiide'],
-        description: 'Fetches API from Cocrea.',
         featured: true
     },
 	{
@@ -6720,6 +6861,8 @@ export {
 	aeExtensions,
 	bilupExtensions,
 	twExtensions,
+	ccwExtensions,
+	adacraftExtensions,
 	otherExtensions,
 	ml5Extensions,
 	builtIns,

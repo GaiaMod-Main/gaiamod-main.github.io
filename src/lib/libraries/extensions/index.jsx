@@ -20,10 +20,9 @@ import {
 	aeExtensions,
 	bilupExtensions,
 	twExtensions,
-	otherExtensions,
-	ml5Extensions,
+	ccwExtensions,
+	adacraftExtensions,
 	builtIns,
-	scratch,
 	extensionGalleries,
 	extensionBuilders
 	}
@@ -523,16 +522,6 @@ const menuItems = [
         description: 'Wonderful utility blocks!',
         featured: true
     },
-    {
-        name: 'Adacraft HTTP',
-        extensionId: 'adahttp',
-        tags: ['adacraft'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/dea779e4ed4e0d1e4d553755f0beea24.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/c82f3fea945be86f2c208f2e3d799c8e.svg',
-        description: 'Some new blocks to send HTTP requests ad manage results.',
-        credits: 'Adacraft',
-        featured: true
-    },
      {
         name: 'Cocrea Extension Wrapper',
         extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/wrapper.global.js',
@@ -578,25 +567,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'Adacraft GIF',
-        extensionId: 'gif',
-        tags: ['adacraft'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/e482db7668b6f6bbc8ce5223e4427e96.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/bbb78885842b3cd65078881647f674f2.svg',
-        description: 'Some new blocks to encode GIF files.',
-        credits: 'Adacraft',
-        featured: true
-    },
-    {
-        name: 'Cocrea Fetch API',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/CocreaFetch.js',
-        iconURL: cocreaFetchThumb,
-        credits: 'fath11',
-        tags: ['gandiide'],
-        description: 'Fetches API from Cocrea.',
-        featured: true
-    },
-    {
         name: 'App Utilities',
         extensionId: 'appmaker',
         iconURL: appMakerIconURL,
@@ -614,36 +584,6 @@ const menuItems = [
         tags: ['othermods'],
         description: "Screenshot the entire page in one click.",
         internetConnectionRequired: false,
-        featured: true
-    },
-    {
-        name: 'Better Quake',
-        extensionId: 'https://raw.githubusercontent.com/Gandi-IDE/custom-extension/refs/heads/main/extensions/QuakeStudio/BetterQuake/BetterQuake.js',
-        iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
-        credits: 'fath11',
-        tags: ['gandiide'],
-        description: 'Better shader loader.',
-        featured: true
-    },
-
-    {
-        name: 'Ada Browser',
-        tags: ['adacraft'],
-        extensionId: 'adabrowser',
-        iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
-        description: 'Some new blocks to interact with the browser',
-        credits: 'Adacraft',
-        featured: true
-    },
-    {
-        name: 'Croquet',
-        extensionId: 'croquet',
-        tags: ['adacraft'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/05479b8bc697d26fee9740d868c2a30e.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/3ebaeec3436fd9dd59d325a879e1a0dc.svg',
-        description: 'Croquet Collaboration Library',
-        credits: 'Croquet Corporation',
         featured: true
     },
 	    {
@@ -678,36 +618,6 @@ const menuItems = [
         extDeveloper: 'AxolayDev',
         tags: ['othermods'],
         description: 'Control your projects with multitouch without a hassle!',
-        featured: true
-    },
-    {
-        name: 'Ada Vision',
-        extensionId: 'adavision',
-        tags: ['adacraft', 'ai'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/e0dbaa558a96f981dd0a34c25b4b4b84.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/327aa5322c2e9cd1cd90cb69efa1c15a.svg',
-        description: 'Use TeachableMachine models to detect things in images.',
-        credits: 'Adacraft',
-        featured: true
-    },
-    {
-        name: 'Ada Sound',
-        extensionId: 'adasound',
-        tags: ['adacraft', 'ai'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/3aa7424034ffdc3bd8027132a5b1b5b9.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/21800acf6e3a345f805d74d75e32bb2d.png',
-        description: 'Use TeachableMachine models to detect things in sounds.',
-        credits: 'Adacraft',
-        featured: true
-    },
-    {
-        name: 'Adacraft Runtime',
-        extensionId: 'adaruntime',
-        tags: ['adacraft'],
-        iconURL: 'https://www.adacraft.org/studio/static/assets/53d3dbd30eb60a7860a3ffdb4753a43f.png',
-        insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
-        description: 'Some new blocks to interact with the adacraft runtime (renderer, VM, etc.)',
-        credits: 'Adacraft',
         featured: true
     },
     {
@@ -2280,6 +2190,16 @@ bilupExtensions.forEach(ext => {
 	
 //TurboWarp
 twExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//Cocrea World
+ccwExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//Adacraft
+adacraftExtensions.forEach(ext => {
         menuItems.push(ext);
     });
 	
