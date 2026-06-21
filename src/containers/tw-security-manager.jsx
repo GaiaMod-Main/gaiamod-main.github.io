@@ -73,6 +73,7 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://raw.githubusercontent.com/Logise1123/myextensions/') ||
     url.startsWith('https://raw.githubusercontent.com/Dinosaurmod/extensions/refs/heads/main/src/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/banana-mod/extensions/refs/heads/main/src/extensions/') ||
+    url.startsWith('https://github.com/playgama/bridge-scratch/releases/latest/download/') ||
     url.startsWith('https://banana-mod.github.io/') ||
     url.startsWith('https://omniblocks.github.io/') ||
     url.startsWith('https://m.ccw.site/user_projects_assets/') || //Cocrea gets it!

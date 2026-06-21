@@ -1121,6 +1121,306 @@ const pmExtensions = [
     },*/
 ];
 
+    const pmExtras = [
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="HTML Canvas"
+                    description="Name of Text extension"
+                    id="canvas.name"
+                />
+            ),
+            extensionId: 'newCanvas',
+            iconURL: canvasExtensionBanner,
+            tags: ['penguinmod'],
+            insetIconURL: canvasExtensionIcon,
+            customInsetColor: '#0094FF',
+            description: (
+                <FormattedMessage
+                    defaultMessage="Extra drawing tools using an HTML Canvas. Works well when used with other extensions."
+                    description="Description of Text extension"
+                    id="text.description"
+                />
+            ),
+            featured: true
+        },
+        {
+            name: 'OLD Canvas',
+            extensionId: 'canvas',
+            iconURL: canvasExtensionBanner,
+            tags: ['penguinmod'],
+            insetIconURL: canvasExtensionIcon,
+            customInsetColor: '#0094FF',
+            description: 'depracated version of HTML Canvas.',
+            featured: true
+        },
+        {
+            name: 'Legacy Files',
+            extensionId: 'jgFiles',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', 'datamgmt'],
+            description: 'Basic blocks for files. This has been replaced by the TurboWarp files extension.',
+            featured: true
+        },
+        {
+            name: 'Clone Communication',
+            extensionId: 'jgClones',
+            iconURL: jgCloneManagerExtensionIcon,
+            tags: ['penguinmod'],
+            description: 'Mainly sharing data between clones and the main sprite, but also some other small features. This has been replaced by the TurboWarp Clones+ extension.',
+            featured: true
+        },
+        {
+            name: 'the doo doo extension',
+            extensionId: 'jgDooDoo',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', 'jokes'],
+            description: 'dr bob eae',
+            featured: true
+        },
+        {
+            name: 'an amazing extension',
+            extensionId: 'jgBestExtension',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epic.avif',
+            internetConnectionRequired: true,
+            tags: ['penguinmod', 'jokes'],
+            description: 'this is SUCH A GOOD EXTENSION USE IT NOW',
+            featured: true
+        },
+        {
+            name: 'Epic utilities',
+            extensionId: 'https://extensions.penguinmod.com/extensions/SharkPool/AprilFools.js',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/epicutils.avif',
+            tags: ['penguinmod', 'jokes'],
+            description: 'the super good utilities brought to you by todays sponsor sharkpool (the epic utilities)',
+            featured: true
+        },
+        {
+            name: 'McUtils',
+            extensionId: 'https://extensions.turbowarp.org/Lily/McUtils.js',
+            tags: ['turbowarp', 'jokes'],
+            iconURL: 'https://extensions.turbowarp.org/images/Lily/McUtils.png',
+            insetIconURL: turbowarpIcon,
+			customInsetColor: '#ff4d4d',
+            description: 'Basic utilities for any fast food employee',
+            featured: true,
+            twDeveloper: 'LilyMakesThings'
+        },
+        {
+            name: 'image blocks',
+            extensionId: 'https://extensions.penguinmod.com/extensions/Ashime/funneimageblocks.js',
+            iconURL: 'https://extensions.penguinmod.com/images/JeremyGamer13/screenshot1.avif',
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod', 'jokes'],
+            internetConnectionRequired: true,
+            description: 'who needs cat blocks when you have penguin block',
+            extDeveloper: 'Ashimee, 0znzw, CST1229',
+            featured: true
+        },
+        {
+            name: 'Unite',
+            extensionId: 'jwUnite',
+            iconURL: jwUniteExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Legacy extension that was eventually merged into the default toolbox.',
+            featured: true
+        },
+        {
+            name: 'Debugging',
+            extensionId: 'jgDebugging',
+            iconURL: jgDebuggingIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Log information and run commands. Good for debugging packaged projects or just easily changing things.',
+            featured: true
+        },
+        {
+            name: 'Test Extension Loader',
+            href: 'https://studio.penguinmod.com/loadExt.html',
+            extensionId: 'special_testExtensionLibrary',
+            iconURL: defaultExtensionIcon,
+            description: 'Test loading extensions from a library. For developers.',
+            featured: true
+        },
+		
+        {
+            name: 'Editor',
+            href: 'https://studio.penguinmod.com/editor.html',
+            extensionId: 'special_editorExtensionLibrary',
+            iconURL: penguinmodLibraryExtensionIcon,
+            description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
+            featured: true
+        },
+        {
+            name: 'localhost:5173',
+            href: 'http://localhost:5173',
+            extensionId: 'special_extensionLibraryLocalhost5173',
+            iconURL: defaultExtensionIcon,
+            description: 'Opens localhost:5173 in a new tab with this tab as the parent. For developers',
+            featured: true
+        },
+        {
+            name: 'localhost:5173?editor=true',
+            href: 'http://localhost:5173?editor=true',
+            extensionId: 'special_extensionLibraryLocalhost5173EditorTrue',
+            iconURL: defaultExtensionIcon,
+            description: 'Opens localhost:5173 in a new tab with this tab as the parent. Sets ?editor=true. For developers',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="OOP"
+                    description="Name of OOP extension"
+                    id="jwStructs.jwStructsExtension.name"
+                />
+            ),
+            extensionId: 'jwStructs',
+            tags: ['penguinmod'],
+            iconURL: jwStructsExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            description: (
+                <FormattedMessage
+                    defaultMessage="Removed from list. OOP blocks. OOp is a programming paradigm that uses objects and their interactions to design applications and computer programs."
+                    description="Description of OOP extension"
+                    id="jwStructs.jwStructsExtension.description"
+                />
+            ),
+            featured: true
+        },
+        {
+            name: 'PenguinMod Permissions',
+            extensionId: 'JgPermissionBlocks',
+            iconURL: jgPermissionExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Legacy extension, old blocks no longer serve a real purpose. Direct blocks to manage permissions that PenguinMod requires you have to do certain tasks.',
+            featured: true
+        },
+        {
+            name: 'Jeremys Dev Tools',
+            extensionId: 'jgDev',
+            iconURL: defaultExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
+            credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
+            featured: true
+        },
+        {
+            name: '3D',
+            extensionId: 'jg3d',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#B200FF',
+            insetIconURL: jg3dInsetExtensionIcon,
+            description: 'Do not use for real projects. Not recommended, unstable, and will be rewritten/remade entirely at a later date. In development.',
+            featured: true,
+            isBuggy: true
+        },
+        {
+            name: '3D Physics',
+            extensionId: 'fr3d',
+            iconURL: fr3dPhysicsExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#D066FE',
+            insetIconURL: fr3dPhysicsInsetExtensionIcon,
+            description: 'Physics for the 3D extension.',
+            featured: true
+        },
+        {
+            name: 'Interfaces',
+            extensionId: 'jgInterfaces',
+            iconURL: jgsilvxrcatInterfacesExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            credits: 'silvxrcat',
+            tags: ['penguinmod'],
+            description: 'In development.',
+            featured: true
+        },
+        {
+            name: 'Packager Applications',
+            extensionId: 'jgPackagerApplications',
+            iconURL: jgPackagerApplicationsExtensionIcon,
+            insetIconURL: jgPackagerApplicationsInsetExtensionIcon,
+            twDeveloper: 'CubesterYT',
+            customInsetColor: '#66B8FF',
+            tags: ['penguinmod', 'packager'],
+            description: 'In development. Do extra things in packaged applications that you can\'t do in the website!',
+            featured: true
+        },
+
+        {
+            name: 'Inline Blocks',
+            extensionId: 'pmInlineBlocks',
+            iconURL: pmInlineBlocksExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="Pathfinding"
+                    description="Name of Pathfinding extension"
+                    id="jgPathfinding.Pathfinding.name"
+                />
+            ),
+            extensionId: 'jgPathfinding',
+            tags: ['penguinmod'],
+            iconURL: jgPathfindingExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            description: (
+                <FormattedMessage
+                    defaultMessage="(Unstable and or laggy; Needs further work) Have sprites navigate around obstacles in your game instead of clipping into them."
+                    description="Description of Pathfinding extension"
+                    id="jgPathfinding.Pathfinding.description"
+                />
+            ),
+            featured: true
+        },
+        {
+            name: 'Animation',
+            extensionId: 'jgAnimation',
+            iconURL: jgAnimationExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod'],
+            description: 'In development. Currently buggy and missing features.',
+            featured: true
+        },
+        {
+            name: 'Virtual Reality',
+            extensionId: 'jgVr',
+            iconURL: jgVrExtensionIcon,
+			insetIconURL: penguinmodIcon,
+		    customInsetColor: '#00c3ff',
+            tags: ['penguinmod', 'hardware'],
+            description: 'In development.',
+            extDeveloper: "JeremyGamer13",
+            extraLabels: [
+                {
+                    name: "Uses code from",
+                    value: "\"Augmented Reality\" by Vadik1"
+                }
+            ],
+            featured: true,
+            isBuggy: true
+        }
+    ];
+
+
 //SharkPool's extensions
 const spExtensions = [
     {
@@ -1943,6 +2243,99 @@ const arkExtensions = [
 ];
 
 
+// GaiaMod extensions
+const gmExtensions = [
+{
+        name: 'Gaia Utilities',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaBlocks.js',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
+        iconURL: gaiaBlocksThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        tags: ['gaiamod'],
+		gaiaModRequired: true,
+        description: 'Wonderful utility blocks!',
+        featured: true
+    },
+	{
+        name: 'GaiaGPT',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaGPT.js',
+        iconURL: gaiaGPTThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        tags: ['gaiamod', 'ai'],
+		gaiaModRequired: true,
+        description: 'A GaiaMod modification of Pang AI with more prompts.',
+        extDeveloper: 'logise1123 and GaiaWindWave90',
+        internetConnectionRequired: true,
+        featured: true
+    },
+	{
+        name: 'Webcam Recorder',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
+        iconURL: webcamThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        credits: '-SIPC-, with modifications by GaiaWindWave90',
+        tags: ['gaiamod'],
+		gaiaModRequired: true,
+        description: 'Records videos straight out of webcam.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+	{
+        name: 'Prompts',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GTPPrompts.js',
+        iconURL: promptsThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        extDeveloper: 'GaiaWindWave90',
+        tags: ['gaiamod', 'ai'],
+		gaiaModRequired: true,
+        description: 'Prompts made for Gaia AI. Inspired by the prompts extension found in Snail-IDE.',
+        featured: true
+    },
+	{
+        name: 'Wonder Blocks',
+        extensionId: 'wonderblocks',
+        iconURL: wonderBlocksIcon,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        tags: ['gaiamod'],
+        description: 'Some mysterious blocks.',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
+        gaiaModRequired: true,
+        featured: true
+    },
+	{
+        name: 'Spinach Facts',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/SpinachFacts.js',
+        iconURL: spinachThumb,
+		insetIconURL: gaiamodIcon,
+		customInsetColor: '#2D2DD2',
+        credits: 'GaiaWindWave90 with some blocks from other users.',
+        tags: ['gaiamod', 'jokes'],
+		gaiaModRequired: true,
+        description: 'An extension about spinach! Based on Gen1x\'s CATS, MrIncredibleMaker\'s DOGS and pooiod7\'s Raccoon Facts extensions.',
+        internetConnectionRequired: true,
+        featured: true
+    },
+	{
+            name: 'Penguin Attack!',
+            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PenguinAttack.js',
+            iconURL: penguinThumb,
+    		insetIconURL: gaiamodIcon,
+	    	customInsetColor: '#2D2DD2',
+            tags: ['gaiamod', 'jokes'],
+			gaiaModRequired: true,
+            internetConnectionRequired: true,
+            credits: 'JeremyGamer13, with modifications by GaiaWindWave90',
+            description: 'Edited version of the Fire in the Hole extension.',
+            featured: true
+      },
+];
+
+
 // NitroBolt extensions
 const nbExtensions = [
     {
@@ -1955,7 +2348,7 @@ const nbExtensions = [
         featured: true
     },
     {
-        name: 'Comments',
+        name: 'NitroBolt Comments',
         extensionId: 'https://extensions.nitrobolt.org/Comments.js',
         iconURL: 'https://extensions.nitrobolt.org/images/Comments.svg',
         tags: ['nitrobolt'],
@@ -2022,7 +2415,7 @@ const amExtensions = [
         featured: true
     },
 	{
-        name: 'Console',
+        name: 'AcidMod Console',
         extensionId: 'https://acidmod.js.org/extensions/AcidMod/acidConsole.js',
         credits: 'AcidMod',
         iconURL: 'https://acidmod.js.org/extensions/images/AcidMod/acidConsole.svg',
@@ -2032,6 +2425,667 @@ const amExtensions = [
     },
 ];
 
+// DashBlocks extensions
+const dbExtensions = [
+    {
+        name: "Playgama Bridge SDK",
+        description: "Blocks that initialize and interact with the Playgama Bridge SDK. Official.",
+        extensionId: "https://github.com/playgama/bridge-scratch/releases/latest/download/PlaygamaBridge.js",
+		iconURL: defaultExtensionIcon,
+        credits: "Playgama, sergei-playgama and DBDev-IT",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "YaGames SDK",
+        description: "Blocks that initialize and interact with the Yandex Games SDK. Unofficial.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/timaaos/YaGames.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/timaaos/YaGames.svg",
+        credits: "timaaos, scratch_craft_2, DBDev-IT, and Den4ik-12",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Telegram Bot API",
+        description: "Blocks that interact with the Telegram API for bots. Unofficial.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/damir2809/TelegramBotAPI.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/damir2809/TelegramBotAPI.svg",
+        credits: "DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, and Den4ik-12",
+        internetConnectionRequired: true,
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Discord Webhook API",
+        description: "Blocks that interact with the Discord Webhook API. Unofficial.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/damir2809/DiscordWebhookAPI.js",
+		iconURL: defaultExtensionIcon,
+        credits: "DBDev-IT",
+        internetConnectionRequired: true,
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Pathfinding",
+        description: "Find paths from one position to another, avoiding obstacles.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Pathfinding.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/Pathfinding.svg",
+        credits: "Den4ik-12",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Wheel Scroll",
+        description: "Blocks for detecting mouse wheel scrolling.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/WheelScroll.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/WheelScroll.svg",
+        credits: "Den4ik-12",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Maps",
+        description: "Blocks for working with Map, which is more powerful than Object.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Maps.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/Maps.svg",
+        credits: "Den4ik-12",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Dash Targets",
+        description: "Easily manage your sprites, clones, and their properties.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Targets.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/Den4ik-12/Targets.svg",
+        credits: "Den4ik-12",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Modals",
+        description: "Control classic modal windows in browsers!",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/Modals.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png",
+        credits: "scratch_craft_2",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "MediaRecorder",
+        description: "Record your projects directly in Dash!",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js",
+		iconURL: defaultExtensionIcon,
+        credits: "scratch_craft_2",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Arduino ULTIMATE",
+        description: "Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.",
+		iconURL: "https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js",
+        insetIconURL: dashblocksIcon,
+        credits: 'scratch_craft_2',
+        tags: ['dash', 'hardware', 'iot'],
+		customInsetColor: '#F98947',
+		bluetoothRequired: true,
+        featured: true
+    },
+    {
+        name: "Notification",
+        description: "Send notifications with icons.",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/shilenin/Notification.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/shilenin/Notification.svg",
+        credits: "shilenin",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Code Cleaner",
+        description: "Clean and optimize your code!",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/shilenin/CodeCleaner.js",
+        iconURL: "https://raw.githubusercontent.com/Mirazstudio-offical/Dash_code_cleaner_extension/refs/heads/main/logo.svg",
+        credits: "shilenin",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "JavaScript Runner",
+        description: "Run the JavaScript code!",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/shaman2016/JavaScriptRunner.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/shaman2016/JavaScriptRunner.svg",
+        credits: "polzovatel_8787 and DBDev-IT",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+    {
+        name: "Auto Save",
+        description: "Several features for games",
+        extensionId: "https://dashblocks.github.io/extensions/static/extensions/QBacks/AutoSave.js",
+        iconURL: "https://dashblocks.github.io/extensions/static/images/QBacks/AutoSave.svg",
+        credits: "QBacks",
+		insetIconURL: dashblocksIcon,
+        tags: ['dash'],
+		customInsetColor: '#F98947',
+		featured: true
+    },
+];
+
+// MistWarp extensions
+const mistExtensions = [
+{
+        name: 'Async Skins',
+        extensionId: 'https://extensions.mistium.com/featured/Async%20Skins.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Async%20Skins.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Have your sprites render as other images or costumes.",
+        featured: true
+    },
+{
+        name: 'MistWarp Canvas',
+        extensionId: 'https://extensions.mistium.com/featured/Canvas.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Canvas.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Create and manipulate canvases with this extension.",
+        featured: true
+    },
+    {
+        name: 'Discord Bot',
+        extensionId: 'https://extensions.mistium.com/featured/DiscordBot.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/DiscordBot.png',
+        tags: ['mistwarp'],
+        description: 'Makes Discord bots.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+    {
+        name: 'EvalPlus',
+        extensionId: 'https://extensions.mistium.com/featured/EvalPlus.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/EvalPlus.png',
+        tags: ['mistwarp'],
+        description: 'Evaluate JS better (plus some dom stuff).',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+    {
+        name: 'Github (Mist)',
+        extensionId: 'https://extensions.mistium.com/featured/Github.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Github.png',
+        tags: ['mistwarp'],
+        description: 'Access GitHub from Scratch.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+    {
+        name: 'HTMLInputs',
+        extensionId: 'https://extensions.mistium.com/featured/HTMLInputs.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/HTMLInputs.png',
+        tags: ['mistwarp'],
+        description: 'Manage html inut elements on the stage.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+{
+        name: 'Iframe+',
+        extensionId: 'https://extensions.mistium.com/featured/Iframe+.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Iframe+.png',
+        tags: ['mistwarp'],
+       insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Have many iframes at once.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+{
+        name: 'IndexedDB',
+        extensionId: 'https://extensions.mistium.com/featured/IndexedDB.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/IndexedDB.png',
+        tags: ['mistwarp'],
+       insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Access and write to IndexedDB.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+{
+        name: 'KeyHistory',
+        extensionId: 'https://extensions.mistium.com/featured/KeyHistory.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/KeyHistory.png',
+        tags: ['mistwarp'],
+       insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Manage previous keys simply",
+        featured: true
+    },
+	    {
+        name: 'MediaUtils',
+        extensionId: 'https://extensions.mistium.com/featured/MediaUtils.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/MediaUtils.png',
+        tags: ['mistwarp'],
+        description: 'Just some uilities for media devices.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+	    {
+        name: 'Mist\'s Utils',
+        extensionId: 'https://extensions.mistium.com/featured/Mist\'s%20Utils.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Mist\'s%20Utils.png',
+        tags: ['mistwarp'],
+        description: 'A bunch of compiled stuff',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+	    {
+        name: 'MistFetch',
+        extensionId: 'https://extensions.mistium.com/featured/MistFetch.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/MistFetch.png',
+        tags: ['mistwarp'],
+        description: 'Fetch extension for http and stuff.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+{
+        name: 'OASM',
+        extensionId: 'https://extensions.mistium.com/featured/OASM.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/OASM.png',
+        tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        description: "Run the full oasm interpreter except very fast.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+	    {
+        name: 'Persistent File System',
+        extensionId: 'https://extensions.mistium.com/featured/Persistent%20File%20System.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Persistent%20File%20System.png',
+        tags: ['mistwarp'],
+        description: 'Persistent file system using IndexedDB.',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+{
+        name: 'Python',
+        extensionId: 'https://extensions.mistium.com/featured/Python.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Python.png',
+        tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        description: "Run python with piodide.",
+        internetConnectionRequired: false,
+        featured: true
+    },
+	    {
+        name: 'RDF',
+        extensionId: 'https://extensions.mistium.com/featured/RDF.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/RDF.png',
+        tags: ['mistwarp'],
+        description: 'Type restricted data formatting',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+ {
+        name: 'Rotur',
+        extensionId: 'https://extensions.mistium.com/featured/Rotur.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Rotur.png',
+        tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        description: "Utilise Rotur in your projects.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+    {
+        name: 'RoturVoice',
+        extensionId: 'https://extensions.mistium.com/featured/roturVoice.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/roturVoice.png',
+        tags: ['mistwarp'],
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        description: "Voice and video calling for GaiaMod and other Scratch mods.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+ {
+        name: 'Shaders',
+        extensionId: 'https://extensions.mistium.com/featured/Shaders.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Shaders.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Run GLSL shaders on your sprites.",
+        internetConnectionRequired: false,
+        featured: true
+    },
+	    {
+        name: 'MistWarp Tables',
+        extensionId: 'https://extensions.mistium.com/featured/Tables.js',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Tables.png',
+        tags: ['mistwarp'],
+        description: 'basically just compiled 2d arrays',
+		insetIconURL: mistwarpIcon,
+		customInsetColor: '#D399E5',
+        credits: 'Mistium',
+        featured: true
+    },
+{
+        name: 'Virtual File System',
+        extensionId: 'https://extensions.mistium.com/featured/Virtual%20File%20System.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/Virtual%20File%20System.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "in memory file system as an ext goes pretty crazy.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+{
+        name: 'WebsocketPlus',
+        extensionId: 'https://extensions.mistium.com/featured/WebsocketPlus.js',
+        credits: 'Mistium',
+        iconURL: 'https://raw.githubusercontent.com/Mistium/extensions.mistium/main/images/WebsocketPlus.png',
+        tags: ['mistwarp'],
+        insetIconURL: mistwarpIcon,
+       customInsetColor: '#D399E5',
+        description: "Connect and manage multiple websocket connections.",
+        internetConnectionRequired: true,
+        featured: true
+    },
+];
+
+// Astra Editor extensions
+const aeExtensions = [
+    {
+      extensionId: 'https://editors.astras.top/extensions/cyberexplorertools.js',
+      name: 'Cyberexplorer\'s Toolbox Mini',
+      description: 'A toolbox mini.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/cyberexplorertools.png',
+      credits: 'Cyberexplorer',
+      featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/prohibitedWordsExtension.js',
+      name: 'XJY\'s blocked words',
+      description: 'Makes it easier for you to manage blocked words, suitable for chat features',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/prohibitedWordsExtension.png',
+      credits: '小金鱼',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/cyberexplorerfilereader.js',
+      name: 'Cyberexplorer\'s File Reader',
+      description: 'Open files and folders, and return contents in specified formats.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/cyberexplorerfilereader.png',
+      credits: 'Cyberexplorer',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/cyberexplorerterminal.js',
+      name: 'Cyberexplorer\'s Terminal',
+      description: 'Better than the terminal addon!',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/cyberexplorerterminal.png',
+      credits: 'Cyberexplorer',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/hashhelper.js',
+      name: '哈希助手',
+      description: '提供一些哈希函数，包括SHA-1、SHA-256、CRC32和HMAC-SHA256，用于数据完整性的验证。',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/hashhelper.png',
+      credits: 'fhy-action',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/WinUI3.js',
+      name: '类WinUI3弹窗',
+      description: '弹窗！更好用的弹窗！',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/WinUI3.png',
+      credits: 'E.R.T.J',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/textprocessing.js',
+      name: 'TextProcessing',
+      description: 'Provides a rich set of text processing blocks for advanced text manipulation scenarios: case conversion, search & replace, regex, split/join, statistics, text cleaning, and more.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/textprocessing.png',
+      credits: 'fhy-action',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/ImageProcessor.js',
+      name: 'image processor',
+      description: 'A simple image processing',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/ImageProcessor.png',
+      credits: 'CramYing',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/textcheck.js',
+      name: 'Text Check',
+      description: 'This is a text checking extension that provides blocks to check if an input is a valid character/number and whether it contains specified special characters.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/textcheck.png',
+      credits: 'GALAXY__a',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/EsayWindows10Windows11Animations.js',
+      name: 'Imitating Windows10&11 window pop-up animations',
+      description: 'Let your Scratch OS project have window pop-up animations similar to Windows 10 & 11.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/EsayWindows10Windows11Animations.png',
+      credits: '蓝莓是颗果',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/SheepToolkit.js',
+      name: 'SheepToolkit',
+      description: 'Some strange blocks.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/SheepToolkit.png',
+      credits: '小小羊',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/ningqiRepetitiveblock.js',
+      name: 'ningqi-Repetitive block',
+      description: 'Let you simplify some repetitive building blocks',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/ningqiRepetitiveblock.png',
+      credits: 'ningqi',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/ningqiVariableTool.js',
+      name: 'ningqiVariableTool',
+      description: 'Allows you to create new variables within the extension, list',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/ningqiVariableTool.png',
+      credits: 'ningqi',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/ningqiSensings.js',
+      name: 'ningqiSensings',
+      description: 'Check for some things that may not be part of the scratchwork',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/ningqiSensings.png',
+      credits: 'ningqi',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/ningqiCollect.js',
+      name: 'ningqi Collection1.5',
+      description: 'Collected a bunch of useful and fun things!',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/ningqiCollect.png',
+      credits: 'ningqi',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/ningqiMultiSourceExtensions.js',
+      name: 'Multi-Source Extensions List',
+      description: 'Fetches extension lists from AstraEditor or ningqiCollectCollection repositories, and allows loading extensions from arbitrary URLs.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/ningqiMultiSourceExtensions.png',
+      credits: 'ningqi',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/windowstoast.js',
+      name: 'Windows toast',
+      description: 'Send Windows Toast notifications with icon, sound and duration settings',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/windowstoast.png',
+      credits: 'DVD',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/browserDetector.js',
+      name: 'Browser Check',
+      description: 'Detects the browser type running the project, supports multiple browser identification',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/browserDetector.png',
+      credits: 'DVD',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/betterIframe.js',
+      name: 'Better Iframe',
+      description: 'Better Iframe framework, containing more features!',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/betterIframe.png',
+      credits: 'fhy-action',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/NTcolor.js',
+      name: 'NTcolor',
+      description: 'URL-Only High-Performance Color Analyzer',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/NTcolor.png',
+      credits: 'NTUN',
+	  featured: true
+    },
+    {
+      extensionId: 'https://editors.astras.top/extensions/lmslogic.js',
+      name: 'Logic Operations',
+      description: 'Provides various logic gates, boolean operations, and bitwise operations.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/lmslogic.png',
+      credits: 'fhy-action',
+	  featured: true
+    },
+];
 
 // Bilup extensions
 const bilupExtensions = [
@@ -3258,10 +4312,15 @@ const builtIns = [
 
 export {
 	pmExtensions,
+	pmExtras,
 	arkExtensions,
+	gmExtensions,
 	spExtensions,
 	nbExtensions,
 	amExtensions,
+	dbExtensions,
+	mistExtensions,
+	aeExtensions,
 	bilupExtensions,
 	builtIns,
 	extensionGalleries,
