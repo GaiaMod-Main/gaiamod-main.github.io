@@ -5679,6 +5679,16 @@ const adacraftExtensions = [
 //Others
 const otherExtensions = [
  {
+        name: 'Extension Manager',
+        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/extensionManager.js',
+        iconURL: 'https://cicpowerbox.us/wp-content/uploads/2021/08/CIC-POWERBOX-CROSSOVER-3.png',
+        credits: 'soiz1, with modifications by GaiaWindWave90',
+        tags: ['othermods'],
+        description: 'Manages extensions.',
+        internetConnectionRequired: false,
+        featured: true
+    },
+ {
         name: 'Bluetooth Request',
         extensionId: 'https://bludisanlemon.github.io/lemons-gallery/extensions/Lemon/bluetooth.js',
         credits: 'BludIsAnLemon',
