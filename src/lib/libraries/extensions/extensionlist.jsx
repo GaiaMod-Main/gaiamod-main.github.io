@@ -2532,7 +2532,7 @@ const emExtensions = [
         credits: 'MubiLop',
 		insetIconURL: electramodIcon,
 		customInsetColor: '#625e97',
-        tags: ['electramod'],
+        tags: ['electramod', 'ai'],
         featured: true
     },
     {
