@@ -19,6 +19,7 @@ import {
 	mistExtensions,
 	aeExtensions,
 	bilupExtensions,
+	ztEngineExtensions,
 	twExtensions,
 	ccwExtensions,
 	adacraftExtensions,
@@ -522,18 +523,6 @@ const menuItems = [
         description: 'Wonderful utility blocks!',
         featured: true
     },
-     {
-        name: 'Cocrea Extension Wrapper',
-        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/wrapper.global.js',
-       extDeveloper: 'Xbdowf, FurryR',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/ccw.svg',
-        tags: ['zerotwoengine'],
-        insetIconURL: zeroTwoEngineIcon,
-		customInsetColor: '#00BAAD',
-        description: "A Bootstrap extension for Gandi IDE loaders in GaiaMod.",
-        internetConnectionRequired: false,
-        featured: true
-    },
 	    {
         name: 'Wonder Blocks',
         extensionId: 'wonderblocks',
@@ -627,18 +616,6 @@ const menuItems = [
         credits: 'Flappy25',
         tags: ['othermods'],
         description: 'Generates random text examples.',
-        internetConnectionRequired: false,
-        featured: true
-    },
-       {
-        name: 'QwQAI',
-        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/QwQAI%E5%A4%A7%E6%A8%A1%E5%9E%8B.js',
-        credits: 'zekkei',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/QwQAI%E5%A4%A7%E6%A8%A1%E5%9E%8B.jpg',
-        tags: ['zerotwoengine', 'ai'],
-        insetIconURL: zeroTwoEngineIcon,
-		customInsetColor: '#00BAAD',
-        description: "Interact with a QwQ model by Tongyi Qianwen and some other models as well.",
         internetConnectionRequired: false,
         featured: true
     },
@@ -773,18 +750,6 @@ const menuItems = [
         featured: true,
         internetConnectionRequired: true,
     },
-     {
-        name: 'Hugging Face Transformers',
-        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/transformers.js',
-       extDeveloper: 'PPN-design',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/transformers.png',
-        tags: ['zerotwoengine', 'ai'],
-        insetIconURL: zeroTwoEngineIcon,
-		customInsetColor: '#00BAAD',
-        description: "Transformers for Scratch. Based on Hugging Face Transformers.js.",
-        internetConnectionRequired: false,
-        featured: true
-    },
 	 {
         name: 'Webcam Recorder',
         extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
@@ -822,18 +787,6 @@ const menuItems = [
         description: 'Control sprites with body movements.\nRequires Android phone app.',
         featured: true
     },
-{
-        name: 'TensorFlow.js',
-        extensionId: 'https://github.com/DDguan2010/02engine-extensions/raw/refs/heads/master/extension/tensorflow.js',
-       extDeveloper: 'PPN-design',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/tensorflow.png',
-        tags: ['zerotwoengine', 'ai'],
-        insetIconURL: zeroTwoEngineIcon,
-		customInsetColor: '#00BAAD',
-        description: "Scratch neural network engine based on TensorFlow.js.",
-        internetConnectionRequired: false,
-        featured: true
-    },
     {
         name: 'FireBase Auth',
         extensionId: 'https://raw.githubusercontent.com/Logise1123/FirebaseDB-/refs/heads/main/auth.js',
@@ -862,18 +815,6 @@ const menuItems = [
         iconURL: 'https://p7scratchextensions.pages.dev/ext/Sam/cover.svg',
         tags: ['penguinmod'],
         internetConnectionRequired: true,
-        featured: true
-    },
-    {
-        name: 'Neural Networks',
-        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.js',
-       extDeveloper: '瓜子',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.jpg',
-        tags: ['zerotwoengine', 'ai'],
-        insetIconURL: zeroTwoEngineIcon,
-		customInsetColor: '#00BAAD',
-        description: "A very easy-to use neural network extension.",
-        internetConnectionRequired: false,
         featured: true
     },
 	{
@@ -906,18 +847,6 @@ const menuItems = [
         tags: ['penguinmod'],
         description: 'Share your screen or camera on your project as a data-uri.',
         extDeveloper: 'Pooiod7',
-        featured: true
-    },
-      {
-        name: 'Bezier Curve',
-        extensionId: 'https://raw.githubusercontent.com/DDguan2010/02engine-extensions/refs/heads/master/extension/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF.js',
-       extDeveloper: '空明2403',
-        iconURL: 'https://extensions.02engine.02studio.xyz/image/bezier-curve.png',
-        tags: ['zerotwoengine'],
-        insetIconURL: zeroTwoEngineIcon,
-		customInsetColor: '#00BAAD',
-        description: "Generates Bezier curves, supports control point settings and calculates coordinates and tangent angles of any point on the curve.",
-        internetConnectionRequired: false,
         featured: true
     },
 	{
@@ -2185,6 +2114,11 @@ aeExtensions.forEach(ext => {
 	
 //Bilup
 bilupExtensions.forEach(ext => {
+        menuItems.push(ext);
+    });
+	
+//02 Engine
+ztEngineExtensions.forEach(ext => {
         menuItems.push(ext);
     });
 	
