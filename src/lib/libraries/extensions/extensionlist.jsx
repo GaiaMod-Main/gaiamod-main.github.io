@@ -5762,7 +5762,7 @@ const ccwExtensions = [
         featured: true
     },
 	{
-        name: 'Extension Manager',
+        name: 'Extension Management',
         extensionId: 'https://m.ccw.site/user_projects_assets/24420f3b76f6558800327563e5dcce9c.js',
         iconURL: 'https://m.ccw.site/works-covers/d117e69e-dad0-4390-b86c-0056a4992836.png',
         credits: 'Unknown',
