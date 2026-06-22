@@ -5599,6 +5599,15 @@ const ccwExtensions = [
         description: 'Packed with astonishing features and amazing animations!',
         featured: true
     },
+	{
+        name: 'DeepSeek AI',
+        extensionId: 'https://m.ccw.site/user_projects_assets/5aa5866f0bedeb4825e519517cbbddd5.js',
+        iconURL: 'https://m.ccw.site/works-covers/5b52badb-e4b4-4260-8ccb-53e7f97e2ab4.jpg',
+        credits: 'Lumi',
+        tags: ['gandiide', 'ai'],
+        description: 'Interact with DeepSeek AI.',
+        featured: true
+    },
 ];
 
 // Adacraft extensions
