@@ -70,6 +70,7 @@ import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
 import zeroTwoEngineIcon from './gaiamod/zerotwoengine_icon.png';
 import mistwarpIcon from './mistium/mistwarp_icon.svg';
 import dashblocksIcon from './dashblocks/dashblocks_icon.png';
+import ccwIcon from './gandi-ide/gandiidelogo.png';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
@@ -5524,6 +5525,8 @@ const ccwExtensions = [
         iconURL: 'https://github.com/Gandi-IDE/custom-extension/blob/main/extensions/QuakeStudio/assets/banner.png?raw=true',
         credits: 'fath11',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Better shader loader.',
         featured: true
     },
@@ -5533,6 +5536,8 @@ const ccwExtensions = [
         iconURL: cocreaFetchThumb,
         credits: 'fath11',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Fetches API from Cocrea.',
         featured: true
     },
@@ -5542,6 +5547,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/1a43ba56-d1a9-4e55-aa93-c5c2c0397381.png',
         credits: '酷可mc',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Supports games on platforms such as FC, SFC, MEGADRIVE, GB, GBC, GBA, and more!',
         featured: true
     },
@@ -5551,6 +5558,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/31844375-9b2b-4a7c-abc1-268adb9c7008.png',
         credits: 'skydog221',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Makes pop-ups better using SweetAlert!',
         featured: true
     },
@@ -5560,15 +5569,19 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/eb7fe635-91d5-4b50-9fd8-458f988d6782.png',
         credits: 'Arkos',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Create better clones with this one!',
         featured: true
     },
 	{
-        name: 'Watermelon Webpage Walker',
+        name: 'Webpage Walker',
         extensionId: 'https://m.ccw.site/user_projects_assets/1c86cee6a6479bd689727d2a79b8c226.js',
         iconURL: 'https://m.ccw.site/works-covers/68a90dfc-2065-4378-8cc9-74dc240806ca.png',
         credits: '海糖西瓜君',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Bring characters off the stage!',
         featured: true
     },
@@ -5578,6 +5591,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/70489530-2dab-4e82-86c0-013cc28963d3.png',
         credits: '末·开心的小默鼠[森林镇]（鼠鼠团）',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Better game making.',
         featured: true
     },
@@ -5587,6 +5602,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/6cc77124-4ead-4306-8327-15797f464da2.jpg',
         credits: 'skydog221',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Manipulate the window object! Set the page icon！',
         featured: true
     },
@@ -5596,6 +5613,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/19c9ed87-01bd-42e6-94ed-cb7ac2467dd7.png',
         credits: '橙膏_Orangy',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Packed with astonishing features and amazing animations!',
         featured: true
     },
@@ -5605,6 +5624,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/5b52badb-e4b4-4260-8ccb-53e7f97e2ab4.jpg',
         credits: 'Lumi',
         tags: ['gandiide', 'ai'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Interact with DeepSeek AI.',
         featured: true
     },
@@ -5614,6 +5635,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/9b730676-37ca-418b-8404-39622fad0d50.png',
         credits: 'Minecraft_H2o',
         tags: ['gandiide', 'ai'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Easy to use off-site AI.',
         featured: true
     },
@@ -5623,6 +5646,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/058294b9-7cb7-44d4-8a23-17c5710aefc7.png',
         credits: 'BF(朋友接管',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Control the game using surprises!',
         featured: true
     },
@@ -5632,6 +5657,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/64c0b4f7-6d81-417d-813f-4f0f48252736.png',
         credits: '末·开心的小默鼠[森林镇]（鼠鼠团',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Common HTML tools. *sees a Sprunki*',
         featured: true
     },
@@ -5641,6 +5668,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/9c678132-b1a4-41c8-b8db-11e90ad32513.png',
         credits: '罴',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Change the editor button colors with one click!',
         featured: true
     },
@@ -5650,6 +5679,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/5314d481-cf64-4622-8677-518593e7fc02.png',
         credits: '꧁༺世纪末W༻꧂㍿༺ۣۖ仙ۣۖ༒ۣ入ۣۖ',
         tags: ['gandiide', 'ai'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Yes, this contains AI.',
         featured: true
     },
@@ -5659,6 +5690,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/3f920745-ac34-494a-99a5-0e5907e30d7d.png',
         credits: 'PPPoE?',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Shake! Shake! Shake it up!',
         featured: true
     },
@@ -5668,6 +5701,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/248542684/56547bf123453882e02339b5651a4647.png',
         credits: '邪恶T氏（专骗小初音）',
         tags: ['gandiide', 'ai'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Use the power of AI in GaiaMod!',
         featured: true
     },
@@ -5677,6 +5712,8 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/3f920745-ac34-494a-99a5-0e5907e30d7d.png',
         credits: 'Unknown',
         tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'This only works with Gandi IDE as GaiaMod is capable of easily removing it.',
         featured: true
     },
@@ -5686,7 +5723,42 @@ const ccwExtensions = [
         iconURL: 'https://m.ccw.site/works-covers/a24d1b38-5e01-4d83-854f-ab021e96061d.png',
         credits: '北海智造',
         tags: ['gandiide', 'ai'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
         description: 'Uses Pollinations API.',
+        featured: true
+    },
+	{
+        name: 'Miku Hatsune Block',
+        extensionId: 'https://m.ccw.site/user_projects_assets/c5eb4c7b755a7b739e6699b72e281194.js',
+        iconURL: 'https://m.ccw.site/works-covers/50973288-24ef-4017-b0c4-44541deac7ad.PNG',
+        credits: 'Lumi',
+        tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
+        description: 'Opens a Miku link.',
+        featured: true
+    },
+	{
+        name: 'Lambda Blocks',
+        extensionId: 'https://m.ccw.site/user_projects_assets/5da115b1bfa161cad8f2529f40f2ec55.js',
+        iconURL: 'https://m.ccw.site/works-covers/e05d7ba7-c4b3-4f5a-bbf5-b2a51cd2559a.png',
+        credits: 'Cappu',
+        tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
+        description: 'Lambda yes, Procedure no!',
+        featured: true
+    },
+	{
+        name: 'Normal Scratch Blocks',
+        extensionId: 'https://m.ccw.site/user_projects_assets/543cba7bb0bf353516090403e539482f.js',
+        iconURL: 'https://m.ccw.site/works-covers/fd22effb-1fd0-4363-90ef-9589caf75806.png',
+        credits: '往昔余庆',
+        tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
+        description: 'Fully compatible with a normal Scratch I guess.',
         featured: true
     },
 ];

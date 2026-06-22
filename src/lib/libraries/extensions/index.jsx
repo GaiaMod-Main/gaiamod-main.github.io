@@ -100,6 +100,7 @@ import astraeditorIcon from './gaiamod/astraeditor_icon.svg';
 import zeroTwoEngineIcon from './gaiamod/zerotwoengine_icon.png';
 import mistwarpIcon from './mistium/mistwarp_icon.svg';
 import dashblocksIcon from './dashblocks/dashblocks_icon.png';
+import ccwIcon from './gandi-ide/gandiidelogo.png';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 
