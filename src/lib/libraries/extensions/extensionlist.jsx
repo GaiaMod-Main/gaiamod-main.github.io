@@ -5608,6 +5608,87 @@ const ccwExtensions = [
         description: 'Interact with DeepSeek AI.',
         featured: true
     },
+	{
+        name: 'ModelAPI',
+        extensionId: 'https://m.ccw.site/user_projects_assets/fdbef358cefa9d313839046d9f57882a.js',
+        iconURL: 'https://m.ccw.site/works-covers/9b730676-37ca-418b-8404-39622fad0d50.png',
+        credits: 'Minecraft_H2o',
+        tags: ['gandiide', 'ai'],
+        description: 'Easy to use off-site AI.',
+        featured: true
+    },
+	{
+        name: 'Defense Expansion',
+        extensionId: 'https://m.ccw.site/user_projects_assets/3e26d2da1e3d6e00b90c113e297d1b71.js',
+        iconURL: 'https://m.ccw.site/works-covers/058294b9-7cb7-44d4-8a23-17c5710aefc7.png',
+        credits: 'BF(朋友接管',
+        tags: ['gandiide'],
+        description: 'Control the game using surprises!',
+        featured: true
+    },
+	{
+        name: 'HTML-Assisted Extension',
+        extensionId: 'https://m.ccw.site/user_projects_assets/8c266216bdba04391489e45d12523f76.js',
+        iconURL: 'https://m.ccw.site/works-covers/64c0b4f7-6d81-417d-813f-4f0f48252736.png',
+        credits: '末·开心的小默鼠[森林镇]（鼠鼠团',
+        tags: ['gandiide'],
+        description: 'Common HTML tools. *sees a Sprunki*',
+        featured: true
+    },
+	{
+        name: 'Editor Button',
+        extensionId: 'https://m.ccw.site/user_projects_assets/c1ddc50da31b6b27231ee2cef28845a5.js',
+        iconURL: 'https://m.ccw.site/works-covers/9c678132-b1a4-41c8-b8db-11e90ad32513.png',
+        credits: '罴',
+        tags: ['gandiide'],
+        description: 'Change the editor button colors with one click!',
+        featured: true
+    },
+	{
+        name: 'W\'s Toolbox',
+        extensionId: 'https://m.ccw.site/user_projects_assets/9149543eecf6cdcc03adcab268483811.js',
+        iconURL: 'https://m.ccw.site/works-covers/5314d481-cf64-4622-8677-518593e7fc02.png',
+        credits: '꧁༺世纪末W༻꧂㍿༺ۣۖ仙ۣۖ༒ۣ入ۣۖ',
+        tags: ['gandiide', 'ai'],
+        description: 'Yes, this contains AI.',
+        featured: true
+    },
+	{
+        name: 'Shake Effect',
+        extensionId: 'https://m.ccw.site/user_projects_assets/a19d59f88c932f287e70fe4d5ce541b3.js',
+        iconURL: 'https://m.ccw.site/works-covers/3f920745-ac34-494a-99a5-0e5907e30d7d.png',
+        credits: 'PPPoE?',
+        tags: ['gandiide'],
+        description: 'Shake! Shake! Shake it up!',
+        featured: true
+    },
+	{
+        name: 'AI Pro',
+        extensionId: 'https://m.ccw.site/user_projects_assets/63361b138bcfbc5c1213a8d05ac6bf44.js',
+        iconURL: 'https://m.ccw.site/works-covers/248542684/56547bf123453882e02339b5651a4647.png',
+        credits: '邪恶T氏（专骗小初音）',
+        tags: ['gandiide', 'ai'],
+        description: 'Use the power of AI in GaiaMod!',
+        featured: true
+    },
+	{
+        name: 'The Extension That Cannot be Removed',
+        extensionId: 'https://m.ccw.site/user_projects_assets/088b323562626c383dac99376ea7bd11.js',
+        iconURL: 'https://m.ccw.site/works-covers/3f920745-ac34-494a-99a5-0e5907e30d7d.png',
+        credits: 'Unknown',
+        tags: ['gandiide'],
+        description: 'This only works with Gandi IDE as GaiaMod is capable of easily removing it.',
+        featured: true
+    },
+	{
+        name: 'AI Master',
+        extensionId: 'https://m.ccw.site/user_projects_assets/3fea7ba24b658904eb9e297d2a7fe23f.js',
+        iconURL: 'https://m.ccw.site/works-covers/a24d1b38-5e01-4d83-854f-ab021e96061d.png',
+        credits: '北海智造',
+        tags: ['gandiide', 'ai'],
+        description: 'Uses Pollinations API.',
+        featured: true
+    },
 ];
 
 // Adacraft extensions
