@@ -657,7 +657,7 @@ class MenuBar extends React.Component {
                                         <FormattedMessage
                                             defaultMessage="Doesn't do anything.."
                                             description="Placeholder Menu bar item for settings"
-                                            id="dm.menuBar.placeHolder"
+                                            id="gm.menuBar.placeHolder"
                                         />
                                     </MenuItem>*/}
                                 </MenuSection>
@@ -946,6 +946,12 @@ class MenuBar extends React.Component {
                                         </MenuItem>
                                     )}</CloudVariablesToggler>
                                 </MenuSection>
+								<MenuSection>
+                                    <MenuItemLink href="https://discord.gg/fFnNT8RGav">
+                                        <Send />
+                                        Join Discord!
+                                    </MenuItemLink>
+                                </MenuSection>
                                 <MenuSection>
 								 <MenuItem onClick={this.props.onClickExtManager}>
                                         Extension Manager
@@ -953,11 +959,10 @@ class MenuBar extends React.Component {
 								 <MenuItem onClick={this.props.onClickCustManager}>
                                         Add Custom Extension
                                     </MenuItem>
-								 <MenuItem onClick={() => {
-                                    window.location.href = "https://gaiamod-main.github.io/Extension-Editor/"
-                                }}>
+									<MenuItemLink href="https://gaiamod-main.github.io/Extension-Editor/">
+                                        <Send />
                                         Extension Editor
-                                    </MenuItem>
+                                    </MenuItemLink>
                                     <MenuItem onClick={this.handleClickDownloadLogs}>
                                         <FormattedMessage
                                             defaultMessage="Download Logs"
