@@ -948,7 +948,6 @@ class MenuBar extends React.Component {
                                 </MenuSection>
 								<MenuSection>
                                     <MenuItemLink href="https://discord.gg/fFnNT8RGav">
-                                        <Send />
                                         Join Discord!
                                     </MenuItemLink>
                                 </MenuSection>
@@ -960,7 +959,6 @@ class MenuBar extends React.Component {
                                         Add Custom Extension
                                     </MenuItem>
 									<MenuItemLink href="https://gaiamod-main.github.io/Extension-Editor/">
-                                        <Send />
                                         Extension Editor
                                     </MenuItemLink>
                                     <MenuItem onClick={this.handleClickDownloadLogs}>
