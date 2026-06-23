@@ -2834,7 +2834,7 @@ const gmExtensions = [
         iconURL: gaiaBlocksThumb,
 		insetIconURL: gaiamodIcon,
 		customInsetColor: '#2D2DD2',
-        tags: ['gaiamod'],
+        tags: ['gaiamod', 'ai'],
 		gaiaModRequired: true,
         description: 'Wonderful utility blocks!',
         featured: true
@@ -5681,7 +5681,7 @@ const ccwExtensions = [
         tags: ['gandiide', 'ai'],
 		insetIconURL: ccwIcon,
         customInsetColor: '#1C1B25',
-        description: 'Yes, this contains AI.',
+        description: 'It\'s... generated with an AI?',
         featured: true
     },
 	{
