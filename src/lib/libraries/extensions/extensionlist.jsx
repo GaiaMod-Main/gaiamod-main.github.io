@@ -5772,6 +5772,17 @@ const ccwExtensions = [
         description: 'Manages extensions.',
         featured: true
     },
+	{
+        name: 'Realtime Speech-To-Text',
+        extensionId: 'https://m.ccw.site/user_projects_assets/f3ea1f605acbe43b1f7d71de2b8ebdc7.js',
+        iconURL: 'https://static.vecteezy.com/system/resources/previews/055/824/183/non_2x/speech-to-text-concept-speech-recognition-speech-scanning-voice-to-text-speech-recognition-service-user-recognizes-voice-and-translates-to-text-with-speaker-flat-illustration-vector.jpg',
+        credits: '智溯CS',
+        tags: ['gandiide'],
+		insetIconURL: ccwIcon,
+        customInsetColor: '#1C1B25',
+        description: 'Enables real-time speech-to-text conversion.',
+        featured: true
+    },
 ];
 
 // Adacraft extensions
