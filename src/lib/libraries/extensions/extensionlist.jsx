@@ -718,6 +718,17 @@ const pmExtensions = [
         credits: 'pooiod7',
 		featured: true
     },
+	{
+        name: 'File Upload',
+        description: 'Upload files to the Network, can also used with Files extension.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Codefoxy/cfupload.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Codefoxy/cfupload.svg',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'Codefoxy',
+		featured: true
+    },
     {
         name: 'Scratchblocks',
         description: 'Generate blocks in the Scratch3, or Scratch2 format.',
@@ -1183,6 +1194,127 @@ const pmExtensions = [
         description: 'Authenticate with anything and everything!',
         credits: 'MubiLop',
         featured: true
+    },
+	{
+        name: 'Date Format',
+        description: 'Manage, format and compare dates.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/ddededodediamante/dateFormatV2.js',
+        iconURL: 'https://extensions.penguinmod.com/images/ddededodediamante/dateFormat.svg',
+        credits: 'ddededodediamante',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+        featured: true
+    },
+    {
+        name: 'Translation Keys',
+        description: 'Use translation keys in your projects for multi-language support',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Embin/embintranslation.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Embin/embintranslation.avif',
+        credits: 'embinmc',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Yet Another String Extension',
+        description: 'A small collection of utilty blocks intended to make managing strings much, much easier.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/YetAnotherStringExtension.js',
+        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/YetAnotherStringExtension.svg',
+        credits: 'DogeisCut',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Regular Expressions',
+        description: 'Create, modify, filter, and more with the new regular expression type.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/dogeiscutRegularExpressions.js',
+        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/dogeiscutRegularExpressions.svg',
+        credits: 'DogeisCut',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Sets',
+        description: 'Store non-repeating, unordered data super efficiently in sets.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/dogeiscutSet.js',
+        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/dogeiscutSet.svg',
+        credits: 'DogeisCut',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+	    {
+        name: 'PenguinHook',
+        description: 'Send Webhook requests, that can be Discord or any type of webhook.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/penguinhook.js',
+        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/penguinhook.avif',
+        credits: 'MubiLop',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Number Utilities',
+        description: 'Adds blocks for number formatting and manipulation.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/numutils.js',
+        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/numutils.avif',
+        credits: 'MubiLop',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Mathematics',
+        description: 'Complicated maths extension for nerds.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/jwklong/mathematics.js',
+        iconURL: 'https://extensions.penguinmod.com/images/jwklong/mathematics.avif',
+        credits: 'jwklong',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Big Decimal',
+        description: 'High precision operations. (Support decimals)',
+        extensionId: 'https://extensions.penguinmod.com/extensions/qxsck/big-decimal.js',
+        iconURL: 'https://extensions.penguinmod.com/images/qxsck/big-decimal.svg',
+        credits: 'qxsck',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Iterators',
+        description: 'Transform and iterate over different types of collections and more.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Div/divIterators.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Div/divIterators.svg',
+        credits: 'Dicuo',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
+    },
+    {
+        name: 'Algebraic Effects',
+        description: 'Intercept custom actions in your scripts to pause, resume, or redirect their flow using modular handlers.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Div/divAlgEffects.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Div/divAlgEffects.svg',
+        credits: 'Dicuo',
+        insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+		featured: true
     },
     {
         name: 'Runtime Modifications',
