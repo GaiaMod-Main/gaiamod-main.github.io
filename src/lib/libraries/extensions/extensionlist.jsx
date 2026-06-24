@@ -531,6 +531,39 @@ const pmExtensions = [
 		customInsetColor: '#00c3ff',
 		featured: true
     },
+	{
+        name: 'Video Sharing',
+        extensionId: 'https://extensions.penguinmod.com/extensions/pooiod/VideoSharing.js',
+        iconURL: 'https://extensions.penguinmod.com/images/pooiod/VideoSharing.svg',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        description: 'Share your screen or camera to your projects!',
+        extDeveloper: 'Pooiod7',
+        featured: true
+    },
+	{
+        name: 'Cockatiel Location',
+        description: 'Fetch Users\' IP Addresses and Location.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/bruhbeast-pixel/CockatielLocation.js',
+        iconURL: 'https://extensions.penguinmod.com/images/bruhbeast-pixel/CockatielLocation.svg',
+        credits: 'bruhbeast-pixel',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+		{
+        name: 'Blobs',
+        description: 'An extension made for handling blobs which can be used to store files. Allows to easily make blobs for the Js extension.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Faunks/Blobs.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Faunks/Blobs.avif',
+        credits: 'Faunks',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
     {
         name: 'GPU.sb3',
         description: 'Use WebGPU compute shaders to accelerate your projects. Use Pen+ for rendering, not this.',
@@ -551,6 +584,149 @@ const pmExtensions = [
 		tags: ['penguinmod'],
 		insetIconURL: penguinmodIcon,
 		customInsetColor: '#00c3ff',
+		featured: true
+    },
+	{
+        name: 'Discord Auth',
+        description: 'Login with discord to your projects. Identify users by ID and username in a secure and easy way!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/NotHouse/DiscordAuth.js',
+        iconURL: 'https://extensions.penguinmod.com/images/NotHouse/DiscordAuth-banner.avif',
+        credits: 'enderhacker',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+	{
+        name: 'Google Auth',
+        description: 'Login with Google to your projects. Allows getting a name, profile picture and email from the google account.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Ikelene/googleAuthExtension.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Ikelene/ExtensionBanner.avif',
+        credits: 'Ikelene',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+	{
+        name: 'Twitch',
+        description: 'Communicate with your Twitch Chat on GaiaMod!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/bop_tw/Twitch.js',
+        iconURL: 'https://extensions.penguinmod.com/images/bop_tw/Twitch.avif',
+        credits: 'bop_tw',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+	{
+        name: 'Chess',
+        description: 'A powerful extension that lets you manage a chessboard, customize it, use Stockfish 17 (via API), a local chess engine (Lozza) and much, MUCH more!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Gen1x/chess-ext.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Gen1x/chess-ext.avif',
+        credits: 'G1nX',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+	{
+        name: 'Free Servers',
+        description: 'Here you can find a free server for your projects. And also check whether it is working now or not.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/WAYLIVES/FreeServers.js',
+        iconURL: 'https://extensions.penguinmod.com/images/WAYLIVES/FreeServersIMG.svg',
+        credits: 'WAYLIVES',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+		featured: true
+    },
+	 {
+        name: 'More Types',
+        description: 'Adds more value types to PenguinMod, implementing Functions, Objects, Arrays, Sets, Maps, Symbols and Nothing.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/VeryGoodScratcher42/More-Types.js',
+        iconURL: 'https://extensions.penguinmod.com/images/VeryGoodScratcher42/More-Types.avif',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'VeryGoodScratcher42',
+        featured: true
+    },
+	{
+        name: 'Counter++',
+        description: 'Count anything, at any time, in PenguinMod!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MrRedstonia/counterplusplus.js',
+        iconURL: 'https://extensions.penguinmod.com/images/MrRedstonia/counterplusplus.avif',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'MrRedstonia',
+        featured: true
+    },
+    {
+        name: 'How many lines?',
+        description: 'Blocks to determine the amount of new lines in a piece of text.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Monochromasity/howmanylines.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Monochromasity/placeholder-howmanylines.avif',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'Monochromasity',
+        featured: true
+    },
+    {
+        name: 'Paint Utils',
+        description: 'A colour extension that lets you mix colours.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Fruits555000/PaintUtils.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Fruits555000/PaintUtils.svg',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'Fruits555000',
+        featured: true
+    },
+    {
+        name: 'Resolution',
+        description: 'Provides utility blocks that simplify the creation of projects with dynamic resolution support.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/DogeisCut/Resolution.js',
+        iconURL: 'https://extensions.penguinmod.com/images/DogeisCut/Resolution.svg',
+        credits: 'DogeisCut',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true 
+    },
+    {
+        name: 'Device Motion',
+        description: 'Use Device Motion API to get rotation or movement of the device. Works best on mobile devices. \n Thumbnail by Dillon. ',
+        extensionId: 'https://extensions.penguinmod.com/extensions/gaimerI17/DeviceMotion.js',
+        iconURL: 'https://extensions.penguinmod.com/images/gaimerI17/DeviceMotion.avif',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'gaimerI',
+        featured: true
+    },
+	 {
+        name: 'WindowHasher',
+        description: 'Interact with URL hash: the part of the URL after a hashtag',
+        extensionId: 'https://extensions.penguinmod.com/extensions/pooiod/WindowHasher.js',
+        iconURL: 'https://extensions.penguinmod.com/images/pooiod/WindowHasher.avif',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'pooiod7',
+		featured: true
+    },
+    {
+        name: 'Scratchblocks',
+        description: 'Generate blocks in the Scratch3, or Scratch2 format.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/pooiod/Scratchblocks.js',
+        iconURL: 'https://extensions.penguinmod.com/images/pooiod/Scratchblocks.svg',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        credits: 'pooiod7',
 		featured: true
     },
     {
@@ -665,7 +841,50 @@ const pmExtensions = [
 		insetIconURL: penguinmodIcon,
 		customInsetColor: '#00c3ff',
 		featured: true
-		
+    },
+    {
+        name: 'E2EE',
+        description: 'A general-purpose E2EE (End-to-End Encryption) extension for Scratch.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MikeDev101/e2ee.js',
+        iconURL: 'https://extensions.penguinmod.com/images/MikeDev101/e2ee.svg',
+        credits: 'MikeDev101',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
+    },
+	    {
+        name: 'Extension Exposer',
+        description: 'Access the raw functions from other extensions.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/TheShovel/extexp.js',
+        iconURL: 'https://extensions.penguinmod.com/images/TheShovel/placeholder-extexp.avif',
+        credits: 'TheShovel',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
+    },
+	 {
+        name: 'CORS Proxy',
+        description: 'Accessible CORS Proxies for fetching information with PenguinMod.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/NamelessCat/corsproxy.js',
+        iconURL: 'https://extensions.penguinmod.com/images/NamelessCat/corsproxy.avif',
+        credits: 'NamelessCat',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
+    },
+	 {
+        name: 'YeetYourFiles',
+        description: 'Upload files to the cloud by throwing it to outer space!',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/yeetyourfiles.js',
+        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/yeetyourfiles.png',
+        credits: 'MubiLop',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
     },
         {
         name: 'Stage Brah',
@@ -678,6 +897,17 @@ const pmExtensions = [
 		customInsetColor: '#00c3ff',
 		featured: true
     },
+	{
+        name: 'Update File (Direct Access)',
+        description: 'A simple extension that uses the File System Access API to update files dynamically.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/Anonymous_cat1/updateFile.js',
+        iconURL: 'https://extensions.penguinmod.com/images/Anonymous_cat1/updateFile.svg',
+        credits: 'Anonymous-cat1',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
+    },
         {
         name: 'MIDI Controller',
         description: 'Use a MIDI keyboard to interact with projects!',
@@ -688,6 +918,17 @@ const pmExtensions = [
 		insetIconURL: penguinmodIcon,
 		customInsetColor: '#00c3ff',
 		featured: true
+    },
+	{
+        name: 'oneko',
+        description: 'Cute cat that follows you on the block area.',
+        extensionId: 'https://extensions.penguinmod.com/extensions/TheShovel/oneko.js',
+        iconURL: 'https://extensions.penguinmod.com/images/TheShovel/thumbnail-oneko.avif',
+        credits: 'TheShovel',
+		tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        featured: true
     },
         {
         name: 'Array Buffers',
@@ -897,6 +1138,39 @@ const pmExtensions = [
 		customInsetColor: '#00c3ff',
         tags: ['penguinmod'],
         description: 'Create temporary variables for use in one block stack.',
+        featured: true
+    },
+		{
+        name: 'Toast Notifications',
+        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/toastnotifs.js',
+        tags: ['penguinmod'],
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/toastnotifs.avif',
+        description: 'Did you want alerts? Notifications that are easily customizable? This is the only and best notification extension!',
+        credits: 'MubiLop, with additional code by themeatly2 and ddededodediamante',
+        featured: true
+    },
+	{
+        name: 'Project Interfaces',
+        extensionId: 'https://extensions.penguinmod.com/extensions/LordCat0/ProjectInterfaces.js',
+        iconURL: 'https://extensions.penguinmod.com/images/LordCat0/ProjectInterfaces.avif',
+		credits: 'Lord cat',
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+        description: 'Effortlessly create intuitive graphical user interfaces in your projects.',
+        featured: true
+    },
+	{
+        name: 'Git Penguin',
+        extensionId: 'https://extensions.penguinmod.com/extensions/justablock/gitpenguin.js',
+        iconURL: 'https://extensions.penguinmod.com/images/justablock/gitpenguin.avif',
+		credits: ' justablock',
+		insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+        description: 'Make requests and control the files for your GitHub repository.',
         featured: true
     },
     {
@@ -2498,17 +2772,6 @@ const emExtensions = [
         credits: 'V1 & V2 by julmik6478, V3 by Aness6040',
         description: 'An Extension of Blocks Utilities by Jul Mik (V1 and V2 when named Jul Mik Blocks with Turbobuilder) and helped by Aness6040 (Actual v3)',
         iconURL: 'https://electramod-extensions-gallery.vercel.app/images/julmik6478/julmik_utilities.svg',
-		insetIconURL: electramodIcon,
-		customInsetColor: '#625e97',
-        tags: ['electramod'],
-        featured: true
-    },
-    {
-        name: 'E2EE',
-        description: 'This is a Scratch 3 extension that enables E2EE (End-to-End Encryption). This E2EE extension utilizes the same underlying cryptography code that powers CloudLink Omega.',
-        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/MikeDev101/e2ee.js',
-        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/MikeDev101/e2ee.svg',
-        credits: 'MikeDev101',
 		insetIconURL: electramodIcon,
 		customInsetColor: '#625e97',
         tags: ['electramod'],
@@ -5964,15 +6227,6 @@ const otherExtensions = [
         featured: true
     },
 	{
-        name: 'Video Sharing',
-        extensionId: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/main.js',
-        iconURL: 'https://p7scratchextensions.pages.dev/ext/VideoSharing/cover.svg',
-        tags: ['penguinmod'],
-        description: 'Share your screen or camera on your project as a data-uri.',
-        extDeveloper: 'Pooiod7',
-        featured: true
-    },
-	{
         name: 'Meme Extension',
         extensionId: 'https://banana-mod.github.io/MemeExtension/MemeExtension.js',
         iconURL: 'https://banana-mod.github.io/MemeExtension/memeextension.svg',
@@ -6025,17 +6279,6 @@ const otherExtensions = [
         tags: ['penguinmod', 'othermods'],
         description: 'Get a lot of data from Wikipedia, like definitions and images!',
         credits: 'RubyDevs',
-        featured: true
-    },
-	{
-        name: 'ToastNotifs',
-        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/toastnotifs.js',
-        tags: ['penguinmod'],
-		insetIconURL: penguinmodIcon,
-		customInsetColor: '#00c3ff',
-        iconURL: 'https://ruby-devs.vercel.app/cdn/thumbnails/toastnotifs.png',
-        description: 'Use toast-styled notifications in your projects!',
-        credits: 'MubiLop',
         featured: true
     },
 		    {
