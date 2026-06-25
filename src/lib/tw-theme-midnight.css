@@ -1,0 +1,111 @@
+/* GUI */
+:root {
+    background: #000000;
+    color: #eee;
+    color-scheme: dark;
+    /* see colors.csss */
+    --ui-primary: rgb(17, 17, 17);
+    --ui-secondary: rgb(15, 15, 15);
+    --ui-tertiary: rgb(26, 26, 26);
+    --ui-modal-overlay: rgba(22, 22, 22, 0.667);
+    --ui-black-transparent: rgba(255, 255, 255, 0.15);
+    --text-primary: #eee;
+    /* scratch-paint */
+    --paint-ui-pane-border: var(--ui-black-transparent);
+    --paint-text-primary: #eee;
+    --paint-form-border: var(--ui-black-transparent);
+}
+
+/* Blockly */
+.blocklySvg {
+    background-color: var(--ui-secondary) !important;
+    color-scheme: light;
+}
+[id^="blocklyGridPattern"] > line {
+    stroke: #202020;
+}
+.blocklyFlyoutBackground {
+    fill: #000000;
+}
+.blocklyFlyoutLabelText {
+    fill: #ccc;
+}
+.blocklyFlyoutButton .blocklyText {
+    fill: #ccc;
+}
+.blocklyFlyoutButton:hover {
+    fill: #000000;
+}
+/* blocklyFlyoutCheckboxPath stroke and blocklyFlyoutCheckbox fill must match */
+.blocklyFlyoutCheckboxPath {
+    stroke: #000000;
+}
+.blocklyFlyoutCheckbox {
+    fill: #000000;
+}
+.checked > .blocklyFlyoutCheckbox {
+    stroke: #a1c6fa;
+}
+.checked > .blocklyFlyoutCheckboxPath {
+    stroke: white;
+}
+.scratchCategoryMenu {
+    color: #ccc;
+}
+.blocklyToolboxDiv,
+.scratchCategoryMenu {
+    background: #000000 !important;
+}
+.blocklyScrollbarHandle {
+    fill: #1d1d1d;
+}
+.blocklyZoom {
+    filter: invert(100%);
+}
+.scratchCategoryMenuItem.categorySelected {
+    background: var(--ui-secondary);
+}
+.valueReportBox {
+    color: black;
+}
+.blocklyWidgetDiv {
+    color-scheme: light;
+}
+.blocklyWidgetDiv .goog-menu {
+    background: var(--ui-primary);
+    border-color: var(--ui-black-transparent);
+}
+.blocklyWidgetDiv .goog-menuitem {
+    color: var(--text-primary);
+}
+.blocklyWidgetDiv .goog-menuitem-disabled .goog-menuitem-content {
+    color: hsla(0, 0%, 100%, .35) !important;
+}
+.sa-blockly-menu-item-border {
+    border-top-color: var(--ui-black-transparent) !important;
+}
+.blocklyWidgetDiv .goog-menuitem.goog-menuitem-highlight {
+    background-color: var(--ui-tertiary);
+    border-color: transparent; /* remove border */
+}
+.scratchCommentText {
+    color: black;
+}
+.blocklyInsertionMarker > .blocklyPath {
+    fill: #ccc;
+}
+
+/* Other / Multipurpose */
+.Popover {
+    /* weird Chrome bug displays white bar above popovers with color-scheme: dark */
+    color-scheme: light;
+}
+.Popover-body {
+    background: var(--ui-secondary);
+    border-color: var(--ui-black-transparent);
+    color: var(--text-primary);
+}
+.Popover-tipShape {
+    fill: var(--ui-secondary);
+    stroke: var(--ui-black-transparent);
+}

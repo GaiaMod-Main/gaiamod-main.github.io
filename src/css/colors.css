@@ -192,9 +192,9 @@ body[coloraccent="Magenta"] {
     --motion-dark-transparent: #57039c57;
 
     --extensions-primary: hsla(289, 100%, 50%, 1);
-    --extensions-tertiary: hsla(203, 100%, 39%, 1);
-    --extensions-transparent: hsla(194, 100%, 50%, 0.35);
-    --extensions-light: hsla(203, 100%, 39%, 1);
+    --extensions-tertiary: hsla(289, 100%, 39%, 1);
+    --extensions-transparent: hsla(289, 100%, 50%, 0.35);
+    --extensions-light: hsla(289, 100%, 39%, 1);
     
     --drop-highlight: hsla(289, 100%, 64%, 1);
 
