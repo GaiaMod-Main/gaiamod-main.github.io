@@ -126,7 +126,7 @@ import clippingblending from './penguinmod/extensions/clippingblending.svg';
 import pointerlockThumb from './penguinmod/extensions/pointerlock.png';
 import cursorThumb from './penguinmod/extensions/cursor.svg';
 
-// LilyMakesThings 🙏
+// LilyMakesThings 
 import lilyTempVariablesExtensionIcon from './penguinmod/orgtw/TempVariables2.svg';
 
 // more icons so they arent just red when the extension color is not red
@@ -459,6 +459,9 @@ import emoBlockImage from './emo/Scratch_emo.png';
 import emoBlockInsertIconImage from './emo/bocco-emo_body.png';
 import missmixalotIconURL from "./missmixalot/missmixalot.png";
 import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
+
+import libraImage from './libra/Libra.png';
+import libraInsetImage from './libra/Libra-small.svg';
 
 
 
@@ -6569,6 +6572,26 @@ const builtIns = [
         tags: ['othermods'],
         description: 'Develop apps in GaiaMod.',
         featured: true
+    },
+	{
+        name: 'Libra',
+        collaborator: 'Clipteam',
+        extensionId: 'libra',
+        iconURL: libraImage,
+        insetIconURL: libraInsetImage,
+        description: 'Libra Redlist extension.',
+        featured: true,
+		tags: ['othermods']
+    },
+	{
+        name: 'ClipCC Blocks',
+        collaborator: 'Clipteam',
+        extensionId: 'clipblocks',
+        iconURL: 'https://github.com/SoilZhu/clipcc-gui/blob/master/src/lib/libraries/extensions/clipcc/CCUnknownExtension.jpg?raw=true',
+		insetIconURL: 'https://raw.githubusercontent.com/SoilZhu/clipcc-gui/5005874fe09e4431c5c7b4c006fcfc80db4d0eb8/src/lib/libraries/extensions/clipcc/CCUnknownExtension.svg',
+        description: 'Clip Blocks extension.',
+        featured: true,
+		tags: ['othermods']
     },
 	{
         name: 'LASS',
