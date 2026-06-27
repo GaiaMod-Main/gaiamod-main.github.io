@@ -5,7 +5,6 @@ import {FormattedMessage} from 'react-intl';
 import {APP_NAME} from '../../brand';
 import {
 	pmExtensions,
-	pmExtras,
 	arkExtensions,
 	dinoExtensions,
 	snailExtensions,
@@ -28,7 +27,9 @@ import {
 	builtIns,
 	scratch,
 	extensionGalleries,
-	extensionBuilders
+	extensionBuilders,
+	extras,
+	secrets
 	}
 	from './extensionlist.jsx';
 
@@ -91,6 +92,7 @@ import customExtIcon from './custom/CustomEx.svg';
 import customExtInsetIcon from './custom/CustomSmall.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import gaiamodIcon from './gaiamod/gaiamod_icon.png';
+import magicmodIcon from './gaiamod/magicmod_icon.png';
 import penguinmodIcon from './gaiamod/penguinmod_icon.png';
 import arkideIcon from './arkide/arkide_icon.png';
 import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
@@ -447,6 +449,7 @@ import mysteryInsetIcon from './gaiamod/unknown-small.png';
 import scratchUtilitiesIcon from './gaiamod/ScratchUtilities.png';
 import turboWeatherIcon from './gaiamod/TurboWeather.png';
 import wonderBlocksIcon from './gaiamod/WonderBlocks.png';
+import catWithDonut from './gaiamod/DingDongDitch.svg';
 
 import ampmodgalleryThumb from './gaiamod/AmpMod.svg';
 import obgalleryIcon from './gaiamod/OmniBlocks.svg';
@@ -492,6 +495,8 @@ import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
+const IsSecretExt = urlParams.has('anewchallengerisapporaching');
+const IsMysteriousExt = urlParams.has('666');
 
 const menuItems = [
     {
@@ -641,6 +646,7 @@ extensionBuilders.forEach(ext => {
         menuItems.push(ext);
     });
 
+
 /*
 ----------------------------------------------
 ### NOTE TO PENGUINMOD FORKS: ###
@@ -654,7 +660,37 @@ Please keep these in livetests to reduce bug reports on your fork! :)
 ----------------------------------------------
 */
 if (IsLocal || IsLiveTests) {
-    pmExtras.forEach(ext => {
+    extras.forEach(ext => {
+        menuItems.push(ext);
+    });
+}
+
+/*
+----------------------------------------------
+Secret extensions that only showed up when a certain password is entered in the search-bar.
+----------------------------------------------
+*/
+if (IsSecretExt) {
+    secrets.forEach(ext => {
+        menuItems.push(ext);
+    });
+}
+
+if (IsMysteriousExt && IsSecretExt) {
+const mysteryExtension = [
+	{
+        name: '???',
+        extensionId: 'https://gaiamod-main.github.io/extensions/MysteryExtension.js',
+        iconURL: mysteryThumb,
+		insetIconURL: mysteryInsetIcon,
+		customInsetColor: '#0F0F0F',
+        credits: 'arajf',
+        tags: ['othermods', 'jokes'],
+        description: 'What\'s this extension doing here? You only know it when you use it.',
+        featured: true
+    },
+];
+mysteryExtension.forEach(ext => {
         menuItems.push(ext);
     });
 }

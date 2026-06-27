@@ -214,6 +214,7 @@ class LibraryItem extends React.PureComponent {
                 gaiaModRequired={this.props.gaiaModRequired}
                 nfcRequired={this.props.nfcRequired}
                 packageRequired={this.props.packageRequired}
+                usbConnectionRequired={this.props.usbConnectionRequired}
                 isPlaying={this.props.isPlaying}
                 name={this.props.name}
                 showPlayButton={this.props.showPlayButton}

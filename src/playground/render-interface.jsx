@@ -260,6 +260,34 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
+				     <a href="https://gaiamod-main.github.io/GaiaMod-Packager">
+                       {/* Do not translate */}
+                        {'GaiaMod Packager'}
+                    </a>
+					<a href="https://packager.espressoblocks.com/">
+                        {/* Do not translate */}
+                        {'Espresso Packager'}
+                    </a>
+					<a href="https://electramod-packager.vercel.app/">
+                        {/* Do not translate */}
+                        {'ElectraMod Packager'}
+                    </a>
+					<a href="https://packager.espressoblocks.com/">
+                        {/* Do not translate */}
+                        {'Ark IDE Packager'}
+                    </a>
+					<a href="https://packager.arkide.site/">
+                        {/* Do not translate */}
+                        {'Snail IDE Packager'}
+                    </a>
+					<a href="https://dinosaurmod.github.io/Dinosaurmod-Packager">
+                        {/* Do not translate */}
+                        {'DinosaurMod Packager'}
+                    </a>
+                    <a href="https://studio.penguinmod.com/PenguinMod-Packager">
+                        {/* Do not translate */}
+                        {'PenguinMod Packager'}
+                    </a>
                     <a href="https://desktop.turbowarp.org/">
                         {/* Do not translate */}
                         {'TurboWarp Desktop'}
@@ -301,6 +329,13 @@ const Footer = () => (
                             id="tw.privacy"
                         />
                     </a>
+					<a href="https://gaiamod-main.github.io/editor.html?livetests">
+                        <FormattedMessage
+                            defaultMessage="Live Tests"
+                            description="Opens the livetests page"
+                            id="tw.livetests"
+                        />
+                    </a>
                     <a href="https://github.com/GaiaMod-Main/gaiamod-main.github.io/issues">
                         <FormattedMessage
                             defaultMessage="Feedback & Bugs"
@@ -308,18 +343,18 @@ const Footer = () => (
                             id="tw.feedback"
                         />
                     </a>
-                    <a href="https://gaiamod-main.github.io/GaiaMod-Packager">
-                        <FormattedMessage
-                            defaultMessage="Packager"
-                            description="Link to packager page"
-                            id="tw.packager"
-                        />
-                    </a>
                     <a href="https://github.com/GaiaMod-Main/gaiamod-main.github.io">
                         <FormattedMessage
                             defaultMessage="Source Code"
                             description="Link to source code"
                             id="tw.code"
+                        />
+                    </a>
+					<a href="https://gaiamod-main.github.io/GaiaMod-Home">
+                        <FormattedMessage
+                            defaultMessage="Homepage"
+                            description="Link to homepage"
+                            id="tw.home"
                         />
                     </a>
                     <a href="https://gaiawindwave90.github.io">

@@ -17,6 +17,7 @@ import deleteFilledUrl from './delete/filled.svg';
 import downloadFilled from './download/filled.svg';
 import nfcIconURL from './nfc.svg';
 import packagedIconURL from './packaged.svg';
+import usbConnectionIconURL from './usb-connection.svg';
 
 const getURLOrigin = (url) => {
     let urlObj;
@@ -268,6 +269,7 @@ class LibraryItemComponent extends React.PureComponent {
                         this.props.gaiaModRequired ||
                         this.props.nfcRequired ||
                         this.props.packageRequired ||
+                        this.props.usbConnectionRequired ||
                         this.props.collaborator ||
                         this.props.extDeveloper ||
                         this.props.twDeveloper ||
@@ -276,7 +278,7 @@ class LibraryItemComponent extends React.PureComponent {
                         ? (
                             <div className={styles.featuredExtensionMetadata}>
                                 <div className={styles.featuredExtensionRequirement}>
-                                    {this.props.bluetoothRequired || this.props.internetConnectionRequired || this.props.gaiaModRequired || this.props.nfcRequired || this.props.packageRequired ? (
+                                    {this.props.bluetoothRequired || this.props.internetConnectionRequired || this.props.gaiaModRequired || this.props.nfcRequired || this.props.packageRequired || this.props.usbConnectionRequired ? (
                                         <div>
                                             <div>
                                                 <FormattedMessage
@@ -302,6 +304,9 @@ class LibraryItemComponent extends React.PureComponent {
                                                 ) : null}
 												{this.props.packageRequired ? (
                                                     <img src={packagedIconURL} />
+                                                ) : null}
+												{this.props.usbConnectionRequired ? (
+                                                    <img src={usbConnectionIconURL} />
                                                 ) : null}
                                             </div>
                                         </div>
@@ -553,6 +558,7 @@ LibraryItemComponent.propTypes = {
     gaiaModRequired: PropTypes.bool,
     nfcRequired: PropTypes.bool,
     packageRequired: PropTypes.bool,
+    usbConnectionRequired: PropTypes.bool,
     isPlaying: PropTypes.bool,
     name: PropTypes.oneOfType([
         PropTypes.string,
