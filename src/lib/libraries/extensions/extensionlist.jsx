@@ -4110,6 +4110,15 @@ const bilupExtensions = [
       credits: 'Yearnstudio',
 	  tags: ['bilup'],
 	  featured: true
+    },
+	{
+      extensionId: 'https://extensions.bilup.org/aiblocks.js',
+      name: 'AI in Blocks',
+      description: 'Create AI instances and interact with them using streaming responses.',
+      iconURL: 'https://extensions.bilup.org/images/aiblocks.svg',
+      credits: 'RyaninCn11',
+	  tags: ['bilup', 'ai'],
+	  featured: true
     }
 ];
 
