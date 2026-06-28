@@ -6,16 +6,11 @@ const PREFERS_DARK_QUERY = matchMedia('(prefers-color-scheme: dark)');
 
 const STORAGE_KEY = 'tw:theme';
 const ACCENT_KEY = 'tw:accent';
-const THEME_KEY = 'tw:theme';
 const CUSTOM_ACCENTS_KEY = "tw:accent:customAccents";
 
 if (localStorage && localStorage.getItem(ACCENT_KEY) === null) {
     localStorage.setItem(ACCENT_KEY, 'Gaia Blue')
     window.Recolor = {primary: (new Theme().set('Gaia Blue')).accentData['motion-primary']}
-}
-
-if (localStorage && localStorage.getItem(THEME_KEY) === null) {
-    localStorage.setItem(THEME_KEY, 'light')
 }
 
 window.Recolor = {primary: new Theme(localStorage.getItem(ACCENT_KEY)).accentData['motion-primary']}
@@ -43,11 +38,9 @@ const systemPreferencesTheme = () => {
 const detectTheme = () => {
     try {
         const local = localStorage.getItem(ACCENT_KEY);
-        const local2 = localStorage.getItem(THEME_KEY);
 
         return new Theme(
-            local || new Theme('gaia blue'),
-            local2 || new Theme('light')
+            local || new Theme('gaia blue')
         );
     } catch (e) {
         // ignore
@@ -59,13 +52,9 @@ const detectTheme = () => {
  */
 const persistTheme = theme => {
     if (localStorage) localStorage.setItem(ACCENT_KEY, theme.accent);
-    if (localStorage2) localStorage.setItem(THEME_KEY, theme.gui);
 
     const local = localStorage.getItem(ACCENT_KEY)
     document.body.setAttribute("coloraccent", local)
-	
-	const local2 = localStorage.getItem(THEME_KEY)
-    document.body.setAttribute("theme", local2)
 
     if (localStorage) localStorage.setItem("tw:accent:isCustom", false)
 
@@ -132,6 +121,5 @@ export {
     detectTheme,
     persistTheme,
     persistThemeCustom,
-    ACCENT_KEY,
-    THEME_KEY
+    ACCENT_KEY
 }

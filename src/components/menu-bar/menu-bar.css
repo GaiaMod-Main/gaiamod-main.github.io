@@ -44,8 +44,25 @@
     flex-grow: 1;
 }
 
+/* Menu bar alignment options */
+.main-menu-align-left {
+    justify-content: flex-start;
+}
+.main-menu-align-center {
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100%;
+    width: max-content
+}
+.main-menu-align-right {
+    justify-content: flex-end;
+}
+
 .scratch-logo {
-    height:  3.6rem;
+    height:  2.6rem;
     vertical-align: middle;
 }
 
@@ -70,9 +87,7 @@
 
 .menu-bar-item {
     display: flex;
-    padding: 0 0.25rem;
     text-decoration: none;
-    color: $ui-white;
     user-select: none;
     align-self: center;
     position: relative;
@@ -246,6 +261,10 @@
     display: none; /* Masquer l'icône du soleil par défaut */
 }
 
+.midnight-icon {
+    display: none; /* Masquer l'icône du soleil par défaut */
+}
+
 /* Lorsque le thème est sombre */
 [theme="dark"] .moon-icon {
     display: none; /* Masquer l'icône de la lune */
@@ -253,4 +272,39 @@
 
 [theme="dark"] .sun-icon {
     display: block; /* Afficher l'icône du soleil */
+}
+
+[theme="midight"] .sun-icon {
+    display: block; /* Afficher l'icône du soleil */
+}
+
+
+@media only screen and (max-width: 1124px) {
+    .tutorials-label, .collapsible-label {
+        display: none;
+    }
+
+    .help-icon {
+        margin-right: 0;
+    }
+}
+
+.submenu-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.submenu-row-label {
+    flex: 1;
+}
+
+.submenu-caret {
+    margin-left: 0.5rem;
+    opacity: 0.8;
+    transform: rotate(-90deg);
+}
+
+[dir="rtl"] .submenu-caret {
+    transform: rotate(90deg);
 }

@@ -68,33 +68,34 @@
     right: 100%;
 }
 
-.submenu > .menu {
+.submenu>.menu {
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     scrollbar-color: #fff $motion-primary;
     border-radius: 8px;
+    border: 2px solid #000;
 }
 
-.menu-item.expanded > .submenu {
+.menu-item.expanded>.submenu {
     display: block;
 }
 
-:not(:has(> .menu-item.expanded)) > .menu-item:hover > .submenu {
+:not(:has(> .menu-item.expanded))>.menu-item:hover>.submenu {
     display: block;
 }
 
 /* Fallback styling for webkit browsers that don't support scrollbar-color */
 
-.submenu > .menu::-webkit-scrollbar {
+.submenu>.menu::-webkit-scrollbar {
     width: 12px;
 }
 
-.submenu > .menu::-webkit-scrollbar-track {
-    background: $motion-primary;
+.submenu>.menu::-webkit-scrollbar-track {
+    background: $menu-bar-background;
 }
 
-.submenu > .menu::-webkit-scrollbar-thumb {
+.submenu>.menu::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 12px;
     border: 3px solid $motion-primary;
