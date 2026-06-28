@@ -6,6 +6,10 @@ import accentLightBlue from './accents/light-blue.js';
 import accentPurple from './accents/purple.js';
 import accentRed from './accents/red.js';
 
+import * as guiLight from './gui/light';
+import * as guiDark from './gui/dark';
+import * as guiMidnight from './gui/midnight';
+
 const ACCENT_GAIABLUE = 'Gaia Blue';
 const ACCENT_LIME = 'Lime Green';
 const ACCENT_LIGHTBLUE = 'Light Blue';
@@ -82,22 +86,36 @@ const ACCENT_MAP = {
 
 const ACCENT_DEFAULT = ACCENT_GAIABLUE;
 
+const GUI_LIGHT = 'light';
+const GUI_DARK = 'dark';
+const GUI_MIDNIGHT = 'midnight';
+const GUI_MAP = {
+    [GUI_LIGHT]: guiLight,
+    [GUI_DARK]: guiDark,
+    [GUI_MIDNIGHT]: guiMidnight
+};
+const GUI_DEFAULT = GUI_LIGHT;
+
 let themeObjectsCreated = 0;
 
 class Theme {
-    constructor(accent) {
+    constructor(accent, gui) {
         // do not modify these directly
         /** @readonly */
         this.id = ++themeObjectsCreated;
         /** @readonly */
         this.accent = Object.prototype.hasOwnProperty.call(ACCENT_MAP, accent) ? accent : ACCENT_DEFAULT;
+		/** @readonly */
+        this.gui = Object.prototype.hasOwnProperty.call(GUI_MAP, gui) ? gui : GUI_DEFAULT;
         /** @readonly */
         this.accentData = ACCENT_MAP[accent] ? ACCENT_MAP[accent] : ACCENT_MAP[ACCENT_DEFAULT]
+		/** @readonly */
+        this.guiData = GUI_MAP[gui] ? GUI_MAP[gui] : GUI_MAP[GUI_DEFAULT]
     }
 
-    static light = new Theme(ACCENT_DEFAULT);
-    static dark = new Theme(ACCENT_DEFAULT);
-    static highContrast = new Theme(ACCENT_DEFAULT);
+    static light = new Theme(ACCENT_DEFAULT, GUI_LIGHT);
+    static dark = new Theme(ACCENT_DEFAULT, GUI_DARK);
+    static highContrast = new Theme(ACCENT_DEFAULT, GUI_DEFAULT);
 
     set (to) {
         return new Theme(to);
@@ -106,7 +124,8 @@ class Theme {
     getGuiColors () {
         return defaultsDeep(
             {},
-            ACCENT_MAP[this.accent]
+            ACCENT_MAP[this.accent],
+            GUI_MAP[this.gui]
         );
     }
 }
@@ -134,5 +153,10 @@ export {
     ACCENT_AURORA,
     ACCENT_MINT,
     ACCENT_CHERRY,
-    ACCENT_MAP
+    ACCENT_MAP,
+	
+	GUI_LIGHT,
+    GUI_DARK,
+    GUI_MIDNIGHT,
+    GUI_MAP,
 }

@@ -95,9 +95,6 @@ const guiColors = {
     'paint-filter-icon-gray': 'none'
 };
 
-const blockColors = {};
-
 export {
-    guiColors,
-    blockColors
+    guiColors
 };

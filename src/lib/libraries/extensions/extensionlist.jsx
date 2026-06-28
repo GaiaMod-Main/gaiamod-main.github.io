@@ -7442,6 +7442,9 @@ const scratch =[
 
 // Extension Galleries
     const extensionGalleries = [
+	{
+            seperator: true
+        },
 {
         name: (
             <FormattedMessage
@@ -7639,6 +7642,9 @@ const scratch =[
 // Extension Builders
  const extensionBuilders = [
  {
+            seperator: true
+        },
+ {
         name: 'KittenBot Extension Maker',
         href: 'https://kittenbot.github.io/scratch3-extension/',
         extensionId: 'special_kittenBotExtensionMaker',
@@ -7725,6 +7731,9 @@ const scratch =[
    ];
 
     const extras = [
+	{
+            seperator: true
+        },
         {
             name: (
                 <FormattedMessage

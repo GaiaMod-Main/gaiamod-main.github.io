@@ -46,33 +46,6 @@ const guiColors = {
     'paint-filter-icon-gray': 'brightness(1.7)'
 };
 
-const blockColors = {
-    insertionMarker: '#cccccc',
-    workspace: '#1e1e1e',
-    toolboxSelected: '#1e1e1e',
-    toolboxText: '#cccccc',
-    toolbox: '#111111',
-    flyout: '#111111',
-    scrollbar: '#666666',
-    valueReportBackground: '#1e1e1e',
-    valueReportBorder: '#333333',
-    valueReportForeground: '#eeeeee',
-    contextMenuBackground: '#111111',
-    contextMenuBorder: '#ffffff26',
-    contextMenuForeground: '#eeeeee',
-    contextMenuActiveBackground: '#2e2e2e',
-    contextMenuDisabledForeground: '#666666',
-    flyoutLabelColor: '#cccccc',
-    checkboxInactiveBackground: '#222222',
-    checkboxInactiveBorder: '#c8c8c8',
-    buttonBorder: '#c6c6c6',
-    buttonActiveBackground: '#222222',
-    buttonForeground: '#cccccc',
-    zoomIconFilter: 'invert(100%)',
-    gridColor: '#484848'
-};
-
 export {
-    guiColors,
-    blockColors
+    guiColors
 };

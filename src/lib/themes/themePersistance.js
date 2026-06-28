@@ -6,6 +6,7 @@ const PREFERS_DARK_QUERY = matchMedia('(prefers-color-scheme: dark)');
 
 const STORAGE_KEY = 'tw:theme';
 const ACCENT_KEY = 'tw:accent';
+const THEME_KEY = 'tw:theme';
 const CUSTOM_ACCENTS_KEY = "tw:accent:customAccents";
 
 if (localStorage && localStorage.getItem(ACCENT_KEY) === null) {
@@ -121,5 +122,6 @@ export {
     detectTheme,
     persistTheme,
     persistThemeCustom,
-    ACCENT_KEY
+    ACCENT_KEY,
+    THEME_KEY
 }

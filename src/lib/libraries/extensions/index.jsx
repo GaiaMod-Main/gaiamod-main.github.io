@@ -498,7 +498,7 @@ import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
-const IsSecretExt = urlParams.has('anewchallengerisapporaching');
+const IsSecretExt = urlParams.has('newchallengersapporaching');
 const IsMysteriousExt = urlParams.has('666');
 
 const menuItems = [
@@ -522,7 +522,10 @@ const menuItems = [
             />
         ),
         featured: true
-    }
+    },
+	{
+            seperator: true
+        }
 ];
 
 

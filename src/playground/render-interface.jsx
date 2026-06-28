@@ -258,6 +258,55 @@ const Footer = () => (
                             id="tw.footer.credits"
                         />
                     </a>
+					<a href="https://arkide.site/donate">
+                        <FormattedMessage
+                            defaultMessage="Donate to Ark IDE Developer"
+                            description="Donation link to Ark IDE in footer"
+                            id="tw.footer.donateArkIDE"
+                        />
+                    </a>
+					 <a href="https://electramod-home.vercel.app/donate">
+                        <FormattedMessage
+                            defaultMessage="Donate to ElectraMod Developer"
+                            description="Donation link to ElectraMod in footer"
+                            id="tw.footer.donateElectramod"
+                        />
+                    </a>
+                    <a href="https://penguinmod.com/donate">
+                        <FormattedMessage
+                            defaultMessage="Donate to PenguinMod Developer"
+                            description="Donation link to PenguinMod in footer"
+                            id="tw.footer.donatePenguinmod"
+                        />
+                    </a>
+					  <a href="https://github.com/sponsors/GarboMuffin">
+                        <FormattedMessage
+                            defaultMessage="Donate to TurboWarp Developer"
+                            description="Donation link in footer"
+                            id="tw.footer.donate"
+                        />
+                    </a>
+					<a href="https://docs.turbowarp.org/embedding">
+                        <FormattedMessage
+                            defaultMessage="Embedding"
+                            description="Link in footer to embedding documentation for embedding link"
+                            id="tw.footer.embed"
+                        />
+                    </a>
+                    <a href="https://docs.turbowarp.org/url-parameters">
+                        <FormattedMessage
+                            defaultMessage="URL Parameters"
+                            description="Link in footer to URL parameters documentation"
+                            id="tw.footer.parameters"
+                        />
+                    </a>
+                    <a href="https://docs.turbowarp.org/">
+                        <FormattedMessage
+                            defaultMessage="Documentation"
+                            description="Link in footer to additional documentation"
+                            id="tw.footer.documentation"
+                        />
+                    </a>
                 </div>
                 <div className={styles.footerSection}>
 				     <a href="https://gaiamod-main.github.io/GaiaMod-Packager">
@@ -291,27 +340,6 @@ const Footer = () => (
                     <a href="https://desktop.turbowarp.org/">
                         {/* Do not translate */}
                         {'TurboWarp Desktop'}
-                    </a>
-                    <a href="https://docs.turbowarp.org/embedding">
-                        <FormattedMessage
-                            defaultMessage="Embedding"
-                            description="Link in footer to embedding documentation for embedding link"
-                            id="tw.footer.embed"
-                        />
-                    </a>
-                    <a href="https://docs.turbowarp.org/url-parameters">
-                        <FormattedMessage
-                            defaultMessage="URL Parameters"
-                            description="Link in footer to URL parameters documentation"
-                            id="tw.footer.parameters"
-                        />
-                    </a>
-                    <a href="https://docs.turbowarp.org/">
-                        <FormattedMessage
-                            defaultMessage="Documentation"
-                            description="Link in footer to additional documentation"
-                            id="tw.footer.documentation"
-                        />
                     </a>
                 </div>
                 <div className={styles.footerSection}>
