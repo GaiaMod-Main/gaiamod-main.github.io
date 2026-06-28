@@ -7962,16 +7962,6 @@ const scratch =[
             description: 'In development. Currently buggy and missing features.',
             featured: true
         },
-		{
-            name: 'Interfaces',
-            extensionId: 'jgInterfaces',
-            iconURL: jgsilvxrcatInterfacesExtensionIcon,
-            credits: 'silvxrcat',
-            tags: ['penguinmod'],
-            description: 'In development.\nThis extension is still HIGHLY in development. DO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
-            featured: true
-        },
-		
         {
             name: 'Virtual Reality',
             extensionId: 'jgVr',
@@ -8004,6 +7994,8 @@ const scratch =[
             extensionId: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/extensions/numberblocks.js',
             iconURL: 'https://gabsthecuriouskid.github.io/DinosaurModExtensions/images/numberblocks.png',
             tags: ['dinosaurmod'],
+		    insetIconURL: dinosaurmodIcon,
+		    customInsetColor: '#80f41a',
             description: 'a numberblocks extension.',
             credits: 'Numberblocks',
             featured: true
@@ -8030,18 +8022,7 @@ const scratch =[
             description: 'THIS EXTENSION IS NOW CLASSIFIED AS LEGACY AND WILL NOT BE UPDATED',
             featured: true,
         },
-		 {
-            name: 'Leaflet',
-            extensionId: 'adacraftleaflet',
-            iconURL: 'https://www.adacraft.org/studio/static/assets/3afab8ab48ee840204fb83fa3fa3c6ed.png',
-            insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
-            tags: ['adacraft'],
-			credits: 'Adacraft',
-            description: 'Blocks to display maps with Leaflet.',
-            featured: true,
-            internetConnectionRequired: true
-        },
-		 {
+				 {
         name: 'p5.js',
         tags: ['adacraft'],
         extensionId: 'adap5',
@@ -8052,6 +8033,18 @@ const scratch =[
         featured: true,
         internetConnectionRequired: true
     },
+		 {
+            name: 'Leaflet',
+            extensionId: 'adacraftleaflet',
+            iconURL: 'https://www.adacraft.org/studio/static/assets/3afab8ab48ee840204fb83fa3fa3c6ed.png',
+            insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
+            tags: ['adacraft', 'disabled'],
+			credits: 'Adacraft',
+            description: 'Blocks to display maps with Leaflet. Disabled due to not supporting, tho.',
+            featured: true,
+            disabled: true,
+            internetConnectionRequired: true
+        },
 	 {
         name: 'Adacraft Cloud',
         tags: ['adacraft', 'disabled'],
