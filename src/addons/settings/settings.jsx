@@ -25,7 +25,7 @@ import settingsTranslationsEnglish from './en.json';
 import settingsTranslationsOther from './translations.json';
 import upstreamMeta from '../generated/upstream-meta.json';
 import { detectLocale } from '../../lib/detect-locale';
-import { getInitialMidnightMode } from '../../lib/tw-theme-hoc.jsx';
+import { getInitialDarkMode } from '../../lib/tw-theme-hoc.jsx';
 import SettingsStore from '../settings-store-singleton';
 import Channels from '../channels';
 import extensionImage from './icons/extension.svg';
