@@ -63,9 +63,10 @@ const isTrustedExtensionOrigin = url => (
     url.startsWith('https://raw.githubusercontent.com/axolayDev/extensions/refs/heads/main/resources/extensions/') ||
     url.startsWith('https://p7scratchextensions.pages.dev/ext/') ||
     url.startsWith('https://logiseextensions.netlify.app/') ||
+    url.startsWith('https://github.com/playgama/bridge-scratch/') ||
     url.startsWith('https://github.com/DashBlocks/extensions/blob/dff7d864c8e404ac7b028517d281f839c34c4b76/static/extensions/timaaos/') ||
     url.startsWith('https://dashblocks.github.io/extensions/') ||
-    url.startsWith('https://dashblocks.github.io/extensions/static/extensions/') ||
+    url.startsWith('https://dashblocks.org/extensions/static/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/khanning/scratch-extensions/master/') ||
     url.startsWith('https://dinosaurmod.github.io/extensions/') ||
     url.startsWith('https://raw.githubusercontent.com/GabsTheCuriousKid/DinosaurModExtensions/refs/heads/main/extensions/') ||

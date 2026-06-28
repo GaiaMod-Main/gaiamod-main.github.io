@@ -62,6 +62,9 @@ import customExtInsetIcon from './custom/CustomSmall.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import gaiamodIcon from './gaiamod/gaiamod_icon.png';
 import magicmodIcon from './gaiamod/magicmod_icon.png';
+import nitroboltIcon from './gaiamod/nitrobolt_icon.svg';
+import acidmodIcon from './gaiamod/acidmod_icon.svg';
+import bilupIcon from './gaiamod/bilup_icon.svg';
 import penguinmodIcon from './gaiamod/penguinmod_icon.png';
 import arkideIcon from './arkide/arkide_icon.png';
 import dinosaurmodIcon from './dinosaurmod/dinosaurmod_icon.png';
@@ -3036,6 +3039,8 @@ const nbExtensions = [
         credits: 'ddededodediamante',
         iconURL: 'https://extensions.nitrobolt.org/images/ddededodediamante/Vectors.svg',
         tags: ['nitrobolt'],
+		insetIconURL: nitroboltIcon,
+	    customInsetColor: '#FF5726',
         description: 'Manipulate vectors with common math operations.',
         featured: true
     },
@@ -3044,6 +3049,8 @@ const nbExtensions = [
         extensionId: 'https://extensions.nitrobolt.org/Comments.js',
         iconURL: 'https://extensions.nitrobolt.org/images/Comments.svg',
         tags: ['nitrobolt'],
+		insetIconURL: nitroboltIcon,
+	    customInsetColor: '#FF5726',
         description: 'Organize and label your code.',
         featured: true
     },
@@ -3053,6 +3060,8 @@ const nbExtensions = [
 		credits: 'CubesterYT',
         iconURL: 'https://extensions.nitrobolt.org/images/unknown.svg',
         tags: ['nitrobolt'],
+		insetIconURL: nitroboltIcon,
+	    customInsetColor: '#FF5726',
         description: 'Adds rich presence support to your project.',
         featured: true
     },
@@ -3062,6 +3071,8 @@ const nbExtensions = [
 		credits: 'NishiOwO',
         iconURL: 'https://extensions.nitrobolt.org/images/NishiOwO/libxmp.svg',
         tags: ['nitrobolt'],
+		insetIconURL: nitroboltIcon,
+	    customInsetColor: '#FF5726',
         description: 'Play tracker modules using Libxmp.',
         featured: true
     },
@@ -3071,6 +3082,8 @@ const nbExtensions = [
 		credits: 'NishiOwO',
         iconURL: 'https://extensions.nitrobolt.org/images/NishiOwO/ode.svg',
         tags: ['nitrobolt'],
+		insetIconURL: nitroboltIcon,
+	    customInsetColor: '#FF5726',
         description: '3D physics using ODE.',
         featured: true
     },
@@ -3085,6 +3098,8 @@ const amExtensions = [
         credits: 'AcidMod',
         iconURL: 'https://acidmod.js.org/extensions/images/AcidMod/test.svg',
         tags: ['acidmod'],
+		insetIconURL: acidmodIcon,
+	    customInsetColor: '#42C769',
         description: 'Blocks used for testing stuff in AcidMod.',
         featured: true
     },
@@ -3094,6 +3109,8 @@ const amExtensions = [
         credits: 'AcidMod',
         iconURL: 'https://acidmod.js.org/extensions/images/AcidMod/cooleans.svg',
         tags: ['acidmod'],
+		insetIconURL: acidmodIcon,
+	    customInsetColor: '#42C769',
         description: 'Cooleans, the definitive way of if condition reporters.',
         featured: true
     },
@@ -3103,6 +3120,8 @@ const amExtensions = [
         credits: 'AcidMod',
         iconURL: 'https://acidmod.js.org/extensions/images/AcidMod/superVars.svg',
         tags: ['acidmod'],
+		insetIconURL: acidmodIcon,
+	    customInsetColor: '#42C769',
         description: 'Super Variables, advanced variable creation and clearing on a separate temporary spectrum.',
         featured: true
     },
@@ -3112,6 +3131,8 @@ const amExtensions = [
         credits: 'AcidMod',
         iconURL: 'https://acidmod.js.org/extensions/images/AcidMod/acidConsole.svg',
         tags: ['acidmod'],
+		insetIconURL: acidmodIcon,
+	    customInsetColor: '#42C769',
         description: 'Interact with your developer console.',
         featured: true
     },
@@ -3133,8 +3154,8 @@ const dbExtensions = [
     {
         name: 'YaGames SDK',
         description: 'Blocks that initialize and interact with the Yandex Games SDK. Unofficial.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/timaaos/YaGames.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/timaaos/YaGames.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/timaaos/YaGames.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/timaaos/YaGames.svg',
         credits: 'timaaos, scratch_craft_2, DBDev-IT, and Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3144,8 +3165,8 @@ const dbExtensions = [
     {
         name: 'Telegram Bot API',
         description: 'Blocks that interact with the Telegram API for bots. Unofficial.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/damir2809/TelegramBotAPI.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/damir2809/TelegramBotAPI.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/damir2809/TelegramBotAPI.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/damir2809/TelegramBotAPI.svg',
         credits: 'DBDev-IT, scratch_craft_2, ttt999, By-ROlil-CO, AnonimKing24, and Den4ik-12',
         internetConnectionRequired: true,
 		insetIconURL: dashblocksIcon,
@@ -3156,7 +3177,7 @@ const dbExtensions = [
     {
         name: 'Discord Webhook API',
         description: 'Blocks that interact with the Discord Webhook API. Unofficial.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/damir2809/DiscordWebhookAPI.js',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/damir2809/DiscordWebhookAPI.js',
 		iconURL: defaultExtensionIcon,
         credits: 'DBDev-IT',
         internetConnectionRequired: true,
@@ -3168,8 +3189,8 @@ const dbExtensions = [
     {
         name: 'Pathfinding',
         description: 'Find paths from one position to another, avoiding obstacles.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Pathfinding.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/Pathfinding.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/Den4ik-12/Pathfinding.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/Den4ik-12/Pathfinding.svg',
         credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3179,8 +3200,8 @@ const dbExtensions = [
     {
         name: 'Wheel Scroll',
         description: 'Blocks for detecting mouse wheel scrolling.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/WheelScroll.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/WheelScroll.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/Den4ik-12/WheelScroll.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/Den4ik-12/WheelScroll.svg',
         credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3190,8 +3211,8 @@ const dbExtensions = [
     {
         name: 'Maps',
         description: 'Blocks for working with Map, which is more powerful than Object.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Maps.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/Maps.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/Den4ik-12/Maps.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/Den4ik-12/Maps.svg',
         credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3201,8 +3222,8 @@ const dbExtensions = [
     {
         name: 'Dash Targets',
         description: 'Easily manage your sprites, clones, and their properties.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/Den4ik-12/Targets.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/Den4ik-12/Targets.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/Den4ik-12/Targets.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/Den4ik-12/Targets.svg',
         credits: 'Den4ik-12',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3212,8 +3233,8 @@ const dbExtensions = [
     {
         name: 'Modals',
         description: 'Control classic modal windows in browsers!',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/Modals.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/scratch_craft_2/Modals.png',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/scratch_craft_2/Modals.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/scratch_craft_2/Modals.png',
         credits: 'scratch_craft_2',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3223,7 +3244,7 @@ const dbExtensions = [
     {
         name: 'MediaRecorder',
         description: 'Record your projects directly in Dash!',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/MediaRecorder.js',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/scratch_craft_2/MediaRecorder.js',
 		iconURL: defaultExtensionIcon,
         credits: 'scratch_craft_2',
 		insetIconURL: dashblocksIcon,
@@ -3235,7 +3256,7 @@ const dbExtensions = [
         name: 'Arduino ULTIMATE',
         description: 'Allows you to control Arduino directly from the browser. Supports digital/analog I/O, PWM, Servo, I2C, basic sensors and devices.',
 		iconURL: 'https://ozrobotics.com/wp-content/uploads/2022/07/Adeept-04-12.jpg',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/scratch_craft_2/ArduinoULTIMATE.js',
         insetIconURL: dashblocksIcon,
         credits: 'scratch_craft_2',
         tags: ['dash', 'hardware', 'iot'],
@@ -3246,8 +3267,8 @@ const dbExtensions = [
     {
         name: 'Notification',
         description: 'Send notifications with icons.',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/Notification.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/shilenin/Notification.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/shilenin/Notification.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/shilenin/Notification.svg',
         credits: 'shilenin',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3257,7 +3278,7 @@ const dbExtensions = [
     {
         name: 'Code Cleaner',
         description: 'Clean and optimize your code!',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shilenin/CodeCleaner.js',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/shilenin/CodeCleaner.js',
         iconURL: 'https://raw.githubusercontent.com/Mirazstudio-offical/Dash_code_cleaner_extension/refs/heads/main/logo.svg',
         credits: 'shilenin',
 		insetIconURL: dashblocksIcon,
@@ -3268,8 +3289,8 @@ const dbExtensions = [
     {
         name: 'JavaScript Runner',
         description: 'Run the JavaScript code!',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/shaman2016/JavaScriptRunner.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/shaman2016/JavaScriptRunner.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/shaman2016/JavaScriptRunner.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/shaman2016/JavaScriptRunner.svg',
         credits: 'polzovatel_8787 and DBDev-IT',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3279,8 +3300,8 @@ const dbExtensions = [
     {
         name: 'Auto Save',
         description: 'Several features for games',
-        extensionId: 'https://dashblocks.github.io/extensions/static/extensions/QBacks/AutoSave.js',
-        iconURL: 'https://dashblocks.github.io/extensions/static/images/QBacks/AutoSave.svg',
+        extensionId: 'https://dashblocks.org/extensions/static/extensions/QBacks/AutoSave.js',
+        iconURL: 'https://dashblocks.org/extensions/static/images/QBacks/AutoSave.svg',
         credits: 'QBacks',
 		insetIconURL: dashblocksIcon,
         tags: ['dash'],
@@ -3788,6 +3809,8 @@ const bilupExtensions = [
       iconURL: 'https://extensions.bilup.org/images/colortools.svg',
       credits: 'MR醉诗',
 	  tags: ['bilup'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
 	  featured: true
     },
     {
@@ -3797,6 +3820,8 @@ const bilupExtensions = [
       iconURL: 'https://extensions.bilup.org/images/easyblock.svg',
       credits: 'DL_Grass',
 	  tags: ['bilup'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
 	  featured: true
     },
     {
@@ -3806,6 +3831,8 @@ const bilupExtensions = [
       iconURL: 'https://extensions.bilup.org/images/stringtools.svg',
       credits: 'DL_Grass',
 	  tags: ['bilup'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
 	  featured: true
     },
     {
@@ -3815,6 +3842,8 @@ const bilupExtensions = [
       iconURL: 'https://extensions.bilup.org/images/approaches.svg',
       credits: 'DL_Grass and 蓝立方Blue3',
 	  tags: ['bilup'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
 	  featured: true
     },
     {
@@ -3824,6 +3853,8 @@ const bilupExtensions = [
       iconURL: 'https://extensions.bilup.org/images/shangcloud.png',
       credits: 'Yearnstudio',
 	  tags: ['bilup'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
 	  featured: true
     },
 	{
@@ -3833,6 +3864,8 @@ const bilupExtensions = [
       iconURL: 'https://extensions.bilup.org/images/aiblocks.svg',
       credits: 'RyaninCn11',
 	  tags: ['bilup', 'ai'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
 	  featured: true
     }
 ];
@@ -7549,7 +7582,7 @@ const scratch =[
     },
 	{
         name: 'Dash Extra Extensions',
-        href: 'https://dashblocks.github.io/extensions/',
+        href: 'https://dashblocks.org/extensions/',
         extensionId: 'special_dashExtensionLibrary',
         iconURL: 'https://raw.githubusercontent.com/DashBlocks/scratch-gui/3ce7fe9c45c09bc33b5da54b7b9db449344bdfec/src/lib/libraries/extensions/gallery/gallery.svg',
         description: 'See some Dash External extensions. Opens in a new tab.',
@@ -7557,12 +7590,30 @@ const scratch =[
         featured: true
     },
 	{
-        name: 'Astra Editor Extra Extensions',
+        name: 'NitroBolt Extra Extensions',
+        href: 'https://extensions.nitrobolt.org',
+        extensionId: 'special_nbExtensionLibrary',
+        iconURL: 'https://raw.githubusercontent.com/Nitro-Bolt/scratch-gui/7412982dfed046f57c55bf18b279b7700367c6c6/src/lib/libraries/extensions/gallery/gallery-nb.svg',
+        description: 'See some NitroBolt External extensions. Opens in a new tab.',
+        tags: ['nitrobolt', 'library'],
+        featured: true
+    },
+	{
+        name: 'AstraEditor Extra Extensions',
         href: 'https://editors.astras.top/extensions/',
         extensionId: 'special_aeExtensionLibrary',
         iconURL: 'https://github.com/AstraEditor/scratch-gui/blob/develop/src/lib/libraries/extensions/gallery/aegallery.png?raw=true',
-        description: 'See some Astra Editor External extensions. Opens in a new tab.',
+        description: 'See some AstraEditor External extensions. Opens in a new tab.',
         tags: ['astraeditor', 'library'],
+        featured: true
+    },
+	{
+        name: 'Bilup Extra Extensions',
+        href: 'https://extensions.bilup.org/',
+        extensionId: 'special_bilupExtensionLibrary',
+        iconURL: 'https://raw.githubusercontent.com/Bilup/scratch-gui/bb372dc0774976a20c4a82636ca0a0db6c55d7d0/src/lib/libraries/extensions/gallery/gallery.svg',
+        description: 'See some Bilup External extensions. Opens in a new tab.',
+        tags: ['bilup', 'library'],
         featured: true
     },
 	{
