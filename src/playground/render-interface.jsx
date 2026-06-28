@@ -286,25 +286,11 @@ const Footer = () => (
                             id="tw.footer.donate"
                         />
                     </a>
-					<a href="https://docs.turbowarp.org/embedding">
+					<a href="https://www.scratchfoundation.org/donate">
                         <FormattedMessage
-                            defaultMessage="Embedding"
-                            description="Link in footer to embedding documentation for embedding link"
-                            id="tw.footer.embed"
-                        />
-                    </a>
-                    <a href="https://docs.turbowarp.org/url-parameters">
-                        <FormattedMessage
-                            defaultMessage="URL Parameters"
-                            description="Link in footer to URL parameters documentation"
-                            id="tw.footer.parameters"
-                        />
-                    </a>
-                    <a href="https://docs.turbowarp.org/">
-                        <FormattedMessage
-                            defaultMessage="Documentation"
-                            description="Link in footer to additional documentation"
-                            id="tw.footer.documentation"
+                            defaultMessage="Donate to Scratch Developers"
+                            description="Donation link to Scratch in footer"
+                            id="tw.footer.donateScratch"
                         />
                     </a>
                 </div>
@@ -340,6 +326,20 @@ const Footer = () => (
                     <a href="https://desktop.turbowarp.org/">
                         {/* Do not translate */}
                         {'TurboWarp Desktop'}
+                    </a>
+					<a href="https://docs.turbowarp.org/embedding">
+                        <FormattedMessage
+                            defaultMessage="Embedding"
+                            description="Link in footer to embedding documentation for embedding link"
+                            id="tw.footer.embed"
+                        />
+                    </a>
+                    <a href="https://docs.turbowarp.org/url-parameters">
+                        <FormattedMessage
+                            defaultMessage="URL Parameters"
+                            description="Link in footer to URL parameters documentation"
+                            id="tw.footer.parameters"
+                        />
                     </a>
                 </div>
                 <div className={styles.footerSection}>
@@ -390,6 +390,13 @@ const Footer = () => (
                             defaultMessage="Gaia Zone"
                             description="The main website."
                             id="tw.gaiasite"
+                        />
+                    </a>
+                    <a href="https://docs.turbowarp.org/">
+                        <FormattedMessage
+                            defaultMessage="Documentation"
+                            description="Link in footer to additional documentation"
+                            id="tw.footer.documentation"
                         />
                     </a>
                 </div>
