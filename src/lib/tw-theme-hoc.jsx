@@ -1,6 +1,5 @@
 import React from 'react';
 import darkModeCSS from '!raw-loader!./tw-theme-dark.css';
-import midnightModeCSS from '!raw-loader!./tw-theme-midnight.css';
 
 const THEME_KEY = 'tw:theme';
 
@@ -18,18 +17,6 @@ export const getInitialDarkMode = () => {
     return darkMediaQuery.matches;
 };
 
-export const getInitialMidnightMode = () => {
-    try {
-        const item = localStorage.getItem(THEME_KEY);
-        if (item !== null) {
-            return item === 'midnight';
-        }
-    } catch (e) {
-        // ignore
-    }
-    return darkMediaQuery.matches;
-};
-
 const darkModeStylesheet = document.createElement('style');
 darkModeStylesheet.textContent = darkModeCSS;
 
@@ -40,8 +27,7 @@ const ThemeHOC = function (WrappedComponent) {
             this.handleQueryChange = this.handleQueryChange.bind(this);
             this.handleClickTheme = this.handleClickTheme.bind(this);
             this.state = {
-                dark: getInitialDarkMode(),
-                midnight: getInitialMidnightMode()
+                dark: getInitialDarkMode()
             };
         }
         componentDidMount () {
