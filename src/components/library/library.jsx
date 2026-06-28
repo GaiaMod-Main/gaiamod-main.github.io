@@ -441,6 +441,9 @@ class LibraryComponent extends React.Component {
                         ref={this.setFilteredDataRef}
                     >
                         {this.state.loaded ? this.getFilteredData().map((dataItem, index) => (
+						 dataItem.seperator ? (
+                                <Separator key={index} />
+                            ) : (
                             <LibraryItem
                                 bluetoothRequired={dataItem.bluetoothRequired}
                                 collaborator={dataItem.collaborator}
@@ -493,6 +496,7 @@ class LibraryComponent extends React.Component {
                                 onFavoriteUpdated={() => this.handleFavoritesUpdate()}
                                 _unsandboxed={dataItem._unsandboxed}
                             />
+                            )
                         )) : (
                             <div className={styles.spinnerWrapper}>
                                 <Spinner

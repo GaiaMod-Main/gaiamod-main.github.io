@@ -6125,17 +6125,6 @@ const otherExtensions = [
         description: 'Scratch X - Experiment',
         featured: true
     },
-	{
-        name: '???',
-        extensionId: 'https://gaiamod-main.github.io/extensions/MysteryExtension.js',
-        iconURL: mysteryThumb,
-		insetIconURL: mysteryInsetIcon,
-		customInsetColor: '#0F0F0F',
-        credits: 'arajf',
-        tags: ['othermods', 'jokes'],
-        description: 'What\'s this extension doing here? You only know it when you use it.',
-        featured: true
-    },
 ];
 
 //ML5-powered
@@ -8040,17 +8029,6 @@ const scratch =[
 		    tags: ['snailide'],
             description: 'THIS EXTENSION IS NOW CLASSIFIED AS LEGACY AND WILL NOT BE UPDATED',
             featured: true,
-        },
-		 {
-            name: 'Leaflet',
-            extensionId: 'adacraftleaflet',
-            iconURL: 'https://www.adacraft.org/studio/static/assets/3afab8ab48ee840204fb83fa3fa3c6ed.png',
-            insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
-            tags: ['adacraft'],
-			credits: 'Adacraft',
-            description: 'Blocks to display maps with Leaflet.',
-            featured: true,
-            internetConnectionRequired: true
         },
 		 {
             name: 'Leaflet',
