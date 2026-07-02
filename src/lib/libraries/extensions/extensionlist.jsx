@@ -3867,6 +3867,17 @@ const bilupExtensions = [
 	  insetIconURL: bilupIcon,
 	  customInsetColor: '#75C1C4',
 	  featured: true
+    },
+	{
+      extensionId: 'https://extensions.bilup.org/ai.js',
+      name: 'AI (Bilup)',
+      description: 'Chat with AI in Scratch. Supports OpenAI and Anthropic APIs with streaming responses.',
+      iconURL: 'https://extensions.bilup.org/images/ai.svg',
+      credits: 'Kimos Frontender',
+	  tags: ['bilup', 'ai'],
+	  insetIconURL: bilupIcon,
+	  customInsetColor: '#75C1C4',
+	  featured: true
     }
 ];
 
