@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types';
 import {FormattedMessage} from 'react-intl';
 import styles from './load-extension.css';
+import React from 'react';
+import styles from './load-extension.css';
+import URL from './url.jsx';
+import DataURL from './data-url.jsx';
+import FancyCheckbox from '../tw-fancy-checkbox/checkbox.jsx';
+import {APP_NAME} from '../../lib/brand';
 
 const LoadExtensionModal = () => (
     <div>
