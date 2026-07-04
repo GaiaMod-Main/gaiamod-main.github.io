@@ -6,6 +6,7 @@ import {defineMessages, FormattedMessage, injectIntl, intlShape} from 'react-int
 import Waveform from '../waveform/waveform.jsx';
 import Label from '../forms/label.jsx';
 import Input from '../forms/input.jsx';
+import TWRenderRecoloredImage from '../../lib/tw-recolor/render.jsx';
 
 import BufferedInputHOC from '../forms/buffered-input-hoc.jsx';
 import AudioSelector from '../../containers/audio-selector.jsx';
@@ -15,9 +16,8 @@ import {SOUND_BYTE_LIMIT} from '../../lib/audio/audio-util.js';
 import styles from './sound-editor.css';
 
 import playIcon from './icon--play.svg';
-import stopIcon from './icon--stop.svg';
-import redoIcon from './icon--redo.svg';
-import undoIcon from './icon--undo.svg';
+import redoIcon from '!../../lib/tw-recolor/build!./icon--redo.svg';
+import undoIcon from '!../../lib/tw-recolor/build!./icon--undo.svg';
 import modifyIcon from './icon--modify.svg';
 import formatIcon from './icon--format.svg';
 import fasterIcon from './icon--faster.svg';
@@ -223,7 +223,7 @@ const SoundEditor = props => (
                         title={props.intl.formatMessage(messages.undo)}
                         onClick={props.onUndo}
                     >
-                        <img
+                        <TWRenderRecoloredImage
                             className={styles.undoIcon}
                             draggable={false}
                             src={undoIcon}
@@ -235,7 +235,7 @@ const SoundEditor = props => (
                         title={props.intl.formatMessage(messages.redo)}
                         onClick={props.onRedo}
                     >
-                        <img
+                        <TWRenderRecoloredImage
                             className={styles.redoIcon}
                             draggable={false}
                             src={redoIcon}

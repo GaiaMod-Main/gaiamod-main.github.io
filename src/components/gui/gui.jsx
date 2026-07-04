@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import omit from 'lodash.omit';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Draggable from "react-draggable";
 import {ContextMenuTrigger} from 'react-contextmenu';
@@ -369,6 +369,12 @@ const GUIComponent = props => {
             }
         });
     };
+	
+	const [, setTick] = useState(0);
+            
+    document.body.addEventListener("RecolorEvent", (e) => {
+        setTick(t => t + 1);
+    })
 
     const minWidth = layout.fullSizeMinWidth + Math.max(0, customStageSize.width - layout.referenceWidth);
     return (<MediaQuery minWidth={minWidth}>{isFullSize => {

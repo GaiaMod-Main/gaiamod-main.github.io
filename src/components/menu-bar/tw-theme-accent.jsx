@@ -27,13 +27,13 @@ import {
 	ACCENT_COSMIC,
 	ACCENT_AURORA,
 	ACCENT_MINT,
-	ACCENT_CHERRY, 
+	ACCENT_CHERRY,
 	Theme
 } from '../../lib/themes/index.js';
 import {openAccentMenu, accentMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {openCustomAccentModal} from '../../reducers/modals';
 import {setTheme} from '../../reducers/theme.js';
-import {persistTheme} from '../../lib/themes/themePersistance.js';
+import {persistTheme} from '../../lib/themes/accentPersistance.js';
 import rainbowIcon from './tw-accent-rainbow.svg';
 import styles from './settings-menu.css';
 

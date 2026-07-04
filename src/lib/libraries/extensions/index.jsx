@@ -495,6 +495,20 @@ import emoBlockInsertIconImage from './emo/bocco-emo_body.png';
 import missmixalotIconURL from "./missmixalot/missmixalot.png";
 import missmixalotInsetIconURL from "./missmixalot/missmixalot-small.svg";
 
+import libraImage from './libra/Libra.png';
+import libraInsetImage from './libra/Libra-small.svg';
+
+import learningmlIconURL from './learningml-texts/learningml.png';
+import learningmlTextInsetIconURL from './learningml-texts/learningml-text-small.svg';
+import learningmlImageInsetIconURL from './learningml-images/learningml-image-small.svg';
+import learningmlNumericalInsetIconURL from './learningml-numerical/learningml-numerical-small.svg';
+
+import echidnaIconURL from './echidna/echidna.png';
+import echidnaInsetIconURL from './echidna/erizo.png';
+import echidnaConnectionIconURL from './echidna/echidna-illustration.svg';
+import echidnaConnectionSmallIconURL from './echidna/echidna-small.svg';
+
+
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
