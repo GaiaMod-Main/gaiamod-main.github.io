@@ -1036,17 +1036,17 @@ const pmCodeUsedFrom = [
 const scratchMods = [
     {
         text: "02 Engine",
-        image: `https://gaiamod-main.github.io/static/assets/a104cdad3e3d9055e374a1b62f39d770.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/02engine.png`,
         href: `https://editor.02engine.org/index.html`,
     },
     {
         text: "AstraEditor",
-        image: `https://gaiamod-main.github.io/static/assets/f9cfe9c4f55667fdc723e0984d558ac1.svg`,
+        image: `https://gaiamod-main.github.io/icons/mods/astraeditor.png`,
         href: `https://editors.astras.top/`,
     },
 	    {
         text: "Bilup",
-        image: `https://gaiamod-main.github.io/static/assets/c86c53648abaaee588445eefa99df64e.svg`,
+        image: `https://gaiamod-main.github.io/icons/mods/bilup.png`,
         href: `https://editor.bilup.org/`,
     },
     {
@@ -1056,62 +1056,62 @@ const scratchMods = [
     },
     {
         text: "MistWarp",
-        image: `https://gaiamod-main.github.io/static/assets/a9a3d8205137cc5503dc5766345ccb84.svg`,
+        image: `https://gaiamod-main.github.io/icons/mods/mistwarp.png`,
         href: `https://warp.mistium.com/`,
     },
     {
         text: "OmniBlocks",
-        image: `https://avatars.githubusercontent.com/u/198507028`,
+        image: `https://gaiamod-main.github.io/icons/mods/omniblocks.png`,
         href: `https://omniblocks.github.io/`,
     },
     {
         text: "Dash",
-        image: `https://gaiamod-main.github.io/static/assets/3dadc2c7e959de0b041c9f3c36b44cab.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/dashblocks.png`,
         href: `https://dashblocks.org/`,
     },
 	    {
         text: "Nitro-Bolt",
-        image: `https://gaiamod-main.github.io/static/assets/1ddd1f2bfa3431367bc0e85fe08f1b18.svg`,
+        image: `https://gaiamod-main.github.io/icons/mods/nitrobolt.png`,
         href: `https://nitrobolt.org/`,
     },
     {
         text: "Cocrea World",
-        image: `https://gaiamod-main.github.io/static/assets/52e4611c04b291e1d2c385c6cc2c2901.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/cocreaworld.png`,
         href: `https://www.cocrea.world/`,
     },
     {
         text: "ElectraMod",
-        image: `https://gaiamod-main.github.io/static/assets/b9eab8ac378f5a86345ae91584646822.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/electramod.png`,
         href: `https://electramod.vercel.app/`,
     },
     {
         text: "Snail IDE",
-        image: `https://gaiamod-main.github.io/static/assets/aaec7b81b0bf6e9a8c7182e959655e63.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/snailide.png`,
         href: `http://snail-ide.js.org/`,
     },
 	 {
         text: "Ark IDE",
-        image: `https://gaiamod-main.github.io/static/assets/5aece12afc0355e8313e1fbdde4dee27.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/arkide.png`,
         href: `https://studio.arkide.site/`,
     },
     {
         text: "DinosaurMod",
-        image: `https://gaiamod-main.github.io/static/assets/045a501efef131c2f459c3695f309b78.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/dinosaurmod.png`,
         href: `https://dinosaurmod.github.io/`,
     },
 	 {
         text: "PenguinMod",
-        image: `https://gaiamod-main.github.io/static/assets/e5ff7b0548b92214c4d1d0ee52a70aa2.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/penguinmod.png`,
         href: `https://studio.penguinmod.com/`,
     },	
     {
         text: "TurboWarp",
-        image: `https://gaiamod-main.github.io/static/assets/bf2e5bd090012d68560b888d44678efc.svg`,
+        image: `https://gaiamod-main.github.io/icons/mods/turbowarp.png`,
         href: `https://turbowarp.org/`,
     },
     {
         text: "scratchfoundation",
-        image: `https://avatars.githubusercontent.com/u/103071332.png`,
+        image: `https://gaiamod-main.github.io/icons/mods/scratch.png`,
         href: `https://scratch.mit.edu/`,
     },
 ];
