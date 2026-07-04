@@ -141,26 +141,6 @@ const Footer = () => (
                        {/* Do not translate */}
                         {'GaiaMod Packager'}
                     </a>
-					<a href="https://packager.espressoblocks.com/">
-                        {/* Do not translate */}
-                        {'Espresso Packager'}
-                    </a>
-					<a href="https://electramod-packager.vercel.app/">
-                        {/* Do not translate */}
-                        {'ElectraMod Packager'}
-                    </a>
-					<a href="https://packager.espressoblocks.com/">
-                        {/* Do not translate */}
-                        {'Ark IDE Packager'}
-                    </a>
-					<a href="https://packager.arkide.site/">
-                        {/* Do not translate */}
-                        {'Snail IDE Packager'}
-                    </a>
-					<a href="https://dinosaurmod.github.io/Dinosaurmod-Packager">
-                        {/* Do not translate */}
-                        {'DinosaurMod Packager'}
-                    </a>
                     <a href="https://studio.penguinmod.com/PenguinMod-Packager">
                         {/* Do not translate */}
                         {'PenguinMod Packager'}
@@ -244,6 +224,7 @@ const Footer = () => (
                 </div>
             </div>
             </div>
+			<hr></hr>
 		<div style={{textAlign: 'center'}}>
                 <p>
                     <h1>
@@ -260,6 +241,7 @@ const Footer = () => (
 				The list order is randomized on each refresh.
 				</i>
 				</p>
+				<hr></hr>
             <p className={styles.info}>
                 Version: 15.7 | <a
                     onClick={eraseData}
