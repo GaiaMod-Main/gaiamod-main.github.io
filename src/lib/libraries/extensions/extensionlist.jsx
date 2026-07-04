@@ -478,6 +478,10 @@ import echidnaInsetIconURL from './echidna/erizo.png';
 import echidnaConnectionIconURL from './echidna/echidna-illustration.svg';
 import echidnaConnectionSmallIconURL from './echidna/echidna-small.svg';
 
+import shredsdkIcon from './shredsdk/shredsdk.svg'
+import utilsIcon from './utils/utilites.svg';
+import gameutilsIcon from './gameutils/gameutils.svg'
+
 
 
 
@@ -6327,14 +6331,23 @@ const builtIns = [
         featured: true,
 		tags: ['othermods']
     },
-	{
-            name: '3-Axis Accelerometer',
-            extensionId: 'threeAxisAccelerometer',
-            iconURL: 'https://ide.tinkergen.com/static/assets/68e0777fce47a010d082beb3c6214161.png',
-            tags: ['othermods'],
-            description: 'Visualize a 3-Axis Accelerometer with a simple block.',
-            featured: true
-        },
+		{
+        name: 'Echidna',
+        extensionId: 'echidna',
+        collaborator: 'echidna',
+        iconURL: echidnaIconURL,
+        insetIconURL: echidnaInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect your projects with the world."
+                description="Description for the 'echidna' extension"
+                id="gui.extension.echidna.description"
+            />
+        ),
+        featured: true,
+		tags: ['othermods', 'iot'],
+        helpLink: 'http://echidna.es/'
+    },
 	{
         name: 'LASS',
         extensionId: 'gasoLASS',
@@ -8115,6 +8128,14 @@ const scratch =[
         featured: true,
         internetConnectionRequired: true
     },
+		{
+            name: '3-Axis Accelerometer',
+            extensionId: 'threeAxisAccelerometer',
+            iconURL: 'https://ide.tinkergen.com/static/assets/68e0777fce47a010d082beb3c6214161.png',
+            tags: ['othermods'],
+            description: 'Visualize a 3-Axis Accelerometer with a simple block.',
+            featured: true
+        },
 		 {
             name: 'Leaflet',
             extensionId: 'adacraftleaflet',
@@ -8204,6 +8225,33 @@ const secrets = [
 		    customInsetColor: '#80f41a',
             featured: true
         },
+        {
+        name: 'Utilites',
+        tags: ['special', 'othermods'],
+        extensionId: 'utils',
+        iconURL: utilsIcon,
+        description: 'Utilites for Scratch',
+        featured: true,
+        credits: 'The_Mad_Punter'
+    },
+	{
+        name: 'GameUtils',
+        tags: ['special', 'othermods'],
+        extensionId: 'gameutils',
+        iconURL: gameutilsIcon,
+        description: 'The Extension that Loads Sprites, costumes, etc.',
+        featured: true,
+        collaborator: 'showierdata9978'
+    },
+	{
+        name: 'ShredSDK',
+        tags: ['special', 'othermods'],
+        extensionId: 'shredsdk',
+        iconURL: shredsdkIcon,
+        description: 'A development kit for making good web games',
+        featured: true,
+        credits: 'The_Mad_Punter'
+    }
     ];
 
 

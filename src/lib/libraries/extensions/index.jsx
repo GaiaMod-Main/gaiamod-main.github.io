@@ -508,6 +508,10 @@ import echidnaInsetIconURL from './echidna/erizo.png';
 import echidnaConnectionIconURL from './echidna/echidna-illustration.svg';
 import echidnaConnectionSmallIconURL from './echidna/echidna-small.svg';
 
+import shredsdkIcon from './shredsdk/shredsdk.svg'
+import utilsIcon from './utils/utilites.svg';
+import gameutilsIcon from './gameutils/gameutils.svg'
+
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);

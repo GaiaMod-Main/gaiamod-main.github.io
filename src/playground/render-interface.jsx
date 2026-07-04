@@ -44,6 +44,7 @@ import {isBrowserSupported} from '../lib/tw-environment-support-prober';
 import AddonChannels from '../addons/channels';
 import {loadServiceWorker} from './load-service-worker';
 import runAddons from '../addons/entry';
+import Footer from '../components/gm-footer/footer.jsx';
 
 import styles from './interface.css';
 import restore from './restore.js';
@@ -167,32 +168,6 @@ const RenderLoader = () => {
     ) : null;
 };
 
-const RenderWelcomeModal = () => {
-    const [isOpen, setIsOpen] = React.useState(false);
-
-    function handleOnOpen() {
-        setIsOpen(true);
-    }
-
-    function handleOnClose() {
-        setIsOpen(false);
-    }
-
-    return (
-        <>
-            <a onClick={handleOnOpen}>
-                {/* todo: translate */}
-                <FormattedMessage
-                    defaultMessage="Welcome Modal"
-                    description="Link to open welcome modal"
-                    id="gm.home.welcomeModal"
-                />
-            </a>
-            {isOpen && <WelcomeModal onClose={handleOnClose}/>}
-        </>
-    );
-};
-
 const RenderVersion = () => {
     const [version, setVersion] = React.useState();
 
@@ -236,174 +211,6 @@ runAddons();
 //     projectDetailCache[String(id)] = project;
 //     return projectDetailCache[String(id)];
 // };
-
-const Footer = () => (
-    <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-            <div className={styles.footerText}>
-                <FormattedMessage
-                    // eslint-disable-next-line max-len
-                    defaultMessage="GaiaMod, PenguinMod and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that GaiaMod, PenguinMod and TurboWarp are not connected to Scratch"
-                    id="tw.footer.disclaimer"
-                />
-            </div>
-            <div className={styles.footerColumns}>
-                <div className={styles.footerSection}>
-				<RenderWelcomeModal />
-                    <a href="credits.html">
-                        <FormattedMessage
-                            defaultMessage="Credits"
-                            description="Credits link in footer"
-                            id="tw.footer.credits"
-                        />
-                    </a>
-					<a href="https://arkide.site/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate to Ark IDE Developer"
-                            description="Donation link to Ark IDE in footer"
-                            id="tw.footer.donateArkIDE"
-                        />
-                    </a>
-					 <a href="https://electramod-home.vercel.app/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate to ElectraMod Developer"
-                            description="Donation link to ElectraMod in footer"
-                            id="tw.footer.donateElectramod"
-                        />
-                    </a>
-                    <a href="https://penguinmod.com/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate to PenguinMod Developer"
-                            description="Donation link to PenguinMod in footer"
-                            id="tw.footer.donatePenguinmod"
-                        />
-                    </a>
-					  <a href="https://github.com/sponsors/GarboMuffin">
-                        <FormattedMessage
-                            defaultMessage="Donate to TurboWarp Developer"
-                            description="Donation link in footer"
-                            id="tw.footer.donate"
-                        />
-                    </a>
-					<a href="https://www.scratchfoundation.org/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate to Scratch Developers"
-                            description="Donation link to Scratch in footer"
-                            id="tw.footer.donateScratch"
-                        />
-                    </a>
-                </div>
-                <div className={styles.footerSection}>
-				     <a href="https://gaiamod-main.github.io/GaiaMod-Packager">
-                       {/* Do not translate */}
-                        {'GaiaMod Packager'}
-                    </a>
-					<a href="https://packager.espressoblocks.com/">
-                        {/* Do not translate */}
-                        {'Espresso Packager'}
-                    </a>
-					<a href="https://electramod-packager.vercel.app/">
-                        {/* Do not translate */}
-                        {'ElectraMod Packager'}
-                    </a>
-					<a href="https://packager.espressoblocks.com/">
-                        {/* Do not translate */}
-                        {'Ark IDE Packager'}
-                    </a>
-					<a href="https://packager.arkide.site/">
-                        {/* Do not translate */}
-                        {'Snail IDE Packager'}
-                    </a>
-					<a href="https://dinosaurmod.github.io/Dinosaurmod-Packager">
-                        {/* Do not translate */}
-                        {'DinosaurMod Packager'}
-                    </a>
-                    <a href="https://studio.penguinmod.com/PenguinMod-Packager">
-                        {/* Do not translate */}
-                        {'PenguinMod Packager'}
-                    </a>
-                    <a href="https://desktop.turbowarp.org/">
-                        {/* Do not translate */}
-                        {'TurboWarp Desktop'}
-                    </a>
-					<a href="https://docs.turbowarp.org/embedding">
-                        <FormattedMessage
-                            defaultMessage="Embedding"
-                            description="Link in footer to embedding documentation for embedding link"
-                            id="tw.footer.embed"
-                        />
-                    </a>
-                    <a href="https://docs.turbowarp.org/url-parameters">
-                        <FormattedMessage
-                            defaultMessage="URL Parameters"
-                            description="Link in footer to URL parameters documentation"
-                            id="tw.footer.parameters"
-                        />
-                    </a>
-                </div>
-                <div className={styles.footerSection}>
-                    <a href="#">
-                        <FormattedMessage
-                            defaultMessage="Terms of Service"
-                            description="Link to Terms of Service"
-                            id="pm.terms"
-                        />
-                    </a>
-                    <a href="#">
-                        <FormattedMessage
-                            defaultMessage="Privacy Policy"
-                            description="Link to privacy policy"
-                            id="tw.privacy"
-                        />
-                    </a>
-					<a href="https://gaiamod-main.github.io/editor.html?livetests">
-                        <FormattedMessage
-                            defaultMessage="Live Tests"
-                            description="Opens the livetests page"
-                            id="tw.livetests"
-                        />
-                    </a>
-                    <a href="https://github.com/GaiaMod-Main/gaiamod-main.github.io/issues">
-                        <FormattedMessage
-                            defaultMessage="Feedback & Bugs"
-                            description="Link to feedback/bugs page"
-                            id="tw.feedback"
-                        />
-                    </a>
-                    <a href="https://github.com/GaiaMod-Main/gaiamod-main.github.io">
-                        <FormattedMessage
-                            defaultMessage="Source Code"
-                            description="Link to source code"
-                            id="tw.code"
-                        />
-                    </a>
-					<a href="https://gaiamod-main.github.io/GaiaMod-Home">
-                        <FormattedMessage
-                            defaultMessage="Homepage"
-                            description="Link to homepage"
-                            id="tw.home"
-                        />
-                    </a>
-                    <a href="https://gaiawindwave90.github.io">
-                        <FormattedMessage
-                            defaultMessage="Gaia Zone"
-                            description="The main website."
-                            id="tw.gaiasite"
-                        />
-                    </a>
-                    <a href="https://docs.turbowarp.org/">
-                        <FormattedMessage
-                            defaultMessage="Documentation"
-                            description="Link in footer to additional documentation"
-                            id="tw.footer.documentation"
-                        />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-);
 
 const monthNames = [
     'January',
