@@ -100,20 +100,6 @@ const Footer = () => (
                             id="tw.footer.credits"
                         />
                     </a>
-					<a href="https://arkide.site/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate to Ark IDE Developer"
-                            description="Donation link to Ark IDE in footer"
-                            id="tw.footer.donateArkIDE"
-                        />
-                    </a>
-					 <a href="https://electramod-home.vercel.app/donate">
-                        <FormattedMessage
-                            defaultMessage="Donate to ElectraMod Developer"
-                            description="Donation link to ElectraMod in footer"
-                            id="tw.footer.donateElectramod"
-                        />
-                    </a>
                     <a href="https://penguinmod.com/donate">
                         <FormattedMessage
                             defaultMessage="Donate to PenguinMod Developer"
