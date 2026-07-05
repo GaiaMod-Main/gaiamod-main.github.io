@@ -1064,6 +1064,16 @@ const scratchMods = [
         image: `https://gaiamod-main.github.io/icons/mods/omniblocks.png`,
         href: `https://omniblocks.github.io/`,
     },
+	    {
+        text: "LibreKitten",
+        image: `https://gaiamod-main.github.io/icons/mods/librekitten.png`,
+        href: `https://librekitten.org/`,
+    },
+	    {
+        text: "AmpMod",
+        image: `https://gaiamod-main.github.io/icons/mods/ampmod.png`,
+        href: `https://ampmod.codeberg.page/`,
+    },
     {
         text: "Dash",
         image: `https://gaiamod-main.github.io/icons/mods/dashblocks.png`,
