@@ -16,8 +16,9 @@ import {SOUND_BYTE_LIMIT} from '../../lib/audio/audio-util.js';
 import styles from './sound-editor.css';
 
 import playIcon from './icon--play.svg';
-import redoIcon from '!../../lib/tw-recolor/build!./icon--redo.svg';
-import undoIcon from '!../../lib/tw-recolor/build!./icon--undo.svg';
+import stopIcon from './icon--stop.svg';
+import redoIcon from './icon--redo.svg';
+import undoIcon from './icon--undo.svg';
 import modifyIcon from './icon--modify.svg';
 import formatIcon from './icon--format.svg';
 import fasterIcon from './icon--faster.svg';
