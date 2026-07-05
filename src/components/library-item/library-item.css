@@ -66,7 +66,6 @@
     border-width: 2px;
     border-color: $motion-primary;
     box-shadow: 0 0.5rem 1.25rem hsla(225, 15%, 15%, 0.08);
-    transform: translateY(-1px);
 }
 .library-item-sound:hover {
     border-color: $sound-primary;
@@ -584,7 +583,6 @@
     height: 10px;
     border-right: 2px solid $ui-white;
     border-bottom: 2px solid $ui-white;
-    transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .source-badge {

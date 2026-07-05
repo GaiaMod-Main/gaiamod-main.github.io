@@ -229,7 +229,7 @@ const Footer = () => (
 				</p>
 				<hr></hr>
             <p className={styles.info}>
-                Version: 15.7 | <a
+                Version: 15.8 | <a
                     onClick={eraseData}
                     style={{color: 'red'}}
                 >Erase data</a>

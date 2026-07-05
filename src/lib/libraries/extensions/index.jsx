@@ -539,7 +539,8 @@ const menuItems = [
                 id="tw.customExtension.description"
             />
         ),
-        featured: true
+        featured: true,
+        favoritable: true
     },
 	{
             seperator: true

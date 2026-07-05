@@ -6077,6 +6077,15 @@ const otherExtensions = [
         internetConnectionRequired: true,
         featured: true
     },
+			 {
+            name: 'Nasa Media Search',
+            extensionId: 'https://dde-ext-gallery.vercel.app/extensions/code/nasaMediaSearch.js',
+            iconURL: 'https://dde-ext-gallery.vercel.app/extensions/thumbnail/nasaMediaSearch.svg',
+            description: 'Search for images on Nasa\'s public database',
+			tags: ['othermods'],
+            credits: 'ddededodediamante',
+            featured: true
+        },
 	{
         name: 'Another ChatGPT',
         extensionId: 'https://raw.githubusercontent.com/kokofixcomputers/scratch-extension-collection/refs/heads/main/downloads/chatgpt_scratch_extensions.js',
@@ -6146,6 +6155,15 @@ const otherExtensions = [
         description: 'Lets you play blockBeat!',
         featured: true
     },
+	{
+            name: 'Sweet Alerts',
+            extensionId: 'https://dde-ext-gallery.vercel.app/extensions/code/sweetAlert2.js',
+            iconURL: 'https://dde-ext-gallery.vercel.app/extensions/thumbnail/sweetAlert2.svg',
+            description: 'Display customizable alerts and popups',
+			tags: ['othermods'],
+            credits: 'ddededodediamante',
+            featured: true
+        },
 	{
         name: 'Ruby Maps',
         extensionId: 'https://ruby-devs.vercel.app/cdn/extensions/rubymaps.js',
@@ -8192,6 +8210,15 @@ const secrets = [
             credits: 'GaiaWindWave90 with some blocks from other users.',
             featured: true
         },
+		 {
+            name: 'Sprite Controller',
+            extensionId: 'https://dde-ext-gallery.vercel.app/extensions/code/spriteController.js',
+            iconURL: 'https://dde-ext-gallery.vercel.app/extensions/thumbnail/spriteController.svg',
+            description: 'Control or send events to sprites',
+			tags: ['special', 'othermods'],
+            credits: 'ddededodediamante',
+            featured: true
+        },
         {
             name: 'MR BEAST UTILITIES',
             extensionId: 'https://turbololder.vercel.app/extensions/mrbeastutil.js',
@@ -8203,6 +8230,15 @@ const secrets = [
             extDeveloper: 'JeremyGamer13',
             featured: true
         },
+		{
+            name: 'Potato Extension',
+            extensionId: 'https://dde-ext-gallery.vercel.app/extensions/code/potatoExtension.js',
+            iconURL: 'https://dde-ext-gallery.vercel.app/extensions/thumbnail/potatoExtension.svg',
+            description: 'yummy potatoes 🥔',
+			tags: ['special', 'othermods', 'joke'],
+            credits: 'ddededodediamante',
+            featured: true
+        },
         {
             name: 'Jungle Inferno',
             extensionId: 'https://turbololder.vercel.app/extensions/jungleinferno.js',
@@ -8212,6 +8248,15 @@ const secrets = [
 			insetIconURL: turbowarpIcon,
             customInsetColor: '#ff4d4d',
             extDeveloper: 'LilyMakesThings',
+            featured: true
+        },
+		 {
+            name: 'Speech Synthesis',
+            extensionId: 'https://dde-ext-gallery.vercel.app/extensions/code/speechSynthesis.js',
+            iconURL: 'https://dde-ext-gallery.vercel.app/extensions/thumbnail/speechSynthesis.svg',
+            description: 'Play and customize TTS audio',
+			tags: ['special', 'othermods', 'noisemaker'],
+            credits: 'ddededodediamante',
             featured: true
         },
         {
