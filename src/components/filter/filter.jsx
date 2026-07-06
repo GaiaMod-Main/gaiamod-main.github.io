@@ -2,11 +2,9 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import TWRenderRecoloredImage from '../../lib/tw-recolor/render.jsx';
-
-import filterIcon from '!../../lib/tw-recolor/build!./icon--filter.svg';
-import xIcon from '!../../lib/tw-recolor/build!./icon--x.svg';
-import styles from '!../../lib/tw-recolor/build!./filter.css';
+import filterIcon from './icon--filter.svg';
+import xIcon from './icon--x.svg';
+import styles from './filter.css';
 
 const FilterComponent = props => {
     const {
@@ -23,7 +21,7 @@ const FilterComponent = props => {
                 [styles.isActive]: filterQuery.length > 0
             })}
         >
-            <TWRenderRecoloredImage
+            <img
                 className={styles.filterIcon}
                 src={filterIcon}
             />
@@ -38,7 +36,7 @@ const FilterComponent = props => {
                 className={styles.xIconWrapper}
                 onClick={onClear}
             >
-                <TWRenderRecoloredImage
+                <img
                     className={styles.xIcon}
                     src={xIcon}
                 />
