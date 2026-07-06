@@ -298,7 +298,7 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
           },
 		  {
             opcode: "reload",
-            blockType: Scratch.BlockType.REPORTER,
+            blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate("reload"),
             disableMonitor: true,
           },
