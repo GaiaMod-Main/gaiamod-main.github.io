@@ -8214,11 +8214,24 @@ const secrets = [
             name: 'Ding Dong Ditch',
             extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/DingDongDitch.js',
             iconURL: catWithDonut,
-            description: 'Some joke extension that I did for fun. Originally from my latest TurboWarp mod, MagicMod.',
-			tags: ['special', 'gaiamod', 'joke'],
-            insetIconURL: magicmodIcon,
-		    customInsetColor: '#FF29B1',
+            description: 'Some extension that I did for fun.',
+			tags: ['special', 'gaiamod', 'jokes'],
+            insetIconURL: gaiamodIcon,
+     		customInsetColor: '#2D2DD2',
+		    gaiaModRequired: true,
             credits: 'GaiaWindWave90 with some blocks from other users.',
+            featured: true
+        },
+
+		{
+            name: 'Pony Spawner',
+            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PonySpawner.js',
+            iconURL: 'https://preview.redd.it/hot-take-as-much-as-i-love-mlp-fim-i-think-the-root-of-all-v0-y1j8qxt9yx681.jpg?width=640&crop=smart&auto=webp&s=11c28c7269ad61287050bddb3059abf1d95129c8',
+            description: 'Spawn characters from MLP:FIM on GaiaMod.',
+			tags: ['special', 'gaiamod'],
+            insetIconURL: gaiamodIcon,
+     		customInsetColor: '#2D2DD2',
+            credits: 'GaiaWindWave90',
             featured: true
         },
 		 {

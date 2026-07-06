@@ -1074,6 +1074,11 @@ const scratchMods = [
         image: `https://gaiamod-main.github.io/icons/mods/ampmod.png`,
         href: `https://ampmod.codeberg.page/`,
     },
+	   {
+        text: "ScratchBox",
+        image: `https://gaiamod-main.github.io/icons/mods/scratchbox.png`,
+        href: `https://editor.scratchbox.dev/`,
+    },
     {
         text: "Dash",
         image: `https://gaiamod-main.github.io/icons/mods/dashblocks.png`,

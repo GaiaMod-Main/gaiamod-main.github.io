@@ -94,62 +94,62 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
           }
         },
       {
-          "opcode": "setAPIKey",
-          "text": "set API key: [KEY]",
-          "blockType": "command",
-          "arguments": {
-          "KEY": {
-          "type": "string"
+          opcode: "setAPIKey",
+          text: "set API key: [KEY]",
+          blockType: "command",
+          arguments: {
+          KEY: {
+          type: "string"
                  }
               }
                 },
 		{
-                    "opcode": "askGemini",
-                    "text": "Ask Gemini: [PROMPT]",
-                    "blockType": "reporter",
-                    "arguments": {
-                        "PROMPT": {
-                            "type": "string"
+                    opcode: "askGemini",
+                    text: "Ask Gemini: [PROMPT]",
+                    blockType: "reporter",
+                    arguments: {
+                        PROMPT: {
+                            type: "string"
                         }
                     }
                 },
 		{
-                    "opcode": "set_system_prompt",
-                    "text": "Set Gemini System Prompt: [PROMPT]",
-                    "blockType": "command",
-                    "arguments": {
-                        "PROMPT": {
-                            "type": "string",
-                            "defaultValue": "You are a helpful assistant."
+                    opcode: "set_system_prompt",
+                    text: "Set Gemini System Prompt: [PROMPT]",
+                    blockType: "command",
+                    arguments: {
+                        PROMPT: {
+                            type: "string",
+                            defaultValue: "You are a helpful assistant."
                         }
                     }
                 },
                   	{
-                    "opcode": "return_api_key",
-                    "text": "returnapikey",
-                    "blockType": "reporter",
-                    "arguments": {}
+                    opcode: "return_api_key",
+                    text: "returnapikey",
+                    blockType: "reporter",
+                    arguments: {}
                 },
                   	{
-                    "opcode": "ai_response",
-                    "text": "latestresponce",
-                    "blockType": "reporter",
-                    "arguments": {}
+                    opcode: "ai_response",
+                    text: "latestresponce",
+                    blockType: "reporter",
+                    arguments: {}
                 },
                   {
-                    "opcode": "block_clear_memory",
-                    "text": "Clear Gemini Memory",
-                    "blockType": "command",
-                    "arguments": {}
+                    opcode: "block_clear_memory",
+                    text: "Clear Gemini Memory",
+                    blockType: "command",
+                    arguments: {}
                 },
       {
-        "opcode": "copyToClipboard",
-        "text": "Copy to clipboard: [TEXT]",
-        "blockType": "command",
-        "arguments": {
-        "TEXT": {
-        "type": "string",
-        "defaultValue": "Welcome to GaiaMod!"
+        opcode: "copyToClipboard",
+        text: "Copy to clipboard: [TEXT]",
+        blockType: "command",
+        arguments: {
+        text: {
+        type: "string",
+        defaultValue: "Welcome to GaiaMod!"
            }
              }
                },
@@ -290,6 +290,18 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
             text: Scratch.translate("stop recording"),
             disableMonitor: true,
           },
+		  {
+            opcode: "eraseData",
+            blockType: Scratch.BlockType.COMMAND,
+            text: Scratch.translate("erase data"),
+            disableMonitor: true,
+          },
+		  {
+            opcode: "reload",
+            blockType: Scratch.BlockType.REPORTER,
+            text: Scratch.translate("reload"),
+            disableMonitor: true,
+          },
 		/////lols
       ],
 	  menus: {
@@ -395,7 +407,7 @@ async setAPIKey(args) {
                 
                 history.push({
                     role: "user",
-                    parts: [{text: args["PROMPT"]}]
+                    parts: [{text: args[PROMPT]}]
                 });
                 
                 let requestBody = {
@@ -600,6 +612,19 @@ startRecording () {
 	
  stopRecording () {
 	this.mediaRecorder.stop();
+    }
+	
+	eraseData () {
+	if (confirm('Warning: This will reset all your local data, including the Restore Points and backpack. Are you sure you want to do this?')) {  
+        localStorage.clear();
+        indexedDB.deleteDatabase('TW_RestorePoints');
+        indexedDB.deleteDatabase('TW_Backpack');
+        window.location.reload();
+    }
+    }
+	
+	reload () {
+	window.location.reload();
     }
 	
 }

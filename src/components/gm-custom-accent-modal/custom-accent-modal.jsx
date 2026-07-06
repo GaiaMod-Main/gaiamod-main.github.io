@@ -22,14 +22,14 @@ const BufferedInput = BufferedInputHOC(Input);
 
 const messages = defineMessages({
     title: {
-        defaultMessage: 'Custom Accents (Beta)',
+        defaultMessage: 'Custom Accents',
         description: 'Title of the custom accents modal',
-        id: 'dm.customAccentModal.title'
+        id: 'gm.customAccentModal.title'
     },
     help: {
         defaultMessage: 'Click for help',
         description: 'Hover text of help icon in the custom accents modal',
-        id: 'dm.customAccentModal.help'
+        id: 'gm.customAccentModal.help'
     }
 });
 

@@ -540,7 +540,8 @@ const menuItems = [
             />
         ),
         featured: true,
-        favoritable: true
+        favoritable: true,
+        favorited: true
     },
 	{
             seperator: true
