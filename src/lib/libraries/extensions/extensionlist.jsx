@@ -3813,6 +3813,17 @@ const aeExtensions = [
       credits: 'fhy-action',
 	  featured: true
     },
+	    {
+      extensionId: 'https://editors.astras.top/extensions/NTeaseMusic.js',
+      name: 'NTeaseMusic',
+      description: 'Quickly and easily access NetEase Cloud Music for some analysis.',
+      tags: ['astraeditor'],
+	  insetIconURL: astraeditorIcon,
+	  customInsetColor: '#0099FF',
+      iconURL: 'https://editors.astras.top/extensions/images/NTeaseMusic.png',
+      credits: 'NTawa',
+	  featured: true
+    },
 ];
 
 // Bilup extensions
