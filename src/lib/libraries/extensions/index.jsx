@@ -512,6 +512,16 @@ import shredsdkIcon from './shredsdk/shredsdk.svg'
 import utilsIcon from './utils/utilites.svg';
 import gameutilsIcon from './gameutils/gameutils.svg'
 
+import edubotIconURL from "./edubot/edubot.png";
+import edubotInsetIconURL from "./edubot/edubot-small.svg";
+import edubotConnectionIconURL from "./edubot/edubot-illustration.svg";
+import edubotConnectionSmallIconURL from "./edubot/edubot-small.svg";
+
+import jikkoIconURL from "./jikko/jikko.png";
+import jikkoInsetIconURL from "./jikko/jikko-small.svg";
+import jikkoConnectionIconURL from "./jikko/jikko-illustration.svg";
+import jikkoConnectionSmallIconURL from "./jikko/jikko-small.svg";
+
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);

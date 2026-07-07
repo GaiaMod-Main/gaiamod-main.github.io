@@ -84,6 +84,7 @@ export const randomMessages = [
     "Like you calling people \"trolls\"? Listen here.",
     "GaiaMod is based off the source code of PenguinMod, which is based off TurboWarp, which is based off Scratch. M O D C E P T I O N.",
     "there's another username easter egg that isn't \"your mom\".",
+    "Did you know? Typying in \"newchallengersapporaching\" as a parameter in the URL bar will make something cool happen!<br>Try it!",
     "You can thank this almighty Sprunki Wenda for giving us an idea!<img src='https://static.wikia.nocookie.net/incredibox-sprunki/images/d/d2/Wendasvg.svg' width='25px'>",
     "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?",
 	"I still think of this when I see UNCLE SUCKER!! lol!",
