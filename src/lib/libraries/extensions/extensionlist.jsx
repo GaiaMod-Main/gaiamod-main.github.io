@@ -482,6 +482,16 @@ import shredsdkIcon from './shredsdk/shredsdk.svg'
 import utilsIcon from './utils/utilites.svg';
 import gameutilsIcon from './gameutils/gameutils.svg'
 
+import edubotIconURL from "./edubot/edubot.png";
+import edubotInsetIconURL from "./edubot/edubot-small.svg";
+import edubotConnectionIconURL from "./edubot/edubot-illustration.svg";
+import edubotConnectionSmallIconURL from "./edubot/edubot-small.svg";
+
+import jikkoIconURL from "./jikko/jikko.png";
+import jikkoInsetIconURL from "./jikko/jikko-small.svg";
+import jikkoConnectionIconURL from "./jikko/jikko-illustration.svg";
+import jikkoConnectionSmallIconURL from "./jikko/jikko-small.svg";
+
 
 
 
@@ -6549,6 +6559,41 @@ const builtIns = [
         ),
         featured: true,
         disabled: false
+    },
+	{
+        name: 'OROCA Edubot',
+        extensionId: 'edubot',
+        collaborator: 'OROCA',
+        iconURL: edubotIconURL,
+        insetIconURL: edubotInsetIconURL,
+        description: 'Play with powerful small robot!',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: edubotConnectionIconURL,
+        connectionSmallIconURL: edubotConnectionSmallIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: "https://github.com/oroca/OROCA-EduBot",
+    },
+    {
+        name: 'MAKEITALL jikko',
+        extensionId: 'jikko',
+        collaborator: 'MAKEITALL',
+        iconURL: jikkoIconURL,
+        insetIconURL: jikkoInsetIconURL,
+        description: 'Hello jikko world!',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: jikkoConnectionIconURL,
+        connectionSmallIconURL: jikkoConnectionSmallIconURL,
+        connectingMessage: 'Connecting'
     },
 	{
         name: 'Smart Lumies',
