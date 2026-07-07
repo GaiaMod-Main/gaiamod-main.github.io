@@ -42,3 +42,111 @@
 .footer {
     
 }
+
+/* we wrap it in a <div> */
+.wrapper {
+  height: 100%;
+}
+/* fix some styles that can be messed up by scratch-gui */
+.featured-projects-root * {
+  box-sizing: content-box !important;
+}
+
+.featured-projects-root {
+  height: 100%;
+}
+.featured-projects-list {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-anchor: none;
+}
+.featured-projects-project, .featured-projects-placeholder {
+  display: inline-block;
+  width: 144px;
+  padding: 3px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+}
+.featured-projects-root .featured-projects-project {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+.featured-projects-loaded:hover::before, .featured-projects-loaded:active::before {
+  content: '';
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  opacity: 0.1;
+}
+.featured-projects-root .featured-projects-loaded:active::before {
+  opacity: 0.2;
+}
+.featured-projects-root .featured-projects-title,
+.featured-projects-root .featured-projects-author {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+}
+.featured-projects-title {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.featured-projects-author {
+  font-size: 0.75em;
+}
+.featured-projects-error {
+  width: 100%;
+}
+
+.featured-projects-thumbnail, .featured-projects-placeholder-thumbnail {
+  position: relative;
+  width: 144px;
+  height: 108px;
+}
+.featured-projects-thumbnail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  opacity: 0.1;
+}
+.featured-projects-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-projects-placeholder .featured-projects-thumbnail,
+.featured-projects-placeholder .featured-projects-title,
+.featured-projects-placeholder .featured-projects-author {
+  background-color: currentColor;
+  opacity: 0.1;
+}
+
+.featured-projects-title {
+  height: 20px;
+  margin-top: 2px;
+}
+.featured-projects-author {
+  height: 18px;
+}
+
+.featured-projects-placeholder .featured-projects-title {
+  border-radius: 2px 2px 2px 0;
+  width: 100%;
+}
+.featured-projects-placeholder .featured-projects-author {
+  border-radius: 0 0 2px 2px;
+  width: 50%;
+}
