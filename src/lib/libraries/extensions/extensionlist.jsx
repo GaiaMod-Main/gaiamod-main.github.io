@@ -492,6 +492,10 @@ import jikkoInsetIconURL from "./jikko/jikko-small.svg";
 import jikkoConnectionIconURL from "./jikko/jikko-illustration.svg";
 import jikkoConnectionSmallIconURL from "./jikko/jikko-small.svg";
 
+import lineBlockImage from './line/line.png';
+import lineBlockButtonImage from './line/line-small.png';
+
+
 
 
 
@@ -8353,6 +8357,19 @@ const secrets = [
         disabled: false,
         internetConnectionRequired: true,
         bluetoothRequired: false
+    },
+	{
+        name: 'Line',
+        extensionId: 'line',
+        credits: 'Ankurugranpa',
+        iconURL: lineBlockImage,
+        insetIconURL: lineBlockButtonImage,
+		tags: ['special', 'othermods'],
+        description: 'Connect to LINE message API!',
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
     },
         {
         name: 'Utilites',

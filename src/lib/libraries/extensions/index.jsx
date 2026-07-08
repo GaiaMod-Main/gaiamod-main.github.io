@@ -522,6 +522,10 @@ import jikkoInsetIconURL from "./jikko/jikko-small.svg";
 import jikkoConnectionIconURL from "./jikko/jikko-illustration.svg";
 import jikkoConnectionSmallIconURL from "./jikko/jikko-small.svg";
 
+import lineBlockImage from './line/line.png';
+import lineBlockButtonImage from './line/line-small.png';
+
+
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
