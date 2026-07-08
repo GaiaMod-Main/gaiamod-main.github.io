@@ -8341,6 +8341,19 @@ const secrets = [
 		    customInsetColor: '#80f41a',
             featured: true
         },
+		{
+        name: 'DINNYE',
+        extensionId: 'dinnye',
+        collaborator: 'völgyváros',
+		iconURL: 'https://dinnye-tabor.github.io/scratch-gui/static/assets/00f0fe02e7c6fe3fc2c38abdb91bf09a.jpg',
+        insetIconURL: 'https://dinnye-tabor.github.io/scratch-gui/static/assets/665527ddcbe239394f2df7cc3c595bd7.png',
+        description: "Control your Melon robots with this!",
+		tags: ['special', 'othermods', 'iot'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false
+    },
         {
         name: 'Utilites',
         tags: ['special', 'othermods'],
@@ -8367,6 +8380,15 @@ const secrets = [
         description: 'A development kit for making good web games',
         featured: true,
         credits: 'The_Mad_Punter'
+    },
+		{
+        name: 'SenCu',
+        extensionId: 'sencu',
+        iconURL: 'https://sec2.github.io/_scratch-gui/static/assets/b6759eb848ba8206025865888105a0a7.jpg',
+        description: 'Play with a SenCu Extension for GaiaMod!',
+		tags: ['special', 'othermods', 'iot'],
+        featured: true,
+        disabled: false,
     },
     ];
 
