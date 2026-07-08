@@ -8367,7 +8367,7 @@ const secrets = [
         description: 'A development kit for making good web games',
         featured: true,
         credits: 'The_Mad_Punter'
-    }
+    },
     ];
 
 
