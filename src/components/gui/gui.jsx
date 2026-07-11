@@ -46,6 +46,7 @@ import TWRestorePointManager from '../../containers/tw-restore-point-manager.jsx
 import TWFontsModal from '../../containers/tw-fonts-modal.jsx';
 import PMExtensionModals from '../../containers/pm-extension-modals.jsx';
 import TWScreenshotModal from '../../containers/screenshot-modal.jsx';
+import URLLoaderModal from '../url-loader-modal/url-loader-modal.jsx';
 
 import GMCustomAccentModal from '../../containers/gm-custom-accent-modal.jsx';
 
@@ -147,6 +148,11 @@ const GUIComponent = props => {
         onClickAddonSettings,
         onClickNewWindow,
         onClickTheme,
+		urlLoaderModalVisible,
+        closeUrlLoaderModal,
+        onUrlLoaderSubmit,
+		koshienTestModalVisible,
+        closeKoshienTestModal,
         onClickPackager,
         onLogOut,
         onOpenRegistration,
@@ -166,6 +172,7 @@ const GUIComponent = props => {
         onShare,
         onShowPrivacyPolicy,
         onStartSelectingFileUpload,
+		onStartSelectingUrlLoad,
         onTelemetryModalCancel,
         onTelemetryModalOptIn,
         onTelemetryModalOptOut,
@@ -187,6 +194,8 @@ const GUIComponent = props => {
 		ccwExtensionModalVisible,
         isPlayground,
         vm,
+        // Exclude Redux-related props from being passed to DOM
+        openUrlLoaderModal: _openUrlLoaderModal,
         ...componentProps
     } = omit(props, 'dispatch');
     if (children) {
@@ -442,6 +451,12 @@ const GUIComponent = props => {
                         onShowPrivacyPolicy={onShowPrivacyPolicy}
                     />
                 ) : null}
+                {urlLoaderModalVisible ? (
+                    <URLLoaderModal
+                        onRequestClose={closeUrlLoaderModal}
+                        onLoadUrl={onUrlLoaderSubmit}
+                    />
+                ) : null}
                 {loading ? (
                     <Loader isFullScreen />
                 ) : null}
@@ -515,6 +530,7 @@ const GUIComponent = props => {
                         onSeeCommunity={onSeeCommunity}
                         onShare={onShare}
                         onStartSelectingFileUpload={onStartSelectingFileUpload}
+						onStartSelectingUrlLoad={onStartSelectingUrlLoad}
                         onToggleLoginOpen={onToggleLoginOpen}
                     />
                 ) : null}
@@ -749,6 +765,7 @@ GUIComponent.propTypes = {
     onShowPrivacyPolicy: PropTypes.func,
     onStartSelectingFileUpload: PropTypes.func,
     onTabSelect: PropTypes.func,
+	onStartSelectingUrlLoad: PropTypes.func,
     onTelemetryModalCancel: PropTypes.func,
     onTelemetryModalOptIn: PropTypes.func,
     onTelemetryModalOptOut: PropTypes.func,
@@ -761,6 +778,11 @@ GUIComponent.propTypes = {
     stageSizeMode: PropTypes.oneOf(Object.keys(STAGE_SIZE_MODES)),
     targetIsStage: PropTypes.bool,
     telemetryModalVisible: PropTypes.bool,
+	urlLoaderModalVisible: PropTypes.bool,
+    closeUrlLoaderModal: PropTypes.func,
+    onUrlLoaderSubmit: PropTypes.func,
+	koshienTestModalVisible: PropTypes.bool,
+    closeKoshienTestModal: PropTypes.func,
     tipsLibraryVisible: PropTypes.bool,
     usernameModalVisible: PropTypes.bool,
     settingsModalVisible: PropTypes.bool,

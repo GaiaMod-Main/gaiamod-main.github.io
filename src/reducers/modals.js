@@ -26,6 +26,9 @@ const MODAL_WALLPAPER = 'wallpaperModal';
 const MODAL_CUSTOMFONTS = 'customFonts';
 const MODAL_SCREENSHOT = 'screenshotModal';
 const MODAL_CCW_EXTENSION = 'ccwExtensionModal';
+const MODAL_URL_LOADER = 'urlLoaderModal';
+const MODAL_MESH_DOMAIN = 'meshDomainModal';
+const MODAL_KOSHIEN_TEST = 'koshienTestModal';
 //const MODAL_UNKNOWN_PLATFORM = 'unknownPlatformModal';
 //const MODAL_INVALID_PROJECT = 'invalidProjectModal';
 //const MODAL_GIT = 'gitModal';
@@ -61,6 +64,9 @@ const initialState = {
     [MODAL_CUSTOMFONTS]: false,
 	[MODAL_SCREENSHOT]: false,
 	[MODAL_CCW_EXTENSION]: false,
+	[MODAL_URL_LOADER]: false,
+    [MODAL_MESH_DOMAIN]: false,
+    [MODAL_KOSHIEN_TEST]: false,
     extensionModalSwapId: null//,
 //    [MODAL_UNKNOWN_PLATFORM]: false,
 //    [MODAL_INVALID_PROJECT]: false,
@@ -198,6 +204,24 @@ const openCustomFontsModal = function () {
 };
 const closeCustomFontsModal = function () {
     return closeModal(MODAL_CUSTOMFONTS);
+};
+const openUrlLoaderModal = function () {
+    return openModal(MODAL_URL_LOADER);
+};
+const openMeshDomainModal = function () {
+    return openModal(MODAL_MESH_DOMAIN);
+};
+const openKoshienTestModal = function () {
+    return openModal(MODAL_KOSHIEN_TEST);
+};
+const closeUrlLoaderModal = function () {
+    return closeModal(MODAL_URL_LOADER);
+};
+const closeMeshDomainModal = function () {
+    return closeModal(MODAL_MESH_DOMAIN);
+};
+const closeKoshienTestModal = function () {
+    return closeModal(MODAL_KOSHIEN_TEST);
 };
 /*
 const openUnknownPlatformModal = function () {
@@ -366,6 +390,12 @@ export {
     closeCustomExtensionModal,
 	closeExtManagerModal,
     closeRestorePointModal,
+	openUrlLoaderModal,
+    openMeshDomainModal,
+    openKoshienTestModal,
+	closeUrlLoaderModal,
+    closeMeshDomainModal,
+    closeKoshienTestModal,
     closeFontsModal//,
 //    closeUnknownPlatformModal,
 //    closeInvalidProjectModal,

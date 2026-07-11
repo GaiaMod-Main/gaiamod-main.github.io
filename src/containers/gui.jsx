@@ -22,6 +22,8 @@ import {
     closeBackdropLibrary,
     closeTelemetryModal,
     openExtensionLibrary,
+	openUrlLoaderModal,
+    closeUrlLoaderModal,
 //    openShortcutManagerModal,
 //    openSimpleDialog
 } from "../reducers/modals";
@@ -31,6 +33,7 @@ import LocalizationHOC from "../lib/localization-hoc.jsx";
 import SBFileUploaderHOC from "../lib/sb-file-uploader-hoc.jsx";
 import ProjectFetcherHOC from "../lib/project-fetcher-hoc.jsx";
 import TitledHOC from "../lib/titled-hoc.jsx";
+import URLLoaderHOC from '../lib/url-loader-hoc.jsx';
 import ProjectSaverHOC from "../lib/project-saver-hoc.jsx";
 import QueryParserHOC from "../lib/query-parser-hoc.jsx";
 import storage from "../lib/storage";
@@ -182,6 +185,7 @@ const mapStateToProps = (state) => {
             state.scratchGui.targets.stage.id ===
                 state.scratchGui.targets.editingTarget,
         telemetryModalVisible: state.scratchGui.modals.telemetryModal,
+		urlLoaderModalVisible: state.scratchGui.modals.urlLoaderModal,
         tipsLibraryVisible: state.scratchGui.modals.tipsLibrary,
         usernameModalVisible: state.scratchGui.modals.usernameModal,
         settingsModalVisible: state.scratchGui.modals.settingsModal,
@@ -206,6 +210,8 @@ const mapDispatchToProps = (dispatch) => ({
     onRequestCloseBackdropLibrary: () => dispatch(closeBackdropLibrary()),
     onRequestCloseCostumeLibrary: () => dispatch(closeCostumeLibrary()),
     onRequestCloseTelemetryModal: () => dispatch(closeTelemetryModal()),
+	openUrlLoaderModal: () => dispatch(openUrlLoaderModal()),
+    closeUrlLoaderModal: () => dispatch(closeUrlLoaderModal()),
 });
 
 const ConnectedGUI = injectIntl(
@@ -226,6 +232,7 @@ const WrappedGui = compose(
     vmListenerHOC,
     vmManagerHOC,
     SBFileUploaderHOC,
+	URLLoaderHOC,
     cloudManagerHOC,
     TWFullScreenResizerHOC,
 )(ConnectedGUI);

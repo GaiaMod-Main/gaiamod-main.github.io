@@ -234,7 +234,8 @@ class MenuBar extends React.Component {
             'handleLanguageMouseUp',
             'handleRestoreOption',
             'getSaveToComputerHandler',
-            'restoreOptionMessage'
+            'restoreOptionMessage',
+			'handleClickLoadFromUrl',
         ]);
     }
     componentDidMount() {
@@ -358,6 +359,12 @@ class MenuBar extends React.Component {
             case 'upsidedown':
                 body.style.transform = 'rotateX(180deg) rotateY(180deg)';
                 break;
+        }
+    }
+	
+	handleClickLoadFromUrl () {
+        if (this.props.onStartSelectingUrlLoad) {
+            this.props.onRequestCloseFile();
         }
     }
 
@@ -1195,6 +1202,7 @@ MenuBar.propTypes = {
     onStartSelectingFileUpload: PropTypes.func,
     onStartFolderUpload: PropTypes.func,
     onToggleLoginOpen: PropTypes.func,
+	onStartSelectingUrlLoad: PropTypes.func,
     projectId: PropTypes.string,
     projectTitle: PropTypes.string,
     renderLogin: PropTypes.func,
