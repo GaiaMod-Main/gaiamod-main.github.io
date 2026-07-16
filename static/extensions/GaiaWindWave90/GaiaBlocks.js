@@ -145,14 +145,14 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
       {
         opcode: "copyToClipboard",
         text: "Copy to clipboard: [TEXT]",
-        blockType: "command",
+        blockType: Scratch.BlockType.COMMAND,
         arguments: {
-        text: {
-        type: "string",
-        defaultValue: "Welcome to GaiaMod!"
-           }
-             }
-               },
+        TEXT: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: "Welcome to GaiaMod!"
+              },
+                }
+                  },
 		  {
             opcode: 'loadExtension',
             blockType: Scratch.BlockType.COMMAND,
@@ -164,6 +164,7 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
               },
             },
           },
+		  
         {
 		opcode: 'setBackgroundColor',
          text: 'set stage background color to [COLOR]',
@@ -302,6 +303,24 @@ blockIconURI: "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHR
             text: Scratch.translate("reload"),
             disableMonitor: true,
           },
+		  {
+                    opcode: 'loadProjectDataUrl',
+                    text: 'load project from [URL]',
+                    blockType: Scratch.BlockType.COMMAND,
+                    arguments: {
+                        URL: {
+                            type: Scratch.ArgumentType.STRING,
+                            defaultValue: ''
+                        }
+                    },
+                },
+				{
+                    opcode: 'getProjectDataUrl',
+                    text: 'get data url of project',
+                    blockType: Scratch.BlockType.REPORTER,
+                    disableMonitor: true
+                },
+				
 		/////lols
       ],
 	  menus: {
@@ -625,6 +644,38 @@ startRecording () {
 	
 	reload () {
 	window.location.reload();
+    }
+	
+	loadProjectDataUrl(args) {
+        const url = Scratch.Cast.toString(args.URL);
+        if (typeof ScratchBlocks !== "undefined") {
+            // We are in the editor. Ask before loading a new project to avoid unrecoverable data loss.
+            if (!confirm(`Runtime Extension - Editor: Are you sure you want to load a new project?\nEverything in the current project will be permanently deleted.`)) {
+                return;
+            }
+        }
+        console.log("Loading project from custom source...");
+        fetch(url)
+            .then((r) => r.arrayBuffer())
+            .then((buffer) => vm.loadProject(buffer))
+            .then(() => {
+                console.log("Loaded project!");
+                vm.greenFlag();
+            })
+            .catch((error) => {
+                console.log("Error loading custom project;", error);
+            });
+    }
+    getProjectDataUrl() {
+        return new Promise((resolve) => {
+            const failingUrl = 'data:application/octet-stream;base64,';
+            vm.saveProjectSb3().then(blob => {
+                const fileReader = new FileReader();
+                fileReader.onload = () => { resolve(fileReader.result); };
+                fileReader.onerror = () => { resolve(failingUrl) }
+                fileReader.readAsDataURL(blob);
+            }).catch(() => { resolve(failingUrl) });
+        });
     }
 	
 }
