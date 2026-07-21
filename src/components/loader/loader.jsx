@@ -179,7 +179,23 @@ class LoaderComponent extends React.Component {
                     )}
 					
                     <p className={styles.tips} dangerouslySetInnerHTML={{__html: this.randomMessages}} />
-					
+					<a
+                            className={styles.githubCta}
+                            href="https://www.facebook.com/profile.php?id=61588689063011"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <img
+                            width="24px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
+                            draggable={false}
+                        />
+                            <FormattedMessage
+                                defaultMessage="Follow GaiaMod on FaceBook!"
+                                description="Link on the loading screen to the GaiaMod FaceBook page"
+                                id="gm.loader.facebook"
+                            />
+                        </a>
                 </div>
             </div>
         );
