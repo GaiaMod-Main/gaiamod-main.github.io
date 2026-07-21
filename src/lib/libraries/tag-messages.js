@@ -211,6 +211,11 @@ export default defineMessages({
         description: 'Tag for filtering a library by MistWarp',
         id: 'pm.libraryTags.mistwarp'
     },
+	unsandboxed: {
+        defaultMessage: 'Unsandboxed',
+        description: 'Tag for filtering a library by Unsandboxed',
+        id: 'pm.libraryTags.unsandboxed'
+    },
 	    acidmod: {
         defaultMessage: 'AcidMod',
         description: 'Tag for filtering a library by AcidMod',

@@ -989,6 +989,17 @@ const pmExtensions = [
 		customInsetColor: '#00c3ff',
 		featured: true
     },
+	{
+	 name: 'Black Mold',
+      description: 'mmmmm black mold',
+      extensionId: 'https://extensions.penguinmod.com/extensions/electricfuzzball_pm/blackMold.js',
+      iconURL: 'https://extensions.penguinmod.com/images/electricfuzzball_pm/blackMold.svg',
+      insetIconURL: penguinmodIcon,
+		customInsetColor: '#00c3ff',
+        tags: ['penguinmod'],
+	  featured: true,
+	  credits: 'ElectricFuzzball_PM'
+    },
 {
         name: 'WebRTC',
         extensionId: 'https://extensions.penguinmod.com/extensions/MikeDev101/webrtc.js',
@@ -2490,9 +2501,8 @@ const spExtensions = [
       extensionId: 'https://sharkpools-extensions.vercel.app/extension-code/MIDI-Tools.js',
       iconURL: 'https://sharkpools-extensions.vercel.app/extension-thumbs/MIDI-Tools.svg',
       tags: ['sharkpool'],
-	  featured: true,
-	  credits: 'SharkPool'
-    }
+	  featured: true
+    },
 ];
 
 
@@ -4461,9 +4471,8 @@ const ztEngineExtensions = [
             insetIconURL: zeroTwoEngineIcon,
 	     	customInsetColor: '#00BAAD',
             featured: true
-        }
+        },
 ];
-
 
 // TurboWarp extensions
 const twExtensions = [
@@ -8406,6 +8415,15 @@ const secrets = [
 		tags: ['special', 'othermods', 'iot'],
         featured: true,
         disabled: false,
+    },
+	{
+        name: 'PotentiaMod Extension Bonanza',
+        href: 'https://potentiamod.github.io/extensions/',
+        extensionId: 'secret_extensionLibrary',
+        iconURL: 'https://potentiamod.github.io/scratch-gui/static/assets/dbe1102fc3dda757b39c2b413e9729e1.png',
+        description: 'See extensions on PotentionMod. Opens in a new tab.',
+        tags: ['othermods', 'library'],
+        featured: true
     },
     ];
 

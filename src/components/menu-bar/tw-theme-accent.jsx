@@ -140,6 +140,15 @@ const options = defineMessages({
     }
 });
 
+const urlParams = new URLSearchParams(location.search);
+const showSecretAccents = () => {
+    return urlParams.has('newchallengersapporaching');
+};
+
+const showCreepyAccent = () => {
+    return urlParams.has('666');
+};
+
 const icons = {
     [ACCENT_RAINBOW]: rainbowIcon
 };
