@@ -207,8 +207,8 @@ export default defineMessages({
         id: 'pm.libraryTags.zerotwoengine'
     },
     mistwarp: {
-        defaultMessage: 'MistWarp',
-        description: 'Tag for filtering a library by MistWarp',
+        defaultMessage: 'Mistium',
+        description: 'Tag for filtering a library by Mistium',
         id: 'pm.libraryTags.mistwarp'
     },
 	unsandboxed: {
