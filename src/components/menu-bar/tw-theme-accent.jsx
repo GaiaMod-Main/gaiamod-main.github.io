@@ -23,6 +23,7 @@ import {
 	ACCENT_SILVER,
 	ACCENT_BLACK,
 	ACCENT_RAINBOW,
+    ACCENT_COTTON_CANDY,
 	ACCENT_NEBULA,
 	ACCENT_COSMIC,
 	ACCENT_AURORA,
@@ -107,6 +108,11 @@ const options = defineMessages({
         defaultMessage: 'Rainbow',
         description: 'Name of color scheme that uses a rainbow.',
         id: 'tw.accent.rainbow'
+    },
+    [ACCENT_COTTON_CANDY]: {
+        defaultMessage: 'Cotton Candy',
+        description: 'Name of color scheme that uses a cotton candy color.',
+        id: 'tw.accent.cottoncandy'
     },
     [ACCENT_NEBULA]: {
         defaultMessage: 'Nebula',

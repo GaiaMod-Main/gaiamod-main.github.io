@@ -25,6 +25,7 @@ const ACCENT_GOLD = 'Gold';
 const ACCENT_SILVER = 'Silver';
 const ACCENT_BLACK = 'Black';
 const ACCENT_RAINBOW = 'Rainbow';
+const ACCENT_COTTON_CANDY = 'Cotton Candy';
 const ACCENT_NEBULA = 'Nebula';
 const ACCENT_COSMIC = 'Cosmic';
 const ACCENT_AURORA = 'Aurora';
@@ -65,6 +66,9 @@ const ACCENT_MAP = {
     },
     [ACCENT_RAINBOW]: {
         'motion-primary': '#ff4c4c'
+    },
+    [ACCENT_COTTON_CANDY]: {
+        'motion-primary': '#FF80C4'
     },
     [ACCENT_NEBULA]: {
         'motion-primary': 'oklab(0.55 0.08 -0.12)'
@@ -148,6 +152,7 @@ export {
     ACCENT_BLACK,
     ACCENT_BLUE,
     ACCENT_RAINBOW,
+    ACCENT_COTTON_CANDY,
     ACCENT_NEBULA,
     ACCENT_COSMIC,
     ACCENT_AURORA,
