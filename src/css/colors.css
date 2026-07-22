@@ -370,6 +370,32 @@ body[coloraccent="Rainbow"] {
     --menu-bar-background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.75) 0%, rgba(255, 154, 0, 0.75) 10%, rgba(208, 222, 33, 0.75) 20%, rgba(79, 220, 74, 0.75) 30%, rgba(63, 218, 216, 0.75) 40%, rgba(47, 201, 226, 0.75) 50%, rgba(28, 127, 238, 0.75) 60%, rgba(95, 21, 242, 0.75) 70%, rgba(186, 12, 248, 0.75) 80%, rgba(251, 7, 217, 0.75) 90%, rgba(255, 0, 0, 0.75) 100%);
 }
 
+body[coloraccent="Cotton Candy"] {
+    --motion-primary: #FF80C4;
+    --motion-tertiary: #DB61A2;
+    --motion-transparent: #FF80C4e6;
+    --motion-light-transparent: #FF73B026;
+
+    --paint-motion-primary: #FF80C4;
+    --paint-motion-tertiary: #DB61A2;
+    --paint-motion-transparent: #FF80C4e6;
+
+    --motion-primary-dark: #BF4888;
+    --motion-dark-transparent: #BF488857;
+
+    --extensions-primary: #88D4F2;
+    --extensions-tertiary: #6C97D4;
+    --extensions-transparent: #74D3F235;
+    --extensions-light: #BAE2F2;
+    
+    --drop-highlight: #FF94DA;
+
+    --menu-bar-background: var(--motion-primary);
+    --menu-bar-background-dark: var(--motion-primary-dark);
+
+    --menu-bar-background-image: linear-gradient(to right, #91d3ff 0%, #ff91e2 100%);
+}
+
 body[coloraccent="Nebula"] {
     --motion-primary: oklab(0.55 0.08 -0.12);
     --motion-tertiary: oklab(0.60 0.06 -0.10);
@@ -554,6 +580,7 @@ body[coloraccent="Partytime"] {
 
 --menu-bar-background-image: none;
 }
+
 
 body[coloraccent="custom"] {
     
