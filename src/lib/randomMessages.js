@@ -112,7 +112,7 @@ export const randomMessages = [
     "HIIIIIIIIIIII! (poyo!)",
     "67 won't be funny by the time it's April Fools.",
     "Fun fact: PenguinMod has 96 new blocks compared to Scratch!",
-	"GaiaMod has more than whopping 300 extensions in the base extension list compared to PenguinMod.",
+	"GaiaMod has more than whopping 600+ extensions in the base extension list compared to PenguinMod.",
     "Haters, trolls, spammers, and those who are up against Gaia are NOT welcomed here!",
     "It looks like Team Rocket is blasting off again!",
     "Ready for the Final Round?",
