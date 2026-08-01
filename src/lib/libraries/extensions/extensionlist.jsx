@@ -8420,7 +8420,7 @@ const secrets = [
         name: 'PotentiaMod Extension Bonanza',
         href: 'https://potentiamod.github.io/extensions/',
         extensionId: 'secret_extensionLibrary',
-        iconURL: 'https://potentiamod.github.io/scratch-gui/static/assets/dbe1102fc3dda757b39c2b413e9729e1.png',
+        iconURL: 'https://potentiamod.github.io/static/assets/160e7ca1ae1002eae8b787664d92e5b0.svg',
         description: 'See extensions on PotentionMod. Opens in a new tab.',
         tags: ['othermods', 'library'],
         featured: true
