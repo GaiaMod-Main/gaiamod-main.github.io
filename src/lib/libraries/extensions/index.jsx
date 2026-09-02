@@ -37,6 +37,9 @@ import customExtensionIcon from './custom/custom.svg';
 import customExtIcon from './custom/CustomEx.svg';
 import customExtInsetIcon from './custom/CustomSmall.svg';
 
+import mysteryThumb from './gaiamod/unknown.png';
+import mysteryInsetIcon from './gaiamod/unknown-small.png';
+
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
 const IsLiveTests = urlParams.has('livetests');
