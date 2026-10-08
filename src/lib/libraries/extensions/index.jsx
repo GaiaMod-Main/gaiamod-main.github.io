@@ -1828,7 +1828,7 @@ const hiddenExt = [
         name: 'Former VM Extension Collection',
         href: 'https://gaiawindwave90.github.io/VM-to-JS-Extensions/?originSpecial=true',
         extensionId: 'special_VMExtLibrary',
-        iconURL: 'VMicon',
+        iconURL: VMicon,
         description: 'Tons of extensions converted from built-ins.\n\nClick on an extension to add it to your project.',
         collaborator: 'Listed in the site',
         tags: ['special', 'gaiamod', 'library'],
