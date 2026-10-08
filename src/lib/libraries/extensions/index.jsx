@@ -1656,7 +1656,7 @@ const menuItems = [
         href: 'https://gaiawindwave90.github.io/gm-extensions/',
         extensionId: 'special_gaiamodExtensionLibrary',
         iconURL: gaiaExGalleryThumb,
-        description: 'See all of GaiaMod's extensions, even user-submitted. Opens in a new tab.',
+        description: 'See all of GaiaMod\'s extensions, even user-submitted. Opens in a new tab.',
         tags: ['gaiamod', 'library'],
         featured: true
     },
@@ -1820,7 +1820,7 @@ const hiddenExt = [
         href: 'https://potentiamod.github.io/pot-extensions/',
         extensionId: 'secret_extensionLibrary',
         iconURL: 'https://potentiamod.github.io/static/assets/160e7ca1ae1002eae8b787664d92e5b0.svg',
-        description: 'See all of PotentiaMod's extensions, even user-submitted. Opens in a new tab.',
+        description: 'See all of PotentiaMod\'s extensions, even user-submitted. Opens in a new tab.',
         tags: ['special', 'gaiamod', 'othermods', 'library'],
         featured: true
     }
