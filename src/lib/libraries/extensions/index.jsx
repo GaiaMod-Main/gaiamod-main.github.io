@@ -1823,7 +1823,7 @@ const hiddenExt = [
         description: 'See all of PotentiaMod\'s extensions, even user-submitted. Opens in a new tab.',
         tags: ['special', 'gaiamod', 'othermods', 'library'],
         featured: true
-    }
+    },
 	{
         name: 'Former VM Extension Collection',
         href: 'https://gaiawindwave90.github.io/VM-to-JS-Extensions/?originSpecial=true',
