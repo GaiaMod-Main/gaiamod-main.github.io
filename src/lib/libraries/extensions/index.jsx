@@ -827,9 +827,9 @@ const menuItems = [
     },
 	{
         name: 'Gaia Utilities',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaBlocks.js',
+        extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/GaiaBlocks.js',
         credits: 'GaiaWindWave90 with some blocks from other users.',
-        iconURL: gaiaBlocksThumb,
+        iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/GaiaBlocks.svg',
 		insetIconURL: gaiamodIcon,
         tags: ['gaiamod', 'ai'],
 		gaiaModRequired: true,
@@ -838,10 +838,9 @@ const menuItems = [
     },
 	{
         name: 'Prompts',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GTPPrompts.js',
-        iconURL: promptsThumb,
+        extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/GTPPrompts.js',
+        iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/GTPPrompts.png',
 		insetIconURL: gaiamodIcon,
-		customInsetColor: '#2D2DD2',
         extDeveloper: 'GaiaWindWave90',
         tags: ['gaiamod', 'ai'],
 		gaiaModRequired: true,
@@ -903,8 +902,8 @@ const menuItems = [
     },
 	{
         name: 'GaiaGPT',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/GaiaGPT.js',
-        iconURL: gaiaGPTThumb,
+        extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/GaiaGPT.js',
+        iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/GaiaGPT.png',
 		insetIconURL: gaiamodIcon,
         tags: ['gaiamod', 'ai'],
 		gaiaModRequired: true,
@@ -943,8 +942,8 @@ const menuItems = [
     },
 	{
         name: 'Webcam Recorder',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/Webcamrecorder.js',
-        iconURL: webcamThumb,
+        extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/Webcamrecorder.js',
+        iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/Webcamrecorder.png',
 		insetIconURL: gaiamodIcon,
         credits: '-SIPC-, with modifications by GaiaWindWave90',
         tags: ['gaiamod'],
@@ -1037,8 +1036,8 @@ const menuItems = [
     },
 	{
             name: 'Penguin Attack!',
-            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PenguinAttack.js',
-            iconURL: penguinThumb,
+            extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/PenguinAttack.js',
+            iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/PenguinAttack.png',
     		insetIconURL: gaiamodIcon,
             tags: ['gaiamod', 'jokes'],
 			gaiaModRequired: true,
@@ -1092,8 +1091,8 @@ const menuItems = [
     },
 	{
         name: 'Spinach Facts',
-        extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/SpinachFacts.js',
-        iconURL: spinachThumb,
+        extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/SpinachFacts.js',
+        iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/SpinachFacts.png',
 		insetIconURL: gaiamodIcon,
         credits: 'GaiaWindWave90 with some blocks from other users.',
         tags: ['gaiamod', 'jokes'],
@@ -1769,8 +1768,8 @@ if (IsSecretExt) {
 const hiddenExt = [
          {
             name: 'Ding Dong Ditch',
-            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/DingDongDitch.js',
-            iconURL: catWithDonut,
+            extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/DingDongDitch.js',
+            iconURL: 'https://gaiawindwave90.github.io/gm-extensions/images/GaiaWindWave90/DingDongDitch.svg',
             description: 'Some extension that I did for fun.',
 			tags: ['special', 'gaiamod', 'jokes'],
             insetIconURL: gaiamodIcon,
@@ -1781,7 +1780,7 @@ const hiddenExt = [
 
 		{
             name: 'Pony Spawner',
-            extensionId: 'https://gaiamod-main.github.io/extensions/GaiaWindWave90/PonySpawner.js',
+            extensionId: 'https://gaiawindwave90.github.io/gm-extensions/GaiaWindWave90/PonySpawner.js',
             iconURL: 'https://preview.redd.it/hot-take-as-much-as-i-love-mlp-fim-i-think-the-root-of-all-v0-y1j8qxt9yx681.jpg?width=640&crop=smart&auto=webp&s=11c28c7269ad61287050bddb3059abf1d95129c8',
             description: 'Spawn characters from MLP:FIM on GaiaMod.',
 			tags: ['special', 'gaiamod'],
